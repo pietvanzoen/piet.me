@@ -13,6 +13,14 @@
 	<title>{{ site.main_title }}</title>
 	{% endif %}
 
+	{% if page.redirect301 %}
+	<meta http-equiv="refresh" content="301; url={{page.redirect301}}"> 
+	{% endif %}
+
+	{% if page.redirect %}
+	<meta http-equiv="refresh" content="0; url={{page.redirect}}"> 
+	{% endif %}
+
 	<meta charset="UTF-8" />
 	<meta name="ROBOTS" content="ALL" />
 	<meta name="viewport" content="width=device-width">
@@ -23,7 +31,7 @@
 	<!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
-	
+
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="/assets/css/main.css">
@@ -35,7 +43,7 @@
 
 </head>
 
-
+<body class="{{page.body_class}}">
 <!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 	<div class="wrapper">
@@ -63,7 +71,6 @@
 		</header>
 
 		<article class="primary">
-
 			{{ content }}
 
 		</article>
@@ -85,7 +92,9 @@
 	<!-- JavaScript at the bottom for fast page loading -->
 	<script src="/assets/js/main.js"></script>
 	<script src="/assets/js/modernizr.js"></script>
-
+	{% if page.js %}
+	<script src="/assets/js/{{page.js}}.js"></script>
+	{% endif %}
 	<img src="/assets/images/loader.gif" style="display: none" alt="">
 
 	<!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
