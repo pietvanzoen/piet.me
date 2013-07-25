@@ -13,10 +13,6 @@
 	<title>{{ site.main_title }}</title>
 	{% endif %}
 
-	{% if page.redirect301 %}
-	<meta http-equiv="refresh" content="301; url={{page.redirect301}}"> 
-	{% endif %}
-
 	{% if page.redirect %}
 	<meta http-equiv="refresh" content="0; url={{page.redirect}}"> 
 	{% endif %}
