@@ -1,0 +1,106 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js " lang="en"> <!--<![endif]-->
+<head>
+
+	{% if page.title %}
+	<title>{{ page.title }} :: {{ site.name }}</title>
+	{% else %}
+	<title>{{ site.main_title }}</title>
+	{% endif %}
+
+	<meta charset="UTF-8" />
+	<meta name="ROBOTS" content="ALL" />
+	<meta name="viewport" content="width=device-width">
+
+	<meta name="description" content="{{ site.description }}" />
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+
+	<!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+	
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<script>
+		if (!window.console) console = {log: function() {}};
+		var siteUrl = 'http://pietvanzoen.com/';
+	</script>
+
+</head>
+
+
+<!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+	<div class="wrapper">
+
+		<header class="header clearfix">
+			<p>Portland based dutch/englishman<br> and web developer at <a href="http://thedaylightstudio.com" target="_blank">Daylight</a>.</p>
+			<h1 class="sitetitle">
+				<div class="arcify">
+					<span class="arc no0 left half" style="-webkit-animation-duration: 4s; -moz-animation-duration: 4s; animation-duration: 4s"></span>
+					<span class="arc no1 left half" style="-webkit-animation-duration: 7s; -moz-animation-duration: 7s; animation-duration: 7s"></span>
+					<span class="arc no2 left " style="-webkit-animation-duration: 4s; -moz-animation-duration: 4s; animation-duration: 4s"></span>
+					<span class="arc no3 right " style="-webkit-animation-duration: 6s; -moz-animation-duration: 6s; animation-duration: 6s"></span>
+				</div> 
+				<a href="/">pietvanzoen</a>
+			</h1>
+
+			<nav class="mainnav">
+				<ul>
+					<li id="blog_link"><a href="/blog" class="icon_comment"><span>blog</span></a></li>
+					<li><a href="http://twitter.com/pietvanzoen" class="icon_twitter-2" rel="nofollow"><span>twitter</span></a></li>
+					<li><a href="mailto:piet" class="icon_mail" rel="nofollow"><span>emial</span></a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<article class="primary">
+
+			{{ content }}
+
+		</article>
+
+		<div class="clearfix"></div>
+		<footer class="footer">
+			<ul>
+				<li class="first"><a href="/blog" class="icon_comment"><span>blog</span></a></li>
+				<li><a href="http://twitter.com/pietvanzoen" class="icon_twitter" rel="nofollow"><span>twitter</span></a></li>
+				<li><a href="https://github.com/pietvanzoen" class="icon_github" rel="nofollow"><span>github</span></a></li>
+				<li><a href="http://rdio.com/people/pietvanzoen" class="icon_rdio" rel="nofollow"><span>rdio</span></a></li>
+				<li><a href="http://www.linkedin.com/in/pietvanzoen" class="icon_linkedin" rel="nofollow"><span>linkedin</span></a></li>
+				<li class="last"><a href="mailto:piet" class="icon_mail" rel="nofollow"><span>emial</span></a></li>
+			</ul>
+		</footer>
+
+	</div> <!-- end .wrapper -->
+
+	<!-- JavaScript at the bottom for fast page loading -->
+	<script src="/assets/js/main.js"></script>
+	<script src="/assets/js/modernizr.js"></script>
+
+	<img src="/assets/images/loader.gif" style="display: none" alt="">
+
+	<!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+		 mathiasbynens.be/notes/async-analytics-snippet -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-23075199-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+/******************************************************************************
+ HELPERS 
+******************************************************************************/
+
+/* IMAGE REPLACEMENT - sets all you need for replacing text with an image. Just set your 'background-image',width and height. */
+.ir {background-color: transparent; border: 0; overflow: hidden; /* IE 6/7 fallback */ *text-indent: -9999px; 
+	&:before {background-color: #ccc; content: ""; display: block; width: 0; height: 150%; }
+	a& { display: block; }
+}
+
+/* HIDE STUFF */
+.hidden{display:none;}
+.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto;}
+.invisible{visibility:hidden;}
+
+/* FLOATS & CENTERING */
+.float_left { float: left; }
+.float_right { float: right; }
+.img_right { float: right; margin: 0.2em 0 1em 1em }
+.img_left { float: left; margin: 0.2em 1em 1em 0 }
+.img_center { float: none; display: block;  margin: 1em auto }
+.img_left, .img_right, .img_center {
+	&:first-child { margin-top: 0; }
+}
+.max_half { max-width:50%;
+	* { max-width: 100%;  }
+}
+@media only screen and (max-width:@tabletWidth) {
+	.img_right, .img_left { display: inline-block; float: none; }
+	.max_half, .max_half * { max-width: inherit; }
+}
+
+.center { text-align: center }
+.left { text-align: left }
+.right { text-align: right }
+.align_middle { //letter-spacing:-0.25em; word-spacing:-0.25em;
+	&:before { display: inline-block; content: ""; height: 100%; vertical-align: middle; }
+	> * { display: inline-block !important; vertical-align: middle !important; float: none !important; word-spacing:normal; letter-spacing:normal; }
+	// &.font_adjust { font-size: 0; 
+	// 	> * { .font-size(2); }
+	// }
+}
+
+/* UL OL */
+ol.unstyled,
+ul.unstyled { margin: 0; padding: 0; list-style-type: none }
+
+/* TEXT */
+.nowrap { white-space: nowrap; }
+.strong, .bold { font-weight: bold; }
+.upper { text-transform: uppercase; }
+.lower { text-transform: lowercase; }
+.relative { position: relative; }
+.block { display: block; }
+
+/* MARGIN HELPERS */
+/** MARGIN & PADDING HELPERS **/
+// Edit margin and padding helper values here:
+@xl: 2em; 
+@l: 1.5em; 
+@m: 1em;
+@s: 0.5em;
+
+/** PADDING **/
+.no_pad,.no_padding{ padding:0 !important; }
+.pt_ {
+	&xl { padding-top:@xl !important; }
+	&l { padding-top:@l !important; }
+	&m { padding-top:@m !important; }
+	&s { padding-top:@s !important; }
+	&none { padding-top:0 !important; }
+}
+.pr_ {
+	&xl { padding-right:@xl !important; }
+	&l { padding-right:@l !important; }
+	&m { padding-right:@m !important; }
+	&s { padding-right:@s !important; }
+	&none { padding-right:0 !important; }
+}
+.pb_ {
+	&xl { padding-bottom:@xl !important; }
+	&l { padding-bottom:@l !important; }
+	&m { padding-bottom:@m !important; }
+	&s { padding-bottom:@s !important; }
+	&none { padding-bottom:0 !important; }
+}
+.pl_ {
+	&xl { padding-left:@xl !important; }
+	&l { padding-left:@l !important; }
+	&m { padding-left:@m !important; }
+	&s { padding-left:@s !important; }
+	&none { padding-left:0 !important; }
+}
+.p_ {
+	&xl { padding:@xl !important; }
+	&l { padding:@l !important; }
+	&m { padding:@m !important; }
+	&s { padding:@s !important; }
+	&none { padding:0 !important; }
+}
+
+/** MARGIN **/
+.no_marg,.no_margin{ margin:0 !important; }
+.mt_ {
+	&xl { margin-top:@xl !important; }
+	&l { margin-top:@l !important; }
+	&m { margin-top:@m !important; }
+	&s { margin-top:@s !important; }
+	&none { margin-top:0 !important; }
+}
+.mr_ {
+	&xl { margin-right:@xl !important; }
+	&l { margin-right:@l !important; }
+	&m { margin-right:@m !important; }
+	&s { margin-right:@s !important; }
+	&none { margin-right:0 !important; }
+}
+.mb_ {
+	&xl { margin-bottom:@xl !important; }
+	&l { margin-bottom:@l !important; }
+	&m { margin-bottom:@m !important; }
+	&s { margin-bottom:@s !important; }
+	&none { margin-bottom:0 !important; }
+}
+.ml_ {
+	&xl { margin-left:@xl !important; }
+	&l { margin-left:@l !important; }
+	&m { margin-left:@m !important; }
+	&s { margin-left:@s !important; }
+	&none { margin-left:0 !important; }
+}
+.m_ {
+	&xl { margin:@xl !important; }
+	&l { margin:@l !important; }
+	&m { margin:@m !important; }
+	&s { margin:@s !important; }
+	&none { margin:0 !important; }
+}
+
+/* FUEL CLASSES */
+/* for form */
+div.error,li.error,ul.error, .post_unpublished{background-color:#c30;color:#fff;padding:2px 5px;}
+span.error_highlight input,span.error_highlight textarea,span.error_highlight select{border:2px solid #c30;}
+/* for ckeditor */
+.ckeditor{background:#fff;padding:5px 5px 171px 5px; color:#000;font-size:12px; font-family: 'Lucida Grande', 'Gill Sans', Arial, Helvetica, Sans-serif !important;}

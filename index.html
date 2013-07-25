@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+
+<figure class="home_profile"><img src="/assets/images/home_profile.jpg" alt="pietvanzoen"></figure>
+<p class="hi"></p>
+
+<script>
+	var greetings = ['<hello/>', '<?=hello?>', '\{\{ hello \}\}', '/* hello */', '<!-- hello -->'];
+	var randGreeting = greetings[Math.floor(Math.random() * greetings.length)]
+	$('.hi').text(randGreeting);
+</script>
