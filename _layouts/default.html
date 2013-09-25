@@ -45,7 +45,6 @@
 </head>
 
 <body class="{{page.body_class}} {% if page.title %}page_{{ page.title | downcase }}{% endif %}">
-<!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 <div class="site_container">
 	<div class="wrapper">
@@ -63,11 +62,9 @@
 			</h1>
 
 			<nav class="mainnav">
-				<ul>
-					<!-- <li {% if page.title == 'About' %}class="active"{% endif %}><a href="/about"><span>About</span></a></li> -->
-					<li {% if page.title == 'Archive' %}class="active"{% endif %}><a href="/blog/archive"><span>Archive</span></a></li>
-					<li><a href="mailto:hi@pietvanzoen.com" rel="nofollow"><span>Contact</span></a></li>
-				</ul>
+				<a {% if page.title == 'About' %}class="active"{% endif %} href="/about">About</a>
+				<a {% if page.title == 'Archive' %}class="active"{% endif %} href="/blog/archive">Archive</a>
+				<a href="mailto:hi@pietvanzoen.com" rel="nofollow">Contact</a>
 			</nav>
 		</header>
 
@@ -82,13 +79,13 @@
 	</div> <!-- end .wrapper -->
 	<footer class="footer">
 		<div class="wrapper">
-			<ul>
-				<li><a href="http://twitter.com/pietvanzoen" rel="nofollow">Twitter</a></li>
-				<li><a href="https://github.com/pietvanzoen" rel="nofollow">Github</a></li>
-				<li><a href="http://rdio.com/people/pietvanzoen" rel="nofollow">Rdio</a></li>
-				<li><a href="http://www.linkedin.com/in/pietvanzoen" rel="nofollow">LinkedIn</a></li>
-				<li><a href="mailto:hi@pietvanzoen.com" rel="nofollow">Emial</a></li>
-			</ul>
+			<nav class="footernav">
+				<a href="http://twitter.com/pietvanzoen" rel="nofollow">Twitter</a>
+				<a href="https://github.com/pietvanzoen" rel="nofollow">Github</a>
+				<a href="http://rdio.com/people/pietvanzoen" rel="nofollow">Rdio</a>
+				<a href="http://www.linkedin.com/in/pietvanzoen" rel="nofollow">LinkedIn</a>
+				<a href="mailto:hi@pietvanzoen.com" rel="nofollow">Emial</a>
+			</nav>
 		</div>
 	</footer>
 </div>
