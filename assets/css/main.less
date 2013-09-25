@@ -4,7 +4,6 @@
 ***************************************************/
 @import url('functions.less');
 @import url('normalize.less');
-@import url('icons.less');
 
 /***************************************************
  CORE
@@ -15,8 +14,8 @@
 // Remove text-shadow in selection highlight: h5bp.com/i
 // These selection declarations have to be separate.
 // Customize the background color to match your design.
-::-moz-selection { background: #ccc; text-shadow: none; }
-::selection { background: #ccc; text-shadow: none; }
+::-moz-selection { background: lighten(@lime, 20%); text-shadow: none; }
+::selection { background: lighten(@lime, 20%); text-shadow: none; }
 
 // A better looking default horizontal rule
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
@@ -27,12 +26,12 @@ img {vertical-align: middle; }
 // Remove default fieldset styles.
 fieldset {border: 0; margin: 0; padding: 0; }
 
-// Allow only vertical resizing of textareas.  
+// Allow only vertical resizing of textareas.
 textarea {resize: vertical; }
 
 // Chromeframe styles
-.chromeframe { background: @lime; color: #000; padding: 1em 0; text-align: center; margin: 0; 
-	a { border-bottom-color: #000; 
+.chromeframe { background: @lime; color: #000; padding: 1em 0; text-align: center; margin: 0;
+	a { border-bottom-color: #000;
 		&:hover { color: #fff; }
 	}
 }
@@ -44,15 +43,15 @@ textarea {resize: vertical; }
 * { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
 
 // Set html/body max width
-html, body { width: 100%; min-height: 100%; padding: 0; margin: 0; display: table; width: 100%; position: relative; background: @bg;  }
-
+html, body {  width: 100%; height: 100%;  padding: 0; margin: 0; display: block; width: 100%; position: relative; background: @bg;  }
+.site_container { position: relative; min-height: 100%; padding-bottom: 7em;  }
 @tabletWidth: 800px;
 @mobileWidth: 500px; //568px for iphone .. and (orientation : landscape)
 
 /** TYPE
 ---------------------------------------- **/
 html { font-size: 62.5%; }
-.ubuntu, html, body, button, input, select, textarea { font-family: "Ubuntu", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
+.opensans, html, body, button, input, select, textarea { font-family: "Open Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
 html, body, button, input, select, textarea { color: @copy; font-weight: 300;  }
 body { .font-size(1.6); line-height: 1.5em; }
 
@@ -65,10 +64,10 @@ a:hover { color:@lime; text-decoration: none; }
 h1, h2, h3, h4, h5, h6 { margin-bottom: 0.5em; font-weight: 500; line-height: 1.2em;  }
 h1 { .font-size(4.5); font-weight: 300; }
 h2 { .font-size(3.5); font-weight: 300; }
-h3 { .font-size(1.6); }
-h4 { .font-size(1.3); margin: 0; }
-h5 { .font-size(1.5); margin: 0; }
-h6 { .font-size(1.3); margin: 0; text-transform: uppercase }
+h3 { .font-size(1.6); line-height: 1.5em; }
+h4 { .font-size(1.3); margin: 0; line-height: 1.5em; }
+h5 { .font-size(1.5); margin: 0; line-height: 1.5em; }
+h6 { .font-size(1.3); margin: 0; text-transform: uppercase; line-height: 1.5em; }
 
 /** type helper classes **/
 .strong, .bold { font-weight:500; }
@@ -101,15 +100,11 @@ code { font-family: 'Inconsolata', 'Courier', monospace; display: inline-block; 
 /** COMMON ELEMENTS
 ---------------------------------------- **/
 img { max-width: 100%; height: auto; }
-.imgbox { margin-bottom: 15px; background: url('../images/loader.gif') no-repeat center center; min-height:100px;
-	// img {.box-shadow(0 0 8px rgba(0,0,0,0.75));}
-}
-.back_button { 
+.back_button {
 	i { font-size: 14px; }
-	font-weight: bold; 
+	font-weight: bold;
 }
 .smooth_animation { -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); transform: translate3d(0,0,0);}
-.gif_container { height: 600px; background-repeat: no-repeat; background-position: center center;  }
 
 /***************************************************
  $LAYOUTS
@@ -118,17 +113,18 @@ img { max-width: 100%; height: auto; }
 /** MAIN LAYOUT **/
 .wrapper { max-width: 980px; width: 95%; min-width:420px; margin: 0 auto; padding-top: 5em;  }
 .header { .column(4); padding-top: 0.4em; }
-.primary, #error_404 { .column(8); padding-left: 4%;  }
-.footer { padding: 0 20px; 
+.primary, #error_404, .footer ul { .column(7.5); float: right;   }
+
+.footer { float: center; position: absolute; bottom: 0; width: 100%;
 	li, ul, p { display: inline-block; }
-	ul { padding: 0; margin: 0; 
-		span { display: none; }
+	ul { padding: 0; margin: 0;
+		// span { display: none; }
 	}
 }
 
 @media only screen and (max-width:800px) {
 	.wrapper { padding-top: 2em; }
-	.header, .primary, #error404 { .column(12); padding: 0 2%;  }
+	.header, .primary, #error404, .footer ul { .column(12); padding: 0 2%;  }
 	.footer {
 		ul, p { display: block; text-align: center; margin: 0; }
 	}
@@ -140,15 +136,14 @@ img { max-width: 100%; height: auto; }
 
 /** HEADER
 ---------------------------------------- **/
-.header { text-align: right; 
+.header { text-align: right;
 	p { margin: 0; color: @grey; }
 }
 
-.sitetitle { position: relative; margin-bottom: 15px; white-space: nowrap; 
+.sitetitle { position: relative; margin-bottom: 15px; white-space: nowrap;
 	// #arcify { .opacity(0.2); }
 	// &:hover #arcify { .opacity(1); }
 	// i { position: absolute; left: -2px; top: 8px;font-size: 25px; .opacity(0); .transition(opacity 0.1s ease-in-out); }
-	a:hover i { .opacity(1); }
 	/* type */
 	line-height: 50px; font-size: 45px; color: @lime;
 	&, a { color: @lime; font-weight: 300; border-bottom:none; }
@@ -196,7 +191,7 @@ img { max-width: 100%; height: auto; }
   &.half { border-top-color: @hex }
 }
 
-.arcify { width: 40px; height: 40px; display: inline-block;  position: relative; top: 10px; 
+.arcify { width: 40px; height: 40px; display: inline-block;  position: relative; top: 10px;
 	span { display:block; margin:0; }
 	.arc { position: absolute; left: 0; top: 0; .animation(spin_left 10s infinite linear);
 		width: 100%; height: 100%; border:3px solid rgba(0,0,0,0); border-right-color: @lime; .border-radius(100%);
@@ -223,82 +218,46 @@ img { max-width: 100%; height: auto; }
 		// &.red { .color(#D5342A) }
 	}
 }
-.no-borderradius .arcify { display: none; }
+.lt-ie9 .arcify { display: none; }
 
 /** MAIN NAV **/
-.mainnav { font-size: 26px; margin-right: -0.15em; 
-	li { display: inline-block; text-align: center; margin: 0 0.15em; 
-		a { color: @lime; text-decoration: none; border: none; position: relative; z-index: 1; padding-bottom: 1em; display: block; 
-			&:hover { z-index: 2; 
-				span { color: @lime; }
-			}
-		}
-		&.active a,
-		&.active a:hover span { color: @dark; }
-		span { bottom: 0; display: block; font-family: 'Ubuntu', Arial, sans-serif; font-weight: 300; font-size: 0.8em; width: 5em; position: absolute; left: 50%; margin-left: -2.5em; color: transparent; .transition(); }
-	}
+.mainnav {
+	li { display: inline-block; padding: 0 0.5em; }
+	.active a { color: @dark; border-bottom-color: @light;  }
 }
 
 @media only screen and (max-width:1000px) {
 	.sitetitle { font-size: 35px; }
-	.mainnav { font-size: 20px;  margin-right: 0; }
 }
 
 @media only screen and (max-width:800px) {
-	.sitetitle { font-size: 55px; padding: 0.5em 0;  }
-	.mainnav { font-size: 30px;
-		span { display: none !important; }
-	}
-	.header { text-align: center; font-size: 18px;  }
+	.sitetitle { font-size: 55px; padding: 0.2em 0 0.5em; margin-bottom: 0;  }
+	.header { text-align: center; font-size: 18px; margin-bottom: 2em;  }
 }
 
 
 
 /** FOOTER
 ---------------------------------------- **/
-.footer { text-align: right; padding-top: 100px; padding-bottom: 30px;
-	a { position: relative; bottom: -2px; .font-size(2); }
+.footer { text-align: right; padding: 5em 0 2em;
+	a { margin: 0 0.2em; display: inline-block; padding: 1; .font-size(1.4);  }
 	/* type */
-	color: @light;
-	a { color: @light; border-bottom:none;
-		&:hover { color:@copy; }
-	}
+	// color: @grey;
+	// a { color: @light; border-bottom:none;
+	// 	&:hover { color:@copy; }
+	// }
 }
 
 
-/** HOMEPAGE
+/** ABOUT
 ---------------------------------------- **/
-.home_profile { text-align: center; 
+.profile { text-align: center; max-width: 170px;
 	img { max-width: 100%; height: auto; .border-radius(100%);}
 }
 .hi { text-align: center; margin-top: 10px; font-size: 30px }
 
 
-/** INSTAGRAM FEED
----------------------------------------- **/
-.vanzoeneuroadventures {
-	.header { display: none; }
-	.primary { .column(12);}
-}
-.instagram { margin: 0 auto; max-width: 816px; min-height: 100px; background: url('../images/loader.gif') center top no-repeat; }
-.instagram_item { max-width: 204px; min-height: 100px;  float: left;  position: relative; cursor: pointer; background: #fff url('../images/loader.gif') center center no-repeat; //.transition(width 0.5s cubic-bezier(0.445,0,0,1)); 
-	&.instagram_active { max-width: 612px; width: 100%;  }
-	img { max-width: 100%; height: auto; }
-	.caption { position: absolute; width: 100%; padding: 1em;  bottom: 0; left: 0;  background-color: #000; background-color: fade(#000, 60%); 
-		&:before { height: 100%; display: inline-block; vertical-align: middle; content: '';  }
-		.avatar, p, .location { vertical-align: middle; display: inline-block; }
-		.avatar { width: 10%; margin-right: 2%; }
-		p { overflow: hidden; color: #fff; width: 82%; margin: 0;  }
-		.location { width: 5%; color: @white; border-bottom: none; text-align: center; font-size: 1em;
-			&:hover { color: @lime; }
-		}
-		.date { font-size: 0.7em; color: #ccc; display: block;  }
-	}
-}
-.instagram_more { text-align: center; margin-top: 1em; font-weight: normal; font-size: 1.3em; display: inline-block;  }
-
-
-/** INSTAGRAM FEED
+/** OTHER PAGES
 ---------------------------------------- **/
 .blank_layout {
 	.header, .footer { display: none; }
@@ -313,48 +272,41 @@ img { max-width: 100%; height: auto; }
 .posts {
 	h2 { margin: 0; }
 }
-.post { border-bottom: 1px solid @light; margin: 2em 0; padding-bottom: 2em; 
+.post { border-bottom: 1px solid @light; margin: 2em 0; padding-bottom: 2em;
 	&:first-child,
 	&:first-of-type { margin-top: 0; }
 }
-.post_date { margin-bottom: 1em; font-size: 0.8em;  }
+.post_date { margin-bottom: 1em; font-size: 0.8em; margin-top: 0.5em; font-weight: 500;  }
 .sidebar_cats { }
 .readmore { font-weight: 500; display: inline-block; margin: 1em auto;  }
 .view_archives {text-align: center; }
 
 
-/** PAGE LOAD ANIMATION
----------------------------------------- **/
+// /** PAGE LOAD ANIMATION
+// ---------------------------------------- **/
 
-.page_load_keyframes () {
-	from { position:relative; top: 5em; opacity:0; }
-	to { position:relative; top: 0; opacity:1; }
-}
-@-webkit-keyframes pageload { .page_load_keyframes(); }
-@-moz-keyframes pageload { .page_load_keyframes(); }
-@-ms-keyframes pageload { .page_load_keyframes(); }
-@keyframes pageload { .page_load_keyframes(); }
-.home {
-	.header, .footer { .animation(pageload 1s cubic-bezier(0.445,0,0,1) 0s 1 normal forwards);}
-	.primary { .animation(pageload 1s cubic-bezier(0.445,0,0,1) 1s 1 normal forwards); }
-}
-.home .header, .primary { position: relative; opacity:0; top: 100%; .smooth_animation; }
-.primary { .animation(pageload 1s cubic-bezier(0.445,0,0,1) 0s 1 normal forwards); }
+// .page_load_keyframes () {
+// 	from { position:relative; top: 5em; opacity:0; }
+// 	to { position:relative; top: 0; opacity:1; }
+// }
+// @-webkit-keyframes pageload { .page_load_keyframes(); }
+// @-moz-keyframes pageload { .page_load_keyframes(); }
+// @-ms-keyframes pageload { .page_load_keyframes(); }
+// @keyframes pageload { .page_load_keyframes(); }
+// .home {
+// 	.header, .footer { .animation(pageload 1s cubic-bezier(0.445,0,0,1) 0s 1 normal forwards);}
+// 	.primary { .animation(pageload 1s cubic-bezier(0.445,0,0,1) 1s 1 normal forwards); }
+// }
+// .home .header, .primary { position: relative; opacity:0; top: 100%; .smooth_animation; }
+// .primary { .animation(pageload 1s cubic-bezier(0.445,0,0,1) 0s 1 normal forwards); }
 
-.no-cssanimations {
-	.home .header, .primary { position: static; opacity:1; top: auto;}
-}
+// .no-cssanimations {
+// 	.home .header, .primary { position: static; opacity:1; top: auto;}
+// }
 
 /***************************************************
- $ERRORS, PRINT & MISC
+ PRINT & MISC
 ***************************************************/
-
-/** ERRORS
----------------------------------------- **/
-#error_404{}
-#error_db{}
-#error_general{}
-#error_php{}
 
 /** PRINT CSS
 ---------------------------------------- **/

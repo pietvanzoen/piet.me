@@ -2,12 +2,15 @@
 layout: default
 ---
 
-
-<figure class="home_profile"><img src="/assets/images/home_profile.jpg" alt="pietvanzoen"></figure>
-<p class="hi"></p>
-
-<script>
-	var greetings = ['<hello/>', '<?=hello?>', '\{\{ hello \}\}', '/* hello */', '<!-- hello -->'];
-	var randGreeting = greetings[Math.floor(Math.random() * greetings.length)]
-	$('.hi').text(randGreeting);
-</script>
+<div class="posts">
+{% for post in site.posts limit:5 %}
+	<article class="post">
+		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		<div class="post_date">{{ post.date | date_to_string }}</div>
+		<p>{{ post.excerpt | markdownify }}</p>
+	</article>
+{% endfor %}
+</div>
+<div class="view_archives">
+	<a href="/blog/archive">Archive</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/feed.xml">RSS</a>
+</div>

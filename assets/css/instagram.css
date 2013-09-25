@@ -1,0 +1,101 @@
+/** INSTAGRAM FEED
+---------------------------------------- **/
+.imgbox {
+  margin-bottom: 15px;
+  background: url('../images/loader.gif') no-repeat center center;
+  min-height: 100px;
+}
+.vanzoeneuroadventures .header {
+  display: none;
+}
+.vanzoeneuroadventures .primary {
+  width: 100%;
+}
+.vanzoeneuroadventures .footer {
+  position: static;
+  padding: 1em 0;
+  display: block;
+}
+.vanzoeneuroadventures .footer ul {
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+.vanzoeneuroadventures .site_container {
+  padding: 0;
+}
+.instagram {
+  margin: 0 auto;
+  max-width: 816px;
+  min-height: 100px;
+  background: url('../images/loader.gif') center top no-repeat;
+}
+.instagram_item {
+  max-width: 204px;
+  min-height: 100px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  background: #ffffff url('../images/loader.gif') center center no-repeat;
+}
+.instagram_item.instagram_active {
+  max-width: 612px;
+  width: 100%;
+}
+.instagram_item img {
+  max-width: 100%;
+  height: auto;
+}
+.instagram_item .caption {
+  position: absolute;
+  width: 100%;
+  padding: 1em;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.instagram_item .caption:before {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+}
+.instagram_item .caption .avatar,
+.instagram_item .caption p,
+.instagram_item .caption .location {
+  vertical-align: middle;
+  display: inline-block;
+}
+.instagram_item .caption .avatar {
+  width: 10%;
+  margin-right: 2%;
+}
+.instagram_item .caption p {
+  overflow: hidden;
+  color: #fff;
+  width: 87%;
+  margin: 0;
+}
+.instagram_item .caption .location {
+  color: #ccc;
+  border-bottom: none;
+  text-align: center;
+  font-size: 1em;
+}
+.instagram_item .caption .location:hover {
+  color: #ccd425;
+}
+.instagram_item .caption .date,
+.instagram_item .caption .location {
+  font-size: 0.7em;
+  color: #ccc;
+  display: inline-block;
+}
+.instagram_more {
+  text-align: center;
+  margin-top: 1em;
+  font-weight: normal;
+  font-size: 1.3em;
+  display: inline-block;
+}

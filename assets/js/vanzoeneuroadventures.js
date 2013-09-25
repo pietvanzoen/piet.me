@@ -1,4 +1,4 @@
-// reference: http://instagram.com/developer/endpoints/users/	
+// reference: http://instagram.com/developer/endpoints/users/
 
 function timeAgo(current, previous) {
 
@@ -36,7 +36,7 @@ function timeAgo(current, previous) {
 		return n + ' month'+ plural(n) +' ago';
 	}
 	else {
-		return 'approximately ' + Math.round(elapsed/msPerYear ) + ' years ago';   
+		return 'approximately ' + Math.round(elapsed/msPerYear ) + ' years ago';
 	}
 }
 
@@ -55,7 +55,7 @@ function getInstagrams(id) {
 			for (var i=0; i < d.data.length; i++) {
 				var data = d.data[i];
 				// console.log(data);
- 				if (typeof data==false) { 
+ 				if (typeof data==false) {
  					return false;
  				};
  				var $img = $('<img/>').attr({'src': data.images.standard_resolution.url, 'width': data.images.standard_resolution.width, 'height': data.images.standard_resolution.height});
@@ -66,20 +66,23 @@ function getInstagrams(id) {
  				var $caption = $('<p>');
  				if (data.location && data.location.name) {
  					var maplink = 'https://maps.google.com/maps?q='+data.location.latitude+','+data.location.longitude;
- 					$location = $('<a>').attr({'href': maplink, 'class': 'ss-icon location', 'target': '_blank', 'title': data.location.name}).text('location');
+ 					$location = $('<a>').attr({'href': maplink, 'class': 'ss-icon location', 'target': '_blank', 'title': data.location.name}).text(data.location.name);
  				}
  				if (data.caption !== null) {
 	 				$caption.text(data.caption.text);
  				};
 
  				var date = new Date(data.created_time*1000);
- 				$caption.append($('<span>').addClass('date').text(date.toDateString()));
+ 				$caption.append('<br>', $('<span>').addClass('date').text(date.toDateString()));
+ 				if ($location !== undefined) {
+ 					$caption.append(' - ', $location);
+ 				};
 
- 				var $captionbox = $('<div>').append($('<div>').addClass('caption').append($avatar, $caption, $location));
+ 				var $captionbox = $('<div>').append($('<div>').addClass('caption').append($avatar, $caption));
 
  				var $item = $('<div>').addClass('instagram_item').attr('id', data.id).append($img).attr('data-caption', $captionbox.html());
  				$('.instagram').append($item);
-			}; 
+			};
 		}
 	}).done(function(d, textStatus, xhr){
 
@@ -98,7 +101,7 @@ $(document).on('click', '.instagram_item img', function(event) {
 		.siblings().removeClass('instagram_active clearfix').find('.caption').remove();
 });
 
-var ids = [1365469127053, 1365651826125, 1365836820066, 1366140102451, 1366472672920, 1366588247600, 1366774264635, 1366946229951, ''] 
+var ids = [1365469127053, 1365651826125, 1365836820066, 1366140102451, 1366472672920, 1366588247600, 1366774264635, 1366946229951, '']
 var clk = 0;
 
 $(window).load(function() {
