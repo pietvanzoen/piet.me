@@ -15,7 +15,7 @@ I actually find it quite humbling to think about. In a time where it seems prett
 
 I've also been following [Jeremy Keith](http://adactio.com)'s recent involvement in a project to recreate the one of the first web browsers. [Check out Jeremy's post from his time in CERN](http://adactio.com/journal/6507/) where he shares a bunch of interesting links including the [first ever website](http://info.cern.ch/hypertext/WWW/TheProject.html) (restored to it's original uri) and the result of their project.
 
-The web can seem so impermanent sometimes. Just last week the first website I did with Daylight (two years ago) was replaced with a new one. I'm not sure that means much beyond illustrating how quickly things move on the web in comparison to the physical world. My home is 40 years old, my car is 10 years old. 
+The web can seem so impermanent sometimes. Just last week the first website I did with Daylight (two years ago) was replaced with a new one. I'm not sure that means much beyond illustrating how quickly things move on the web in comparison to the physical world. My home is 40 years old, my car is 10 years old.
 
 Anyway, moving forward I have a lot more respect for the web of the past. I'll be thinking twice before I scoff at another table layout, or IE causing issues. I'll be thinking about how the web is a giant experiment that has issues but get's better everyday. And I'll be thinking about the fact that the atmosphere of collaboration and experimentation that was there at the beginning, still persists today.
 
