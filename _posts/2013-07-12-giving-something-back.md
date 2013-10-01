@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Getting Involved: Giving something back to the web dev neighborhood"
-date: {}
+date: "2013-07-12"
 published: true
 ---
 
