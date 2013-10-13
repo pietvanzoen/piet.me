@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Front-end Legos: Keeping your CSS maintainable!"
-date:   2013-06-13
+title: "Front-end Legos: Keeping your CSS maintainable!"
+date: "2013-06-13"
+published: true
 ---
 
 It doesn't take long for a project to get unwieldy if you don't have a good system for creating your styles. I recently attended [Webvisions](http://webvisionsevent.com) where [Shay Howe](http://shayhowe.com) ran a workshop titled "Front-end Legos" that gave some pretty good advice on keeping CSS clean and maintainable. Here's the run down of the best tips I took away from the workshop:
