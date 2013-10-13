@@ -1,57 +1,32 @@
-<!doctype html>
-<!--[if IE 8]><html class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html><!--<![endif]-->
-<head>
+<!DOCTYPE html>
 
-	{% if page.title %}
-	<title>{{ page.title }} :: {{ site.name }}</title>
-	{% else %}
-	<title>{{ site.main_title }}</title>
-	{% endif %}
+<!--[if lte IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		{% if page.title %}
+		<title>{{ page.title }} :: {{ site.name }}</title>
+		{% else %}
+		<title>{{ site.main_title }}</title>
+		{% endif %}
+		<meta name="description" content="{{ site.description }}" />
+		<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+		<meta name="viewport" content="width=device-width">
 
-	{% if page.redirect %}
-	<meta http-equiv="refresh" content="0; url={{page.redirect}}">
-	{% endif %}
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700,400italic' rel='stylesheet' type='text/css'>
 
-	<meta charset="UTF-8" />
-	<meta name="ROBOTS" content="ALL" />
-	<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="/assets/css/main.css">
+		{% if page.css %}
+		<link rel="stylesheet" href="/assets/css/{{page.css}}.css">
+		{% endif %}
 
-	<meta name="description" content="{{ site.description }}" />
-	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
-
-	<!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700,400italic' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="/assets/css/main.css">
-	{% if page.css %}
-	<link rel="stylesheet" href="/assets/css/{{page.css}}.css">
-	{% endif %}
-	<!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-		 mathiasbynens.be/notes/async-analytics-snippet -->
-	<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-23075199-1']);
-	_gaq.push(['_trackPageview']);
-
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-	</script>
-
-</head>
-
-<body class="{{page.body_class}} {% if page.title %}page_{{ page.title | downcase }}{% endif %}">
-
-<div class="site_container">
-	<div class="wrapper">
-
-		<header class="header clearfix">
+		<script src="/assets/js/modernizr.js"></script>
+	</head>
+	<body class="{{page.body_class}} {% if page.title %}page_{{ page.title | downcase }}{% endif %}">
+		<header>
 			<p>Portland based dutch/englishman<br> and web developer at <a href="http://thedaylightstudio.com" target="_blank">Daylight</a>.</p>
-			<h1 class="sitetitle">
+			<h1>
 				<div class="arcify">
 					<span class="arc no0 left half" style="-webkit-animation-duration: 4s; -moz-animation-duration: 4s; animation-duration: 4s"></span>
 					<span class="arc no1 left half" style="-webkit-animation-duration: 7s; -moz-animation-duration: 7s; animation-duration: 7s"></span>
@@ -61,34 +36,35 @@
 				<a href="/">pietvanzoen</a>
 			</h1>
 
-			<nav class="mainnav">
-				<!-- <a {% if page.title == 'About' %}class="active"{% endif %} href="/about">About</a> -->
+			<nav>
 				<a {% if page.title == 'Archive' %}class="active"{% endif %} href="/blog/archive">Archive</a>
 				<a href="mailto:hi@pietvanzoen.com" rel="nofollow">Contact</a>
 			</nav>
 		</header>
 
-		<article class="primary">
+		<main>
 			{{ content }}
+		</main>
 
-		</article>
 
 		<div class="clearfix"></div>
-
-
-	</div> <!-- end .wrapper -->
-	<footer class="footer">
-		<div class="wrapper">
-			<nav class="footernav">
+		<footer>
+			<nav>
 				<a href="http://twitter.com/pietvanzoen" rel="nofollow">Twitter</a>
 				<a href="https://github.com/pietvanzoen" rel="nofollow">Github</a>
 				<a href="http://rdio.com/people/pietvanzoen" rel="nofollow">Rdio</a>
 				<a href="http://www.linkedin.com/in/pietvanzoen" rel="nofollow">LinkedIn</a>
 				<a href="mailto:hi@pietvanzoen.com" rel="nofollow">Emial</a>
 			</nav>
-		</div>
-	</footer>
-</div>
+			<p><small>Built with <a href="http://jekyllrb.com">Jekyll</a>. Hosted by <a href="http://pages.github.com">Github</a>.</small></p>
+		</footer>
 
-</body>
+
+		<script>
+			var _gaq=[['_setAccount','UA-23075199-1'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src='//www.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+	</body>
 </html>

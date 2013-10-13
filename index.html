@@ -2,15 +2,14 @@
 layout: default
 ---
 
-<div class="posts">
 {% for post in site.posts limit:5 %}
-	<article class="post">
-		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-		<div class="post_date">{{ post.date | date_to_string }}</div>
-		<p>{{ post.excerpt | markdownify }}</p>
-	</article>
+<article>
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<time>{{ post.date | date_to_string }}</time>
+	<p>{{ post.excerpt | markdownify }}</p>
+</article>
 {% endfor %}
-</div>
-<div class="view_archives">
+
+<section>
 	<a href="/blog/archive">Archive</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/feed.xml">RSS</a>
-</div>
+</section>

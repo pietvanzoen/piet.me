@@ -69,7 +69,7 @@
 .box-sizing (@box:border-box) {box-sizing:@box;-moz-box-sizing:@box;-webkit-box-sizing:@box;}
 
 // Border radius: http://css-tricks.com/almanac/properties/b/border-radius/
-.border-radius (@radius: 5px) {border-radius: @radius; -webkit-border-radius: @radius; -moz-border-radius: @radius;} 
+.border-radius (@radius: 5px) {border-radius: @radius; -webkit-border-radius: @radius; -moz-border-radius: @radius;}
 
 // Box shadow: http://css-tricks.com/almanac/properties/b/box-shadow/
 .box-shadow (@shadow: 0 0 10px #aaa) {  box-shadow: @shadow; -moz-box-shadow: @shadow; -webkit-box-shadow: @shadow; }
@@ -77,18 +77,18 @@
 
 // Opacity, for IE too!
 .opacity (@opacity: 1) {
-	@ieOpacity: @opacity * 100; 
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieOpacity})"; 
-	filter: ~"alpha(opacity=@{ieOpacity})"; 
-	opacity: @opacity; 
+	@ieOpacity: @opacity * 100;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieOpacity})";
+	filter: ~"alpha(opacity=@{ieOpacity})";
+	opacity: @opacity;
 }
 
 // Transform: http://css-tricks.com/almanac/properties/t/transform/
 .transform (@string){transform: @string; -webkit-transform: @string; -ms-transform: @string; }
-.rotate (@rotation){ 
+.rotate (@rotation){
 	@degs: ~"@{rotation}deg";
 	@degs-ie: @rotation / 90;
-	transform: rotate(@degs); -webkit-transform: rotate(@degs); -ms-transform: rotate(@degs); 
+	transform: rotate(@degs); -webkit-transform: rotate(@degs); -ms-transform: rotate(@degs);
 	.lt-ie9 & {filter: ~"progid:DXImageTransform.Microsoft.BasicImage(rotation=@{degs-ie})"; }
 }
 .perspective-origin (@value) { -webkit-perspective-origin: @value; -moz-perspective-origin: @value; -ms-perspective-origin: @value; perspective-origin: @value;  }
@@ -96,12 +96,14 @@
 .transform-origin (@value) { -webkit-transform-origin: @value; -moz-transform-origin: @value; -ms-transform-origin: @value; transform-origin: @value; }
 
 // Transition: http://css-tricks.com/almanac/properties/t/transition/
-.transition (@transition: all 0.2s ease-in-out) { -webkit-transition: @transition; transition: @transition; }
-.transition-prefixed (@selector: all, @speed: 0.2s, @easing: ease-in-out, @delay:0) {-webkit-transition: ~"-webkit-@{selector}" @speed @easing @delay; transition: @selector @speed @easing @delay; }
-.transition-delay (@value) { -webkit-transition-delay: @value; transition-delay: @value; }
-.transition-duration (@value) { -webkit-transition-duration: @value; transition-duration: @value; }
-.animation (@values) {-webkit-animation: @values; animation: @values; }
-.animation-name (@values) { -webkit-animation-name: @values; animation-name: @values;}
+.transition (@transition: all 0.2s ease-in-out) { -webkit-transition: @transition; -moz-transition: @transition; transition: @transition; }
+.transition-prefixed (@selector: all, @speed: 0.2s, @easing: ease-in-out, @delay:0) {-webkit-transition: ~"-webkit-@{selector}" @speed @easing @delay;-moz-transition: ~"-webkit-@{selector}" @speed @easing @delay; transition: @selector @speed @easing @delay; }
+.transition-delay (@value) { -webkit-transition-delay: @value; -moz-transition-delay: @value; transition-delay: @value; }
+.transition-duration (@value) { -webkit-transition-duration: @value;-moz-transition-duration: @value; transition-duration: @value; }
+.animation (@values) {-webkit-animation: @values; -moz-animation: @values; -ms-animation: @values; animation: @values; }
+.animation-name (@values) { -webkit-animation-name: @values; -moz-animation-name: @values; -ms-animation-name: @values; animation-name: @values;}
+
+.smooth_animation() { -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); transform: translate3d(0,0,0);}
 
 // Appearance: http://css-tricks.com/almanac/properties/a/appearance/
 .appearance (@value) {-webkit-appearance:@value; -moz-appearance:@value; appearance:@value; }
@@ -111,90 +113,28 @@
 .font-size (@sizeValue){
 	@remValue: @sizeValue;
 	@pxValue: (@sizeValue * 10);
-	font-size: ~"@{pxValue}px"; 
+	font-size: ~"@{pxValue}px";
 	font-size: ~"@{remValue}rem";
 }
 
 
 //  RETINA IMAGE HELPER
-// ---------------------------------------- 
+// ----------------------------------------
 // retina.less
 // A helper mixin for applying high-resolution background images (http://www.retinajs.com)
 .at2x (@path, @w: auto, @h: auto) {
 	background-image: url(@path);
 	@at2x_path: ~`"@{path}".split('.').slice(0, "@{path}".split('.').length - 1).join(".") + "@2x" + "." + "@{path}".split('.')["@{path}".split('.').length - 1]`;
 	.no-lowbandwidth & {
-		@media 
+		@media
 		only screen and (-webkit-min-device-pixel-ratio: 1.5),
 		only screen and (   min--moz-device-pixel-ratio: 1.5),
 		only screen and (   -min-moz-device-pixel-ratio: 1.5),
 		only screen and (        min-device-pixel-ratio: 1.5),
 		only screen and (                min-resolution: 192dpi),
-		only screen and (                min-resolution: 1.5dppx) { 
+		only screen and (                min-resolution: 1.5dppx) {
 			background-image: url(@at2x_path);
 			background-size: @w @h;
 		}
 	}
-}
-
-
-
-// http://Semantic.gs // v1.2 updated 10/4/2012
-//----------------------------------------
-
-// Defaults which you can freely override
-@column-width: 60;
-@gutter-width: 20;
-@columns: 12;
-
-// Utility variable — you should never need to modify this
-@gridsystem-width: (@column-width*@columns) + (@gutter-width*@columns) * 1px;
-
-// Set @total-width to 100% for a fluid layout
-@total-width: 100%;
-// @total-width: @gridsystem-width;
-
-// Uncomment these two lines and the star-hack width/margin lines below to enable sub-pixel fix for IE6 & 7. See http://tylertate.com/blog/2012/01/05/subpixel-rounding.html
-// @min-width: 960;
-// @correction: 0.5 / @min-width * 100 * 1%;
-
-// The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix { *zoom:1;
-	&:before, &:after {content:""; display:table; }
-	&:after { clear:both; }
-}
-
-
-//////////
-// GRID //
-//////////
-
-body {
-	width: 100%;
-	.clearfix;
-}
-
-.row(@columns:@columns) {
-	display: block;
-	width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width);
-	margin: 0 @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1);
-	// *width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width)-@correction;
-	// *margin: 0 @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1)-@correction;
-	.clearfix;
-}
-.column(@x,@columns:@columns) {
-	display: inline;
-	float: left;
-	width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width);
-	margin-left: @total-width*((@gutter-width*.5)/@gridsystem-width);
-	margin-right: @total-width*((@gutter-width*.5)/@gridsystem-width);
-	// margin: 0 @total-width*((@gutter-width*.5)/@gridsystem-width);
-	// *width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width)-@correction;
-	// *margin: 0 @total-width*((@gutter-width*.5)/@gridsystem-width)-@correction;
-}
-.push(@offset:1) {
-	margin-left: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
-}
-.pull(@offset:1) {
-	margin-right: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
 }

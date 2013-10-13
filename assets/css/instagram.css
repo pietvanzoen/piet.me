@@ -5,24 +5,24 @@
   background: url('../images/loader.gif') no-repeat center center;
   min-height: 100px;
 }
-.vanzoeneuroadventures .header {
+.vanzoeneuroadventures {
+  text-align: center;
+}
+.vanzoeneuroadventures header {
   display: none;
 }
-.vanzoeneuroadventures .primary {
+.vanzoeneuroadventures main {
   width: 100%;
 }
-.vanzoeneuroadventures .footer {
+.vanzoeneuroadventures footer {
   position: static;
   padding: 1em 0;
   display: block;
 }
-.vanzoeneuroadventures .footer ul {
+.vanzoeneuroadventures footer ul {
   width: 100%;
   text-align: center;
   float: none;
-}
-.vanzoeneuroadventures .site_container {
-  padding: 0;
 }
 .instagram {
   margin: 0 auto;
