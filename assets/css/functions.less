@@ -84,7 +84,7 @@
 }
 
 // Transform: http://css-tricks.com/almanac/properties/t/transform/
-.transform (@string){transform: @string; -webkit-transform: @string; -ms-transform: @string; }
+.transform (@string){-webkit-transform: @string; -ms-transform: @string; transform: @string; }
 .rotate (@rotation){
 	@degs: ~"@{rotation}deg";
 	@degs-ie: @rotation / 90;
@@ -99,7 +99,7 @@
 .transition (@transition: all 0.2s ease-in-out) { -webkit-transition: @transition; -moz-transition: @transition; transition: @transition; }
 .transition-prefixed (@selector: all, @speed: 0.2s, @easing: ease-in-out, @delay:0) {-webkit-transition: ~"-webkit-@{selector}" @speed @easing @delay;-moz-transition: ~"-webkit-@{selector}" @speed @easing @delay; transition: @selector @speed @easing @delay; }
 .transition-delay (@value) { -webkit-transition-delay: @value; -moz-transition-delay: @value; transition-delay: @value; }
-.transition-duration (@value) { -webkit-transition-duration: @value;-moz-transition-duration: @value; transition-duration: @value; }
+.transition-duration (@value) { -webkit-transition-duration: @value; -moz-transition-duration: @value; transition-duration: @value; }
 .animation (@values) {-webkit-animation: @values; -moz-animation: @values; -ms-animation: @values; animation: @values; }
 .animation-name (@values) { -webkit-animation-name: @values; -moz-animation-name: @values; -ms-animation-name: @values; animation-name: @values;}
 
