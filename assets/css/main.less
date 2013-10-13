@@ -341,7 +341,7 @@ article {
    Media Queries
    ========================================================================== */
 
-// Keyframes need to be outside media query for IE10 to comply
+/* Keyframes need to be outside media query for IE10 to comply. Also, can't minify because of firefox */
 .page_load_keyframes () {
 	from { opacity:0; }
 	to { opacity:1; }
@@ -366,6 +366,7 @@ article {
 		width:31%;
 		text-align: right;
 	}
+
 	main
 	{
 		float: right;
