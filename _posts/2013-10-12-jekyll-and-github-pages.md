@@ -14,7 +14,7 @@ Launching a not-so-static 'static site'
 ---
 Github Pages provides free hosting for static pages. So all you can use is html, css, and javascript. No server-side scripts and no databases. You can do custom domains, and your site is deployed straight from a repo every time you push to it. 
 
-But obviously this wouldn't work for a regular blog since they normally rely on databases and server-side scripting to store and serve pages. This is where Jekyll comes in. You setup your includes, layouts, variables, pages, and blog posts, and Jekyll will generate a static site from them. The added bonus is that you can write your posts and pages in [markdown](http://daringfireball.net/projects/markdown/) and Jekyll renders them as html. 
+But obviously this wouldn't work for a most blog platforms which rely on databases and server-side scripting to store and serve pages. This is where Jekyll comes in. You setup your includes, layouts, variables, pages, and blog posts, and Jekyll will generate a static site from them. The added bonus is that you can write your posts and pages in [markdown](http://daringfireball.net/projects/markdown/) and Jekyll renders them as html. 
 
 What's also fun, is that Github pages will build your Jekyll site for you each time you push a change. So that's what I'm doing. My site is Jekyll generated and hosted on Github, and I love it. No database, great uptime, really fast, and free.
 
