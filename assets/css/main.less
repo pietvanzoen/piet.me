@@ -24,6 +24,7 @@ select,
 textarea {
 	color: @copy;
 	font-family: "Open Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-weight: 300;
 }
 
 
@@ -61,6 +62,8 @@ textarea {
 	resize: vertical;
 }
 
+*, :before, :after { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -74,11 +77,10 @@ html {
 }
 
 body {
-	.font-size(1.7);
+	position: relative;
+	.font-size(1.6);
 	line-height: 1.5;
 	&:extend(.clearfix all);
-	max-width: 980px;
-	width: 95%;
 	margin: 0 auto;
 }
 
@@ -158,6 +160,8 @@ header,
 footer {
 	padding-top: 2em;
 	&:extend(.clearfix all);
+	width: 95%;
+	margin: 0 auto;
 }
 
 footer,
@@ -191,15 +195,24 @@ header h1 {
 	.transition(font-size 0.2s ease-in-out);
 }
 
-@media only screen and (max-width:1015px) and (min-width:915px) {
+@media only screen and (max-width:1200px) and (min-width:1110px) {
 	header h1 {
 		.font-size(4);
 	}
 }
 
-@media only screen and (max-width:915px) {
+@media only screen and (max-width:1110px) and (min-width:1010px) {
 	header h1 {
 		.font-size(3.5);
+	}
+}
+
+@media only screen and (max-width:1010px) and (min-width:50em) {
+	header {
+		p { .font-size(1.4); }
+		h1 {
+			.font-size(2.8);
+		}
 	}
 }
 
@@ -352,30 +365,45 @@ article {
 @keyframes pageload { .page_load_keyframes(); }
 
 @media only screen and (min-width: 50em) {
+	body { width: 100%; }
+
 	header,
 	main
 	{
 		padding-top: 5em;
-		display:inline;
-		margin-right:1.0416666666667%;
-		margin-left:1.0416666666667%;
+	}
+
+	header,
+	footer {
+		position: fixed;
+		left: 0;
+		text-align: right;
+		width: 30%;
+		padding-right: 2%;
+		padding-left: 2%;
 	}
 
 	header {
-		float: left;
-		width:31%;
-		text-align: right;
+		z-index: 100;
+		height: 100%;
+		background-color: #f7f7f7;
 	}
 
 	main
 	{
-		float: right;
-		width:60%
+		.clearfix;
+		padding-left: 32%;
+		padding-bottom: 2em;
 	}
 
 	footer {
-		text-align: right;
+		bottom: 0;
+		z-index: 101;
 	}
+
+	article,
+	footer,
+	#disqus_thread { max-width: 750px; }
 
 	/** Page Load animation **/
 	.cssanimations {
