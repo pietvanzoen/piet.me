@@ -49,6 +49,8 @@ hr {
 }
 
 img {
+	max-width: 100%;
+	height: auto;
 	vertical-align: middle;
 }
 
@@ -152,6 +154,8 @@ code
 	padding:0 .2em
 }
 
+blockquote { border-left: 2px solid @lime; margin-left: 0; padding-left: 20px; font-style: italic;  }
+
 /** Basic Template
 ---------------------------------------- **/
 
@@ -185,7 +189,7 @@ header h1 {
 	margin: 0 0 0.33em;
 	white-space: nowrap;
 	line-height: 1.1;
-	.font-size(4.5);
+	.font-size(3.5);
 	color: @lime;
 	&, a {
 		color: @lime;
@@ -195,26 +199,6 @@ header h1 {
 	.transition(font-size 0.2s ease-in-out);
 }
 
-@media only screen and (max-width:1200px) and (min-width:1110px) {
-	header h1 {
-		.font-size(4);
-	}
-}
-
-@media only screen and (max-width:1110px) and (min-width:1010px) {
-	header h1 {
-		.font-size(3.5);
-	}
-}
-
-@media only screen and (max-width:1010px) and (min-width:50em) {
-	header {
-		p { .font-size(1.4); }
-		h1 {
-			.font-size(2.8);
-		}
-	}
-}
 
 /** Navigation
 ---------------------------------------- **/
@@ -350,9 +334,42 @@ article {
 	&, body { background: #333;}
 }
 
+/** Portfolio List
+---------------------------------------- **/
+.portfolio_list {
+	article { text-align: center; }
+	img { border: 1px solid #e7e7e7; display: block; margin:0 auto 0.2em;  }
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
+
+@media only screen and (min-width:50em) and (max-width:1100px)  {
+	header,
+	footer {
+		width: 300px;
+	}
+	footer { font-size: 0.8em; }
+	main {
+		padding-left: 300px;
+	}
+
+}
+
+@media only screen and (min-width:1100px)  {
+	header h1 {
+		.font-size(4.5);
+	}
+	header,
+	footer {
+		width: 375px;
+	}
+	main {
+		padding-left: 370px;
+	}
+}
 
 /* Keyframes need to be outside media query for IE10 to comply. Also, can't minify because of firefox */
 .page_load_keyframes () {
@@ -378,7 +395,6 @@ article {
 		position: fixed;
 		left: 0;
 		text-align: right;
-		width: 30%;
 		padding-right: 2%;
 		padding-left: 2%;
 	}
@@ -392,7 +408,6 @@ article {
 	main
 	{
 		.clearfix;
-		padding-left: 32%;
 		padding-bottom: 2em;
 	}
 
@@ -404,6 +419,11 @@ article {
 	article,
 	footer,
 	#disqus_thread { max-width: 750px; }
+
+
+	.portfolio_list {
+		article { text-align: left;  width: 30%; margin: 1.5%; max-width: none; float: left; display: inline; border-bottom: none; padding-bottom: 0; }
+	}
 
 	/** Page Load animation **/
 	.cssanimations {

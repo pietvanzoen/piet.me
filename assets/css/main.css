@@ -53,7 +53,7 @@ html,button,input,select,textarea{color:#6a6e73;font-family:"Open Sans","Trebuch
 ::-moz-selection{background:#ebefa3;text-shadow:none}
 ::selection{background:#ebefa3;text-shadow:none}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-img{vertical-align:middle}
+img{max-width:100%;height:auto;vertical-align:middle}
 fieldset{border:0;margin:0;padding:0}
 textarea{resize:vertical}
 *,:before,:after{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
@@ -73,11 +73,12 @@ a:hover{color:#ccd425;text-decoration:none}
 pre,code{background-color:#eee}
 pre{padding:.5em;margin:1em 0}
 code{font-family:'Inconsolata','Courier',monospace;display:inline-block;padding:0 .2em}
+blockquote{border-left:2px solid #ccd425;margin-left:0;padding-left:20px;font-style:italic}
 main,header,footer{padding-top:2em;width:95%;margin:0 auto}
 footer,header{text-align:center}
 header p{margin:0;color:#6a6e73}
-header h1{position:relative;margin:0 0 .33em;white-space:nowrap;line-height:1.1;font-size:45px;font-size:4.5rem;color:#ccd425;-webkit-transition:font-size .2s ease-in-out;-moz-transition:font-size .2s ease-in-out;transition:font-size .2s ease-in-out}header h1,header h1 a{color:#ccd425;font-weight:300;border-bottom:none}
-@media only screen and (max-width:1200px) and (min-width:1110px){header h1{font-size:40px;font-size:4rem}}@media only screen and (max-width:1110px) and (min-width:1010px){header h1{font-size:35px;font-size:3.5rem}}@media only screen and (max-width:1010px) and (min-width:50em){header p{font-size:14px;font-size:1.4rem} header h1{font-size:28px;font-size:2.8rem}}header nav .active{color:#ccd425}
+header h1{position:relative;margin:0 0 .33em;white-space:nowrap;line-height:1.1;font-size:35px;font-size:3.5rem;color:#ccd425;-webkit-transition:font-size .2s ease-in-out;-moz-transition:font-size .2s ease-in-out;transition:font-size .2s ease-in-out}header h1,header h1 a{color:#ccd425;font-weight:300;border-bottom:none}
+header nav .active{color:#ccd425}
 nav a{display:inline-block;margin:0 0 0 .5em}
 article{border-bottom:1px solid #ccc;margin:2em 0;padding-bottom:2em}article:first-child,article:first-of-type{margin-top:0}
 article time{display:block;margin-top:-0.5em;font-size:.8em;font-weight:600}
@@ -92,7 +93,9 @@ article time{display:block;margin-top:-0.5em;font-size:.8em;font-weight:600}
 .lt-ie9 .arcify{display:none}
 .blank_layout header,.blank_layout footer{display:none}
 .dark_page,.dark_page body{background:#333}
-@-webkit-keyframes pageload{from{opacity:0} to{opacity:1}}@-moz-keyframes pageload{from{opacity:0} to{opacity:1}}@-ms-keyframes pageload{from{opacity:0} to{opacity:1}}@keyframes pageload{from{opacity:0} to{opacity:1}}@media only screen and (min-width:50em){body{width:100%} header,main{padding-top:5em} header,footer{position:fixed;left:0;text-align:right;width:30%;padding-right:2%;padding-left:2%} header{z-index:100;height:100%;background-color:#f7f7f7} main{*zoom:1;padding-left:32%;padding-bottom:2em} footer{bottom:0;z-index:101} article,footer,#disqus_thread{max-width:750px} .cssanimations main{opacity:0;-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);-o-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);-webkit-animation:pageload 1s cubic-bezier(.445, 0, 0, 1) 0 1 normal forwards;-moz-animation:pageload 1s cubic-bezier(.445, 0, 0, 1) 0 1 normal forwards;-ms-animation:pageload 1s cubic-bezier(.445, 0, 0, 1) 0 1 normal forwards;animation:pageload 1s cubic-bezier(.445, 0, 0, 1) 0 1 normal forwards}}.clearfix:before,.clearfix:after,hr:before,hr:after,body:before,body:after,main:before,main:after,header:before,header:after,footer:before,footer:after{content:" ";display:table}
+.portfolio_list article{text-align:center}
+.portfolio_list img{border:1px solid #e7e7e7;display:block;margin:0 auto .2em}
+@media only screen and (min-width:50em) and (max-width:1100px){header,footer{width:300px} footer{font-size:.8em} main{padding-left:300px}}@media only screen and (min-width:1100px){header h1{font-size:45px;font-size:4.5rem} header,footer{width:375px} main{padding-left:370px}}@-webkit-keyframes pageload{from{opacity:0} to{opacity:1}}@-moz-keyframes pageload{from{opacity:0} to{opacity:1}}@-ms-keyframes pageload{from{opacity:0} to{opacity:1}}@keyframes pageload{from{opacity:0} to{opacity:1}}@media only screen and (min-width:50em){body{width:100%} header,main{padding-top:5em} header,footer{position:fixed;left:0;text-align:right;padding-right:2%;padding-left:2%} header{z-index:100;height:100%;background-color:#f7f7f7} main{*zoom:1;padding-bottom:2em} footer{bottom:0;z-index:101} article,footer,#disqus_thread{max-width:750px} .portfolio_list article{text-align:left;width:30%;margin:1.5%;max-width:none;float:left;display:inline;border-bottom:none;padding-bottom:0} .cssanimations main{opacity:0;-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);-o-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);-webkit-animation:pageload 1s cubic-bezier(.445, 0, 0, 1) 0 1 normal forwards;-moz-animation:pageload 1s cubic-bezier(.445, 0, 0, 1) 0 1 normal forwards;-ms-animation:pageload 1s cubic-bezier(.445, 0, 0, 1) 0 1 normal forwards;animation:pageload 1s cubic-bezier(.445, 0, 0, 1) 0 1 normal forwards}}.clearfix:before,.clearfix:after,hr:before,hr:after,body:before,body:after,main:before,main:after,header:before,header:after,footer:before,footer:after{content:" ";display:table}
 .clearfix:after,hr:after,body:after,main:after,header:after,footer:after{clear:both}
 .clearfix,hr,body,main,header,footer{*zoom:1}
 @media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important} a,a:visited{text-decoration:underline} a[href]:after{content:" (" attr(href) ")"} abbr[title]:after{content:" (" attr(title) ")"} .ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""} pre,blockquote{border:1px solid #999;page-break-inside:avoid} thead{display:table-header-group;} tr,img{page-break-inside:avoid} img{max-width:100% !important} @page {margin:.5cm}p,h2,h3{orphans:3;widows:3} h2,h3{page-break-after:avoid}}
