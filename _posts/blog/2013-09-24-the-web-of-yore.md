@@ -2,7 +2,9 @@
 layout: post
 title:  "The Web of Yore"
 date:   2013-09-25
-
+type: blog
+categories:
+- blog
 ---
 
 My first exposure to the internet was in the library at secondary school (I think I was 14). It wasn't really a class though. We were sent to the library in groups of 3 to go see this new thing you could do with computers. I remember using Netscape and browsing around a little.
