@@ -103,6 +103,7 @@ h4, h5, h6 {
 }
 h1 {
 	.font-size(4.5);
+	text-align: center;
 }
 h2 {
 	.font-size(3.5);
@@ -155,6 +156,8 @@ code
 }
 
 blockquote { border-left: 2px solid @lime; margin-left: 0; padding-left: 20px; font-style: italic;  }
+
+
 
 /** Basic Template
 ---------------------------------------- **/
@@ -230,6 +233,7 @@ article {
 		font-size: 0.8em;
 		font-weight: 600;
 	}
+	img { border: 1px solid #e7e7e7;}
 }
 
 
@@ -338,8 +342,10 @@ article {
 ---------------------------------------- **/
 .portfolio_list {
 	article { text-align: center; }
-	img { border: 1px solid #e7e7e7; display: block; margin:0 auto 0.2em;  }
+	img { display: block; margin:0 auto 0.2em;  }
 }
+
+.img_right { display: block; margin: 0 auto 1em; }
 
 /* ==========================================================================
    Media Queries
@@ -382,6 +388,9 @@ article {
 @keyframes pageload { .page_load_keyframes(); }
 
 @media only screen and (min-width: 50em) {
+
+	h1 { text-align: left; }
+
 	body { width: 100%; }
 
 	header,
@@ -429,6 +438,9 @@ article {
 	.cssanimations {
 		main { opacity:0; .smooth_animation; .animation(pageload 1s cubic-bezier(0.445,0,0,1) 0s 1 normal forwards); }
 	}
+
+	.img_right { float: right; margin: 0 0 1em 2em; }
+
 
 }
 
