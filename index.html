@@ -2,12 +2,14 @@
 layout: default
 ---
 
-{% for post in site.posts limit:5 %}
-<article>
-	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-	<time>{{ post.date | date_to_string }}</time>
-	<p>{{ post.excerpt | markdownify }}</p>
-</article>
+{% for post in site.posts %}
+	{% if post.categories contains 'blog' %}
+		<article>
+			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			<time>{{ post.date | date_to_string }}</time>
+			<p>{{ post.excerpt | markdownify }}</p>
+		</article>
+	{% endif %}
 {% endfor %}
 
 <section>
