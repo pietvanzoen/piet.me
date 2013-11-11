@@ -7,3 +7,5 @@ thumb: exnovo_thumb.jpg
 ---
 
 <img src="/assets/images/portfolio/exnovo_main.jpg" alt="Ex Novo Brewing">
+
+[Visit Website](http://exnovobrew.com)
