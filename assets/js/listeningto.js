@@ -22,7 +22,7 @@ function processLast(feed){
         tracks= feed.value.items[0].recenttracks.track;
     if(tracks[0].nowplaying) {
         var link = 'http://www.rdio.com/artist/'+tracks[0].artist.content.replace(/ /g, '_')+'/album/'+tracks[0].album.content.replace(/ /g, '_')+'/';
-        str+='Listening to: <a href="'+link+'">' + tracks[0].artist.content + ' - ' + tracks[0].name + '</a>';
+        str+='Listening to <a href="'+link+'">' + tracks[0].artist.content + ' - ' + tracks[0].name + '</a> right now.';
     }
     document.getElementById(holder).innerHTML=str;
 }
