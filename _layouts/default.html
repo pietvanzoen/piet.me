@@ -41,6 +41,7 @@
 				<a {% if page.url contains 'portfolio' %}class="active"{% endif %} href="/portfolio">Portfolio</a>
 				<a href="mailto:hi@pietvanzoen.com" rel="nofollow">Contact</a>
 			</nav>
+			<p><small id="listeningto"></small></p>
 		</header>
 
 		<main>
@@ -66,5 +67,7 @@
 			g.src='//www.google-analytics.com/ga.js';
 			s.parentNode.insertBefore(g,s)}(document,'script'));
 		</script>
+		<script src="/assets/js/listeningto.js"></script>
+		<script>loadListeningTo('pietvanzoen', 'listeningto');</script>
 	</body>
 </html>
