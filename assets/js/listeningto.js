@@ -12,8 +12,8 @@ function loadJS(url){
     s.type = 'text/javascript';
     s.src=url;
     // sets cache to roughly 1.6 mins
-    date = (+new Date())+'';
-    date.substring('', date.length - 5)*100000;
+    var date = (+new Date())+'';
+    date = date.substring('', date.length - 5)*100000;
     s.src+='&jpt='+date;
     document.getElementsByTagName('head')[0].appendChild(s);
 }
