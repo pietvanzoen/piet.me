@@ -3,17 +3,18 @@ var holder;
 function loadListeningTo(username,holder_id){
     holder=holder_id;
     if (typeof holder=='undefined') holder='last_fm_tracks';
-    loadJS('http://pipes.yahoo.com/pipes/pipe.run?_id=dee4ce450c3cbdcfce7ea7d0c4564120&_render=json&user='+username+'&_callback=processLast',false);
+    loadJS('http://pipes.yahoo.com/pipes/pipe.run?_id=dee4ce450c3cbdcfce7ea7d0c4564120&_render=json&user='+username+'&_callback=processLast');
 }
 
-function loadJS(url,cache){
+function loadJS(url){
     //cache is true by default
     var s = document.createElement('script');
     s.type = 'text/javascript';
     s.src=url;
-    if (cache===false) {
-        s.src+='&jpt='+ (+new Date());
-    }
+    // sets cache to roughly 1.6 mins
+    date = (+new Date())+'';
+    date.substring('', date.length - 5)*100000;
+    s.src+='&jpt='+date;
     document.getElementsByTagName('head')[0].appendChild(s);
 }
 
