@@ -48,6 +48,10 @@ hr {
 	&:extend(.clearfix all);
 }
 
+small {
+	line-height: 1em;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -206,6 +210,7 @@ header h1 {
 /** Navigation
 ---------------------------------------- **/
 header nav {
+	margin-bottom: 1em;
 	.active {
 		color: @lime;
 		// border-bottom-color: @light;
@@ -389,7 +394,7 @@ article {
 
 @media only screen and (min-width: 50em) {
 
-	h1 { text-align: left; }
+	h1 { text-align: right; }
 
 	body { width: 100%; }
 

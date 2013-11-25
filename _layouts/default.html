@@ -41,6 +41,7 @@
 				<a {% if page.url contains 'portfolio' %}class="active"{% endif %} href="/portfolio">Portfolio</a>
 				<a href="mailto:hi@pietvanzoen.com" rel="nofollow">Contact</a>
 			</nav>
+			<p><small id="listeningto"></small></p>
 		</header>
 
 		<main>
@@ -60,12 +61,13 @@
 			<p><small>Built with <a href="http://jekyllrb.com">Jekyll</a>. Hosted by <a href="http://pages.github.com">Github</a>.</small></p>
 		</footer>
 
-
 		<script>
 			var _gaq=[['_setAccount','UA-23075199-1'],['_trackPageview']];
 			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
 			g.src='//www.google-analytics.com/ga.js';
 			s.parentNode.insertBefore(g,s)}(document,'script'));
 		</script>
+		<script src="/assets/js/listeningto.js"></script>
+		<script>loadListeningTo('pietvanzoen', 'listeningto');</script>
 	</body>
 </html>
