@@ -13,7 +13,7 @@ function loadJS(url){
     s.src=url;
     // sets cache to roughly 1.6 mins
     var date = (+new Date())+'';
-    date = date.substring('', date.length - 5)*100000;
+    date = date.substring('', date.length - 5)*1;
     s.src+='&jpt='+date;
     document.getElementsByTagName('head')[0].appendChild(s);
 }
