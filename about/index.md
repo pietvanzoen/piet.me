@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<img class="img_right" src="/assets/images/the-fox-and-c3po.jpg" width="237" alt="">
+<img class="img_right" src="/assets/images/piet.jpg" width="250" alt="">
 
 Generally I prefer to write in bullet form, so here you go:
 
