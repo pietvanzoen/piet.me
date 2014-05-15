@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using local environment (ENV) variables."
-date:   2014-05-12
+date:   2014-05-15
 type: blog
 published: true
 categories: 
@@ -31,34 +31,19 @@ ENV Variables are accessable by basically any serverside programming language. H
 
 Say I set this in my `.bash_profile`:
 
-```
-export WIBBLE=woo
-```
+<script src="https://gist.github.com/pietvanzoen/6efcbd10e4c9882537e6.js?file=.bash_profile"></script>
 
 **Ruby**
 
-```
-wibble = ENV['WIBBLE']
-print wibble
-# => 'woo'
-```
+<script src="https://gist.github.com/pietvanzoen/6efcbd10e4c9882537e6.js?file=ruby.rb"></script>
 
 **Node**
 
-```
-var wibble = process.env.WIBBLE;
-console.log(wibble)
-// => 'woo'
-```
+<script src="https://gist.github.com/pietvanzoen/6efcbd10e4c9882537e6.js?file=node.js"></script>
 
 **Python**
 
-```
-import os
-wibble = os.environ['WIBBLE']
-print wibble
-# => 'woo'
-```
+<script src="https://gist.github.com/pietvanzoen/6efcbd10e4c9882537e6.js?file=python.py"></script>
 
 Looking up ENV variables
 ---
@@ -70,3 +55,5 @@ Finally here are a couple quick commands for looking up what ENV variables have 
 - To search for a ENV variable use `env | grep WIBBLE`. Remember this is case-sensitive.
 
 If you have any questions or corrections just comment or email me.
+
+
