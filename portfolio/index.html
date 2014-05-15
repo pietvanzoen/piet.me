@@ -1,19 +1,9 @@
 ---
-layout: default
-title: Portfolio
+layout: none
 ---
-
-<h1>Portfolio</h1>
-
-<section class="portfolio_list">
-	{% for post in site.posts %}
-		{% if post.categories contains 'portfolio' %}
-			<article>
-				<a href="{{ post.url }}">
-					<img src="/assets/images/portfolio/{{post.thumb}}" alt="{{post.title}}">
-					<span class="visuallyhidden">{{ post.title }}</span>
-				</a>
-			</article>
-		{% endif %}
-	{% endfor %}
-</section>
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="refresh" content="0; url=/projects">
+	</head>
+</html>

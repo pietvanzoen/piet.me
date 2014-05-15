@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Rebuilding Together"
+published: false
 categories:
 - portfolio
 thumb: rtp_thumb.jpg

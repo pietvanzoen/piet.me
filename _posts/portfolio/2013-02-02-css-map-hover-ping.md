@@ -4,6 +4,7 @@ author: Piet
 date: "2013-02-02 1:10 PM"
 title: "CSS Map hover ping"
 type: portfolio
+published: false
 categories:
 - portfolio
 - experiments
