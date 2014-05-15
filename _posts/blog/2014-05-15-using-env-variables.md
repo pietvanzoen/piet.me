@@ -31,19 +31,34 @@ ENV Variables are accessable by basically any serverside programming language. H
 
 Say I set this in my `.bash_profile`:
 
-<script src="https://gist.github.com/pietvanzoen/6efcbd10e4c9882537e6.js?file=.bash_profile"></script>
+```
+export WIBBLE=woo
+```
 
 **Ruby**
 
-<script src="https://gist.github.com/pietvanzoen/6efcbd10e4c9882537e6.js?file=ruby.rb"></script>
+```
+wibble = ENV['WIBBLE']
+print wibble
+# => 'woo'
+```
 
 **Node**
 
-<script src="https://gist.github.com/pietvanzoen/6efcbd10e4c9882537e6.js?file=node.js"></script>
+```
+var wibble = process.env.WIBBLE;
+console.log(wibble)
+// => 'woo'
+```
 
 **Python**
 
-<script src="https://gist.github.com/pietvanzoen/6efcbd10e4c9882537e6.js?file=python.py"></script>
+```
+import os
+wibble = os.environ['WIBBLE']
+print wibble
+# => 'woo'
+```
 
 Looking up ENV variables
 ---
