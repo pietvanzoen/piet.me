@@ -39,7 +39,7 @@ Stuff I use and love
 ### Software
 
 - [Sublime Text 3][sublime] - Text editor.
-- Sublime Plugins:
+- Notable Sublime Plugins:
     - [SublimeGit][sublime-git] - Sublime text git integration.
     - [GitGutter][sublime-gitgutter] - Git diff in the gutter.
     - [SublimeLinter][sublime-linter] - Interactive code linting framework.
