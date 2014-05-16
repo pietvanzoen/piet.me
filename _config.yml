@@ -3,6 +3,8 @@ description: Portland based dutch/englishman and web developer at Daylight Studi
 url: http://pietvanzoen.com
 
 markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 pygments: true
 main_title: Piet van Zoen | Portland based web developer.
 
