@@ -24,6 +24,8 @@ Open up `.bash_profile` or `.bashrc` in your home folder using your text editor,
 
 Once you have your `.bash_profile` open you can add `export VAR_NAME=VALUE` to set an environment variable. Once you're done save, exit and type `. .bash_profile` in your terminal to reload .bash_profile. That's it.
 
+**Update:** A note about case-sensitivity. Depending on what system/software you're using variables are or are not case-sensitive. Always be sure not to accidently overwrite other variables in your environment. In some systems `Var_Name` will be the same as `VAR_NAME`.
+
 Using ENV variables in code
 ---
 
@@ -67,7 +69,7 @@ Finally here are a couple quick commands for looking up what ENV variables have 
 
 - To print out a list of all your ENV variables just use the command `env`.
 - To sort the output of ENV alphabetically use `env | sort`. 
-- To search for a ENV variable use `env | grep WIBBLE`. Remember this is case-sensitive.
+- To search for a ENV variable use `env | grep WIBBLE`. ~~Remember this is case-sensitive~~. Be aware that this can be case-sensitive depending on what system/software you're using.
 
 If you have any questions or corrections just comment or email me.
 
