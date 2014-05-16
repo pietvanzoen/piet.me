@@ -24,12 +24,12 @@ Open up `.bash_profile` or `.bashrc` in your home folder using your text editor,
 
 Once you have your `.bash_profile` open you can add `export VAR_NAME=VALUE` to set an environment variable. Once you're done save, exit and type `. .bash_profile` in your terminal to reload .bash_profile. That's it.
 
-**Update:** A note about case-sensitivity. Depending on what system/software you're using variables are or are not case-sensitive. Always be sure not to accidently overwrite other variables in your environment. In some systems `Var_Name` will be the same as `VAR_NAME`.
+**Update:** A note about case-sensitivity. Depending on what system/software you're using variables are or are not case-sensitive. Always be sure not to accidentally overwrite other variables in your environment. In some systems `Var_Name` will be the same as `VAR_NAME`.
 
 Using ENV variables in code
 ---
 
-ENV Variables are accessable by basically any serverside programming language. Here are a few examples:
+ENV Variables are accessible by basically any server-side programming language. Here are a few examples:
 
 Say I set this in my `.bash_profile`:
 
