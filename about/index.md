@@ -16,9 +16,9 @@ A little about me
 - Has never visited stone henge.
 - Drinks a vast amount of tea (the English side).
 - Eats fries (chips) with mayonnaise (the Dutch side).
-- Moved to Portland, Oregon in 2009 to marry a girl named Keven.
+- Moved to Portland, Oregon in 2009 and married [a girl named Keven][girlkeven].
 - Is part titanium. [Exhibit A](https://www.dropbox.com/s/b0p8fz7f2406i67/femur%20after%20op.jpg)
-- Supports The Netherlands rather than England in sporting events.
+- Supports The Netherlands rather than England in sporting events. Hup!
 - Guardian to [a greyhound named Django](https://www.dropbox.com/sc/8ye94tzekozbvpb/4fKaH-TIWI).
 - Herder of [cats](https://www.dropbox.com/sh/xzf0qw7j3pld7wy/4vcKJidL7r).
 - Hoarder of gifs.
@@ -34,7 +34,8 @@ Stuff I use and love
 ### Things
 
 - [Kenisis Advantage Keyboard][kenisis]
-- [Grado iGi in-ear-headphones][grado]
+- [Grado iGi earphones][grado] (for on the go)
+- [AKG K550 headphones][akg] (at my desk)
 
 ### Software
 
@@ -51,6 +52,7 @@ Stuff I use and love
 
 [kenisis]: http://www.kinesis-ergo.com/shop/advantage-for-pc-mac/
 [grado]: http://www.gradolabs.com/page_headphones.php?item=cac74d2c37c43ddd760763ef5fcd780b
+[akg]: http://www.headphone.com/collections/over-ear-headphones/products/akg-k-550
 [sublime]: http://www.sublimetext.com/
 [sublime-git]: https://sublimegit.net/
 [sublime-gitgutter]: https://sublime.wbond.net/packages/GitGutter
@@ -60,3 +62,4 @@ Stuff I use and love
 [dash]: http://kapeli.com/dash
 [sparrow]: https://itunes.apple.com/us/app/sparrow/id417250177
 [alfred]: http://www.alfredapp.com/
+[girlkeven]: http://www.girlkeven.com/
