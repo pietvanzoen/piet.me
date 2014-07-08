@@ -34,8 +34,7 @@ Stuff I use and love
 ### Things
 
 - [Kenisis Advantage Keyboard][kenisis]
-- [Grado iGi earphones][grado] (for on the go)
-- [AKG K550 headphones][akg] (at my desk)
+- [Grado iGi earphones][grado]
 
 ### Software
 
