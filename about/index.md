@@ -46,7 +46,6 @@ Stuff I use and love
 - [Rdio][rdio] - Moooosik.
 - [Moom][moom] - Window management. Move, zoom windows, and save window layouts.
 - [Dash][dash] - Documentation Browser.
-- [Sparrow][sparrow] - Email client. Still prefer it to the other options.
 - [Alfred][alfred] - Hyper productivity app. Like OSX spotlight on steriods.
 
 [kenisis]: http://www.kinesis-ergo.com/shop/advantage-for-pc-mac/
@@ -59,6 +58,5 @@ Stuff I use and love
 [rdio]: http://rdio.com
 [moom]: http://manytricks.com/moom/
 [dash]: http://kapeli.com/dash
-[sparrow]: https://itunes.apple.com/us/app/sparrow/id417250177
 [alfred]: http://www.alfredapp.com/
 [girlkeven]: http://www.girlkeven.com/
