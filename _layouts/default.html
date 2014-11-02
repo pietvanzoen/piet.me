@@ -37,8 +37,7 @@
 			</h1>
 
 			<nav>
-				<a {% if page.url == '/index.html' %}class="active"{% endif %} href="/">Home</a>
-				<a {% if page.title == 'About' %}class="active"{% endif %} href="/about">About</a>
+				<a {% if page.url contains 'blog' %}class="active"{% endif %} href="/blog">Blog</a>
 				<a {% if page.url contains 'projects' %}class="active"{% endif %} href="/projects">Projects</a>
 			</nav>
 		</header>
