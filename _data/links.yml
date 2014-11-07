@@ -1,0 +1,19 @@
+
+- name: Articles
+  links:
+    - title: The Agony and Ecstasy of Building with Data
+      url: https://medium.com/the-year-of-the-looking-glass/the-agony-and-ecstasy-of-building-with-data-56215764d67c
+
+- name: Videos
+  links:
+    - title: Steve Sanderson - Architecting large Single Page Applications with Knockout.js
+      url: http://vimeo.com/97519516
+
+- name: Podcasts
+  links:
+    - title: The Web Ahead
+      url: http://5by5.tv/webahead
+
+    - title: 'The Non Breaking Space Show - Episode #35 - Daniel Ryan'
+      url: http://goodstuff.fm/nbsp/35
+

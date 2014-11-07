@@ -1,0 +1,13 @@
+---
+title: Links
+layout: 'page'
+---
+
+{% for category in site.data.links %}
+<h2>{{category.name}}</h2>
+<ul>
+{% for link in category.links %}
+	<li><a href="{{ link.url }}">{{link.title}}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}
