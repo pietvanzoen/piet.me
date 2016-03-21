@@ -2,15 +2,14 @@
 layout: post
 title: "Lodash, Knockout, and functional programming"
 date: "2016-03-21"
-excerpt: "Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don't always play nice if you happen to use Knockout observables. Let's fix that."
 published: true
 categories:
 - blog
 ---
 
-Lodash (and functional utility libraries like it) are wonderful. They give us tools to write declarative and readable code, free of needless functions and variables.
+Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don't always play nice if you happen to use Knockout observables. I'm going to introduce a way to make handling observables in functional style easier.
 
-Say you want to create an array of peoples `age` in `years` from this array:
+Let's start with an observable free example. Say you want to create an array of peoples `age` in `years` from this array:
 
 ~~~js
 var people = [
