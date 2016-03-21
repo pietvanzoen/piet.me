@@ -189,6 +189,6 @@ Right now the kompose API offers alternative methods for `_.get`, `_.property`, 
 Further Reading
 ---
 
-- [Kompose API Docs](https://github.com/pietvanzoen/knockout-kompose/tree/master/doc)
+- [Kompose on Github](https://github.com/pietvanzoen/knockout-kompose)
 - [Point-free programming is not pointless (post)](http://bahmutov.calepin.co/point-free-programming-is-not-pointless.html)
 - [JavaScript Allongé (ES5) - A long pull of functions, combinators, & decorators (book)](https://leanpub.com/javascript-allonge)
