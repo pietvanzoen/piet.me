@@ -9,7 +9,7 @@ categories:
 
 Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don't always play nice if you happen to use Knockout observables. I'm going to introduce a way to make handling observables in functional style easier.
 
-Let's start with an observable free example. Say you want to create an array of peoples `age` in `years` from this array:
+Let's start with a plain object example. Say you want to create an array of people's `age` in `years` from this array:
 
 ~~~js
 var people = [
@@ -24,7 +24,7 @@ people.map(function (person) {
 });
 // => [55, 41, 34]
 
-// a better way with .property
+// a better way with _.property
 people.map(_.property('age.years'));
 // => [55, 41, 34]
 
@@ -33,13 +33,12 @@ _.map(people, 'age.years')
 // => [55, 41, 34]
 ~~~
 
-Clean readable code. Excellent!
-
+Clean succinct code. Excellent!
 
 Adding Observables
 ---
 
-If you're using [Knockout](knockoutjs.com) this becomes a little more tricky since your object path might include observables that need to be unwrapped:
+If you're using [Knockout](knockoutjs.com), this becomes a little more tricky because your object path might include observables that need to be unwrapped:
 
 ~~~js
 var people = ko.observableArray([
@@ -58,7 +57,7 @@ _.map(people(), 'age.years');
 // => [undefined, undefined, undefined]
 ~~~
 
-Here Lodash is traversing the property path without invoking the observables so rather than retrieving the value of `years` from inside the observable `age` it's trying to find the property `years` on the actual observable instance. Since `years` is not defined there, it just returns `undefined` for each person.
+Here Lodash is traversing the property path without invoking the observables, so rather than retrieving the value of `years` from inside the observable it's trying to find the property `years` on the actual observable instance. Since `years` does not exist, it just returns `undefined` for each person.
 
 Here's how we might get around this:
 
@@ -79,7 +78,7 @@ _.map(people(), function (person) {
 // => Uncaught TypeError: person.age is not a function
 ~~~
 
-Dammit. If this were a written without obserables and using `_.map(people, 'age.years');` we'd simply get `[55, 41, 30, undefined]` because if the path does not exist Lodash will simply return `undefined` for that person.
+Dammit. If this were a written without observables and using `_.map(people, 'age.years');` we'd simply get `[55, 41, 30, undefined]`. Lodash is robust enough that it will simply return `undefined` for that person.
 
 Here's how we'd get around that problem:
 
@@ -89,9 +88,10 @@ _.map(people(), function (person) {
 });
 // => [55, 41, 30, undefined]
 ~~~
-:(
 
-And so that our array is always up to date we'll probably want a computed observable:
+We have to use a conditional to get around our `null` problem, which adds complexity, which makes the code less readable.
+
+Since we're using knockout, we probably want this to be a computed observable, so that the value we get is always up to date with our `people` array.
 
 ~~~js
 var peopleAgeYears = ko.pureComputed(function () {
@@ -103,7 +103,7 @@ peopleAgeYears();
 // => [55, 41, 30, undefined]
 ~~~
 
-Yikes. This is managable but damn, it's nowhere near as nice as `_.map(people, 'age.years');`.
+Yikes. Let's take stock. We have two nested functions, a variable used twice, a path named twice, and an `undefined` return. This is manageable but damn, it's nowhere near as nice as `_.map(people, 'age.years');`.
 
 ## Introducing Kompose
 
@@ -133,7 +133,7 @@ Nice! Just like the verbose `peopleAgeYears` example above, this computed will t
 Going the extra functional mile
 ---
 
-Like `_.map`, passing a path to `kp.computedMap` is a convenience feature that creates an iteratee function using `kp.property`. You can also pass your own iteratee to `kp.computedMap`. Instead of everyone's age, say we wanted a computed that calculated everyone's "[half your age plus seven](https://www.youtube.com/watch?v=7dsVYswSfow)" age.
+Like `_.map`, passing a path to `kp.computedMap` is a convenience feature that creates an iteratee function using `kp.property`. You can also pass your own iteratee function to `kp.computedMap`. Instead of everyone's age, say we wanted a computed that calculated everyone's "[half your age plus seven](https://www.youtube.com/watch?v=7dsVYswSfow)" age.
 
 Let's start with the long(ish)form:
 
@@ -156,7 +156,7 @@ function datableAge(age) {
 }
 ~~~
 
-We can also do away with setting the `personAgeYears` variable.
+We can also do away with setting the `personAgeYears` variable and just pass the return value from `kp.get` straight into the `datableAge` function.
 
 ~~~js
 var youngestDatableAges = kp.computedMap(people, function (person) {
@@ -168,21 +168,21 @@ youngestDatableAges();
 
 Not bad! But wouldn't it be great if we didn't have to define the callback function and the `person` variable? Well, there's a way with `_.flow`.
 
-If you've never used `_.flow` before (sometimes called `pipe` in other funtional libraries), read up on it and start using it. `_.flow` returns a function that allows you to pipe a value through several functions, with each function passing it's return value into the next. Here's how it fits in our example:
+If you've never used `_.flow` before (sometimes called `pipe` in other functional libraries), I really recommend reading up and trying it out. `_.flow` returns a function that allows you to pipe a value through several functions, with each function passing it's return value into the next. Here's how it fits in our example:
 
 ~~~js
 var youngestDatableAges = kp.computedMap(people, _.flow(kp.property('age.years'), datableAge));
 youngestDatableAges();
 // => [34.5, 27.5, 22, 26.5];
 ~~~
-That's it! No function declarations. No uneccessary variables. This is Point Free (or Tacit) Functional Programming:
+That's it! No function declarations. No unnecessary variables. This is Point Free (or Tacit) Functional Programming:
 
 > Tacit programming, also called point-free style, is a programming paradigm in which function definitions do not identify the arguments (or "points") on which they operate. Instead the definitions merely compose other functions, among which are combinators that manipulate the arguments. ~ [Wikipedia](https://en.wikipedia.org/wiki/Tacit_programming)
 
-
 ## Conclution
 
-In the these examples I've tried to illustrate how Kompose might work alongside Lodash to produce succinct, point-free, functional code that's easy to read. But it's not limited to the examples above. When I created Kompose I did not want to replace Lodash, I wanted to give Knockout users a tool to make it easier to write functional code that handles observables.
+
+In the these examples I've tried to illustrate how Kompose might work alongside Lodash to produce succinct, point-free, functional code that's easy to read. But it's not limited to the examples above. When I wrote Kompose I did not want to replace Lodash, I wanted to give Knockout users a tool to make it easier to write functional code that handles observables.
 
 Right now the kompose API offers alternative methods for `_.get`, `_.property`, `_.method` and `_.matchesProperty`. Plus computed generators `kp.computedApply` and `kp.computedMap`. [Check out the docs](https://github.com/pietvanzoen/knockout-kompose/tree/master/doc) and please make any suggestions for improvements.
 
