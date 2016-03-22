@@ -179,8 +179,7 @@ That's it! No function declarations. No unnecessary variables. This is Point Fre
 
 > Tacit programming, also called point-free style, is a programming paradigm in which function definitions do not identify the arguments (or "points") on which they operate. Instead the definitions merely compose other functions, among which are combinators that manipulate the arguments. ~ [Wikipedia](https://en.wikipedia.org/wiki/Tacit_programming)
 
-## Conclution
-
+## Conclusion
 
 In the these examples I've tried to illustrate how Kompose might work alongside Lodash to produce succinct, point-free, functional code that's easy to read. But it's not limited to the examples above. When I wrote Kompose I did not want to replace Lodash, I wanted to give Knockout users a tool to make it easier to write functional code that handles observables.
 
