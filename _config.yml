@@ -11,3 +11,6 @@ main_title: Piet van Zoen | Portland based web developer.
 permalink: /:categories/:title
 
 exclude: ["CNAME"]
+
+gems:
+  - jekyll-redirect-from

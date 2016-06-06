@@ -21,7 +21,6 @@
 		<link rel="stylesheet" href="/assets/css/{{page.css}}.css">
 		{% endif %}
 
-		<script src="/assets/js/modernizr.js"></script>
 	</head>
 	<body class="{{page.body_class}} {% if page.title %}page_{{ page.title | downcase }}{% endif %}">
 		<header>
@@ -38,8 +37,6 @@
 
 			<nav>
 				<a {% if page.url contains 'blog' %}class="active"{% endif %} href="/blog">Blog</a>
-				<a {% if page.url contains 'projects' %}class="active"{% endif %} href="/projects">Projects</a>
-				<a {% if page.url contains 'links' %}class="active"{% endif %} href="/links">Links</a>
 			</nav>
 		</header>
 
@@ -50,7 +47,6 @@
 
 		<div class="clearfix"></div>
 		<footer>
-			<p><small id="listeningto"></small></p>
 			<nav>
 				<a href="http://twitter.com/pietvanzoen" rel="nofollow">Twitter</a>
 				<a href="https://github.com/pietvanzoen" rel="nofollow">Github</a>
