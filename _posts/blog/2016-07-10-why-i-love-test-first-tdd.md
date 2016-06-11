@@ -5,11 +5,15 @@ date: "2016-06-10"
 published: true
 categories:
 - blog
+tags:
+  - TDD
+  - BDD
+  - testing
 ---
 
 Twelve months ago I had hardly written a single test. After some encouragement and guidance on how to write tests my world changed. Yes, there's lots of evidence that says writing tests reduces bug density (which is awesome), but that alone isn't necessarily going to persuade you to take the time to do them. What made me adopt a workflow where I write tests first? The fact that I enjoyed it!
 
-_Preface: I'm not going to cover how to test in this post. Just why I love it. But how you test and tooling for testing makes a big difference on the fun factor. My quick recommendation is checking out Wallaby. I'll try to do a post on TDD tooling and workflow in the future, or just find some more useful links._
+_Preface: I'm not going to cover how to test in this post. Just why I love it. But how you test and tooling for testing makes a big difference on the fun factor. My quick recommendation is checking out [Wallaby.js](https://wallabyjs.com/). I'll try to do a post on TDD tooling and workflow in the future, or just find some more useful links._
 
 ## What makes test-first TDD fun?
 
