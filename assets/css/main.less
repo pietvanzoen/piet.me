@@ -103,28 +103,32 @@ h1, h2, h3, h4, h5, h6,
 		.first_headline;
 	}
 }
-h1, h2,
-.h1, .h2 {
+h1, h3,
+.h1, .h3 {
 	font-weight: 300;
+}
+h2, .h2 {
+  font-weight: 500;
 }
 h4, h5, h6,
 .h4, .h5, .h6 {
+   font-weight: 700;
 	margin: 0;
 	line-height: 1.5;
 }
 h1, .h1 {
-	.font-size(4.5);
+	.font-size(4);
 	text-align: center;
 }
 h2, .h2 {
-	.font-size(3.5);
+	.font-size(3);
 }
 h3, .h3 {
-	.font-size(1.6);
+	.font-size(2.4);
 	line-height: 1.5em;
 }
 h4, .h4 {
-	.font-size(1.3);
+	.font-size(1.7);
 	line-height: 1.5em;
 }
 h5, .h5 {
@@ -137,7 +141,7 @@ h6, .h6 {
 }
 
 a {
-	color:@dark;
+    color: @copy;
 	border-bottom:1px solid @lime;
 	text-decoration:none
 }
@@ -249,11 +253,12 @@ article {
 		font-size: 0.8em;
 		font-weight: 600;
 	}
-	img { border: 1px solid #e7e7e7;}
+	//img { border: 1px solid #e7e7e7;}
 }
 
 article.post {
 	border-bottom: 1px solid @light;
+    time { margin-bottom: 1em;}
 }
 
 .post-header-img {
@@ -277,6 +282,10 @@ article.post {
 
  .ratio-16-9{
    padding-bottom:56.25%; /* 9/16*100 */
+ }
+
+ .ratio-5-1 {
+   padding-bottom:20%; /* 1/5*100 */
  }
 
  .ratio-4-3{
@@ -385,25 +394,26 @@ article.post {
 
 .lt-ie9 .arcify { display: none; }
 
-/** Other Layouts
----------------------------------------- **/
-.blank_layout {
-	header, footer { display: none; }
-}
-.dark_page {
-	&, body { background: #333;}
-}
+///** Other Layouts
+//---------------------------------------- **/
+//.blank_layout {
+//	header, footer { display: none; }
+//}
+//.dark_page {
+//	&, body { background: #333;}
+//}
 
-/** Portfolio List
----------------------------------------- **/
-.portfolio_list {
-	article { text-align: center; }
-	img { display: block; margin:0 auto 0.2em;  }
-}
-
-.img_right { display: block; margin: 0 auto 1em; }
-
-.img_circle { border-radius: 50%; }
+///** Portfolio List
+//---------------------------------------- **/
+//.portfolio_list {
+//	article { text-align: center; }
+//	img { display: block; margin:0 auto 0.2em;  }
+//}
+//
+//.img_right { display: block; margin: 0 auto 1em; }
+//.img_left { float: left; margin: 1em 1em 1em 0; }
+//
+//.img_circle { border-radius: 50%; }
 
 /* ==========================================================================
    Media Queries
@@ -489,16 +499,16 @@ article.post {
 	#disqus_thread { max-width: 750px; }
 
 
-	.portfolio_list {
-		article { text-align: left;  width: 30%; margin: 1.5%; max-width: none; float: left; display: inline; border-bottom: none; padding-bottom: 0; }
-	}
+	//.portfolio_list {
+	//	article { text-align: left;  width: 30%; margin: 1.5%; max-width: none; float: left; display: inline; border-bottom: none; padding-bottom: 0; }
+	//}
 
 	/** Page Load animation **/
 	.cssanimations {
 		main { opacity:0; .smooth_animation; .animation(pageload 1s cubic-bezier(0.445,0,0,1) 0s 1 normal forwards); }
 	}
 
-	.img_right { float: right; margin: 0 0 1em 2em; }
+	//.img_right { float: right; margin: 0 0 1em 2em; }
 
 
 }
