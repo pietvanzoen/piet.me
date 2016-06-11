@@ -238,7 +238,7 @@ nav {
 /** Article
 ---------------------------------------- **/
 article {
-	overflow: auto;
+	overflow: 0 auto;
 	margin: 2em 0;
 	padding-bottom: 2em;
 	&:first-child,
@@ -255,6 +255,44 @@ article {
 article.post {
 	border-bottom: 1px solid @light;
 }
+
+.post-header-img {
+  margin: 1em 0;
+  img {
+    border: none;
+  }
+  figcaption {
+    font-size: 0.6em;
+    display: block;
+    text-align: right;
+  }
+}
+
+.embed-container {
+   position: relative;
+   height: 0;
+   overflow: hidden;
+   background-color: #f7f7f7;
+ }
+
+ .ratio-16-9{
+   padding-bottom:56.25%; /* 9/16*100 */
+ }
+
+ .ratio-4-3{
+   padding-bottom:75%; /* 3/4*100 */
+ }
+
+ .ratio-1-1{
+   padding-bottom:100%; /* … */
+ }
+
+.embed-container img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width:100%;
+ }
 
 
 /** Arc Animation
