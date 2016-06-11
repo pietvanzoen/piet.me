@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why I love test-first TDD"
-date: "2016-07-10"
+date: "2016-06-10"
 published: true
 categories:
 - blog
