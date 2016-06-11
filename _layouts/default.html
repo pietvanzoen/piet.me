@@ -16,6 +16,8 @@
 		{% if page.title %}
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="{{ page.title }}" />
+		<meta property="og:description" content="{{ page.excerpt | strip_html }}" />
+		<meta name="description" content="{{ page.excerpt | strip_html }}" />
 
 		{% for tag in page.tags %}
 		<meta property="article:tag" content="{{ tag }}">
@@ -23,6 +25,8 @@
 
 		{% else %}
 		<meta property="og:type" content="website" />
+		<meta property="og:description" content="{{site.description}}" />
+		<meta name="description" content="{{site.description}}" />
 		{% endif %}
 
 		{% include meta.html property="og:site_name" content=site.title %}
