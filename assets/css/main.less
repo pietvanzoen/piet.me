@@ -23,7 +23,7 @@ input,
 select,
 textarea {
 	color: @copy;
-	font-family: "Open Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 }
 
@@ -46,6 +46,13 @@ hr {
 	margin: 1em 0;
 	padding: 0;
 	&:extend(.clearfix all);
+}
+
+p {
+  margin: 1em 0;
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 small {
@@ -85,7 +92,7 @@ html {
 body {
 	position: relative;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.6;
 	&:extend(.clearfix all);
 	margin: 0 auto;
 }
