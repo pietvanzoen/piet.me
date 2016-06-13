@@ -64,8 +64,8 @@
 
 	</head>
 	<body class="{{page.body_class}} {% if page.title %}page_{{ page.title | downcase }}{% endif %}">
-		<header>
-			<p>Portland based dutch/englishman<br> and web developer at <a href="https://cozy.co" target="_blank">Cozy</a>.</p>
+		<header class="header">
+			<p>Portland based dutch/englishman<br> and web developer at <a href="https://cozy.co">Cozy</a>.</p>
 			<h1>
 				<div class="arcify">
 					<span class="arc no0 left half" style="-webkit-animation-duration: 4s; -moz-animation-duration: 4s; animation-duration: 4s"></span>
@@ -92,6 +92,9 @@
 				<a href="mailto:hi@pietvanzoen.com" rel="nofollow">Email</a>
 			</nav>
 			<p><small>Built with <a href="https://jekyllrb.com">Jekyll</a>. Hosted by <a href="https://pages.github.com">Github</a>.</small></p>
+			<p>
+				<small>&copy; {{ site.time | date: '%Y' }} Piet van Zoen</small>
+			</p>
 		</footer>
 
 		<script>

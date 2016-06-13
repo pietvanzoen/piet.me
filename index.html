@@ -9,17 +9,24 @@ redirect_from:
 ---
 
 <article>
-	<p class="text-large">Currently at <a href="https://cozy.co">Cozy</a>, previously at <a href="http://thedaylightstudio.com/">Daylight Studio.</a> I'm a web developer who's passionate about functional-programming, my greyhound Django, my wife Keven, and fries with mayo.</p>
+	<img src="./assets/images/piet_sqr.jpg" width="130" class="img_right img_circle js_about_img" alt="">
+	<p class="text-large">Currently at <a href="https://cozy.co">Cozy</a>, previously at <a href="http://thedaylightstudio.com/">Daylight Studio.</a> I'm a web developer who's passionate about functional-programming, my greyhound Django, my wife <a href="https://twitter.com/girl_keven">Keven</a>, and fries with mayo.</p>
 </article>
 
-{% for post in site.posts %}
+<hr>
+
+{% for post in site.posts limit:5 %}
 <article class="post">
 	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 	<time>{{ post.date | date_to_string }}</time>
-	<p>{{ post.excerpt | markdownify }}</p>
+	{% if post.unsplash_img_id %}
+	<a href="{{ post.url }}"><img class="img_right img_circle" src="https://source.unsplash.com/{{ post.unsplash_img_id }}/260x260" width="130" height="130" alt=""></a>
+	{% endif %}
+	{{ post.excerpt | markdownify }}
 </article>
+<hr>
 {% endfor %}
 
 <section>
-	<a href="/blog/archive">Archive</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/feed.xml">RSS</a>
+	<a href="/blog/archive">Older posts</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/feed.xml">RSS</a>
 </section>
