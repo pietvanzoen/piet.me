@@ -120,7 +120,7 @@ h1, h3,
 	font-weight: 300;
 }
 h2, .h2 {
-  font-weight: 500;
+  font-weight: 400;
 }
 h4, h5, h6,
 .h4, .h5, .h6 {
@@ -152,6 +152,10 @@ h6, .h6 {
 	text-transform: uppercase;
 }
 
+b, strong {
+	font-weight: 500;
+}
+
 a, abbr {
     color: @copy;
 	border-bottom:1px solid @lime;
@@ -166,6 +170,19 @@ a:hover, a:focus {
 	text-decoration:none
 }
 
+a[class*="icon-"] {
+	font-size: 1.2em;
+	border-bottom: none;
+}
+
+.hide {
+	display: none;
+	visibility: hidden;
+}
+
+.text-center {
+	text-align: center;
+}
 
 pre,code
 {
