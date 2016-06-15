@@ -49,9 +49,6 @@ hr {
 	&:extend(.clearfix all);
 	clear: both;
 }
-hr.clear {
-	clear: both;
-}
 
 p {
   margin: 1em 0;
@@ -243,12 +240,13 @@ header {
 .header {
 	background-color: @lighter;
 	p {
-		margin: 0;
+		font-size: 0.8em;
 		color: @grey;
 	}
 }
 
 header h1 {
+	padding-left: 45px;
 	text-align: center;
 	position: relative;
 	margin: 0 0 0.33em;
@@ -390,13 +388,16 @@ article.post {
 	height: ~"@{size}px";
 	margin: ~"@{offset}px";
 }
-
+.arcify-container {
+	position: relative;
+}
 .arcify {
 	width: 40px;
 	height: 40px;
 	display: inline-block;
-	position: relative;
-	top: 10px;
+	position: absolute;
+	transform: translate(-45px, -50%);
+	top: 50%;
 }
 .arc {
 	display:block;
@@ -500,7 +501,9 @@ article.post {
 @media only screen and (min-width: 50em) {
 
 	h1 { text-align: left; }
-	header h1 { text-align: right; }
+	header h1 {
+		text-align: right;
+	}
 
 	body { width: 100%; }
 
@@ -510,13 +513,13 @@ article.post {
 		padding-top: 5em;
 	}
 
-	header,
+	.header,
 	footer {
 		position: fixed;
 		left: 0;
 		text-align: right;
 		padding-right: 2%;
-		padding-left: 2%;
+		padding-left: 1em;
 	}
 
 	header {

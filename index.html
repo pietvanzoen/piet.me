@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <article>
-	<img src="./assets/images/piet_sqr.jpg" width="130" class="img_right img_circle js_about_img" alt="">
+	<img src="./assets/images/piet_sqr.jpg" class="img_right img_circle js_about_img" alt="" style="min-width: 120px; width: 20vw; max-width: 180px">
 	<p class="text-large">Currently at <a href="https://cozy.co">Cozy</a>, previously at <a href="http://thedaylightstudio.com/">Daylight Studio.</a> I'm a web developer who's addicted to functional-programming, test driven development, my greyhound Django, my wife <a href="https://twitter.com/girl_keven">Keven</a>, and fries with mayo.</p>
 </article>
 
@@ -20,7 +20,7 @@ redirect_from:
 	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 	<time>{{ post.date | date_to_string }}</time>
 	{% if post.unsplash_img_id %}
-	<a href="{{ post.url }}"><img class="img_right img_circle" src="https://source.unsplash.com/{{ post.unsplash_img_id }}/260x260" width="130" height="130" alt=""></a>
+	<a href="{{ post.url }}"><img class="img_right img_circle" src="https://source.unsplash.com/{{ post.unsplash_img_id }}/260x260" style="min-width: 100px; width: 18vw; max-width: 130px" alt=""></a>
 	{% endif %}
 	{{ post.excerpt | markdownify }}
 </article>

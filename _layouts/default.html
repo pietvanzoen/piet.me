@@ -65,8 +65,7 @@
 	</head>
 	<body class="{{page.body_class}} {% if page.title %}page_{{ page.title | downcase }}{% endif %}">
 		<header class="header">
-			<p>Portland based dutch/englishman<br> and web developer at <a href="https://cozy.co">Cozy</a>.</p>
-			<h1>
+			<h1 class="arcify-container">
 				<div class="arcify">
 					<span class="arc no0 left half" style="-webkit-animation-duration: 4s; -moz-animation-duration: 4s; animation-duration: 4s"></span>
 					<span class="arc no1 left half" style="-webkit-animation-duration: 7s; -moz-animation-duration: 7s; animation-duration: 7s"></span>
@@ -75,6 +74,13 @@
 				</div>
 				<a href="/">pietvanzoen</a>
 			</h1>
+
+			<nav>
+				<a href="https://twitter.com/pietvanzoen" rel="nofollow" class="icon-twitter-1" title="Twitter"><span class="hide">Twitter</span></a>
+				<a href="https://github.com/pietvanzoen" rel="nofollow" class="icon-github-alt" title="Github"><span class="hide">Github</span></a>
+				<a href="https://www.linkedin.com/in/pietvanzoen" rel="nofollow" class="icon-linkedin-1" title="LinkedIn"><span class="hide">LinkedIn</span></a>
+				<a href="mailto:hi@pietvanzoen.com" rel="nofollow" class="icon-envelope-o" title="Email"><span class="hide">Email</span></a>
+			</nav>
 		</header>
 
 		<main>
@@ -84,12 +90,6 @@
 
 		<div class="clearfix"></div>
 		<footer>
-			<nav><a href="https://twitter.com/pietvanzoen" rel="nofollow" class="icon-twitter-1" title="Twitter"><span class="hide">Twitter</span></a>
-				<a href="https://github.com/pietvanzoen" rel="nofollow" class="icon-github-alt" title="Github"><span class="hide">Github</span></a>
-				<!--<a href="https://open.spotify.com/user/pietvanzoen" rel="nofollow" class="icon-spotify" title="Spotify"><span class="hide">Spotify</span></a>-->
-				<a href="https://www.linkedin.com/in/pietvanzoen" rel="nofollow" class="icon-linkedin-1" title="LinkedIn"><span class="hide">LinkedIn</span></a>
-				<a href="mailto:hi@pietvanzoen.com" rel="nofollow" class="icon-envelope-o" title="Email"><span class="hide">Email</span></a>
-			</nav>
 			<p>
 				<small>Built with <a href="https://jekyllrb.com">Jekyll</a>. Hosted by <a href="https://pages.github.com">Github</a>.</small><br>
 				<small>&copy; {{ site.time | date: '%Y' }}&nbsp;&nbsp;Piet van Zoen</small>
