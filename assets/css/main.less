@@ -209,27 +209,27 @@ blockquote { border-left: 2px solid @lime; margin-left: 0; padding-left: 20px; f
 /** Basic Template
 ---------------------------------------- **/
 
-main,
-header,
-footer {
+.site-main,
+.site-header,
+.site-footer {
 	padding-top: 2em;
 	padding-bottom: 1em;
 	&:extend(.clearfix all);
 }
 
-.header {
+.site-header {
 	padding-left: 2.5%;
 	padding-right: 2.5%;
 }
 
-main,
-footer {
+.site-main,
+.site-footer {
 	width: 95%;
 	margin: 0 auto;
 }
 
-footer,
-header {
+.site-footer,
+.site-header {
 	text-align: center;
 }
 
@@ -237,7 +237,7 @@ header {
 /** Header
 ---------------------------------------- **/
 
-.header {
+.site-header {
 	background-color: @lighter;
 	p {
 		font-size: 0.8em;
@@ -245,7 +245,7 @@ header {
 	}
 }
 
-header h1 {
+.site-header h1 {
 	padding-left: 45px;
 	text-align: center;
 	position: relative;
@@ -265,7 +265,7 @@ header h1 {
 
 /** Navigation
 ---------------------------------------- **/
-header nav {
+.site-header .site-nav {
 	margin-bottom: 1em;
 	.active {
 		color: @lime;
@@ -273,7 +273,7 @@ header nav {
 	}
 }
 
-nav {
+.site-nav {
 	a {
 		display: inline-block;
 		margin: 0 0 0 0.5em;
@@ -465,25 +465,25 @@ article.post {
 
 
 @media only screen and (min-width:50em) and (max-width:1100px)  {
-	header,
-	footer {
+	.site-header,
+	.site-footer {
 		width: 300px;
 	}
-	main {
+	.site-main {
 		padding-left: 300px;
 	}
 
 }
 
 @media only screen and (min-width:1100px)  {
-	header h1 {
+	.site-header h1 {
 		.font-size(4.5);
 	}
-	header,
-	footer {
+	.site-header,
+	.site-footer {
 		width: 375px;
 	}
-	main {
+	.site-main {
 		padding-left: 370px;
 	}
 }
@@ -501,20 +501,20 @@ article.post {
 @media only screen and (min-width: 50em) {
 
 	h1 { text-align: left; }
-	header h1 {
+	.site-header h1 {
 		text-align: right;
 	}
 
 	body { width: 100%; }
 
-	header,
-	main
+	.site-header,
+	.site-main
 	{
 		padding-top: 5em;
 	}
 
-	.header,
-	footer {
+	.site-header,
+	.site-footer {
 		position: fixed;
 		left: 0;
 		text-align: right;
@@ -522,24 +522,23 @@ article.post {
 		padding-left: 1em;
 	}
 
-	header {
+	.site-header {
 		z-index: 100;
 		height: 100%;
 	}
 
-	main
-	{
+	.site-main {
 		.clearfix;
 		padding-bottom: 2em;
 	}
 
-	footer {
+	.site-footer {
 		bottom: 0;
 		z-index: 101;
 	}
 
 	article,
-	footer,
+	.site-footer,
 	hr,
 	#disqus_thread { max-width: 750px; }
 
@@ -550,7 +549,7 @@ article.post {
 
 	/** Page Load animation **/
 	.cssanimations {
-		main { opacity:0; .smooth_animation; .animation(pageload 1s cubic-bezier(0.445,0,0,1) 0s 1 normal forwards); }
+		.site-main { opacity:0; .smooth_animation; .animation(pageload 1s cubic-bezier(0.445,0,0,1) 0s 1 normal forwards); }
 	}
 
 	//.img_right { float: right; margin: 0 0 1em 2em; }

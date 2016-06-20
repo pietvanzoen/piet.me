@@ -64,7 +64,7 @@
 
 	</head>
 	<body class="{{page.body_class}} {% if page.title %}page_{{ page.title | downcase }}{% endif %}">
-		<header class="header">
+		<header class="site-header">
 			<h1 class="arcify-container">
 				<div class="arcify">
 					<span class="arc no0 left half" style="-webkit-animation-duration: 4s; -moz-animation-duration: 4s; animation-duration: 4s"></span>
@@ -75,7 +75,7 @@
 				<a href="/">pietvanzoen</a>
 			</h1>
 
-			<nav>
+			<nav class="site-nav">
 				<a href="https://twitter.com/pietvanzoen" rel="nofollow" class="icon-twitter-1" title="Twitter"><span class="hide">Twitter</span></a>
 				<a href="https://github.com/pietvanzoen" rel="nofollow" class="icon-github-alt" title="Github"><span class="hide">Github</span></a>
 				<a href="https://www.linkedin.com/in/pietvanzoen" rel="nofollow" class="icon-linkedin-1" title="LinkedIn"><span class="hide">LinkedIn</span></a>
@@ -83,13 +83,13 @@
 			</nav>
 		</header>
 
-		<main>
+		<main class="site-main">
 			{{ content }}
 		</main>
 
 
 		<div class="clearfix"></div>
-		<footer>
+		<footer class="site-footer">
 			<p>
 				<small>Built with <a href="https://jekyllrb.com">Jekyll</a>. Hosted by <a href="https://pages.github.com">Github</a>.</small><br>
 				<small>&copy; {{ site.time | date: '%Y' }}&nbsp;&nbsp;Piet van Zoen</small>
