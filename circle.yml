@@ -4,9 +4,13 @@ general:
     ignore:
       - gh-pages
 
+compile:
+  override:
+    - bundle exec middleman build
+
 test:
   override:
-    - bundle exec htmlproofer --http-status-ignore "999,401,403" --url-ignore "/pietvanzoen.com/" ./build
+    - bundle exec ruby test.rb
 
 deployment:
   build:
