@@ -18,7 +18,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.5;
   color: var(--text-color);
 }
 
@@ -119,7 +119,7 @@ a, a:hover {
 }
 
 .main {
-  width: 40em;
+  width: 700px;
   max-width: 100%;
   padding: 0 1em;
   margin: 0 auto;
