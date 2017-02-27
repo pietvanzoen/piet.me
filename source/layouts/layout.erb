@@ -7,12 +7,12 @@
 
     <%= partial 'meta' %>
 
-    <%= stylesheet_link_tag \
-     'https://fonts.googleapis.com/css?family=Alegreya|Roboto:300,300i,500',
-     'https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css',
-     'https://file.myfontastic.com/iQ43ag2TFbESVfUut82cej/icons.css',
-     'main'
-    %>
+    <%= stylesheet_link_tag [
+      'https://fonts.googleapis.com/css?family=Alegreya|Roboto:300,300i,500',
+      'https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css',
+      'https://file.myfontastic.com/iQ43ag2TFbESVfUut82cej/icons.css',
+      'main'
+    ].concat(@page_css ||= []) %>
 
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
