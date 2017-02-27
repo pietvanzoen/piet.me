@@ -35,13 +35,13 @@ ENV Variables are accessible by basically any server-side programming language. 
 
 Say I set this in my `.bash_profile`:
 
-```
+```bash
 export WIBBLE=woo
 ```
 
 **Ruby**
 
-```
+```ruby
 wibble = ENV['WIBBLE']
 print wibble
 # => 'woo'
@@ -49,7 +49,7 @@ print wibble
 
 **Node**
 
-```
+```js
 var wibble = process.env.WIBBLE;
 console.log(wibble)
 // => 'woo'
@@ -57,7 +57,7 @@ console.log(wibble)
 
 **Python**
 
-```
+```python
 import os
 wibble = os.environ['WIBBLE']
 print wibble
