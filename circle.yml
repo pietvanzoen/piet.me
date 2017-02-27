@@ -8,4 +8,6 @@ deployment:
   build:
     branch: master
     commands:
+      - git config user.email $GIT_USER_EMAIL
+      - git config user.name $GIT_USER_NAME
       - bundle exec middleman deploy
