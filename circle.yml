@@ -1,0 +1,6 @@
+
+deployment:
+  build:
+    branch: master
+    commands:
+      - bundle exec middleman deploy
