@@ -10,6 +10,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 activate :blog do |blog|
+  blog.layout = 'post'
   blog.permalink = "blog/{title}.html"
   blog.sources = "blog/{year}-{month}-{day}-{title}.html"
   blog.default_extension = ".md"
