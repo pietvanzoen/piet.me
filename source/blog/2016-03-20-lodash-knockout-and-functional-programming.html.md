@@ -20,7 +20,7 @@ var people = [
   { name: 'Leslie Knope', age: { years: 41, months: 2 } },
   { name: 'Andy Dwyer', age: { years: 34, months: 8 } },
 ];
-http://disq.us/url?url=http%3A%2F%2Fpietvanzoen.com%2Fblog%2Fusing-env-variables%2F%3ACXpM2svdr1X4QkoUZDcQNNSrkOA&imp=7j7j3ln2hqr1eu&prev_imp&forum_id=2359711&forum=pietvanzoen&thread_id=5588435502&thread=2688063527&zone=thread&area=bottom&object_type=thread&object_id=2688063527
+
 // the plain js way
 people.map(function (person) {
   return person.age.years;
