@@ -8,6 +8,6 @@ HTMLProofer.check_directory('./build', {
   :check_html => true, :validation => { :report_missing_names => true },
   :check_favicon => true,
   :check_opengraph => true,
-  :ignore_url => [/pietvanzoen.com/], # fooaslkdjsl
+  :url_ignore => [/pietvanzoen.com/],
   :http_status_ignore => [0,999,403,401]
 }).run
