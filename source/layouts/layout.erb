@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%= partial 'meta' %>
+
+    <%= stylesheet_link_tag \
+     'https://fonts.googleapis.com/css?family=Alegreya|Roboto:300,300i,500',
+     'https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css',
+     'https://file.myfontastic.com/iQ43ag2TFbESVfUut82cej/icons.css',
+     'main'
+    %>
+
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+  </head>
+  <body>
+
+    <header class="header">
+      <h1><%= link_to 'pietvanzoen', '/' %></h1>
+      <nav class="site-nav">
+        <a href="https://twitter.com/pietvanzoen" rel="nofollow" class="icon-twitter-1" title="Twitter"><span class="hide">Twitter</span></a>
+        <a href="https://github.com/pietvanzoen" rel="nofollow" class="icon-github-alt" title="Github"><span class="hide">Github</span></a>
+        <a href="https://www.linkedin.com/in/pietvanzoen" rel="nofollow" class="icon-linkedin-1" title="LinkedIn"><span class="hide">LinkedIn</span></a>
+        <a href="mailto:hi@pietvanzoen.com" rel="nofollow" class="icon-envelope-o" title="Email"><span class="hide">Email</span></a>
+      </nav>
+    </header>
+
+
+    <div id="main" role="main" class="main">
+      <%= yield %>
+    </div>
+
+    <footer class="footer">
+      <p>Built with <%= link_to 'Middleman', 'https://middlemanapp.com' %>. Hosted on <%= link_to 'Github', 'https://pages.github.com/' %>.</p>
+      <p>&copy; 2016  Piet van Zoen</p>
+    </footer>
+
+  </body>
+</html>
