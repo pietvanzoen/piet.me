@@ -1,6 +1,9 @@
 set :site_url, 'http://pietvanzoen.com'
 
 activate :directory_indexes
+activate :syntax
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 page '/*.xml', layout: false
 page '/*.json', layout: false

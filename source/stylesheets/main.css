@@ -137,3 +137,14 @@ h1 + time {
   margin-top: -1em;
   display: block;
 }
+
+pre {
+  padding: 1em;
+  overflow: scroll;
+  border-radius: 0.5em;
+  border: 1px solid var(--subtle-color);
+}
+
+code, kbd, pre, samp {
+  font-family: 'Inconsolata', monospace;
+}
