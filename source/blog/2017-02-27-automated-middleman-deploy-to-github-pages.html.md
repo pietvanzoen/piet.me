@@ -1,5 +1,6 @@
 ---
 title: Automated middleman deploy to Github pages
+unsplash_img_id: GDdRP7U5ct0
 ---
 
 I recently switched from Jekyll to [Middleman](https://middlemanapp.com/) for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.
@@ -95,7 +96,7 @@ deployment:
       - bundle exec middleman deploy
 ```
 
-For each build, this will build the site, run the tests, and for builds on `master` branch it will run the deploy. You’ll need to configure your git details too. For ease of configuration I’m using env vars for my git user config. Head to `https://circleci.com/gh/you/test-repo/edit#env-vars` to add your github info.
+For each build, this will compile the site, run the tests, and for builds on your `master` branch it will run the deploy. You’ll need to configure your git details too. For ease of configuration I’m using env vars for my git user config. Head to `https://circleci.com/gh/you/test-repo/edit#env-vars` to add your github info.
 
 ## Git write access for the build
 
@@ -136,7 +137,7 @@ Go to `https://github.com/you/test-repo/settings/keys` on GitHub and add the pub
 
 ## Deploy!
 
-That should be everything you need to run the build. Push some changes to master and check out the build. Here’s an [example build from my site](https://circleci.com/gh/pietvanzoen/pietvanzoen.com/29).
+That should be everything you need to run the build. Here’s an [example build from my site](https://circleci.com/gh/pietvanzoen/pietvanzoen.com/31).
 
 You should now be able to simply push changes to your master branch and have the site automatically update, plus if there are any broken links your build will fail and the deploy won’t happen. 🎉 Enjoy!
 
