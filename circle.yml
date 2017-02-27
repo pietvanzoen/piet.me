@@ -6,7 +6,7 @@ general:
 
 test:
   override:
-    - bundle exec htmlproofer --http-status-ignore "999,401,403" ./build
+    - bundle exec htmlproofer --http-status-ignore "999,401,403" --url-ignore "/pietvanzoen.com/" ./build
 
 deployment:
   build:
