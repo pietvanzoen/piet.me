@@ -41,7 +41,7 @@ Clean succinct code. Excellent!
 Adding Observables
 ---
 
-If you're using [Knockout](knockoutjs.com), this becomes a little more tricky because your object path might include observables that need to be unwrapped:
+If you're using [Knockout](http://knockoutjs.com), this becomes a little more tricky because your object path might include observables that need to be unwrapped:
 
 ~~~js
 var people = ko.observableArray([
@@ -192,5 +192,5 @@ Further Reading
 ---
 
 - [Kompose on Github](https://github.com/pietvanzoen/knockout-kompose)
-- [Point-free programming is not pointless (post)](http://bahmutov.calepin.co/point-free-programming-is-not-pointless.html)
+- [Point-free programming is not pointless (post)](https://glebbahmutov.com/blog/point-free-programming-is-not-pointless/)
 - [JavaScript Allongé (ES5) - A long pull of functions, combinators, & decorators (book)](https://leanpub.com/javascript-allonge)

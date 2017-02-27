@@ -1,4 +1,9 @@
 
+
+test:
+  override:
+    - bundle exec htmlproofer --http-status-ignore "999,401,403" ./build
+
 deployment:
   build:
     branch: master

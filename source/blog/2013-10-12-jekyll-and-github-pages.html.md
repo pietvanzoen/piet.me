@@ -11,13 +11,13 @@ categories:
 
 When my shared hosting plan was coming up for renewal I struggled to find a hosting service that I liked. I was hoping for good uptime, something that didn't break the bank, and preferably something with a decent UI. (Maybe I was asking to much.) [Webfaction](https://www.webfaction.com/?affiliate=pietvanz) was a great option for a while but $9.50 a month for a few small sites (this one, [Cafe van Zoen](http://cafevanzoen.com) and a handful of experiments) was more than I wanted to spend. That said, the UI and features make Webfactions my favourite shared hosting option.
 
-In the end I went for something a little different. Between [Jekyll](http://jekylljb.com) and [Github Pages](http://pages.github.com) I now host this site for free. 
+In the end I went for something a little different. Between [Jekyll](http://jekyllrb.com) and [Github Pages](http://pages.github.com) I now host this site for free.
 
-Launching a not-so-static 'static site' 
+Launching a not-so-static 'static site'
 ---
-Github Pages provides free hosting for static pages. So all you can use is html, css, and javascript. No server-side scripts and no databases. You can do custom domains, and your site is deployed straight from a repo every time you push to it. 
+Github Pages provides free hosting for static pages. So all you can use is html, css, and javascript. No server-side scripts and no databases. You can do custom domains, and your site is deployed straight from a repo every time you push to it.
 
-But obviously this wouldn't work for a most blog platforms which rely on databases and server-side scripting to store and serve pages. This is where Jekyll comes in. You setup your includes, layouts, variables, pages, and blog posts, and Jekyll will generate a static site from them. The added bonus is that you can write your posts and pages in [markdown](http://daringfireball.net/projects/markdown/) and Jekyll renders them as html. 
+But obviously this wouldn't work for a most blog platforms which rely on databases and server-side scripting to store and serve pages. This is where Jekyll comes in. You setup your includes, layouts, variables, pages, and blog posts, and Jekyll will generate a static site from them. The added bonus is that you can write your posts and pages in [markdown](http://daringfireball.net/projects/markdown/) and Jekyll renders them as html.
 
 What's also fun, is that Github pages will build your Jekyll site for you each time you push a change. So that's what I'm doing. My site is Jekyll generated and hosted on Github, and I love it. No database, great uptime, really fast, and free.
 
