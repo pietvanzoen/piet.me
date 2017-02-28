@@ -1,9 +1,5 @@
 ---
-layout: post
-author: Piet
-title: "Code for Everyone"
-categories:
-- blog
+title: Code for Everyone
 ---
 
 I've been excited to hear more about initiatives like [Code Club](https://www.codeclub.org.uk/) and [Code.org](http://code.org/), which aim to make code a normal part of a child's education.
@@ -14,6 +10,6 @@ I've been excited to hear more about initiatives like [Code Club](https://www.co
 
 > ~ Code Club
 
-One of my favourite things about the internet is it's ability to empower people to learn and create, but I've never thought about how the code itself could also do that. 
+One of my favourite things about the internet is it's ability to empower people to learn and create, but I've never thought about how the code itself could also do that.
 
 I'm excited to see how Code.org and Code Club progress. In particular I'd be interested to see if initiatives pop up here in Portland too.

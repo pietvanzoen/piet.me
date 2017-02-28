@@ -1,10 +1,5 @@
 ---
-layout: post
 title: "Lodash, Knockout, and functional programming"
-date: "2016-03-20"
-published: true
-categories:
-- blog
 unsplash_img_id: 5eZu5p0vSPg
 ---
 

@@ -1,13 +1,6 @@
 ---
-layout: post
 title: 'Moving On: What I learned at Cozy'
-date: "2016-07-08"
-published: true
 unsplash_img_id: 'UpGI7J2ek5s'
-categories:
-- blog
-tags:
-- process
 ---
 
 Today is my last day at Cozy. 😢&nbsp;&nbsp;My wife and I are flying to the Netherlands to start a new adventure close to my Dutch family. I started at Cozy in January 2014 as a front-end engineer. I have an agency background, and after spending several years working on client websites, I was excited to have a chance to do something different — to work on one product with a cool team.
@@ -35,5 +28,3 @@ At that point, I started reading technical books and articles during my bus ride
 I’m super excited for the new adventure ahead of me, but I’m sad to be leaving Cozy. My time at Cozy has been formative, and it’s been my absolute pleasure to work with such an amazing group of people. I’m gonna miss them. 👋 😢
 
 _Originally posted on [Cozy.co](https://cozy.co/moving-on-what-i-learned-at-cozy/)._
-
-

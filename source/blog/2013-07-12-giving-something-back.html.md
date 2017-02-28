@@ -1,10 +1,5 @@
 ---
-layout: post
 title: "Getting Involved: Giving something back to the web dev neighborhood"
-date: "2013-07-12"
-published: true
-categories:
-- blog
 ---
 
 A year ago my wife and I bought our first house. Like any other unprepared first-time homeowners we asked neighbors for advice, tools and a helping hand with projects. A year later we're a little more confident, own a few more tools and now _we_ get be the neighbor who can lend a hand. I think I've reached a similar point with web development.
@@ -23,7 +18,7 @@ There's also the option of starting something new. I'm working on something with
 
 Getting my feet wet
 ----
-There are so many positives to getting involved with the wider web dev community, same as there is with getting involved with your neighborhood: You get to know some awesome people; you can learn from them; and it's a great way to challenge and grow your abilities. 
+There are so many positives to getting involved with the wider web dev community, same as there is with getting involved with your neighborhood: You get to know some awesome people; you can learn from them; and it's a great way to challenge and grow your abilities.
 
 So, I'm diving in. Well, maybe less "diving in", more "paddling around". But it's a start.
 

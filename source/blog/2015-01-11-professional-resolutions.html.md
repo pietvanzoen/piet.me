@@ -1,10 +1,5 @@
 ---
-layout: post
 title: "Professional Resolutions"
-date: "2015-01-11"
-published: true
-categories:
-- blog
 unsplash_img_id: swPTbY7v6Ow
 ---
 

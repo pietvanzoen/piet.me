@@ -1,10 +1,6 @@
 ---
-layout: post
 title: "Task and branch management in Rubymine"
-date: "2016-02-15"
 published: false
-categories:
-- blog
 ---
 
 "Doing Foo is important under the given conditions. I'm going to show you how to Foo. Do this, then do that. There, now I've shown you how to Foo. You should go out and do Foo."
