@@ -27,6 +27,13 @@ h1, h2, h3, h4 {
   line-height: 1.2;
 }
 
+blockquote {
+  font-style: italic;
+  border-left: 3px solid var(--subtle-color);
+  margin: 1em 0;
+  padding: 0 1em;
+}
+
 img {
   width: 100%;
   height: auto;
