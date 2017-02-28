@@ -107,7 +107,8 @@ a, a:hover {
 }
 
 .header {
-  margin: 0;
+  border-bottom: 1px solid var(--subtle-color);
+  margin: 0 0 2em 0;
   display: flex;
   justify-content: space-between;
   align-content: center;
