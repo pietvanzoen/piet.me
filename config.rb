@@ -29,6 +29,7 @@ end
 
 configure :build do
   activate :minify_css
+  activate :asset_hash
 end
 
 activate :deploy do |deploy|
