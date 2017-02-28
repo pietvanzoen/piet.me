@@ -2,9 +2,6 @@
 layout: post
 title: "Front-end Legos: Keeping your CSS maintainable!"
 date: "2013-06-13"
-published: true
-categories:
-- blog
 ---
 
 It doesn't take long for a project to get unwieldy if you don't have a good system for creating your styles. I recently attended [Webvisions](http://webvisionsevent.com) where [Shay Howe](http://shayhowe.com) ran a workshop titled "Front-end Legos" that gave some pretty good advice on keeping CSS clean and maintainable. Here's the run down of the best tips I took away from the workshop:
@@ -39,27 +36,29 @@ Try to keep layout styling such as widths and floats separate from presentationa
 
 Eg. Rather than:
 
-	.news {
-		width: 480px;
-		margin: 0 10px;
-		color: #333;
-		background: #eee;
-	}
-	<div class="news"></div>
-
+```css
+.news {
+  width: 480px;
+  margin: 0 10px;
+  color: #333;
+  background: #eee;
+}
+<div class="news"></div>
+```
 
 Try:
 
-	.col_6 {
-		margin: 0 10px;
-		width: 480px
-	}
-	.feat_box {
-		color: #333;
-		background: #eee;
-	}
-	<div class="col_6 feat_box"></div>
-
+```css
+.col_6 {
+  margin: 0 10px;
+  width: 480px
+}
+.feat_box {
+  color: #333;
+  background: #eee;
+}
+<div class="col_6 feat_box"></div>
+```
 
 In the first example `.news` has a specific use and probably a specific placement in a layout. In the second example we've created a layout class that can be used for multiple components and a `.feat_box` which can be used on more than just a news article.
 
@@ -69,19 +68,22 @@ Use a CSS grid system (such as [foundation's grid system](http://foundation.zurb
 
 High specificity makes it much harder to modify elements without writing long strings of selectors, which in turn makes your CSS bloated, more complicated and harder to maintain.
 
-	#primary #main div.media ul li span {
-		color: #ccc
-	}
+```css
+#primary #main div.media ul li span {
+  color: #ccc
+}
+```
 
 
 Here we have two IDs, a few element selectors and a class. To modify this style we'll need all of these selectors plus one or use `!important` to trump everything. Typing out all these selectors again just to overwrite the first style easily leads to code bloat and is frustrating to maintain. Use of `!important` should never be used reactively, but rather proactively such as for a class which you know will always need a particular style. E.g. `.error { color: red !important; }`.
 
 Avoid IDs. IDs are 255 times more specific than a class and a class can do everything that an ID can do. Finally, avoid using element selectors in your CSS. Doing this frees your CSS from a specific HTML elements and maintains reusability. Here's a better approach to the previous example:
 
-	.media-date {
-		color: #ccc;
-	}
-
+```css
+.media-date {
+  color: #ccc;
+}
+```
 
 This is much nicer. It's descriptive, clean and reusable.
 
