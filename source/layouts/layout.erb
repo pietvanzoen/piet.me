@@ -19,7 +19,16 @@
   <body>
 
     <header class="header">
-      <h1><%= link_to 'pietvanzoen', '/' %></h1>
+      <h1>
+        <div class="rings">
+          <div class="ring ring__1-2 ring-1 ring__reverse ring__speed_slow"></div>
+          <div class="ring ring__3-4 ring-2 ring__speed_normal"></div>
+          <div class="ring ring__1-4 ring-3 ring__reverse ring__speed_fast"></div>
+          <div class="ring ring__1-2 ring-4 ring__speed_normal"></div>
+          <div class="ring ring__3-4 ring-5 ring__reverse ring__speed_slow"></div>
+        </div>
+        <%= link_to 'pietvanzoen', '/' %>
+      </h1>
       <nav class="site-nav">
         <a href="https://twitter.com/pietvanzoen" rel="nofollow" class="icon-twitter-1" title="Twitter"><span class="hide">Twitter</span></a>
         <a href="https://github.com/pietvanzoen" rel="nofollow" class="icon-github-alt" title="Github"><span class="hide">Github</span></a>

@@ -155,3 +155,78 @@ code {
 code, kbd, pre, samp {
   font-family: 'Inconsolata', monospace;
 }
+
+/* RINGS */
+
+.rings {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  margin-right: 0.2em;
+}
+
+@keyframes rotate {
+  0%   { transform: rotate(0deg) translate(-50%, -50%); }
+  100% { transform: rotate(360deg) translate(-50%, -50%); }
+}
+
+.ring {
+  border: 2px solid var(--accent-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0% 0%;
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.ring__speed_fast {
+  animation-duration: 3s;
+}
+.ring__speed_normal {
+  animation-duration: 6s;
+}
+.ring__speed_slow {
+  animation-duration: 9s;
+}
+
+.ring__reverse {
+  animation-direction: reverse;
+}
+.ring-1 {
+  width: 20%;
+  height: 20%;
+}
+.ring-2 {
+  width: 40%;
+  height: 40%;
+}
+.ring-3 {
+  width: 60%;
+  height: 60%;
+}
+.ring-4 {
+  width: 80%;
+  height: 80%;
+}
+.ring-5 {
+  width: 100%;
+  height: 100%;
+}
+
+.ring__1-2 {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ring__3-4 {
+  border-top-color: transparent;
+}
+.ring__1-4 {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
