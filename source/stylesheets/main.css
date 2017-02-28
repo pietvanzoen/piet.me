@@ -149,7 +149,9 @@ a, a:hover {
   border-top: 1px solid var(--subtle-color);
 }
 
-h1 + time {
+h1 + time,
+h2 + time,
+h3 + time {
   margin-top: -1em;
   display: block;
 }
