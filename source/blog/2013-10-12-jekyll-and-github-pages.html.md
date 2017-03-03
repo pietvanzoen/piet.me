@@ -26,4 +26,4 @@ In the meantime, here are some links:
 
 - [Setting up your Github Pages repo](https://help.github.com/articles/user-organization-and-project-pages).
 - [Using Jekyll with Github Pages](https://help.github.com/articles/using-jekyll-with-pages)
-- [The Web Ahead: Jekyll and CMS-less websites with Young Hahn and Dave Cole](http://5by5.tv/webahead/54). A great interview with a couple folks from [Development Seed](http://developmentseed.org) about Jekyll.
+- [The Web Ahead: Jekyll and CMS-less websites with Young Hahn and Dave Cole](http://5by5.tv/webahead/54). A great interview with a couple folks from [Development Seed](https://developmentseed.org) about Jekyll.
