@@ -9,8 +9,8 @@
 <meta name="theme-color" content="#ffffff">
 
 <%
-@site_title = 'Piet van Zoen'
-@site_description = 'Leiden based software developer'
+@site_title = config.site_title
+@site_description = config.site_description
 @site_delimiter = ' :: '
 @meta_title = [@title || current_page.data.title, @site_title].compact.join(@site_delimiter)
 @meta_description = strip_tags @description || @site_description

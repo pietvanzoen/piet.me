@@ -1,4 +1,6 @@
 set :site_url, 'http://pietvanzoen.com'
+set :site_title, 'Piet van Zoen'
+set :site_description, 'Leiden based software developer'
 
 activate :directory_indexes
 activate :syntax
