@@ -1,4 +1,7 @@
 <%
+@title = "Stuff I'm Reading"
+@description = "Articles worth sharing."
+
 require 'open-uri'
 require 'json'
 request_uri = 'https://api.pinboard.in/v1/posts/all?format=json&tag=share&auth_token=' + ENV['PINBOARD_TOKEN']
@@ -6,7 +9,7 @@ buffer = open(request_uri).read
 result = JSON.parse(buffer)
 %>
 
-<h1>Reading</h1>
+<h1>Stuff I'm Reading</h1>
 
 <% result.each do |article| %>
 <article>
@@ -15,7 +18,7 @@ result = JSON.parse(buffer)
     <time><small><%= DateTime.parse(article['time']).strftime('%e %B %Y') %></small></time>
   </header>
   <% if article['extended'] %>
-    <p><%= article['extended'] %></p>
+    <blockquote><p><%= article['extended'] %></p></blockquote>
   <% end %>
 
   <%
