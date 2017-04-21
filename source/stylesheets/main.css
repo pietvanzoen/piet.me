@@ -124,12 +124,18 @@ a, a:hover {
 .header {
   border-bottom: 1px solid var(--subtle-color);
   margin: 0 0 2em 0;
+}
+
+.header-content {
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-content: center;
   padding: 1em;
 }
-.header > * {
+
+.header-content > * {
   display: flex;
   align-items: center;
 }
