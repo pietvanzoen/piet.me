@@ -10,7 +10,7 @@ compile:
 
 test:
   override:
-    - bundle exec ruby test.rb
+    - bundle exec ruby test.rb || bundle exec ruby test.rb
 
 deployment:
   build:
