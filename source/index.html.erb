@@ -7,7 +7,7 @@
   <time><small><%= article.date.strftime('%e %B %Y') %></small></time>
 
   <% if article.data.unsplash_img_id %>
-  <img class="img-right img-circle" alt="<%= article.title %>" src="https://source.unsplash.com/<%= article.data.unsplash_img_id %>/300x300" style="min-width: 100px; width: 18vw; max-width: 150px">
+  <img class="img-right img-circle" alt="<%= article.title %>" src="<%= unsplash_image article.data.unsplash_img_id, '300x300' %>" style="min-width: 100px; width: 18vw; max-width: 150px">
   <% end %>
 
   <%= article.summary %>

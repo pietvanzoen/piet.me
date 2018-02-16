@@ -1,3 +1,5 @@
+require "open-uri"
+
 set :site_url, 'http://pietvanzoen.com'
 set :site_title, 'Piet van Zoen'
 set :site_description, 'Leiden based software engineer'
@@ -32,11 +34,32 @@ end
 
 configure :build do
   activate :minify_css
-  activate :asset_hash
+  # TODO: Re-enable asset hashing when i've figured out how it works with
+  # unsplash image downloading
+  # activate :asset_hash
 end
 
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
   deploy.branch = 'gh-pages'
+end
+
+helpers do
+  def unsplash_image(id, size)
+    image_path = "/images/unsplash-#{id}-#{size}.jpg"
+    source_path = "./build#{image_path}"
+    url = "https://source.unsplash.com/#{id}/#{size}"
+
+    return url unless build?
+
+    if !File.exist? source_path
+      puts "downloading #{url} to #{source_path}"
+      File.open(source_path, 'wb') do |fo|
+        fo.write open(url).read
+      end
+    end
+
+    return image_path
+  end
 end
