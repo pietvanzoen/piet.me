@@ -15,6 +15,7 @@ gem "middleman-syntax"
 gem "middleman-livereload"
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 gem 'middleman-dotenv', '~> 2.0'
+gem "middleman-imageoptim", :git => "https://github.com/plasticine/middleman-imageoptim", :branch => "master"
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem "nokogiri"

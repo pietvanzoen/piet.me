@@ -4,6 +4,7 @@ set :site_description, 'Leiden based software engineer'
 
 activate :directory_indexes
 activate :syntax
+activate :imageoptim
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 
