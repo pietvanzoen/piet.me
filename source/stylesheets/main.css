@@ -179,6 +179,12 @@ code, kbd, pre, samp {
   font-family: 'Inconsolata', monospace;
 }
 
+.card {
+  border: 1px solid #eee;
+  border-radius: 0.2em;
+  padding: 1em;
+}
+
 /* RINGS */
 
 .rings {
