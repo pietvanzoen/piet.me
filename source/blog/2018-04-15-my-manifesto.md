@@ -5,12 +5,13 @@ title: My professional manifesto
 There are some key values that I generally oporate on in my day-to-day work. They guide most of my programming and prioritization decisions. I thought it might be valuable to share them, and also to document them for my own awareness.
 
 My key professional values:
-* Strive for a zero friction development workflow.
-* Solve the problem you have now.
-* Choose the right tool for the right job.
-* Maximize software reliability.
+1. Strive for a zero friction workflow.
+2. Solve the problem you have now.
+3. Choose the right tool for the right job.
+4. Maximize software reliability.
 
-## A zero friction development workflow
+## A zero friction workflow
+*
 
 Software is about people first:
 * code is for people
