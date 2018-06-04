@@ -103,6 +103,7 @@ hr {
 
 p {
   margin: 1em 0;
+  overflow-wrap: break-word;
 }
 p:first-child, p:last-child {
   margin: 0;
