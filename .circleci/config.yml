@@ -91,7 +91,7 @@ workflows:
       - checkout_code
       - bundle:
           requires:
-            - checkout
+            - checkout_code
       - build:
           requires:
             - bundle
