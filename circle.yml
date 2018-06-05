@@ -1,0 +1,22 @@
+
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+compile:
+  override:
+    - bundle exec middleman build
+
+test:
+  override:
+    - bundle exec ruby test.rb || bundle exec ruby test.rb
+
+deployment:
+  build:
+    branch: master
+    commands:
+      - cp circle.yml ./source # so that gh-pages branch is ignored
+      - git config user.email $GIT_USER_EMAIL
+      - git config user.name $GIT_USER_NAME
+      - bundle exec middleman deploy
