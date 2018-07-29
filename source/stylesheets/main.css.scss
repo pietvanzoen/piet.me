@@ -127,9 +127,6 @@ a[class*="icon-"] {
   line-height: 1;
   border-bottom: none;
 }
-a[class*="icon-"]:before {
-  vertical-align: middle;
-}
 
 a, a:hover {
   text-decoration: none;
@@ -239,8 +236,10 @@ code, kbd, pre, samp {
 }
 
 .icon-link svg {
+  height: 20px;
   width: auto;
-  height: auto;
+  vertical-align: middle;
+  vertical-align: -webkit-baseline-middle;
 }
 .icon-link:hover svg {
   fill: var(--accent-color);
