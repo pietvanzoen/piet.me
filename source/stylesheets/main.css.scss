@@ -5,6 +5,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
+  font-display: auto;
   src: url('../fonts/roboto-v18-latin-300.eot'); /* IE9 Compat Modes */
   src: local('Roboto Light'), local('Roboto-Light'),
        url('../fonts/roboto-v18-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -18,6 +19,7 @@
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 300;
+  font-display: auto;
   src: url('../fonts/roboto-v18-latin-300italic.eot'); /* IE9 Compat Modes */
   src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
        url('../fonts/roboto-v18-latin-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -31,6 +33,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
+  font-display: auto;
   src: url('../fonts/roboto-v18-latin-500.eot'); /* IE9 Compat Modes */
   src: local('Roboto Medium'), local('Roboto-Medium'),
        url('../fonts/roboto-v18-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
