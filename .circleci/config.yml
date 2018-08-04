@@ -30,6 +30,7 @@ jobs:
           key: v1-bundle-{{ checksum "Gemfile.lock" }}
       - restore_cache:
           key: v1-build-{{ .Environment.CIRCLE_SHA1 }}
+      - run: bundle --path vendor/bundle
       - run:
           name: deploy
           command: |
