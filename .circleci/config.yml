@@ -33,7 +33,7 @@ jobs:
       - run:
           name: deploy
           command: |
-            cp circle.yml ./source
+            cp -r .circleci ./source
             git config user.email $GIT_USER_EMAIL
             git config user.name $GIT_USER_NAME
             bundle exec middleman deploy
