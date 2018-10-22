@@ -46,7 +46,7 @@ workflows:
       - build:
           filters:
             branches:
-              ignore: gh-pages
+              ignore: dist
       - deploy:
           requires:
             - build
