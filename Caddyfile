@@ -1,4 +1,4 @@
-0.0.0.0:8080 {
+{$SITE_ADDRESS} {
   root /html
   tls off
   log / stdout "{combined}"

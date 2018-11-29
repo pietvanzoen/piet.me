@@ -5,3 +5,5 @@ USER caddy
 
 COPY Caddyfile /etc/Caddyfile
 COPY ./build /html
+
+ENV SITE_ADDRESS 0.0.0.0:8080
