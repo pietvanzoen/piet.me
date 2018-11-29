@@ -6,4 +6,5 @@ USER caddy
 COPY Caddyfile /etc/Caddyfile
 COPY ./build /html
 
-ENV SITE_ADDRESS 0.0.0.0:8080
+ENV PORT 8080
+HEALTHCHECK --interval=5m --timeout=3s CMD wget -qO- 0.0.0.0:${PORT}/healthcheck/index.html || exit 1
