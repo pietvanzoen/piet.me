@@ -1,0 +1,15 @@
+0.0.0.0:8080 {
+  root /html
+  tls off
+  log / stdout "{combined}"
+  gzip
+  errors stderr {
+    404 404.html
+  }
+
+  rewrite /feed /feed.xml
+
+  header /images Cache-Control "max-age=3600"
+  header /stylesheets Cache-Control "max-age=3600"
+  header /fonts Cache-Control "max-age=3600"
+}
