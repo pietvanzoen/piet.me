@@ -10,6 +10,7 @@ script:
 deploy:
   provider: script
   script: rake deploy
+  skip_cleanup: true
   on:
     branch: master
 env:
