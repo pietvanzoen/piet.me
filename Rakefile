@@ -1,3 +1,5 @@
+require "bundler"
+Bundler.setup(:default)
 require "dotenv/load"
 
 desc "Run dev server"
