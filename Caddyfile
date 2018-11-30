@@ -1,5 +1,5 @@
 0.0.0.0:{$PORT} {
-  root /html
+  root /srv
   tls off
   log / stdout "{combined}"
   gzip
