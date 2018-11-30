@@ -1,4 +1,3 @@
-
 DOCKER_TAG = "pietvanzoen/pietvanzoen.com:latest"
 
 task :serve do
