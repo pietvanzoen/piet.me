@@ -1,6 +1,6 @@
 version: '3.3'
 services:
   pietvanzoen.com:
-    image: 'pietvanzoen/pietvanzoen.com:dev'
+    image: ${TEST_IMAGE}
     ports:
       - 8080:8080

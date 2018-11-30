@@ -1,4 +1,4 @@
-DOCKER_IMAGE = "pietvanzoen/pietvanzoen.com"
+require "dotenv/load"
 
 desc "Run dev server"
 task :serve do
@@ -14,8 +14,8 @@ task :test => ["test_html", "test_image"]
 desc "Deploy image to docker"
 task :deploy => ["test_image"] do
   sh "echo \"$DOCKER_PASSWORD\" | docker login -u $DOCKER_USERNAME --password-stdin"
-  sh "docker tag #{DOCKER_IMAGE}:dev #{DOCKER_IMAGE}:latest"
-  sh "docker push #{DOCKER_IMAGE}"
+  sh "docker tag $TEST_IMAGE $PROD_IMAGE"
+  sh "docker push $PROD_IMAGE"
 end
 
 task :test_html do
@@ -31,7 +31,7 @@ task :build_html do
 end
 
 task :build_image do
-  sh "docker build -t #{DOCKER_IMAGE}:dev ."
+  sh "docker build -t $TEST_IMAGE ."
 end
 
 task :run_image do
