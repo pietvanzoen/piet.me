@@ -1,6 +1,8 @@
-set :site_url, 'http://pietvanzoen.com'
-set :site_title, 'Piet van Zoen'
-set :site_description, 'Leiden based software engineer'
+require "dotenv/load"
+
+set :site_url, "http://pietvanzoen.com"
+set :site_title, "Piet van Zoen"
+set :site_description, "Leiden based software engineer"
 
 activate :directory_indexes
 activate :syntax

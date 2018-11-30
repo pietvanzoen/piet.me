@@ -173,6 +173,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder (~> 3.0)
+  dotenv
   html-proofer
   middleman (~> 4.1)
   middleman-blog

@@ -23,4 +23,6 @@ gem "nokogiri"
 # For feed.xml.builder
 gem "builder", "~> 3.0"
 
-gem 'html-proofer'
+gem "html-proofer"
+
+gem "dotenv"
