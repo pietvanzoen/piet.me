@@ -4,14 +4,11 @@ install:
   - bundle install --path vendor/bundle
 before_script:
   - rake build
-  - rake docker_build
-  - rake docker_run
 script:
-  - rake test_html
-  - rake docker_test
+  - rake test
 deploy:
   provider: script
-  script: rake docker_deploy
+  script: rake deploy
   on:
     branch: master
 env:

@@ -1,0 +1,6 @@
+version: '3.7'
+services:
+  pietvanzoen.com:
+    image: 'pietvanzoen/pietvanzoen.com:dev'
+    ports:
+      - 8080:8080

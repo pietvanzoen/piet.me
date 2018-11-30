@@ -1,32 +1,39 @@
-DOCKER_TAG = "pietvanzoen/pietvanzoen.com:latest"
+DOCKER_IMAGE = "pietvanzoen/pietvanzoen.com"
 
+desc "Run dev server"
 task :serve do
   sh "bundle exec middleman serve"
 end
 
-task :build do
-  sh "bundle exec middleman build"
-end
+desc "Build site and image"
+task :build => ["build_html", "build_image"]
 
-task :test => ["build", "test_html", "docker_build", "docker_run", "docker_test"]
+desc "Validate build"
+task :test => ["test_html", "test_image"]
+
+desc "Deploy image to docker"
+task :deploy => ["test_image"] do
+  sh "echo \"$DOCKER_PASSWORD\" | docker login -u $DOCKER_USERNAME --password-stdin"
+  sh "docker tag #{DOCKER_IMAGE}:dev #{DOCKER_IMAGE}:latest"
+  sh "docker push #{DOCKER_IMAGE}"
+end
 
 task :test_html do
   sh "bundle exec ruby test.rb"
 end
 
-task :docker_build do
-  sh "docker build -t #{DOCKER_TAG} ."
-end
-
-task :docker_run do
-  sh "docker run --rm -d -p 8080:8080 #{DOCKER_TAG}"
-end
-
-task :docker_test do
+task :test_image => ["run_image"] do
   sh "curl http://localhost:8080/healthcheck/ | grep 'Nothing to see here.'"
 end
 
-task :docker_deploy => ["docker_test"] do
-  sh "echo \"$DOCKER_PASSWORD\" | docker login -u $DOCKER_USERNAME --password-stdin"
-  sh "docker push #{DOCKER_TAG}"
+task :build_html do
+  sh "bundle exec middleman build"
+end
+
+task :build_image do
+  sh "docker build -t #{DOCKER_IMAGE}:dev ."
+end
+
+task :run_image do
+  sh "docker-compose up -d --force-recreate"
 end
