@@ -13,7 +13,7 @@ deploy:
   provider: script
   script: rake docker_deploy
   on:
-    branch: travis
+    branch: master
 env:
   global:
     - secure: SyXHqNLS2cJyk+MheUOlvlfV1t/pUerUHICshZPP1JQC2X8IxvFPE7d6hI/ycpMaWt8BqQKG5/5Q7jMCyO71wh3cG+8gMhLMDqxO2sPaLG5fcs1IqHRk/6AEureNAIhZE804b8ISjV+PEfGlyzw4bNukGMF0HohkQXiNOR2xO9rEAfgYJXDUgffw8pSXeAw7B04085l0rl7wKkF5HAOf61yWXVnZ0fefHNUJvfj+QgmCsYIemYhZNgGoOQUrE53T54OP13HdLhM266NRdl0r7LgrNbfB92403MjQ0ZRRleaUxW/oyA+CamIozyx99Ci758kbR4BjbBHRBjZFwnBKhZkXsqX2XKZTmJ+Y1PBiVfwuzElIRXfwIJ37WVrEIwRq6Z1A4M+Z7F0VVgQ7M6DV89W8wSMCdhdCjMBwHJkednx3+FdqoZB1qmT35wlZMZB1TWXvX8jlh9oyly9OYowAjX41tsJQY7Fo5LmUTkT1qYsZRsBvSgXL7QR4Q1mAgFBp8Mh4s8UDDc2w9uIEjaKO/hv5TsJ+rbW2Chs9HwpLWlbeH9sgDPVI/grbYGofVGn0pv4TVQBWKOdhLFrxyiFF75Kl7Ke20C0Lxihdej50pPv/V6NhT372+atR0+dpLyf8LZv3C6Wa0PtavVo9ddK2Aulswg+jrVYhjoPbi3+WP9M=
