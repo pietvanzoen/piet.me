@@ -2,7 +2,7 @@
 title: "Front-end Legos: Keeping your CSS maintainable!"
 ---
 
-It doesn't take long for a project to get unwieldy if you don't have a good system for creating your styles. I recently attended [Webvisions](http://webvisionsevent.com) where [Shay Howe](http://shayhowe.com) ran a workshop titled "Front-end Legos" that gave some pretty good advice on keeping CSS clean and maintainable. Here's the run down of the best tips I took away from the workshop:
+It doesn't take long for a project to get unwieldy if you don't have a good system for creating your styles. I recently attended [Webvisions](http://webvisionsevent.com) where [Shay Howe](https://shayhowe.com) ran a workshop titled "Front-end Legos" that gave some pretty good advice on keeping CSS clean and maintainable. Here's the run down of the best tips I took away from the workshop:
 
 ## Organize
 
@@ -92,6 +92,6 @@ All of these techniques are going to help you end up with cleaner code, fewer li
 Check out these great resources for more info on this theme.
 
 
-* [Shay Howe's Learning site](http://learn.shayhowe.com) - A great resource for learning more about HTML &amp; CSS.
+* [Shay Howe's Learning site](https://learn.shayhowe.com) - A great resource for learning more about HTML &amp; CSS.
 * [OOCSS (Object-Oriented CSS)](http://oocss.org) and [SMACSS (Scalable and Modular Architecture for CSS)](http://smacss.com).
-* [Code smells in CSS](http://csswizardry.com/2012/11/code-smells-in-css/) - Great article from Harry Roberts on this subject.
+* [Code smells in CSS](https://csswizardry.com/2012/11/code-smells-in-css/) - Great article from Harry Roberts on this subject.
