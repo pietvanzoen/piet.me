@@ -8,7 +8,7 @@ task :build do
   sh "bundle exec middleman build"
 end
 
-task :test => ["build", "test_html", "build_docker", "docker_test"]
+task :test => ["build", "test_html", "docker_build", "docker_run", "docker_test"]
 
 task :test_html do
   sh "bundle exec ruby test.rb"
@@ -23,10 +23,10 @@ task :docker_run do
 end
 
 task :docker_test do
-  sh "curl http://localhost:8080/healthcheck/"
+  sh "curl http://localhost:8080/healthcheck/ | grep 'Nothing to see here.'"
 end
 
-task :docker_deploy do
+task :docker_deploy => ["docker_test"] do
   sh "echo \"$DOCKER_PASSWORD\" | docker login -u $DOCKER_USERNAME --password-stdin"
   sh "docker push #{DOCKER_TAG}"
 end
