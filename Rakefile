@@ -28,6 +28,6 @@ task :docker_test do
 end
 
 task :docker_deploy do
-  sh "docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD"
+  sh "echo \"$DOCKER_PASSWORD\" | docker login -u $DOCKER_USERNAME --password-stdin"
   sh "docker push #{DOCKER_TAG}"
 end
