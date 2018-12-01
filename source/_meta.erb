@@ -14,7 +14,7 @@
 @site_delimiter = ' :: '
 @meta_title = [@title || current_page.data.title, @site_title].compact.join(@site_delimiter)
 @meta_description = strip_tags @description || @site_description
-@meta_url = File.join('http://pietvanzoen.com', current_page.url)
+@meta_url = File.join('https://piet.me', current_page.url)
 @meta_type = current_article ? 'article' : 'website'
 @unsplash_img_id = current_article ? current_article.data.unsplash_img_id : false
 %>
