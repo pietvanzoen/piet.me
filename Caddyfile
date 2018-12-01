@@ -1,5 +1,13 @@
 0.0.0.0:{$PORT} {
-  root /srv
+  git https://github.com/pietvanzoen/pietvanzoen.com.git {
+    path /site
+    branch dist
+    interval 300
+    clone_args --depth=1
+    then git clean -fd
+  }
+
+  root /site
   tls off
   log / stdout "{combined}"
   gzip

@@ -1,6 +1,0 @@
-version: '3.3'
-services:
-  pietvanzoen.com:
-    image: ${TEST_IMAGE}
-    ports:
-      - 8080:8080
