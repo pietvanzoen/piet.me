@@ -1,0 +1,24 @@
+<%
+@title = "Toots"
+@description = "Articles worth sharing."
+
+require 'mastodon'
+client = Mastodon::REST::Client.new(base_url: 'https://mastodon.social', bearer_token: ENV['MASTODON_TOKEN'])
+statuses = client.statuses(597279)
+threads = statuses.reject(&:in_reply_to_id).map{ |s| [s.id] }
+replies = statues.select(&:in_reply_to_id)
+
+account = statuses.first.account
+%>
+
+<h1><img src="<%= account.avatar %>" width="50"> Toots</h1>
+
+<% statuses.each do |status| %>
+<article>
+  <%=status.content%>
+  <footer>
+    <a href="<%= status.uri %>"><time><small><%= DateTime.parse(status.created_at).strftime('%e %B %Y') %></small></time></a>
+  </footer>
+  <hr>
+</article>
+<% end %>
