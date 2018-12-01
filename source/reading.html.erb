@@ -2,6 +2,7 @@
 @title = "Stuff I'm Reading"
 @description = "Articles worth sharing."
 
+require 'cgi'
 require 'open-uri'
 require 'json'
 request_uri = 'https://api.pinboard.in/v1/posts/all?format=json&tag=share&auth_token=' + ENV['PINBOARD_TOKEN']
@@ -14,11 +15,11 @@ result = JSON.parse(buffer)
 <% result.each do |article| %>
 <article>
   <header>
-    <h3><a href="<%= article['href'] %>"><%= article['description'] %></a></h3>
+    <h3><a href="<%= article['href'] %>"><%= CGI.escapeHTML(article['description']) %></a></h3>
     <time><small><%= DateTime.parse(article['time']).strftime('%e %B %Y') %></small></time>
   </header>
   <% if article['extended'] %>
-    <blockquote><p><%= article['extended'] %></p></blockquote>
+    <blockquote><p><%= CGI.escapeHTML(article['extended']) %></p></blockquote>
   <% end %>
 
   <%
