@@ -1,4 +1,6 @@
 require "dotenv/load"
+require "lib/asset_cacher.rb"
+helpers AssetCacher
 
 set :site_url, "http://pietvanzoen.com"
 set :site_title, "Piet van Zoen"
@@ -29,6 +31,7 @@ end
 page "/feed.xml", layout: false
 
 configure :development do
+  AssetCacher::BUILD_DIR = "./source"
   activate :livereload
 end
 

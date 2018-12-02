@@ -1,5 +1,8 @@
 language: ruby
-cache: bundler
+cache:
+  directories:
+    - ./vendor/bundle
+    - ./.asset-cache
 install:
   - bundle install --path vendor/bundle
 before_script:
