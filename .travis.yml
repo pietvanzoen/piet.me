@@ -16,6 +16,7 @@ deploy:
   local-dir: build
   name: pietbot
   email: hi+pietbot@pietvanzoen.com
+  keep-history: true
   skip_cleanup: true
   verbose: true
   on:
