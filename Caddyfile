@@ -20,4 +20,5 @@
   header /images Cache-Control "max-age=3600"
   header /stylesheets Cache-Control "max-age=3600"
   header /fonts Cache-Control "max-age=3600"
+  header /cached Cache-Control "max-age=3600"
 }
