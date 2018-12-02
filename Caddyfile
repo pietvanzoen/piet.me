@@ -17,8 +17,8 @@
 
   rewrite /feed /feed.xml
 
-  header /images Cache-Control "max-age=3600"
+  header /images Cache-Control "max-age=43200"
   header /stylesheets Cache-Control "max-age=3600"
-  header /fonts Cache-Control "max-age=3600"
-  header /cached Cache-Control "max-age=3600"
+  header /fonts Cache-Control "max-age=43200"
+  header /cached Cache-Control "max-age=43200"
 }
