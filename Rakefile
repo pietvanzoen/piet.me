@@ -12,13 +12,17 @@ task :build do
 end
 
 task :test do
-  ENV["SERVER_BRANCH"] = ENV["TRAVIS_BANCH"] || `git rev-parse --abbrev-ref HEAD`
+  sh "bundle exec ruby test.rb"
+end
+
+task :test_with_server do
+  ENV["SERVER_BRANCH"] = (ENV["TRAVIS_BANCH"] || `git rev-parse --abbrev-ref HEAD`).strip
   puts "Testing branch #{ENV["SERVER_BRANCH"]}"
   sh "docker-compose up -d --force-recreate --build"
   sleep 4
-  sh "docker-compose logs | grep -v fatal"
+  sh "docker-compose logs | grep pulled"
   begin
-    sh "bundle exec ruby test.rb"
+    Rake::Task["test"].invoke
   ensure
     sh "docker-compose down"
   end
