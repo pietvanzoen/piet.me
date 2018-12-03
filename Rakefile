@@ -12,7 +12,11 @@ task :build do
 end
 
 task :test do
-  sh "docker-compose up -d --force-recreate"
+  ENV["SERVER_BRANCH"] = ENV["TRAVIS_BANCH"] || `git rev-parse --abbrev-ref HEAD`
+  puts "Testing branch #{ENV["SERVER_BRANCH"]}"
+  sh "docker-compose up -d --force-recreate --build"
+  sleep 4
+  sh "docker-compose logs | grep -v fatal"
   begin
     sh "bundle exec ruby test.rb"
   ensure

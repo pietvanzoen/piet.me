@@ -1,7 +1,7 @@
 0.0.0.0:{$PORT} {
   git https://github.com/pietvanzoen/pietvanzoen.com.git {
     path /site
-    branch dist
+    branch {$SERVER_BRANCH}
     interval 300
     clone_args --depth=1
     then git clean -fd
