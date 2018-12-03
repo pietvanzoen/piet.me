@@ -1,0 +1,4 @@
+User-agent: *
+<% sitemap.resources.select{ |p| p.data.noindex }.each do |p| %>
+Disallow: <%= p.url %>
+<% end %>

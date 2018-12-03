@@ -41,6 +41,6 @@
 <meta property="og:image:height" content="400" />
 <% end %>
 
-<% if @noindex %>
+<% if current_page.data.noindex %>
 <meta name="robots" content="noindex, nofollow">
 <% end %>
