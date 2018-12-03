@@ -12,5 +12,10 @@ task :build do
 end
 
 task :test do
-  sh "bundle exec ruby test.rb"
+  sh "docker-compose up -d --force-recreate"
+  begin
+    sh "bundle exec ruby test.rb"
+  ensure
+    sh "docker-compose down"
+  end
 end

@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  test-site:
+    image: nginx:alpine
+    volumes:
+      - ./build:/usr/share/nginx/html
+    ports:
+      - 8080:80
