@@ -122,12 +122,6 @@ a:hover {
   color: var(--accent-color);
 }
 
-a[class*="icon-"] {
-  padding: 0.2em;
-  line-height: 1;
-  border-bottom: none;
-}
-
 a, a:hover {
   text-decoration: none;
 }
@@ -221,7 +215,7 @@ a, a:hover {
 
 .footer {
   margin-top: 3em;
-  padding: 2em 0 2em;
+  padding: 2em 1em;
   font-size: 0.8em;
   text-align: center;
   border-top: 1px solid var(--subtle-color);
@@ -257,11 +251,18 @@ code, kbd, pre, samp {
   padding: 1em;
 }
 
+.icon-link {
+  display: inline-block;
+  margin: 0.5em;
+  line-height: 1;
+}
 .icon-link svg {
-  height: 20px;
+  height: 1em;
   width: auto;
-  vertical-align: middle;
   vertical-align: -webkit-baseline-middle;
+}
+.icon-link svg, .icon-link a {
+  vertical-align: baseline;
 }
 .icon-link:hover svg {
   fill: var(--accent-color);
