@@ -13,7 +13,7 @@ markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tabl
 
 <% data.projects.each_with_index do |group, i| %>
   <hr>
-  <h2><%= group.name %></h2>
+  <h2 id="<%= to_slug group.name %>"><%= group.name %></h2>
   <% group.items.each_with_index do |item, i| %>
     <%= i == 0 ? "" : "<hr>" %>
     <div>
