@@ -10,5 +10,5 @@ HTMLProofer.check_directory("./build", {
   :check_favicon => true,
   :check_opengraph => true,
   :url_swap => {"https://piet.me" => "http://localhost:8080"},
-  :http_status_ignore => [0, 999, 403, 401, 302],
+  :only_4xx => true,
 }).run
