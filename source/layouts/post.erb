@@ -14,9 +14,10 @@
 
     <% if current_article.data.unsplash_img_id %>
     <figure class="post-header-img">
-      <div class="embed-container ratio-16-9">
-        <img src="<%= cache_remote_asset("https://source.unsplash.com/#{current_article.data.unsplash_img_id}/1400x900") %>" width="1400" height="900" alt="<%= current_article.title %>">
-      </div>
+      <img src="<%= cache_remote_asset("https://source.unsplash.com/#{current_article.data.unsplash_img_id}/1400x900") %>" width="1400" height="900" alt="<%= current_article.data.img_alt || current_article.title %>">
+      <% if current_article.data.img_caption %>
+        <figcaption><%= current_article.data.img_caption %></figcaption>
+      <% end %>
     </figure>
     <% end %>
 
