@@ -15,8 +15,11 @@ result = JSON.parse(buffer)
 
 <h1>Stuff I'm Reading</h1>
 
+<p>Links that I think are worth a read.</p>
+
 <% result.each do |article| %>
 <article>
+  <hr>
   <header>
     <h3><a href="<%= article['href'] %>"><%= escape_html article['description'] %></a></h3>
     <time><small><%= DateTime.parse(article['time']).strftime('%e %B %Y') %></small></time>
@@ -34,6 +37,5 @@ result = JSON.parse(buffer)
     <% end %>
     </small></p>
   <% end %>
-  <hr>
 </article>
 <% end %>
