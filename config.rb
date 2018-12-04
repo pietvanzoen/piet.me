@@ -45,3 +45,18 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
   deploy.branch = "dist"
 end
+
+helpers do
+  def nav_link(name, url, options = {})
+    options = {
+      class: "",
+      active_if: url,
+      page: current_page.url,
+    }.update options
+    a = options.delete(:active_if)
+    active = Regexp === a ? current_page.url =~ a : current_page.url == a
+    options[:class] += " active" if active
+
+    link_to name, url, options
+  end
+end

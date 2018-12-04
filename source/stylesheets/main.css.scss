@@ -149,6 +149,17 @@ a, a:hover {
   .header h1 {
     font-size: 2em;
   }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .header-content > * {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header h1 a {
@@ -167,8 +178,26 @@ a, a:hover {
   vertical-align: middle;
 }
 
-.header nav {
-  text-align: right;
+.site-nav {
+  text-align: center;
+}
+
+.site-nav a {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.site-nav a.active {
+  color: var(--accent-color);
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.site-nav a svg {
+  fill: var(--text-color);
+  padding-right: 0.1em;
+  vertical-align: middle;
+}
+.site-nav a:hover svg {
+  fill: var(--accent-color);
 }
 
 .header {
@@ -179,15 +208,8 @@ a, a:hover {
 .header-content {
   max-width: 1280px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
   padding: 1em;
-}
-
-.header-content > * {
-  display: flex;
-  align-items: center;
+  text-align: center;
 }
 
 .main {
