@@ -1,0 +1,25 @@
+---
+title: Projects
+description: A smattering of projects I'm somewhat proud of.
+
+---
+<%
+require 'redcarpet'
+markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+%>
+<h1>Projects</h1>
+
+<p>Here's a smattering of projects that I'm somewhat proud of. I do some open source and the occasional website on the side. I'm quite proud of my dotfiles and I've spun out some command line tools from them. Enjoy!</p>
+
+<% data.projects.each_with_index do |group, i| %>
+  <hr>
+  <h2><%= group.name %></h2>
+  <% group.items.each_with_index do |item, i| %>
+    <%= i == 0 ? "" : "<hr>" %>
+    <div>
+      <h3><%= link_to item.title, item.link_url %></h3>
+      <%= markdown.render(item.description) %>
+      <p><strong><%= link_to item.link_title, item.link_url %></strong></p>
+    </div>
+  <% end %>
+<% end %>
