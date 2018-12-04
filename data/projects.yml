@@ -22,7 +22,7 @@
       description: |-
         I have a long history of spending too much time building a nice website and too little time writing content for it. This one is no exception! 🙈
 
-        This site is build on [middleman](middlemanapp.com), an easy-to-use static site generator. One of the things that drew me to middleman over [Jekyl](https://jekyllrb.com/) was the choice of templating language. I really enjoy ruby's native ERB templating.
+        This site is build on [middleman](https://middlemanapp.com), an easy-to-use static site generator. One of the things that drew me to middleman over [Jekyl](https://jekyllrb.com/) was the choice of templating language. I really enjoy ruby's native ERB templating.
 
         I run a [Digital Ocean](https://m.do.co/c/ff3556b74895) droplet with docker that runs this site via [Caddy](http://caddyserver.com) for easy to setup HTTPS. I also run [Fathom](https://usefathom.com/) for privacy friendly analytics.
 
