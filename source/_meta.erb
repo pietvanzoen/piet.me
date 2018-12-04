@@ -11,7 +11,7 @@
 <%
 @site_title = config.site_title
 @site_description = config.site_description
-@site_delimiter = ' :: '
+@site_delimiter = ' | '
 @meta_title = [@title || current_page.data.title, @site_title].compact.join(@site_delimiter)
 @meta_description = strip_tags current_page.data.description || @description || @site_description
 @meta_url = File.join(config.site_url, current_page.url)
@@ -19,7 +19,7 @@
 @unsplash_img_id = current_article ? current_article.data.unsplash_img_id : false
 %>
 
-<% if @description.nil? %>
+<% if current_page.url == '/' %>
 <title><%= @site_title + @site_delimiter + @site_description %></title>
 <% else %>
 <title><%= @meta_title %></title>
