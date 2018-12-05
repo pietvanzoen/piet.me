@@ -18,7 +18,9 @@
   rewrite /feed /feed.xml
 
   redir 302 {
+    /blog/archive /blog/
     /blog/archive/ /blog/
+    /blog/archive/index.html /blog/
   }
 
   header /images Cache-Control "max-age=86400"
