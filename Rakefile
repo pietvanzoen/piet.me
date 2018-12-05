@@ -41,7 +41,7 @@ namespace "server" do
   end
 
   desc "start server"
-  task :start => ["stop"] do
+  task :start => ["stop", "build"] do
     puts "==> Starting server"
     start_server
   end
