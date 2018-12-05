@@ -2,7 +2,7 @@
 <hr>
 
 <h2>Latest Posts</h2>
-<% blog.articles[0..4].each do |article| %>
+<% blog.articles[0..2].each do |article| %>
 <article>
   <h1><%= link_to article.title, article %> </h1>
   <time><small><%= article.date.strftime('%e %B %Y') %></small></time>
