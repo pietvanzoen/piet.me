@@ -28,8 +28,6 @@ activate :blog do |blog|
   blog.paginate = false
 end
 
-page "/feed.xml", layout: false
-
 configure :development do
   AssetCacher::BUILD_DIR = "./source"
   activate :livereload
