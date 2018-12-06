@@ -5,7 +5,7 @@
 <% blog.articles[0..2].each do |article| %>
 <article>
   <h1><%= link_to article.title, article %> </h1>
-  <time><small><%= article.date.strftime('%e %B %Y') %></small></time>
+  <time class="article-meta nudge-up"><%= article.date.strftime('%e %B %Y') %></time>
 
   <% if article.data.unsplash_img_id %>
     <img class="img-right img-circle" alt="<%= article.title %>" src="<%= cache_remote_asset("https://source.unsplash.com/#{article.data.unsplash_img_id}/300x300") %>" style="min-width: 100px; width: 18vw; max-width: 150px">

@@ -19,7 +19,7 @@ markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tabl
     <div>
       <h3><%= link_to item.title, item.link_url %></h3>
       <%= markdown.render(item.description) %>
-      <p><strong><%= link_to item.link_title, item.link_url %></strong></p>
+      <p><%= link_to item.link_title, item.link_url %></p>
     </div>
   <% end %>
 <% end %>
