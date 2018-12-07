@@ -19,7 +19,7 @@ There are 7 of them, I counted. Why 7? That's how many I thought of. I may add m
 
 Making changes to existing programs is risky. You and your team have spent a lot of time and hard work getting it to where it is. Are you confident that if you implement a new feature you won't break an existing one? Tests give you this confidence.
 
-If you think you have confidence in your code without tests, then would ask you to prove it. If you start poking around the program, triggering various behaviour, I'm pretty sure we could be sat around most of the day validating edge cases. This is not easily repeatable proof.
+If you think you have confidence in your code without tests, then I would ask you to prove it. If you start poking around the program, triggering various behaviour, I'm pretty sure we could be sat around most of the day validating edge cases. This is not easily repeatable proof.
 
 With good test coverage, you can run one command to quickly validate that your changes have not broken any tested behaviour.
 
