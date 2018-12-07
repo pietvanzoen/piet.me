@@ -225,7 +225,6 @@ a:hover {
 
 .header {
   border-bottom: 1px solid var(--subtle-color);
-  margin: 0 0 2em 0;
 }
 
 .header-content {
@@ -318,7 +317,7 @@ a:hover {
 .main {
   width: 740px;
   max-width: 100%;
-  padding: 0 1em;
+  padding: 2em 4em;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -327,7 +326,6 @@ a:hover {
 }
 
 .footer {
-  margin-top: 3em;
   padding: 3em 1em;
   font-size: 0.8em;
   text-align: center;
