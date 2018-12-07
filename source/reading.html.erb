@@ -15,14 +15,14 @@ result = JSON.parse(buffer)
 
 <h1>Stuff I'm Reading</h1>
 
-<p>Links that I think are worth a read.</p>
+<p class="intro-text">Links that I think are worth a read.</p>
 
 <% result.each do |article| %>
 <article>
   <hr>
   <header>
     <h3><a href="<%= article['href'] %>"><%= escape_html article['description'] %></a></h3>
-    <time><small><%= DateTime.parse(article['time']).strftime('%e %B %Y') %></small></time>
+    <time class="article-meta nudge-up"><%= DateTime.parse(article['time']).strftime('%e %B %Y') %></time>
   </header>
   <% if article['extended'] %>
     <blockquote><p><%= escape_html article['extended'] %></p></blockquote>
