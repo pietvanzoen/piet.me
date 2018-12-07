@@ -297,9 +297,9 @@ a:hover {
   fill: var(--accent-color);
 }
 
-.blurb img {
-  display: block;
+.blurb-img {
   margin: 0 auto 1em;
+  text-align: center;
 }
 
 @media screen and (min-width: 550px) {
@@ -310,10 +310,7 @@ a:hover {
     justify-content: center;
     flex-direction: row-reverse;
   }
-  .blurb img,
-  .blurb p {
-  }
-  .blurb img {
+  .blurb-img {
     margin: 0 0 0 1em;
   }
 }
