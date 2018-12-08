@@ -28,7 +28,7 @@
 
 
   <hr>
-  <p><em>Typos? Mistakes? <%= link_to 'Please submit an issue.', 'https://github.com/pietvanzoen/pietvanzoen.com/issues/new', :query => { :body => "**Page:** #{File.join(config.site_url, current_article.url)}\n\n", :labels => 'bug'} %></em></p>
+  <p><em>Typos? Mistakes? <%= link_to 'Please submit an issue.', 'https://github.com/pietvanzoen/pietvanzoen.com/issues/new', :query => { :body => "**Page:** #{URI.join(config.site_url, current_article.url)}\n\n", :labels => 'bug'} %></em></p>
 
 
   <h2 id="comments">Comments</h2>
