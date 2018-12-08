@@ -3,7 +3,6 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom", "xml:lang" => "en" do
   site_url = config.site_url
   xml.title config.site_title
   xml.subtitle "Posts from Piet van Zoen, an English/Dutch web developer living and working in the Netherlands."
-  xml.icon "/images/piet_sqr.jpg"
   xml.id site_url
   xml.link "href" => URI.join(site_url, blog.options.prefix.to_s)
   xml.link "href" => URI.join(site_url, current_page.path), "rel" => "self"
