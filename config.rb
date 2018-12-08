@@ -2,7 +2,7 @@ require "dotenv/load"
 require "lib/asset_cacher.rb"
 helpers AssetCacher
 
-set :site_url, "https://piet.me"
+set :site_url, "https://piet.me/"
 set :site_title, "Piet van Zoen"
 set :site_description, "Leiden based software engineer"
 
