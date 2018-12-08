@@ -1,10 +1,9 @@
 xml.instruct!
-xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
+xml.feed "xmlns" => "http://www.w3.org/2005/Atom", "xml:lang" => "en" do
   site_url = config.site_url
   xml.title config.site_title
-  xml.description "Posts from Piet van Zoen, an English/Dutch web developer living and working in the Netherlands."
+  xml.subtitle "Posts from Piet van Zoen, an English/Dutch web developer living and working in the Netherlands."
   xml.icon "/images/piet_sqr.jpg"
-  xml.language "en"
   xml.id site_url
   xml.link "href" => URI.join(site_url, blog.options.prefix.to_s)
   xml.link "href" => URI.join(site_url, current_page.path), "rel" => "self"
@@ -21,8 +20,9 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
       xml.title article.title
       xml.link "rel" => "alternate", "href" => URI.join(site_url, article.url)
       xml.id URI.join(site_url, article.url)
-      xml.published article.date.to_time.iso8601
-      xml.updated article.data.updated.to_time.iso8601 if article.data.updated
+      published = article.date.to_time.iso8601
+      xml.published published
+      xml.updated article.data.updated ? article.data.updated.to_time.iso8601 : published
       xml.author {
         xml.name "Piet van Zoen"
         xml.uri site_url
