@@ -1,0 +1,291 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-ed52cc8f.png?v=NmEn8A8Wqa">
+<link rel="icon" type="image/png" href="/images/favicon-32x32-904624ca.png?v=NmEn8A8Wqa" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16-8de6d68e.png?v=NmEn8A8Wqa" sizes="16x16">
+<link rel="manifest" href="/images/manifest.json?v=NmEn8A8Wqa">
+<link rel="mask-icon" href="/images/safari-pinned-tab-a0747d32.svg?v=NmEn8A8Wqa" color="#5bbad5">
+<link rel="shortcut icon" href="/images/favicon.ico?v=NmEn8A8Wqa">
+<meta name="msapplication-config" content="/images/browserconfig.xml?v=NmEn8A8Wqa">
+<meta name="theme-color" content="#ffffff">
+
+
+<title>Automated middleman deploy to Github pages | Piet van Zoen</title>
+
+<meta property="og:title" content="Automated middleman deploy to Github pages | Piet van Zoen" />
+<meta property="og:description" content="I recently switched from Jekyll to Middleman for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.
+
+" />
+<meta name="description" content="I recently switched from Jekyll to Middleman for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Piet van Zoen">
+<meta property="og:url" content="https://piet.me/blog/automated-middleman-deploy-to-github-pages/">
+<link rel="canonical" href="https://piet.me/blog/automated-middleman-deploy-to-github-pages/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@pietvanzoen" />
+
+<meta property="og:image" content="https://source.unsplash.com/GDdRP7U5ct0/400x400">
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="400" />
+
+
+
+    <link href="/stylesheets/main-ee750376.css" rel="stylesheet" /><link href="/stylesheets/syntax-3eec04d5.css" rel="stylesheet" />
+
+    <link rel="alternate" type="application/atom+xml" title="Piet van Zoen: Posts" href="/feed.xml" />
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header-content">
+        <div class="header-xl">
+          <a href="/" rel="home">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <title>face</title>
+          <path d="M12 20.016c4.406 0 8.016-3.609 8.016-8.016 0-0.797-0.141-1.547-0.328-2.25-0.703 0.188-1.453 0.234-2.25 0.234-3.375 0-6.328-1.641-8.156-4.219-0.984 2.391-2.906 4.359-5.25 5.391-0.047 0.281-0.047 0.563-0.047 0.844 0 4.406 3.609 8.016 8.016 8.016zM12 2.016c5.531 0 9.984 4.453 9.984 9.984s-4.453 9.984-9.984 9.984-9.984-4.453-9.984-9.984 4.453-9.984 9.984-9.984zM15 11.766c0.703 0 1.266 0.516 1.266 1.219s-0.563 1.266-1.266 1.266-1.266-0.563-1.266-1.266 0.563-1.219 1.266-1.219zM9 11.766c0.703 0 1.266 0.516 1.266 1.219s-0.563 1.266-1.266 1.266-1.266-0.563-1.266-1.266 0.563-1.219 1.266-1.219z"></path>
+          </svg>
+          pietvanzoen
+          </a>
+        </div>
+        <nav class="site-nav">
+          <a href="/about/" class="" page="/blog/automated-middleman-deploy-to-github-pages/">About</a>
+          <a href="/blog/" class="" page="/blog/automated-middleman-deploy-to-github-pages/">Posts</a>
+          <a href="/links/" class="" page="/blog/automated-middleman-deploy-to-github-pages/">Links</a>
+          <a href="/projects/" class="" page="/blog/automated-middleman-deploy-to-github-pages/">Projects</a>
+        </nav>
+      </div>
+    </header>
+
+
+    <main id="main" role="main" class="main">
+        <article class="post">
+    <header>
+      <h1>Automated middleman deploy to Github pages</h1>
+      <div class="article-meta nudge-up">
+        <time datetime="2017-02-27">27 February 2017</time>
+      </div>
+    </header>
+
+    <figure class="post-header-img">
+      <img src="/cached/4f02f8be088ce3da9c7b5c9d438014cf.jpg" width="1400" height="900" alt="Automated middleman deploy to Github pages">
+    </figure>
+
+    <p>I recently switched from Jekyll to <a href="https://middlemanapp.com/">Middleman</a> for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.</p>
+
+<p></p>
+
+<h2>Testing setup</h2>
+
+<p>I wanted to add some basic testing for my site, simple things like HTML validation and link checking. For that I found <a href="https://github.com/gjtorikian/html-proofer">HTMLProofer</a> which can run a variety of tests against a folder of html files.</p>
+
+<p>Add HTMLProofer to your <code>Gemfile</code> and <code>bundle install</code>:</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">gem</span> <span class="s1">'html-proofer'</span>
+</code></pre></div>
+<p>HTMLProofer can run via command line, but for ease of running locally and remotely with all of my configuration I chucked it in a <code>test.rb</code> and included a simple check for the build folder.</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="c1"># test.rb</span>
+
+<span class="nb">require</span> <span class="s1">'html-proofer'</span>
+
+<span class="k">raise</span> <span class="no">IOError</span><span class="p">,</span> <span class="s1">'Directory ./build does not exist. Run `middleman build` before running tests'</span> <span class="k">unless</span> <span class="no">Dir</span><span class="p">.</span><span class="nf">exists?</span><span class="p">(</span><span class="s1">'./build'</span><span class="p">)</span>
+
+<span class="no">HTMLProofer</span><span class="p">.</span><span class="nf">check_directory</span><span class="p">(</span><span class="s1">'./build'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="ss">:check_img_http</span> <span class="o">=&gt;</span> <span class="kp">true</span><span class="p">,</span>
+  <span class="ss">:check_html</span> <span class="o">=&gt;</span> <span class="kp">true</span><span class="p">,</span> <span class="ss">:validation</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="ss">:report_missing_names</span> <span class="o">=&gt;</span> <span class="kp">true</span> <span class="p">},</span>
+  <span class="ss">:check_favicon</span> <span class="o">=&gt;</span> <span class="kp">true</span><span class="p">,</span>
+  <span class="ss">:check_opengraph</span> <span class="o">=&gt;</span> <span class="kp">true</span><span class="p">,</span>
+  <span class="ss">:http_status_ignore</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">999</span><span class="p">,</span><span class="mi">403</span><span class="p">,</span><span class="mi">401</span><span class="p">]</span>
+<span class="p">}).</span><span class="nf">run</span>
+<span class="c1"># Check out the config docs for more: https://github.com/gjtorikian/html-proofer#configuration</span>
+</code></pre></div>
+<p>If you’re already using a <code>Rakefile</code> you could add the HTMLProofer code to a <code>:test</code> task. This test was going to be the only task in my <code>Rakefile</code> so I decided to stick with a plain old <code>.rb</code> file I could run.</p>
+
+<p>Run <code>ruby test.rb</code> and you should see something like this:</p>
+<div class="highlight"><pre class="highlight shell"><code>Running <span class="o">[</span><span class="s2">"ImageCheck"</span>, <span class="s2">"FaviconCheck"</span>, <span class="s2">"ScriptCheck"</span>, <span class="s2">"OpenGraphCheck"</span>, <span class="s2">"HtmlCheck"</span>, <span class="s2">"LinkCheck"</span><span class="o">]</span> on <span class="o">[</span><span class="s2">"./build"</span><span class="o">]</span> on <span class="k">*</span>.html...
+
+Checking 62 external links...
+Ran on 13 files!
+</code></pre></div>
+<p>The first time I ran this I discovered a handful of links that were either just wrong or had gone stale over time. Nice to know these will be caught in advance moving forward!</p>
+
+<h2>Deploy configuration</h2>
+
+<p>The <a href="https://github.com/middleman-contrib/middleman-deploy">middleman-deploy</a> gem has what you need to “deploy” your site to git. Basically what that means is that middleman will build your site, copy the files to an orphan branch, commit the changes and push. By default middleman deploys to the <code>gh-pages</code> branch for sites using Github pages.</p>
+
+<p>Add the gem to your <code>Gemfile</code> and <code>bundle install</code>. To work with middleman v4 I had to install the pre-alpha gem. This hasn’t been a problem for what I need so far.</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">gem</span> <span class="s1">'middleman-deploy'</span><span class="p">,</span> <span class="s1">'~&gt; 2.0.0.pre.alpha'</span>
+</code></pre></div>
+<p>Then in your <code>config.rb</code> add your deploy setup:</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">activate</span> <span class="ss">:deploy</span> <span class="k">do</span> <span class="o">|</span><span class="n">deploy</span><span class="o">|</span>
+  <span class="n">deploy</span><span class="p">.</span><span class="nf">deploy_method</span> <span class="o">=</span> <span class="ss">:git</span>
+  <span class="n">deploy</span><span class="p">.</span><span class="nf">branch</span> <span class="o">=</span> <span class="s1">'gh-pages'</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>Make sure the whole process works by running <code>middleman build &amp;&amp; ruby test.rb &amp;&amp; middleman deploy</code>.</p>
+
+<h2>CircleCI configuration</h2>
+
+<p>I’m using <a href="https://circleci.com/">CircleCI</a> for my build platform, but the configuration should be fairly similar for other platforms.</p>
+
+<p>Add the following to your <code>circle.yml</code> in the root of your repo:</p>
+<div class="highlight"><pre class="highlight yaml"><code><span class="c1"># circle.yml</span>
+
+<span class="na">compile</span><span class="pi">:</span>
+  <span class="na">override</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">bundle exec middleman build</span>
+
+<span class="na">test</span><span class="pi">:</span>
+  <span class="na">override</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">bundle exec ruby test.rb</span>
+
+<span class="na">deployment</span><span class="pi">:</span>
+  <span class="na">build</span><span class="pi">:</span>
+    <span class="na">branch</span><span class="pi">:</span> <span class="s">master</span>
+    <span class="na">commands</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">git config user.email $GIT_USER_EMAIL</span>
+      <span class="pi">-</span> <span class="s">git config user.name $GIT_USER_NAME</span>
+      <span class="pi">-</span> <span class="s">bundle exec middleman deploy</span>
+</code></pre></div>
+<p>For each build, this will compile the site, run the tests, and for builds on your <code>master</code> branch it will run the deploy. You’ll need to configure your git details too. For ease of configuration I’m using env vars for my git user config. Head to <code>https://circleci.com/gh/you/test-repo/edit#env-vars</code> to add your github info.</p>
+
+<h2>Git write access for the build</h2>
+
+<p>Next you need to configure CircleCI to have write access to the repo. By default Circle only has read access to the repo. Instructions for <a href="https://circleci.com/docs/1.0/adding-read-write-deployment-key/">setting up a read/write deploy key</a> are in the circle docs, but here’s the break down.</p>
+
+<h3>Generate a new SSH key</h3>
+
+<p>First we’ll need to create a new SSH key for Circle:</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"your_email@example.com"</span>
+Generating public/private rsa key pair.
+Enter file <span class="k">in </span>which to save the key: /Users/&lt;you&gt;/.ssh/circleci_deploy_key
+Enter passphrase <span class="o">(</span>empty <span class="k">for </span>no passphrase<span class="o">)</span>:
+</code></pre></div>
+<p>Give a location for your new ssh key and do <em>not</em> enter a passphrase, just hit return.</p>
+
+<h3>Add the public key to CircleCI</h3>
+
+<p>Copy the public version of your new new SSH key:</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">cat</span> ~/.ssh/circle_deploy_key.pub | pbcopy
+</code></pre></div>
+<p>Go to <code>https://circleci.com/gh/you/test-repo/edit#ssh</code> and add the public key that you just created. Use github.com  in the <em>Hostname</em> field.</p>
+
+<h3>Add the private key to Github</h3>
+
+<p>Next head to your repo in GitHub and add the private key to our repo.</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">cat</span> ~/.ssh/circle_deploy_key | pbcopy
+</code></pre></div>
+<p>Go to <code>https://github.com/you/test-repo/settings/keys</code> on GitHub and add the public key that you just created and copied. Make sure to “Allow write access” and save the key.</p>
+
+<h2>Deploy!</h2>
+
+<p>That should be everything you need to run the build. Here’s an <a href="https://circleci.com/gh/pietvanzoen/pietvanzoen.com/31">example build from my site</a>.</p>
+
+<p>You should now be able to simply push changes to your master branch and have the site automatically update, plus if there are any broken links your build will fail and the deploy won’t happen. 🎉 Enjoy!</p>
+
+<h3>Further reading:</h3>
+
+<ul>
+<li><a href="http://stackoverflow.com/a/22374542">Setting up a custom domain for your <code>gh-pages</code> site.</a></li>
+<li><a href="https://github.com/gjtorikian/html-proofer#configuration">HTTPProofer config</a> with extra options for testing.</li>
+</ul>
+
+<p><em>If anything in this post turns out to be incorrect or incomplete please comment and let me know.</em></p>
+
+  </article>
+
+
+  <hr>
+  <p><em>Typos? Mistakes? <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new?body=%2A%2APage%3A%2A%2A+https%3A%2F%2Fpiet.me%2Fblog%2Fautomated-middleman-deploy-to-github-pages%2F%0A%0A&amp;labels=bug">Please submit an issue.</a></em></p>
+
+
+  <h2 id="comments">Comments</h2>
+  <script src="https://utteranc.es/client.js"
+        repo="pietvanzoen/pietvanzoen.com"
+        issue-term="pathname"
+        async>
+  </script>
+
+  <noscript>
+    <div class="card">
+      <strong>Sorry, comments require JavaScript</strong>
+      <p><small>No JavaScript? Good for you! I strive to make the experience of this website great without JavaScript. But, I haven't found a good solution for comments on a static website without JavaScript. So, if you'd like to view or make comments please enable JavaScript.</small></p>
+    </div>
+    <br>
+  </noscript>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="buffer-bottom"><div>
+  <a href="https://twitter.com/pietvanzoen" rel="external me" class="icon-link" title="Twitter">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+      <path d="M31.939 6.092c-1.18 0.519-2.44 0.872-3.767 1.033 1.352-0.815 2.392-2.099 2.884-3.631-1.268 0.74-2.673 1.279-4.169 1.579-1.195-1.279-2.897-2.079-4.788-2.079-3.623 0-6.56 2.937-6.56 6.556 0 0.52 0.060 1.020 0.169 1.499-5.453-0.257-10.287-2.876-13.521-6.835-0.569 0.963-0.888 2.081-0.888 3.3 0 2.28 1.16 4.284 2.917 5.461-1.076-0.035-2.088-0.331-2.971-0.821v0.081c0 3.18 2.257 5.832 5.261 6.436-0.551 0.148-1.132 0.228-1.728 0.228-0.419 0-0.82-0.040-1.221-0.115 0.841 2.604 3.26 4.503 6.139 4.556-2.24 1.759-5.079 2.807-8.136 2.807-0.52 0-1.039-0.031-1.56-0.089 2.919 1.859 6.357 2.945 10.076 2.945 12.072 0 18.665-9.995 18.665-18.648 0-0.279 0-0.56-0.020-0.84 1.281-0.919 2.4-2.080 3.28-3.397l-0.063-0.027z"></path>
+    </svg>
+    <span>Twitter</span>
+  </a>
+  <a href="https://github.com/pietvanzoen" rel="external me" class="icon-link" title="Github">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+      <path d="M16 0.396c-8.84 0-16 7.164-16 16 0 7.071 4.584 13.067 10.94 15.18 0.8 0.151 1.093-0.344 1.093-0.769 0-0.38-0.013-1.387-0.020-2.72-4.451 0.965-5.389-2.147-5.389-2.147-0.728-1.847-1.78-2.34-1.78-2.34-1.449-0.992 0.112-0.972 0.112-0.972 1.607 0.112 2.451 1.648 2.451 1.648 1.427 2.447 3.745 1.74 4.66 1.331 0.144-1.035 0.556-1.74 1.013-2.14-3.553-0.4-7.288-1.776-7.288-7.907 0-1.747 0.62-3.173 1.647-4.293-0.18-0.404-0.72-2.031 0.14-4.235 0 0 1.34-0.429 4.4 1.64 1.28-0.356 2.64-0.532 4-0.54 1.36 0.008 2.72 0.184 4 0.54 3.040-2.069 4.38-1.64 4.38-1.64 0.86 2.204 0.32 3.831 0.16 4.235 1.020 1.12 1.64 2.547 1.64 4.293 0 6.147-3.74 7.5-7.3 7.893 0.56 0.48 1.080 1.461 1.080 2.96 0 2.141-0.020 3.861-0.020 4.381 0 0.42 0.28 0.92 1.1 0.76 6.401-2.099 10.981-8.099 10.981-15.159 0-8.836-7.164-16-16-16z"></path>
+    </svg>
+    <span>Github</span>
+  </a>
+  <a href="https://mastodon.social/@pietvanzoen" rel="external me" class="icon-link" title="Mastodon">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+      <path d="M30.924 10.505c0-6.941-4.548-8.976-4.548-8.976-2.293-1.053-6.232-1.496-10.321-1.529h-0.101c-4.091 0.033-8.027 0.476-10.32 1.529 0 0-4.548 2.035-4.548 8.976 0 1.589-0.031 3.491 0.020 5.505 0.165 6.789 1.245 13.479 7.521 15.14 2.893 0.765 5.379 0.927 7.38 0.816 3.629-0.2 5.667-1.296 5.667-1.296l-0.12-2.633s-2.593 0.817-5.505 0.719c-2.887-0.099-5.932-0.311-6.399-3.855-0.041-0.29-0.064-0.626-0.064-0.967 0-0.009 0-0.018 0-0.028v0.001s2.833 0.693 6.423 0.857c2.195 0.1 4.253-0.129 6.344-0.377 4.009-0.479 7.5-2.949 7.939-5.207 0.689-3.553 0.633-8.676 0.633-8.676zM25.559 19.451h-3.329v-8.159c0-1.72-0.724-2.592-2.171-2.592-1.6 0-2.403 1.035-2.403 3.083v4.465h-3.311v-4.467c0-2.048-0.803-3.083-2.403-3.083-1.447 0-2.171 0.873-2.171 2.592v8.159h-3.329v-8.404c0-1.719 0.437-3.084 1.316-4.093 0.907-1.011 2.092-1.528 3.565-1.528 1.704 0 2.995 0.655 3.848 1.965l0.828 1.391 0.829-1.391c0.853-1.311 2.144-1.965 3.848-1.965 1.472 0 2.659 0.517 3.565 1.528 0.877 1.009 1.315 2.375 1.315 4.093v8.405z"></path>
+    </svg>
+    <span>Mastodon</span>
+  </a>
+</div>
+<div>
+  <a href="https://www.linkedin.com/in/pietvanzoen" rel="external me" class="icon-link" title="LinkedIn">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+      <path d="M27.263 27.269h-4.739v-7.425c0-1.771-0.036-4.049-2.469-4.049-2.471 0-2.848 1.927-2.848 3.919v7.556h-4.739v-15.269h4.552v2.081h0.061c0.636-1.2 2.183-2.467 4.493-2.467 4.801 0 5.689 3.16 5.689 7.273v8.381zM7.116 9.911c-1.525 0-2.751-1.235-2.751-2.753 0-1.517 1.227-2.751 2.751-2.751 1.52 0 2.752 1.233 2.752 2.751 0 1.519-1.233 2.753-2.752 2.753zM9.492 27.269h-4.752v-15.269h4.752v15.269zM29.633 0h-27.272c-1.305 0-2.361 1.032-2.361 2.305v27.389c0 1.275 1.056 2.305 2.361 2.305h27.268c1.304 0 2.371-1.031 2.371-2.305v-27.389c0-1.273-1.067-2.305-2.371-2.305h0.004z"></path>
+    </svg>
+    <span>LinkedIn</span>
+  </a>
+  <a href="mailto:hi@piet.me" rel="external me" class="icon-link" title="Email">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+      <path d="M29 4h-26c-1.65 0-3 1.35-3 3v20c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-20c0-1.65-1.35-3-3-3zM12.461 17.199l-8.461 6.59v-15.676l8.461 9.086zM5.512 8h20.976l-10.488 7.875-10.488-7.875zM12.79 17.553l3.21 3.447 3.21-3.447 6.58 8.447h-19.579l6.58-8.447zM19.539 17.199l8.461-9.086v15.676l-8.461-6.59z"></path>
+    </svg>
+    <span>Email</span>
+  </a>
+  <a href="/feed.xml" class="icon-link" title="Feed">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+      <path d="M4.259 23.467c-2.35 0-4.259 1.917-4.259 4.252 0 2.349 1.909 4.244 4.259 4.244 2.358 0 4.265-1.895 4.265-4.244-0-2.336-1.907-4.252-4.265-4.252zM0.005 10.873v6.133c3.993 0 7.749 1.562 10.577 4.391 2.825 2.822 4.384 6.595 4.384 10.603h6.16c-0-11.651-9.478-21.127-21.121-21.127zM0.012 0v6.136c14.243 0 25.836 11.604 25.836 25.864h6.152c0-17.64-14.352-32-31.988-32z"></path>
+    </svg>
+    <span>Feed</span>
+  </a>
+</div>
+</div>
+
+      <p>&copy; 2018  Piet van Zoen</p>
+    </footer>
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+      (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+          (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'),
+          m=f.getElementsByTagName('script')[0];
+        o.async=1; o.src=t; o.id='fathom-script';
+        m.parentNode.insertBefore(o,m)
+      })(document, window, '//fathom.piet.me/tracker.js', 'fathom');
+      fathom('set', 'siteId', 'DGYKJ');
+      fathom('trackPageview');
+    </script>
+    <!-- / Fathom -->   <!-- End Matomo Code -->
+
+  </body>
+</html>
