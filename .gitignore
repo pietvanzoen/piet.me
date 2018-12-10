@@ -22,3 +22,5 @@
 
 /source/cached
 .asset-cache
+
+/data/links.yml

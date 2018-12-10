@@ -11,12 +11,15 @@
     <img class="img-right img-circle" alt="<%= article.title %>" src="<%= cache_remote_asset("https://source.unsplash.com/#{article.data.unsplash_img_id}/300x300") %>" style="min-width: 100px; width: 18vw; max-width: 150px">
   <% end %>
 
-  <%= article.summary %>
-  <hr>
-</article>
+<hr>
+<h2>Latest Links</h2>
+
+<ul>
+<% data.links[0..4].each do |link| %>
+  <li><%= link_to link['description'], link['href'] %></li>
 <% end %>
+</ul>
 
-
-<section>
-  <a href="/blog/">More Posts</a>
+<section class="buffer-top-large">
+  <h4><%= link_to 'More Links', '/links/' %></h4>
 </section>

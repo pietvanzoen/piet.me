@@ -8,13 +8,25 @@ task :serve do
 end
 
 desc "build html"
-task :build do
+task :build => ["generate_links"] do
   sh "bundle exec middleman build"
 end
 
 desc "test html"
 task :test do
   sh "bundle exec ruby test.rb"
+end
+
+task :generate_links do
+  require "open-uri"
+  require "json"
+  require "yaml"
+  file = "./data/links.yml"
+  request_uri = "https://api.pinboard.in/v1/posts/all?format=json&tag=share&auth_token=" + ENV["PINBOARD_TOKEN"]
+  buffer = open(request_uri).read
+  links = JSON.parse(buffer)
+  File.write(file, links.to_yaml)
+  puts "#{links.count} links written to #{file}"
 end
 
 namespace "server" do

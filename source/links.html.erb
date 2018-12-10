@@ -1,27 +1,20 @@
 ---
-title: Stuff I'm Reading
-description: Articles worth sharing.
+title: Links
+description: Links worth sharing.
 changefreq: daily
 
 ---
-<%
 
-require 'open-uri'
-require 'json'
-request_uri = 'https://api.pinboard.in/v1/posts/all?format=json&tag=share&auth_token=' + ENV['PINBOARD_TOKEN']
-buffer = open(request_uri).read
-result = JSON.parse(buffer)
-%>
+<h1>Links</h1>
 
-<h1>Stuff I'm Reading</h1>
+<p class="intro-text">Excellent things from around the web.</p>
 
-<p class="intro-text">Links that I think are worth a read.</p>
+<hr>
 
-<% result.each do |article| %>
+<% data.links.each do |article| %>
 <article>
-  <hr>
   <header>
-    <h3><a href="<%= article['href'] %>"><%= escape_html article['description'] %></a></h3>
+    <h2><a href="<%= article['href'] %>"><%= escape_html article['description'] %></a></h2>
     <time class="article-meta nudge-up"><%= DateTime.parse(article['time']).strftime('%e %B %Y') %></time>
   </header>
   <% if article['extended'] %>
@@ -37,5 +30,6 @@ result = JSON.parse(buffer)
     <% end %>
     </small></p>
   <% end %>
+  <hr>
 </article>
 <% end %>

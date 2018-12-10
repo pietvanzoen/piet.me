@@ -21,6 +21,9 @@
     /blog/archive /blog/
     /blog/archive/ /blog/
     /blog/archive/index.html /blog/
+    /reading /links/
+    /reading/ /links/
+    /reading/index.html /links/
   }
 
   header /images Cache-Control "max-age=86400"
