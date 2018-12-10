@@ -117,6 +117,7 @@ body {
 }
 
 h1,
+.header-xl,
 h2,
 h3,
 h4,
@@ -125,11 +126,13 @@ h4,
   font-family: "PT Sans", sans-serif;
 }
 
-h1 {
+h1,
+.header-xl {
   font-size: 1.8em;
 }
 
 h1,
+.header-xl,
 h2,
 h3,
 h4 {
@@ -138,6 +141,9 @@ h4 {
   line-height: 1.3;
 }
 
+li {
+  margin-bottom: 0.5em;
+}
 blockquote {
   font-style: italic;
   border-left: 3px solid var(--subtle-color);
@@ -219,6 +225,7 @@ a:hover {
 }
 
 h1 a,
+.header-xl a,
 h2 a,
 h3 a,
 h4 a {
@@ -233,7 +240,8 @@ h4 a {
   text-align: center;
 }
 
-.header h1 {
+.header .header-xl {
+  //font-size: 1.6em;
   margin: 0 0 0.2em;
 }
 
@@ -249,7 +257,7 @@ h4 a {
 }
 
 @media screen and (min-width: 700px) {
-  .header h1 {
+  .header .header-xl {
     font-size: 2em;
   }
 
@@ -267,23 +275,23 @@ h4 a {
   }
 }
 
-.header h1 a {
+.header .header-xl a {
   color: var(--accent-color);
   fill: var(--accent-color);
   border-bottom: none;
   transition: color ease-in-out 0.1s;
 }
-.header h1 a:hover {
+.header .header-xl a:hover {
   color: var(--text-color);
   fill: var(--text-color);
 }
-.header h1 svg {
+.header .header-xl svg {
   height: 1em;
   width: auto;
   vertical-align: middle;
   transition: all ease-in-out 0.2s;
 }
-.header h1 a:hover svg {
+.header .header-xl a:hover svg {
   transform: rotate(20deg);
 }
 
