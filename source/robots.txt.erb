@@ -1,4 +1,8 @@
 User-agent: *
+<% if ENV['ENV'] == 'production' %>
 <% sitemap.resources.select{ |p| p.data.noindex }.each do |p| %>
 Disallow: <%= p.url %>
+<% end %>
+<% else %>
+Disallow /
 <% end %>

@@ -10,17 +10,29 @@ before_script:
 script:
   - rake test
 deploy:
-  provider: pages
-  github-token: "$GITHUB_TOKEN"
-  target-branch: dist
-  local-dir: build
-  name: pietbot
-  email: hi+pietbot@pietvanzoen.com
-  keep-history: true
-  skip_cleanup: true
-  verbose: true
-  on:
-    branch: master
+  - provider: pages
+    github-token: "$GITHUB_TOKEN"
+    target-branch: dist-test
+    local-dir: build
+    name: pietbot
+    email: hi+pietbot@pietvanzoen.com
+    keep-history: true
+    skip_cleanup: true
+    verbose: true
+    on:
+      all_branches: true
+      condition: $TRAVIS_BRANCH != master
+  - provider: pages
+    github-token: "$GITHUB_TOKEN"
+    target-branch: dist
+    local-dir: build
+    name: pietbot
+    email: hi+pietbot@pietvanzoen.com
+    keep-history: true
+    skip_cleanup: true
+    verbose: true
+    on:
+      branch: master
 env:
   global:
     - secure: b3dlMOa9szoYqn4AF0jvm87ZY7Kxqu9IohTHj7zZFfLU1IMeMDieBT14MmqTo1LDDRIoDykEveujL4PX/5bGdVBQldOkMSHjc9Wp+20WQBKGZENXsK6vMtPhfElL37+4mSxuseggN5FA3sHxrubkKAowhw8/m3ikyH2zztK4kbbOUDUiiiV5s7svrXMc3VUws0EIzEul0Tfee4/nnfxlAMrNpM+MluwASTn3C8egyVEhMnf+iJ6aqzsi1x7vw+kRGi0r5nNAR0Z9W0Q6KE5MBvGcbOb7CjlumpmRMnLZcmtBgIXg1IkTlkBGfesKnrcrl7KQmTmuygmddDvwBrd5gJmmrUPeygY1jXhUFqO32MlUsYGcKEnoKF9sxZANJjCERbiYV4qWmel79hRPktQszlMcuOz0nJioCb4PSrPAbUo5S0wyCD/Xd2lFqn9URrtVavrOeIqvaEiRg6lAB+dhhLXuEEjwr3dLEddZJv4TTV7VE8iF8S0JP3OEIne+mn2cboKz/FwG3pJ1oYVHdA5h0TIbM8S518JX1CYPDYr0e8lRACLHDuqvbQZ/4xv936yRaGZ9xPAycWVJBwVZFNfLDmRsUbLWg2aMD9/cXH7ZT0RCqmcBi7sB8OzZqsmmvnFSTj3e/OHdMiTWC6Hr3LmoLsUZHRKc/v1ta4l5OP9DGBA=

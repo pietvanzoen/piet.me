@@ -9,7 +9,9 @@ end
 
 desc "build html"
 task :build => ["generate_links"] do
-  sh "bundle exec middleman build"
+  branch = ENV["TRAVIS_BRANCH"]
+  env = branch == "master" ? "production" : "test"
+  sh "ENV=#{env} bundle exec middleman build"
 end
 
 desc "test html"
