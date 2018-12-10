@@ -8,17 +8,18 @@
     <%= partial 'meta' %>
 
     <%= stylesheet_link_tag [
-      'main'
+      'main', 'vim'
     ].concat(@page_css ||= []) %>
 
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Piet van Zoen: Posts" %>
   </head>
   <body>
 
+
     <header class="header">
       <div class="header-content">
-        <div class="header-xl">
-          <a href="/" rel="home">
+      <div class="header-title header-xl">
+          <a href="/" rel="home" class="<%= current_page.url == '/' ? 'active' : '' %>">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <title>face</title>
           <path d="M12 20.016c4.406 0 8.016-3.609 8.016-8.016 0-0.797-0.141-1.547-0.328-2.25-0.703 0.188-1.453 0.234-2.25 0.234-3.375 0-6.328-1.641-8.156-4.219-0.984 2.391-2.906 4.359-5.25 5.391-0.047 0.281-0.047 0.563-0.047 0.844 0 4.406 3.609 8.016 8.016 8.016zM12 2.016c5.531 0 9.984 4.453 9.984 9.984s-4.453 9.984-9.984 9.984-9.984-4.453-9.984-9.984 4.453-9.984 9.984-9.984zM15 11.766c0.703 0 1.266 0.516 1.266 1.219s-0.563 1.266-1.266 1.266-1.266-0.563-1.266-1.266 0.563-1.219 1.266-1.219zM9 11.766c0.703 0 1.266 0.516 1.266 1.219s-0.563 1.266-1.266 1.266-1.266-0.563-1.266-1.266 0.563-1.219 1.266-1.219z"></path>
@@ -31,6 +32,9 @@
           <%= nav_link "Posts", "/blog/" %>
           <%= nav_link "Links", "/links/" %>
           <%= nav_link "Projects", "/projects/" %>
+          <% if current_article %>
+            <%= nav_link current_article.url.gsub(/^\/|\/$/, ''), current_article.url, :class => 'vim-nav' %>
+          <% end %>
         </nav>
       </div>
     </header>
@@ -43,8 +47,16 @@
     <footer class="footer">
       <div class="buffer-bottom"><%= partial 'social' %></div>
 
-      <p>&copy; <%= Time.new.year %>  Piet van Zoen</p>
+      <div class="colophon">
+        <p>&copy; <%= Time.new.year %>  Piet van Zoen</p>
+        <p class="vim-toggle"><a href="javascript:toggleVimMode()">[toggle vim mode]</a></p>
+      </div>
     </footer>
+
+    <div class="vim-footer">
+      <div class="vim-mode">NORMAL</div><div class="vim-location">piet.me</div><div class="vim-file"><%= current_page.url %></div>
+    </div>
+
 
     <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
     <script>
@@ -61,6 +73,30 @@
       fathom('trackPageview');
     </script>
     <!-- / Fathom -->   <!-- End Matomo Code -->
+
+    <script>
+      function toggleVimMode() {
+        if (!sessionStorage) {
+          console.error('Could not set vim mode. SessionStorage not supported');
+          return;
+        }
+        if (sessionStorage.vimMode) {
+          delete sessionStorage.vimMode;
+        } else {
+          sessionStorage.vimMode = true;
+        }
+        location.reload();
+      }
+      if (sessionStorage && sessionStorage.vimMode && document.styleSheets) {
+        document.body.className += " vim-on";
+        for (var i = 0; i < document.styleSheets.length; i++) {
+          var sheet = document.styleSheets[i];
+          if (sheet.href.includes('main') || sheet.href.includes('syntax')) {
+            sheet.disabled = true
+          }
+        }
+      }
+    </script>
 
   </body>
 </html>

@@ -1,0 +1,263 @@
+.vim-toggle {
+  font-family: "Inconsolata", monospace;
+  font-size: 0.6em;
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+}
+
+@media screen and (max-width: 900px) {
+  .vim-toggle {
+    display: none;
+  }
+}
+
+.vim-on {
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  ::selection {
+    background: #5c6d74; /* WebKit/Blink Browsers */
+    color: #0b2633;
+  }
+  ::-moz-selection {
+    background: #5c6d74; /* Gecko Browsers */
+    color: #0b2633;
+  }
+  &,
+  .header,
+  .vim-footer {
+    min-width: 900px;
+  }
+
+  & {
+    background-color: #0c2733;
+    margin: 0;
+    border-left: 2em solid #123440;
+  }
+  main {
+    padding: 2em 2px 1em;
+    margin: 0;
+    max-width: 800px;
+    overflow: hidden;
+  }
+
+  html,
+  button,
+  input,
+  select,
+  textarea,
+  html,
+  small,
+  time,
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Inconsolata", monospace;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #859294;
+  }
+
+  img,
+  svg {
+    display: none;
+  }
+
+  strong {
+    font-weight: normal;
+    color: #ccc;
+    &:before,
+    &:after {
+      content: "**";
+    }
+  }
+  em {
+    font-style: normal;
+    &:before,
+    &:after {
+      content: "_";
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: bold;
+    color: #bc5429;
+    &:before {
+    }
+  }
+
+  h1:before {
+    content: "# ";
+  }
+  h2:before {
+    content: "## ";
+  }
+  h3:before {
+    content: "### ";
+  }
+  h4:before {
+    content: "#### ";
+  }
+
+  hr {
+    display: block;
+    height: 0;
+    border: 0;
+    margin: 2em 0;
+    padding: 0;
+    clear: both;
+    &:before {
+      content: "------";
+    }
+  }
+
+  a {
+    color: #6b70c1;
+    text-decoration: none;
+    &:before {
+      color: #bc5429;
+      content: "[";
+    }
+    &:after {
+      color: #bc5429;
+      content: "](…)";
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    li:before {
+      margin-left: -1.2em;
+      content: "* ";
+    }
+  }
+
+  .header a {
+    &:before {
+      content: "";
+    }
+    &:after {
+      content: "";
+    }
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #12343f;
+    border-bottom: 1px solid #859396;
+  }
+  .header-title,
+  .site-nav {
+    display: inline-block;
+    text-transform: lowercase;
+  }
+  .header a {
+    &,
+    &:before,
+    &:after {
+      color: #6a7a82;
+    }
+    padding: 0.2em 0.5em;
+  }
+  .site-nav {
+    a {
+      &:before {
+        content: "~/";
+      }
+      &:after {
+        content: "/";
+      }
+    }
+  }
+
+  .header a.active {
+    &,
+    &:before,
+    &:after {
+      color: #ede8d8;
+    }
+    background-color: #5c6d74;
+  }
+  .footer {
+    &:before {
+      content: "------";
+      margin: 0 0 2em 0;
+      display: block;
+    }
+    padding: 2em 0;
+  }
+
+  .vim-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #133440;
+  }
+
+  .vim-mode,
+  .vim-location,
+  .vim-file {
+    display: inline-block;
+    padding: 0 0.5em;
+  }
+
+  .vim-mode {
+    font-weight: bold;
+    background-color: #458acc;
+    color: #0c2732;
+  }
+
+  .vim-file {
+    &:after {
+      content: "index.html";
+    }
+  }
+
+  .vim-location {
+    font-weight: bold;
+    background-color: #697a81;
+    color: #0c2732;
+  }
+
+  .colophon {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #697b81;
+    > * {
+      padding: 0 0.5em;
+      color: #0c2732;
+      display: inline-block;
+      margin: 0;
+    }
+  }
+  .vim-toggle {
+    position: static;
+    background-color: #95a1a0;
+    font-size: 1em;
+    a {
+      color: #0c2732;
+    }
+
+    a:before,
+    a:after {
+      content: "";
+    }
+  }
+}

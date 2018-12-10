@@ -338,6 +338,7 @@ h4 a {
 }
 
 .footer {
+  position: relative;
   padding: 3em 1em;
   font-size: 0.8em;
   text-align: center;
@@ -426,4 +427,8 @@ samp {
 .intro-text {
   font-size: 1.2em;
   line-height: 1.6;
+}
+.vim-footer,
+.vim-nav {
+  display: none !important;
 }
