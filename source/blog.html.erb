@@ -4,11 +4,4 @@ title: Posts
 
 <h1>Posts</h1>
 
-<ul>
-<% blog.articles.each do |article| %>
-  <li class="buffer-bottom">
-    <h4 class="buffer-off"><%= link_to article.title, article %></h4>
-    <time class="article-meta"><%= article.date.strftime('%e %B %Y') %></time>
-  </li>
-<% end %>
-</ul>
+<%= partial(:article_list, :locals => { :articles => blog.articles }) %>
