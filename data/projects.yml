@@ -3,22 +3,19 @@
   items:
   - title: Git get
     description: "Keep your cloned repos nice and neat in a `go get` esk directory tree. Read more here: [How I organize my cloned git projects](/blog/organizing-git-projects/)."
-    link_title: github.com/pietvanzoen/git-get
-    link_url: https://github.com/pietvanzoen/git-get
+    url: https://github.com/pietvanzoen/git-get
   - title: Hint
     description: "A command line tool to help you remember those little nuggets of knowledge."
-    link_title: github.com/pietvanzoen/hint
-    link_url: https://github.com/pietvanzoen/hint
+    url: https://github.com/pietvanzoen/hint
   - title: My Dotfiles
     description: |-
       These are my dotfiles. There are many like them. But these are mine.
 
       I live in the command line with zsh and vim. There's some good stuff here, some bad stuff, don't judge.
-    link_title: github.com/pietvanzoen/dotfiles
-    link_url: https://github.com/pietvanzoen/dotfiles
+    url: https://github.com/pietvanzoen/dotfiles
 - name: Websites
   items:
-    - title: This one!
+    - title: piet.me
       description: |-
         I have a long history of spending too much time building a nice website and too little time writing content for it. This one is no exception! 🙈
 
@@ -29,5 +26,4 @@
         Everything I do involves tests, so I use [HTMLProofer](https://github.com/gjtorikian/html-proofer) to test markup and links. As I do with most of my projects, I use [Travis CI](https://travis-ci.org/) to automate testing and deployment.
 
         All in all, I'm pretty proud. Now I just need to write something more than twice a year. 😛
-      link_title: github.com/pietvanzoen/pietvanzoen.com
-      link_url: https://github.com/pietvanzoen/pietvanzoen.com
+      url: https://github.com/pietvanzoen/pietvanzoen.com
