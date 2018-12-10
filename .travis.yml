@@ -6,6 +6,7 @@ cache:
 install:
   - bundle install --path vendor/bundle
 before_script:
+  - rake generate_links
   - rake build
 script:
   - rake test

@@ -2,13 +2,17 @@ require "bundler"
 Bundler.setup(:default)
 require "dotenv/load"
 
+LINKS_FILE = "./data/links.yml".freeze
+
 desc "run dev server"
 task :serve do
   sh "bundle exec middleman serve"
 end
 
 desc "build html"
-task :build => ["generate_links"] do
+task :build do
+  raise "Run 'rake generate_links' before running build." unless File.exist? LINKS_FILE
+
   branch = ENV["TRAVIS_BRANCH"]
   env = branch == "master" ? "production" : "test"
   sh "ENV=#{env} bundle exec middleman build"
@@ -23,12 +27,11 @@ task :generate_links do
   require "open-uri"
   require "json"
   require "yaml"
-  file = "./data/links.yml"
   request_uri = "https://api.pinboard.in/v1/posts/all?format=json&tag=share&auth_token=" + ENV["PINBOARD_TOKEN"]
   buffer = open(request_uri).read
   links = JSON.parse(buffer)
-  File.write(file, links.to_yaml)
-  puts "#{links.count} links written to #{file}"
+  File.write(LINKS_FILE, links.to_yaml)
+  puts "#{links.count} links written to #{LINKS_FILE}"
 end
 
 namespace "server" do
