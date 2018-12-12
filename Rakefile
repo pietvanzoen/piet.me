@@ -34,6 +34,21 @@ task :generate_links do
   puts "#{links.count} links written to #{LINKS_FILE}"
 end
 
+task :update_links do
+  if ENV['CI'].nil?
+    puts "Not in CI. Aborting."
+    exit 0
+  end
+  if ENV["TRAVIS_BRANCH"] != 'master'
+    puts "Not on master branch. Aborting."
+    exit 0
+  end
+  sh "curl -L http://scripts.piet.me/ci/setup-git | bash -e"
+  sh "git add #{LINKS_FILE}"
+  sh "git commit -m 'ci: update links data' || true"
+  sh "git push"
+end
+
 namespace "server" do
   DEV_TAG = "pietvanzoen/pietvanzoen.com:dev".freeze
   PROD_TAG = "pietvanzoen/pietvanzoen.com:latest".freeze

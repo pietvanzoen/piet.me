@@ -10,6 +10,8 @@ before_script:
   - rake build
 script:
   - rake test
+after_success:
+  - rake update_links
 deploy:
   - provider: pages
     github-token: "$GITHUB_TOKEN"
