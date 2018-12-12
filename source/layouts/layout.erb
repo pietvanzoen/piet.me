@@ -85,7 +85,7 @@
         } else {
           sessionStorage.vimMode = true;
         }
-        location.reload();
+        location.reload(true);
       }
       if (sessionStorage && sessionStorage.vimMode && document.styleSheets) {
         document.body.className += " vim-on";
