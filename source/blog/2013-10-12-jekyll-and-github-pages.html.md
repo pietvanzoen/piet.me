@@ -2,7 +2,7 @@
 title: Moving from shared hosting to Github pages
 ---
 
-When my shared hosting plan was coming up for renewal I struggled to find a hosting service that I liked. I was hoping for good uptime, something that didn't break the bank, and preferably something with a decent UI. (Maybe I was asking to much.) [Webfaction](https://www.webfaction.com/?affiliate=pietvanz) was a great option for a while but $9.50 a month for a few small sites (this one, [Cafe van Zoen](http://cafevanzoen.com) and a handful of experiments) was more than I wanted to spend. That said, the UI and features make Webfactions my favourite shared hosting option.
+When my shared hosting plan was coming up for renewal I struggled to find a hosting service that I liked. I was hoping for good uptime, something that didn't break the bank, and preferably something with a decent UI. (Maybe I was asking to much.) [Webfaction](https://www.webfaction.com/?affiliate=pietvanz) was a great option for a while but $9.50 a month for a few small sites was more than I wanted to spend. That said, the UI and features make Webfactions my favourite shared hosting option.
 
 In the end I went for something a little different. Between [Jekyll](http://jekyllrb.com) and [Github Pages](http://pages.github.com) I now host this site for free.
 
