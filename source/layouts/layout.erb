@@ -70,9 +70,9 @@
         m.parentNode.insertBefore(o,m)
       })(document, window, '//fathom.piet.me/tracker.js', 'fathom');
       fathom('set', 'siteId', 'DGYKJ');
-      fathom('trackPageview');
+      <%= ENV["ENV"] == "production" ? "fathom('trackPageview');" : "" %>
     </script>
-    <!-- / Fathom -->   <!-- End Matomo Code -->
+    <!-- / Fathom -->
 
     <script>
       function toggleVimMode() {
