@@ -31,7 +31,7 @@
 
 
 
-    <link href="/stylesheets/main-be26c9a4.css" rel="stylesheet" /><link href="/stylesheets/vim-41b208d2.css" rel="stylesheet" />
+    <link href="/stylesheets/main-1e2bc8eb.css" rel="stylesheet" /><link href="/stylesheets/vim-41b208d2.css" rel="stylesheet" />
 
     <link rel="alternate" type="application/atom+xml" title="Piet van Zoen: Posts" href="/feed.xml" />
   </head>
@@ -637,9 +637,9 @@ I’ve contributed to a number of open source projects in this community (Babel,
         m.parentNode.insertBefore(o,m)
       })(document, window, '//fathom.piet.me/tracker.js', 'fathom');
       fathom('set', 'siteId', 'DGYKJ');
-      fathom('trackPageview');
+      
     </script>
-    <!-- / Fathom -->   <!-- End Matomo Code -->
+    <!-- / Fathom -->
 
     <script>
       function toggleVimMode() {
@@ -652,7 +652,7 @@ I’ve contributed to a number of open source projects in this community (Babel,
         } else {
           sessionStorage.vimMode = true;
         }
-        location.reload();
+        location.reload(true);
       }
       if (sessionStorage && sessionStorage.vimMode && document.styleSheets) {
         document.body.className += " vim-on";

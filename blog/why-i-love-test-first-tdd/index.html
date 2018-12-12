@@ -40,7 +40,7 @@
 
 
 
-    <link href="/stylesheets/main-be26c9a4.css" rel="stylesheet" /><link href="/stylesheets/vim-41b208d2.css" rel="stylesheet" /><link href="/stylesheets/syntax-3eec04d5.css" rel="stylesheet" />
+    <link href="/stylesheets/main-1e2bc8eb.css" rel="stylesheet" /><link href="/stylesheets/vim-41b208d2.css" rel="stylesheet" /><link href="/stylesheets/syntax-3eec04d5.css" rel="stylesheet" />
 
     <link rel="alternate" type="application/atom+xml" title="Piet van Zoen: Posts" href="/feed.xml" />
   </head>
@@ -75,6 +75,7 @@
       <h1>Why I love test-first TDD</h1>
       <div class="article-meta nudge-up">
         <time datetime="2016-06-10">10 June 2016</time>
+        &nbsp;|&nbsp;&nbsp;<abbr title="3 minutes at 200/wpm">750 words</abbr>
       </div>
     </header>
 
@@ -219,9 +220,9 @@
         m.parentNode.insertBefore(o,m)
       })(document, window, '//fathom.piet.me/tracker.js', 'fathom');
       fathom('set', 'siteId', 'DGYKJ');
-      fathom('trackPageview');
+      
     </script>
-    <!-- / Fathom -->   <!-- End Matomo Code -->
+    <!-- / Fathom -->
 
     <script>
       function toggleVimMode() {
@@ -234,7 +235,7 @@
         } else {
           sessionStorage.vimMode = true;
         }
-        location.reload();
+        location.reload(true);
       }
       if (sessionStorage && sessionStorage.vimMode && document.styleSheets) {
         document.body.className += " vim-on";
