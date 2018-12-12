@@ -1,0 +1,431 @@
+---
+- href: https://24ways.org/2018/state-machines-in-user-interfaces/
+  description: The (Switch)-Case for State Machines in User Interfaces ◆ 24 ways
+  extended: |-
+    Describing all the possible user flows and business logic of an application can become tricky. Ironically, user stories might not tell the whole story – they often leave out potential edge-cases or small yet important bits of information.
+
+    However, one important (and very old) mathematical model of computation can be used for describing the behavior and all possible states of a user interface: the finite state machine.
+  meta: 34a048ce9c773a901ee12dbd8c9e4229
+  hash: 1f949241951280d166b2088745ed6ff2
+  time: '2018-12-12T09:16:05Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: webdev webdesign share
+- href: https://adactio.com/articles/14584
+  description: 'Adactio: Mistletoe Offline'
+  extended: "There are some Murphyesque situations where even your lovingly crafted
+    404 page won’t help. What if your web server is down? What if someone is trying
+    to reach your site but they lose their internet connection? These are all things
+    than can—and will—go wrong.\r\n\r\nI guess there’s nothing we can do about those
+    particular situations, right?\r\n\r\nWrong!"
+  meta: 26f1d012b7cd7e5d1e88d7536407f038
+  hash: 6e5c7ad64cd8d351794d482ef46f46f1
+  time: '2018-12-08T07:28:20Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: javascript web share
+- href: http://www.heydonworks.com/article/reluctant-gatekeeping-the-problem-with-full-stack
+  description: 'Reluctant Gatekeeping: The Problem With Full Stack | HeydonWorks'
+  extended: The role of the Full Stack Developer (which is, in practice, a computer
+    scientist who also writes HTML and CSS), one takes responsibility for all the
+    code, in spite of its radical variance in syntax and purpose, and becomes the
+    gatekeeper of at least some kinds of code one simply doesn’t care about writing
+    well.
+  meta: a9920405a365a85246be3485f4053f7c
+  hash: c34710ec9e5167f1560584ebd09d68f4
+  time: '2018-12-04T07:29:38Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: webdev share
+- href: https://christine.website/blog/experimental-rilkef-2018-11-30
+  description: I Put Words on this Webpage so You Have to Listen to Me Now - Christine
+    Dodrill
+  extended: 'Holy cow. I am angry at how people do thing with tool. People do thing
+    with tool so badly. You shouldn’t do thing with tool, you should do other thing,
+    compare this:'
+  meta: 7d7b62c33b1acac69733c2e625ee2c19
+  hash: 17700fe7929f11209bc51aefe9c15209
+  time: '2018-12-03T07:37:49Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: fun share
+- href: http://geepawhill.org/tdd-and-the-lump-of-coding-fallacy/
+  description: TDD & The Lump Of Coding Fallacy
+  extended: 'You’re a working geek: you spend your days coding for money to add value
+    to your company. And one day some random schmoe like me comes up to you and says,
+    hey friend you really ought to try TDD, because that value that you’re adding,
+    you could have added even faster if you used TDD. So, you check it out, because
+    sometimes random schmoes actually have a clue, and you see pretty quickly that
+    TDD means making lots of automated tests against your code. So what do you do?'
+  meta: 6ca06b18f2478740025e52cf40f80c1a
+  hash: a238b66d9e10a95cb4429cccaa410dd7
+  time: '2018-12-01T20:20:05Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: tdd share
+- href: https://hacks.mozilla.org/2018/11/the-power-of-web-components/
+  description: The Power of Web Components - Mozilla Hacks - the Web developer blog
+  extended: Web Components comprises a set of standards that enable user-defined HTML
+    elements. These elements can go in all the same places as traditional HTML. Despite
+    the long standardization process, the ...
+  meta: 7b0717a41300ad1c719f6d2291e095df
+  hash: 0a95258ad83dacfe9450149558a4e762
+  time: '2018-11-16T06:26:28Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: webcomponents share
+- href: https://scotch.io/tutorials/5-tips-to-write-better-conditionals-in-javascript
+  description: 5 Tips to Write Better Conditionals in JavaScript ― Scotch
+  extended: When working with JavaScript, we deal a lot with conditionals, here are
+    the 5 tips for you to write better / cleaner conditionals.
+  meta: 04d0bd82d94c4fed28f18d673457d3cf
+  hash: 69b1170b91319a8fdb5e0734e900428a
+  time: '2018-10-02T15:27:26Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: javascript share
+- href: https://javascript30.com/
+  description: JavaScript 30 — Build 30 things with vanilla JS in 30 days with 30
+    tutorials
+  extended: ''
+  meta: 0043d3b4cf6b972a75be43f0695b048b
+  hash: fbefcc794293823d5acecc9eb5bae819
+  time: '2018-09-24T14:45:21Z'
+  shared: 'no'
+  toread: 'no'
+  tags: learn share javascript
+- href: https://sayazamurai.github.io/python-vs-javascript/
+  description: How to write X in both Python 3 and JavaScript (ES2015)
+  extended: ''
+  meta: 861806a9087c3a420c4bd76bf3a4a5ca
+  hash: a2db288c143c9b8047bcd0b063c84b93
+  time: '2018-09-14T17:50:54Z'
+  shared: 'yes'
+  toread: 'yes'
+  tags: share javascript python
+- href: https://dnote.io/blog/how-i-built-personal-knowledge-base-for-myself/
+  description: How I Built a Personal Knowledge Base for Myself
+  extended: A story of how I have built and used a personal knowledge base for one
+    and a half year and how it helped.
+  meta: c3c21308e61f0f1cf5f59bf7ebaeebea
+  hash: ab3febce1ef5b837a22b19ea6ed75bfc
+  time: '2018-09-10T06:44:38Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: productivity share
+- href: https://nordicapis.com/when-to-use-what-rest-graphql-webhooks-grpc/
+  description: 'When to Use What: REST, GraphQL, Webhooks, &amp; gRPC | Nordic APIs
+    |'
+  extended: Real world, specific use cases for REST, GraphQL, gRPC, and Webhooks to
+    help API developers make sense of which API design style to use for what situation.
+  meta: a2cca16c43ca11af871891c551db1b16
+  hash: 46644cf2a5da3f090622ca831898449a
+  time: '2018-08-23T05:09:56Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: share software-architecture api
+- href: https://learnxinyminutes.com/
+  description: 'Learn X in Y Minutes: Scenic Programming Language Tours'
+  extended: ''
+  meta: 1baf9063527443549ab2215e0bae8e30
+  hash: b5c19333a40491f54cb763ca38d971c2
+  time: '2018-08-21T06:50:54Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: programming learn share
+- href: http://mcfunley.com/choose-boring-technology
+  description: 'Dan McKinley :: Choose Boring Technology'
+  extended: ''
+  meta: e2822751c2648067cb5099505d3b49fd
+  hash: d62993ee047ec4a51b11e986b22566b8
+  time: '2018-08-18T09:54:32Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: best-practices share programming
+- href: https://www.reddit.com/r/tdd/comments/94xtl7/ian_cooper_tdd_where_did_it_all_go_wrong/?st=JKHQKCS3&sh=13f1c3fe
+  description: Ian Cooper - TDD, Where Did It All Go Wrong
+  extended: "Since Kent Beck wrote the book on TDD in 2002 a lot of words have been
+    dedicated to the subject. But many of them propogated misunderstandings of Kent's
+    original rules so that TDD practice bears little resemblance to Kent's original
+    ideas. Key misunderstandings around what do I test, what is a unit test, and what
+    is the 'public interface' have led to test suites that are brittle, hard to read,
+    and do not support easy refactoring. In this talk we re-discover Kent's original
+    proposition, discover where key misunderstandings occured and look at a better
+    approach to TDD that supports sofware development instead of impeding it. Be prepared
+    from some sacred cows to be slaughtered and fewer but better tests to be written,\n\n"
+  meta: ea4d142cebaf6e85f6bdc967165bec85
+  hash: dad1a61451c4a7564944da7f659883b9
+  time: '2018-08-06T03:48:45Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: tdd share talks
+- href: https://glitch.com/
+  description: Glitch - The Friendly, Creative Community
+  extended: The friendly community where you’ll build the app of your dreams.
+  meta: 87854baf88ae6f022e37312a4bd6c1ab
+  hash: 9d046872edbda21a41e0693844b6a232
+  time: '2018-07-24T07:31:52Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: ide education share
+- href: https://github.com/sohelamin/microservices
+  description: 'sohelamin/microservices: A collection of some random microservices.'
+  extended: A collection of some random microservices.
+  meta: 7a432c63aef56f6de5e843c9377950dc
+  hash: 426ea9ec50bbbcbdfc12ef292dfdc2a2
+  time: '2018-07-22T06:44:53Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: software-architecture share
+- href: https://www.remoteonly.org/
+  description: Remote Only
+  extended: Promoting remote organizations.
+  meta: 466408b27b1cfb8db7884ef43c218137
+  hash: 46ec991f1b4535d4e345604c675e9ebc
+  time: '2018-07-16T08:36:09Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: productivity share
+- href: https://london2018.theleaddeveloper.com/
+  description: The Lead Developer London 2018
+  extended: The conference for technical leads.
+  meta: c312aa88561874e1432e02bf4b6f65c8
+  hash: e73539d7e4319de1307f38f55702eab4
+  time: '2018-07-12T11:29:55Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: talks share
+- href: https://github.com/ry/deno
+  description: 'ry/deno: A secure TypeScript runtime on V8'
+  extended: GitHub is where people build software. More than 27 million people use
+    GitHub to discover, fork, and contribute to over 80 million projects.
+  meta: 9c903108c8542f8f4a116535eef9f5f3
+  hash: 5fe83330aa7e4d1fb7a3443bf3b57ecb
+  time: '2018-06-03T18:12:16Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: typescript share
+- href: https://olivierlacan.com/posts/cd-is-wasting-your-time/
+  description: cd is Wasting Your Time
+  extended: Thoughts on Ruby, Rails, open source software, programming, and life from
+    Olivier Lacan
+  meta: f7fa457d84f4fc1824c8d98332868068
+  hash: d4a75514c9e4b57a5fa18b8bf2dc73bf
+  time: '2018-03-29T18:10:09Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: productivity share commandline
+- href: https://lobste.rs/s/nvdbwz/becoming_sre_without_previous#c_vddb22
+  description: Becoming a SRE without previous experience | Lobsters
+  extended: Excellent advice on moving into SRE from a software engineer background.
+  meta: bb95d55e6f8277d8a4e8eb5d94ac84b0
+  hash: 38bf8276030597f7d6d2bafab1b4f893
+  time: '2018-01-31T12:12:41Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: sre hiring share
+- href: http://www.dwmkerr.com/the-death-of-microservice-madness-in-2018/
+  description: The Death of Microservice Madness in 2018
+  extended: |-
+    There are many cases where great efforts have been made to adopt microservice patterns without necessarily understanding how the costs and benefits will apply to the specifics of the problem at hand.
+
+    I'm going to describe in detail what microservices are, why the pattern is so appealing, and also some of the key challenges that they present.
+  meta: e97f93d05cdd1f5a63464c9c936630e3
+  hash: 8ba4ddfc534e08bb1ed1b3231e3c2f69
+  time: '2018-01-31T12:10:58Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: software-architecture share
+- href: https://blog.lessonslearned.org/building-a-more-secure-development-chromebook/
+  description: My $169 development Chromebook
+  extended: How Chrome OS, Termux, YubiKey and Duo Mobile make for great usable security.
+    A travel Chromebook for modern development, online and offline.
+  meta: 6ace2dddeb55584e6934f14851e0d17c
+  hash: cbbdbed3a355ec539f4e75e2b9a088f1
+  time: '2018-01-24T09:11:05Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: security development share
+- href: https://zwischenzugs.com/2018/01/21/ten-more-things-i-wish-id-known-about-bash/
+  description: Ten More Things I Wish I’d Known About bash – zwischenzugs
+  extended: Intro My previous post took off far more than I expected, so I thought
+    I’d write another piece on less well-known bash features. As I said before, because
+    I felt bash is an often-used (and un…
+  meta: 0af3960aeccf88020077fe985837885c
+  hash: 5a525b8b9117e02db8f7e1b706ba07de
+  time: '2018-01-22T08:51:43Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: bash share
+- href: https://codewithoutrules.com/2017/08/07/do-something-useful/
+  description: Can we please do useful things with software?
+  extended: If you need a job, you need a job, and as long as you’re not doing something
+    you consider unethical or immoral you do what you need to to get by. But if you
+    have the opportunity, why not also do something useful, something that makes the
+    world better?
+  meta: f835fb0d00df5d59cae852bb19517312
+  hash: 25f1931e760607d47360d2582be8088c
+  time: '2017-08-15T06:17:53Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: share hiring
+- href: https://jvns.ca/blog/2017/08/06/learning-at-work/
+  description: Learning at work - Julia Evans
+  extended: Learning at work
+  meta: e45bfc1dba36f1ab713952bb574edc68
+  hash: 0c4243314ae4cd218f474662115e48a2
+  time: '2017-08-07T04:43:54Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: learn share
+- href: https://dalibornasevic.com/posts/43-12-vim-tips
+  description: 12 Vim Tips
+  extended: This compilation of Vim tips is repost of some intermediate to advanced
+    Vim tips I've found interesting
+  meta: d059b4a23eb8a0ff2b3b576bdbc38c05
+  hash: '09041ffcb65b8427d13cac8ebeed6517'
+  time: '2017-07-02T13:08:59Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: vim share
+- href: https://shapeshed.com/vim-netrw/
+  description: 'Vim: you don''t need NERDtree or (maybe) netrw | George Ornbo'
+  extended: Vim's netrw file browser is good enough. With a few tweaks there is no
+    need for plugin like NERDtree. For many tasks you may not even need netrw.
+  meta: 463d3f9b1615b9ff73cd4ce9c124c1cd
+  hash: 16c2e05880d90f79b74a81036fd2f79b
+  time: '2017-07-01T14:51:29Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: vim share
+- href: https://molily.de/amp/
+  description: What Google AMP means for the JavaScript community · molily
+  extended: 'Google’s Accelerated Mobile Pages project (AMP) focuses current conflicts
+    on the web like a lense: The mobile revolution, trustworthy and sustainable journalism,
+    advertising and content monetarization, web standardization, web performance and
+    tech industry monopolies.'
+  meta: ebfb36d2ae8b4d815d1d03ba96663bc2
+  hash: 5f406bd83f9f55a5670982aebd583157
+  time: '2017-06-29T06:07:19Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: share best-practices javascript
+- href: https://statico.github.io/vim.html
+  description: Vim After 11 Years - Ian Langworth’s Things of Variable Interest
+  extended: Recently, someone noticed a plugin I was using and said, “I had no idea
+    Vim could do that. You should teach me all of these tricks someday.” A fine suggestion,
+    indeed, and that day is today.
+  meta: 8bbe1ebc143846d44af8aedc52e80107
+  hash: 588b253e0de94332267388a9ab2b3695
+  time: '2017-06-24T11:22:20Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: vim share
+- href: https://dev.to/sahildua2305/unconventional-way-of-learning-a-new-programming-language
+  description: Unconventional way of learning a new programming language
+  extended: There are more than 500 programming languages. Hence, it’s pretty normal
+    for you to start learning a new programming language today. It’s possible that
+    you know…
+  meta: ffec101e0d1040c6ea5af24bd335a4d4
+  hash: 238f844dd8a59020c32959347109bce0
+  time: '2017-04-01T13:21:14Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: learn share instapaper
+- href: https://hackernoon.com/complexity-and-strategy-325cd7f59a92#.w06wjo7hn
+  description: Complexity and Strategy
+  extended: I struggled with how to think about complexity through much of my career,
+    especially during the ten years I spent leading Office development. Modeling complexity
+    impacted how we planned major releases, our technical strategy as we moved to
+    new platforms, how we thought about the impact of new technologies, how we competed
+    with Google Apps, how we thought about open source and throughout “frank and open”
+    discussions with Bill Gates on our long term technical strategy for building the
+    Office applications.
+  meta: b83c74205b48993d5df90300659265c2
+  hash: f6f15ba765075ebd01c9daaf2827e339
+  time: '2017-03-19T06:16:04Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: software-architecture share
+- href: https://dev.to/dnimmo/thinking-of-the-next-developer
+  description: Thinking of the next developer
+  extended: Over the last year, I've ended up on four projects that were started prior
+    to my arrival. This isn't uncommon; more often than not throughout any career
+    in development, you'll find that you're spending a lot of time trying to understand
+    someone else's code. It may have been written a few days ago, and it may have
+    been written years ago. The original author may still be on-hand to talk you through
+    it, or they may have moved on. But regardless of the circumstances, you will often
+    find yourself spending time figuring out what a codebase you're looking at is
+    doing, and why.
+  meta: 56e46220fe953c50b27dfc8f106a7bc1
+  hash: e553e41ea6b0bf4d1049050e77c26e9d
+  time: '2017-03-11T08:02:34Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: best-practices software-development share
+- href: https://dev.to/ericnormand/the-idea-of-lisp
+  description: The Idea of Lisp
+  extended: LISP. It conjures up visions of a bygone age of computers the size of
+    refrigerators, ALL CAPS CODE, and parentheses. Oh! so many parentheses! So why
+    is Object-Oriented Programming's creator so enamored with the idea of Lisp? And
+    what can he mean by a programming language being an idea anyway? Should I blame
+    my Computer Science education for not teaching it to me?
+  meta: 5cae578a299f0a9ab897f5ad6176c23f
+  hash: 390a8594d607c82f77a9840e4578a7ff
+  time: '2017-03-10T11:23:25Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: functional-programming share
+- href: https://m.signalvnoise.com/just-starting-out-ditch-the-full-stack-developer-label-11df9d3c7c6#.go2cozrg6
+  description: Just starting out? Ditch the “full stack developer” label
+  extended: |-
+    The vagueness and confusion around the phrase “full stack developer” has been lingering for years. Google it and you’ll find plenty of discussion about why it’s such a loaded term.
+    Given that long-standing vagueness, labelling yourself as “full stack” might be doing you more harm than good, especially if you’re just starting out.
+  meta: ec96ac43330ac2d93074dd3de51dd4fe
+  hash: 1ad5a8be351396a3cc03f0516e1a4b33
+  time: '2017-02-26T23:59:30Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: share imposter-syndrome
+- href: https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8#.tpbb74l54
+  description: Why I Left Gulp and Grunt for npm Scripts
+  extended: I know what you’re thinking. WAT?! Didn’t Gulp just kill Grunt? Why can’t
+    we just be content for a few minutes here in JavaScript land? I hear ya, but…
+  meta: bf38e49bfbdc06dca55001094330ea2d
+  hash: 5431ff61b32d6329841ec6f9b7083402
+  time: '2017-01-25T15:12:55Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: npm share tools
+- href: http://paulgraham.com/makersschedule.html
+  description: Maker's Schedule, Manager's Schedule
+  extended: One reason programmers dislike meetings so much is that they're on a different
+    type of schedule from other people. Meetings cost them more.
+  meta: 37052be1da37a718b5e8904855b8622c
+  hash: 4c5af3d8ab8135361b239456d7d2143f
+  time: '2017-01-25T12:03:12Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: productivity share
+- href: https://github.com/ryanmcdermott/clean-code-javascript
+  description: Clean Code concepts adapted for JavaScript
+  extended: Software engineering principles, from Robert C. Martin's book Clean Code,
+    adapted for JavaScript. This is not a style guide. It's a guide to producing readable,
+    reusable, and refactorable software in JavaScript.
+  meta: 5961e37c3123f8d7de1ad5d7d0a9a4ae
+  hash: 160451e7a95ad4d89a897f8d9e36f6f1
+  time: '2017-01-08T20:26:34Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: best-practices javascript share
+- href: https://medium.com/@thejameskyle/dear-javascript-7e14ffcae36c#.owwh9w7hj
+  description: Dear JavaScript, – Medium
+  extended: |-
+    I wanted to talk to you about a problem in our community that we need to address.
+    I’ve contributed to a number of open source projects in this community (Babel, Flow, Yarn, Lerna, etc.). As a maintainer of these popular projects, I’ve experienced some of the best this community has to offer, as well as some of the worst.
+  meta: 751278a46797c34838e8e1eea72bb37d
+  hash: 3f15c1b26b43d10bd42bef413bfe4a09
+  time: '2016-12-06T09:19:02Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: culture javascript share
