@@ -2,109 +2,109 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://piet.me/blog/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/links/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/about/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/projects/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/automated-middleman-deploy-to-github-pages/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/lodash-knockout-and-functional-programming-with-kompose/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/jekyll-and-github-pages/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/why-i-love-test-first-tdd/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/organizing-git-projects/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/font-end-legos/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/using-env-variables/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/the-internet-for-everyone/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/professional-resolutions/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/jsconf-eu-2017/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/moving-on-what-i-learned-at-cozy/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/x-reasons-not-to-skip-the-tests/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://piet.me/blog/giving-something-back/</loc>
-    <lastmod>2018-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
