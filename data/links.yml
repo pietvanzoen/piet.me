@@ -429,3 +429,15 @@
   shared: 'yes'
   toread: 'no'
   tags: culture javascript share
+- href: http://ohshitgit.com/
+  description: Oh, shit, git!
+  extended: "Git is hard: screwing up is easy, and figuring out how to fix your mistakes
+    is fucking impossible. Git documentation has this chicken and egg problem where
+    you can't search for how to get yourself out of a mess, unless you already know
+    the name of the thing you need to know about in order to fix your problem.\r\n\r\n"
+  meta: e3d8c34558cdb6717eec79aa932ba32c
+  hash: 1294c4d0d6742044ee0d27b5a921192e
+  time: '2016-09-17T11:54:50Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: git share
