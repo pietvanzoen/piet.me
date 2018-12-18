@@ -1,0 +1,93 @@
+---
+layout: false
+noindex: true
+directory_index: false
+
+---
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Piet van Zoen</title>
+    <style>
+:root {
+  --accent-color: #619f98;
+  --text-color: #272727;
+  --subtle-color: #eee;
+  --muted-color: #828282;
+}
+html, body {
+  margin: 0;
+  font-size: 18px;
+  font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+a svg {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+  fill: var(--accent-color);
+}
+a:hover {
+  color: var(--text-color);
+}
+a:hover svg {
+  fill: var(--text-color);
+}
+header {
+  font-size: 3em;
+  margin: 0.5em auto;
+  text-align: center;
+}
+header, main, footer {
+  text-align: center;
+  padding: 0 12px;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid var(--subtle-color);
+  margin: 2em 0;
+  padding: 0;
+  clear: both;
+}
+.icon-link {
+  display: inline-block;
+  margin: 0.5em;
+  line-height: 1;
+}
+.icon-link svg {
+  height: 1em;
+  width: auto;
+  vertical-align: -webkit-baseline-middle;
+}
+.icon-link svg,
+.icon-link a {
+  vertical-align: baseline;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/" rel="home" class="<%= current_page.url == '/' ? 'active' : '' %>">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <title>face</title>
+          <path d="M12 20.016c4.406 0 8.016-3.609 8.016-8.016 0-0.797-0.141-1.547-0.328-2.25-0.703 0.188-1.453 0.234-2.25 0.234-3.375 0-6.328-1.641-8.156-4.219-0.984 2.391-2.906 4.359-5.25 5.391-0.047 0.281-0.047 0.563-0.047 0.844 0 4.406 3.609 8.016 8.016 8.016zM12 2.016c5.531 0 9.984 4.453 9.984 9.984s-4.453 9.984-9.984 9.984-9.984-4.453-9.984-9.984 4.453-9.984 9.984-9.984zM15 11.766c0.703 0 1.266 0.516 1.266 1.219s-0.563 1.266-1.266 1.266-1.266-0.563-1.266-1.266 0.563-1.219 1.266-1.219zM9 11.766c0.703 0 1.266 0.516 1.266 1.219s-0.563 1.266-1.266 1.266-1.266-0.563-1.266-1.266 0.563-1.219 1.266-1.219z"></path>
+        </svg>
+        pietvanzoen
+      </a>
+    </header>
+    <main rel="main">
+      <h1>Oops. We're disconnected.</h1>
+      <p>It looks like you're offline or there's something up with the connection. Sorry about that.</p>
+      <p>Please try again or check back later. If the problem persists, and you're online, please let me know!</p>
+    </main>
+    <hr>
+    <footer><%= partial :social %></footer>
+  </body>
+</html>
