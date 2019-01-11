@@ -1,4 +1,33 @@
 ---
+- href: https://awesometalks.party/speaker/sandi-metz
+  description: Awesome Talks - Sandi Metz
+  extended: Amazing Tech Talks by Sandi Metz
+  meta: e103781c9e62a8ddbd0a8d9ae6545629
+  hash: d1d6080651c81c5f412b1a376432d98e
+  time: '2019-01-09T08:11:14Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: talks share
+- href: https://medium.com/tech-diversity-files/the-real-reason-women-quit-tech-and-how-to-address-it-6dfb606929fd#---0-185
+  description: The Real Reason Women Quit Tech (and How to Address It)
+  extended: ''
+  meta: 69321ea802635d9494f8d707e53da709
+  hash: cc49c66fea3a727b458f8ca1cc284b0b
+  time: '2019-01-06T07:05:07Z'
+  shared: 'yes'
+  toread: 'yes'
+  tags: culture share
+- href: https://martinfowler.com/bliki/Yagni.html
+  description: Yagni - You Aren't Gonna Need It
+  extended: Yagni ("You Aren't Gonna Need It") is the principle that we should not
+    build presumptive features. It should not be used as a justification for neglecting
+    internal quality.
+  meta: ac43d28b55f2048acd269a428b1012c9
+  hash: 77054ae770a82e31be721c904cd2c87e
+  time: '2019-01-04T08:20:13Z'
+  shared: 'yes'
+  toread: 'yes'
+  tags: share practices
 - href: https://24ways.org/2018/state-machines-in-user-interfaces/
   description: The (Switch)-Case for State Machines in User Interfaces ◆ 24 ways
   extended: |-
@@ -136,12 +165,12 @@
 - href: http://mcfunley.com/choose-boring-technology
   description: 'Dan McKinley :: Choose Boring Technology'
   extended: ''
-  meta: e2822751c2648067cb5099505d3b49fd
+  meta: 0ca3330a891bb9e8edf0ff1f9a92aa3b
   hash: d62993ee047ec4a51b11e986b22566b8
   time: '2018-08-18T09:54:32Z'
   shared: 'yes'
   toread: 'no'
-  tags: best-practices share programming
+  tags: share programming practices
 - href: https://www.reddit.com/r/tdd/comments/94xtl7/ian_cooper_tdd_where_did_it_all_go_wrong/?st=JKHQKCS3&sh=13f1c3fe
   description: Ian Cooper - TDD, Where Did It All Go Wrong
   extended: "Since Kent Beck wrote the book on TDD in 2002 a lot of words have been
@@ -304,12 +333,12 @@
     on the web like a lense: The mobile revolution, trustworthy and sustainable journalism,
     advertising and content monetarization, web standardization, web performance and
     tech industry monopolies.'
-  meta: ebfb36d2ae8b4d815d1d03ba96663bc2
+  meta: 74747c576171dfa65ae34a9cd5055dde
   hash: 5f406bd83f9f55a5670982aebd583157
   time: '2017-06-29T06:07:19Z'
   shared: 'yes'
   toread: 'no'
-  tags: share best-practices javascript
+  tags: share javascript practices
 - href: https://statico.github.io/vim.html
   description: Vim After 11 Years - Ian Langworth’s Things of Variable Interest
   extended: Recently, someone noticed a plugin I was using and said, “I had no idea
@@ -357,12 +386,12 @@
     it, or they may have moved on. But regardless of the circumstances, you will often
     find yourself spending time figuring out what a codebase you're looking at is
     doing, and why.
-  meta: 56e46220fe953c50b27dfc8f106a7bc1
+  meta: ec8d2e862609f5acfad44af3b263886d
   hash: e553e41ea6b0bf4d1049050e77c26e9d
   time: '2017-03-11T08:02:34Z'
   shared: 'yes'
   toread: 'no'
-  tags: best-practices software-development share
+  tags: software-development share practices
 - href: https://dev.to/ericnormand/the-idea-of-lisp
   description: The Idea of Lisp
   extended: LISP. It conjures up visions of a bygone age of computers the size of
@@ -412,12 +441,12 @@
   extended: Software engineering principles, from Robert C. Martin's book Clean Code,
     adapted for JavaScript. This is not a style guide. It's a guide to producing readable,
     reusable, and refactorable software in JavaScript.
-  meta: 5961e37c3123f8d7de1ad5d7d0a9a4ae
+  meta: 5f17ea982bb4c665b2967a57b9500fb6
   hash: 160451e7a95ad4d89a897f8d9e36f6f1
   time: '2017-01-08T20:26:34Z'
   shared: 'yes'
   toread: 'no'
-  tags: best-practices javascript share
+  tags: javascript share practices
 - href: https://medium.com/@thejameskyle/dear-javascript-7e14ffcae36c#.owwh9w7hj
   description: Dear JavaScript, – Medium
   extended: |-
