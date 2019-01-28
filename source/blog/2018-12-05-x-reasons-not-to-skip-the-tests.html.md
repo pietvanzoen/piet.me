@@ -100,7 +100,6 @@ Happy testing!
 If you're new to testing check out these resources for learning more about TDD:
 
 * [TDD & The Lump Of Coding Fallacy](http://geepawhill.org/tdd-and-the-lump-of-coding-fallacy/)
-* [5 Common Misconceptions About TDD & Unit Tests - Eric Elliott](https://medium.com/javascript-scene/5-common-misconceptions-about-tdd-unit-tests-863d5beb3ce9#.i0eyob6as)
 * [Writing Testable JavaScript - Rebecca Murphey](https://alistapart.com/article/writing-testable-javascript)
 
 <br>

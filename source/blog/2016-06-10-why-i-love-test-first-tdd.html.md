@@ -38,6 +38,5 @@ If you still think writing tests is a slog but you haven't ever tried test-first
 _I'd love to hear about your experience with TDD. What do you like/dislike about it? What tools do you find most useful? I'm [@pietvanzoen](https://twitter.com/pietvanzoen) on twitter or just leave a comment below._
 
 ### Further reading/watching
-- [5 Common Misconceptions About TDD & Unit Tests - Eric Elliott](https://medium.com/javascript-scene/5-common-misconceptions-about-tdd-unit-tests-863d5beb3ce9#.i0eyob6as)
 - [Writing Testable JavaScript - Rebecca Murphey](https://alistapart.com/article/writing-testable-javascript)
 - [All the Little Things - Sandi Metz (refactoring talk)](https://www.youtube.com/watch?v=8bZh5LMaSmE)
