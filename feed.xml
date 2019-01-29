@@ -6,7 +6,7 @@
   <link href="https://piet.me/"/>
   <link href="https://piet.me/feed.xml" rel="self"/>
   <updated>2018-12-05T00:00:00+00:00</updated>
-  <rights type="html">&amp;amp;copy; 2018 Piet van Zoen</rights>
+  <rights type="html">&amp;amp;copy; 2019 Piet van Zoen</rights>
   <author>
     <name>Piet van Zoen</name>
     <uri>https://piet.me/</uri>
@@ -23,7 +23,7 @@
       <uri>https://piet.me/</uri>
       <email>hi@piet.me</email>
     </author>
-    <rights type="html">&amp;amp;copy; 2018 Piet van Zoen</rights>
+    <rights type="html">&amp;amp;copy; 2019 Piet van Zoen</rights>
     <category term="tdd"/>
     <summary>We’ve all been tempted to skip writing the tests. Whether it’s time pressure, business pressure, the complexity of testing, or we just want to get on with something else. We might be tempted to say “YOLO!” and move on. So here’s a list of reasons why you might want to think twice before doing that.
 
@@ -122,7 +122,6 @@
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://geepawhill.org/tdd-and-the-lump-of-coding-fallacy/"&gt;TDD &amp;amp; The Lump Of Coding Fallacy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://medium.com/javascript-scene/5-common-misconceptions-about-tdd-unit-tests-863d5beb3ce9#.i0eyob6as"&gt;5 Common Misconceptions About TDD &amp;amp; Unit Tests - Eric Elliott&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alistapart.com/article/writing-testable-javascript"&gt;Writing Testable JavaScript - Rebecca Murphey&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -141,7 +140,7 @@
       <uri>https://piet.me/</uri>
       <email>hi@piet.me</email>
     </author>
-    <rights type="html">&amp;amp;copy; 2018 Piet van Zoen</rights>
+    <rights type="html">&amp;amp;copy; 2019 Piet van Zoen</rights>
     <summary>For a while I’ve been looking for a better way to organize the git repos I work with. I’ve tried just dumping them into a single directory, and I’ve tried adding sub folders such as personal, work, and tools. But both of these solutions had the same...</summary>
     <content type="html">&lt;p&gt;For a while I&amp;rsquo;ve been looking for a better way to organize the git repos I work with. I&amp;rsquo;ve tried just dumping them into a single directory, and I&amp;rsquo;ve tried adding sub folders such as &lt;code&gt;personal&lt;/code&gt;, &lt;code&gt;work&lt;/code&gt;, and &lt;code&gt;tools&lt;/code&gt;. But both of these solutions had the same problems:&lt;/p&gt;
 
@@ -215,7 +214,7 @@
       <uri>https://piet.me/</uri>
       <email>hi@piet.me</email>
     </author>
-    <rights type="html">&amp;amp;copy; 2018 Piet van Zoen</rights>
+    <rights type="html">&amp;amp;copy; 2019 Piet van Zoen</rights>
     <summary>Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.
 
 </summary>
@@ -340,7 +339,7 @@ We work on €2000+ computers on 100+ Mbit/s fiber. Even on mobile we&amp;rsquo;
       <uri>https://piet.me/</uri>
       <email>hi@piet.me</email>
     </author>
-    <rights type="html">&amp;amp;copy; 2018 Piet van Zoen</rights>
+    <rights type="html">&amp;amp;copy; 2019 Piet van Zoen</rights>
     <summary>I recently switched from Jekyll to Middleman for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.
 
 </summary>
@@ -476,7 +475,7 @@ Enter passphrase &lt;span class="o"&gt;(&lt;/span&gt;empty &lt;span class="k"&gt
       <uri>https://piet.me/</uri>
       <email>hi@piet.me</email>
     </author>
-    <rights type="html">&amp;amp;copy; 2018 Piet van Zoen</rights>
+    <rights type="html">&amp;amp;copy; 2019 Piet van Zoen</rights>
     <summary>Today is my last day at Cozy. 😢  My wife and I are flying to the Netherlands to start a new adventure close to my Dutch family. I started at Cozy in January 2014 as a front-end engineer. I have an agency background, and after spending several years working on client websites, I was excited to have a chance to do something different — to work on one product with a cool team.
 
 </summary>
@@ -523,7 +522,7 @@ At that point, I started reading technical books and articles during my bus ride
       <uri>https://piet.me/</uri>
       <email>hi@piet.me</email>
     </author>
-    <rights type="html">&amp;amp;copy; 2018 Piet van Zoen</rights>
+    <rights type="html">&amp;amp;copy; 2019 Piet van Zoen</rights>
     <summary>Twelve months ago I had hardly written a single test. After some encouragement and guidance on how to write tests my world changed. Yes, there’s lots of evidence that says writing tests reduces bug density (which is awesome), but that alone isn’t necessarily going to persuade you to take the time to do them. What made me adopt a workflow where I write tests first? The fact that I enjoyed it!
 
 </summary>
@@ -564,7 +563,6 @@ At that point, I started reading technical books and articles during my bus ride
 &lt;h3&gt;Further reading/watching&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://medium.com/javascript-scene/5-common-misconceptions-about-tdd-unit-tests-863d5beb3ce9#.i0eyob6as"&gt;5 Common Misconceptions About TDD &amp;amp; Unit Tests - Eric Elliott&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://alistapart.com/article/writing-testable-javascript"&gt;Writing Testable JavaScript - Rebecca Murphey&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=8bZh5LMaSmE"&gt;All the Little Things - Sandi Metz (refactoring talk)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
