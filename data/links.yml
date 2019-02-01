@@ -8,6 +8,16 @@
   shared: 'yes'
   toread: 'yes'
   tags: share javascript frontend culture
+- href: https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367
+  description: You Might Not Need Redux – Dan Abramov – Medium
+  extended: People often choose Redux before they need it. “What if our app doesn’t
+    scale without it?”
+  meta: 96e8a7e5552e645491078baf9e368a09
+  hash: db54aa83d3e650e75a8cc25174dc4faa
+  time: '2019-01-22T07:52:10Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: javascript react share
 - href: https://awesometalks.party/speaker/sandi-metz
   description: Awesome Talks - Sandi Metz
   extended: Amazing Tech Talks by Sandi Metz
