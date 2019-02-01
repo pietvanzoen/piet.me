@@ -1,8 +1,11 @@
 ---
 - href: https://css-tricks.com/the-great-divide/
   description: The Great Divide | CSS-Tricks
-  extended: ''
-  meta: 3988a0ac5c0bf1f968c22df108e0b220
+  extended: Let’s say there is a divide happening in front-end development. I feel
+    it, but it's not just in my bones. Based on an awful lot of written developer
+    sentiment, interviews Dave Rupert and I have done on ShopTalk, and in-person discussion,
+    it’s, as they say... a thing.
+  meta: 2c3fe82bc4dc95afdac26426b88e5860
   hash: eea6cc60bb53bfda6e68e2ae60b2be04
   time: '2019-01-24T03:59:23Z'
   shared: 'yes'
@@ -29,8 +32,9 @@
   tags: talks share
 - href: https://medium.com/tech-diversity-files/the-real-reason-women-quit-tech-and-how-to-address-it-6dfb606929fd#---0-185
   description: The Real Reason Women Quit Tech (and How to Address It)
-  extended: ''
-  meta: 69321ea802635d9494f8d707e53da709
+  extended: Women are more than twice as likely to quit the tech industry as men (41%
+    vs 17%). Why is this happening?
+  meta: dcf27bc3fba33484d3a329655075d21b
   hash: cc49c66fea3a727b458f8ca1cc284b0b
   time: '2019-01-06T07:05:07Z'
   shared: 'yes'
@@ -136,10 +140,10 @@
   description: JavaScript 30 — Build 30 things with vanilla JS in 30 days with 30
     tutorials
   extended: ''
-  meta: 0043d3b4cf6b972a75be43f0695b048b
+  meta: b35d8b0219d52c58ed1ce43d730d0eef
   hash: fbefcc794293823d5acecc9eb5bae819
   time: '2018-09-24T14:45:21Z'
-  shared: 'no'
+  shared: 'yes'
   toread: 'no'
   tags: learn share javascript
 - href: https://sayazamurai.github.io/python-vs-javascript/
