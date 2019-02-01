@@ -1,6 +1,8 @@
 ---
 title: "How I organize my cloned git projects"
 unsplash_img_id: W_ZYCEUapF0
+updated: 2019-02-01
+
 ---
 
 For a while I've been looking for a better way to organize the git repos I work with. I've tried just dumping them into a single directory, and I've tried adding sub folders such as `personal`, `work`, and `tools`. But both of these solutions had the same problems:
@@ -60,4 +62,4 @@ One drawback to this approach is that we now have a lot of directories to naviga
 
 ## Conclusion
 
-I've been using this new directory structure for about a month and I love it. It feels clean and organized and I don't worry about where I'm cloning repos into. Check out [the `git-get` source code](https://gist.github.com/pietvanzoen/92c47aa810506ec113e42667fc6e1b7d) and try it out. If you have ideas for improvement please let me know.
+I've been using this new directory structure for about a month and I love it. It feels clean and organized and I don't worry about where I'm cloning repos into. Check out [the `git-get` source code](https://github.com/pietvanzoen/git-get) and try it out. If you have ideas for improvement please submit an issue.
