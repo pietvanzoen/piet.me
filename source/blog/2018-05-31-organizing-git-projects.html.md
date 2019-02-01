@@ -28,7 +28,7 @@ I occasionally work with Go, but I mostly work with JavaScript. Initially I thou
 
 ## The Solution... `git get`
 
-So... I came up with `git get`. It's just a single Python script that parses the given git url, creates the directory structure, and clones the repo into the created directory. I define a `$GIT_PATH` to store all my repos in (I chose `~/repos`). Then I can run `git get git@github.com:pietvanzoen/dotfiles.git`, which clones my dotfiles into `~/repos/github.com/pietvanzoen/dotfiles`. Also, `git get` can be run from any directory.
+So... I came up with [git get](https://github.com/pietvanzoen/git-get). It's just a single Python script that parses the given git url, creates the directory structure, and clones the repo into the created directory. I define a `$GIT_PATH` to store all my repos in (I chose `~/repos`). Then I can run `git get git@github.com:pietvanzoen/dotfiles.git`, which clones my dotfiles into `~/repos/github.com/pietvanzoen/dotfiles`. Also, `git get` can be run from any directory.
 
 So now my projects look a bit like this:
 
