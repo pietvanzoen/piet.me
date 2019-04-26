@@ -1,4 +1,47 @@
 ---
+- href: https://gomakethings.com/clever-javascript-does-not-mean-simple-or-readable/
+  description: Clever JavaScript does not mean simple or readable | Go Make Things
+  extended: We’ve become obsessed as an industry with brevity and clever code, and
+    it results in code that’s sometimes less performant, and typically harder to read
+    and make sense of for most people.
+  meta: 73658e42db868d0c447442c033083bf6
+  hash: 7627d845603c9166d1468066ad34420c
+  time: '2019-04-25T03:56:13Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: javascript share
+- href: https://addyosmani.com/blog/disallow-imports/
+  description: AddyOsmani.com - Disallow large imports from JavaScript projects
+  extended: Are there known large JavaScript dependencies your team wish they could
+    disallow from a project? Good news! ESLint supports disallowing specific imports
+    from...
+  meta: 7384f370fd8ebf3083cf3dceef8a5851
+  hash: caf1225ebaf22682cbfb724bef066405
+  time: '2019-04-14T16:50:19Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: javascript share
+- href: http://www.mobilespoon.net/2019/01/product-shipping-why-i-love-shipping-so.html?m=1
+  description: This is why Shipping is so important to me
+  extended: Agile development is about short, iterative and incremental development
+    cycles. While this is a prerequisite for frequent shipping, reality shows agile
+    doesn’t guarantee shipping
+  meta: fc6328778dd31f5a4900cad1e54bfd86
+  hash: 3b96a867abef82278a41244b4bea7cc3
+  time: '2019-02-15T05:45:25Z'
+  shared: 'yes'
+  toread: 'yes'
+  tags: process agile share
+- href: https://github.com/davidkpiano/xstate
+  description: 'davidkpiano/xstate: State machines and statecharts for the modern
+    web.'
+  extended: State machines and statecharts for the modern web. - davidkpiano/xstate
+  meta: 8af96069909c512b0baa36318b95d03e
+  hash: 225d13451244fb5c5ab3c7724a462b74
+  time: '2019-01-28T06:19:31Z'
+  shared: 'yes'
+  toread: 'no'
+  tags: javascript reactjs share
 - href: https://css-tricks.com/the-great-divide/
   description: The Great Divide | CSS-Tricks
   extended: Let’s say there is a divide happening in front-end development. I feel
