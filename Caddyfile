@@ -28,7 +28,7 @@
 
   header / {
     Strict-Transport-Security "max-age=31536000;"
-    Content-Security-Policy-Report-Only "default-src 'self'; report-uri https://pietvanzoen.report-uri.com/r/d/csp/reportOnly"
+    Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' fathom.piet.me; img-src 'self' fathom.piet.me; report-uri https://pietvanzoen.report-uri.com/r/d/csp/reportOnly"
     Cache-Control "max-age=30; public"
   }
 
