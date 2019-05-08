@@ -12,6 +12,7 @@ script:
   - bundle exec rake test
 after_success:
   - bundle exec rake update_links
+  - curl -v -d '' $DOCKER_BUILD_TRIGGER_URL
 deploy:
   - provider: pages
     github-token: "$GITHUB_TOKEN"
