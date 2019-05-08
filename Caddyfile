@@ -26,8 +26,14 @@
     /reading/index.html /links/
   }
 
-  header /images Cache-Control "max-age=86400"
-  header /stylesheets Cache-Control "max-age=86400"
-  header /fonts Cache-Control "max-age=86400"
-  header /cached Cache-Control "max-age=86400"
+  header / {
+    Strict-Transport-Security "max-age=31536000;"
+    Content-Security-Policy-Report-Only "default-src 'self'; report-uri https://pietvanzoen.report-uri.com/r/d/csp/reportOnly"
+    Cache-Control "max-age=30; public"
+  }
+
+  header /images Cache-Control "max-age=86400; public"
+  header /stylesheets Cache-Control "max-age=86400; public"
+  header /fonts Cache-Control "max-age=86400; public"
+  header /cached Cache-Control "max-age=86400; public"
 }
