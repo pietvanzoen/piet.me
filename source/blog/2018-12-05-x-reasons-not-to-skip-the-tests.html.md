@@ -99,7 +99,7 @@ Happy testing!
 
 If you're new to testing check out these resources for learning more about TDD:
 
-* [TDD & The Lump Of Coding Fallacy](http://geepawhill.org/tdd-and-the-lump-of-coding-fallacy/)
+* [TDD & The Lump Of Coding Fallacy](https://www.geepawhill.org/2018/04/14/tdd-the-lump-of-coding-fallacy/)
 * [Writing Testable JavaScript - Rebecca Murphey](https://alistapart.com/article/writing-testable-javascript)
 
 <br>
