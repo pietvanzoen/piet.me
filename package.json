@@ -1,0 +1,6 @@
+{
+  "name": "pietvanzoen.com",
+  "scripts": {
+    "build": "bundle exec rake build_now"
+  }
+}

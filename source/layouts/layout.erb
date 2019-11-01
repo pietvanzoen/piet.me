@@ -70,7 +70,9 @@
         m.parentNode.insertBefore(o,m)
       })(document, window, '//fathom.piet.me/tracker.js', 'fathom');
       fathom('set', 'siteId', 'DGYKJ');
-      <%= ENV["ENV"] == "production" ? "fathom('trackPageview');" : "" %>
+      if (window.location.host === 'piet.me') {
+        fathom('trackPageview');
+      }
     </script>
     <!-- / Fathom -->
 

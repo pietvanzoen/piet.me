@@ -5,7 +5,6 @@ require "digest/md5"
 module AssetCacher
   ASSET_CACHE_DIR = "./.asset-cache".freeze
   ASSET_SERVE_DIR = "/cached/"
-  BUILD_DIR = "./build"
 
   def cache_remote_asset(url, ext = nil)
     cache_filepart = File.join(ASSET_CACHE_DIR, Digest::MD5.hexdigest(url))
@@ -21,9 +20,10 @@ module AssetCacher
       puts "Downloaded #{url} as #{cache_filepath}"
     end
     asset_servepath = File.join(ASSET_SERVE_DIR, File.basename(cache_filepath))
-    asset_filepath = File.join(BUILD_DIR, asset_servepath)
+    asset_filepath = File.join(ENV["BUILD_DIR"], asset_servepath)
     FileUtils.mkdir_p(File.dirname(asset_filepath))
     FileUtils.cp(cache_filepath, asset_filepath)
+    puts "Moved #{cache_filepath} to #{asset_filepath}. Serving #{asset_servepath}"
     asset_servepath
   end
 end
