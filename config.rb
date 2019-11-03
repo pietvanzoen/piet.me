@@ -58,6 +58,14 @@ helpers do
     link_to name, url, options
   end
 
+  def word_count(str)
+    strip_tags(str).split.count.to_s.reverse.gsub(/...(?=.)/,'\&,').reverse
+  end
+
+  def reading_time(str, wpm)
+    strip_tags(str).split.count / wpm
+  end
+
   def to_slug(str)
     #strip the string
     ret = str.strip
