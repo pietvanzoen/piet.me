@@ -6,12 +6,14 @@
     }
   },
   "routes": [
+    { "handle": "filesystem" },
     { "src": "/feed", "dest": "/feed.xml" },
     { "src": "/blog/archive", "status": 302, "headers": { "Location": "/blog/" } },
     { "src": "/blog/archive/", "status": 302, "headers": { "Location": "/blog/" } },
     { "src": "/blog/archive/index.html", "status": 302, "headers": { "Location": "/blog/" } },
     { "src": "/reading", "status": 302, "headers": { "Location": "/links/" } },
     { "src": "/reading/", "status": 302, "headers": { "Location": "/links/" } },
-    { "src": "/reading/index.html", "status": 302, "headers": { "Location": "/links/" } }
+    { "src": "/reading/index.html", "status": 302, "headers": { "Location": "/links/" } },
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
   ]
 }
