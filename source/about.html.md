@@ -7,7 +7,7 @@ title: About
 
 
 ## The short version
-Anglo/Dutch web developer at [Young Capital](https://www.youngcapital.nl). Previously at [Usabilla](https://usabilla.com), [Cozy](https://cozy.co), and [Daylight Studio](http://thedaylightstudio.com/). I love the open web, test driven development, vim, and fries with mayo.
+Anglo/Dutch web developer at [YoungCapital](https://www.youngcapital.nl). Previously at [Usabilla](https://usabilla.com), [Cozy](https://cozy.co), and [Daylight Studio](http://thedaylightstudio.com/). I love the open web, test driven development, vim, and fries with mayo.
 
 I live in the Netherlands with my wife [Keven](https://girlkeven.com/), my daughter Teddie, and Eskimo the cat.
 
