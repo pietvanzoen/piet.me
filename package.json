@@ -1,6 +1,7 @@
 {
   "name": "pietvanzoen.com",
   "scripts": {
+    "dev": "rake serve",
     "build": "rake build_now"
   }
 }
