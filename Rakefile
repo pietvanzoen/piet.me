@@ -3,6 +3,7 @@ Bundler.setup(:default)
 require "dotenv/load"
 
 LINKS_FILE = "./data/links.yml".freeze
+UPDATES_FILE = "./data/updates.yml".freeze
 
 desc "run dev server"
 task :serve do
@@ -33,6 +34,18 @@ task :generate_links do
   File.write(LINKS_FILE, links.to_yaml)
   puts "#{links.count} links written to #{LINKS_FILE}"
 end
+
+task :generate_updates do
+  require "open-uri"
+  require "json"
+  require "yaml"
+  request_url = URI("https://pietvanzoen.github.io/updates/updates.json")
+  buffer = open(request_url).read
+  updates = JSON.parse(buffer)
+  File.write(UPDATES_FILE, updates.to_yaml)
+  puts "#{updates.count} updates written to #{UPDATES_FILE}"
+end
+
 
 task :build_now => ["generate_links", "build", "test"]
 
