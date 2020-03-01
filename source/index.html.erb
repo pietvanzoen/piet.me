@@ -12,8 +12,8 @@
 <h2>Latest Links</h2>
 
 <ul>
-<% data.links[0..4].each do |link| %>
-  <li><h3><a href="<%= link['href'] %>" rel="external"><%= escape_html link['description'] %></a></h3></li>
+<% data.links.items[0..4].each do |link| %>
+  <li><h3><a href="<%= link['link'] %>" rel="external"><%= escape_html link['title'] %></a></h3></li>
 <% end %>
 </ul>
 

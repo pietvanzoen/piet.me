@@ -11,24 +11,19 @@ changefreq: daily
 
 <hr>
 
-<% data.links.each do |article| %>
+<% data.links.items.each do |article| %>
 <article>
   <header>
-    <h2><a rel="external" href="<%= article['href'] %>"><%= escape_html article['description'] %></a></h2>
-    <time class="article-meta nudge-up"><%= DateTime.parse(article['time']).strftime('%e %B %Y') %></time>
+    <h2><a rel="external" href="<%= article['link'] %>"><%= escape_html article['title'] %></a></h2>
   </header>
-  <% if article['extended'] %>
-    <blockquote><p><%= escape_html article['extended'] %></p></blockquote>
+  <% if article['excerpt'] %>
+    <blockquote><p><%= escape_html article['excerpt'] %></p></blockquote>
   <% end %>
 
   <%
-  @tags = article['tags'].split(' ').select{ |t| t != 'share'}
+  @tags = article['tags'].select{ |t| t != 'share'}
   unless @tags.empty? %>
-    <p><small>Pinboard tags:
-    <% @tags.each do |tag| %>
-    <a rel="external" href="https://pinboard.in/u:pietvanzoen/t:<%= tag %>/"><%= tag %></a>
-    <% end %>
-    </small></p>
+  <p class="article-meta"><small><a href="<%= article['link'] %>" rel="external"><%= article['domain'] %></a> | Tags: <%= @tags.join(', ') %></small></p>
   <% end %>
   <hr>
 </article>

@@ -25,8 +25,10 @@ task :generate_links do
   require "open-uri"
   require "json"
   require "yaml"
-  request_uri = "https://api.pinboard.in/v1/posts/all?format=json&tag=share&auth_token=" + ENV["PINBOARD_TOKEN"]
-  buffer = open(request_uri).read
+  request_url = URI("https://api.raindrop.io/rest/v1/raindrops/0")
+  request_url.query = 'search=[{"key":"tag","val":"share"}]'
+  puts request_url
+  buffer = open(request_url, "Authorization" => "Bearer #{ENV['RAINDROP_TOKEN']}").read
   links = JSON.parse(buffer)
   File.write(LINKS_FILE, links.to_yaml)
   puts "#{links.count} links written to #{LINKS_FILE}"
