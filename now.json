@@ -1,7 +1,7 @@
 {
   "build": {
     "env": {
-      "PINBOARD_TOKEN": "@pinboard-token",
+      "RAINDROP_TOKEN": "@raindrop-token",
       "BUILD_DIR": "./public"
     }
   },
