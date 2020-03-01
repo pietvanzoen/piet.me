@@ -2,7 +2,7 @@
   "build": {
     "env": {
       "RAINDROP_TOKEN": "@raindrop-token",
-      "BUILD_DIR": "./public"
+      "BUILD_DIR": "./build"
     }
   },
   "routes": [
