@@ -1,10 +1,29 @@
 ---
 title: Updates
 changefreq: daily
+blog: updates
+pageable: true
+per_page: 20
 ---
 
 <h1>Updates</h1>
 
-<% data.updates.each do |update| %>
-<%= partial(:update_item, :locals => { :update => update }) %>
+<% page_articles.each_with_index do |update, i| %>
+  <%= partial(:update_item, :locals => { :update => update.data }) %>
+<% end %>
+
+<% if paginate %>
+  <div class="pagination">
+    <% if prev_page %>
+      <div><%= link_to 'newer', prev_page %></div>
+    <% end %>
+    <ul class="pagination-pages">
+      <% (1..num_pages).to_a.each do |p| %>
+        <li><%= p == page_number ? p : link_to("#{p}", p == 1 ? "updates" : "p#{p}") %></li>
+      <% end %>
+    </ul>
+    <% if next_page %>
+      <div><%= link_to 'older', next_page %></div>
+    <% end %>
+  </div>
 <% end %>

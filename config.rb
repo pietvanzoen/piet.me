@@ -17,12 +17,9 @@ page "/*.xml", layout: false
 page "/*.json", layout: false
 page "/*.txt", layout: false
 
-data.updates.each do |update|
-  slug = update.path.gsub(/\.md$/, '')
-  proxy "updates/#{slug}/index.html", "updates/template.html", :locals => { :update => update }, :ignore => true
-end
 
 activate :blog do |blog|
+  blog.name = "posts"
   blog.layout = "post"
   blog.permalink = "blog/{title}.html"
   blog.sources = "blog/{year}-{month}-{day}-{title}.html"
@@ -32,6 +29,19 @@ activate :blog do |blog|
   blog.tag_template = nil
   blog.calendar_template = nil
   blog.paginate = false
+end
+
+activate :blog do |blog|
+  blog.name = "updates"
+  blog.layout = "update"
+  blog.permalink = "updates/{year}-{month}-{day}-{title}.html"
+  blog.sources = "updates/{year}-{month}-{day}-{title}.html"
+  blog.default_extension = ".md"
+  blog.page_link = "p{num}"
+
+  blog.tag_template = nil
+  blog.calendar_template = nil
+  blog.paginate = true
 end
 
 configure :development do

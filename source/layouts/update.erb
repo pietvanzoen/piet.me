@@ -1,0 +1,11 @@
+
+<%
+@title = current_article.title
+%>
+
+<% wrap_layout :layout do %>
+
+  <%= partial(:update_item, :locals => { :update => current_article.data }) %>
+  <%= partial(:comments) %>
+
+<% end %>

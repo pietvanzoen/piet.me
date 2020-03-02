@@ -11,7 +11,8 @@
       'main', 'vim'
     ].concat(@page_css ||= []) %>
 
-    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Piet van Zoen: Posts" %>
+    <%= feed_tag :atom, "#{blog('posts').options.prefix.to_s}/feed.xml", title: "Piet van Zoen: Posts" %>
+    <%= feed_tag :atom, "#{blog('updates').options.prefix.to_s}/feed.xml", title: "Piet van Zoen: Updates" %>
   </head>
   <body>
 

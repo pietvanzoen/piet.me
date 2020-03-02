@@ -42,8 +42,11 @@ task :generate_updates do
   request_url = URI("https://pietvanzoen.github.io/updates/updates.json")
   buffer = open(request_url).read
   updates = JSON.parse(buffer)['updates']
-  File.write(UPDATES_FILE, updates.to_yaml)
-  puts "#{updates.count} updates written to #{UPDATES_FILE}"
+  updates.each do |update|
+    slug = update['path'].gsub(/\.md$/, '')
+    update['slug'] = slug
+    File.write("./source/updates/#{slug}.html.md", update.to_yaml + '---')
+  end
 end
 
 

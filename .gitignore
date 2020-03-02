@@ -358,4 +358,4 @@ $RECYCLE.BIN/
 .asset-cache
 /source/cached
 /data/links.yml
-/data/updates.yml
+/source/updates

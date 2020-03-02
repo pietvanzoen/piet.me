@@ -2,7 +2,7 @@
 <hr>
 
 <h2>Latest Posts</h2>
-<%= partial(:article_list, :locals => { :articles => blog.articles[0..2] }) %>
+<%= partial(:article_list, :locals => { :articles => blog('posts').articles[0..2] }) %>
 
 <section class="buffer-top-large">
   <h4><a href="/blog/">More Posts</a></h4>
