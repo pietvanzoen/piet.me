@@ -171,12 +171,12 @@ img {
   border-radius: 50%;
 }
 
-figure {
+.post-header-img {
   padding: 0;
   margin: 1em -2em;
 }
 
-figure img {
+.post-header-img img {
   display: block;
 }
 figcaption {
@@ -200,9 +200,8 @@ p {
   margin: 1em 0;
   overflow-wrap: break-word;
 }
-p:first-child,
-p:last-child {
-  margin: 0;
+p:first-child {
+  margin-top: 0;
 }
 
 abbr {
@@ -300,6 +299,7 @@ h4 a {
 }
 
 .site-nav {
+  font-size: 0.8em;
   text-align: center;
 }
 
@@ -395,10 +395,48 @@ samp {
 }
 
 .card {
+  display: block;
   border: 1px solid #eee;
   border-radius: 0.2em;
   padding: 1em;
 }
+
+@media screen and (min-width: 700px) {
+  .update-link {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .update-link__image {
+    display: inline-block;
+    max-width: 30%;
+    margin: auto 1em;
+  }
+}
+
+.update-item {
+  background: #fcfcfc;
+}
+.update-link {
+  background: #fff;
+}
+.update-link:hover {
+  border-color: var(--accent-color);
+}
+
+.update-meta {
+  font-size: 0.8em;
+  font-family: "PT Sans", sans-serif;
+  color: var(--muted-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.update-meta__sources {
+  text-align: right;
+
+}
+
 
 .icon-link {
   display: inline-block;

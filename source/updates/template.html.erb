@@ -1,0 +1,7 @@
+<%
+@title = "Update: \"#{strip_tags update.html.strip}\""
+%>
+
+<%= partial(:update_item, :locals => { :update => update }) %>
+
+<%= partial(:comments) %>

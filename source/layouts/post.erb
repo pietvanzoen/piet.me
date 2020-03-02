@@ -34,18 +34,6 @@
 
 
   <h2 id="comments">Comments</h2>
-  <script src="https://utteranc.es/client.js"
-        repo="pietvanzoen/pietvanzoen.com"
-        issue-term="pathname"
-        async>
-  </script>
-
-  <noscript>
-    <div class="card">
-      <strong>Sorry, comments require JavaScript</strong>
-      <p><small>No JavaScript? Good for you! I strive to make the experience of this website great without JavaScript. But, I haven't found a good solution for comments on a static website without JavaScript. So, if you'd like to view or make comments please enable JavaScript.</small></p>
-    </div>
-    <br>
-  </noscript>
+  <%= partial(:comments) %>
 
 <% end %>

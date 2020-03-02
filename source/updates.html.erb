@@ -1,0 +1,10 @@
+---
+title: Updates
+changefreq: daily
+---
+
+<h1>Updates</h1>
+
+<% data.updates.each do |update| %>
+<%= partial(:update_item, :locals => { :update => update }) %>
+<% end %>

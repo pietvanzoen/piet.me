@@ -41,7 +41,7 @@ task :generate_updates do
   require "yaml"
   request_url = URI("https://pietvanzoen.github.io/updates/updates.json")
   buffer = open(request_url).read
-  updates = JSON.parse(buffer)
+  updates = JSON.parse(buffer)['updates']
   File.write(UPDATES_FILE, updates.to_yaml)
   puts "#{updates.count} updates written to #{UPDATES_FILE}"
 end

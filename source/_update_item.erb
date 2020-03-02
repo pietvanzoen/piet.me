@@ -1,0 +1,27 @@
+<article class="card update-item buffer-top-large">
+  <%= update.html %>
+  <% (update.linkData or []).compact.select { |l| l.ogUrl and l.ogDescription }.each do |link| %>
+    <a class="card buffer-bottom update-link" href="<%= link.ogUrl %>">
+      <div class="update-link__content">
+        <h3><%= link.ogTitle %></h3>
+        <p><%= link.ogDescription %></p>
+        <small class="article-meta"><%= get_host(link.ogUrl) %></small>
+      </div>
+      <% if link.ogImage and link.ogImage.respond_to? 'url' %>
+        <figure class="update-link__image">
+          <img src="<%= link.ogImage.url %>" alt="<%= link.ogTitle %>" />
+        </figure>
+      <% end %>
+    </a>
+  <% end %>
+  <div class="update-meta">
+    <% link_to "/updates/#{update.path.gsub(/\.md$/, '.html')}" do %>
+      <time class="update-meta_time" datetime="<%= Time.parse(update.data.date).strftime('%F %T.%L%:z') %>" title="<%= Time.parse(update.data.date).strftime('%F %T') %>"><%= time_ago_in_words Time.parse(update.data.date) %> ago</time>
+    <% end %>
+    <div class="update-meta__sources">
+      Also on:
+      <%= link_to 'mastodon', update.data.mastodon[0] if update.data.mastodon %>
+      <%= link_to 'twitter', update.data.twitter[0] if update.data.twitter %>
+    </div>
+  </div>
+</article>

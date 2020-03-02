@@ -1,5 +1,6 @@
 require "dotenv/load"
 require "lib/asset_cacher.rb"
+require 'uri'
 helpers AssetCacher
 
 set :site_url, "https://piet.me/"
@@ -15,6 +16,11 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 page "/*.xml", layout: false
 page "/*.json", layout: false
 page "/*.txt", layout: false
+
+data.updates.each do |update|
+  slug = update.path.gsub(/\.md$/, '')
+  proxy "updates/#{slug}/index.html", "updates/template.html", :locals => { :update => update }, :ignore => true
+end
 
 activate :blog do |blog|
   blog.layout = "post"
@@ -43,6 +49,8 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
   deploy.branch = "dist"
 end
+
+
 
 helpers do
   def nav_link(name, url, options = {})
@@ -87,5 +95,9 @@ helpers do
     ret.gsub! /\A[_\.]+|[_\.]+\z/, ""
 
     ret.downcase
+  end
+
+  def get_host(url)
+    URI.parse(url).host
   end
 end
