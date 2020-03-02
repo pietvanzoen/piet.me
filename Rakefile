@@ -47,7 +47,7 @@ task :generate_updates do
 end
 
 
-task :build_now => ["generate_links", "build", "test"]
+task :build_now => ["generate_links", "generate_updates", "build", "test"]
 
 task :update_links do
   if ENV['CI'].nil?
