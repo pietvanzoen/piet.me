@@ -11,4 +11,5 @@ HTMLProofer.check_directory(ENV["BUILD_DIR"], {
   :check_opengraph => true,
   :url_swap => {"https://piet.me" => "http://localhost:8080"},
   :only_4xx => true,
+  :alt_ignore => [/^https:\/\/pietvanzoen\.github\.io/]
 }).run

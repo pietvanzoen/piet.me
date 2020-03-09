@@ -4,12 +4,12 @@
     <a class="card buffer-bottom update-link" href="<%= link.url %>">
       <div class="update-link__content">
         <h3><%= link.ogTitle %></h3>
-        <p><%= link.ogDescription %></p>
+        <p><%= escape_html(link.ogDescription) %></p>
         <small class="article-meta"><%= get_host(link.url) %></small>
       </div>
-      <% if link.ogImage and link.ogImage.respond_to? 'url' %>
+      <% if link.ogImage and link.ogImage.respond_to? 'url' and link.ogImage.url.start_with? 'http' %>
         <figure class="update-link__image">
-          <img src="<%= link.ogImage.url %>" alt="<%= link.ogTitle %>" />
+          <img src="<%= link.ogImage.url %>" alt="<%= link.ogTitle or escape_html(link.ogDescription) %>" />
         </figure>
       <% end %>
     </a>
