@@ -1,12 +1,13 @@
+posts = blog('posts')
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom", "xml:lang" => "en" do
   site_url = config.site_url
   xml.title config.site_title
   xml.subtitle "Posts from Piet van Zoen, an English/Dutch web developer living and working in the Netherlands."
   xml.id site_url
-  xml.link "href" => URI.join(site_url, blog.options.prefix.to_s)
+  xml.link "href" => URI.join(site_url, posts.options.prefix.to_s)
   xml.link "href" => URI.join(site_url, current_page.path), "rel" => "self"
-  xml.updated(blog.articles.first.date.to_time.iso8601) unless blog.articles.empty?
+  xml.updated(posts.articles.first.date.to_time.iso8601) unless posts.articles.empty?
   xml.rights "&amp;copy; #{Time.now.year} Piet van Zoen", "type" => "html"
   xml.author {
     xml.name "Piet van Zoen"
@@ -14,7 +15,7 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom", "xml:lang" => "en" do
     xml.email "hi@piet.me"
   }
 
-  blog.articles[0..5].each do |article|
+  posts.articles[0..5].each do |article|
     xml.entry do
       xml.title article.title
       xml.link "rel" => "alternate", "href" => URI.join(site_url, article.url)

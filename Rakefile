@@ -3,7 +3,7 @@ Bundler.setup(:default)
 require "dotenv/load"
 
 LINKS_FILE = "./data/links.yml".freeze
-UPDATES_FILE = "./data/updates.yml".freeze
+UPDATES_DIR = "./source/updates".freeze
 
 desc "run dev server"
 task :serve do
@@ -13,6 +13,7 @@ end
 desc "build html"
 task :build do
   raise "Run 'rake generate_links' before running build." unless File.exist? LINKS_FILE
+  raise "Run 'rake generate_updates' before running build." unless File.exist? UPDATES_DIR
 
   sh "bundle exec middleman build --build-dir=#{ENV["BUILD_DIR"]} --verbose"
 end
@@ -42,11 +43,14 @@ task :generate_updates do
   request_url = URI("https://pietvanzoen.github.io/updates/updates.json")
   buffer = open(request_url).read
   updates = JSON.parse(buffer)['updates']
+  FileUtils.rm_r UPDATES_DIR, :force => true
+  FileUtils.mkdir UPDATES_DIR
   updates.each do |update|
     slug = update['path'].gsub(/\.md$/, '')
     update['slug'] = slug
-    File.write("./source/updates/#{slug}.html.md", update.to_yaml + '---')
+    File.write("#{UPDATES_DIR}/#{slug}.html.md", update.to_yaml + '---')
   end
+  puts "generated #{updates.size} updates in #{UPDATES_DIR}"
 end
 
 
