@@ -19,7 +19,7 @@ per_page: 20
     <% end %>
     <ul class="pagination-pages">
       <% (1..num_pages).to_a.each do |p| %>
-        <li><%= p == page_number ? p : link_to("#{p}", p == 1 ? "updates" : "p#{p}") %></li>
+        <li><%= p == page_number ? p : link_to("#{p}", p == 1 ? "updates" : "updates/p#{p}") %></li>
       <% end %>
     </ul>
     <% if next_page %>

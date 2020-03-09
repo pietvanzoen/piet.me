@@ -1,11 +1,11 @@
 <article class="card update-item buffer-top-large">
   <%= update.html %>
-  <% (update.linkData or []).compact.select { |l| l.ogUrl and l.ogDescription }.each do |link| %>
-    <a class="card buffer-bottom update-link" href="<%= link.ogUrl %>">
+  <% (update.linkData or []).compact.select { |l| l.ogDescription }.each do |link| %>
+    <a class="card buffer-bottom update-link" href="<%= link.url %>">
       <div class="update-link__content">
         <h3><%= link.ogTitle %></h3>
         <p><%= link.ogDescription %></p>
-        <small class="article-meta"><%= get_host(link.ogUrl) %></small>
+        <small class="article-meta"><%= get_host(link.url) %></small>
       </div>
       <% if link.ogImage and link.ogImage.respond_to? 'url' %>
         <figure class="update-link__image">
