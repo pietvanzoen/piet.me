@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: pietvanzoen/pietvanzoen.com
+
+media_folder: "source/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "source/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}.html"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Unsplash Image", name: "unsplash_img_id", widget: "string"}
+      - {label: "Image Alt", name: "img_alt", widget: "string"}
