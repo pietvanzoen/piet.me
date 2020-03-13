@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: pietvanzoen/pietvanzoen.com
+  base_url: https://netlify-cms-oauth.piet.me
 
 media_folder: "source/images/uploads"
 public_folder: "/images/uploads"

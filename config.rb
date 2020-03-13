@@ -16,7 +16,6 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 page "/*.xml", layout: false
 page "/*.json", layout: false
 page "/*.txt", layout: false
-page "/admin/*", layout: false
 
 
 activate :blog do |blog|
