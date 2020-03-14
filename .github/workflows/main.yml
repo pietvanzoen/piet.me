@@ -1,0 +1,39 @@
+name: Auto Deployment
+
+on:
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: Install Ruby
+      uses: actions/setup-ruby@v1
+      with:
+        version: 2.6.x
+    - name: Ruby Version
+      run: |
+        ruby -v
+    - name: Setup Ruby Dependencies
+      run: |
+        gem update bundler
+        bundle install --jobs 4 --retry 3
+    - name: Import content
+      run: |
+        bundle exec rake generate_links
+        bundle exec rake generate_updates
+    - name: Build
+      run: |
+        export TERM=xterm
+        bundle exec middleman build -e production --verbose
+    - name: Deploy to branch
+      uses: peaceiris/actions-gh-pages@v1.1.0
+      if: success()
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        PUBLISH_BRANCH: dist
+        PUBLISH_DIR: ./build
