@@ -41,8 +41,11 @@ jobs:
         rake generate_updates
 
     - name: Build
+      env:
+        BUILD_DIR: './build'
       run: |
         rake build
+
 
     # - name: Deploy to branch
     #   uses: peaceiris/actions-gh-pages@v1.1.0
