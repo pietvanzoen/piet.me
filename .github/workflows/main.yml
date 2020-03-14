@@ -42,8 +42,7 @@ jobs:
 
     - name: Build
       run: |
-        export TERM=xterm
-        bundle exec middleman build -e production --verbose
+        rake build
 
     # - name: Deploy to branch
     #   uses: peaceiris/actions-gh-pages@v1.1.0
