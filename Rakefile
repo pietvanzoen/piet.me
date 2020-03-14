@@ -18,6 +18,12 @@ task :build do
   sh "bundle exec middleman build --build-dir=#{ENV["BUILD_DIR"]} --verbose"
 end
 
+
+task :deploy do
+  raise "Directory ./build does not exist. Run `middleman build` before running deploy" unless Dir.exists?(ENV["BUILD_DIR"])
+  sh "bundle exec middleman deploy"
+end
+
 desc "test html"
 task :test do
   sh "bundle exec ruby test.rb"
