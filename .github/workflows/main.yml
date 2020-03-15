@@ -42,6 +42,7 @@ jobs:
     - name: Build
       env:
         BUILD_DIR: './build'
+        ENV: production
       run: |
         rake build
 
