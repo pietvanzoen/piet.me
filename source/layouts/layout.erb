@@ -8,7 +8,7 @@
     <%= partial 'meta' %>
 
     <%= stylesheet_link_tag [
-      'main', 'vim'
+      'main'
     ].concat(@page_css ||= []) %>
 
     <%= feed_tag :atom, "#{blog('posts').options.prefix.to_s}/feed.xml", title: "Piet van Zoen: Posts" %>
@@ -78,6 +78,17 @@
     <!-- / Fathom -->
 
     <script>
+      function loadStyleSheet(src){
+          if (document.createStyleSheet) document.createStyleSheet(src);
+          else {
+              var stylesheet = document.createElement('link');
+              stylesheet.href = src;
+              stylesheet.rel = 'stylesheet';
+              stylesheet.type = 'text/css';
+              document.getElementsByTagName('head')[0].appendChild(stylesheet);
+          }
+      }
+
       function toggleVimMode() {
         if (!sessionStorage) {
           console.error('Could not set vim mode. SessionStorage not supported');
@@ -90,8 +101,10 @@
         }
         location.reload(true);
       }
+
       if (sessionStorage && sessionStorage.vimMode && document.styleSheets) {
         document.body.className += " vim-on";
+        loadStyleSheet('/stylesheets/vim.css');
         for (var i = 0; i < document.styleSheets.length; i++) {
           var sheet = document.styleSheets[i];
           if (sheet.href.includes('main') || sheet.href.includes('syntax')) {
