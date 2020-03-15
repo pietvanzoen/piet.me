@@ -68,5 +68,5 @@ jobs:
       if: success()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PUBLISH_BRANCH: dist
+        PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./build
