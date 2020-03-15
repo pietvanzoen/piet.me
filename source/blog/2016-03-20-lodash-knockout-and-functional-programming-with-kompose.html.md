@@ -1,6 +1,8 @@
 ---
 title: "Lodash, Knockout, and functional programming"
 unsplash_img_id: 5eZu5p0vSPg
+date: 2016-03-20
+
 ---
 
 Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don't always play nice if you happen to use Knockout observables. I'm going to introduce a way to make handling observables in functional style easier.

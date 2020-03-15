@@ -1,6 +1,8 @@
 ---
 title: "Professional Resolutions"
 unsplash_img_id: swPTbY7v6Ow
+date: 2015-01-11
+
 ---
 
 I've never been big on New Years resolutions. I've always leaned towards a ’let my yes be yes, and let my no be no’ mindset, and I've never been confident in my ability to keep a resolution so making them just seemed disingenuous for me. But this year I feel different about it. Perhaps it's due to hitting the big 3-0. So here's what I'd like to focus on this year:

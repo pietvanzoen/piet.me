@@ -1,5 +1,7 @@
 ---
 title: Code for Everyone
+date: 2013-11-10
+
 ---
 
 I've been excited to hear more about initiatives like [Code Club](https://www.codeclub.org.uk/) and [Code.org](http://code.org/), which aim to make code a normal part of a child's education.

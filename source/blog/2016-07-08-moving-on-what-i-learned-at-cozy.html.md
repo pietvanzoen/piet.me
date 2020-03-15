@@ -1,6 +1,8 @@
 ---
 title: 'Moving On: What I learned at Cozy'
 unsplash_img_id: 'UpGI7J2ek5s'
+date: 2016-07-08
+
 ---
 
 Today is my last day at Cozy. 😢&nbsp;&nbsp;My wife and I are flying to the Netherlands to start a new adventure close to my Dutch family. I started at Cozy in January 2014 as a front-end engineer. I have an agency background, and after spending several years working on client websites, I was excited to have a chance to do something different — to work on one product with a cool team.

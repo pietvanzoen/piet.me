@@ -1,5 +1,7 @@
 ---
 title:  "Using local environment (ENV) variables."
+date: 2014-05-15
+
 ---
 
 Often enough you'll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it's not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter 'Environment Variables'.
@@ -68,5 +70,3 @@ Finally here are a couple quick commands for looking up what ENV variables have 
 - To search for a ENV variable use `env | grep WIBBLE`. ~~Remember this is case-sensitive~~. Be aware that this can be case-sensitive depending on what system/software you're using.
 
 If you have any questions or corrections just comment or email me.
-
-

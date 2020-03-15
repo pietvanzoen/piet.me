@@ -1,6 +1,8 @@
 ---
 title: "Why I love test-first TDD"
 unsplash_img_id: 'oTQVwECws8o'
+date: 2016-06-10
+
 ---
 
 Twelve months ago I had hardly written a single test. After some encouragement and guidance on how to write tests my world changed. Yes, there's lots of evidence that says writing tests reduces bug density (which is awesome), but that alone isn't necessarily going to persuade you to take the time to do them. What made me adopt a workflow where I write tests first? The fact that I enjoyed it!

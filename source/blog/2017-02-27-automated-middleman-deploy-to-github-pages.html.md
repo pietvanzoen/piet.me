@@ -1,6 +1,8 @@
 ---
 title: Automated middleman deploy to Github pages
 unsplash_img_id: GDdRP7U5ct0
+date: 2017-02-27
+
 ---
 
 I recently switched from Jekyll to [Middleman](https://middlemanapp.com/) for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.

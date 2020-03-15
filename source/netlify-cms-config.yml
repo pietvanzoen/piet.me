@@ -16,7 +16,9 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: Title, name: title, widget: string, required: true}
-      - {label: Publish Date, name: date, widget: datetime}
+      - {label: Publish Date, name: date, widget: datetime, required: true}
+      - {label: Update Date, name: date, widget: datetime, required: false}
       - {label: "Unsplash Image", name: "unsplash_img_id", widget: "string"}
       - {label: "Image Alt", name: "img_alt", widget: "string"}
+      - {label: "Published", name: published, widget: boolean, default: false }
       - {label: Body, name: body, widget: markdown}
