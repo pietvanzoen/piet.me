@@ -20,7 +20,6 @@ end
 
 
 task :deploy do
-  raise "Directory ./build does not exist. Run `middleman build` before running deploy" unless Dir.exists?(ENV["BUILD_DIR"])
   sh "bundle exec middleman deploy"
 end
 
