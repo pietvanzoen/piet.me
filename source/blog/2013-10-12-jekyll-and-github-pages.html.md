@@ -1,6 +1,7 @@
 ---
 title: Moving from shared hosting to Github pages
 date: 2013-10-12
+published: true
 
 ---
 

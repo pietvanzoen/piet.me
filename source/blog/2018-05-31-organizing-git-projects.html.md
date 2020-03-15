@@ -3,6 +3,7 @@ title: "How I organize my cloned git projects"
 unsplash_img_id: W_ZYCEUapF0
 updated: 2019-02-01
 date: 2018-05-31
+published: true
 
 ---
 

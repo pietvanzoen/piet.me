@@ -4,6 +4,7 @@ date: 2018-12-05
 tags: tdd
 unsplash_img_id: nGwhwpzLGnU
 img_alt: A person peering over the edge of a cliff.
+published: true
 
 ---
 

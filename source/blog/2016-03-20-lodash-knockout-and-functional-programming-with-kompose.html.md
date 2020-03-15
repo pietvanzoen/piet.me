@@ -2,6 +2,7 @@
 title: "Lodash, Knockout, and functional programming"
 unsplash_img_id: 5eZu5p0vSPg
 date: 2016-03-20
+published: true
 
 ---
 

@@ -2,6 +2,7 @@
 title: 'Moving On: What I learned at Cozy'
 unsplash_img_id: 'UpGI7J2ek5s'
 date: 2016-07-08
+published: true
 
 ---
 

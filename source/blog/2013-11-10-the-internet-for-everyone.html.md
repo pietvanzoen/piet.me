@@ -1,6 +1,7 @@
 ---
 title: Code for Everyone
 date: 2013-11-10
+published: true
 
 ---
 

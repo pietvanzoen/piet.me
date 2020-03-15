@@ -2,6 +2,7 @@
 title: "Professional Resolutions"
 unsplash_img_id: swPTbY7v6Ow
 date: 2015-01-11
+published: true
 
 ---
 

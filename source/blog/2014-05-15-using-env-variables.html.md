@@ -1,6 +1,7 @@
 ---
 title:  "Using local environment (ENV) variables."
 date: 2014-05-15
+published: true
 
 ---
 

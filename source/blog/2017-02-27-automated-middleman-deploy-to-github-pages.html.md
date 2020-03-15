@@ -2,6 +2,7 @@
 title: Automated middleman deploy to Github pages
 unsplash_img_id: GDdRP7U5ct0
 date: 2017-02-27
+published: true
 
 ---
 
