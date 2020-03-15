@@ -48,7 +48,7 @@ jobs:
     - name: Store build
       uses: actions/upload-artifact@v1
       with:
-        name: build-${{ github.sha }}
+        name: build-${{ github.ref }}
         path: build
 
   deploy:
@@ -58,7 +58,8 @@ jobs:
     steps:
     - uses: actions/download-artifact@v1
       with:
-        name: build-${{ github.sha }}
+        name: build-${{ github.ref }}
+        path: build
 
     - name: Deploy to branch
       uses: peaceiris/actions-gh-pages@v1.1.0
