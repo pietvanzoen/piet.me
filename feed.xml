@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Piet van Zoen</title>
+  <subtitle>Posts from Piet van Zoen, an English/Dutch web developer living and working in the Netherlands.</subtitle>
+  <id>https://piet.me/</id>
+  <link href="https://piet.me/"/>
+  <link href="https://piet.me/feed.xml" rel="self"/>
+  <updated>2018-12-05T00:00:00+00:00</updated>
+  <rights type="html">&amp;amp;copy; 2020 Piet van Zoen</rights>
+  <author>
+    <name>Piet van Zoen</name>
+    <uri>https://piet.me/</uri>
+    <email>hi@piet.me</email>
+  </author>
+  <entry>
+    <title>7 reasons not to skip the tests</title>
+    <link rel="alternate" href="https://piet.me/blog/x-reasons-not-to-skip-the-tests/"/>
+    <id>https://piet.me/blog/x-reasons-not-to-skip-the-tests/</id>
+    <published>2018-12-05T00:00:00+00:00</published>
+    <updated>2018-12-05T00:00:00+00:00</updated>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me/</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <rights type="html">&amp;amp;copy; 2020 Piet van Zoen</rights>
+    <category term="tdd"/>
+    <summary>We’ve all been tempted to skip writing the tests. Whether it’s time pressure, business pressure, the complexity of testing, or we just want to get on with something else. We might be tempted to say “YOLO!” and move on. So here’s a list of reasons why you might want to think twice before doing that.
+
+</summary>
+    <content type="html">&lt;p&gt;We&amp;rsquo;ve all been tempted to skip writing the tests. Whether it&amp;rsquo;s time pressure, business pressure, the complexity of testing, or we just want to get on with something else. We might be tempted to say &amp;ldquo;YOLO!&amp;rdquo; and move on. So here&amp;rsquo;s a list of reasons why you might want to think twice before doing that.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2&gt;The Reasons&lt;/h2&gt;
+
+&lt;p&gt;There are 7 of them, I counted. Why 7? That&amp;rsquo;s how many I thought of. I may add more.&lt;/p&gt;
+
+&lt;h3&gt;Feature security&lt;/h3&gt;
+
+&lt;p&gt;Making changes to existing programs is risky. You and your team have spent a lot of time and hard work getting it to where it is. Are you confident that if you implement a new feature you won&amp;rsquo;t break an existing one? Tests give you this confidence.&lt;/p&gt;
+
+&lt;p&gt;If you think you have confidence in your code without tests, then I would ask you to prove it. If you start poking around the program, triggering various behaviour, I&amp;rsquo;m pretty sure we could be sat around most of the day validating edge cases. This is not easily repeatable proof.&lt;/p&gt;
+
+&lt;p&gt;With good test coverage, you can run one command to quickly validate that your changes have not broken any tested behaviour.&lt;/p&gt;
+
+&lt;h3&gt;They&amp;rsquo;re not just tests, they&amp;rsquo;re documentation&lt;/h3&gt;
+
+&lt;p&gt;Well structured tests with good descriptions provide a clear picture of expected behaviour. Including how the program should and shouldn&amp;rsquo;t be used. If you come across a piece of code and don&amp;rsquo;t understand it&amp;rsquo;s purpose, try this: Make some changes, run the tests and see what failed. The failing test should tell you about the expected behaviour of that code.&lt;/p&gt;
+
+&lt;p&gt;Viewing tests as documentation is also a great way to get to know how a program works. This is particularly useful if you&amp;rsquo;re new to a code base. Also if you&amp;rsquo;re on-boarding new people, walking through the tests is a great way to help them get familiar with a project.&lt;/p&gt;
+
+&lt;p&gt;Obviously, if you skip writing the tests you loose this valuable resource.&lt;/p&gt;
+
+&lt;h3&gt;Testing makes you faster&lt;/h3&gt;
+
+&lt;p&gt;Despite common misconceptions, sticking to the tests makes you ship value faster. This works in two ways:&lt;/p&gt;
+
+&lt;p&gt;First, with a well tested code base you can massively reduce the amount of time code spelunking. This is where you go from line to line, debugging, reading, and figuring out what some piece of code does. The tests give you picture of what the program is doing in a fraction of the time. You still need to do code reading, but the tests provide an invaluable companion to understanding what code is doing.&lt;/p&gt;
+
+&lt;p&gt;The second way tests make you ship value faster, is by vastly reducing the number of bugs you&amp;rsquo;re shipping. Bugs are a debt against your time and the features you want to build. Bugs take your time away from shipping value, and they are a drain on the value of what you&amp;rsquo;re shipping. If users want &lt;em&gt;x&lt;/em&gt; feature, but they end up &lt;em&gt;y&lt;/em&gt;, and &lt;em&gt;z&lt;/em&gt; bug too, the value of &lt;em&gt;x&lt;/em&gt; is going to be reduced.&lt;/p&gt;
+
+&lt;h3&gt;Tests are automatable, you are not&lt;/h3&gt;
+
+&lt;p&gt;The time a person spends running one off commands, or clicking around a screen to validate behaviour, is lost time. Wouldn&amp;rsquo;t you rather spend this time actually writing features? These things are not automatable. Tests, on the other hand, can be configured to run as a part of your continuous integration processes. You create a pull request and tests run automatically, and your whole team can see the results. Manually validating code for all your team is laborious, and not easily repeatable, so the time is wasted.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s not to say that all manual testing is wasted time. Some is necessary. But manual testing that could be easily automated, is time wasted. And when you&amp;rsquo;d rather be shipping value, time is your one of your most important resource.&lt;/p&gt;
+
+&lt;h3&gt;Green just looks good&lt;/h3&gt;
+
+&lt;p&gt;Ok, this is a rather subjective point but&amp;hellip; Green looks and feels good. Seeing that beautiful green band streak across the screen is just lovely. The confidence, the speed, the ease. Ugh. I love it.&lt;/p&gt;
+
+&lt;h3&gt;You probably won&amp;rsquo;t go back and do them later&lt;/h3&gt;
+
+&lt;p&gt;&amp;ldquo;How about we ship it now and write the tests later.&amp;rdquo; If you&amp;rsquo;ve ever said or heard this before, I challenge you to find out if those tests were ever written. If you&amp;rsquo;re lucky there&amp;rsquo;s a tech-debt ticket floating around that no-one really wants to work on. Once code hits the master branch, the expectation, the motivation, and the incentive to write those tests all but disappear.&lt;/p&gt;
+
+&lt;p&gt;Even for someone who has experience writing tests, writing tests after merging is much harder than when you&amp;rsquo;re actually working on the feature. When you&amp;rsquo;re working on a feature, your mind is centered around the problem you&amp;rsquo;re trying to solve. In that state it&amp;rsquo;s much easier to think about what tests you need to write. Once you&amp;rsquo;ve moved onto another problem, remembering everything about that old one will be a struggle.&lt;/p&gt;
+
+&lt;h3&gt;Your later self (or a colleague) will appreciate it&lt;/h3&gt;
+
+&lt;p&gt;Imagine this.&lt;/p&gt;
+
+&lt;p&gt;You settle down to add a new feature. Your good self (or a colleague) has left a nicely structured test suite documenting the behaviour of this program you need to modify. You add new tests, make your changes, fix some things you broke, and submit your PR. You feel confident about your newly added functionality. You feel good that you didn&amp;rsquo;t break any existing behaviour. The process went quite smoothly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It can be this blissful.&lt;/strong&gt; Not all the time. Shit can hit the fan in a myriad of ways with software. But it can be blissful. Either way, consider the alternative.&lt;/p&gt;
+
+&lt;p&gt;You settle down to add a new feature. There are some tests. But it turns out there are tests missing for some of the behaviour. What do you do? If you implement your feature you may unknowingly break some untested feature. So, you have to first put your new feature on hold, find out what logic is not tested, then reverse engineer tests for it. But you&amp;rsquo;re not working on your feature! You&amp;rsquo;re doing someone else&amp;rsquo;s work for them. That&amp;rsquo;s no fun.&lt;/p&gt;
+
+&lt;p&gt;Do your future self (or colleague) a favour and keep a program tested. And with that, be sure to thank your past self (or colleague) for leaving a nicely tested program.&lt;/p&gt;
+
+&lt;h2&gt;Caveats and tips&lt;/h2&gt;
+
+&lt;p&gt;These reasons are all well and good. But we don&amp;rsquo;t live in a perfect code base. Here are some notes and tips on keeping the tests while living in an imperfect world.&lt;/p&gt;
+
+&lt;h3&gt;Caveat: Good coverage&lt;/h3&gt;
+
+&lt;p&gt;Good coverage is a life saver. Obviously if you&amp;rsquo;re starting from an existing code base with little or no tests you&amp;rsquo;re going to have a harder time writing tests. But I strongly encourage you and your team to set the standard that any new code is tested. As the test coverage grows, so will your confidence, and ability to ship value quickly.&lt;/p&gt;
+
+&lt;h3&gt;Caveat: Testing is a skill&lt;/h3&gt;
+
+&lt;p&gt;Unfortunately writing good tests is a skill learned with experience. If you&amp;rsquo;re not comfortable writing tests or are having a hard time figuring out how to test a program, then this is the perfect time for pairing. Find that person that enjoys testing (they do exist), and ask them to help you. You may find that their enjoyment of testing rubs off on you. You never know.&lt;/p&gt;
+
+&lt;h3&gt;Tip: What (not) to test&lt;/h3&gt;
+
+&lt;p&gt;Not everything is worth testing. But a lot is. I don&amp;rsquo;t believe in 100% coverage. Most apps have a lot of startup logic and configuration that isn&amp;rsquo;t worth testing, because without it the app just won&amp;rsquo;t start.&lt;/p&gt;
+
+&lt;p&gt;My golden rule for what to test is, &amp;lsquo;if it makes a decision, test it&amp;rsquo;. I guess you could add to that, &amp;lsquo;unless it kill&amp;rsquo;s the app on start&amp;rsquo;.&lt;/p&gt;
+
+&lt;h3&gt;Caveat/Tip: Perseverance&lt;/h3&gt;
+
+&lt;p&gt;Stick at it, especially if you&amp;rsquo;re adding tests to an existing code base. Coverage reports in CI builds (such as &lt;a href="https://coveralls.io/"&gt;Coveralls&lt;/a&gt;) can be a great motivator. Make the coverage public, put it on a dashboard, and watch it go up!&lt;/p&gt;
+
+&lt;h2&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;Forfeiting tests in the name of shipping faster is deceivingly harmful to your productivity. Be vary wary if you&amp;rsquo;re being asked by colleges to skip test writing to save time. Ultimately it is slower and it will hurt your team. Find other ways to save time if deadlines are an issue, such as reducing the scope of the feature. But making testing a integral part of your workflow will benefit you, your future self, and anyone else who touches that code.&lt;/p&gt;
+
+&lt;p&gt;Happy testing!&lt;/p&gt;
+
+&lt;h3&gt;Further reading/watching&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;rsquo;re new to testing check out these resources for learning more about TDD:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.geepawhill.org/2018/04/14/tdd-the-lump-of-coding-fallacy/"&gt;TDD &amp;amp; The Lump Of Coding Fallacy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://alistapart.com/article/writing-testable-javascript"&gt;Writing Testable JavaScript - Rebecca Murphey&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;em&gt;Also posted on &lt;a href="https://medium.com/@pietvanzoen/x-reasons-not-to-skip-the-tests-4ac8dfb2c6d2"&gt;medium.com&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>How I organize my cloned git projects</title>
+    <link rel="alternate" href="https://piet.me/blog/organizing-git-projects/"/>
+    <id>https://piet.me/blog/organizing-git-projects/</id>
+    <published>2018-05-31T00:00:00+00:00</published>
+    <updated>2019-02-01T00:00:00+00:00</updated>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me/</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <rights type="html">&amp;amp;copy; 2020 Piet van Zoen</rights>
+    <summary>For a while I’ve been looking for a better way to organize the git repos I work with. I’ve tried just dumping them into a single directory, and I’ve tried adding sub folders such as personal, work, and tools. But both of these solutions had the same...</summary>
+    <content type="html">&lt;p&gt;For a while I&amp;rsquo;ve been looking for a better way to organize the git repos I work with. I&amp;rsquo;ve tried just dumping them into a single directory, and I&amp;rsquo;ve tried adding sub folders such as &lt;code&gt;personal&lt;/code&gt;, &lt;code&gt;work&lt;/code&gt;, and &lt;code&gt;tools&lt;/code&gt;. But both of these solutions had the same problems:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Repos that I clone to play around with cause clutter alongside projects I&amp;rsquo;m actively working on.&lt;/li&gt;
+&lt;li&gt;Cloning forked repos along with the original repos cause folder name conflicts. Meaning I would have to use a different a folder name to the project name, which might cause confusion when working on a project.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s unclear who owns what without going to the cloned repo and running &lt;code&gt;git remote -v&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I figured there&amp;rsquo;s probably a better way.&lt;/p&gt;
+
+&lt;h2&gt;Enter Go&lt;/h2&gt;
+
+&lt;p&gt;I really like the way that &lt;a href="https://golang.org"&gt;Go&lt;/a&gt; organizes source code. The command &lt;code&gt;go get &amp;lt;git-url&amp;gt;&lt;/code&gt; installs packages to &lt;code&gt;$GOPATH/src&lt;/code&gt;. (&lt;code&gt;$GOPATH&lt;/code&gt; defaults to &lt;code&gt;$HOME/go&lt;/code&gt; in Unix systems.) From there, repos are organized in directories by git host, user name, and repo name. For example, &lt;code&gt;go get github.com/pietvanzoen/pietvanzoen.com&lt;/code&gt; would clone the project into &lt;code&gt;$GO_PATH/src/github.com/pietvanzoen/pietvanzoen.com&lt;/code&gt;. This gives you several benefits:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You avoid folder naming conflicts.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s clear where a repo came from.&lt;/li&gt;
+&lt;li&gt;Your work/personal projects are automatically grouped.&lt;/li&gt;
+&lt;li&gt;Source code is organized in a consistent and easy-to-understand way.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;But I don&amp;rsquo;t work with Go&lt;/h2&gt;
+
+&lt;p&gt;I occasionally work with Go, but I mostly work with JavaScript. Initially I thought I could just co-opt the &lt;code&gt;go get&lt;/code&gt; command and organize my non-Go projects alongside the handful of Go projects I work with. But Go recognizes that a project isn&amp;rsquo;t Go and prints a warning message. Apart from the warning message, I didn&amp;rsquo;t feel comfortable co-opting Go functionality to organize folders unrelated to Go. It&amp;rsquo;s not what the tool is intended for and there&amp;rsquo;s no guarantee it won&amp;rsquo;t break later on.&lt;/p&gt;
+
+&lt;h2&gt;The Solution&amp;hellip; &lt;code&gt;git get&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;So&amp;hellip; I came up with &lt;a href="https://github.com/pietvanzoen/git-get"&gt;git get&lt;/a&gt;. It&amp;rsquo;s just a single Python script that parses the given git url, creates the directory structure, and clones the repo into the created directory. I define a &lt;code&gt;$GIT_PATH&lt;/code&gt; to store all my repos in (I chose &lt;code&gt;~/repos&lt;/code&gt;). Then I can run &lt;code&gt;git get git@github.com:pietvanzoen/dotfiles.git&lt;/code&gt;, which clones my dotfiles into &lt;code&gt;~/repos/github.com/pietvanzoen/dotfiles&lt;/code&gt;. Also, &lt;code&gt;git get&lt;/code&gt; can be run from any directory.&lt;/p&gt;
+
+&lt;p&gt;So now my projects look a bit like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight plaintext"&gt;&lt;code&gt;~/repos
+├── bitbucket.org
+│   └── pietvanzoen
+│       └── wibble
+├── github.com
+│   ├── LeidenDevs
+│   │   └── leidendevs
+│   ├── chriso
+│   │   └── validator.js
+│   ├── pietvanzoen
+│   │   ├── discussie
+│   │   ├── dotfiles
+│   │   ├── pietvanzoen.com
+│   │   └── validator.js
+│   └── wting
+│       └── autojump
+└── gitlab.com
+    └── pietvanzoen
+        └── wibble
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can see I&amp;rsquo;ve cloned &lt;code&gt;validator.js&lt;/code&gt; twice. One is the original project by github user &lt;em&gt;chriso&lt;/em&gt;, and the other is my fork. With the single level folder structure I used before I would have to name the clone folder for one of those projects to something else.&lt;/p&gt;
+
+&lt;h2&gt;But that&amp;rsquo;s a lot of directories to navigate&lt;/h2&gt;
+
+&lt;p&gt;One drawback to this approach is that we now have a lot of directories to navigate. Depending on your patience, this may or may not be an issue to you. If it is an issue, I really like using &lt;a href="https://github.com/wting/autojump"&gt;autojump&lt;/a&gt;. The &lt;code&gt;autojump&lt;/code&gt; command (bound to &lt;code&gt;j&lt;/code&gt; for brevity) builds an index of commonly visited directories. After visiting a directory for the first time, you can then run &lt;code&gt;j &amp;lt;partial-dir-name&amp;gt;&lt;/code&gt; and you&amp;rsquo;ll be taken to the first match in the autojump index. E.g &lt;code&gt;j dot&lt;/code&gt; will take me to &lt;code&gt;~/repos/github.com/pietvanzoen/dotfiles&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been using this new directory structure for about a month and I love it. It feels clean and organized and I don&amp;rsquo;t worry about where I&amp;rsquo;m cloning repos into. Check out &lt;a href="https://github.com/pietvanzoen/git-get"&gt;the &lt;code&gt;git-get&lt;/code&gt; source code&lt;/a&gt; and try it out. If you have ideas for improvement please submit an issue.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>My top 3 lessons from JSConfEU 2017</title>
+    <link rel="alternate" href="https://piet.me/blog/jsconf-eu-2017/"/>
+    <id>https://piet.me/blog/jsconf-eu-2017/</id>
+    <published>2017-05-18T00:00:00+00:00</published>
+    <updated>2017-05-18T00:00:00+00:00</updated>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me/</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <rights type="html">&amp;amp;copy; 2020 Piet van Zoen</rights>
+    <summary>Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.
+
+</summary>
+    <content type="html">&lt;p&gt;Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2&gt;Your site can (and should) be accessible&lt;/h2&gt;
+
+&lt;p&gt;Whenever we think about accessibility on the web we tend to just think of providing access to people with disabilities. &lt;a href="https://twitter.com/lc512k"&gt;Laura Carvajal&lt;/a&gt; from FT.com suggests we reframe this idea:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Beyond &lt;strong&gt;not deneying&lt;/strong&gt; access, it&amp;rsquo;s ensuring that access is &lt;strong&gt;fair&lt;/strong&gt; for everyone.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are a plethora of ways that people end up having trouble using the web, be it temporary or permanent. Our job is to build the web in a way enables access for all our users, and not just those that engage with the web the same way we do.&lt;/p&gt;
+
+&lt;p&gt;15% of the global population have some form of disability. After research FT.com found that 26% of their users had some form of disability. Depending on your demographics, you might find that a large segment of your user base are using tools (such as screen readers) that you do not test for or support.&lt;/p&gt;
+
+&lt;p&gt;So how do we work towards ensuring fair access for all our users? Here are some suggestions Laura offered:&lt;/p&gt;
+
+&lt;h3&gt;Install pa11y&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://www.npmjs.com/package/pa11y"&gt;pa11ly&lt;/a&gt; is a great way to ensure your site is &lt;a href="https://www.w3.org/TR/WCAG20/"&gt;WCAG&lt;/a&gt; compliment. Make pa11y a part of your build process and have your build fail when there are issues.&lt;/p&gt;
+
+&lt;h3&gt;Get an Accessibility Audit&lt;/h3&gt;
+
+&lt;p&gt;Ensuring WCAG compliance only covers about 35% of accessibility issues. Accessibility audits provided by organisations like &lt;a href="http://digitalaccessibilitycentre.org/"&gt;Digital Accessibility Centre&lt;/a&gt; put your app/site in front of people who face various accessibility issues. Laura showed an enlightening video from people testing FT.com, which highlighted the diverse range of issues people face with modern websites. There&amp;rsquo;s no way you can anticipate all these issues, so putting your site in front of real people is a great way to gain insight.&lt;/p&gt;
+
+&lt;h3&gt;Ditch the Mouse&lt;/h3&gt;
+
+&lt;p&gt;Many internet users only use a keyboard to interact with the web. To really understand what these users experience Laura and her team got rid of their mice and went keyboard only. Check out &lt;a href="https://speakerdeck.com/lc512k/jsconfeu-2017-yes-your-site-can-and-should-be-accessible"&gt;Laura&amp;rsquo;s talk slides&lt;/a&gt; for tons of tips for going keyboard only.&lt;/p&gt;
+
+&lt;h3&gt;Relevant Links:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/lc512k"&gt;Laura Carvajal - Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.npmjs.com/package/pa11y"&gt;pa11ly - automated accessibility testing tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.w3.org/TR/WCAG20/"&gt;WCAG 2.0 Specification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://digitalaccessibilitycentre.org/"&gt;Digital Accessibility Centre&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://youtube.com/watch?v=4JCbyOuWVII"&gt;DAC FT.com testing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://speakerdeck.com/lc512k/jsconfeu-2017-yes-your-site-can-and-should-be-accessible"&gt;YES! Your site can (and should) be accessible - Speaker Deck&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Getting out of our performance bubble&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;m gonna go ahead and say that &lt;a href="https://twitter.com/benschwarz"&gt;Ben Schwarzx&lt;/a&gt; from &lt;a href="https://calibreapp.com/"&gt;Calibre&lt;/a&gt; has coined the phrase &amp;ldquo;Wealthy Western Web&amp;rdquo; to describe the web that most of us develop in.
+We work on €2000+ computers on 100+ Mbit/s fiber. Even on mobile we&amp;rsquo;re often working with high-end devices on 20 Mbit/s LTE connections. The World Wide Web is a very different place. The average device is about 5x slower than our laptops and 60% of the world are on 2g mobile data connections.&lt;/p&gt;
+
+&lt;p&gt;There are a number of ways to start testing the performance of our apps against devices that most people use. Calibre&amp;rsquo;s platform and Google Lighthouse provide people-centric metrics for web app performance. Specifically &lt;strong&gt;Time to First Interaction&lt;/strong&gt; is a much better metric for app performance than something like page load time because it considers the time it takes for the device to parse the application and render it to a point that it&amp;rsquo;s usable. A 410kb gzipped bundle is nice and small to download but once uncompressed the device has to handle 3-4 megabytes of code.&lt;/p&gt;
+
+&lt;p&gt;There were lots of talks about performance optimisation at JSConf. But without metrics to judge against you have no idea how effective your optimisations are and if you&amp;rsquo;re optimising the right thing. I&amp;rsquo;m really looking forward to giving Calibre a shot after chatting with Ben.&lt;/p&gt;
+
+&lt;h3&gt;Relevant Links:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/benschwarz"&gt;Ben Schwarzx - Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=rwyZc1keSew"&gt;Beyond the Bubble - Talk Video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://calibreapp.com/"&gt;Calibre App - performance analytics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://speakerdeck.com/benschwarz/beyond-the-bubble-1"&gt;Beyond the Bubble - Speaker Deck&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;A new bar for conferences&lt;/h2&gt;
+
+&lt;p&gt;JSConfEU was the best conference I have ever attended. First off, it achieved everything you would want from any conference. Amazing speakers, amazing topics, amazing community, amazing execution. The venue was beautiful, the day to day flow of things was almost flawless, the food was fantastic and they managed to serve 900+ people within 20 minutes for breakfast, lunch, and dinner.&lt;/p&gt;
+
+&lt;p&gt;But wait there&amp;rsquo;s more.&lt;/p&gt;
+
+&lt;p&gt;The speakers were 50/50 men/women. Not all white. All food was vegetarian friendly, vegan friendly, and high quality. (I&amp;rsquo;m neither vegetarian or vegan but loved the food.) They provided childcare, an inclusive photo policy, live transcription, gender neutral restrooms, gender identity badges, scholarships, and drinks in glass bottles over plastic.&lt;/p&gt;
+
+&lt;p&gt;JSConfEU as an excellent example of what a conference should look like. Diverse, inclusive, and shamelessly advocating for those things.&lt;/p&gt;
+
+&lt;h3&gt;Relevant Links:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://2017.jsconf.eu/speakers/"&gt;JSConfEU 2017 Speaker line-up&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Organisers:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/hblank"&gt;Holger Blank - Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/fox"&gt;Karolina Szczur - Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/cramforce"&gt;Malte Ubl - Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/janl"&gt;Jan Lehnardt - Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Final Words (not really)&lt;/h2&gt;
+
+&lt;p&gt;Building tools and events that are accessible to all people is achievable &lt;strong&gt;if you prioritise it&lt;/strong&gt;. And you should because it&amp;rsquo;s just the right thing to do, and if you need another reason, you should because it benefits everyone.&lt;/p&gt;
+
+&lt;p&gt;Making code performant for the average device improves performance on all devices. Making apps work for all platforms (browsers, screen readers, keyboards) results in a better user experience for all. Continuously striving to provide spaces (physical or digital) accessible to all people make your communities more cohesive and wiser.&lt;/p&gt;
+
+&lt;p&gt;The talks and the conference itself were an eye opening example of what events and the web could and should be, and it&amp;rsquo;s an awesome picture. There are lots of hard problems to solve, but that&amp;rsquo;s what we as developers signed up for, to solve hard problems. So let&amp;rsquo;s do it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="The Usabilla frontend team cramed into a photo booth" style="max-width: 150px; width: 30%" class="img-right" src="/images/posts/usabilla-frontend-team-sized.jpg" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Final Final Words… Thank you&lt;/h2&gt;
+
+&lt;p&gt;First, thanks to all the organisers and speakers at JSConf for putting on a terrific and inspiring event.&lt;/p&gt;
+
+&lt;p&gt;I also want to thank &lt;a href="https://usabilla.com/"&gt;Usabilla&lt;/a&gt; for giving us the opportunity to attend. The company paid for our flights, accommodation, and the conference fees. I&amp;rsquo;m well aware that without a company that prioritises all the points above I probably would not have been able to attend.&lt;/p&gt;
+
+&lt;p&gt;Last, thanks to all my team mates for making the weekend in Berlin a blast. 😬&lt;/p&gt;
+
+&lt;h2&gt;Further Reading/Viewing&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/powtoon-engineering/a-complete-guide-to-testing-javascript-in-2017-a217b4cd5a2a"&gt;An Open Love Letter to JSConf EU, and How It Ended My 2016&lt;/a&gt; - A beautiful example of how creating inclusive environments can impact people.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/playlist?list=PL37ZVnwpeshFmAPr65sU2O5WMs7_CGjs_"&gt;JSConf EU 2017 videos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://jobs.usabilla.com/o/frontend-developer"&gt;Come work with us at Usabilla! 😁&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Automated middleman deploy to Github pages</title>
+    <link rel="alternate" href="https://piet.me/blog/automated-middleman-deploy-to-github-pages/"/>
+    <id>https://piet.me/blog/automated-middleman-deploy-to-github-pages/</id>
+    <published>2017-02-27T00:00:00+00:00</published>
+    <updated>2017-02-27T00:00:00+00:00</updated>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me/</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <rights type="html">&amp;amp;copy; 2020 Piet van Zoen</rights>
+    <summary>I recently switched from Jekyll to Middleman for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.
+
+</summary>
+    <content type="html">&lt;p&gt;I recently switched from Jekyll to &lt;a href="https://middlemanapp.com/"&gt;Middleman&lt;/a&gt; for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2&gt;Testing setup&lt;/h2&gt;
+
+&lt;p&gt;I wanted to add some basic testing for my site, simple things like HTML validation and link checking. For that I found &lt;a href="https://github.com/gjtorikian/html-proofer"&gt;HTMLProofer&lt;/a&gt; which can run a variety of tests against a folder of html files.&lt;/p&gt;
+
+&lt;p&gt;Add HTMLProofer to your &lt;code&gt;Gemfile&lt;/code&gt; and &lt;code&gt;bundle install&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s1"&gt;'html-proofer'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;HTMLProofer can run via command line, but for ease of running locally and remotely with all of my configuration I chucked it in a &lt;code&gt;test.rb&lt;/code&gt; and included a simple check for the build folder.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="c1"&gt;# test.rb&lt;/span&gt;
+
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'html-proofer'&lt;/span&gt;
+
+&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="no"&gt;IOError&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Directory ./build does not exist. Run `middleman build` before running tests'&lt;/span&gt; &lt;span class="k"&gt;unless&lt;/span&gt; &lt;span class="no"&gt;Dir&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;exists?&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'./build'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="no"&gt;HTMLProofer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;check_directory&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'./build'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="ss"&gt;:check_img_http&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="ss"&gt;:check_html&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:validation&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="ss"&gt;:report_missing_names&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt; &lt;span class="p"&gt;},&lt;/span&gt;
+  &lt;span class="ss"&gt;:check_favicon&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="ss"&gt;:check_opengraph&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="ss"&gt;:http_status_ignore&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;999&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;403&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;401&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="nf"&gt;run&lt;/span&gt;
+&lt;span class="c1"&gt;# Check out the config docs for more: https://github.com/gjtorikian/html-proofer#configuration&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you’re already using a &lt;code&gt;Rakefile&lt;/code&gt; you could add the HTMLProofer code to a &lt;code&gt;:test&lt;/code&gt; task. This test was going to be the only task in my &lt;code&gt;Rakefile&lt;/code&gt; so I decided to stick with a plain old &lt;code&gt;.rb&lt;/code&gt; file I could run.&lt;/p&gt;
+
+&lt;p&gt;Run &lt;code&gt;ruby test.rb&lt;/code&gt; and you should see something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight shell"&gt;&lt;code&gt;Running &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"ImageCheck"&lt;/span&gt;, &lt;span class="s2"&gt;"FaviconCheck"&lt;/span&gt;, &lt;span class="s2"&gt;"ScriptCheck"&lt;/span&gt;, &lt;span class="s2"&gt;"OpenGraphCheck"&lt;/span&gt;, &lt;span class="s2"&gt;"HtmlCheck"&lt;/span&gt;, &lt;span class="s2"&gt;"LinkCheck"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; on &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"./build"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; on &lt;span class="k"&gt;*&lt;/span&gt;.html...
+
+Checking 62 external links...
+Ran on 13 files!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The first time I ran this I discovered a handful of links that were either just wrong or had gone stale over time. Nice to know these will be caught in advance moving forward!&lt;/p&gt;
+
+&lt;h2&gt;Deploy configuration&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href="https://github.com/middleman-contrib/middleman-deploy"&gt;middleman-deploy&lt;/a&gt; gem has what you need to “deploy” your site to git. Basically what that means is that middleman will build your site, copy the files to an orphan branch, commit the changes and push. By default middleman deploys to the &lt;code&gt;gh-pages&lt;/code&gt; branch for sites using Github pages.&lt;/p&gt;
+
+&lt;p&gt;Add the gem to your &lt;code&gt;Gemfile&lt;/code&gt; and &lt;code&gt;bundle install&lt;/code&gt;. To work with middleman v4 I had to install the pre-alpha gem. This hasn’t been a problem for what I need so far.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s1"&gt;'middleman-deploy'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'~&amp;gt; 2.0.0.pre.alpha'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then in your &lt;code&gt;config.rb&lt;/code&gt; add your deploy setup:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="n"&gt;activate&lt;/span&gt; &lt;span class="ss"&gt;:deploy&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;deploy&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="n"&gt;deploy&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;deploy_method&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="ss"&gt;:git&lt;/span&gt;
+  &lt;span class="n"&gt;deploy&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;branch&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'gh-pages'&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Make sure the whole process works by running &lt;code&gt;middleman build &amp;amp;&amp;amp; ruby test.rb &amp;amp;&amp;amp; middleman deploy&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;CircleCI configuration&lt;/h2&gt;
+
+&lt;p&gt;I’m using &lt;a href="https://circleci.com/"&gt;CircleCI&lt;/a&gt; for my build platform, but the configuration should be fairly similar for other platforms.&lt;/p&gt;
+
+&lt;p&gt;Add the following to your &lt;code&gt;circle.yml&lt;/code&gt; in the root of your repo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="c1"&gt;# circle.yml&lt;/span&gt;
+
+&lt;span class="na"&gt;compile&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;override&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+    &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s"&gt;bundle exec middleman build&lt;/span&gt;
+
+&lt;span class="na"&gt;test&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;override&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+    &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s"&gt;bundle exec ruby test.rb&lt;/span&gt;
+
+&lt;span class="na"&gt;deployment&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;build&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+    &lt;span class="na"&gt;branch&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;master&lt;/span&gt;
+    &lt;span class="na"&gt;commands&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+      &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s"&gt;git config user.email $GIT_USER_EMAIL&lt;/span&gt;
+      &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s"&gt;git config user.name $GIT_USER_NAME&lt;/span&gt;
+      &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s"&gt;bundle exec middleman deploy&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For each build, this will compile the site, run the tests, and for builds on your &lt;code&gt;master&lt;/code&gt; branch it will run the deploy. You’ll need to configure your git details too. For ease of configuration I’m using env vars for my git user config. Head to &lt;code&gt;https://circleci.com/gh/you/test-repo/edit#env-vars&lt;/code&gt; to add your github info.&lt;/p&gt;
+
+&lt;h2&gt;Git write access for the build&lt;/h2&gt;
+
+&lt;p&gt;Next you need to configure CircleCI to have write access to the repo. By default Circle only has read access to the repo. Instructions for &lt;a href="https://circleci.com/docs/1.0/adding-read-write-deployment-key/"&gt;setting up a read/write deploy key&lt;/a&gt; are in the circle docs, but here’s the break down.&lt;/p&gt;
+
+&lt;h3&gt;Generate a new SSH key&lt;/h3&gt;
+
+&lt;p&gt;First we’ll need to create a new SSH key for Circle:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;ssh-keygen &lt;span class="nt"&gt;-t&lt;/span&gt; rsa &lt;span class="nt"&gt;-b&lt;/span&gt; 4096 &lt;span class="nt"&gt;-C&lt;/span&gt; &lt;span class="s2"&gt;"your_email@example.com"&lt;/span&gt;
+Generating public/private rsa key pair.
+Enter file &lt;span class="k"&gt;in &lt;/span&gt;which to save the key: /Users/&amp;lt;you&amp;gt;/.ssh/circleci_deploy_key
+Enter passphrase &lt;span class="o"&gt;(&lt;/span&gt;empty &lt;span class="k"&gt;for &lt;/span&gt;no passphrase&lt;span class="o"&gt;)&lt;/span&gt;:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Give a location for your new ssh key and do &lt;em&gt;not&lt;/em&gt; enter a passphrase, just hit return.&lt;/p&gt;
+
+&lt;h3&gt;Add the public key to CircleCI&lt;/h3&gt;
+
+&lt;p&gt;Copy the public version of your new new SSH key:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="nb"&gt;cat&lt;/span&gt; ~/.ssh/circle_deploy_key.pub | pbcopy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Go to &lt;code&gt;https://circleci.com/gh/you/test-repo/edit#ssh&lt;/code&gt; and add the public key that you just created. Use github.com  in the &lt;em&gt;Hostname&lt;/em&gt; field.&lt;/p&gt;
+
+&lt;h3&gt;Add the private key to Github&lt;/h3&gt;
+
+&lt;p&gt;Next head to your repo in GitHub and add the private key to our repo.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="nb"&gt;cat&lt;/span&gt; ~/.ssh/circle_deploy_key | pbcopy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Go to &lt;code&gt;https://github.com/you/test-repo/settings/keys&lt;/code&gt; on GitHub and add the public key that you just created and copied. Make sure to “Allow write access” and save the key.&lt;/p&gt;
+
+&lt;h2&gt;Deploy!&lt;/h2&gt;
+
+&lt;p&gt;That should be everything you need to run the build. Here’s an &lt;a href="https://circleci.com/gh/pietvanzoen/pietvanzoen.com/31"&gt;example build from my site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You should now be able to simply push changes to your master branch and have the site automatically update, plus if there are any broken links your build will fail and the deploy won’t happen. 🎉 Enjoy!&lt;/p&gt;
+
+&lt;h3&gt;Further reading:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://stackoverflow.com/a/22374542"&gt;Setting up a custom domain for your &lt;code&gt;gh-pages&lt;/code&gt; site.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/gjtorikian/html-proofer#configuration"&gt;HTTPProofer config&lt;/a&gt; with extra options for testing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;If anything in this post turns out to be incorrect or incomplete please comment and let me know.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Moving On: What I learned at Cozy</title>
+    <link rel="alternate" href="https://piet.me/blog/moving-on-what-i-learned-at-cozy/"/>
+    <id>https://piet.me/blog/moving-on-what-i-learned-at-cozy/</id>
+    <published>2016-07-08T00:00:00+00:00</published>
+    <updated>2016-07-08T00:00:00+00:00</updated>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me/</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <rights type="html">&amp;amp;copy; 2020 Piet van Zoen</rights>
+    <summary>Today is my last day at Cozy. 😢  My wife and I are flying to the Netherlands to start a new adventure close to my Dutch family. I started at Cozy in January 2014 as a front-end engineer. I have an agency background, and after spending several years working on client websites, I was excited to have a chance to do something different — to work on one product with a cool team.
+
+</summary>
+    <content type="html">&lt;p&gt;Today is my last day at Cozy. 😢&amp;nbsp;&amp;nbsp;My wife and I are flying to the Netherlands to start a new adventure close to my Dutch family. I started at Cozy in January 2014 as a front-end engineer. I have an agency background, and after spending several years working on client websites, I was excited to have a chance to do something different — to work on one product with a cool team.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I can’t possibly write about all the things I learned while I was at Cozy; I’m trying to keep this short. But here are the things that stand out when I think about what I know now versus what I knew then:&lt;/p&gt;
+
+&lt;h2&gt;Process is fluid&lt;/h2&gt;
+
+&lt;p&gt;One of my favorite things about working at Cozy is that we allowed our processes to evolve as our team and company evolved. No methodology is one-size-fits-all. In fact, most methods for organizing and prioritizing work don’t match any team perfectly. So, rather than sticking to a process that didn’t fit us, we developed our process to fit our needs as we grew. Try, tweak, repeat.&lt;/p&gt;
+
+&lt;h2&gt;Teams are like family&lt;/h2&gt;
+
+&lt;p&gt;Sometimes you disagree. Sometimes you have arguments. And sometimes you’re wrong. But that’s all OK. Tensions happen, but the end of the day you’re still a team and you still have the same goal. Then you can drink beer together.&lt;/p&gt;
+
+&lt;h2&gt;Choice of work fosters ownership&lt;/h2&gt;
+
+&lt;p&gt;At Cozy, engineers often have the opportunity to choose what to work on next. For me, this fostered a sense of ownership of my work. And with ownership comes pride, not just after the fact, but during the process of pushing yourself to produce excellent work.&lt;/p&gt;
+
+&lt;h2&gt;Always be learning&lt;/h2&gt;
+
+&lt;p&gt;During my first year at Cozy, I was constantly learning and being exposed to new ideas and concepts I hadn’t encountered before. I learned by just doing my job. But eventually that passive learning started to taper off.
+At that point, I started reading technical books and articles during my bus ride to work. Those 20 minutes of reading each morning helped broaden my ideas about the work I was doing at Cozy, while making me a more well-rounded engineer.&lt;/p&gt;
+
+&lt;h2&gt;Fight with the tech you have…&lt;/h2&gt;
+
+&lt;p&gt;…not the tech you want. New ways to build a product can be shiny and exciting. But often enough, you have existing code that’s doing a good job. There’s no need to replace it wholesale when what you have fits your needs. If the way you’re building your product seems like it isn’t working in some way, try to evolve and improve it before throwing everything out. There’s a lot of value in something your team knows how to use, something that’s worked in the past.&lt;/p&gt;
+
+&lt;p&gt;I’m super excited for the new adventure ahead of me, but I’m sad to be leaving Cozy. My time at Cozy has been formative, and it’s been my absolute pleasure to work with such an amazing group of people. I’m gonna miss them. 👋 😢&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted on &lt;a href="https://cozy.co/moving-on-what-i-learned-at-cozy/"&gt;Cozy.co&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Why I love test-first TDD</title>
+    <link rel="alternate" href="https://piet.me/blog/why-i-love-test-first-tdd/"/>
+    <id>https://piet.me/blog/why-i-love-test-first-tdd/</id>
+    <published>2016-06-10T00:00:00+00:00</published>
+    <updated>2016-06-10T00:00:00+00:00</updated>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me/</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <rights type="html">&amp;amp;copy; 2020 Piet van Zoen</rights>
+    <summary>Twelve months ago I had hardly written a single test. After some encouragement and guidance on how to write tests my world changed. Yes, there’s lots of evidence that says writing tests reduces bug density (which is awesome), but that alone isn’t necessarily going to persuade you to take the time to do them. What made me adopt a workflow where I write tests first? The fact that I enjoyed it!
+
+</summary>
+    <content type="html">&lt;p&gt;Twelve months ago I had hardly written a single test. After some encouragement and guidance on how to write tests my world changed. Yes, there&amp;rsquo;s lots of evidence that says writing tests reduces bug density (which is awesome), but that alone isn&amp;rsquo;t necessarily going to persuade you to take the time to do them. What made me adopt a workflow where I write tests first? The fact that I enjoyed it!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Preface: I&amp;rsquo;m not going to cover how to test in this post. Just why I love it. But how you test and tooling for testing makes a big difference on the fun factor. My quick recommendation is checking out &lt;a href="https://wallabyjs.com/"&gt;Wallaby.js&lt;/a&gt;. I&amp;rsquo;ll try to do a post on TDD tooling and workflow in the future, or just find some more useful links.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;What makes test-first TDD fun?&lt;/h2&gt;
+
+&lt;h3&gt;Immediate feedback&lt;/h3&gt;
+
+&lt;p&gt;My old process involved a lot of leg work, and a lot of fumbling around in the dark. I would write some code, add some console logging, switch contexts to my browser, refresh, read and mentally parse what it returns, rinse, repeat.&lt;/p&gt;
+
+&lt;p&gt;Using a test runner that immediately runs your tests after each change is a glorious alternative. Write some code, test fails, adjust code, test passes, success! I don&amp;rsquo;t even have to read what the code returns, all I need to worry about is green verses red. Pass vs fail. Not only am I getting faster feedback, but I&amp;rsquo;m also reducing the cognitive load. I&amp;rsquo;m not changing contexts, I&amp;rsquo;m not interpreting what the code returns, I just want it to pass.&lt;/p&gt;
+
+&lt;h3&gt;Confidence in code&lt;/h3&gt;
+
+&lt;p&gt;Before I used TDD extensively I would end up with some code that I was somewhat confident in. I would have thought about possible edge cases and tried to account for them. It felt &lt;em&gt;okay&lt;/em&gt; shipping the code but there was always an element of trepidation.&lt;/p&gt;
+
+&lt;p&gt;It would be unwise to think that TDD gives you 100% bug free code. As Rich Hickey said in a talk once, &amp;ldquo;What do all production bugs have in common? They passed the tests.&amp;rdquo; But, for me, I feel way better about my code when it&amp;rsquo;s tested. In particular, it&amp;rsquo;s way easier to account for edge cases. Once you have your happy path tests in place, you can add edge case tests and implement the code. Provided all the tests pass, you can be confident that adjusting the code for edge cases isn&amp;rsquo;t going to break the primary function of you code.&lt;/p&gt;
+
+&lt;h3&gt;Easy refactoring&lt;/h3&gt;
+
+&lt;p&gt;Another wonderful benefit to TDD is how much easier it is to refactor code when you have a solid set of tests to work with. Feel like some code could be optimized? Refactor without fear! Testing makes it super easy to go back after the fact and make your tests more readable, more DRY, and more maintainable.&lt;/p&gt;
+
+&lt;p&gt;But wait there&amp;rsquo;s more! For me the real benefit of easy refactoring comes when you know this before you begin. &lt;strong&gt;Your first version of a piece of code does not have to be perfect, it just needs to make the tests pass.&lt;/strong&gt; Once your tests pass and you can go back and make it pretty and optimize it to your heart&amp;rsquo;s delight. The point being, you don&amp;rsquo;t have to waste cognitive power figuring out how all this behaviour is going to fit together for your first version of a piece of code. Do your worst! Then make it awesome when tests are green.&lt;/p&gt;
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;What I hope you get from this is that test-first TDD doesn&amp;rsquo;t have to be a slog. It doesn&amp;rsquo;t have to be additional work you have to do when you could have been done 20 minutes ago. I believe it can be enjoyable to everyone and that it can be a huge benefit to your work flow.&lt;/p&gt;
+
+&lt;p&gt;If you still think writing tests is a slog but you haven&amp;rsquo;t ever tried test-first development then I strongly recommend at least giving it a go. I really enjoy TDD, but I find writing the tests after the fact pretty unbearable. Challenge yourself to do testing first for a couple weeks and let me know how it goes!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I&amp;rsquo;d love to hear about your experience with TDD. What do you like/dislike about it? What tools do you find most useful? I&amp;rsquo;m &lt;a href="https://twitter.com/pietvanzoen"&gt;@pietvanzoen&lt;/a&gt; on twitter or just leave a comment below.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3&gt;Further reading/watching&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alistapart.com/article/writing-testable-javascript"&gt;Writing Testable JavaScript - Rebecca Murphey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=8bZh5LMaSmE"&gt;All the Little Things - Sandi Metz (refactoring talk)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+</feed>
