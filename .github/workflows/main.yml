@@ -47,18 +47,20 @@ jobs:
 
     - name: Store build
       uses: actions/upload-artifact@v1
+      if: github.ref == 'refs/heads/master'
       with:
-        name: build-${{ github.ref }}
+        name: build-${{ github.sha }}
         path: build
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    if: success() && github.ref == 'refs/heads/master'
 
     steps:
     - uses: actions/download-artifact@v1
       with:
-        name: build-${{ github.ref }}
+        name: build-${{ github.sha }}
         path: build
 
     - name: Deploy to branch
