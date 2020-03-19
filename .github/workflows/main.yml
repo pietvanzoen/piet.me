@@ -1,6 +1,9 @@
-name: Auto Deployment
+name: Main Build
 
-on: [push]
+on:
+  push:
+  repository_dispatch:
+    types: trigger-build
 
 jobs:
   build:
