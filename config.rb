@@ -76,6 +76,10 @@ helpers do
     link_to name, url, options
   end
 
+  def is_route?(str)
+    current_page.url == str
+  end
+
   def word_count(str)
     strip_tags(str).split.count.to_s.reverse.gsub(/...(?=.)/,'\&,').reverse
   end
