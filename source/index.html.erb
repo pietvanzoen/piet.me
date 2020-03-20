@@ -9,6 +9,13 @@
 </section>
 
 <hr>
+<h2>Latest Updates</h2>
+<% blog('updates').articles[0..2].each_with_index do |update, i| %>
+  <%= partial(:update_item, :locals => { :update => update.data, :compact => true }) %>
+<% end %>
+<h4><%= link_to 'More Updates', '/updates/' %></h4>
+
+<hr>
 <h2>Latest Links</h2>
 
 <ul>
