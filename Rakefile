@@ -53,6 +53,7 @@ task :generate_updates do
   updates.each do |update|
     slug = update['path'].gsub(/\.md$/, '')
     update['slug'] = slug
+    update['date'] = update['data']['date']
     File.write("#{UPDATES_DIR}/#{slug}.html.md", update.to_yaml + '---')
   end
   puts "generated #{updates.size} updates in #{UPDATES_DIR}"
