@@ -34,7 +34,7 @@ end
 activate :blog do |blog|
   blog.name = "updates"
   blog.layout = "update"
-  blog.permalink = "updates/{year}-{month}-{day}-{title}.html"
+  blog.permalink = "updates/{title}.html"
   blog.sources = "updates/{year}-{month}-{day}-{title}.html"
   blog.default_extension = ".md"
   blog.page_link = "p{num}"
