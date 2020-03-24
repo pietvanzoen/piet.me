@@ -58,25 +58,6 @@
       <div class="vim-mode">NORMAL</div><div class="vim-location">piet.me</div><div class="vim-file"><%= current_page.url %></div>
     </div>
 
-
-    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
-    <script>
-      (function(f, a, t, h, o, m){
-        a[h]=a[h]||function(){
-          (a[h].q=a[h].q||[]).push(arguments)
-        };
-        o=f.createElement('script'),
-          m=f.getElementsByTagName('script')[0];
-        o.async=1; o.src=t; o.id='fathom-script';
-        m.parentNode.insertBefore(o,m)
-      })(document, window, '//fathom.piet.me/tracker.js', 'fathom');
-      fathom('set', 'siteId', 'DGYKJ');
-      if (window.location.host === 'piet.me') {
-        fathom('trackPageview');
-      }
-    </script>
-    <!-- / Fathom -->
-
     <script>
       function loadStyleSheet(src){
           if (document.createStyleSheet) document.createStyleSheet(src);
@@ -113,6 +94,24 @@
         }
       }
     </script>
+
+    <% if build? %>
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+      (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+          (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'),
+          m=f.getElementsByTagName('script')[0];
+        o.async=1; o.src=t; o.id='fathom-script';
+        m.parentNode.insertBefore(o,m)
+      })(document, window, '//fathom.piet.me/tracker.js', 'fathom');
+      fathom('set', 'siteId', 'DGYKJ');
+      fathom('trackPageview');
+    </script>
+    <!-- / Fathom -->
+    <% end %>
 
   </body>
 </html>
