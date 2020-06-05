@@ -25,10 +25,12 @@
     <% link_to "/updates/#{update.path.gsub(/\.md$/, '.html')}" do %>
       <time class="update-meta_time" datetime="<%= Time.parse(update.data.date).strftime('%F %T.%L%:z') %>" title="<%= Time.parse(update.data.date).strftime('%F %T') %>"><%= time_ago_in_words Time.parse(update.data.date) %> ago</time>
     <% end %>
+    <% if update.data.mastodon || update.data.twitter %>
     <div class="update-meta__sources">
       Also on:
       <%= link_to 'mastodon', update.data.mastodon[0] if update.data.mastodon %>
       <%= link_to 'twitter', update.data.twitter[0] if update.data.twitter %>
     </div>
+    <% end %>
   </div>
 </article>
