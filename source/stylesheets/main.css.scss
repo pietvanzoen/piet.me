@@ -39,6 +39,10 @@ img {
 .post-header-img img {
   display: block;
 }
+.post h2 {
+  border-bottom: 1px solid var(--subtle-color);
+}
+
 figcaption {
   font-size: 0.8em;
   padding: 0 2em;
