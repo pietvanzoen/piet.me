@@ -1,0 +1,29 @@
+language: ruby
+cache:
+  directories:
+    - ./vendor/bundle
+    - ./.asset-cache
+install:
+  - bundle install --path vendor/bundle
+before_script:
+  - bundle exec rake generate_links
+  - bundle exec rake generate_updates
+  - bundle exec rake build
+script:
+  - bundle exec rake test
+deploy:
+  - provider: pages
+    github-token: "$GITHUB_TOKEN"
+    target-branch: gh-pages
+    local-dir: build
+    name: pietbot
+    email: hi+pietbot@pietvanzoen.com
+    keep-history: true
+    skip_cleanup: true
+    verbose: true
+    on:
+      branch: master
+env:
+  global:
+    - secure: b3dlMOa9szoYqn4AF0jvm87ZY7Kxqu9IohTHj7zZFfLU1IMeMDieBT14MmqTo1LDDRIoDykEveujL4PX/5bGdVBQldOkMSHjc9Wp+20WQBKGZENXsK6vMtPhfElL37+4mSxuseggN5FA3sHxrubkKAowhw8/m3ikyH2zztK4kbbOUDUiiiV5s7svrXMc3VUws0EIzEul0Tfee4/nnfxlAMrNpM+MluwASTn3C8egyVEhMnf+iJ6aqzsi1x7vw+kRGi0r5nNAR0Z9W0Q6KE5MBvGcbOb7CjlumpmRMnLZcmtBgIXg1IkTlkBGfesKnrcrl7KQmTmuygmddDvwBrd5gJmmrUPeygY1jXhUFqO32MlUsYGcKEnoKF9sxZANJjCERbiYV4qWmel79hRPktQszlMcuOz0nJioCb4PSrPAbUo5S0wyCD/Xd2lFqn9URrtVavrOeIqvaEiRg6lAB+dhhLXuEEjwr3dLEddZJv4TTV7VE8iF8S0JP3OEIne+mn2cboKz/FwG3pJ1oYVHdA5h0TIbM8S518JX1CYPDYr0e8lRACLHDuqvbQZ/4xv936yRaGZ9xPAycWVJBwVZFNfLDmRsUbLWg2aMD9/cXH7ZT0RCqmcBi7sB8OzZqsmmvnFSTj3e/OHdMiTWC6Hr3LmoLsUZHRKc/v1ta4l5OP9DGBA=
+    - secure: oZgOHYfmFka563rITtqivHzz7uuvSp+7I3H9M9ZIcKqteHlz/UkB8VN+azc5hbrXW5bJI3ZMSZYqBdKNm+jfYvivG4SQtQLy0HFZzAcyovFbvrL5rXrsw1/4bGngyYH6AN9R267peQjiqp3BF6a9zYmx+/QdoVsoheCyC04kYZFIakXrLQZzt1tUiJUKVn83rxFJqvobtx1QOWQz6305NmO+Oi+1hnYpzUJaRI85vjMGadz0yT/ZlLgJKq0H6lCy2cSQTtkof23aAGiSDtj/rpUqfY8Rd2gyaNoG6Vaa2JTtatzTFCPW11qQFKT313snxqkaa9FcMWReA5+OVIRhM9sGSu5L6lasWqXe+7rOIt91+CI1dcrbHiHn45BKjTXWZ6am6CoF7Irn/VxWGoqPKTFCdVDzOUUzwAR28DV9wtNPYladvrd4LvyRg+4irPqu20FwyiPlxrTdCDCWQS8DcU51BBmShHEvpsPooQPlNi4Dldr6DSfeph3sprERgSEU+q92uKu6Q40SOATKwQHk+6Ru93TDTc9DusX1HHL0LgleGEgW72HvPX//sXYo7fcHCxGkbqs5KkkYK2gQznf1nGkx/A4RDUtcsecdbAiYV8Tdn2S7ouI7aX+W0jwP71KAqBR4MirpxwcR3PNnh7/FrIOUNxNzm6kMcEU/bTRaR8M=
