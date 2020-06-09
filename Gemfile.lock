@@ -145,6 +145,7 @@ GEM
     rack-livereload (0.3.17)
       rack
     rainbow (3.0.0)
+    rake (13.0.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -180,6 +181,7 @@ DEPENDENCIES
   middleman-livereload
   middleman-syntax
   nokogiri (>= 1.10.4)
+  rake (~> 13.0)
   redcarpet (~> 3.3, >= 3.3.3)
   tzinfo-data
   wdm (~> 0.1.0)

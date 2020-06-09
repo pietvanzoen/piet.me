@@ -26,3 +26,5 @@ gem "builder", "~> 3.0"
 gem "html-proofer"
 
 gem "dotenv"
+
+gem "rake", "~> 13.0"
