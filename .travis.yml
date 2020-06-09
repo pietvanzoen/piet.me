@@ -6,6 +6,7 @@ cache:
   - "./vendor/bundle"
   - "./.asset-cache"
 install:
+- rvm reinstall 2.6.6 --disable-binary
 - bundle install --path vendor/bundle
 before_script:
 - bundle exec rake generate_links
