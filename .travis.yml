@@ -8,21 +8,21 @@ install:
 before_script:
 - rake generate_links
 - rake generate_updates
-- rake build
-script:
-- rake test
-deploy:
-- provider: pages
-  github-token: "$GITHUB_TOKEN"
-  target-branch: gh-pages
-  local-dir: build
-  name: pietbot
-  email: hi+pietbot@pietvanzoen.com
-  keep-history: true
-  skip_cleanup: true
-  verbose: true
-  on:
-    branch: master
+# - rake build
+# script:
+# - rake test
+# deploy:
+# - provider: pages
+#   github-token: "$GITHUB_TOKEN"
+#   target-branch: gh-pages
+#   local-dir: build
+#   name: pietbot
+#   email: hi+pietbot@pietvanzoen.com
+#   keep-history: true
+#   skip_cleanup: true
+#   verbose: true
+#   on:
+#     branch: master
 env:
   global:
   - BUILD_DIR='./build'
