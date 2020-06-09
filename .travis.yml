@@ -6,11 +6,11 @@ cache:
 install:
 - bundle install --path vendor/bundle
 before_script:
-- bundle exec rake generate_links
-- bundle exec rake generate_updates
-- bundle exec rake build
+- rake generate_links
+- rake generate_updates
+- rake build
 script:
-- bundle exec rake test
+- rake test
 deploy:
 - provider: pages
   github-token: "$GITHUB_TOKEN"
