@@ -8,9 +8,8 @@ install:
 before_script:
 - bundle exec rake generate_links
 - bundle exec rake generate_updates
-# - rake build
-# script:
-# - rake test
+script:
+- bundle exec rake build
 # deploy:
 # - provider: pages
 #   github-token: "$GITHUB_TOKEN"
