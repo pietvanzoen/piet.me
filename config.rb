@@ -5,7 +5,7 @@ helpers AssetCacher
 
 set :site_url, "https://piet.me/"
 set :site_title, "Piet van Zoen"
-set :site_description, "Leiden based software engineer"
+set :site_description, "Web developer based in the Netherlands"
 
 activate :directory_indexes
 activate :syntax
