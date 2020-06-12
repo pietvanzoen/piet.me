@@ -67,8 +67,8 @@ task :update_links do
     puts "Not in CI. Aborting."
     exit 0
   end
-  if ENV["TRAVIS_BRANCH"] != 'master'
-    puts "Not on master branch. Aborting."
+  if ENV["TRAVIS_BRANCH"] != 'main'
+    puts "Not on main branch. Aborting."
     exit 0
   end
   sh "curl -L http://scripts.piet.me/ci/setup-git | bash -e"
