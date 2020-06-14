@@ -200,7 +200,7 @@ div.highlight {
   background-color: transparent;
 }
 
-.card {
+.card, .twitter-tweet {
   display: block;
   border: 1px solid #eee;
   border-radius: 0.2em;
@@ -305,4 +305,5 @@ div.highlight {
 .twitter-tweet {
   margin-left: auto;
   margin-right: auto;
+  background-color: #fff;
 }
