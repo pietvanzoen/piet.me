@@ -55,7 +55,7 @@ jobs:
 
     - name: Store build
       uses: actions/upload-artifact@v1
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/main'
       with:
         name: build-${{ github.sha }}
         path: build
@@ -63,7 +63,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    if: success() && github.ref == 'refs/heads/master'
+    if: success() && github.ref == 'refs/heads/main'
 
     steps:
     - uses: actions/download-artifact@v1
