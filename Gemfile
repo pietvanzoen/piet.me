@@ -21,7 +21,7 @@ gem "redcarpet", "~> 3.3", ">= 3.3.3"
 gem "nokogiri", ">= 1.10.4"
 
 # For feed.xml.builder
-gem "builder", "~> 3.0"
+gem "builder", "~> 3.2"
 
 gem "html-proofer"
 
