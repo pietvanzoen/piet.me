@@ -26,3 +26,5 @@ gem "builder", "~> 3.0"
 gem "html-proofer"
 
 gem "dotenv"
+
+gem "twitter", "~> 7.0"

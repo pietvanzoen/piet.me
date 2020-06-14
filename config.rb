@@ -1,6 +1,8 @@
 require "dotenv/load"
 require "lib/asset_cacher.rb"
 require 'uri'
+require 'twitter'
+
 helpers AssetCacher
 
 set :site_url, "https://piet.me/"
@@ -113,5 +115,24 @@ helpers do
 
   def get_host(url)
     URI.parse(url).host
+  end
+
+  def is_tweet?(url = '')
+    url.match? /^https?:\/\/twitter\.com\/(?:#!\/)?(\w+)\/status(es)?\/(\d+)(\?.*)?$/
+  end
+
+  def get_tweet_embed(url)
+    @twitter_client ||= Twitter::REST::Client.new do |config|
+      config.consumer_key        = ENV["TWITTER_CONSUMER_KEY"]
+      config.consumer_secret     = ENV["TWITTER_CONSUMER_SECRET"]
+      config.access_token        = ENV["TWITTER_ACCESS_TOKEN"]
+      config.access_token_secret = ENV["TWITTER_ACCESS_SECRET"]
+    end
+
+    begin
+      @twitter_client.oembed(url, { omit_script: true, dnt: true }).html
+    rescue Exception
+      puts Exception
+    end
   end
 end

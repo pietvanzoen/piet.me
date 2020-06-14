@@ -1,36 +1,42 @@
 <% compact |= false %>
+
 <article class="card update-item buffer-top-large">
   <% if compact %>
-  <%= update.html.gsub(/<img ("[^"]*"|'[^']*'|[^'">])*>/, '📷') %>
+    <%= update.html.gsub(/<img ("[^"]*"|'[^']*'|[^'">])*>/, '📷') %>
   <% else %>
-  <%= update.html %>
+    <%= update.html %>
   <% end %>
-  <% (update.linkData or []).compact.select { |l| l.ogDescription }.each do |link| %>
-    <a class="card buffer-bottom update-link" href="<%= link.url %>">
-      <div class="update-link__content">
-        <h3><%= link.ogTitle %></h3>
-        <p><%= escape_html(link.ogDescription) %></p>
-        <small class="article-meta"><%= get_host(link.url) %></small>
-      </div>
-      <% unless compact %>
-      <% if link.ogImage and link.ogImage.respond_to? 'url' and link.ogImage.url.start_with? 'http' %>
-        <figure class="update-link__image">
-          <img src="<%= link.ogImage.url %>" alt="<%= link.ogTitle or escape_html(link.ogDescription) %>" />
-        </figure>
-      <% end %>
-      <% end %>
-    </a>
+  <% (update.linkData or []).compact.each do |link| %>
+    <% if is_tweet? link.url %>
+      <% @twitter_script = true %>
+      <%= get_tweet_embed link.url %>
+    <% elsif link.ogDescription %>
+      <a class="card buffer-bottom update-link" href="<%= link.url %>">
+        <div class="update-link__content">
+          <h3><%= link.ogTitle %></h3>
+          <p><%= escape_html(link.ogDescription) %></p>
+          <small class="article-meta"><%= get_host(link.url) %></small>
+        </div>
+        <% unless compact %>
+          <% if link.ogImage and link.ogImage.respond_to? 'url' and link.ogImage.url.start_with? 'http' %>
+            <figure class="update-link__image">
+              <img src="<%= link.ogImage.url %>" alt="<%= link.ogTitle or escape_html(link.ogDescription) %>" />
+            </figure>
+          <% end %>
+        <% end %>
+      </a>
+    <% end %>
   <% end %>
   <div class="update-meta">
     <% link_to "/updates/#{update.path.gsub(/\.md$/, '.html')}" do %>
       <time class="update-meta_time" datetime="<%= Time.parse(update.data.date).strftime('%F %T.%L%:z') %>" title="<%= Time.parse(update.data.date).strftime('%F %T') %>"><%= time_ago_in_words Time.parse(update.data.date) %> ago</time>
     <% end %>
     <% if update.data.mastodon || update.data.twitter %>
-    <div class="update-meta__sources">
-      Also on:
-      <%= link_to 'mastodon', update.data.mastodon[0] if update.data.mastodon %>
-      <%= link_to 'twitter', update.data.twitter[0] if update.data.twitter %>
-    </div>
+      <div class="update-meta__sources">
+        Also on:
+        <%= link_to 'mastodon', update.data.mastodon[0] if update.data.mastodon %>
+        <%= link_to 'twitter', update.data.twitter[0] if update.data.twitter %>
+      </div>
     <% end %>
   </div>
 </article>
