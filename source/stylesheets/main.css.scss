@@ -122,9 +122,13 @@ hr {
 .header .header-xl a:hover svg {
   transform: rotate(20deg);
 }
+.header-title {
+  display: inline-block;
+}
 .header-title a {
   display: flex;
   align-items: center;
+  justify-items: center;
 }
 .header-title span {
   margin-left: 0.2em;
@@ -132,7 +136,7 @@ hr {
 
 
 .site-nav {
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-align: center;
 }
 
@@ -143,6 +147,12 @@ hr {
 .site-nav a.active {
   color: var(--text-color);
   border-color: transparent;
+}
+
+@media screen and (min-width: 700px) {
+  .site-nav {
+    font-size: 1em;
+  }
 }
 
 .blurb-img {
