@@ -10,7 +10,8 @@
     "prebuild": "npm run clean",
     "prestart": "npm run clean",
     "build": "eleventy",
-    "fmt": "prettier -w ."
+    "lint": "eslint .",
+    "fmt": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,12 @@
     "highlight.js": "^10.3.2",
     "js-yaml": "^3.14.0",
     "markdown-it": "^12.0.2",
-    "prettier": "^2.1.2",
     "query-string": "^6.13.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2"
   }
 }
