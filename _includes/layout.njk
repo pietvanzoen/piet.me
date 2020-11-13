@@ -1,0 +1,38 @@
+---
+layout: base.njk
+---
+
+<header class="site-header">
+  <div class="site-title">
+    <a href="/">
+      <img class="img-circle" src="/images/piet-2020.jpg" />
+      <span>Piet van Zoen</span>
+    </a>
+  </div>
+  <div class="site-menu site-menu-lg">
+    <menu class="site-menu-list">
+      {%- for item in site.menu -%}
+      <li><a href="{{ item.href }}">{{ item.name }}</a></li>
+      {%- endfor -%}
+    </menu>
+  </div>
+  <details class="site-menu site-menu-sm">
+    <summary>Menu</summary>
+    <menu>
+      {%- for item in site.menu -%}
+      <li><a href="{{ item.href }}">{{ item.name }}</a></li>
+      {%- endfor -%}
+    </menu>
+  </details>
+</header>
+
+
+<main>
+  {{ content | safe }}
+</main>
+
+<footer class="site-footer">
+  <hr>
+  {% include 'social-links.njk' %}
+  <p><small>&copy; {{ site.buildTime | date('YYYY') }} Piet van Zoen</small></p>
+</footer>

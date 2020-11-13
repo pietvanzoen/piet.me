@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
+    "clean": "rm -rf _site",
+    "prebuild": "npm run clean",
+    "prestart": "npm run clean",
+    "build": "eleventy",
+    "fmt": "prettier -w ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,16 @@
   "bugs": {
     "url": "https://github.com/pietvanzoen/piet.me/issues"
   },
-  "homepage": "https://github.com/pietvanzoen/piet.me#readme"
+  "homepage": "https://github.com/pietvanzoen/piet.me#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "axios": "^0.21.0",
+    "dayjs": "^1.9.6",
+    "eleventy-plugin-sass": "^1.1.1",
+    "highlight.js": "^10.3.2",
+    "js-yaml": "^3.14.0",
+    "markdown-it": "^12.0.2",
+    "prettier": "^2.1.2",
+    "query-string": "^6.13.7"
+  }
 }

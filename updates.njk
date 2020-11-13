@@ -1,0 +1,26 @@
+---
+layout: layout.njk
+pagination:
+  data: updates
+  size: 10
+
+---
+<h1 class="headline">Updates</h1>
+
+{%- for update in pagination.items -%}
+{% if loop.index != 1 %}<hr class="buffer-lg">{% endif %}
+<article>
+  {{ update.html | safe }}
+  <small class="text-muted">{{ update.data.date | date('Do MMM YYYY HH:mm') }}</small>
+</article>
+{%- endfor -%}
+
+<nav class="pagination">
+  <ol>
+    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
+{%- for pageEntry in pagination.pages %}
+    <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+{%- endfor %}
+    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
+  </ol>
+</nav>

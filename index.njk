@@ -1,0 +1,26 @@
+---
+layout: base.njk
+bodyClass: home
+---
+
+<main>
+  <img class="img-circle home-image" src="images/piet-2020.jpg" alt="Piet van Zoen"/>
+  <h1 class="text-center">Hi, I&#39;m Piet.</h1>
+  <p class="home-intro"><span>I build things for the web.</span> <span>I love all things command line, </span><span>and fries with mayo.</span></p>
+
+  <h3 class="text-center">On this website</h3>
+  <menu class="list-inline text-center">
+    {%- for item in site.menu -%}
+    <li><a href="{{ item.href }}">{{ item.name }}</a></li>
+    {%- endfor -%}
+  </menu>
+
+  <h3 class="text-center">Elsewhere on the internet</h3>
+
+  {% include './_includes/social-links.njk' %}
+</main>
+
+<footer class="site-footer">
+  <hr>
+  <p><small>&copy; {{ site.copyrightYear }} Piet van Zoen</small></p>
+</footer>

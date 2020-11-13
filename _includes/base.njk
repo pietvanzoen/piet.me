@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{{ seo.title }}</title>
+    <link rel="stylesheet" href="{{ '/stylesheets/main.css' | url }}">
+    {%- for stylesheet in stylesheets %}
+    <link rel="stylesheet" href="{{ stylesheet | url }}">
+    {%- endfor %}
+
+  </head>
+  <body class="{{ bodyClass }}">
+    {{ content | safe }}
+  </body>
+</html>

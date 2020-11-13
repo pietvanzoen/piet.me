@@ -1,0 +1,18 @@
+---
+layout: layout.njk
+
+---
+<h1 class="headline">Projects</h1>
+
+{%- for section in projects -%}
+{% if loop.index != 1 %}<hr class="buffer-lg">{% endif %}
+<section>
+  <h2>{{ section.name }}</h2>
+  {%- for project in section.items -%}
+  <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+  <div>
+    {{ project.description | markdown | safe }}
+  </div>
+  {%- endfor -%}
+</section>
+{%- endfor -%}
