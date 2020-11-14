@@ -1,0 +1,25 @@
+<article class="update">
+  <a href="/updates/{{ update.slug | url }}">
+    <time class="text-muted text-small" title="{{ update.data.date | date('Do MMM YYYY HH:mm') }}" datetime="{{ update.data.date | date }}">{{ update.data.date | dateRelative }}</time>
+  </a>
+  <div class="text-large">{{ update.html | safe }}</div>
+  {%- for link in update.linkData -%}
+  <a class="card" href="{{ link.url | url }}">
+    {% if link.imageUrl %}
+    <figure class="img-right " style="width: 50%; max-width: 200px;">
+      <img class="img-rounded" src="{{ link.imageUrl | url }}" alt="{{ link.ogTitle }}" />
+    </figure>
+    {% endif %}
+    <h3>{{ link.ogTitle }}</h3>
+    <p>{{ link.ogDescription }}</p>
+    <small class="text-muted">{{ link.url | getHost }}</small>
+  </a>
+  {%- endfor -%}
+  {%- for link in update.alsoOn -%}
+    {% if loop.first %}<p class="text-muted"><small>Also on: {% endif -%}
+      {%- if loop.index != 1 -%}, {% endif -%}
+        <a href="{{ link | url }}">{{ link | getHost }}</a>
+    {%- if loop.last -%}</small></p>{%- endif -%}
+  {%- endfor -%}
+  </small></p>
+</article>

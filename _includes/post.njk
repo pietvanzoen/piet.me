@@ -1,22 +1,23 @@
 ---
 layout: layout.njk
 stylesheets:
- - /stylesheets/syntax.css
+- /stylesheets/syntax.css
 
 ---
 
-<h1 class="headline">{{ title }}</h1>
-{% if unsplashImageId %}
-<div class="text-muted text-small">
-<time datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
-</div>
+<article>
+  <h1 class="headline">{{ title }}</h1>
+  {% if unsplashImageId %}
+  <div class="text-muted text-small">
+    <time datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
+  </div>
 
-<figure class="hero-image">
-  <img src="{{ unsplashImageId | localizeUnsplash('1400x900') }}" alt="{{ imageAlt or title }}" />
-</figure>
-{% endif %}
-{{ content | safe }}
-
+  <figure class="hero-image">
+    <img src="{{ unsplashImageId | localizeUnsplash('1400x900') }}" alt="{{ imageAlt or title }}" />
+  </figure>
+  {% endif %}
+  {{ content | safe }}
+</article>
 
 <hr>
 <p><em>Typos? Mistakes?  <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new{% query body="**Page:** " + absoluteUrl, labels="bug" %}">Please submit an issue.</a></em></p>

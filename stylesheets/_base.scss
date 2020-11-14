@@ -30,7 +30,7 @@
 :root {
   --accent-color: #51b9b5;
   --text-color: #373737;
-  --subtle-color: #eee;
+  --subtle-color: #cecece;
   --muted-color: #888;
   --link-color: #ba5255;
 }
@@ -54,6 +54,10 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: var(--text-color);
+}
+
+body {
+// background: linear-gradient(170deg, rgba(147,42,157,0.77) 0%, rgba(54,107,157,0) 10%, rgba(255, 255, 255, 0) 50%);
 }
 
 pre {
@@ -90,6 +94,7 @@ body {
   margin: 1em auto;
   max-width: 700px;
   padding: 0 1em;
+  box-sizing: content-box;
 }
 
 img {
@@ -104,10 +109,16 @@ img {
 .text-small {
   font-size: 0.8em;
 }
-.text-muted {
+.text-large {
+  font-size: 1.2em;
+}
+.text-muted,
+.text-muted a {
   color: var(--muted-color);
 }
-
+.text-accent {
+  color: var(--accent-color);
+}
 
 a {
   color: var(--link-color);
@@ -135,8 +146,8 @@ hr {
   &,
   &:before,
   &:after {
-    background: var(--muted-color);
-    border-radius: 2px;
+    background: var(--subtle-color);
+    border-radius: 1px;
   }
 
   &:before,
@@ -173,7 +184,11 @@ blockquote {
   }
 }
 
+figure {
+  margin: 0;
+}
+
 .buffer-lg {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }

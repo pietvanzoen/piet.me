@@ -1,12 +1,12 @@
 ---
 layout: base.njk
 ---
-
+<a class="screen-reader-text" href="#maincontent">Skip to main content</a>
 <header class="site-header">
   <div class="site-title">
     <a href="/">
-      <img class="img-circle" src="/images/piet-2020.jpg" />
-      <span>Piet van Zoen</span>
+      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen" />
+      <span>Back to homepage</span>
     </a>
   </div>
   <div class="site-menu site-menu-lg">
@@ -27,7 +27,7 @@ layout: base.njk
 </header>
 
 
-<main>
+<main id="maincontent">
   {{ content | safe }}
 </main>
 

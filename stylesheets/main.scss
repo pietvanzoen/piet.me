@@ -26,6 +26,13 @@
   display: block;
   margin: auto;
 }
+.img-right {
+  float: right;
+  margin-left: 1em;
+}
+.img-rounded {
+  border-radius: 0.2em;
+}
 .home-image {
   width: 30vw;
   min-width: 100px;
@@ -115,4 +122,33 @@
     display: inline-block;
     padding: 0.2em;
   }
+}
+
+.screen-reader-text {
+  position: absolute!important;
+  clip: rect(1px,1px,1px,1px);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.card {
+  overflow: auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 0.2em;
+  padding: 1em;
+}
+
+a.card {
+  transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+  text-decoration: none;
+  color: var(--text-color);
+  a {
+    color: var(--link-color);
+  }
+}
+a.card:hover {
+  background: #f8f8f8;
+  border-color: var(--accent-color);
 }

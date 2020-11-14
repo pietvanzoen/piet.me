@@ -1,0 +1,10 @@
+---
+layout: layout.njk
+pagination:
+  data: updates
+  size: 1
+  alias: update
+permalink: "updates/{{ update.slug }}/"
+---
+
+{%- include "_includes/update.njk" -%}

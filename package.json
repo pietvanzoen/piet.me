@@ -9,7 +9,7 @@
     "clean": "rm -rf _site",
     "prebuild": "npm run clean",
     "prestart": "npm run clean",
-    "build": "eleventy",
+    "build": "ELEVENTY_PRODUCTION=true eleventy",
     "lint": "eslint .",
     "fmt": "eslint . --fix"
   },
@@ -27,6 +27,7 @@
     "@11ty/eleventy": "^0.11.1",
     "axios": "^0.21.0",
     "dayjs": "^1.9.6",
+    "eleventy-plugin-embed-twitter": "^1.0.2",
     "eleventy-plugin-sass": "^1.1.1",
     "highlight.js": "^10.3.2",
     "js-yaml": "^3.14.0",
@@ -37,6 +38,7 @@
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.6",
     "prettier": "^2.1.2"
   }
 }
