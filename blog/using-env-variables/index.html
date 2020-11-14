@@ -9,12 +9,12 @@
 
   </head>
   <body class="">
-    
+    <a class="screen-reader-text" href="#maincontent">Skip to main content</a>
 <header class="site-header">
   <div class="site-title">
     <a href="/">
-      <img class="img-circle" src="/images/piet-2020.jpg" />
-      <span>Piet van Zoen</span>
+      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen" />
+      <span>Back to homepage</span>
     </a>
   </div>
   <div class="site-menu site-menu-lg">
@@ -27,11 +27,12 @@
 </header>
 
 
-<main>
+<main id="maincontent">
   
-<h1 class="headline">Using local environment (ENV) variables.</h1>
-
-<p>Often enough you'll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it's not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter 'Environment Variables'.</p>
+<article>
+  <h1 class="headline">Using local environment (ENV) variables.</h1>
+  
+  <p>Often enough you'll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it's not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter 'Environment Variables'.</p>
 <h2>Setting Environment variables</h2>
 <p>In terminal you can easily set environment (or ENV) variables by running this command: <code>export VAR_NAME=foo</code>. For multi word variables be sure to wrap the variable in quotes: <code>export VAR_NAME=&quot;foo bar&quot;</code>. But when you reboot your shell you'll lose these variables. So lets look at how to set variables that persist.</p>
 <p>Open up <code>.bash_profile</code> or <code>.bashrc</code> in your home folder using your text editor, if you don't have a bash file create it like so:</p>
@@ -73,7 +74,7 @@ wibble = os.environ[<span class="hljs-string">&#x27;WIBBLE&#x27;</span>]
 </ul>
 <p>If you have any questions or corrections just comment or email me.</p>
 
-
+</article>
 
 <hr>
 <p><em>Typos? Mistakes?  <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new?body=%2A%2APage%3A%2A%2A%20https%3A%2F%2Fpiet.me%2Fblog%2Fusing-env-variables%2F&labels=bug">Please submit an issue.</a></em></p>

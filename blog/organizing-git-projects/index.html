@@ -9,12 +9,12 @@
 
   </head>
   <body class="">
-    
+    <a class="screen-reader-text" href="#maincontent">Skip to main content</a>
 <header class="site-header">
   <div class="site-title">
     <a href="/">
-      <img class="img-circle" src="/images/piet-2020.jpg" />
-      <span>Piet van Zoen</span>
+      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen" />
+      <span>Back to homepage</span>
     </a>
   </div>
   <div class="site-menu site-menu-lg">
@@ -27,19 +27,20 @@
 </header>
 
 
-<main>
+<main id="maincontent">
   
-<h1 class="headline">How I organize my cloned git projects</h1>
+<article>
+  <h1 class="headline">How I organize my cloned git projects</h1>
+  
+  <div class="text-muted text-small">
+    <time datetime="Thu May 31 2018 00:00:00 GMT+0000 (Coordinated Universal Time)">31st May 2018 </time>
+  </div>
 
-<div class="text-muted text-small">
-<time datetime="Thu May 31 2018 00:00:00 GMT+0000 (Coordinated Universal Time)">31st May 2018 </time>
-</div>
-
-<figure class="hero-image">
-  <img src="/images/cached/W_ZYCEUapF0-1400x900.jpg" alt="How I organize my cloned git projects" />
-</figure>
-
-<p>For a while I've been looking for a better way to organize the git repos I work with. I've tried just dumping them into a single directory, and I've tried adding sub folders such as <code>personal</code>, <code>work</code>, and <code>tools</code>. But both of these solutions had the same problems:</p>
+  <figure class="hero-image">
+    <img src="/images/cached/W_ZYCEUapF0-1400x900.jpg" alt="How I organize my cloned git projects" />
+  </figure>
+  
+  <p>For a while I've been looking for a better way to organize the git repos I work with. I've tried just dumping them into a single directory, and I've tried adding sub folders such as <code>personal</code>, <code>work</code>, and <code>tools</code>. But both of these solutions had the same problems:</p>
 <ul>
 <li>Repos that I clone to play around with cause clutter alongside projects I'm actively working on.</li>
 <li>Cloning forked repos along with the original repos cause folder name conflicts. Meaning I would have to use a different a folder name to the project name, which might cause confusion when working on a project.</li>
@@ -85,7 +86,7 @@
 <h2>Conclusion</h2>
 <p>I've been using this new directory structure for about a month and I love it. It feels clean and organized and I don't worry about where I'm cloning repos into. Check out <a href="https://github.com/pietvanzoen/git-get">the <code>git-get</code> source code</a> and try it out. If you have ideas for improvement please submit an issue.</p>
 
-
+</article>
 
 <hr>
 <p><em>Typos? Mistakes?  <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new?body=%2A%2APage%3A%2A%2A%20https%3A%2F%2Fpiet.me%2Fblog%2Forganizing-git-projects%2F&labels=bug">Please submit an issue.</a></em></p>

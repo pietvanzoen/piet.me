@@ -9,12 +9,12 @@
 
   </head>
   <body class="">
-    
+    <a class="screen-reader-text" href="#maincontent">Skip to main content</a>
 <header class="site-header">
   <div class="site-title">
     <a href="/">
-      <img class="img-circle" src="/images/piet-2020.jpg" />
-      <span>Piet van Zoen</span>
+      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen" />
+      <span>Back to homepage</span>
     </a>
   </div>
   <div class="site-menu site-menu-lg">
@@ -27,19 +27,20 @@
 </header>
 
 
-<main>
+<main id="maincontent">
   
-<h1 class="headline">Lodash, Knockout, and functional programming</h1>
+<article>
+  <h1 class="headline">Lodash, Knockout, and functional programming</h1>
+  
+  <div class="text-muted text-small">
+    <time datetime="Sun Mar 20 2016 00:00:00 GMT+0000 (Coordinated Universal Time)">20th March 2016 </time>
+  </div>
 
-<div class="text-muted text-small">
-<time datetime="Sun Mar 20 2016 00:00:00 GMT+0000 (Coordinated Universal Time)">20th March 2016 </time>
-</div>
-
-<figure class="hero-image">
-  <img src="/images/cached/5eZu5p0vSPg-1400x900.jpg" alt="Lodash, Knockout, and functional programming" />
-</figure>
-
-<p>Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don't always play nice if you happen to use Knockout observables. I'm going to introduce a way to make handling observables in functional style easier.</p>
+  <figure class="hero-image">
+    <img src="/images/cached/5eZu5p0vSPg-1400x900.jpg" alt="Lodash, Knockout, and functional programming" />
+  </figure>
+  
+  <p>Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don't always play nice if you happen to use Knockout observables. I'm going to introduce a way to make handling observables in functional style easier.</p>
 <p>READMORE</p>
 <p>Let's start with a plain object example. Say you want to create an array of people's <code>age</code> in <code>years</code> from this array:</p>
 <pre class="hljs"><code><span class="hljs-keyword">var</span> people = [
@@ -171,7 +172,7 @@ youngestDatableAges();
 <li><a href="https://leanpub.com/javascript-allonge">JavaScript Allongé (ES5) - A long pull of functions, combinators, &amp; decorators (book)</a></li>
 </ul>
 
-
+</article>
 
 <hr>
 <p><em>Typos? Mistakes?  <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new?body=%2A%2APage%3A%2A%2A%20https%3A%2F%2Fpiet.me%2Fblog%2Flodash-knockout-and-functional-programming-with-kompose%2F&labels=bug">Please submit an issue.</a></em></p>
