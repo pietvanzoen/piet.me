@@ -6,6 +6,8 @@ date: 2014-05-15
 
 Often enough you'll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it's not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter 'Environment Variables'.
 
+<!-- excerpt -->
+
 ## Setting Environment variables
 
 In terminal you can easily set environment (or ENV) variables by running this command: `export VAR_NAME=foo`. For multi word variables be sure to wrap the variable in quotes: `export VAR_NAME="foo bar"`. But when you reboot your shell you'll lose these variables. So lets look at how to set variables that persist.

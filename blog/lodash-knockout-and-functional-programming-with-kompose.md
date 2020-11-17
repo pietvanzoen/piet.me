@@ -7,7 +7,7 @@ date: 2016-03-20
 
 Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don't always play nice if you happen to use Knockout observables. I'm going to introduce a way to make handling observables in functional style easier.
 
-READMORE
+<!-- excerpt -->
 
 Let's start with a plain object example. Say you want to create an array of people's `age` in `years` from this array:
 

@@ -6,6 +6,8 @@ date: 2013-07-12
 
 A year ago my wife and I bought our first house. Like any other unprepared first-time homeowners we asked neighbors for advice, tools and a helping hand with projects. A year later we're a little more confident, own a few more tools and now _we_ get be the neighbor who can lend a hand. I think I've reached a similar point with web development.
 
+<!-- excerpt -->
+
 When I started out I was a bit green and I looked to the community for advice, tips, tools and help with projects. I'm never going to stop going to people for advice/tools when I need them. But now I've gained some knowledge and I've got some useful tricks and ideas, I can offer something back to the web dev community.
 
 ## Where to start?

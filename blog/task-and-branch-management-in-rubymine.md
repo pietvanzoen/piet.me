@@ -6,6 +6,8 @@ draft: true
 
 "Doing Foo is important under the given conditions. I'm going to show you how to Foo. Do this, then do that. There, now I've shown you how to Foo. You should go out and do Foo."
 
+<!-- excerpt -->
+
 - juggling tasks and branches
 - powerful task/context/banch management tools
 - github issues

@@ -7,6 +7,8 @@ date: 2017-02-27
 
 I recently switched from Jekyll to [Middleman](https://middlemanapp.com/) for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.
 
+<!-- excerpt -->
+
 ## Testing setup
 
 I wanted to add some basic testing for my site, simple things like HTML validation and link checking. For that I found [HTMLProofer](https://github.com/gjtorikian/html-proofer) which can run a variety of tests against a folder of html files.

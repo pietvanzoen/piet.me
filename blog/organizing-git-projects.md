@@ -12,6 +12,8 @@ For a while I've been looking for a better way to organize the git repos I work 
 - Cloning forked repos along with the original repos cause folder name conflicts. Meaning I would have to use a different a folder name to the project name, which might cause confusion when working on a project.
 - It's unclear who owns what without going to the cloned repo and running `git remote -v`.
 
+<!-- excerpt -->
+
 I figured there's probably a better way.
 
 ## Enter Go

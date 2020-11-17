@@ -7,7 +7,7 @@ date: 2017-05-18
 
 Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.
 
-READMORE
+<!-- excerpt -->
 
 ## Your site can (and should) be accessible
 

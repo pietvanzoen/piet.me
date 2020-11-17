@@ -9,6 +9,8 @@ imageAlt: A person peering over the edge of a cliff.
 
 We've all been tempted to skip writing the tests. Whether it's time pressure, business pressure, the complexity of testing, or we just want to get on with something else. We might be tempted to say "YOLO!" and move on. So here's a list of reasons why you might want to think twice before doing that.
 
+<!-- excerpt -->
+
 ## The Reasons
 
 There are 7 of them, I counted. Why 7? That's how many I thought of. I may add more.

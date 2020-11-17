@@ -67,6 +67,12 @@ module.exports = function (cfg) {
   );
   cfg.addNunjucksAsyncFilter('getOpenGraphData', getOpenGraphData);
 
+  cfg.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_separator: '<!-- excerpt -->',
+    excerpt_alias: 'excerpt',
+  });
+
   return {
     dir: {
       layouts: '_layouts',

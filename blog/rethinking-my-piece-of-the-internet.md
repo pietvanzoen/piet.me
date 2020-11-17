@@ -8,6 +8,8 @@ tags: meta
 
 I am a strong proponent of people owning their own personal space on the internet. A space where they can express their interests and who they are as they see fit. (And preferably not owned by a social media giant.) But as a person who builds things on the internet for their profession, it’s easy to feel that my website should be a professional brand website for Piet the developer.
 
+<!-- excerpt -->
+
 I’ve started various more personal projects but I kept them separate from this site, to keep it as my professional website. For a long time, I’ve struggled with this balance. On the one hand, I would love to represent myself better and be a little more personal and human. On the other hand, I feel pressure to maintain a professional brand.
 
 I read an article recently that inspired me to rethink what content I produce for this space. The article was about how the ‘attention economy’ of social media platforms (Instagram in particular in this case), have forced artists to build a brand for their art that is tailored to be easily and quickly digestible. The author challenged artists not to lose their human side while building their professional brand. This paragraph caught my attention in particular:

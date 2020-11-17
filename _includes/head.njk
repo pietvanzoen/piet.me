@@ -1,0 +1,37 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>{{ seo.title }}</title>
+<link rel="stylesheet" href="{{ '/stylesheets/main.css' | cacheBust | url }}">
+
+{%- for stylesheet in stylesheets %}
+<link rel="stylesheet" href="{{ stylesheet | cacheBust | url }}">
+{%- endfor %}
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=NmEn8A8Wqa">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=NmEn8A8Wqa" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png?v=NmEn8A8Wqa" sizes="16x16">
+<link rel="manifest" href="/images/manifest.json?v=NmEn8A8Wqa">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg?v=NmEn8A8Wqa" color="#5bbad5">
+<link rel="shortcut icon" href="/images/favicon.ico?v=NmEn8A8Wqa">
+<meta name="msapplication-config" content="/images/browserconfig.xml?v=NmEn8A8Wqa">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:title" content="{{ seo.title }}" />
+<meta property="og:description" content="{{ seo.description | markdown | striptags | trim }}" />
+<meta name="description" content="{{ seo.description | markdown | striptags | trim }}" />
+<meta property="og:type" content="{{ seo.type }}" />
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:url" content="{{ absoluteUrl | url }}">
+<link rel="canonical" href="{{ absoluteUrl | url }}" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@pietvanzoen" />
+
+{%- if seo.image -%}
+<meta property="og:image" content="{{ seo.image.url | url }}">
+{%- if seo.image.width -%}<meta property="og:image:width" content="{{ seo.image.width }}" />{%- endif -%}
+{%- if seo.image.height -%}<meta property="og:image:height" content="{{ seo.image.height }}" />{%- endif -%}
+{%- endif %}
+
+{% if noindex %}
+<meta name="robots" content="noindex, nofollow">
+{% endif %}

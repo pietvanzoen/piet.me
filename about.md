@@ -9,6 +9,8 @@ layout: layout.njk
 
 Anglo/Dutch web developer at [YoungCapital](https://www.youngcapital.nl). Previously at [Usabilla](https://usabilla.com), [Cozy](https://cozy.co), and [Daylight Studio](http://thedaylightstudio.com/). I love the open web, test driven development, vim, and fries with mayo.
 
+<!-- excerpt -->
+
 I live in the Netherlands with my wife [Keven](https://girlkeven.com/), my daughter Teddie, and Eskimo the cat.
 
 ## The long version
