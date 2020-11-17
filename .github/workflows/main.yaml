@@ -5,6 +5,7 @@ on:
     branches:
       - next
   repository_dispatch:
+    types: [trigger-build]
 
 jobs:
   build-and-deploy:
