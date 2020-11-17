@@ -46,7 +46,7 @@ module.exports = function (cfg) {
 
   // Extentions / Libraries
   cfg.setLibrary('md', md);
-  cfg.addDataExtension('yaml', (contents) => yaml.safeLoad(contents));
+  cfg.addDataExtension('yaml', yaml.safeLoad);
 
   // Filters
   cfg.addFilter('markdown', (contents) => md.render(contents));
@@ -64,4 +64,10 @@ module.exports = function (cfg) {
     )
   );
   cfg.addNunjucksAsyncFilter('getOpenGraphData', getOpenGraphData);
+
+  return {
+    dir: {
+      layouts: '_layouts',
+    },
+  };
 };
