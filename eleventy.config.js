@@ -67,6 +67,11 @@ module.exports = function (cfg) {
   );
   cfg.addNunjucksAsyncFilter('getOpenGraphData', getOpenGraphData);
 
+  cfg.addTransform('lazyImages', (content, outputPath) => {
+    if (!outputPath.endsWith('.html')) return content;
+    return content.replace(/<img /g, '<img loading="lazy" ');
+  });
+
   cfg.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_separator: '<!-- excerpt -->',
