@@ -11,20 +11,22 @@ const updatesCollection = require('./_lib/updates-collection');
 
 const now = new Date();
 
-const { ELEVENTY_PRODUCTION } = process.env;
+const IS_PRODUCTION = process.env.ELEVENTY_PRODUCTION === 'true';
 
 module.exports = function (cfg) {
   // Plugins
   cfg.addPlugin(pluginSass);
   cfg.addPlugin(embedTwitter, {
-    cacheText: ELEVENTY_PRODUCTION === 'true',
+    cacheText: IS_PRODUCTION,
   });
-  cfg.addPlugin(localImages, {
-    distPath: '_site',
-    assetPath: '/images',
-    selector: 'img',
-    verbose: true,
-  });
+  if (IS_PRODUCTION) {
+    cfg.addPlugin(localImages, {
+      distPath: '_site',
+      assetPath: '/images',
+      selector: 'img',
+      verbose: true,
+    });
+  }
 
   // Copy
   cfg.addPassthroughCopy('fonts');
@@ -55,7 +57,7 @@ module.exports = function (cfg) {
   cfg.addFilter('debug', (obj) => `<pre style="overflow-x: auto;"><code>${JSON.stringify(obj, null, 2)}</code></pre>`);
   cfg.addFilter('encodeURIComponent', (str) => encodeURIComponent(str));
   cfg.addFilter('getHost', (url) => new URL(url).host);
-  cfg.addFilter('cacheBust', (url) => (!ELEVENTY_PRODUCTION ? url : `${url}?${Date.now()}`));
+  cfg.addFilter('cacheBust', (url) => (IS_PRODUCTION ? `${url}?${Date.now()}` : url));
   cfg.addFilter('parseLinks', (content) =>
     _.compact(
       _.uniq((content || '').match(/href="(https?:\/\/\S+)"/) || []).filter(
