@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "eleventy --serve",
+    "start": "eleventy --config=eleventy.config.js --serve",
     "clean": "rm -rf _site",
     "prebuild": "npm run clean && npm run sync-images",
     "prestart": "npm run clean && npm run sync-images",
     "sync-images": "rsync -r updates/media images",
     "optimize-images": "node ./_scripts/optimize.js",
-    "build": "ELEVENTY_PRODUCTION=true eleventy",
+    "build": "ELEVENTY_PRODUCTION=true eleventy --config=eleventy.config.js",
     "postbuild": "npm run optimize-images",
     "lint": "eslint .",
     "fmt": "eslint . --fix"
@@ -28,28 +28,22 @@
   "homepage": "https://github.com/pietvanzoen/piet.me#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
-    "@11ty/eleventy-img": "^0.3.0",
-    "axios": "^0.21.0",
     "dayjs": "^1.9.6",
     "debug": "^4.2.0",
     "eleventy-plugin-embed-twitter": "^1.0.2",
-    "eleventy-plugin-lazyimages": "^2.1.0",
     "eleventy-plugin-local-images": "^0.4.0",
-    "eleventy-plugin-local-respimg": "^0.3.1",
     "eleventy-plugin-sass": "^1.1.1",
     "highlight.js": "^10.3.2",
-    "imageoptim-cli": "^3.0.2",
-    "js-yaml": "^3.14.0",
     "lodash": "^4.17.20",
     "markdown-it": "^12.0.2",
     "open-graph-scraper": "^4.7.0",
-    "query-string": "^6.13.7"
+    "query-string": "^6.13.7",
+    "sharp": "^0.26.3"
   },
   "devDependencies": {
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "nodemon": "^2.0.6",
     "prettier": "^2.1.2"
   }
 }

@@ -3,8 +3,7 @@ const fs = require('fs');
 const { basename } = require('path');
 const Debug = require('debug');
 
-const humanKb = (bytes) =>
-  `${Math.round((bytes / 1024 + Number.EPSILON) * 100) / 100}Kb`;
+const humanKb = (bytes) => `${Math.round((bytes / 1024 + Number.EPSILON) * 100) / 100}Kb`;
 
 class Cache {
   constructor(path) {
