@@ -1,2 +1,4 @@
+Sitemap: https://piet.me/sitemap.xml
+
 User-agent: *
 Disallow: /

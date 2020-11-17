@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Automated middleman deploy to Github pages - Piet van Zoen</title>
-    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/main.css?1605611482688">
     <link rel="stylesheet" href="/stylesheets/syntax.css">
 
   </head>
@@ -13,7 +11,7 @@
 <header class="site-header">
   <div class="site-title">
     <a href="/">
-      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen" />
+      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen">
       <span>Back to homepage</span>
     </a>
   </div>
@@ -37,23 +35,23 @@
   </div>
 
   <figure class="hero-image">
-    <img src="/images/cached/GDdRP7U5ct0-1400x900.jpg" alt="Automated middleman deploy to Github pages" />
+    <img src="/images/pPbhk-1400x900.jpg" alt="Automated middleman deploy to Github pages">
   </figure>
   
   <p>I recently switched from Jekyll to <a href="https://middlemanapp.com/">Middleman</a> for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.</p>
 <h2>Testing setup</h2>
 <p>I wanted to add some basic testing for my site, simple things like HTML validation and link checking. For that I found <a href="https://github.com/gjtorikian/html-proofer">HTMLProofer</a> which can run a variety of tests against a folder of html files.</p>
 <p>Add HTMLProofer to your <code>Gemfile</code> and <code>bundle install</code>:</p>
-<pre class="hljs"><code>gem <span class="hljs-string">&#x27;html-proofer&#x27;</span>
+<pre class="hljs"><code>gem <span class="hljs-string">'html-proofer'</span>
 </code></pre>
 <p>HTMLProofer can run via command line, but for ease of running locally and remotely with all of my configuration I chucked it in a <code>test.rb</code> and included a simple check for the build folder.</p>
 <pre class="hljs"><code><span class="hljs-comment"># test.rb</span>
 
-<span class="hljs-keyword">require</span> <span class="hljs-string">&#x27;html-proofer&#x27;</span>
+<span class="hljs-keyword">require</span> <span class="hljs-string">'html-proofer'</span>
 
-raise IOError, <span class="hljs-string">&#x27;Directory ./build does not exist. Run `middleman build` before running tests&#x27;</span> <span class="hljs-keyword">unless</span> Dir.exists?(<span class="hljs-string">&#x27;./build&#x27;</span>)
+raise IOError, <span class="hljs-string">'Directory ./build does not exist. Run `middleman build` before running tests'</span> <span class="hljs-keyword">unless</span> Dir.exists?(<span class="hljs-string">'./build'</span>)
 
-HTMLProofer.check_directory(<span class="hljs-string">&#x27;./build&#x27;</span>, {
+HTMLProofer.check_directory(<span class="hljs-string">'./build'</span>, {
   <span class="hljs-symbol">:check_img_http</span> =&gt; <span class="hljs-literal">true</span>,
   <span class="hljs-symbol">:check_html</span> =&gt; <span class="hljs-literal">true</span>, <span class="hljs-symbol">:validation</span> =&gt; { <span class="hljs-symbol">:report_missing_names</span> =&gt; <span class="hljs-literal">true</span> },
   <span class="hljs-symbol">:check_favicon</span> =&gt; <span class="hljs-literal">true</span>,
@@ -64,7 +62,7 @@ HTMLProofer.check_directory(<span class="hljs-string">&#x27;./build&#x27;</span>
 </code></pre>
 <p>If you’re already using a <code>Rakefile</code> you could add the HTMLProofer code to a <code>:test</code> task. This test was going to be the only task in my <code>Rakefile</code> so I decided to stick with a plain old <code>.rb</code> file I could run.</p>
 <p>Run <code>ruby test.rb</code> and you should see something like this:</p>
-<pre class="hljs"><code>Running [&quot;ImageCheck&quot;, &quot;FaviconCheck&quot;, &quot;ScriptCheck&quot;, &quot;OpenGraphCheck&quot;, &quot;HtmlCheck&quot;, &quot;LinkCheck&quot;] on [&quot;./build&quot;] on *.html...
+<pre class="hljs"><code>Running ["ImageCheck", "FaviconCheck", "ScriptCheck", "OpenGraphCheck", "HtmlCheck", "LinkCheck"] on ["./build"] on *.html...
 
 Checking 62 external links...
 Ran on 13 files!
@@ -73,12 +71,12 @@ Ran on 13 files!
 <h2>Deploy configuration</h2>
 <p>The <a href="https://github.com/middleman-contrib/middleman-deploy">middleman-deploy</a> gem has what you need to “deploy” your site to git. Basically what that means is that middleman will build your site, copy the files to an orphan branch, commit the changes and push. By default middleman deploys to the <code>gh-pages</code> branch for sites using Github pages.</p>
 <p>Add the gem to your <code>Gemfile</code> and <code>bundle install</code>. To work with middleman v4 I had to install the pre-alpha gem. This hasn’t been a problem for what I need so far.</p>
-<pre class="hljs"><code>gem <span class="hljs-string">&#x27;middleman-deploy&#x27;</span>, <span class="hljs-string">&#x27;~&gt; 2.0.0.pre.alpha&#x27;</span>
+<pre class="hljs"><code>gem <span class="hljs-string">'middleman-deploy'</span>, <span class="hljs-string">'~&gt; 2.0.0.pre.alpha'</span>
 </code></pre>
 <p>Then in your <code>config.rb</code> add your deploy setup:</p>
 <pre class="hljs"><code>activate <span class="hljs-symbol">:deploy</span> <span class="hljs-keyword">do</span> <span class="hljs-params">|deploy|</span>
   deploy.deploy_method = <span class="hljs-symbol">:git</span>
-  deploy.branch = <span class="hljs-string">&#x27;gh-pages&#x27;</span>
+  deploy.branch = <span class="hljs-string">'gh-pages'</span>
 <span class="hljs-keyword">end</span>
 </code></pre>
 <p>Make sure the whole process works by running <code>middleman build &amp;&amp; ruby test.rb &amp;&amp; middleman deploy</code>.</p>
@@ -108,7 +106,7 @@ Ran on 13 files!
 <p>Next you need to configure CircleCI to have write access to the repo. By default Circle only has read access to the repo. Instructions for <a href="https://circleci.com/docs/1.0/adding-read-write-deployment-key/">setting up a read/write deploy key</a> are in the circle docs, but here’s the break down.</p>
 <h3>Generate a new SSH key</h3>
 <p>First we’ll need to create a new SSH key for Circle:</p>
-<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> ssh-keygen -t rsa -b 4096 -C <span class="hljs-string">&quot;your_email@example.com&quot;</span></span>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> ssh-keygen -t rsa -b 4096 -C <span class="hljs-string">"your_email@example.com"</span></span>
 Generating public/private rsa key pair.
 Enter file in which to save the key: /Users/&lt;you&gt;/.ssh/circleci_deploy_key
 Enter passphrase (empty for no passphrase):
@@ -137,17 +135,11 @@ Enter passphrase (empty for no passphrase):
 </article>
 
 <hr>
-<p><em>Typos? Mistakes?  <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new?body=%2A%2APage%3A%2A%2A%20https%3A%2F%2Fpiet.me%2Fblog%2Fautomated-middleman-deploy-to-github-pages%2F&labels=bug">Please submit an issue.</a></em></p>
+<p><em>Typos? Mistakes?  <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new?body=%2A%2APage%3A%2A%2A%20https%3A%2F%2Fpiet.me%2Fblog%2Fautomated-middleman-deploy-to-github-pages%2F&amp;labels=bug">Please submit an issue.</a></em></p>
 
 <h2 id="comments">Comments</h2>
 
-<script src="https://utteranc.es/client.js"
-        repo="pietvanzoen/piet.me"
-        issue-term="pathname"
-        label="comments"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
+<script src="https://utteranc.es/client.js" repo="pietvanzoen/piet.me" issue-term="pathname" label="comments" theme="github-light" crossorigin="anonymous" async="">
 </script>
 
 <noscript>
@@ -157,6 +149,7 @@ Enter passphrase (empty for no passphrase):
   </div>
   <br>
 </noscript>
+
 
 </main>
 
@@ -206,8 +199,9 @@ Enter passphrase (empty for no passphrase):
   </li>
 </ul>
 
-  <p><small>&copy; 2020 Piet van Zoen</small></p>
+  <p><small>© 2020 Piet van Zoen</small></p>
 </footer>
 
-  </body>
-</html>
+  
+
+</body></html>

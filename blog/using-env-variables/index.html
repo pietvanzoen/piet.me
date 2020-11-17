@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Using local environment (ENV) variables. - Piet van Zoen</title>
-    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/main.css?1605611482691">
     <link rel="stylesheet" href="/stylesheets/syntax.css">
 
   </head>
@@ -13,7 +11,7 @@
 <header class="site-header">
   <div class="site-title">
     <a href="/">
-      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen" />
+      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen">
       <span>Back to homepage</span>
     </a>
   </div>
@@ -34,7 +32,7 @@
   
   <p>Often enough you'll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it's not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter 'Environment Variables'.</p>
 <h2>Setting Environment variables</h2>
-<p>In terminal you can easily set environment (or ENV) variables by running this command: <code>export VAR_NAME=foo</code>. For multi word variables be sure to wrap the variable in quotes: <code>export VAR_NAME=&quot;foo bar&quot;</code>. But when you reboot your shell you'll lose these variables. So lets look at how to set variables that persist.</p>
+<p>In terminal you can easily set environment (or ENV) variables by running this command: <code>export VAR_NAME=foo</code>. For multi word variables be sure to wrap the variable in quotes: <code>export VAR_NAME="foo bar"</code>. But when you reboot your shell you'll lose these variables. So lets look at how to set variables that persist.</p>
 <p>Open up <code>.bash_profile</code> or <code>.bashrc</code> in your home folder using your text editor, if you don't have a bash file create it like so:</p>
 <ol>
 <li>Start up Terminal</li>
@@ -50,20 +48,20 @@
 <pre class="hljs"><code><span class="hljs-built_in">export</span> WIBBLE=woo
 </code></pre>
 <p><strong>Ruby</strong></p>
-<pre class="hljs"><code>wibble = ENV[<span class="hljs-string">&#x27;WIBBLE&#x27;</span>]
+<pre class="hljs"><code>wibble = ENV[<span class="hljs-string">'WIBBLE'</span>]
 print wibble
-<span class="hljs-comment"># =&gt; &#x27;woo&#x27;</span>
+<span class="hljs-comment"># =&gt; 'woo'</span>
 </code></pre>
 <p><strong>Node</strong></p>
 <pre class="hljs"><code><span class="hljs-keyword">var</span> wibble = process.env.WIBBLE;
 <span class="hljs-built_in">console</span>.log(wibble);
-<span class="hljs-comment">// =&gt; &#x27;woo&#x27;</span>
+<span class="hljs-comment">// =&gt; 'woo'</span>
 </code></pre>
 <p><strong>Python</strong></p>
 <pre class="hljs"><code><span class="hljs-keyword">import</span> os
-wibble = os.environ[<span class="hljs-string">&#x27;WIBBLE&#x27;</span>]
+wibble = os.environ[<span class="hljs-string">'WIBBLE'</span>]
 <span class="hljs-built_in">print</span> wibble
-<span class="hljs-comment"># =&gt; &#x27;woo&#x27;</span>
+<span class="hljs-comment"># =&gt; 'woo'</span>
 </code></pre>
 <h2>Looking up ENV variables</h2>
 <p>Finally here are a couple quick commands for looking up what ENV variables have already been set.</p>
@@ -77,17 +75,11 @@ wibble = os.environ[<span class="hljs-string">&#x27;WIBBLE&#x27;</span>]
 </article>
 
 <hr>
-<p><em>Typos? Mistakes?  <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new?body=%2A%2APage%3A%2A%2A%20https%3A%2F%2Fpiet.me%2Fblog%2Fusing-env-variables%2F&labels=bug">Please submit an issue.</a></em></p>
+<p><em>Typos? Mistakes?  <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new?body=%2A%2APage%3A%2A%2A%20https%3A%2F%2Fpiet.me%2Fblog%2Fusing-env-variables%2F&amp;labels=bug">Please submit an issue.</a></em></p>
 
 <h2 id="comments">Comments</h2>
 
-<script src="https://utteranc.es/client.js"
-        repo="pietvanzoen/piet.me"
-        issue-term="pathname"
-        label="comments"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
+<script src="https://utteranc.es/client.js" repo="pietvanzoen/piet.me" issue-term="pathname" label="comments" theme="github-light" crossorigin="anonymous" async="">
 </script>
 
 <noscript>
@@ -97,6 +89,7 @@ wibble = os.environ[<span class="hljs-string">&#x27;WIBBLE&#x27;</span>]
   </div>
   <br>
 </noscript>
+
 
 </main>
 
@@ -146,8 +139,9 @@ wibble = os.environ[<span class="hljs-string">&#x27;WIBBLE&#x27;</span>]
   </li>
 </ul>
 
-  <p><small>&copy; 2020 Piet van Zoen</small></p>
+  <p><small>© 2020 Piet van Zoen</small></p>
 </footer>
 
-  </body>
-</html>
+  
+
+</body></html>

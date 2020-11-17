@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Front-end Legos: Keeping your CSS maintainable! - Piet van Zoen</title>
-    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/main.css?1605611482689">
     <link rel="stylesheet" href="/stylesheets/syntax.css">
 
   </head>
@@ -13,7 +11,7 @@
 <header class="site-header">
   <div class="site-title">
     <a href="/">
-      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen" />
+      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen">
       <span>Back to homepage</span>
     </a>
   </div>
@@ -32,7 +30,7 @@
 <article>
   <h1 class="headline">Front-end Legos: Keeping your CSS maintainable!</h1>
   
-  <p>It doesn't take long for a project to get unwieldy if you don't have a good system for creating your styles. I recently attended <a href="http://webvisionsevent.com">Webvisions</a> where <a href="https://shayhowe.com">Shay Howe</a> ran a workshop titled &quot;Front-end Legos&quot; that gave some pretty good advice on keeping CSS clean and maintainable. Here's the run down of the best tips I took away from the workshop:</p>
+  <p>It doesn't take long for a project to get unwieldy if you don't have a good system for creating your styles. I recently attended <a href="http://webvisionsevent.com">Webvisions</a> where <a href="https://shayhowe.com">Shay Howe</a> ran a workshop titled "Front-end Legos" that gave some pretty good advice on keeping CSS clean and maintainable. Here's the run down of the best tips I took away from the workshop:</p>
 <h2>Organize</h2>
 <p>It's wise to start with a good foundation by organizing your CSS with sections, headers and comments.</p>
 <p>Sections and headers will make navigating your CSS much easier for you and especially for other developers in your team. Comments help someone new to your CSS figure out what something is used for. It's particularly useful to comment on styles that seem unusual or styles that are a hack or browser fix.</p>
@@ -56,7 +54,7 @@
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
   <span class="hljs-attribute">background</span>: <span class="hljs-number">#eee</span>;
 }
-&lt;<span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">class</span>=&quot;<span class="hljs-selector-tag">news</span>&quot;&gt;&lt;/<span class="hljs-selector-tag">div</span>&gt;
+&lt;<span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">news</span>"&gt;&lt;/<span class="hljs-selector-tag">div</span>&gt;
 </code></pre>
 <p>Try:</p>
 <pre class="hljs"><code><span class="hljs-selector-class">.col_6</span> {
@@ -67,7 +65,7 @@
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
   <span class="hljs-attribute">background</span>: <span class="hljs-number">#eee</span>;
 }
-&lt;<span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">class</span>=&quot;<span class="hljs-selector-tag">col_6</span> <span class="hljs-selector-tag">feat_box</span>&quot;&gt;&lt;/<span class="hljs-selector-tag">div</span>&gt;
+&lt;<span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">col_6</span> <span class="hljs-selector-tag">feat_box</span>"&gt;&lt;/<span class="hljs-selector-tag">div</span>&gt;
 </code></pre>
 <p>In the first example <code>.news</code> has a specific use and probably a specific placement in a layout. In the second example we've created a layout class that can be used for multiple components and a <code>.feat_box</code> which can be used on more than just a news article.</p>
 <p>Use a CSS grid system (such as <a href="http://foundation.zurb.com/grid.php">foundation's grid system</a>) or create your own grid system, then keep your components reusable throughout your layout by focusing on presentation/theme only.</p>
@@ -85,7 +83,7 @@
 </code></pre>
 <p>This is much nicer. It's descriptive, clean and reusable.</p>
 <h2>Conclusion</h2>
-<p>All of these techniques are going to help you end up with cleaner code, fewer lines of CSS to manage, and some wonderfully modular code that is easier to maintain. &quot;The Pipe Dream&quot;, as Shay Howe put it, is to build everything in HTML with your arsenal of classes at hand. The dream is that you'll never need to touch your CSS because you'll have created all the classes you need to build anything. It's quite a grand Pipe Dream but definitely worth striving for. Focusing on the organization, reusability and modularization of your CSS is the key.</p>
+<p>All of these techniques are going to help you end up with cleaner code, fewer lines of CSS to manage, and some wonderfully modular code that is easier to maintain. "The Pipe Dream", as Shay Howe put it, is to build everything in HTML with your arsenal of classes at hand. The dream is that you'll never need to touch your CSS because you'll have created all the classes you need to build anything. It's quite a grand Pipe Dream but definitely worth striving for. Focusing on the organization, reusability and modularization of your CSS is the key.</p>
 <p>Check out these great resources for more info on this theme.</p>
 <ul>
 <li><a href="https://learn.shayhowe.com">Shay Howe's Learning site</a> - A great resource for learning more about HTML &amp; CSS.</li>
@@ -96,17 +94,11 @@
 </article>
 
 <hr>
-<p><em>Typos? Mistakes?  <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new?body=%2A%2APage%3A%2A%2A%20https%3A%2F%2Fpiet.me%2Fblog%2Ffont-end-legos%2F&labels=bug">Please submit an issue.</a></em></p>
+<p><em>Typos? Mistakes?  <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new?body=%2A%2APage%3A%2A%2A%20https%3A%2F%2Fpiet.me%2Fblog%2Ffont-end-legos%2F&amp;labels=bug">Please submit an issue.</a></em></p>
 
 <h2 id="comments">Comments</h2>
 
-<script src="https://utteranc.es/client.js"
-        repo="pietvanzoen/piet.me"
-        issue-term="pathname"
-        label="comments"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
+<script src="https://utteranc.es/client.js" repo="pietvanzoen/piet.me" issue-term="pathname" label="comments" theme="github-light" crossorigin="anonymous" async="">
 </script>
 
 <noscript>
@@ -116,6 +108,7 @@
   </div>
   <br>
 </noscript>
+
 
 </main>
 
@@ -165,8 +158,9 @@
   </li>
 </ul>
 
-  <p><small>&copy; 2020 Piet van Zoen</small></p>
+  <p><small>© 2020 Piet van Zoen</small></p>
 </footer>
 
-  </body>
-</html>
+  
+
+</body></html>

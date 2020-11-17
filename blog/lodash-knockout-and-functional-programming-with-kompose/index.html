@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Lodash, Knockout, and functional programming - Piet van Zoen</title>
-    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/main.css?1605611482737">
     <link rel="stylesheet" href="/stylesheets/syntax.css">
 
   </head>
@@ -13,7 +11,7 @@
 <header class="site-header">
   <div class="site-title">
     <a href="/">
-      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen" />
+      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen">
       <span>Back to homepage</span>
     </a>
   </div>
@@ -37,16 +35,16 @@
   </div>
 
   <figure class="hero-image">
-    <img src="/images/cached/5eZu5p0vSPg-1400x900.jpg" alt="Lodash, Knockout, and functional programming" />
+    <img src="/images/Z2moKJA-1400x900.jpg" alt="Lodash, Knockout, and functional programming">
   </figure>
   
   <p>Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don't always play nice if you happen to use Knockout observables. I'm going to introduce a way to make handling observables in functional style easier.</p>
 <p>READMORE</p>
 <p>Let's start with a plain object example. Say you want to create an array of people's <code>age</code> in <code>years</code> from this array:</p>
 <pre class="hljs"><code><span class="hljs-keyword">var</span> people = [
-  { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Ron Swanson&quot;</span>, <span class="hljs-attr">age</span>: { <span class="hljs-attr">years</span>: <span class="hljs-number">55</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">6</span> } },
-  { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Leslie Knope&quot;</span>, <span class="hljs-attr">age</span>: { <span class="hljs-attr">years</span>: <span class="hljs-number">41</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">2</span> } },
-  { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Andy Dwyer&quot;</span>, <span class="hljs-attr">age</span>: { <span class="hljs-attr">years</span>: <span class="hljs-number">34</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">8</span> } },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">"Ron Swanson"</span>, <span class="hljs-attr">age</span>: { <span class="hljs-attr">years</span>: <span class="hljs-number">55</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">6</span> } },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">"Leslie Knope"</span>, <span class="hljs-attr">age</span>: { <span class="hljs-attr">years</span>: <span class="hljs-number">41</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">2</span> } },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">"Andy Dwyer"</span>, <span class="hljs-attr">age</span>: { <span class="hljs-attr">years</span>: <span class="hljs-number">34</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">8</span> } },
 ];
 
 <span class="hljs-comment">// the plain js way</span>
@@ -56,26 +54,26 @@ people.map(<span class="hljs-function"><span class="hljs-keyword">function</span
 <span class="hljs-comment">// =&gt; [55, 41, 34]</span>
 
 <span class="hljs-comment">// a better way with _.property</span>
-people.map(_.property(<span class="hljs-string">&quot;age.years&quot;</span>));
+people.map(_.property(<span class="hljs-string">"age.years"</span>));
 <span class="hljs-comment">// =&gt; [55, 41, 34]</span>
 
 <span class="hljs-comment">// even better still with _.map</span>
-_.map(people, <span class="hljs-string">&quot;age.years&quot;</span>);
+_.map(people, <span class="hljs-string">"age.years"</span>);
 <span class="hljs-comment">// =&gt; [55, 41, 34]</span>
 </code></pre>
 <p>Clean succinct code. Excellent!</p>
 <h2>Adding Observables</h2>
 <p>If you're using <a href="http://knockoutjs.com">Knockout</a>, this becomes a little more tricky because your object path might include observables that need to be unwrapped:</p>
 <pre class="hljs"><code><span class="hljs-keyword">var</span> people = ko.observableArray([
-  { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Ron Swanson&quot;</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">55</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">6</span> }) },
-  { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Leslie Knope&quot;</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">41</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">2</span> }) },
-  { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Andy Dwyer&quot;</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">34</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">8</span> }) },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">"Ron Swanson"</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">55</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">6</span> }) },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">"Leslie Knope"</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">41</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">2</span> }) },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">"Andy Dwyer"</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">34</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">8</span> }) },
 ]);
-_.map(people, <span class="hljs-string">&quot;age.years&quot;</span>);
+_.map(people, <span class="hljs-string">"age.years"</span>);
 <span class="hljs-comment">// =&gt; []</span>
 </code></pre>
 <p>Why an empty array? <code>people</code> is an observable array so we need to invoke it to get the value.</p>
-<pre class="hljs"><code>_.map(people(), <span class="hljs-string">&quot;age.years&quot;</span>);
+<pre class="hljs"><code>_.map(people(), <span class="hljs-string">"age.years"</span>);
 <span class="hljs-comment">// =&gt; [undefined, undefined, undefined]</span>
 </code></pre>
 <p>Here Lodash is traversing the property path without invoking the observables, so rather than retrieving the value of <code>years</code> from inside the observable it's trying to find the property <code>years</code> on the actual observable instance. Since <code>years</code> does not exist, it just returns <code>undefined</code> for each person.</p>
@@ -86,7 +84,7 @@ _.map(people, <span class="hljs-string">&quot;age.years&quot;</span>);
 <span class="hljs-comment">// =&gt; [55, 41, 30]</span>
 </code></pre>
 <p>We're back to writing callbacks. That succinct, readable code we had earlier is gone. And what if someone's <code>age</code> ends up being <code>null</code>?</p>
-<pre class="hljs"><code>people.push({ <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Ann Perkins&quot;</span>, <span class="hljs-attr">age</span>: <span class="hljs-literal">null</span> });
+<pre class="hljs"><code>people.push({ <span class="hljs-attr">name</span>: <span class="hljs-string">"Ann Perkins"</span>, <span class="hljs-attr">age</span>: <span class="hljs-literal">null</span> });
 _.map(people(), <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">person</span>) </span>{
   <span class="hljs-keyword">return</span> person.age().years;
 });
@@ -114,23 +112,23 @@ peopleAgeYears();
 <p>Kompose offers several helper functions that behave like Lodash's path traversing helpers (such as <code>_.property</code> and <code>_.get</code>), but with the added benefit of unwrapping observables along the way.</p>
 <p>Let's start with our people again:</p>
 <pre class="hljs"><code><span class="hljs-keyword">var</span> people = ko.observableArray([
-  { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Ron Swanson&quot;</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">55</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">6</span> }) },
-  { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Leslie Knope&quot;</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">41</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">2</span> }) },
-  { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Andy Dwyer&quot;</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">34</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">8</span> }) },
-  { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Ann Perkins&quot;</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">39</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">5</span> }) },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">"Ron Swanson"</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">55</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">6</span> }) },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">"Leslie Knope"</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">41</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">2</span> }) },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">"Andy Dwyer"</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">34</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">8</span> }) },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">"Ann Perkins"</span>, <span class="hljs-attr">age</span>: ko.observable({ <span class="hljs-attr">years</span>: <span class="hljs-number">39</span>, <span class="hljs-attr">months</span>: <span class="hljs-number">5</span> }) },
 ]);
 </code></pre>
 <p>Let's write that <code>peopleAgeYears</code> computed using <code>kp.computedMap</code>.</p>
-<pre class="hljs"><code><span class="hljs-keyword">var</span> peopleAgeYears = kp.computedMap(people, <span class="hljs-string">&quot;age.years&quot;</span>);
+<pre class="hljs"><code><span class="hljs-keyword">var</span> peopleAgeYears = kp.computedMap(people, <span class="hljs-string">"age.years"</span>);
 peopleAgeYears();
 <span class="hljs-comment">// =&gt; [55, 41, 30, 39]</span>
 </code></pre>
 <p>Nice! Just like the verbose <code>peopleAgeYears</code> example above, this computed will traverse the people objects in the observable array <code>people</code> and map their <code>age</code> in <code>years</code>. We're back to our clear, easy to read, code from earlier.</p>
 <h2>Going the extra functional mile</h2>
-<p>Like <code>_.map</code>, passing a path to <code>kp.computedMap</code> is a convenience feature that creates an iteratee function using <code>kp.property</code>. You can also pass your own iteratee function to <code>kp.computedMap</code>. Instead of everyone's age, say we wanted a computed that calculated everyone's &quot;<a href="https://www.youtube.com/watch?v=7dsVYswSfow">half your age plus seven</a>&quot; age.</p>
+<p>Like <code>_.map</code>, passing a path to <code>kp.computedMap</code> is a convenience feature that creates an iteratee function using <code>kp.property</code>. You can also pass your own iteratee function to <code>kp.computedMap</code>. Instead of everyone's age, say we wanted a computed that calculated everyone's "<a href="https://www.youtube.com/watch?v=7dsVYswSfow">half your age plus seven</a>" age.</p>
 <p>Let's start with the long(ish)form:</p>
 <pre class="hljs"><code><span class="hljs-keyword">var</span> youngestDatableAges = kp.computedMap(people, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">person</span>) </span>{
-  <span class="hljs-keyword">var</span> personAgeYears = kp.get(person, <span class="hljs-string">&quot;age.years&quot;</span>);
+  <span class="hljs-keyword">var</span> personAgeYears = kp.get(person, <span class="hljs-string">"age.years"</span>);
   <span class="hljs-keyword">return</span> personAgeYears / <span class="hljs-number">2</span> + <span class="hljs-number">7</span>;
 });
 youngestDatableAges();
@@ -144,7 +142,7 @@ youngestDatableAges();
 </code></pre>
 <p>We can also do away with setting the <code>personAgeYears</code> variable and just pass the return value from <code>kp.get</code> straight into the <code>datableAge</code> function.</p>
 <pre class="hljs"><code><span class="hljs-keyword">var</span> youngestDatableAges = kp.computedMap(people, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">person</span>) </span>{
-  <span class="hljs-keyword">return</span> datableAge(kp.get(person, <span class="hljs-string">&quot;age.years&quot;</span>));
+  <span class="hljs-keyword">return</span> datableAge(kp.get(person, <span class="hljs-string">"age.years"</span>));
 });
 youngestDatableAges();
 <span class="hljs-comment">// =&gt; [34.5, 27.5, 22, 26.5];</span>
@@ -153,14 +151,14 @@ youngestDatableAges();
 <p>If you've never used <code>_.flow</code> before (sometimes called <code>pipe</code> in other functional libraries), I really recommend reading up and trying it out. <code>_.flow</code> returns a function that allows you to pipe a value through several functions, with each function passing it's return value into the next. Here's how it fits in our example:</p>
 <pre class="hljs"><code><span class="hljs-keyword">var</span> youngestDatableAges = kp.computedMap(
   people,
-  _.flow(kp.property(<span class="hljs-string">&quot;age.years&quot;</span>), datableAge)
+  _.flow(kp.property(<span class="hljs-string">"age.years"</span>), datableAge)
 );
 youngestDatableAges();
 <span class="hljs-comment">// =&gt; [34.5, 27.5, 22, 26.5];</span>
 </code></pre>
 <p>That's it! No function declarations. No unnecessary variables. This is Point Free (or Tacit) Functional Programming:</p>
 <blockquote>
-<p>Tacit programming, also called point-free style, is a programming paradigm in which function definitions do not identify the arguments (or &quot;points&quot;) on which they operate. Instead the definitions merely compose other functions, among which are combinators that manipulate the arguments. ~ <a href="https://en.wikipedia.org/wiki/Tacit_programming">Wikipedia</a></p>
+<p>Tacit programming, also called point-free style, is a programming paradigm in which function definitions do not identify the arguments (or "points") on which they operate. Instead the definitions merely compose other functions, among which are combinators that manipulate the arguments. ~ <a href="https://en.wikipedia.org/wiki/Tacit_programming">Wikipedia</a></p>
 </blockquote>
 <h2>Conclusion</h2>
 <p>In the these examples I've tried to illustrate how Kompose might work alongside Lodash to produce succinct, point-free, functional code that's easy to read. But it's not limited to the examples above. When I wrote Kompose I did not want to replace Lodash, I wanted to give Knockout users a tool to make it easier to write functional code that handles observables.</p>
@@ -175,17 +173,11 @@ youngestDatableAges();
 </article>
 
 <hr>
-<p><em>Typos? Mistakes?  <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new?body=%2A%2APage%3A%2A%2A%20https%3A%2F%2Fpiet.me%2Fblog%2Flodash-knockout-and-functional-programming-with-kompose%2F&labels=bug">Please submit an issue.</a></em></p>
+<p><em>Typos? Mistakes?  <a href="https://github.com/pietvanzoen/pietvanzoen.com/issues/new?body=%2A%2APage%3A%2A%2A%20https%3A%2F%2Fpiet.me%2Fblog%2Flodash-knockout-and-functional-programming-with-kompose%2F&amp;labels=bug">Please submit an issue.</a></em></p>
 
 <h2 id="comments">Comments</h2>
 
-<script src="https://utteranc.es/client.js"
-        repo="pietvanzoen/piet.me"
-        issue-term="pathname"
-        label="comments"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
+<script src="https://utteranc.es/client.js" repo="pietvanzoen/piet.me" issue-term="pathname" label="comments" theme="github-light" crossorigin="anonymous" async="">
 </script>
 
 <noscript>
@@ -195,6 +187,7 @@ youngestDatableAges();
   </div>
   <br>
 </noscript>
+
 
 </main>
 
@@ -244,8 +237,9 @@ youngestDatableAges();
   </li>
 </ul>
 
-  <p><small>&copy; 2020 Piet van Zoen</small></p>
+  <p><small>© 2020 Piet van Zoen</small></p>
 </footer>
 
-  </body>
-</html>
+  
+
+</body></html>
