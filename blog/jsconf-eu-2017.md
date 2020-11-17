@@ -85,7 +85,7 @@ Making code performant for the average device improves performance on all device
 
 The talks and the conference itself were an eye opening example of what events and the web could and should be, and it's an awesome picture. There are lots of hard problems to solve, but that's what we as developers signed up for, to solve hard problems. So let's do it.
 
-<img alt="The Usabilla frontend team cramed into a photo booth" style="max-width: 150px; width: 30%" class="img-right" src="/images/posts/usabilla-frontend-team-sized.jpg" />
+<img alt="The Usabilla frontend team cramed into a photo booth" style="max-width: 150px; width: 30%" class="img-right" src="/images/usabilla-frontend-team-sized.jpg" />
 
 ## Final Final Words… Thank you
 

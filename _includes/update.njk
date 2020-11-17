@@ -1,25 +1,30 @@
-<article class="update">
-  <a href="/updates/{{ update.slug | url }}">
-    <time class="text-muted text-small" title="{{ update.data.date | date('Do MMM YYYY HH:mm') }}" datetime="{{ update.data.date | date }}">{{ update.data.date | dateRelative }}</time>
-  </a>
-  <div class="text-large">{{ update.html | safe }}</div>
-  {%- for link in update.linkData -%}
-  <a class="card" href="{{ link.url | url }}">
-    {% if link.imageUrl %}
-    <figure class="img-right " style="width: 50%; max-width: 200px;">
-      <img class="img-rounded" src="{{ link.imageUrl | url }}" alt="{{ link.ogTitle }}" />
-    </figure>
+---
+layout: layout.njk
+
+---
+
+<article>
+  <header>
+    <h2 class="headline">{{ date | date('Do MMM YYYY HH:mm') }}</h2>
+  </header>
+
+  <div class="text-large">{{ content | safe }}</a>
+
+  {%- for link in content | parseLinks -%}
+  {% set data = link | url | getOpenGraphData %}
+  {% if data %}
+  <a class="card" href="{{ link | url }}">
+    {% if data.ogImage and data.ogImage.url %}
+    <img class="img-right img-rounded" style="max-width: 200px;" src="{{ data.ogImage.url | url }}" alt="{{ data.ogTitle }}" />
     {% endif %}
-    <h3>{{ link.ogTitle }}</h3>
-    <p>{{ link.ogDescription }}</p>
-    <small class="text-muted">{{ link.url | getHost }}</small>
+    <h3>{{ data.ogTitle }}</h3>
+    <p>{{ data.ogDescription }}</p>
+    <small class="text-muted">{{ link | getHost }}</small>
   </a>
+  {% endif %}
   {%- endfor -%}
-  {%- for link in update.alsoOn -%}
-    {% if loop.first %}<p class="text-muted"><small>Also on: {% endif -%}
-      {%- if loop.index != 1 -%}, {% endif -%}
-        <a href="{{ link | url }}">{{ link | getHost }}</a>
-    {%- if loop.last -%}</small></p>{%- endif -%}
-  {%- endfor -%}
-  </small></p>
 </article>
+
+<hr class="buffer-lg">
+
+{% include "comments.njk" %}

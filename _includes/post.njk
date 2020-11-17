@@ -13,7 +13,7 @@ stylesheets:
   </div>
 
   <figure class="hero-image">
-    <img src="{{ unsplashImageId | localizeUnsplash('1400x900') }}" alt="{{ imageAlt or title }}" />
+    <img src="https://source.unsplash.com/{{unsplashImageId}}/1400x900?fm=jpg" alt="{{ imageAlt or title }}" />
   </figure>
   {% endif %}
   {{ content | safe }}
@@ -24,19 +24,4 @@ stylesheets:
 
 <h2 id="comments">Comments</h2>
 
-<script src="https://utteranc.es/client.js"
-        repo="pietvanzoen/piet.me"
-        issue-term="pathname"
-        label="comments"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-
-<noscript>
-  <div class="card">
-    <strong>Sorry, comments require JavaScript</strong>
-    <p><small>No JavaScript? Good for you! I strive to make the experience of this website great without JavaScript. But, I haven't found a good solution for comments on a static website without JavaScript. So, if you'd like to view or make comments please enable JavaScript.</small></p>
-  </div>
-  <br>
-</noscript>
+{% include "comments.njk" %}

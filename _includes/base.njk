@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{{ seo.title }}</title>
-    <link rel="stylesheet" href="{{ '/stylesheets/main.css' | url }}">
+    <link rel="stylesheet" href="{{ '/stylesheets/main.css' | cacheBust | url }}">
     {%- for stylesheet in stylesheets %}
     <link rel="stylesheet" href="{{ stylesheet | url }}">
     {%- endfor %}

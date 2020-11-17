@@ -1,14 +1,39 @@
 ---
 layout: layout.njk
 pagination:
-  data: updates
+  data: collections.updates
   size: 10
 title: Updates
 ---
 <h1 class="headline">Updates</h1>
 
 {%- for update in pagination.items -%}
-{%- include "_includes/update.njk" -%}
+<article class="update">
+  <a href="{{ update.url | url }}">
+    <time class="text-muted text-small" title="{{ update.data.date | date('Do MMM YYYY HH:mm') }}" datetime="{{ update.data.date | date }}">{{ update.data.date | dateRelative }}</time>
+  </a>
+  <div class="text-large">{{ update.templateContent | safe }}</div>
+  {%- for link in update.templateContent | parseLinks -%}
+    {% set data = link | getOpenGraphData %}
+    {% if data %}
+    <a class="card" href="{{ link | url }}">
+      {% if data.ogImage and data.ogImage.url %}
+      <img class="img-right img-rounded" style="max-width: 200px;" src="{{ data.ogImage.url | url }}" alt="{{ data.ogTitle }}" />
+      {% endif %}
+      <h3>{{ data.ogTitle }}</h3>
+      <p>{{ data.ogDescription }}</p>
+      <small class="text-muted">{{ link | getHost }}</small>
+    </a>
+    {% endif %}
+  {%- endfor -%}
+  {%- for link in update.data.alsoOn -%}
+    {% if loop.first %}<p class="text-muted"><small>Also on: {% endif -%}
+      {%- if loop.index != 1 -%}, {% endif -%}
+        <a href="{{ link | url }}">{{ link | getHost }}</a>
+    {%- if loop.last -%}</small></p>{%- endif -%}
+  {%- endfor -%}
+  </small></p>
+</article>
 <hr class="buffer-lg">
 {%- endfor -%}
 

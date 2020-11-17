@@ -321,3 +321,6 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/git,jetbrains+all,linux,macos,node,sublimetext,windows
 
 _site
+
+open-graph-cache.json
+images/media

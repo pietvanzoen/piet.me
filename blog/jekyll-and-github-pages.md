@@ -16,7 +16,7 @@ But obviously this wouldn't work for a most blog platforms which rely on databas
 
 What's also fun, is that Github pages will build your Jekyll site for you each time you push a change. So that's what I'm doing. My site is Jekyll generated and hosted on Github, and I love it. No database, great uptime, really fast, and free.
 
-![thumbs up](30-rock-yes.gif)
+![thumbs up](/images/30-rock-yes.gif)
 
 ## But it's not for everything
 
