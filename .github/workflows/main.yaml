@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - next
+  repository_dispatch:
 
 jobs:
   build-and-deploy:
