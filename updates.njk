@@ -10,7 +10,7 @@ title: Updates
 {%- for update in pagination.items -%}
 <article class="update">
   <a href="{{ update.url | url }}">
-    <time class="text-muted text-small" title="{{ update.data.date | date('Do MMM YYYY HH:mm') }}" datetime="{{ update.data.date | date }}">{{ update.data.date | dateRelative }}</time>
+    <time class="text-muted text-small" datetime="{{ update.data.date | date }}">{{ update.data.date | date('Do MMM YYYY HH:mm') }}</time>
   </a>
   <div class="text-large">{{ update.templateContent | safe }}</div>
   {%- for link in update.templateContent | parseLinks -%}
