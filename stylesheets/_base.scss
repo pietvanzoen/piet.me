@@ -54,6 +54,12 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: var(--text-color);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+a {
+  hyphens: none;
 }
 
 body {
