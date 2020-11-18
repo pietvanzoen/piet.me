@@ -8,6 +8,7 @@ const localImages = require('eleventy-plugin-local-images');
 const getOpenGraphData = require('./_lib/get-open-graph-data');
 const dayjs = require('./_lib/dayjs');
 const updatesCollection = require('./_lib/updates-collection');
+const fs = require('fs');
 
 const now = new Date();
 
@@ -76,6 +77,27 @@ module.exports = function (cfg) {
     excerpt: true,
     excerpt_separator: '<!-- excerpt -->',
     excerpt_alias: 'excerpt',
+  });
+
+  // Browsersync Overrides
+  cfg.setBrowserSyncConfig({
+    callbacks: {
+      ready: function (err, browserSync) {
+        if (err) {
+          console.error(err);
+          process.exit(1);
+        }
+
+        const content_404 = fs.readFileSync('_site/404.html');
+
+        browserSync.addMiddleware('*', (_, res) => {
+          res.write(content_404);
+          res.end();
+        });
+      },
+    },
+    ui: false,
+    ghostMode: false,
   });
 
   return {
