@@ -38,6 +38,8 @@ module.exports = function (cfg) {
     collection.getFilteredByGlob('./blog/*.md').filter((item) => item.data.draft !== true && item.date <= now)
   );
   cfg.addCollection('updates', updatesCollection);
+  cfg.addCollection('indexable', (collection) => collection.getAll().filter((item) => !item.data.noindex));
+  cfg.addCollection('noindex', (collection) => collection.getAll().filter((item) => item.data.noindex));
   cfg.addShortcode('query', (data) => {
     return (
       '?' +
