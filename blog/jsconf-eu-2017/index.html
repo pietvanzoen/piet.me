@@ -1,8 +1,33 @@
-<!DOCTYPE html><html><head>
-    <meta charset="UTF-8">
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>My top 3 lessons from JSConfEU 2017 - Piet van Zoen</title>
+<link rel="stylesheet" href="/stylesheets/main.css?1605729455096">
+<link rel="stylesheet" href="/stylesheets/syntax.css?1605729455096">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=NmEn8A8Wqa">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=NmEn8A8Wqa" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png?v=NmEn8A8Wqa" sizes="16x16">
+<link rel="manifest" href="/images/manifest.json?v=NmEn8A8Wqa">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg?v=NmEn8A8Wqa" color="#5bbad5">
+<link rel="shortcut icon" href="/images/favicon.ico?v=NmEn8A8Wqa">
+<meta name="msapplication-config" content="/images/browserconfig.xml?v=NmEn8A8Wqa">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:title" content="My top 3 lessons from JSConfEU 2017 - Piet van Zoen">
+<meta property="og:description" content="Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.">
+<meta name="description" content="Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Piet van Zoen">
+<meta property="og:url" content="https://piet.me/blog/jsconf-eu-2017/">
+<link rel="canonical" href="https://piet.me/blog/jsconf-eu-2017/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@pietvanzoen"><meta property="og:image" content="https://source.unsplash.com/tQAP92Cpqj4/400x400"><meta property="og:image:width" content="400"><meta property="og:image:height" content="400">
+
+
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>My top 3 lessons from JSConfEU 2017 - Piet van Zoen</title>
-    <link rel="stylesheet" href="/stylesheets/main.css?1605613537841">
+    <link rel="stylesheet" href="/stylesheets/main.css?1605729455096">
     <link rel="stylesheet" href="/stylesheets/syntax.css">
 
   </head>
@@ -11,21 +36,24 @@
 <header class="site-header">
   <div class="site-title">
     <a href="/">
-      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen">
+      <img loading="lazy" class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen">
       <span>Back to homepage</span>
     </a>
   </div>
   <div class="site-menu site-menu-lg">
-    <menu class="site-menu-list"><li><a href="/updates">Updates</a></li><li><a href="/blog">Posts</a></li><li><a href="/projects">Projects</a></li><li><a href="/about">About</a></li></menu>
+    <menu class="site-menu-list"><nav class="site-menu-list">
+  <ol><li><a href="/updates/">Updates</a></li><li><a href="/blog/">Posts</a></li><li><a href="/projects/">Projects</a></li><li><a href="/about/">About</a></li></ol>
+</nav>
+</menu>
   </div>
   <details class="site-menu site-menu-sm">
-    <summary>Menu</summary>
-    <menu><li><a href="/updates">Updates</a></li><li><a href="/blog">Posts</a></li><li><a href="/projects">Projects</a></li><li><a href="/about">About</a></li></menu>
-  </details>
+    <summary>Menu</summary><nav class="site-menu-list">
+  <ol><li><a href="/updates/">Updates</a></li><li><a href="/blog/">Posts</a></li><li><a href="/projects/">Projects</a></li><li><a href="/about/">About</a></li></ol>
+</nav>
+</details>
 </header>
 
-
-<main id="maincontent">
+<main role="main" id="maincontent">
   
 <article>
   <h1 class="headline">My top 3 lessons from JSConfEU 2017</h1>
@@ -35,11 +63,10 @@
   </div>
 
   <figure class="hero-image">
-    <img src="/images/1f1Dpz-1400x900.jpg" alt="My top 3 lessons from JSConfEU 2017">
+    <img loading="lazy" src="/images/1f1Dpz-1400x900.jpg" alt="My top 3 lessons from JSConfEU 2017">
   </figure>
   
   <p>Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.</p>
-<p>READMORE</p>
 <h2>Your site can (and should) be accessible</h2>
 <p>Whenever we think about accessibility on the web we tend to just think of providing access to people with disabilities. <a href="https://twitter.com/lc512k">Laura Carvajal</a> from <a href="http://FT.com">FT.com</a> suggests we reframe this idea:</p>
 <blockquote>
@@ -96,7 +123,7 @@ We work on €2000+ computers on 100+ Mbit/s fiber. Even on mobile we're often w
 <p>Building tools and events that are accessible to all people is achievable <strong>if you prioritise it</strong>. And you should because it's just the right thing to do, and if you need another reason, you should because it benefits everyone.</p>
 <p>Making code performant for the average device improves performance on all devices. Making apps work for all platforms (browsers, screen readers, keyboards) results in a better user experience for all. Continuously striving to provide spaces (physical or digital) accessible to all people make your communities more cohesive and wiser.</p>
 <p>The talks and the conference itself were an eye opening example of what events and the web could and should be, and it's an awesome picture. There are lots of hard problems to solve, but that's what we as developers signed up for, to solve hard problems. So let's do it.</p>
-<img alt="The Usabilla frontend team cramed into a photo booth" style="max-width: 150px; width: 30%" class="img-right" src="/images/usabilla-frontend-team-sized.jpg">
+<img loading="lazy" alt="The Usabilla frontend team cramed into a photo booth" style="max-width: 150px; width: 30%" class="img-right" src="/images/usabilla-frontend-team-sized.jpg">
 <h2>Final Final Words… Thank you</h2>
 <p>First, thanks to all the organisers and speakers at JSConf for putting on a terrific and inspiring event.</p>
 <p>I also want to thank <a href="https://usabilla.com/">Usabilla</a> for giving us the opportunity to attend. The company paid for our flights, accommodation, and the conference fees. I'm well aware that without a company that prioritises all the points above I probably would not have been able to attend.</p>

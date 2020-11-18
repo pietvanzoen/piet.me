@@ -1,8 +1,33 @@
-<!DOCTYPE html><html><head>
-    <meta charset="UTF-8">
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Automated middleman deploy to Github pages - Piet van Zoen</title>
+<link rel="stylesheet" href="/stylesheets/main.css?1605729455095">
+<link rel="stylesheet" href="/stylesheets/syntax.css?1605729455095">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=NmEn8A8Wqa">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=NmEn8A8Wqa" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png?v=NmEn8A8Wqa" sizes="16x16">
+<link rel="manifest" href="/images/manifest.json?v=NmEn8A8Wqa">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg?v=NmEn8A8Wqa" color="#5bbad5">
+<link rel="shortcut icon" href="/images/favicon.ico?v=NmEn8A8Wqa">
+<meta name="msapplication-config" content="/images/browserconfig.xml?v=NmEn8A8Wqa">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:title" content="Automated middleman deploy to Github pages - Piet van Zoen">
+<meta property="og:description" content="I recently switched from Jekyll to Middleman for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.">
+<meta name="description" content="I recently switched from Jekyll to Middleman for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Piet van Zoen">
+<meta property="og:url" content="https://piet.me/blog/automated-middleman-deploy-to-github-pages/">
+<link rel="canonical" href="https://piet.me/blog/automated-middleman-deploy-to-github-pages/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@pietvanzoen"><meta property="og:image" content="https://source.unsplash.com/GDdRP7U5ct0/400x400"><meta property="og:image:width" content="400"><meta property="og:image:height" content="400">
+
+
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Automated middleman deploy to Github pages - Piet van Zoen</title>
-    <link rel="stylesheet" href="/stylesheets/main.css?1605613537834">
+    <link rel="stylesheet" href="/stylesheets/main.css?1605729455095">
     <link rel="stylesheet" href="/stylesheets/syntax.css">
 
   </head>
@@ -11,21 +36,24 @@
 <header class="site-header">
   <div class="site-title">
     <a href="/">
-      <img class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen">
+      <img loading="lazy" class="img-circle" src="/images/piet-2020.jpg" alt="Piet van Zoen">
       <span>Back to homepage</span>
     </a>
   </div>
   <div class="site-menu site-menu-lg">
-    <menu class="site-menu-list"><li><a href="/updates">Updates</a></li><li><a href="/blog">Posts</a></li><li><a href="/projects">Projects</a></li><li><a href="/about">About</a></li></menu>
+    <menu class="site-menu-list"><nav class="site-menu-list">
+  <ol><li><a href="/updates/">Updates</a></li><li><a href="/blog/">Posts</a></li><li><a href="/projects/">Projects</a></li><li><a href="/about/">About</a></li></ol>
+</nav>
+</menu>
   </div>
   <details class="site-menu site-menu-sm">
-    <summary>Menu</summary>
-    <menu><li><a href="/updates">Updates</a></li><li><a href="/blog">Posts</a></li><li><a href="/projects">Projects</a></li><li><a href="/about">About</a></li></menu>
-  </details>
+    <summary>Menu</summary><nav class="site-menu-list">
+  <ol><li><a href="/updates/">Updates</a></li><li><a href="/blog/">Posts</a></li><li><a href="/projects/">Projects</a></li><li><a href="/about/">About</a></li></ol>
+</nav>
+</details>
 </header>
 
-
-<main id="maincontent">
+<main role="main" id="maincontent">
   
 <article>
   <h1 class="headline">Automated middleman deploy to Github pages</h1>
@@ -35,7 +63,7 @@
   </div>
 
   <figure class="hero-image">
-    <img src="/images/pPbhk-1400x900.jpg" alt="Automated middleman deploy to Github pages">
+    <img loading="lazy" src="/images/pPbhk-1400x900.jpg" alt="Automated middleman deploy to Github pages">
   </figure>
   
   <p>I recently switched from Jekyll to <a href="https://middlemanapp.com/">Middleman</a> for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.</p>
