@@ -102,9 +102,17 @@
 }
 
 .hero-image {
+  position: relative;
+  height: 64vw;
+  max-height: 473px;
+  box-sizing: content-box;
+  background-color: var(--subtle-color);
   display: block;
   margin: 1em -1em;
   img {
+    position: absolute;
+    left: 0;
+    top: 0;
     display: block;
   }
 }
