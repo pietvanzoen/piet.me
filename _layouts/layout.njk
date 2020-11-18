@@ -11,18 +11,12 @@ layout: base.njk
   </div>
   <div class="site-menu site-menu-lg">
     <menu class="site-menu-list">
-      {%- for item in site.menu -%}
-      <li><a href="{{ item.href }}">{{ item.name }}</a></li>
-      {%- endfor -%}
+      {%- include "menu.njk" -%}
     </menu>
   </div>
   <details class="site-menu site-menu-sm">
     <summary>Menu</summary>
-    <menu>
-      {%- for item in site.menu -%}
-      <li><a href="{{ item.href }}">{{ item.name }}</a></li>
-      {%- endfor -%}
-    </menu>
+      {%- include "menu.njk" -%}
   </details>
 </header>
 

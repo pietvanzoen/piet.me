@@ -1,0 +1,13 @@
+<nav class="site-menu-list">
+  <ol>
+    {%- for item in site.menu -%}
+    <li {% if page.url == item.href %} aria-current="page"{% endif %}>
+      {%- if page.url == item.href -%}
+      {{ item.name }}
+      {%- else -%}
+      <a href="{{ item.href }}">{{ item.name }}</a>
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ol>
+</nav>

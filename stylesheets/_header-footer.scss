@@ -37,24 +37,27 @@
 .site-menu {
   position: relative;
   text-align: right;
-  menu li {
+  nav li {
     list-style: none;
     display: inline-block;
     padding: 0 0 0 0.6em;
   }
-  menu {
+  li[aria-current="page"] {
+    color: var(--muted-color);
+  }
+  nav ol {
     padding: 0;
     margin: 0;
   }
 
 }
 .site-menu-sm {
-  menu {
+  nav {
     position: absolute;
     right: 0;
     width: 100vw;
   }
-  menu li {
+  nav li {
     font-size: 0.8em;
   }
 
