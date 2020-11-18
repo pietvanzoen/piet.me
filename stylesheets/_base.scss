@@ -179,14 +179,16 @@ main {
 
 blockquote {
   position: relative;
+  margin: 1em 0;
+  padding: 0 1.5em;
   &:before {
     position: absolute;
     content: '';
     height: 100%;
     width: 1px;
     border-radius: 2px;
-    left: -2em;
-    background: var(--text-color);
+    left: 0;
+    background: var(--subtle-color);
   }
 }
 
