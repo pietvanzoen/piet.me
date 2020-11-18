@@ -1,3 +1,4 @@
 [submodule "updates"]
 	path = updates
 	url = https://github.com/pietvanzoen/updates.git
+	branch = main

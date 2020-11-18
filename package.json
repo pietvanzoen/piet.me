@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "update-updates": "git submodule foreach git pull && npm run sync-images",
     "start": "eleventy --config=eleventy.config.js --serve",
     "clean": "rm -rf _site",
     "prebuild": "npm run clean && npm run sync-images",
