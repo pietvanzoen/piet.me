@@ -9,6 +9,7 @@ const getOpenGraphData = require('./_lib/get-open-graph-data');
 const dayjs = require('./_lib/dayjs');
 const updatesCollection = require('./_lib/updates-collection');
 const fs = require('fs');
+const getUnsplashImageColor = require('./_lib/get-unsplash-image-color');
 
 const now = new Date();
 
@@ -47,6 +48,17 @@ module.exports = function (cfg) {
         Object.keys(data).reduce((obj, key) => (key.startsWith('_') ? obj : { ...obj, [key]: data[key] }), {})
       )
     );
+  });
+
+  cfg.addNunjucksAsyncShortcode('HeroImage', async (url, alt = '') => {
+    let style = '';
+    const imageColor = await getUnsplashImageColor(url, 'muted');
+    if (imageColor) {
+      style = ` style="background-color: ${imageColor}"`;
+    }
+    return `<figure class="hero-image"${style}>
+      <img src="${url}" alt="${alt.trim()}" />
+    </figure>`;
   });
 
   // Extentions / Libraries

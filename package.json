@@ -29,6 +29,7 @@
   "homepage": "https://github.com/pietvanzoen/piet.me#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "axios": "^0.21.0",
     "dayjs": "^1.9.6",
     "debug": "^4.2.0",
     "eleventy-plugin-embed-twitter": "^1.0.2",
