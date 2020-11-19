@@ -1,8 +1,8 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <title>Automated middleman deploy to Github pages - Piet van Zoen</title>
-<link rel="stylesheet" href="/stylesheets/main.css?1605736303249">
-<link rel="stylesheet" href="/stylesheets/syntax.css?1605736303249">
+<link rel="stylesheet" href="/stylesheets/main.css?1605800541450">
+<link rel="stylesheet" href="/stylesheets/syntax.css?1605800541450">
 
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=NmEn8A8Wqa">
 <link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=NmEn8A8Wqa" sizes="32x32">
@@ -27,7 +27,7 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Automated middleman deploy to Github pages - Piet van Zoen</title>
-    <link rel="stylesheet" href="/stylesheets/main.css?1605736303250">
+    <link rel="stylesheet" href="/stylesheets/main.css?1605800541451">
     <link rel="stylesheet" href="/stylesheets/syntax.css">
 
   </head>
@@ -60,12 +60,9 @@
   
   <div class="text-muted text-small">
     <time datetime="Mon Feb 27 2017 00:00:00 GMT+0000 (Coordinated Universal Time)">27th February 2017 </time>
-  </div>
-
-  <figure class="hero-image">
-    <img loading="lazy" src="/images/pPbhk-1400x900.jpg" alt="Automated middleman deploy to Github pages">
-  </figure>
-  
+  </div><figure class="hero-image" style="background-color: #a68566">
+      <img loading="lazy" src="/images/pPbhk-1400x900.jpg" alt="Automated middleman deploy to Github pages">
+    </figure>
   <p>I recently switched from Jekyll to <a href="https://middlemanapp.com/">Middleman</a> for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.</p>
 <h2>Testing setup</h2>
 <p>I wanted to add some basic testing for my site, simple things like HTML validation and link checking. For that I found <a href="https://github.com/gjtorikian/html-proofer">HTMLProofer</a> which can run a variety of tests against a folder of html files.</p>

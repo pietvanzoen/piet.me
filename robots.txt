@@ -1,5 +1,5 @@
 Sitemap: https://piet.me/sitemap.xml
 
 User-agent: *
-Disallow: /test/
 Disallow: /404.html
+Disallow: /test/
