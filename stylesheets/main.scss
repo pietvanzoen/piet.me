@@ -1,6 +1,7 @@
 @import "normalize";
 @import "base";
 @import "header-footer";
+@import "syntax";
 
 .home {
   margin: 3em auto;
@@ -147,7 +148,7 @@
 .card {
   overflow: auto;
   display: block;
-  border: 1px solid #ccc;
+  border: 1px solid var(--subtle-color);
   border-radius: 0.2em;
   padding: 1em;
 }
@@ -156,11 +157,9 @@ a.card {
   transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
   text-decoration: none;
   color: var(--text-color);
-  a {
-    color: var(--link-color);
-  }
 }
+
 a.card:hover {
-  background: #f8f8f8;
+  background: var(--offset-color);
   border-color: var(--accent-color);
 }

@@ -26,19 +26,66 @@
        url('../fonts/dm-mono-v2-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-
-:root {
+html, html.light-theme {
   --accent-color: #51b9b5;
   --text-color: #373737;
-  --subtle-color: #cecece;
+  --subtle-color: #ccc;
   --muted-color: #888;
   --link-color: #ba5255;
+  --offset-color: #f8f8f8;
+  --background-color: #fff;
+
+  --syntax-comment: #8e908c;
+  --syntax-red: #c82829;
+  --syntax-orange: #f5871f;
+  --syntax-yellow: #eab700;
+  --syntax-green: #718c00;
+  --syntax-blue: #4271ae;
+  --syntax-purple: #8959a8;
+  --syntax-base: #4d4d4c;
+  --syntax-background: #ccc;
+}
+
+@mixin dark-theme {
+  --accent-color: #387f7b;
+  --text-color: #fefefe;
+  --subtle-color: #444;
+  --muted-color: #999;
+  --link-color: #ba5255;
+  --offset-color: #1d1f21;
+  --background-color: #222;
+
+  --syntax-comment: #969896;
+  --syntax-red: #cc6666;
+  --syntax-orange: #de935f;
+  --syntax-yellow: #f0c674;
+  --syntax-green: #b5bd68;
+  --syntax-blue: #81a2be;
+  --syntax-purple: #b294bb;
+  --syntax-base: #c5c8c6;
+  --syntax-background: #1d1f21;
+}
+
+html.dark-theme {
+  @include dark-theme;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    @include dark-theme;
+  }
 }
 
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--background-color);
+  transition: 0.2s ease-in-out background-color, 0.2s ease-in-out color;
 }
 
 html,
@@ -74,7 +121,7 @@ pre {
   overflow: hidden;
 }
 pre, code {
-  background-color: #f8f8f8;
+  background-color: var(--offset-color);
 }
 
 code {
