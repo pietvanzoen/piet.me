@@ -5,10 +5,4 @@ permalink: /robots.txt
 Sitemap: {{ site.url }}/sitemap.xml
 
 User-agent: *
-{%- if site.isProduction -%}
-{% for page in collections.noindex %}
-Disallow: {{ page.url }}
-{%- endfor -%}
-{% else %}
 Disallow /
-{%- endif -%}
