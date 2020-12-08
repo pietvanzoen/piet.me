@@ -46,35 +46,35 @@ html, html.light-theme {
   --syntax-background: #ccc;
 }
 
-@mixin dark-theme {
-  --accent-color: #387f7b;
-  --text-color: #fefefe;
-  --subtle-color: #444;
-  --muted-color: #999;
-  --link-color: #ba5255;
-  --offset-color: #1d1f21;
-  --background-color: #222;
+// @mixin dark-theme {
+//   --accent-color: #387f7b;
+//   --text-color: #fefefe;
+//   --subtle-color: #444;
+//   --muted-color: #999;
+//   --link-color: #ba5255;
+//   --offset-color: #1d1f21;
+//   --background-color: #222;
 
-  --syntax-comment: #969896;
-  --syntax-red: #cc6666;
-  --syntax-orange: #de935f;
-  --syntax-yellow: #f0c674;
-  --syntax-green: #b5bd68;
-  --syntax-blue: #81a2be;
-  --syntax-purple: #b294bb;
-  --syntax-base: #c5c8c6;
-  --syntax-background: #1d1f21;
-}
+//   --syntax-comment: #969896;
+//   --syntax-red: #cc6666;
+//   --syntax-orange: #de935f;
+//   --syntax-yellow: #f0c674;
+//   --syntax-green: #b5bd68;
+//   --syntax-blue: #81a2be;
+//   --syntax-purple: #b294bb;
+//   --syntax-base: #c5c8c6;
+//   --syntax-background: #1d1f21;
+// }
 
-html.dark-theme {
-  @include dark-theme;
-}
+// html.dark-theme {
+//   @include dark-theme;
+// }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    @include dark-theme;
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     @include dark-theme;
+//   }
+// }
 
 *,
 *:before,
