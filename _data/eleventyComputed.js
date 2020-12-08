@@ -11,7 +11,7 @@ module.exports = {
     },
     description: ({ excerpt, description, site }) => description || excerpt || site.description || '',
     type: ({ meta }) => meta?.type || 'website',
-    image: ({ meta, unsplashImageId }) => {
+    image: ({ meta, unsplashImageId, site }) => {
       if (unsplashImageId) {
         return {
           url: `https://source.unsplash.com/${unsplashImageId}/400x400`,
@@ -19,7 +19,13 @@ module.exports = {
           height: 400,
         };
       }
-      return meta?.image || null;
+      if (!meta?.image?.url) {
+        return null;
+      }
+      if (!meta.image.url.startsWith('http')) {
+        meta.image.url = site.url + meta.image.url;
+      }
+      return meta.image;
     },
   },
 };
