@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /healthcheck/
+Disallow: /404.html
+Disallow: /admin/
+Disallow: /test/
