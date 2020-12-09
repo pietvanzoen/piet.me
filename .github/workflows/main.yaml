@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - next
+      - main
   repository_dispatch:
     types: [trigger-build]
 
