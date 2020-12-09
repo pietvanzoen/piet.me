@@ -1,4 +1,5 @@
 const pluginSass = require('eleventy-plugin-sass');
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 const yaml = require('js-yaml');
 const md = require('./_lib/markdown-engine');
 const queryString = require('query-string');
@@ -18,6 +19,7 @@ const IS_PRODUCTION = process.env.ELEVENTY_PRODUCTION === 'true';
 module.exports = function (cfg) {
   // Plugins
   cfg.addPlugin(pluginSass);
+  cfg.addPlugin(pluginRss);
   cfg.addPlugin(embedTwitter, {
     cacheText: IS_PRODUCTION,
   });

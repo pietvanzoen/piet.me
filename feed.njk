@@ -1,0 +1,50 @@
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+metadata:
+  feed:
+    id: blog
+  title: "Piet van Zoen"
+  description: "Hi, I'm Piet. I build things for the web. I love all things command line, and fries with mayo. This is my blog feed."
+  author:
+    name: "Piet van Zoen"
+    email: hi@piet.me
+
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.description }}</subtitle>
+  {% set absoluteUrl %}{{ permalink | url | absoluteUrl(site.url) }}{% endset %}
+  <link href="{{ absoluteUrl }}" rel="self"/>
+  <link href="{{ site.url }}"/>
+  <updated>{{ collections.blog | rssLastUpdatedDate }}</updated>
+  <id>{{ site.url }}/blog/</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <uri>{{ site.url }}</uri>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in collections.blog | reverse %}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <author>
+      <name>{{ metadata.author.name }}</name>
+      <uri>{{ site.url }}</uri>
+      <email>{{ metadata.author.email }}</email>
+    </author>
+    <published>{{ post.date | rssDate }}</published>
+    {%- if post.data.updated %}
+      <updated>{{ post.data.updated | rssDate }}</updated>
+    {%- else -%}
+      <updated>{{ post.date | rssDate }}</updated>
+    {%- endif -%}
+    <id>{{ absolutePostUrl }}</id>
+    <rights type="html">&amp;copy; {{ site.buildTime | date('YYYY') }}  Piet van Zoen</rights>
+    <summary>{{ post.data.excerpt | markdown | striptags | trim }}</summary>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>
