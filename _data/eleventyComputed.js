@@ -1,6 +1,6 @@
 const dayjs = require('../_lib/dayjs');
 module.exports = {
-  absoluteUrl: ({ page, site }) => new URL(page.url, site.url).href,
+  pageAbsoluteUrl: ({ page, site }) => new URL(page.url, site.url).href,
   seo: {
     siteTitle: ({ site }) => site.title,
     title: (data) => {
