@@ -11,6 +11,7 @@ const dayjs = require('./_lib/dayjs');
 const updatesCollection = require('./_lib/updates-collection');
 const fs = require('fs');
 const getUnsplashImageColor = require('./_lib/get-unsplash-image-color');
+const webmentionsForUrl = require('./_lib/webmentions-for-url');
 
 const now = new Date();
 
@@ -75,6 +76,7 @@ module.exports = function (cfg) {
   cfg.addFilter('encodeURIComponent', (str) => encodeURIComponent(str));
   cfg.addFilter('getHost', (url) => new URL(url).host);
   cfg.addFilter('cacheBust', (url) => (IS_PRODUCTION ? `${url}?${Date.now()}` : url));
+  cfg.addFilter('webmentionsForUrl', webmentionsForUrl);
   cfg.addFilter('parseLinks', (content) =>
     _.compact(
       _.uniq((content || '').match(/href="(https?:\/\/\S+)"/) || []).filter(
