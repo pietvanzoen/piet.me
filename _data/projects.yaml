@@ -7,6 +7,9 @@
   - title: Hint
     description: "A command line tool to help you remember those little nuggets of knowledge."
     url: https://github.com/pietvanzoen/hint
+  - title: Secrets
+    description: "CLI for setting and getting secrets using MacOS's keychain."
+    url: https://github.com/pietvanzoen/secrets
   - title: My Dotfiles
     description: |-
       These are my dotfiles. There are many like them. But these are mine.
