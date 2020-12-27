@@ -5,13 +5,71 @@
   
   <link href="https://piet.me/feed.xml" rel="self"/>
   <link href="https://piet.me"/>
-  <updated>2020-07-02T00:00:00+00:00</updated>
+  <updated>2020-12-27T00:00:00+00:00</updated>
   <id>https://piet.me/blog/</id>
   <author>
     <name>Piet van Zoen</name>
     <uri>https://piet.me</uri>
     <email>hi@piet.me</email>
   </author>
+  
+  <entry>
+    <title>Customised PiBow case for Raspberry Pi + PiJuice + PiTFT</title>
+    <link href="https://piet.me/blog/customized-pibow-case-for-raspberry-pi-pijuice-pitft/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2020-12-27T00:00:00+00:00</published><updated>2020-12-27T00:00:00+00:00</updated><id>https://piet.me/blog/customized-pibow-case-for-raspberry-pi-pijuice-pitft/</id>
+    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <summary>I recently setup a PiHole for my home network. I’m using a Raspberry Pi 3B+ with a PiJuice and a 3.5 inch PiTFT screen. Finding a case to fit all these was a little tricky. I don’t have a 3D printer (yet) and the tall cases I could find were a bit ugly. I ended up using a PiBow case designed for PiTFT and made a couple modifications to get it to work with the PiJuice. I’m pretty happy with the result and wanted to share it.</summary>
+    <content type="html">&lt;p&gt;I recently setup a &lt;a href=&quot;https://pi-hole.net/&quot;&gt;PiHole&lt;/a&gt; for my home network. I’m using a Raspberry Pi 3B+ with a PiJuice and a 3.5 inch PiTFT screen. Finding a case to fit all these was a little tricky. I don’t have a 3D printer (yet) and the tall cases I could find were a bit ugly.&lt;/p&gt;
+&lt;p&gt;I ended up using a PiBow case designed for PiTFT and made a couple modifications to get it to work with the PiJuice. I’m pretty happy with the result and wanted to share it.&lt;/p&gt;
+&lt;h2&gt;What I used&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Links are to where I purchased.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi 3b&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.tinytronics.nl/shop/en/raspberry-pi/power-supplies/pijuice-hat-raspberry-pi-battery-module&quot;&gt;PiJuice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.elektor.nl/adafruit-pitft-plus-480x320-3-5-tft-touchscreen-for-rpi&quot;&gt;PiTFT 3.5”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://shop.pimoroni.com/products/pibow-pitft&quot;&gt;PiBow PiTFT+ case&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://shop.pimoroni.com/products/pibow-modification-layers?variant=1048948309&quot;&gt;PiBow Lego base&lt;/a&gt; (optional)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://shop.pimoroni.com/products/pibow-modification-layers?variant=1039417249&quot;&gt;3x PiBow expansion layers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://shop.pimoroni.com/products/pibow-extender-bolt-pack&quot;&gt;Longer PiBow screws&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.amazon.nl/gp/product/B07PDVXVZ5/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&amp;amp;psc=1&quot;&gt;Some M2.5 washers, standoffs, and screws&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;The build&lt;/h2&gt;
+&lt;p&gt;Before starting, be sure to remove the protective film from each of the layers of the PiBow. I put this all together with the film attached and had to redo the whole thing. 🤦 Fortunately this gave me the opportunity to take photos of the process.&lt;/p&gt;
+&lt;p&gt;Here’s the mess of stuff I started with.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-01.jpeg&quot; alt=&quot;My desk scattered with raspberry pi parts for this project&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Mount the PiJuice on the raspberry pi with Layer 3 of the PiBow in-between. Use the nylon standoffs and screws that come with the PiJuice.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-02.jpeg&quot; alt=&quot;Raspberry Pi with PiJuice attached&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Turn the Pi over and use 5mm stand offs to secure the PiJuice to the Raspberry Pi.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-03.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with standoff bolts attached.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;On the PiBow layers you’ll see numbers etched on the tops. Add layers 2, 1, and the base. I have the &lt;a href=&quot;https://shop.pimoroni.com/products/pibow-modification-layers?variant=1048948309&quot;&gt;Lego PiBow base&lt;/a&gt; but the regular base will work too. Be careful to put the Lego base the right way up or it won’t work.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-04.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with PiBow layers attached&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://piet.me/images/blog/pihole-case-05.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with PiBow base attached&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Secure the base using the extended PiBow bolts in the corners &lt;em&gt;and&lt;/em&gt; use M2.5 screws going into the standoffs to secure the Raspberry Pi and PiJuice.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-06.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with PiBow base attached with all screws and bolts added&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Rather than using layers 4, 5, 6, and 7 that come with the PiBow kit, we’ll use 4 nylon washers on each corner bolt. Because of the buttons and power socket on the PiJuice I couldn’t use the standard PiBow layers that normally surround the Raspberry Pi HDMI and power ports.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-07.jpeg&quot; alt=&quot;Raspberry Pi with PiBow case bottom assembled and washers on vertical corner bolts.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Now add layer 7 and three clear expansion layers. These layers will surround the PiTFT.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-08.jpeg&quot; alt=&quot;Raspberry Pi with PiJuice and PiBow extension layers&quot;&gt;&lt;/p&gt;
+&lt;p&gt;For the PiTFT to fit on top of the PiJuice I had to carefully clip the 26 pins on the back of the screen.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-09.jpeg&quot; alt=&quot;Back of PiTFT screen with pins clipped.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Finally I used layer 9 and secured it all using the nylon bolts.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-10.jpeg&quot; alt=&quot;Raspberry Pi with PiJuice and PiTFT attached in PiBow case.&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Done!&lt;/h2&gt;
+&lt;p&gt;That’s it! Pretty good looking if I say so myself. :) Especially running with no cables and &lt;a href=&quot;https://github.com/pi-hole/PADD&quot;&gt;PADD&lt;/a&gt; on the display.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-11.jpeg&quot; alt=&quot;Raspberry Pi corner view&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://piet.me/images/blog/pihole-case-12.jpeg&quot; alt=&quot;Raspberry Pi side view&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://piet.me/images/blog/pihole-case-13.jpeg&quot; alt=&quot;Raspberry Pi top view&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here’s the PiHole running. To mount the Pi I attached a flat piece of Lego to the wall in my utility closet using some removable adhesive strips.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-14.jpeg&quot; alt=&quot;Raspberry Pi attached to wall in utility closet.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;I may find some slightly longer bolts in the future because I’d like to add the last clear layer included in the PiBow kit. The extended bolts weren’t quite long enough.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Questions? Comments? Post a message below or ping me on &lt;a href=&quot;https://twitter.com/pietvanzoen&quot;&gt;twitter&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Rethinking my piece of the internet</title>
