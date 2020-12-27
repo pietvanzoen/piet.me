@@ -5,22 +5,24 @@ date: 2020-12-27
 
 ---
 
-I recently setup a [PiHole](https://pi-hole.net) for my home network. I’m using a Raspberry Pi 3B+ with a PiJuice and a PiTFT screen. Finding a case to fit all these was a little tricky. I don’t have a 3D printer (yet) and the tall cases I could find were a bit ugly.
-
-<!-- excerpt -->
+I recently setup a [PiHole](https://pi-hole.net) for my home network. I’m using a Raspberry Pi 3B+ with a PiJuice and a 3.5 inch PiTFT screen. Finding a case to fit all these was a little tricky. I don’t have a 3D printer (yet) and the tall cases I could find were a bit ugly.
 
 I ended up using a PiBow case designed for PiTFT and made a couple modifications to get it to work with the PiJuice. I’m pretty happy with the result and wanted to share it.
 
+<!-- excerpt -->
+
 ## What I used
 
+_Links are to where I purchased._
+
 * Raspberry Pi 3b
-* PiJuice (https://www.tinytronics.nl/shop/en/raspberry-pi/power-supplies/pijuice-hat-raspberry-pi-battery-module)
-* PiTFT 3.5” (https://www.elektor.nl/adafruit-pitft-plus-480x320-3-5-tft-touchscreen-for-rpi)
-* PiBow + PiTFT case (https://shop.pimoroni.com/products/pibow-pitft)
-* PiBow Lego base (optional) (https://shop.pimoroni.com/products/pibow-modification-layers?variant=1048948309)
-* 3x PiBow expansion layers (https://shop.pimoroni.com/products/pibow-modification-layers?variant=1039417249)
-* Longer PiBow screws (https://shop.pimoroni.com/products/pibow-extender-bolt-pack)
-* Some M2.5 washers, standoffs, and screws (https://www.amazon.nl/gp/product/B07PDVXVZ5/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)
+* [PiJuice](https://www.tinytronics.nl/shop/en/raspberry-pi/power-supplies/pijuice-hat-raspberry-pi-battery-module)
+* [PiTFT 3.5”](https://www.elektor.nl/adafruit-pitft-plus-480x320-3-5-tft-touchscreen-for-rpi)
+* [PiBow PiTFT+ case](https://shop.pimoroni.com/products/pibow-pitft)
+* [PiBow Lego base](https://shop.pimoroni.com/products/pibow-modification-layers?variant=1048948309) (optional)
+* [3x PiBow expansion layers](https://shop.pimoroni.com/products/pibow-modification-layers?variant=1039417249)
+* [Longer PiBow screws](https://shop.pimoroni.com/products/pibow-extender-bolt-pack)
+* [Some M2.5 washers, standoffs, and screws](https://www.amazon.nl/gp/product/B07PDVXVZ5/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)
 
 ## The build
 
@@ -64,7 +66,9 @@ Finally I used layer 9 and secured it all using the nylon bolts.
 
 ![Raspberry Pi with PiJuice and PiTFT attached in PiBow case.](/images/blog/pihole-case-10.jpeg)
 
-And that’s it! Pretty good looking if I say so myself. :) Especially running with no cables and [PADD](https://github.com/pi-hole/PADD) on the display.
+## Done!
+
+That’s it! Pretty good looking if I say so myself. :) Especially running with no cables and [PADD](https://github.com/pi-hole/PADD) on the display.
 
 ![Raspberry Pi corner view](/images/blog/pihole-case-11.jpeg)
 ![Raspberry Pi side view](/images/blog/pihole-case-12.jpeg)
