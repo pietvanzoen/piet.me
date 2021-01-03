@@ -22,7 +22,7 @@
       <email>hi@piet.me</email>
     </author>
     <published>2020-12-27T00:00:00+00:00</published><updated>2020-12-27T00:00:00+00:00</updated><id>https://piet.me/blog/customized-pibow-case-for-raspberry-pi-pijuice-pitft/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>I recently setup a PiHole for my home network. I’m using a Raspberry Pi 3B+ with a PiJuice and a 3.5 inch PiTFT screen. Finding a case to fit all these was a little tricky. I don’t have a 3D printer (yet) and the tall cases I could find were a bit ugly. I ended up using a PiBow case designed for PiTFT and made a couple modifications to get it to work with the PiJuice. I’m pretty happy with the result and wanted to share it.</summary>
     <content type="html">&lt;p&gt;I recently setup a &lt;a href=&quot;https://pi-hole.net/&quot;&gt;PiHole&lt;/a&gt; for my home network. I’m using a Raspberry Pi 3B+ with a PiJuice and a 3.5 inch PiTFT screen. Finding a case to fit all these was a little tricky. I don’t have a 3D printer (yet) and the tall cases I could find were a bit ugly.&lt;/p&gt;
 &lt;p&gt;I ended up using a PiBow case designed for PiTFT and made a couple modifications to get it to work with the PiJuice. I’m pretty happy with the result and wanted to share it.&lt;/p&gt;
@@ -80,7 +80,7 @@
       <email>hi@piet.me</email>
     </author>
     <published>2020-07-02T00:00:00+00:00</published><updated>2020-07-02T00:00:00+00:00</updated><id>https://piet.me/blog/rethinking-my-piece-of-the-internet/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>I am a strong proponent of people owning their own personal space on the internet. A space where they can express their interests and who they are as they see fit. (And preferably not owned by a social media giant.) But as a person who builds things on the internet for their profession, it’s easy to feel that my website should be a professional brand website for Piet the developer.</summary>
     <content type="html">&lt;p&gt;I am a strong proponent of people owning their own personal space on the internet. A space where they can express their interests and who they are as they see fit. (And preferably not owned by a social media giant.) But as a person who builds things on the internet for their profession, it’s easy to feel that my website should be a professional brand website for Piet the developer.&lt;/p&gt;
 &lt;p&gt;I’ve started various more personal projects but I kept them separate from this site, to keep it as my professional website. For a long time, I’ve struggled with this balance. On the one hand, I would love to represent myself better and be a little more personal and human. On the other hand, I feel pressure to maintain a professional brand.&lt;/p&gt;
@@ -104,7 +104,7 @@
       <email>hi@piet.me</email>
     </author>
     <published>2018-12-05T00:00:00+00:00</published><updated>2018-12-05T00:00:00+00:00</updated><id>https://piet.me/blog/x-reasons-not-to-skip-the-tests/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>We&#39;ve all been tempted to skip writing the tests. Whether it&#39;s time pressure, business pressure, the complexity of testing, or we just want to get on with something else. We might be tempted to say &amp;quot;YOLO!&amp;quot; and move on. So here&#39;s a list of reasons why you might want to think twice before doing that.</summary>
     <content type="html">&lt;p&gt;We&#39;ve all been tempted to skip writing the tests. Whether it&#39;s time pressure, business pressure, the complexity of testing, or we just want to get on with something else. We might be tempted to say &amp;quot;YOLO!&amp;quot; and move on. So here&#39;s a list of reasons why you might want to think twice before doing that.&lt;/p&gt;
 &lt;h2&gt;The Reasons&lt;/h2&gt;
@@ -170,7 +170,7 @@ _Also posted on [medium.com](https://medium.com/@pietvanzoen/x-reasons-not-to-sk
     </author>
     <published>2018-05-31T00:00:00+00:00</published>
       <updated>2019-02-01T00:00:00+00:00</updated><id>https://piet.me/blog/organizing-git-projects/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>For a while I&#39;ve been looking for a better way to organize the git repos I work with. I&#39;ve tried just dumping them into a single directory, and I&#39;ve tried adding sub folders such as personal, work, and tools. But both of these solutions had the same problems: Repos that I clone to play around with cause clutter alongside projects I&#39;m actively working on. Cloning forked repos along with the original repos cause folder name conflicts. Meaning I would have to use a different a folder name to the project name, which might cause confusion when working on a project. It&#39;s unclear who owns what without going to the cloned repo and running git remote -v.</summary>
     <content type="html">&lt;p&gt;For a while I&#39;ve been looking for a better way to organize the git repos I work with. I&#39;ve tried just dumping them into a single directory, and I&#39;ve tried adding sub folders such as &lt;code&gt;personal&lt;/code&gt;, &lt;code&gt;work&lt;/code&gt;, and &lt;code&gt;tools&lt;/code&gt;. But both of these solutions had the same problems:&lt;/p&gt;
 &lt;ul&gt;
@@ -229,7 +229,7 @@ _Also posted on [medium.com](https://medium.com/@pietvanzoen/x-reasons-not-to-sk
       <email>hi@piet.me</email>
     </author>
     <published>2017-05-18T00:00:00+00:00</published><updated>2017-05-18T00:00:00+00:00</updated><id>https://piet.me/blog/jsconf-eu-2017/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.</summary>
     <content type="html">&lt;p&gt;Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.&lt;/p&gt;
 &lt;h2&gt;Your site can (and should) be accessible&lt;/h2&gt;
@@ -311,7 +311,7 @@ We work on €2000+ computers on 100+ Mbit/s fiber. Even on mobile we&#39;re oft
       <email>hi@piet.me</email>
     </author>
     <published>2017-02-27T00:00:00+00:00</published><updated>2017-02-27T00:00:00+00:00</updated><id>https://piet.me/blog/automated-middleman-deploy-to-github-pages/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>I recently switched from Jekyll to Middleman for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.</summary>
     <content type="html">&lt;p&gt;I recently switched from Jekyll to &lt;a href=&quot;https://middlemanapp.com/&quot;&gt;Middleman&lt;/a&gt; for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.&lt;/p&gt;
 &lt;h2&gt;Testing setup&lt;/h2&gt;
@@ -418,7 +418,7 @@ Enter passphrase (empty for no passphrase):
       <email>hi@piet.me</email>
     </author>
     <published>2016-07-08T00:00:00+00:00</published><updated>2016-07-08T00:00:00+00:00</updated><id>https://piet.me/blog/moving-on-what-i-learned-at-cozy/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>Today is my last day at Cozy. 😢 My wife and I are flying to the Netherlands to start a new adventure close to my Dutch family. I started at Cozy in January 2014 as a front-end engineer. I have an agency background, and after spending several years working on client websites, I was excited to have a chance to do something different — to work on one product with a cool team.</summary>
     <content type="html">&lt;p&gt;Today is my last day at Cozy. 😢  My wife and I are flying to the Netherlands to start a new adventure close to my Dutch family. I started at Cozy in January 2014 as a front-end engineer. I have an agency background, and after spending several years working on client websites, I was excited to have a chance to do something different — to work on one product with a cool team.&lt;/p&gt;
 &lt;p&gt;I can’t possibly write about all the things I learned while I was at Cozy; I’m trying to keep this short. But here are the things that stand out when I think about what I know now versus what I knew then:&lt;/p&gt;
@@ -447,7 +447,7 @@ At that point, I started reading technical books and articles during my bus ride
       <email>hi@piet.me</email>
     </author>
     <published>2016-06-10T00:00:00+00:00</published><updated>2016-06-10T00:00:00+00:00</updated><id>https://piet.me/blog/why-i-love-test-first-tdd/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>Twelve months ago I had hardly written a single test. After some encouragement and guidance on how to write tests my world changed. Yes, there&#39;s lots of evidence that says writing tests reduces bug density (which is awesome), but that alone isn&#39;t necessarily going to persuade you to take the time to do them. What made me adopt a workflow where I write tests first? The fact that I enjoyed it!</summary>
     <content type="html">&lt;p&gt;Twelve months ago I had hardly written a single test. After some encouragement and guidance on how to write tests my world changed. Yes, there&#39;s lots of evidence that says writing tests reduces bug density (which is awesome), but that alone isn&#39;t necessarily going to persuade you to take the time to do them. What made me adopt a workflow where I write tests first? The fact that I enjoyed it!&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Preface: I&#39;m not going to cover how to test in this post. Just why I love it. But how you test and tooling for testing makes a big difference on the fun factor. My quick recommendation is checking out &lt;a href=&quot;https://wallabyjs.com/&quot;&gt;Wallaby.js&lt;/a&gt;. I&#39;ll try to do a post on TDD tooling and workflow in the future, or just find some more useful links.&lt;/em&gt;&lt;/p&gt;
@@ -482,7 +482,7 @@ At that point, I started reading technical books and articles during my bus ride
       <email>hi@piet.me</email>
     </author>
     <published>2016-03-20T00:00:00+00:00</published><updated>2016-03-20T00:00:00+00:00</updated><id>https://piet.me/blog/lodash-knockout-and-functional-programming-with-kompose/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don&#39;t always play nice if you happen to use Knockout observables. I&#39;m going to introduce a way to make handling observables in functional style easier.</summary>
     <content type="html">&lt;p&gt;Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don&#39;t always play nice if you happen to use Knockout observables. I&#39;m going to introduce a way to make handling observables in functional style easier.&lt;/p&gt;
 &lt;p&gt;Let&#39;s start with a plain object example. Say you want to create an array of people&#39;s &lt;code&gt;age&lt;/code&gt; in &lt;code&gt;years&lt;/code&gt; from this array:&lt;/p&gt;
@@ -626,7 +626,7 @@ youngestDatableAges();
       <email>hi@piet.me</email>
     </author>
     <published>2015-01-11T00:00:00+00:00</published><updated>2015-01-11T00:00:00+00:00</updated><id>https://piet.me/blog/professional-resolutions/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>I&#39;ve never been big on New Years resolutions. I&#39;ve always leaned towards a ’let my yes be yes, and let my no be no’ mindset, and I&#39;ve never been confident in my ability to keep a resolution so making them just seemed disingenuous for me. But this year I feel different about it. Perhaps it&#39;s due to hitting the big 3-0. So here&#39;s what I&#39;d like to focus on this year:</summary>
     <content type="html">&lt;p&gt;I&#39;ve never been big on New Years resolutions. I&#39;ve always leaned towards a ’let my yes be yes, and let my no be no’ mindset, and I&#39;ve never been confident in my ability to keep a resolution so making them just seemed disingenuous for me. But this year I feel different about it. Perhaps it&#39;s due to hitting the big 3-0. So here&#39;s what I&#39;d like to focus on this year:&lt;/p&gt;
 &lt;ol&gt;
@@ -648,7 +648,7 @@ youngestDatableAges();
       <email>hi@piet.me</email>
     </author>
     <published>2014-05-15T00:00:00+00:00</published><updated>2014-05-15T00:00:00+00:00</updated><id>https://piet.me/blog/using-env-variables/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>Often enough you&#39;ll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it&#39;s not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter &#39;Environment Variables&#39;.</summary>
     <content type="html">&lt;p&gt;Often enough you&#39;ll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it&#39;s not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter &#39;Environment Variables&#39;.&lt;/p&gt;
 &lt;h2&gt;Setting Environment variables&lt;/h2&gt;
@@ -703,7 +703,7 @@ wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&a
       <email>hi@piet.me</email>
     </author>
     <published>2013-11-10T00:00:00+00:00</published><updated>2013-11-10T00:00:00+00:00</updated><id>https://piet.me/blog/the-internet-for-everyone/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>I&#39;ve been excited to hear more about initiatives like Code Club and Code.org, which aim to make code a normal part of a child&#39;s education.</summary>
     <content type="html">&lt;p&gt;I&#39;ve been excited to hear more about initiatives like &lt;a href=&quot;https://www.codeclub.org.uk/&quot;&gt;Code Club&lt;/a&gt; and &lt;a href=&quot;http://code.org/&quot;&gt;Code.org&lt;/a&gt;, which aim to make code a normal part of a child&#39;s education.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -729,7 +729,7 @@ wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&a
       <email>hi@piet.me</email>
     </author>
     <published>2013-10-12T00:00:00+00:00</published><updated>2013-10-12T00:00:00+00:00</updated><id>https://piet.me/blog/jekyll-and-github-pages/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>When my shared hosting plan was coming up for renewal I struggled to find a hosting service that I liked. I was hoping for good uptime, something that didn&#39;t break the bank, and preferably something with a decent UI. (Maybe I was asking to much.) Webfaction was a great option for a while but $9.50 a month for a few small sites was more than I wanted to spend. That said, the UI and features make Webfactions my favourite shared hosting option.</summary>
     <content type="html">&lt;p&gt;When my shared hosting plan was coming up for renewal I struggled to find a hosting service that I liked. I was hoping for good uptime, something that didn&#39;t break the bank, and preferably something with a decent UI. (Maybe I was asking to much.) &lt;a href=&quot;https://www.webfaction.com/?affiliate=pietvanz&quot;&gt;Webfaction&lt;/a&gt; was a great option for a while but $9.50 a month for a few small sites was more than I wanted to spend. That said, the UI and features make Webfactions my favourite shared hosting option.&lt;/p&gt;
 &lt;p&gt;In the end I went for something a little different. Between &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;http://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; I now host this site for free.&lt;/p&gt;
@@ -759,7 +759,7 @@ wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&a
       <email>hi@piet.me</email>
     </author>
     <published>2013-07-12T00:00:00+00:00</published><updated>2013-07-12T00:00:00+00:00</updated><id>https://piet.me/blog/giving-something-back/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>A year ago my wife and I bought our first house. Like any other unprepared first-time homeowners we asked neighbors for advice, tools and a helping hand with projects. A year later we&#39;re a little more confident, own a few more tools and now we get be the neighbor who can lend a hand. I think I&#39;ve reached a similar point with web development.</summary>
     <content type="html">&lt;p&gt;A year ago my wife and I bought our first house. Like any other unprepared first-time homeowners we asked neighbors for advice, tools and a helping hand with projects. A year later we&#39;re a little more confident, own a few more tools and now &lt;em&gt;we&lt;/em&gt; get be the neighbor who can lend a hand. I think I&#39;ve reached a similar point with web development.&lt;/p&gt;
 &lt;p&gt;When I started out I was a bit green and I looked to the community for advice, tips, tools and help with projects. I&#39;m never going to stop going to people for advice/tools when I need them. But now I&#39;ve gained some knowledge and I&#39;ve got some useful tricks and ideas, I can offer something back to the web dev community.&lt;/p&gt;
@@ -784,7 +784,7 @@ wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&a
       <email>hi@piet.me</email>
     </author>
     <published>2013-06-13T00:00:00+00:00</published><updated>2013-06-13T00:00:00+00:00</updated><id>https://piet.me/blog/font-end-legos/</id>
-    <rights type="html">&amp;copy; 2020  Piet van Zoen</rights>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
     <summary>It doesn&#39;t take long for a project to get unwieldy if you don&#39;t have a good system for creating your styles. I recently attended Webvisions where Shay Howe ran a workshop titled &amp;quot;Front-end Legos&amp;quot; that gave some pretty good advice on keeping CSS clean and maintainable. Here&#39;s the run down of the best tips I took away from the workshop:</summary>
     <content type="html">&lt;p&gt;It doesn&#39;t take long for a project to get unwieldy if you don&#39;t have a good system for creating your styles. I recently attended &lt;a href=&quot;http://webvisionsevent.com/&quot;&gt;Webvisions&lt;/a&gt; where &lt;a href=&quot;https://shayhowe.com/&quot;&gt;Shay Howe&lt;/a&gt; ran a workshop titled &amp;quot;Front-end Legos&amp;quot; that gave some pretty good advice on keeping CSS clean and maintainable. Here&#39;s the run down of the best tips I took away from the workshop:&lt;/p&gt;
 &lt;h2&gt;Organize&lt;/h2&gt;
