@@ -4,6 +4,8 @@ date: 2020-07-02
 unsplashImageId: XwWXvA5CP78
 imageAlt: Neon sign. "Personal space"
 tags: meta
+permalink: blog/rethinking-my-piece-of-the-internet/index.html
+
 ---
 
 I am a strong proponent of people owning their own personal space on the internet. A space where they can express their interests and who they are as they see fit. (And preferably not owned by a social media giant.) But as a person who builds things on the internet for their profession, it’s easy to feel that my website should be a professional brand website for Piet the developer.

@@ -1,6 +1,7 @@
 ---
 title: "Front-end Legos: Keeping your CSS maintainable!"
 date: 2013-06-13
+permalink: blog/font-end-legos/index.html
 
 ---
 

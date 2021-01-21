@@ -2,7 +2,6 @@ const dayjs = require('../_lib/dayjs');
 module.exports = {
   pageAbsoluteUrl: ({ page, site }) => new URL(page.url, site.url).href,
   seo: {
-    siteTitle: ({ site }) => site.title,
     title: (data) => {
       if (isUpdate(data)) {
         data.title = dayjs(data.date).format('Do MMM YYYY HH:mm');

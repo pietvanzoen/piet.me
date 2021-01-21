@@ -1,0 +1,23 @@
+---
+layout: layout.njk
+
+---
+
+<article>
+  <h1 class="headline">{{ title }}</h1>
+  {% if unsplashImageId %}
+  {%- HeroImage "https://source.unsplash.com/" + unsplashImageId + "/1400x900?fm=jpg", imageAlt or title -%}
+  {% endif %}
+  {{ content | safe }}
+</article>
+<div class="text-muted text-small">
+  Last Updated: <time datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
+</div>
+
+<hr>
+
+{% include "backlinks.njk" %}
+
+{% include "webmentionlist.njk" %}
+
+{% include "comments.njk" %}

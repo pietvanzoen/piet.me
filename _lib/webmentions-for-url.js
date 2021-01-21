@@ -1,7 +1,6 @@
 const sanitizeHTML = require('sanitize-html');
 // WEBMENTIONS FILTER
 module.exports = (webmentions, url) => {
-  console.log(JSON.stringify(webmentions, null, 2));
   // define which types of webmentions should be included per URL.
   // possible values listed here:
   // https://github.com/aaronpk/webmention.io#find-links-of-a-specific-type-to-a-specific-page

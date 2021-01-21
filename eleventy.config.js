@@ -38,8 +38,8 @@ module.exports = function (cfg) {
   cfg.addPassthroughCopy('images');
 
   // Collections
-  cfg.addCollection('blog', (collection) =>
-    collection.getFilteredByGlob('./blog/*.md').filter((item) => item.data.draft !== true && item.date <= now)
+  cfg.addCollection('notes', (collection) =>
+    collection.getFilteredByGlob(['notes/**/*.md']).filter((item) => item.data.draft !== true && item.date <= now)
   );
   cfg.addCollection('updates', updatesCollection);
   cfg.addCollection('indexable', (collection) => collection.getAll().filter((item) => !item.data.noindex));

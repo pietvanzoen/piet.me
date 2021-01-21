@@ -2,6 +2,7 @@
 title: "Why I love test-first TDD"
 unsplashImageId: "oTQVwECws8o"
 date: 2016-06-10
+permalink: blog/why-i-love-test-first-tdd/index.html
 
 ---
 

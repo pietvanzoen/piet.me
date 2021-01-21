@@ -1,6 +1,7 @@
 ---
 title: About
 layout: layout.njk
+
 ---
 
 <h1 class="headline">About Piet</h1>

@@ -2,6 +2,7 @@
 title: "Customised PiBow case for Raspberry Pi + PiJuice + PiTFT"
 unsplashImageId: Mzy-OjtCI70
 date: 2020-12-27
+permalink: blog/customized-pibow-case-for-raspberry-pi-pijuice-pitft/index.html
 
 ---
 

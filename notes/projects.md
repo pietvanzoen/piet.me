@@ -1,11 +1,12 @@
 ---
-layout: layout.njk
-description: Some of the things I've built.
-title: Projects
+title: Some of my projects
+slug: projects
 
 ---
 
-<h1 class="headline">Projects</h1>
+Here are a few of the projects I've built. Some are alright. 😛
+
+<!-- excerpt -->
 
 ## Command line
 

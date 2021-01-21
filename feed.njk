@@ -2,10 +2,8 @@
 permalink: feed.xml
 eleventyExcludeFromCollections: true
 metadata:
-  feed:
-    id: blog
   title: "Piet van Zoen"
-  description: "Hi, I'm Piet. I build things for the web. I love all things command line, and fries with mayo. This is my blog feed."
+  description: "Hi, I'm Piet. I build things for the web. I love all things command line, and fries with mayo. This is a feed."
   author:
     name: "Piet van Zoen"
     email: hi@piet.me
@@ -18,14 +16,14 @@ metadata:
   {% set absoluteUrl %}{{ permalink | url | absoluteUrl(site.url) }}{% endset %}
   <link href="{{ absoluteUrl }}" rel="self"/>
   <link href="{{ site.url }}"/>
-  <updated>{{ collections.blog | rssLastUpdatedDate }}</updated>
-  <id>{{ site.url }}/blog/</id>
+  <updated>{{ collections.notes | rssLastUpdatedDate }}</updated>
+  <id>{{ site.url }}/</id>
   <author>
     <name>{{ metadata.author.name }}</name>
     <uri>{{ site.url }}</uri>
     <email>{{ metadata.author.email }}</email>
   </author>
-  {%- for post in collections.blog | reverse %}
+  {%- for post in collections.notes | reverse %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
@@ -43,7 +41,11 @@ metadata:
     {%- endif -%}
     <id>{{ absolutePostUrl }}</id>
     <rights type="html">&amp;copy; {{ site.buildTime | date('YYYY') }}  Piet van Zoen</rights>
-    <summary>{{ post.data.excerpt | markdown | striptags | trim }}</summary>
+    {%- if post.data.excerpt %}
+      <summary>{{ post.data.excerpt | markdown | striptags | trim }}</summary>
+    {%- elif post.data.preview -%}
+      <summary>{{ post.data.preview | markdown | striptags | trim }}</summary>
+    {%- endif -%}
     <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
   </entry>
   {%- endfor %}
