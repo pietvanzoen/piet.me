@@ -5,27 +5,13 @@
   
   <link href="https://piet.me/feed.xml" rel="self"/>
   <link href="https://piet.me"/>
-  <updated>2021-01-21T14:32:54+00:00</updated>
+  <updated>2021-01-21T14:40:17+00:00</updated>
   <id>https://piet.me/</id>
   <author>
     <name>Piet van Zoen</name>
     <uri>https://piet.me</uri>
     <email>hi@piet.me</email>
   </author>
-  
-  <entry>
-    <title>Some note</title>
-    <link href="https://piet.me/notes/some-note/"/>
-    <author>
-      <name>Piet van Zoen</name>
-      <uri>https://piet.me</uri>
-      <email>hi@piet.me</email>
-    </author>
-    <published>2021-01-21T14:32:54+00:00</published><updated>2021-01-21T14:32:54+00:00</updated><id>https://piet.me/notes/some-note/</id>
-    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights><content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://piet.me/notes/another-note&quot;&gt;another post&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
   
   <entry>
     <title>Some of my projects</title>
@@ -35,7 +21,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2021-01-21T14:32:54+00:00</published><updated>2021-01-21T14:32:54+00:00</updated><id>https://piet.me/projects/</id>
+    <published>2021-01-21T14:40:17+00:00</published><updated>2021-01-21T14:40:17+00:00</updated><id>https://piet.me/projects/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>Here are a few of the projects I&#39;ve built. Some are alright. 😛</summary><content type="html">&lt;p&gt;Here are a few of the projects I&#39;ve built. Some are alright. 😛&lt;/p&gt;
 &lt;h2&gt;Command line&lt;/h2&gt;
@@ -60,19 +46,6 @@
 &lt;p&gt;A little creative outlet of mine. This is a collection of field recordings I&#39;ve made over the years.&lt;/p&gt;
 &lt;h3&gt;&lt;a href=&quot;https://emergencyfrida.com/&quot;&gt;Emergency Frida&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Cute kitten photos, stat! Because, let&#39;s face it, 2020 was a rough year and everyone deserves more cute cat photos.&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>Another note</title>
-    <link href="https://piet.me/notes/another-note/"/>
-    <author>
-      <name>Piet van Zoen</name>
-      <uri>https://piet.me</uri>
-      <email>hi@piet.me</email>
-    </author>
-    <published>2021-01-21T14:32:54+00:00</published><updated>2021-01-21T14:32:54+00:00</updated><id>https://piet.me/notes/another-note/</id>
-    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights><content type="html">&lt;p&gt;&lt;a href=&quot;https://piet.me/notes/some-note&quot;&gt;Lorem ipsum dolor sit amet&lt;/a&gt;, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </content>
   </entry>
   
