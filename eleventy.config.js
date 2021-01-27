@@ -36,6 +36,7 @@ module.exports = function (cfg) {
   // Copy
   cfg.addPassthroughCopy('fonts');
   cfg.addPassthroughCopy('images');
+  cfg.addPassthroughCopy('notes/**/*.{gif,jpg,jpeg,png}');
 
   // Collections
   cfg.addCollection('notes', (collection) =>
