@@ -8,7 +8,7 @@
     "update-updates": "git submodule update --init --recursive --remote && git submodule foreach git pull origin main && npm run sync-images",
     "start": "eleventy --config=eleventy.config.js --serve",
     "clean": "rm -rf _site",
-    "prebuild": "npm run clean && npm run sync-images",
+    "prebuild": "npm run clean && npm run sync-images && ./_scripts/set-mtime",
     "prestart": "npm run clean && npm run sync-images",
     "sync-images": "rsync -r updates/media images",
     "optimize-images": "node ./_scripts/optimize.js",
