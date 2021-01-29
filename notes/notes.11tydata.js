@@ -7,6 +7,7 @@ const linkRegex = /[^!]\[[\w\s\d]+\]\(((?:\/|[^https?:\/\/])[-_\w\d.\/?=#]+)\)/g
 module.exports = {
   layout: 'note.njk',
   type: 'note',
+  date: 'Last modified',
   meta: {
     type: 'article',
   },
