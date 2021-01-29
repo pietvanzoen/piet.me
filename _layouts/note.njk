@@ -10,15 +10,16 @@ layout: layout.njk
   {% endif %}
   {{ content | safe }}
 </article>
-<br>
+<hr>
 
-<ul class="text-muted text-small">
+<h3>Meta</h3>
+<ul>
   <li>
     Last Updated: <time datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
   </li>
   {% if created %}
   <li>
-  Created: <time datetime="{{ page.created }}">{{ page.created | date('Do MMMM YYYY')}} </time>
+  Created: <time datetime="{{ created }}">{{ created | date('Do MMMM YYYY')}} </time>
   </li>
   {% endif %}
   <li>
@@ -26,7 +27,6 @@ layout: layout.njk
   </li>
 </ul>
 
-<hr>
 
 
 {% include "backlinks.njk" %}
