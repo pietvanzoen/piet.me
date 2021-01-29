@@ -10,11 +10,24 @@ layout: layout.njk
   {% endif %}
   {{ content | safe }}
 </article>
-<div class="text-muted text-small">
-  Last Updated: <time datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
-</div>
+<br>
+
+<ul class="text-muted text-small">
+  <li>
+    Last Updated: <time datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
+  </li>
+  {% if created %}
+  <li>
+  Created: <time datetime="{{ page.created }}">{{ page.created | date('Do MMMM YYYY')}} </time>
+  </li>
+  {% endif %}
+  <li>
+    Source: <a href="https://github.com/pietvanzoen/piet.me/tree/main/{{ page.inputPath }}">{{ page.inputPath }}</a>
+  </li>
+</ul>
 
 <hr>
+
 
 {% include "backlinks.njk" %}
 
