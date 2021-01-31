@@ -1,10 +1,13 @@
 ---
 title: 7 reasons not to skip the tests
 date: 2018-12-05
-tags: tdd
 unsplashImageId: nGwhwpzLGnU
 imageAlt: A person peering over the edge of a cliff.
 permalink: blog/x-reasons-not-to-skip-the-tests/index.html
+featured: true
+tags:
+  - tdd
+  - dev
 
 ---
 

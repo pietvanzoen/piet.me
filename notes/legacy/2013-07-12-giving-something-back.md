@@ -2,6 +2,8 @@
 title: "Getting Involved: Giving something back to the web dev neighborhood"
 date: 2013-07-12
 permalink: blog/giving-something-back/index.html
+tags:
+  - dev
 
 ---
 

@@ -36,7 +36,7 @@ module.exports = function (cfg) {
   // Copy
   cfg.addPassthroughCopy('fonts');
   cfg.addPassthroughCopy('images');
-  cfg.addPassthroughCopy('notes/**/*.{gif,jpg,jpeg,png}');
+  cfg.addPassthroughCopy('notes/**/*.{gif,jpg,jpeg,png,m4a}');
 
   // Collections
   cfg.addCollection('notes', (collection) =>
@@ -44,6 +44,14 @@ module.exports = function (cfg) {
   );
   cfg.addCollection('updates', updatesCollection);
   cfg.addCollection('indexable', (collection) => collection.getAll().filter((item) => !item.data.noindex));
+  cfg.addCollection('tagList', (collection) => {
+    const tagsSet = new Set();
+    collection.getAll().forEach((item) => {
+      if (!item.data.tags) return;
+      item.data.tags.filter((tag) => !['post', 'all'].includes(tag)).forEach((tag) => tagsSet.add(tag));
+    });
+    return Array.from(tagsSet).sort();
+  });
   cfg.addCollection('noindex', (collection) => collection.getAll().filter((item) => item.data.noindex));
   cfg.addShortcode('query', (data) => {
     return (
@@ -86,6 +94,7 @@ module.exports = function (cfg) {
     )
   );
   cfg.addNunjucksAsyncFilter('getOpenGraphData', getOpenGraphData);
+  cfg.addFilter('isFeatured', (collection) => collection.filter((page) => page.data.featured));
 
   cfg.addTransform('lazyImages', (content, outputPath) => {
     if (!outputPath.endsWith('.html')) return content;

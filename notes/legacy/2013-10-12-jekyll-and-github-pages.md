@@ -2,6 +2,8 @@
 title: Moving from shared hosting to Github pages
 date: 2013-10-12
 permalink: blog/jekyll-and-github-pages/index.html
+tags:
+  - dev
 
 ---
 

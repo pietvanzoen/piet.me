@@ -7,8 +7,26 @@ title: Garden
 
 <p>This is my digital garden. Welcome!</p>
 
+<h2>Tinkering</h2>
 <ul>
-{%- for post in collections.notes | reverse -%}
+{%- for post in collections.tinkering | isFeatured | reverse -%}
   <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
 {%- endfor -%}
 </ul>
+
+<h2>Development</h2>
+<ul>
+{%- for post in collections.dev | isFeatured | reverse -%}
+  <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
+{%- endfor -%}
+</ul>
+
+<h2>Recordings</h2>
+<ul>
+{%- for post in collections.recordings | reverse -%}
+  <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
+{%- endfor -%}
+</ul>
+
+
+<a href="/notes">Archive</a>

@@ -3,6 +3,8 @@ title: Automated middleman deploy to Github pages
 unsplashImageId: GDdRP7U5ct0
 date: 2017-02-27
 permalink: blog/automated-middleman-deploy-to-github-pages/index.html
+tags:
+  - dev
 
 ---
 

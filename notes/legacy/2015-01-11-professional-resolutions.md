@@ -3,6 +3,8 @@ title: "Professional Resolutions"
 unsplashImageId: swPTbY7v6Ow
 date: 2015-01-11
 permalink: blog/professional-resolutions/index.html
+tags:
+  - dev
 
 ---
 

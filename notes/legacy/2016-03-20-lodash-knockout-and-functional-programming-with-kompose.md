@@ -3,6 +3,8 @@ title: "Lodash, Knockout, and functional programming"
 unsplashImageId: 5eZu5p0vSPg
 date: 2016-03-20
 permalink: blog/lodash-knockout-and-functional-programming-with-kompose/index.html
+tags:
+  - dev
 
 ---
 

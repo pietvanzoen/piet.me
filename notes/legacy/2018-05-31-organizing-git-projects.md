@@ -4,6 +4,10 @@ unsplashImageId: W_ZYCEUapF0
 updated: 2019-02-01
 date: 2018-05-31
 permalink: blog/organizing-git-projects/index.html
+featured: true
+tags:
+  - git
+  - dev
 
 ---
 

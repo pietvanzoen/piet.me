@@ -2,8 +2,11 @@
 title: My box of mistakes
 created: 2021-01-27
 date: 2021-01-28
+featured: true
 tags:
   - 3d printing
+  - tinkering
+
 ---
 
 I got myself a 3d printer and I am hooked. I'm hoping to post about some of my projects and learnings soon.

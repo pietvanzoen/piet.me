@@ -2,6 +2,8 @@
 title: Some of my projects
 slug: projects
 date: 2021-01-21
+featured: true
+tags: dev
 
 ---
 
