@@ -1,0 +1,49 @@
+---
+layout: layout.njk
+
+---
+
+<article>
+  <h1 class="headline">{{ title }}</h1>
+  {{ content | safe }}
+
+  <script src="https://unpkg.com/wavesurfer.js"></script>
+  <div id="wave"></div>
+
+  <script>
+    WaveSurfer.create({
+          container: document.querySelector('#wave'),
+          mediaControls: true,
+          backend: 'MediaElement'
+
+        }).load('{{ audio }}');
+  </script>
+
+  <noscript>
+    <audio controls src="{{ audio }}"></audio>
+  </noscript>
+
+  <p><strong><a href="{{ audio }}" download>Download Audio</a></strong></p>
+
+
+  {% if audio_description %}
+  <details>
+    <summary>Audio Description</summary>
+    {{ audio_description | markdown | safe }}
+  </details>
+  {% endif %}
+
+  {% if audio_device %}
+  <p>Recording device: {{ audio_device }}</p>
+  {% endif %}
+
+</article>
+<hr>
+
+{% include "meta.njk" %}
+
+{% include "backlinks.njk" %}
+
+{% include "webmentionlist.njk" %}
+
+{% include "comments.njk" %}

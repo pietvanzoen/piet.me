@@ -1,0 +1,19 @@
+<h3>Meta</h3>
+<ul>
+  <li>
+    Last Updated: <time datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
+  </li>
+  {% if created %}
+  <li>
+  Created: <time datetime="{{ created }}">{{ created | date('Do MMMM YYYY')}} </time>
+  </li>
+  {% endif %}
+  <li>
+    Source: <a href="https://github.com/pietvanzoen/piet.me/tree/main/{{ page.inputPath }}">{{ page.inputPath }}</a>
+  </li>
+  {% if tags %}
+  <li>
+    Tags: {% for tag in tags %} {%- if loop.index0 -%}, {% endif %}<a href="/tags/{{ tag | slug}}">{{ tag }}</a>{% endfor -%}
+  </li>
+  {% endif %}
+</ul>

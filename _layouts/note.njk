@@ -12,22 +12,7 @@ layout: layout.njk
 </article>
 <hr>
 
-<h3>Meta</h3>
-<ul>
-  <li>
-    Last Updated: <time datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
-  </li>
-  {% if created %}
-  <li>
-  Created: <time datetime="{{ created }}">{{ created | date('Do MMMM YYYY')}} </time>
-  </li>
-  {% endif %}
-  <li>
-    Source: <a href="https://github.com/pietvanzoen/piet.me/tree/main/{{ page.inputPath }}">{{ page.inputPath }}</a>
-  </li>
-</ul>
-
-
+{% include "meta.njk" %}
 
 {% include "backlinks.njk" %}
 
