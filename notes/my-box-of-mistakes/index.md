@@ -8,7 +8,7 @@ tags:
 
 I got myself a 3d printer and I am hooked. I'm hoping to post about some of my projects and learnings soon.
 
-But first I wanted to share this picture of my little box of 3d printing mistakes. 
+But first I wanted to share this picture of my little box of 3d printing mistakes.
 
 <!-- excerpt -->
 
