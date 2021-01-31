@@ -14,7 +14,7 @@ audio_description: |
 
   The midwife explains the sounds we're hearing. A heartbeat of 150 beats per minute.
 
-  Heartbeats continue as we talk and listen in awe.
+  Heartbeats continue as we talk and listen.
 
 ---
 
