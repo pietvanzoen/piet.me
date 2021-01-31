@@ -2,6 +2,7 @@
 title: Paris Metro
 layout: recording.njk
 tags:
+  - travel
   - recordings
 audio: ./2017-05-16-paris-metro.m4a
 audio_device: iPhone 7

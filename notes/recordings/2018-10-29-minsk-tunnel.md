@@ -2,6 +2,7 @@
 title: Minsk Tunnel
 layout: recording.njk
 tags:
+  - travel
   - recordings
 audio: ./2018-10-29-minsk-tunnel.m4a
 audio_device: iPhone 7

@@ -1,6 +1,7 @@
 ---
 title: Martín's Triathlon
 layout: recording.njk
+featured: true
 tags:
   - recordings
 audio: ./2019-09-22-triathlon.m4a

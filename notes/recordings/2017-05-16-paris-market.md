@@ -1,7 +1,9 @@
 ---
 title: Paris Market
 layout: recording.njk
+featured: true
 tags:
+  - travel
   - recordings
 audio: ./2017-06-17-paris-market.m4a
 audio_device: iPhone 7
