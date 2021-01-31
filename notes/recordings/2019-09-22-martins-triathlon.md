@@ -4,7 +4,7 @@ layout: recording.njk
 featured: true
 tags:
   - recordings
-audio: ./2019-09-22-triathlon.m4a
+audio: /notes/recordings/2019-09-22-triathlon.m4a
 audio_device: Zoom H1n
 audio_description: |
   Part 1.

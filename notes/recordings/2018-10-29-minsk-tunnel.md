@@ -4,7 +4,7 @@ layout: recording.njk
 tags:
   - travel
   - recordings
-audio: ./2018-10-29-minsk-tunnel.m4a
+audio: /notes/recordings/2018-10-29-minsk-tunnel.m4a
 audio_device: iPhone 7
 audio_description: |
   A female voice is singing in an operatic style in russian. The voice echos around the tunnel.

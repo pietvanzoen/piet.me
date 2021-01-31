@@ -3,7 +3,7 @@ title: Polderbaan
 layout: recording.njk
 tags:
   - recordings
-audio: ./2019-08-02-polderbaan.m4a
+audio: /notes/recordings/2019-08-02-polderbaan.m4a
 audio_device: Zoom H1n
 audio_description: |
   The diesel generator from the snack truck hums in the background.

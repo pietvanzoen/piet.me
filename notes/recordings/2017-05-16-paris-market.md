@@ -5,7 +5,7 @@ featured: true
 tags:
   - travel
   - recordings
-audio: ./2017-06-17-paris-market.m4a
+audio: /notes/recordings/2017-06-17-paris-market.m4a
 audio_device: iPhone 7
 audio_description: |
   People chatter and walk around a busy market.

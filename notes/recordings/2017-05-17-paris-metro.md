@@ -4,7 +4,7 @@ layout: recording.njk
 tags:
   - travel
   - recordings
-audio: ./2017-05-16-paris-metro.m4a
+audio: /notes/recordings/2017-05-16-paris-metro.m4a
 audio_device: iPhone 7
 audio_description: |
   An accordion plays over the low rumbling of the metro train.

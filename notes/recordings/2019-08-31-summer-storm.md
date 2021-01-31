@@ -4,7 +4,7 @@ layout: recording.njk
 featured: true
 tags:
   - recordings
-audio: ./2019-summer-storm.m4a
+audio: /notes/recordings/2019-summer-storm.m4a
 audio_device: Zoom H1n
 audio_description: |
   Rain patters on leafs.

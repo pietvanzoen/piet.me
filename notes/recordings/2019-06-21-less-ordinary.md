@@ -3,7 +3,7 @@ title: Less Ordinary
 layout: recording.njk
 tags:
   - recordings
-audio: ./2019-06-21-less-ordinary.mp3
+audio: /notes/recordings/2019-06-21-less-ordinary.mp3
 audio_device: 2006 MacBook
 audio_description: |
   A soft melancholy sounding song played on an acoustic guitar.
