@@ -52,6 +52,12 @@ module.exports = function (cfg) {
     });
     return Array.from(tagsSet).sort();
   });
+  cfg.addCollection('featured', (collection) =>
+    collection
+      .getAllSorted()
+      .filter((item) => item.data.featured)
+      .reverse()
+  );
   cfg.addCollection('noindex', (collection) => collection.getAll().filter((item) => item.data.noindex));
   cfg.addShortcode('query', (data) => {
     return (
