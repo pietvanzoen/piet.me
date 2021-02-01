@@ -1,0 +1,5 @@
+---
+title: Frida
+draft: true
+
+---
