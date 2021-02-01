@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 bodyClass: home
-description: Hi, I'm Piet. I build things for the web. I love all things command line, and fries with mayo. This is my website.
+description: Hi, I'm Piet. I build things for the web. This is my website.
 meta:
   image:
     url: "/images/piet-2020.jpg"
@@ -11,18 +11,36 @@ meta:
 <main role="main">
   <img class="img-circle home-image" src="/images/piet-2020.jpg" alt="Piet van Zoen"/>
   <h1 class="text-center">Hi, I&#39;m Piet.</h1>
-  <p class="home-intro"><span>I build things for the web.</span> <span>I love all things command line, </span><span>and fries with mayo.</span></p>
+  <p class="home-intro"><span>I build things for the web.<br>This is my website.</span></p>
 
-  <h3 class="text-center">On this website</h3>
-  <nav class="text-center">
-    <ol class="list-inline">
-    {%- for item in site.menu -%}
-    <li>&nbsp;&nbsp;<a href="{{ item.href }}">{{ item.name }}</a>&nbsp;&nbsp;</li>
+  <p>Last year I wrote about <a href="/blog/rethinking-my-piece-of-the-internet/">reclaiming this little peice of the internet</a> for myself again. So when I learned about <a href="https://joelhooks.com/digital-garden">digital gardens</a> I was immediately intruiged. I&#8217;ve often stuggled hitting the publish button, so the idea of a space that&#8217;s meant to be personal and a work in progress resonated with me. </p>
+
+  <p>So here it is. The next evolution of my little plot of the internet. </p>
+
+  <p>This is where I capture notes and thoughts on the things I&#8217;m interested in. This includes web development, all things command line, vim, cats, family, expat life, field recording, 3d printing, and general tinkering. </p>
+
+  <p>Thanks for visiting. 😬</p>
+
+  <h2>Web Development</h2>
+  <ul>
+    {%- for post in collections.dev | isFeatured | reverse -%}
+    <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
     {%- endfor -%}
-    </ol>
-  </nav>
+  </ul>
 
-  <h3 class="text-center">Elsewhere on the internet</h3>
-  {% include './_includes/social-links.njk' %}
+  <h2>Tinkering</h2>
+  <ul>
+    {%- for post in collections.tinkering | isFeatured | reverse -%}
+    <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
+    {%- endfor -%}
+  </ul>
+
+  <a href="/notes"><strong>Browse all notes</strong></a>
 
 </main>
+
+<footer class="site-footer">
+  <hr>
+  {% include 'social-links.njk' %}
+  <p><small>&copy; {{ site.buildTime | date('YYYY') }} Piet van Zoen</small></p>
+</footer>

@@ -10,3 +10,11 @@ title: Archive
 <li><a href="{{post.url}}">{{ post.data.title }}</a> {%- if post.data.tags %} <small class="text-muted">tags: {{ post.data.tags | join(', ') }}</small>{%- endif -%}</li>
 {%- endfor -%}
 </ul>
+
+<h2>Explore tags</h2>
+
+<ul>
+{% for tag in collections.tagList %}
+  <li><a href="/tags/{{ tag | slug }}">{{ tag | title}}</a></li>
+{% endfor %}
+</ul>

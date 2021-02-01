@@ -6,12 +6,12 @@
 .home {
   margin: 3em auto;
 }
-.home ul {
-  padding: 0;
-}
-.home li {
-  list-style: none;
-}
+// .home ul {
+//   padding: 0;
+// }
+// .home li {
+//   list-style: none;
+// }
 .home-intro {
   font-size: 6vw;
 }
@@ -41,25 +41,27 @@
   margin: 0 auto;
   display: block;
 }
+.home-intro {
+  text-align: center;
+}
 .home-intro span {
   display: inline-block;
   padding: 0 0.3em;
   background: var(--accent-color);
   color: white;
-  border-radius: 0 0.2em 0.2em 0;
+  border-radius: 0.2em;
   white-space: nowrap;
 }
 
 .headline {
-  display: inline-block;
   color: var(--accent-color);
 }
-.home-intro span:first-child {
-  border-radius: 0.2em 0.2em 0 0;
-}
-.home-intro span:last-child {
-  border-radius: 0 0 0.2em 0.2em;
-}
+// .home-intro span:first-child {
+//   border-radius: 0.2em 0.2em 0.1em 0.1em;
+// }
+// .home-intro span:last-child {
+//   border-radius: 0 0 0.2em 0.2em;
+// }
 
 
 .home h1,

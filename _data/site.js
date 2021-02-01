@@ -6,8 +6,8 @@ module.exports = {
   title: 'Piet van Zoen',
   isProduction: process.env.ELEVENTY_PRODUCTION === 'true',
   menu: [
+    { href: '/', name: 'Home' },
     { href: '/updates/', name: 'Updates' },
-    { href: '/garden/', name: 'Garden' },
     { href: '/about/', name: 'About' },
   ],
 };
