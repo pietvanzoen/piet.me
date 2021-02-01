@@ -1,5 +1,6 @@
 ---
 title: Things I wish I knew before my daughter was born
+slug: things-i-wish-i-knew-before-my-daughter-was-born
 tags:
   - family
 date: 2019-11-29
