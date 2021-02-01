@@ -8,7 +8,7 @@ title: Updates
 <h1 class="headline">Updates</h1>
 
 {%- for update in pagination.items -%}
-<article class="update card buffer-lg">
+<article class="update card buffer-md">
   <a href="{{ update.url | url }}">
     <time class="text-muted text-small" datetime="{{ update.data.date | date }}">{{ update.data.date | date('Do MMM YYYY HH:mm') }}</time>
   </a>
