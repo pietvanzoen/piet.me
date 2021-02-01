@@ -5,13 +5,36 @@
   
   <link href="https://piet.me/feed.xml" rel="self"/>
   <link href="https://piet.me"/>
-  <updated>2021-01-28T00:00:00+00:00</updated>
+  <updated>2021-02-01T00:00:00+00:00</updated>
   <id>https://piet.me/</id>
   <author>
     <name>Piet van Zoen</name>
     <uri>https://piet.me</uri>
     <email>hi@piet.me</email>
   </author>
+  
+  <entry>
+    <title>Field recording</title>
+    <link href="https://piet.me/field-recording/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2021-02-01T00:00:00+00:00</published><updated>2021-02-01T00:00:00+00:00</updated><id>https://piet.me/field-recording/</id>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights><content type="html">&lt;p&gt;A picture is worth a thousand words. But a sound can transport you to a moment or a space in a way that a two dimentional image can&#39;t. At least that&#39;s my experience. ☺️&lt;/p&gt;
+&lt;p&gt;Over the last few years I&#39;ve recorded little moments in various spaces. There was something about the sound landscape in those spaces that captured my experience more vividly than a picture or video ever could.&lt;/p&gt;
+&lt;p&gt;So this is a space for me to gather and share those recordings.&lt;/p&gt;
+&lt;h2&gt;A few of my favourites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://piet.me/notes/martins-triathlon/&quot;&gt;Martín&#39;s Triathlon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://piet.me/notes/summer-storm/&quot;&gt;Summer Storm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://piet.me/notes/heartbeats/&quot;&gt;Heartbeats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://piet.me/notes/paris-market&quot;&gt;Paris Market&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://piet.me/tags/recordings&quot;&gt;More field recordings&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>My box of mistakes</title>
@@ -148,29 +171,6 @@
 &lt;p&gt;This particularly resonated with me and my struggle to balance the professional and personal. Inspired by this, I am challenging myself to reclaim &lt;em&gt;my&lt;/em&gt; space. Let it be me with all my interests and not just the developer’s brochure! I have interests in aircraft, running, keyboards, and making the odd field recording, to name a few.&lt;/p&gt;
 &lt;p&gt;My plan is to post a broader range of content along these lines that I feel better represents me. Hopefully, this means I actually produce some content more than a couple of times a year. Wish me luck!&lt;/p&gt;
 &lt;p&gt;More soon.&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>Field recording</title>
-    <link href="https://piet.me/field-recording/"/>
-    <author>
-      <name>Piet van Zoen</name>
-      <uri>https://piet.me</uri>
-      <email>hi@piet.me</email>
-    </author>
-    <published>2020-02-01T00:00:00+00:00</published><updated>2020-02-01T00:00:00+00:00</updated><id>https://piet.me/field-recording/</id>
-    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights><content type="html">&lt;p&gt;A picture is worth a thousand words. But a sound can transport you to a moment or a space in a way that a two dimentional image can&#39;t. At least that&#39;s my experience. ☺️&lt;/p&gt;
-&lt;p&gt;Over the last few years I&#39;ve recorded little moments in various spaces. There was something about the sound landscape in those spaces that captured my experience more vividly than a picture or video ever could.&lt;/p&gt;
-&lt;p&gt;So this is a space for me to gather and share those recordings.&lt;/p&gt;
-&lt;h2&gt;A few of my favourites&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://piet.me/notes/martins-triathlon/&quot;&gt;Martín&#39;s Triathlon&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://piet.me/notes/summer-storm/&quot;&gt;Summer Storm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://piet.me/notes/heartbeats/&quot;&gt;Heartbeats&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://piet.me/notes/paris-market&quot;&gt;Paris Market&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;https://piet.me/tags/recordings&quot;&gt;More field recordings&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   
