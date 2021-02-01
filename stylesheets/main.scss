@@ -143,12 +143,16 @@
   overflow: hidden;
 }
 
-.card {
+.card,
+.twitter-tweet:not(.twitter-tweet-rendered) {
   overflow: auto;
   display: block;
   border: 1px solid var(--subtle-color);
   border-radius: 0.2em;
   padding: 1em;
+}
+.twitter-tweet:not(.twitter-tweet-rendered):before {
+  display: none;
 }
 
 a.card {

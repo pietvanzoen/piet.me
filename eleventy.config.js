@@ -22,7 +22,7 @@ module.exports = function (cfg) {
   cfg.addPlugin(pluginSass);
   cfg.addPlugin(pluginRss);
   cfg.addPlugin(embedTwitter, {
-    cacheText: IS_PRODUCTION,
+    cacheText: true,
   });
   if (IS_PRODUCTION) {
     cfg.addPlugin(localImages, {
