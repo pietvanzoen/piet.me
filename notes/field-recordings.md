@@ -1,7 +1,7 @@
 ---
 title: Field recording
 slug: field-recording
-date: 2020-02-01
+date: 2021-02-01
 featured: true
 tags:
   - tinkering
