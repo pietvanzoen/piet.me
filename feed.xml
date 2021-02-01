@@ -174,6 +174,22 @@
   </entry>
   
   <entry>
+    <title>Focus on the problem</title>
+    <link href="https://piet.me/focus-on-the-problem/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2019-12-01T00:00:00+00:00</published><updated>2019-12-01T00:00:00+00:00</updated><id>https://piet.me/focus-on-the-problem/</id>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights><content type="html">&lt;p&gt;Way too often I find myself thinking, &#39;Oh I should setup this super complicated solution to a problem that maybe one day, in an apocalypse, I might encounter.&#39;&lt;/p&gt;
+&lt;p&gt;Example: My local Dropbox backup. For some reason I&#39;ve had it in my head that I need a backup of my Dropbox files on a locally accessible hard drive. The solution I&#39;ve tried to implement several times is a raspberry pi setup in a cupboard that runs &lt;a href=&quot;https://rclone.org/&quot;&gt;rclone&lt;/a&gt; and syncs my dropbox to an external hard drive. It was kind of fun to setup once. But the maintenance was a little frustrating and the solution was fairly unreliable.&lt;/p&gt;
+&lt;p&gt;I keep thinking, &#39;I need to setup that up again&#39;. Because why?? Dropbox might collapse and loose all my stuff?? Fairly unlikely.&lt;/p&gt;
+&lt;p&gt;Anyway, this is a post to persuade myself that I really don&#39;t need to solve this problem and should focus on the dozen other hobby projects I&#39;ve wanted to work on. Such as my shitty game written in Lua that I&#39;m way too proud of already, &lt;a href=&quot;https://github.com/pietvanzoen/spacecaret&quot;&gt;Spacecaret&lt;/a&gt;. 🚀&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>Things I wish I knew before my daughter was born</title>
     <link href="https://piet.me/things-i-wish-i-knew-before-my-daughter-was-born/"/>
     <author>
