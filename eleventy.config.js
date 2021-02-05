@@ -107,7 +107,7 @@ module.exports = function (cfg) {
     return content.replace(/<img /g, '<img loading="lazy" ');
   });
 
-  function firstFourLines(file, options) {
+  function firstFourLines(file) {
     file.excerpt = file.content.split('\n').slice(0, 3).join(' ');
   }
   cfg.setFrontMatterParsingOptions({
