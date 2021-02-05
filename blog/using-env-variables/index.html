@@ -1,7 +1,7 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <title>Using local environment (ENV) variables. - Piet van Zoen</title>
-<link rel="stylesheet" href="/stylesheets/main.css?1612182876351">
+<link rel="stylesheet" href="/stylesheets/main.css?1612513215673">
 
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=NmEn8A8Wqa">
 <link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=NmEn8A8Wqa" sizes="32x32">
@@ -29,7 +29,7 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Using local environment (ENV) variables. - Piet van Zoen</title>
-    <link rel="stylesheet" href="/stylesheets/main.css?1612182876352">
+    <link rel="stylesheet" href="/stylesheets/main.css?1612513215673">
 
   </head>
   <body class="">
@@ -42,12 +42,12 @@
     </a>
   </div>
   <div class="site-menu site-menu-lg"><nav class="site-menu-list">
-  <ol><li><a href="/">Home</a></li><li><a href="/updates/">Updates</a></li><li><a href="/about/">About</a></li></ol>
+  <ol><li><a href="/">Home</a></li><li><a href="/notes/">Archive</a></li><li><a href="/updates/">Updates</a></li><li><a href="/about/">About</a></li></ol>
 </nav>
 </div>
   <details class="site-menu site-menu-sm">
     <summary>Menu</summary><nav class="site-menu-list">
-  <ol><li><a href="/">Home</a></li><li><a href="/updates/">Updates</a></li><li><a href="/about/">About</a></li></ol>
+  <ol><li><a href="/">Home</a></li><li><a href="/notes/">Archive</a></li><li><a href="/updates/">Updates</a></li><li><a href="/about/">About</a></li></ol>
 </nav>
 </details>
 </header>
@@ -58,6 +58,7 @@
   <h1 class="headline">Using local environment (ENV) variables.</h1>
   
   <p>Often enough you'll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it's not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter 'Environment Variables'.</p>
+<!-- excerpt -->
 <h2>Setting Environment variables</h2>
 <p>In terminal you can easily set environment (or ENV) variables by running this command: <code>export VAR_NAME=foo</code>. For multi word variables be sure to wrap the variable in quotes: <code>export VAR_NAME="foo bar"</code>. But when you reboot your shell you'll lose these variables. So lets look at how to set variables that persist.</p>
 <p>Open up <code>.bash_profile</code> or <code>.bashrc</code> in your home folder using your text editor, if you don't have a bash file create it like so:</p>
