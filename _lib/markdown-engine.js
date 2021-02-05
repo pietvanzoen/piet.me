@@ -27,6 +27,20 @@ const md = markdownIt({
       match.url = `${parts[0].trim()}`;
     },
   });
+
+  const twitterMention = /@[a-zA-Z0-9_]*@twitter\.com/;
+  md.linkify.add('@', {
+    validate: (text, pos) => {
+      const tail = text.slice(pos - 1);
+      if (twitterMention.test(tail)) {
+        return tail.match(twitterMention)[0].length - 1;
+      }
+      return 0;
+    },
+    normalize: (match) => {
+      match.url = 'https://twitter.com/' + match.raw.split('@')[1];
+    },
+  });
 });
 
 module.exports = md;
