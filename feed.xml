@@ -5,13 +5,42 @@
   
   <link href="https://piet.me/feed.xml" rel="self"/>
   <link href="https://piet.me"/>
-  <updated>2021-02-01T00:00:00+00:00</updated>
+  <updated>2021-03-30T00:00:00+00:00</updated>
   <id>https://piet.me/</id>
   <author>
     <name>Piet van Zoen</name>
     <uri>https://piet.me</uri>
     <email>hi@piet.me</email>
   </author>
+  
+  <entry>
+    <title>Agile</title>
+    <link href="https://piet.me/notes/agile/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2021-03-30T00:00:00+00:00</published><updated>2021-03-30T00:00:00+00:00</updated><id>https://piet.me/notes/agile/</id>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
+      <summary>The goals of agility</summary><content type="html">&lt;h2&gt;The goals of agility&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Deliver real value to your customers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Deliver work in short iterations&lt;/li&gt;
+&lt;li&gt;Measure the impact of that work&lt;/li&gt;
+&lt;li&gt;Experiment with improvements&lt;/li&gt;
+&lt;li&gt;Repeat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://pragdave.me/blog/2014/03/04/time-to-kill-agile.html&quot;&gt;Dave Thomas - Agile is Dead (Long Live Agility)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://managingup.show/episodes/ae6a210b&quot;&gt;Managing Up Podcast - Estimation: Where Everything is Made Up and the Points Don&#39;t Matter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Field recording</title>
