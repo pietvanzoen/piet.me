@@ -1,5 +1,6 @@
 ---
 title: Agile
+slug: agile
 date: 2021-03-30
 tags: 
   - leadership
