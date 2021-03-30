@@ -1,7 +1,8 @@
 ---
 title: Agile
 date: 2021-03-30
-tags: leadership
+tags: 
+  - leadership
 ---
 
 ## The goals of agility
