@@ -1,5 +1,5 @@
 ---
-title: Agility
+title: Agile
 date: 2021-03-30
 tags: leadership
 ---
