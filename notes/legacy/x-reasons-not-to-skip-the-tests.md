@@ -6,7 +6,7 @@ imageAlt: A person peering over the edge of a cliff.
 permalink: blog/x-reasons-not-to-skip-the-tests/index.html
 featured: true
 tags:
-  - tdd
+  - testing
   - dev
 
 ---
