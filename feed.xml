@@ -5,13 +5,34 @@
   
   <link href="https://piet.me/feed.xml" rel="self"/>
   <link href="https://piet.me"/>
-  <updated>2021-03-30T00:00:00+00:00</updated>
+  <updated>2021-04-05T00:00:00+00:00</updated>
   <id>https://piet.me/</id>
   <author>
     <name>Piet van Zoen</name>
     <uri>https://piet.me</uri>
     <email>hi@piet.me</email>
   </author>
+  
+  <entry>
+    <title>End-to-end testing</title>
+    <link href="https://piet.me/end-to-end-testing/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2021-04-05T00:00:00+00:00</published><updated>2021-04-05T00:00:00+00:00</updated><id>https://piet.me/end-to-end-testing/</id>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
+      <summary>Delivering a working software product to end users is not a trivial task and there are a lot of things that can go wrong along the way. The end user experience of your product is not just made up of the code that your team writes. It’s also 3rd party software, deployment processes, configuration, servers, operating systems, databases, networks, caching systems, and much more. Each of these components can and have gone wrong.</summary><content type="html">&lt;p&gt;Delivering a working software product to end users is not a trivial task and there are a lot of things that can go wrong along the way. The end user experience of your product is not just made up of the code that your team writes. It’s also 3rd party software, deployment processes, configuration, servers, operating systems, databases,  networks, caching systems, and much more. Each of these components can and have gone wrong.&lt;/p&gt;
+&lt;p&gt;End to end (e2e) testing is a powerful tool to help reduce the uncertainty of delivering and maintaining a functional product. But e2e testing has a lot of pitfalls and isn’t a silver bullet.&lt;/p&gt;
+&lt;h2&gt;Test regularly&lt;/h2&gt;
+&lt;p&gt;Just because it was working 2 hours ago, doesn’t mean it’s working now.&lt;/p&gt;
+&lt;h2&gt;Focus your tests&lt;/h2&gt;
+&lt;p&gt;E2e tests are flakey and expensive. Focus on what really matters.&lt;/p&gt;
+&lt;h2&gt;Balance with monitoring and other testing&lt;/h2&gt;
+&lt;p&gt;Unit testing. Integration testing. Production monitoring.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Agile</title>
