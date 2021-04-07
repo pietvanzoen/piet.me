@@ -2,6 +2,7 @@
 slug: end-to-end-testing
 title: End-to-end testing (WIP)
 date: 2021-04-05
+updated: 2021-04-07
 tags:
   - dev
   - testing
