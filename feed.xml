@@ -24,17 +24,7 @@
     <published>2021-04-05T00:00:00+00:00</published>
       <updated>2021-04-07T00:00:00+00:00</updated><id>https://piet.me/end-to-end-testing/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
-      <summary>--- slug: end-to-end-testing</summary><content type="html">&lt;hr&gt;
-&lt;p&gt;slug: end-to-end-testing&lt;br&gt;
-title: End-to-end testing&lt;br&gt;
-date: 2021-04-05&lt;br&gt;
-tags:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;dev&lt;/li&gt;
-&lt;li&gt;testing&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;Delivering a working software product to end users is not a trivial task and there are a lot of things that can go wrong along the way. The end user experience of your product is not just made up of the code that your team writes. It’s also 3rd party software, deployment processes, configuration, servers, operating systems, databases,  networks, caching systems, and much more. Each of these components can and have gone wrong.&lt;/p&gt;
+      <summary>Delivering a working software product to end users is not a trivial task and there are a lot of things that can go wrong along the way. The end user experience of your product is not just made up of the code that your team writes. It’s also 3rd party software, deployment processes, configuration, servers, operating systems, databases, networks, caching systems, and much more. Each of these components can and have gone wrong.</summary><content type="html">&lt;p&gt;Delivering a working software product to end users is not a trivial task and there are a lot of things that can go wrong along the way. The end user experience of your product is not just made up of the code that your team writes. It’s also 3rd party software, deployment processes, configuration, servers, operating systems, databases,  networks, caching systems, and much more. Each of these components can and have gone wrong.&lt;/p&gt;
 &lt;p&gt;End to end (e2e) testing is a powerful tool to help reduce the uncertainty of delivering and maintaining a functional product. But e2e testing has a lot of pitfalls and isn’t a silver bullet.&lt;/p&gt;
 &lt;h2&gt;What is end-to-end testing?&lt;/h2&gt;
 &lt;p&gt;An end-to-end test is one that tests your whole technology stack. From the client (such as a browser), to server, to database, and back. The goal is to test all the components of your product in the same way that your end users use it, as one unified system.&lt;/p&gt;
