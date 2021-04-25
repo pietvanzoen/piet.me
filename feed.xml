@@ -5,7 +5,7 @@
   
   <link href="https://piet.me/feed.xml" rel="self"/>
   <link href="https://piet.me"/>
-  <updated>2021-04-05T00:00:00+00:00</updated>
+  <updated>2021-04-05T00:00:00Z</updated>
   <id>https://piet.me/</id>
   <author>
     <name>Piet van Zoen</name>
@@ -21,8 +21,8 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2021-04-05T00:00:00+00:00</published>
-      <updated>2021-04-07T00:00:00+00:00</updated><id>https://piet.me/end-to-end-testing/</id>
+    <published>2021-04-05T00:00:00Z</published>
+      <updated>2021-04-07T00:00:00Z</updated><id>https://piet.me/end-to-end-testing/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>Delivering a working software product to end users is not a trivial task and there are a lot of things that can go wrong along the way. The end user experience of your product is not just made up of the code that your team writes. It’s also 3rd party software, deployment processes, configuration, servers, operating systems, databases, networks, caching systems, and much more. Each of these components can and have gone wrong.</summary><content type="html">&lt;p&gt;Delivering a working software product to end users is not a trivial task and there are a lot of things that can go wrong along the way. The end user experience of your product is not just made up of the code that your team writes. It’s also 3rd party software, deployment processes, configuration, servers, operating systems, databases,  networks, caching systems, and much more. Each of these components can and have gone wrong.&lt;/p&gt;
 &lt;p&gt;End to end (e2e) testing is a powerful tool to help reduce the uncertainty of delivering and maintaining a functional product. But e2e testing has a lot of pitfalls and isn’t a silver bullet.&lt;/p&gt;
@@ -46,7 +46,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2021-03-30T00:00:00+00:00</published><updated>2021-03-30T00:00:00+00:00</updated><id>https://piet.me/agile/</id>
+    <published>2021-03-30T00:00:00Z</published><updated>2021-03-30T00:00:00Z</updated><id>https://piet.me/agile/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>The goals of agility</summary><content type="html">&lt;h2&gt;The goals of agility&lt;/h2&gt;
 &lt;ul&gt;
@@ -75,7 +75,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2021-02-01T00:00:00+00:00</published><updated>2021-02-01T00:00:00+00:00</updated><id>https://piet.me/field-recording/</id>
+    <published>2021-02-01T00:00:00Z</published><updated>2021-02-01T00:00:00Z</updated><id>https://piet.me/field-recording/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>Sound has a way of transporting me to a moment or a space in a way that an image can&#39;t.</summary><content type="html">&lt;p&gt;Sound has a way of transporting me to a moment or a space in a way that an image can&#39;t.&lt;/p&gt;
 &lt;p&gt;Over the last few years I&#39;ve recorded little moments in various spaces. There was something about the sound landscape in those spaces that captured my experience more vividly than a picture or video.&lt;/p&gt;
@@ -98,12 +98,12 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2021-01-28T00:00:00+00:00</published><updated>2021-01-28T00:00:00+00:00</updated><id>https://piet.me/notes/my-box-of-mistakes/</id>
+    <published>2021-01-28T00:00:00Z</published><updated>2021-01-28T00:00:00Z</updated><id>https://piet.me/notes/my-box-of-mistakes/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>I got myself a 3d printer and I am hooked. I&#39;m hoping to post about some of my projects and learnings soon.</summary><content type="html">&lt;p&gt;I got myself a 3d printer and I am hooked. I&#39;m hoping to post about some of my projects and learnings soon.&lt;/p&gt;
 &lt;p&gt;But first I wanted to share this picture of my little box of 3d printing mistakes.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/notes/my-box-of-mistakes/IMG_8298.jpeg&quot; alt=&quot;Wooden box with various incomplete 3d printed objects&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/notes/my-box-of-mistakes/IMG_8298.jpeg&quot; alt=&quot;Wooden box with various incomplete 3d printed objects&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Some are mistakes, some are prototypes, but all of them represent little moments of learning. For each thing in this box I learned something new, which is why I started keeping them rather than throwing them away.&lt;/p&gt;
 &lt;p&gt;This got me thinking a bit about mistakes I make every day, at work, at home, with people. Some big mistakes I&#39;ve made in the past that I still cringe at. What if I thought about these like I think about this box of 3d printed pieces? Rather than a mistake representing how I messed up, I could think of them as moments where I learned something.&lt;/p&gt;
 &lt;p&gt;There&#39;s a Thomas Edison quote that seems appropriate for this train of thought:&lt;/p&gt;
@@ -121,7 +121,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2021-01-21T00:00:00+00:00</published><updated>2021-01-21T00:00:00+00:00</updated><id>https://piet.me/projects/</id>
+    <published>2021-01-21T00:00:00Z</published><updated>2021-01-21T00:00:00Z</updated><id>https://piet.me/projects/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>Here are a few of the projects I&#39;ve built. Some are alright. 😛</summary><content type="html">&lt;p&gt;Here are a few of the projects I&#39;ve built. Some are alright. 😛&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -135,7 +135,7 @@
 &lt;h3&gt;&lt;a href=&quot;https://github.com/pietvanzoen/dotfiles&quot;&gt;Dotfiles&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;These are my dotfiles. There are many like them. But these are mine.&lt;/p&gt;
 &lt;p&gt;I live in the command line with zsh and vim. There&#39;s some good stuff here, some bad stuff, don&#39;t judge.&lt;/p&gt;
-&lt;hr&gt;
+&lt;hr /&gt;
 &lt;h2&gt;Websites&lt;/h2&gt;
 &lt;h3&gt;&lt;a href=&quot;https://github.com/pietvanzoen/piet.me&quot;&gt;piet.me&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I have a long history of spending too much time building a nice website and too little time writing content for it. This one is no exception! 🙈&lt;/p&gt;
@@ -158,7 +158,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2020-12-27T00:00:00+00:00</published><updated>2020-12-27T00:00:00+00:00</updated><id>https://piet.me/blog/customized-pibow-case-for-raspberry-pi-pijuice-pitft/</id>
+    <published>2020-12-27T00:00:00Z</published><updated>2020-12-27T00:00:00Z</updated><id>https://piet.me/blog/customized-pibow-case-for-raspberry-pi-pijuice-pitft/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>I recently setup a PiHole for my home network. I’m using a Raspberry Pi 3B+ with a PiJuice and a 3.5 inch PiTFT screen. Finding a case to fit all these was a little tricky. I don’t have a 3D printer (yet) and the tall cases I could find were a bit ugly.</summary><content type="html">&lt;p&gt;I recently setup a &lt;a href=&quot;https://pi-hole.net/&quot;&gt;PiHole&lt;/a&gt; for my home network. I’m using a Raspberry Pi 3B+ with a PiJuice and a 3.5 inch PiTFT screen. Finding a case to fit all these was a little tricky. I don’t have a 3D printer (yet) and the tall cases I could find were a bit ugly.&lt;/p&gt;
 &lt;p&gt;I ended up using a PiBow case designed for PiTFT and made a couple modifications to get it to work with the PiJuice. I’m pretty happy with the result and wanted to share it.&lt;/p&gt;
@@ -178,31 +178,31 @@
 &lt;h2&gt;The build&lt;/h2&gt;
 &lt;p&gt;Before starting, be sure to remove the protective film from each of the layers of the PiBow. I put this all together with the film attached and had to redo the whole thing. 🤦 Fortunately this gave me the opportunity to take photos of the process.&lt;/p&gt;
 &lt;p&gt;Here’s the mess of stuff I started with.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-01.jpeg&quot; alt=&quot;My desk scattered with raspberry pi parts for this project&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-01.jpeg&quot; alt=&quot;My desk scattered with raspberry pi parts for this project&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Mount the PiJuice on the raspberry pi with Layer 3 of the PiBow in-between. Use the nylon standoffs and screws that come with the PiJuice.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-02.jpeg&quot; alt=&quot;Raspberry Pi with PiJuice attached&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-02.jpeg&quot; alt=&quot;Raspberry Pi with PiJuice attached&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Turn the Pi over and use 5mm stand offs to secure the PiJuice to the Raspberry Pi.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-03.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with standoff bolts attached.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-03.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with standoff bolts attached.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;On the PiBow layers you’ll see numbers etched on the tops. Add layers 2, 1, and the base. I have the &lt;a href=&quot;https://shop.pimoroni.com/products/pibow-modification-layers?variant=1048948309&quot;&gt;Lego PiBow base&lt;/a&gt; but the regular base will work too. Be careful to put the Lego base the right way up or it won’t work.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-04.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with PiBow layers attached&quot;&gt;&lt;br&gt;
-&lt;img src=&quot;https://piet.me/images/blog/pihole-case-05.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with PiBow base attached&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-04.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with PiBow layers attached&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://piet.me/images/blog/pihole-case-05.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with PiBow base attached&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Secure the base using the extended PiBow bolts in the corners &lt;em&gt;and&lt;/em&gt; use M2.5 screws going into the standoffs to secure the Raspberry Pi and PiJuice.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-06.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with PiBow base attached with all screws and bolts added&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-06.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with PiBow base attached with all screws and bolts added&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Rather than using layers 4, 5, 6, and 7 that come with the PiBow kit, we’ll use 4 nylon washers on each corner bolt. Because of the buttons and power socket on the PiJuice I couldn’t use the standard PiBow layers that normally surround the Raspberry Pi HDMI and power ports.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-07.jpeg&quot; alt=&quot;Raspberry Pi with PiBow case bottom assembled and washers on vertical corner bolts.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-07.jpeg&quot; alt=&quot;Raspberry Pi with PiBow case bottom assembled and washers on vertical corner bolts.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Now add layer 7 and three clear expansion layers. These layers will surround the PiTFT.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-08.jpeg&quot; alt=&quot;Raspberry Pi with PiJuice and PiBow extension layers&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-08.jpeg&quot; alt=&quot;Raspberry Pi with PiJuice and PiBow extension layers&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;For the PiTFT to fit on top of the PiJuice I had to carefully clip the 26 pins on the back of the screen.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-09.jpeg&quot; alt=&quot;Back of PiTFT screen with pins clipped.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-09.jpeg&quot; alt=&quot;Back of PiTFT screen with pins clipped.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Finally I used layer 9 and secured it all using the nylon bolts.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-10.jpeg&quot; alt=&quot;Raspberry Pi with PiJuice and PiTFT attached in PiBow case.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-10.jpeg&quot; alt=&quot;Raspberry Pi with PiJuice and PiTFT attached in PiBow case.&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Done!&lt;/h2&gt;
 &lt;p&gt;That’s it! Pretty good looking if I say so myself. :) Especially running with no cables and &lt;a href=&quot;https://github.com/pi-hole/PADD&quot;&gt;PADD&lt;/a&gt; on the display.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-11.jpeg&quot; alt=&quot;Raspberry Pi corner view&quot;&gt;&lt;br&gt;
-&lt;img src=&quot;https://piet.me/images/blog/pihole-case-12.jpeg&quot; alt=&quot;Raspberry Pi side view&quot;&gt;&lt;br&gt;
-&lt;img src=&quot;https://piet.me/images/blog/pihole-case-13.jpeg&quot; alt=&quot;Raspberry Pi top view&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-11.jpeg&quot; alt=&quot;Raspberry Pi corner view&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://piet.me/images/blog/pihole-case-12.jpeg&quot; alt=&quot;Raspberry Pi side view&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://piet.me/images/blog/pihole-case-13.jpeg&quot; alt=&quot;Raspberry Pi top view&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Here’s the PiHole running. To mount the Pi I attached a flat piece of Lego to the wall in my utility closet using some removable adhesive strips.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-14.jpeg&quot; alt=&quot;Raspberry Pi attached to wall in utility closet.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-14.jpeg&quot; alt=&quot;Raspberry Pi attached to wall in utility closet.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;I may find some slightly longer bolts in the future because I’d like to add the last clear layer included in the PiBow kit. The extended bolts weren’t quite long enough.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Questions? Comments? Post a message below or ping me on &lt;a href=&quot;https://twitter.com/pietvanzoen&quot;&gt;twitter&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </content>
@@ -216,7 +216,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2020-07-02T00:00:00+00:00</published><updated>2020-07-02T00:00:00+00:00</updated><id>https://piet.me/blog/rethinking-my-piece-of-the-internet/</id>
+    <published>2020-07-02T00:00:00Z</published><updated>2020-07-02T00:00:00Z</updated><id>https://piet.me/blog/rethinking-my-piece-of-the-internet/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>I am a strong proponent of people owning their own personal space on the internet. A space where they can express their interests and who they are as they see fit. (And preferably not owned by a social media giant.) But as a person who builds things on the internet for their profession, it’s easy to feel that my website should be a professional brand website for Piet the developer.</summary><content type="html">&lt;p&gt;I am a strong proponent of people owning their own personal space on the internet. A space where they can express their interests and who they are as they see fit. (And preferably not owned by a social media giant.) But as a person who builds things on the internet for their profession, it’s easy to feel that my website should be a professional brand website for Piet the developer.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -240,7 +240,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2019-12-01T00:00:00+00:00</published><updated>2019-12-01T00:00:00+00:00</updated><id>https://piet.me/focus-on-the-problem/</id>
+    <published>2019-12-01T00:00:00Z</published><updated>2019-12-01T00:00:00Z</updated><id>https://piet.me/focus-on-the-problem/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>Way too often I find myself thinking, &#39;Oh I should setup this super complicated solution to a problem that maybe one day, in an apocalypse, I might encounter.&#39;</summary><content type="html">&lt;p&gt;Way too often I find myself thinking, &#39;Oh I should setup this super complicated solution to a problem that maybe one day, in an apocalypse, I might encounter.&#39;&lt;/p&gt;
 &lt;p&gt;Example: My local Dropbox backup. For some reason I&#39;ve had it in my head that I need a backup of my Dropbox files on a locally accessible hard drive. The solution I&#39;ve tried to implement several times is a raspberry pi setup in a cupboard that runs &lt;a href=&quot;https://rclone.org/&quot;&gt;rclone&lt;/a&gt; and syncs my dropbox to an external hard drive. It was kind of fun to setup once. But the maintenance was a little frustrating and the solution was fairly unreliable.&lt;/p&gt;
@@ -257,7 +257,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2019-11-29T00:00:00+00:00</published><updated>2019-11-29T00:00:00+00:00</updated><id>https://piet.me/things-i-wish-i-knew-before-my-daughter-was-born/</id>
+    <published>2019-11-29T00:00:00Z</published><updated>2019-11-29T00:00:00Z</updated><id>https://piet.me/things-i-wish-i-knew-before-my-daughter-was-born/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>https://twitter.com/brianmwang/status/1199748365103161344?s=21</summary><content type="html">&lt;p&gt;&lt;a href=&quot;https://twitter.com/brianmwang/status/1199748365103161344?s=21&quot;&gt;https://twitter.com/brianmwang/status/1199748365103161344?s=21&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;There&#39;s no right way to feel when your baby is born&lt;/h2&gt;
@@ -281,7 +281,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2019-09-22T00:00:00+00:00</published><updated>2019-09-22T00:00:00+00:00</updated><id>https://piet.me/notes/martins-triathlon/</id>
+    <published>2019-09-22T00:00:00Z</published><updated>2019-09-22T00:00:00Z</updated><id>https://piet.me/notes/martins-triathlon/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>On a surprisingly warm September Sunday morning I went to support my friend Martín doing a triathlon. I’m only just getting to the point where I can run a 5k, let alone a 750m swim, a 20km cycle plus a 5k. Martín and I went running together once. At the end of the 30 minute run he hadn&#39;t broken a sweat. Whereas I came home drenched. Suffice it to say, Martín is an athlete and I (currently) am not.</summary><content type="html">&lt;p&gt;On a surprisingly warm September Sunday morning I went to support my friend Martín doing a triathlon. I’m only just getting to the point where I can run a 5k, let alone a 750m swim, a 20km cycle &lt;strong&gt;plus&lt;/strong&gt; a 5k. Martín and I went running together once. At the end of the 30 minute run he hadn&#39;t broken a sweat. Whereas I came home drenched. Suffice it to say, Martín is an athlete and I (currently) am not.&lt;/p&gt;
 &lt;p&gt;I captured some sounds from a spot about 10 meters before the finish line. The beep you can hear is the moment a runner crosses the finish line.&lt;/p&gt;
@@ -297,7 +297,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2019-08-31T00:00:00+00:00</published><updated>2019-08-31T00:00:00+00:00</updated><id>https://piet.me/notes/summer-storm/</id>
+    <published>2019-08-31T00:00:00Z</published><updated>2019-08-31T00:00:00Z</updated><id>https://piet.me/notes/summer-storm/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>The summer we moved to the Netherlands the was lovely. As we were settling into our new lives we got to enjoy some beautiful sunny days. The evenings, however, were different. With all the heat and humidity came these amazing lightening storms.</summary><content type="html">&lt;p&gt;The summer we moved to the Netherlands the was lovely. As we were settling into our new lives we got to enjoy some beautiful sunny days. The evenings, however, were different. With all the heat and humidity came these amazing lightening storms.&lt;/p&gt;
 &lt;p&gt;It was still 25+ degrees centigrade but outside it was pouring. We loved it. We would lay on our bed with the window open, listening to the rain, watching the flashes, and waiting for the noise.&lt;/p&gt;
@@ -314,7 +314,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2019-08-02T00:00:00+00:00</published><updated>2019-08-02T00:00:00+00:00</updated><id>https://piet.me/notes/polderbaan/</id>
+    <published>2019-08-02T00:00:00Z</published><updated>2019-08-02T00:00:00Z</updated><id>https://piet.me/notes/polderbaan/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>I recently took a flight from Amsterdam to London. The flight time is only 40 minutes, but before that there&#39;s a 20 minute taxi from the terminal to the runway. You cross a motorway and a canal to get this runway. It&#39;s in the middle of a field far from any buildings besides a small control tower. This runway is the Polderbaan.</summary><content type="html">&lt;p&gt;I recently took a flight from Amsterdam to London. The flight time is only 40 minutes, but before that there&#39;s a 20 minute taxi from the terminal to the runway. You cross a motorway and a canal to get this runway. It&#39;s in the middle of a field far from any buildings besides a small control tower. This runway is the Polderbaan.&lt;/p&gt;
 &lt;p&gt;Right next to the &lt;a href=&quot;https://www.schiphol.nl/en/you-and-schiphol/page/planespotting/&quot;&gt;Polderbaan&lt;/a&gt; there&#39;s a carpark that&#39;s a really nice spot to watch (and hear) the planes landing or taking off. I finally took Teddie there to watch the planes. We got there and Teddie was more interested in playing in the car or running around the carpark, which was fine.&lt;/p&gt;
@@ -331,7 +331,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2019-07-23T00:00:00+00:00</published><updated>2019-07-23T00:00:00+00:00</updated><id>https://piet.me/notes/ten-years/</id>
+    <published>2019-07-23T00:00:00Z</published><updated>2019-07-23T00:00:00Z</updated><id>https://piet.me/notes/ten-years/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>On this day in 2009 Keven and I met a small group of friends and family at the McMenameins Edgefield Hotel in Oregon. We gathered together in a shady part of the gardens and said a few words.</summary><content type="html">&lt;p&gt;On this day in 2009 Keven and I met a small group of friends and family at the McMenameins Edgefield Hotel in Oregon. We gathered together in a shady part of the gardens and said a few words.&lt;/p&gt;
 &lt;p&gt;My brother brought his camcorder. He recorded everything for my mum who couldn&#39;t make it half way across the world with only two weeks notice.&lt;/p&gt;
@@ -347,7 +347,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2019-06-21T00:00:00+00:00</published><updated>2019-06-21T00:00:00+00:00</updated><id>https://piet.me/notes/less-ordinary/</id>
+    <published>2019-06-21T00:00:00Z</published><updated>2019-06-21T00:00:00Z</updated><id>https://piet.me/notes/less-ordinary/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>I recently rediscovered this old recording I made in February 2006.</summary><content type="html">&lt;p&gt;I recently rediscovered this old recording I made in February 2006.&lt;/p&gt;
 &lt;p&gt;I was visiting my mum and step-dad in Minehead in the UK. I brought my guitar and my 2006 white MacBook with me. I&#39;d been playing around with a song for a while and decided to put a recording together.&lt;/p&gt;
@@ -365,7 +365,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2019-06-07T00:00:00+00:00</published><updated>2019-06-07T00:00:00+00:00</updated><id>https://piet.me/notes/mama/</id>
+    <published>2019-06-07T00:00:00Z</published><updated>2019-06-07T00:00:00Z</updated><id>https://piet.me/notes/mama/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>Dinner time Teddie noises.</summary><content type="html">&lt;p&gt;Dinner time Teddie noises.&lt;/p&gt;
 </content>
@@ -379,7 +379,7 @@
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2018-12-05T00:00:00+00:00</published><updated>2018-12-05T00:00:00+00:00</updated><id>https://piet.me/blog/x-reasons-not-to-skip-the-tests/</id>
+    <published>2018-12-05T00:00:00Z</published><updated>2018-12-05T00:00:00Z</updated><id>https://piet.me/blog/x-reasons-not-to-skip-the-tests/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>We&#39;ve all been tempted to skip writing the tests. Whether it&#39;s time pressure, business pressure, the complexity of testing, or we just want to get on with something else. We might be tempted to say &amp;quot;YOLO!&amp;quot; and move on. So here&#39;s a list of reasons why you might want to think twice before doing that.</summary><content type="html">&lt;p&gt;We&#39;ve all been tempted to skip writing the tests. Whether it&#39;s time pressure, business pressure, the complexity of testing, or we just want to get on with something else. We might be tempted to say &amp;quot;YOLO!&amp;quot; and move on. So here&#39;s a list of reasons why you might want to think twice before doing that.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -431,7 +431,7 @@
 &lt;li&gt;&lt;a href=&quot;https://www.geepawhill.org/2018/04/14/tdd-the-lump-of-coding-fallacy/&quot;&gt;TDD &amp;amp; The Lump Of Coding Fallacy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://alistapart.com/article/writing-testable-javascript&quot;&gt;Writing Testable JavaScript - Rebecca Murphey&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;br&gt;
+&lt;br /&gt;
 _Also posted on [medium.com](https://medium.com/@pietvanzoen/x-reasons-not-to-skip-the-tests-4ac8dfb2c6d2)._
 </content>
   </entry>
@@ -444,7 +444,7 @@ _Also posted on [medium.com](https://medium.com/@pietvanzoen/x-reasons-not-to-sk
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2018-10-29T00:00:00+00:00</published><updated>2018-10-29T00:00:00+00:00</updated><id>https://piet.me/notes/minsk-tunnel/</id>
+    <published>2018-10-29T00:00:00Z</published><updated>2018-10-29T00:00:00Z</updated><id>https://piet.me/notes/minsk-tunnel/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>I was in Minsk for work. On my walk back to the hotel I could hear singing coming from one of the pedestrian tunnels going under the main road. I took a diversion and recorded as I walked through the tunnel.</summary><content type="html">&lt;p&gt;I was in Minsk for work. On my walk back to the hotel I could hear singing coming from one of the pedestrian tunnels going under the main road. I took a diversion and recorded as I walked through the tunnel.&lt;/p&gt;
 </content>
@@ -458,8 +458,8 @@ _Also posted on [medium.com](https://medium.com/@pietvanzoen/x-reasons-not-to-sk
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2018-05-31T00:00:00+00:00</published>
-      <updated>2019-02-01T00:00:00+00:00</updated><id>https://piet.me/blog/organizing-git-projects/</id>
+    <published>2018-05-31T00:00:00Z</published>
+      <updated>2019-02-01T00:00:00Z</updated><id>https://piet.me/blog/organizing-git-projects/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>For a while I&#39;ve been looking for a better way to organize the git repos I work with. I&#39;ve tried just dumping them into a single directory, and I&#39;ve tried adding sub folders such as personal, work, and tools. But both of these solutions had the same problems:</summary><content type="html">&lt;p&gt;For a while I&#39;ve been looking for a better way to organize the git repos I work with. I&#39;ve tried just dumping them into a single directory, and I&#39;ve tried adding sub folders such as &lt;code&gt;personal&lt;/code&gt;, &lt;code&gt;work&lt;/code&gt;, and &lt;code&gt;tools&lt;/code&gt;. But both of these solutions had the same problems:&lt;/p&gt;
 &lt;ul&gt;
@@ -518,7 +518,7 @@ _Also posted on [medium.com](https://medium.com/@pietvanzoen/x-reasons-not-to-sk
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2017-07-05T00:00:00+00:00</published><updated>2017-07-05T00:00:00+00:00</updated><id>https://piet.me/notes/heartbeats/</id>
+    <published>2017-07-05T00:00:00Z</published><updated>2017-07-05T00:00:00Z</updated><id>https://piet.me/notes/heartbeats/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>A happy heartbeat.</summary><content type="html">&lt;p&gt;A happy heartbeat.&lt;/p&gt;
 </content>
@@ -532,7 +532,7 @@ _Also posted on [medium.com](https://medium.com/@pietvanzoen/x-reasons-not-to-sk
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2017-05-18T00:00:00+00:00</published><updated>2017-05-18T00:00:00+00:00</updated><id>https://piet.me/blog/jsconf-eu-2017/</id>
+    <published>2017-05-18T00:00:00Z</published><updated>2017-05-18T00:00:00Z</updated><id>https://piet.me/blog/jsconf-eu-2017/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.</summary><content type="html">&lt;p&gt;Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -560,7 +560,7 @@ _Also posted on [medium.com](https://medium.com/@pietvanzoen/x-reasons-not-to-sk
 &lt;li&gt;&lt;a href=&quot;https://speakerdeck.com/lc512k/jsconfeu-2017-yes-your-site-can-and-should-be-accessible&quot;&gt;YES! Your site can (and should) be accessible - Speaker Deck&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Getting out of our performance bubble&lt;/h2&gt;
-&lt;p&gt;I&#39;m gonna go ahead and say that &lt;a href=&quot;https://twitter.com/benschwarz&quot;&gt;Ben Schwarzx&lt;/a&gt; from &lt;a href=&quot;https://calibreapp.com/&quot;&gt;Calibre&lt;/a&gt; has coined the phrase &amp;quot;Wealthy Western Web&amp;quot; to describe the web that most of us develop in.&lt;br&gt;
+&lt;p&gt;I&#39;m gonna go ahead and say that &lt;a href=&quot;https://twitter.com/benschwarz&quot;&gt;Ben Schwarzx&lt;/a&gt; from &lt;a href=&quot;https://calibreapp.com/&quot;&gt;Calibre&lt;/a&gt; has coined the phrase &amp;quot;Wealthy Western Web&amp;quot; to describe the web that most of us develop in.&lt;br /&gt;
 We work on €2000+ computers on 100+ Mbit/s fiber. Even on mobile we&#39;re often working with high-end devices on 20 Mbit/s LTE connections. The World Wide Web is a very different place. The average device is about 5x slower than our laptops and 60% of the world are on 2g mobile data connections.&lt;/p&gt;
 &lt;p&gt;There are a number of ways to start testing the performance of our apps against devices that most people use. Calibre&#39;s platform and Google Lighthouse provide people-centric metrics for web app performance. Specifically &lt;strong&gt;Time to First Interaction&lt;/strong&gt; is a much better metric for app performance than something like page load time because it considers the time it takes for the device to parse the application and render it to a point that it&#39;s usable. A 410kb gzipped bundle is nice and small to download but once uncompressed the device has to handle 3-4 megabytes of code.&lt;/p&gt;
 &lt;p&gt;There were lots of talks about performance optimisation at JSConf. But without metrics to judge against you have no idea how effective your optimisations are and if you&#39;re optimising the right thing. I&#39;m really looking forward to giving Calibre a shot after chatting with Ben.&lt;/p&gt;
@@ -592,7 +592,7 @@ We work on €2000+ computers on 100+ Mbit/s fiber. Even on mobile we&#39;re oft
 &lt;p&gt;Building tools and events that are accessible to all people is achievable &lt;strong&gt;if you prioritise it&lt;/strong&gt;. And you should because it&#39;s just the right thing to do, and if you need another reason, you should because it benefits everyone.&lt;/p&gt;
 &lt;p&gt;Making code performant for the average device improves performance on all devices. Making apps work for all platforms (browsers, screen readers, keyboards) results in a better user experience for all. Continuously striving to provide spaces (physical or digital) accessible to all people make your communities more cohesive and wiser.&lt;/p&gt;
 &lt;p&gt;The talks and the conference itself were an eye opening example of what events and the web could and should be, and it&#39;s an awesome picture. There are lots of hard problems to solve, but that&#39;s what we as developers signed up for, to solve hard problems. So let&#39;s do it.&lt;/p&gt;
-&lt;img alt=&quot;The Usabilla frontend team cramed into a photo booth&quot; style=&quot;max-width: 150px; width: 30%&quot; class=&quot;img-right&quot; src=&quot;https://piet.me/images/usabilla-frontend-team-sized.jpg&quot;&gt;
+&lt;img alt=&quot;The Usabilla frontend team cramed into a photo booth&quot; style=&quot;max-width: 150px; width: 30%&quot; class=&quot;img-right&quot; src=&quot;https://piet.me/images/usabilla-frontend-team-sized.jpg&quot; /&gt;
 &lt;h2&gt;Final Final Words… Thank you&lt;/h2&gt;
 &lt;p&gt;First, thanks to all the organisers and speakers at JSConf for putting on a terrific and inspiring event.&lt;/p&gt;
 &lt;p&gt;I also want to thank &lt;a href=&quot;https://usabilla.com/&quot;&gt;Usabilla&lt;/a&gt; for giving us the opportunity to attend. The company paid for our flights, accommodation, and the conference fees. I&#39;m well aware that without a company that prioritises all the points above I probably would not have been able to attend.&lt;/p&gt;
@@ -614,7 +614,7 @@ We work on €2000+ computers on 100+ Mbit/s fiber. Even on mobile we&#39;re oft
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2017-05-17T00:00:00+00:00</published><updated>2017-05-17T00:00:00+00:00</updated><id>https://piet.me/notes/paris-metro/</id>
+    <published>2017-05-17T00:00:00Z</published><updated>2017-05-17T00:00:00Z</updated><id>https://piet.me/notes/paris-metro/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>French accordion player on the Paris metro.</summary><content type="html">&lt;p&gt;French accordion player on the Paris metro.&lt;/p&gt;
 </content>
@@ -628,7 +628,7 @@ We work on €2000+ computers on 100+ Mbit/s fiber. Even on mobile we&#39;re oft
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2017-05-16T00:00:00+00:00</published><updated>2017-05-16T00:00:00+00:00</updated><id>https://piet.me/notes/paris-market/</id>
+    <published>2017-05-16T00:00:00Z</published><updated>2017-05-16T00:00:00Z</updated><id>https://piet.me/notes/paris-market/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>Strolling through a Parisian market with my wife and mother-in-law. French, and ambulances, and squid, oh my!</summary><content type="html">&lt;p&gt;Strolling through a Parisian market with my wife and mother-in-law. French, and ambulances, and squid, oh my!&lt;/p&gt;
 </content>
@@ -642,7 +642,7 @@ We work on €2000+ computers on 100+ Mbit/s fiber. Even on mobile we&#39;re oft
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2017-05-13T00:00:00+00:00</published><updated>2017-05-13T00:00:00+00:00</updated><id>https://piet.me/notes/windmill-harp/</id>
+    <published>2017-05-13T00:00:00Z</published><updated>2017-05-13T00:00:00Z</updated><id>https://piet.me/notes/windmill-harp/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>On national windmill day we came across an art performance in a field by a windmill. It was a mix of ambient audio coming from speakers attached to the sails of the windmill accompanied by a harp and poetry recitals.</summary><content type="html">&lt;p&gt;On national windmill day we came across an art performance in a field by a windmill. It was a mix of ambient audio coming from speakers attached to the sails of the windmill accompanied by a harp and poetry recitals.&lt;/p&gt;
 &lt;p&gt;This is a short recording from that performance.&lt;/p&gt;
@@ -657,7 +657,7 @@ We work on €2000+ computers on 100+ Mbit/s fiber. Even on mobile we&#39;re oft
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2017-02-27T00:00:00+00:00</published><updated>2017-02-27T00:00:00+00:00</updated><id>https://piet.me/blog/automated-middleman-deploy-to-github-pages/</id>
+    <published>2017-02-27T00:00:00Z</published><updated>2017-02-27T00:00:00Z</updated><id>https://piet.me/blog/automated-middleman-deploy-to-github-pages/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>I recently switched from Jekyll to Middleman for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.</summary><content type="html">&lt;p&gt;I recently switched from Jekyll to &lt;a href=&quot;https://middlemanapp.com/&quot;&gt;Middleman&lt;/a&gt; for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -764,7 +764,7 @@ Enter passphrase (empty for no passphrase):
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2016-07-08T00:00:00+00:00</published><updated>2016-07-08T00:00:00+00:00</updated><id>https://piet.me/blog/moving-on-what-i-learned-at-cozy/</id>
+    <published>2016-07-08T00:00:00Z</published><updated>2016-07-08T00:00:00Z</updated><id>https://piet.me/blog/moving-on-what-i-learned-at-cozy/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>Today is my last day at Cozy. 😢 My wife and I are flying to the Netherlands to start a new adventure close to my Dutch family. I started at Cozy in January 2014 as a front-end engineer. I have an agency background, and after spending several years working on client websites, I was excited to have a chance to do something different — to work on one product with a cool team.</summary><content type="html">&lt;p&gt;Today is my last day at Cozy. 😢  My wife and I are flying to the Netherlands to start a new adventure close to my Dutch family. I started at Cozy in January 2014 as a front-end engineer. I have an agency background, and after spending several years working on client websites, I was excited to have a chance to do something different — to work on one product with a cool team.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -776,7 +776,7 @@ Enter passphrase (empty for no passphrase):
 &lt;h2&gt;Choice of work fosters ownership&lt;/h2&gt;
 &lt;p&gt;At Cozy, engineers often have the opportunity to choose what to work on next. For me, this fostered a sense of ownership of my work. And with ownership comes pride, not just after the fact, but during the process of pushing yourself to produce excellent work.&lt;/p&gt;
 &lt;h2&gt;Always be learning&lt;/h2&gt;
-&lt;p&gt;During my first year at Cozy, I was constantly learning and being exposed to new ideas and concepts I hadn’t encountered before. I learned by just doing my job. But eventually that passive learning started to taper off.&lt;br&gt;
+&lt;p&gt;During my first year at Cozy, I was constantly learning and being exposed to new ideas and concepts I hadn’t encountered before. I learned by just doing my job. But eventually that passive learning started to taper off.&lt;br /&gt;
 At that point, I started reading technical books and articles during my bus ride to work. Those 20 minutes of reading each morning helped broaden my ideas about the work I was doing at Cozy, while making me a more well-rounded engineer.&lt;/p&gt;
 &lt;h2&gt;Fight with the tech you have…&lt;/h2&gt;
 &lt;p&gt;…not the tech you want. New ways to build a product can be shiny and exciting. But often enough, you have existing code that’s doing a good job. There’s no need to replace it wholesale when what you have fits your needs. If the way you’re building your product seems like it isn’t working in some way, try to evolve and improve it before throwing everything out. There’s a lot of value in something your team knows how to use, something that’s worked in the past.&lt;/p&gt;
@@ -793,7 +793,7 @@ At that point, I started reading technical books and articles during my bus ride
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2016-06-10T00:00:00+00:00</published><updated>2016-06-10T00:00:00+00:00</updated><id>https://piet.me/blog/why-i-love-test-first-tdd/</id>
+    <published>2016-06-10T00:00:00Z</published><updated>2016-06-10T00:00:00Z</updated><id>https://piet.me/blog/why-i-love-test-first-tdd/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>Twelve months ago I had hardly written a single test. After some encouragement and guidance on how to write tests my world changed. Yes, there&#39;s lots of evidence that says writing tests reduces bug density (which is awesome), but that alone isn&#39;t necessarily going to persuade you to take the time to do them. What made me adopt a workflow where I write tests first? The fact that I enjoyed it!</summary><content type="html">&lt;p&gt;Twelve months ago I had hardly written a single test. After some encouragement and guidance on how to write tests my world changed. Yes, there&#39;s lots of evidence that says writing tests reduces bug density (which is awesome), but that alone isn&#39;t necessarily going to persuade you to take the time to do them. What made me adopt a workflow where I write tests first? The fact that I enjoyed it!&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -828,7 +828,7 @@ At that point, I started reading technical books and articles during my bus ride
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2016-03-20T00:00:00+00:00</published><updated>2016-03-20T00:00:00+00:00</updated><id>https://piet.me/blog/lodash-knockout-and-functional-programming-with-kompose/</id>
+    <published>2016-03-20T00:00:00Z</published><updated>2016-03-20T00:00:00Z</updated><id>https://piet.me/blog/lodash-knockout-and-functional-programming-with-kompose/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don&#39;t always play nice if you happen to use Knockout observables. I&#39;m going to introduce a way to make handling observables in functional style easier.</summary><content type="html">&lt;p&gt;Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don&#39;t always play nice if you happen to use Knockout observables. I&#39;m going to introduce a way to make handling observables in functional style easier.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -972,7 +972,7 @@ youngestDatableAges();
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2015-01-11T00:00:00+00:00</published><updated>2015-01-11T00:00:00+00:00</updated><id>https://piet.me/blog/professional-resolutions/</id>
+    <published>2015-01-11T00:00:00Z</published><updated>2015-01-11T00:00:00Z</updated><id>https://piet.me/blog/professional-resolutions/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>I&#39;ve never been big on New Years resolutions. I&#39;ve always leaned towards a ’let my yes be yes, and let my no be no’ mindset, and I&#39;ve never been confident in my ability to keep a resolution so making them just seemed disingenuous for me. But this year I feel different about it. Perhaps it&#39;s due to hitting the big 3-0. So here&#39;s what I&#39;d like to focus on this year:</summary><content type="html">&lt;p&gt;I&#39;ve never been big on New Years resolutions. I&#39;ve always leaned towards a ’let my yes be yes, and let my no be no’ mindset, and I&#39;ve never been confident in my ability to keep a resolution so making them just seemed disingenuous for me. But this year I feel different about it. Perhaps it&#39;s due to hitting the big 3-0. So here&#39;s what I&#39;d like to focus on this year:&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -994,7 +994,7 @@ youngestDatableAges();
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2014-05-15T00:00:00+00:00</published><updated>2014-05-15T00:00:00+00:00</updated><id>https://piet.me/blog/using-env-variables/</id>
+    <published>2014-05-15T00:00:00Z</published><updated>2014-05-15T00:00:00Z</updated><id>https://piet.me/blog/using-env-variables/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>Often enough you&#39;ll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it&#39;s not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter &#39;Environment Variables&#39;.</summary><content type="html">&lt;p&gt;Often enough you&#39;ll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it&#39;s not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter &#39;Environment Variables&#39;.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -1049,7 +1049,7 @@ wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&a
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2013-11-10T00:00:00+00:00</published><updated>2013-11-10T00:00:00+00:00</updated><id>https://piet.me/blog/the-internet-for-everyone/</id>
+    <published>2013-11-10T00:00:00Z</published><updated>2013-11-10T00:00:00Z</updated><id>https://piet.me/blog/the-internet-for-everyone/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>I&#39;ve been excited to hear more about initiatives like Code Club and Code.org, which aim to make code a normal part of a child&#39;s education.</summary><content type="html">&lt;p&gt;I&#39;ve been excited to hear more about initiatives like &lt;a href=&quot;https://www.codeclub.org.uk/&quot;&gt;Code Club&lt;/a&gt; and &lt;a href=&quot;http://code.org/&quot;&gt;Code.org&lt;/a&gt;, which aim to make code a normal part of a child&#39;s education.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -1075,7 +1075,7 @@ wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&a
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2013-10-12T00:00:00+00:00</published><updated>2013-10-12T00:00:00+00:00</updated><id>https://piet.me/blog/jekyll-and-github-pages/</id>
+    <published>2013-10-12T00:00:00Z</published><updated>2013-10-12T00:00:00Z</updated><id>https://piet.me/blog/jekyll-and-github-pages/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>When my shared hosting plan was coming up for renewal I struggled to find a hosting service that I liked. I was hoping for good uptime, something that didn&#39;t break the bank, and preferably something with a decent UI. (Maybe I was asking to much.) Webfaction was a great option for a while but $9.50 a month for a few small sites was more than I wanted to spend. That said, the UI and features make Webfactions my favourite shared hosting option.</summary><content type="html">&lt;p&gt;When my shared hosting plan was coming up for renewal I struggled to find a hosting service that I liked. I was hoping for good uptime, something that didn&#39;t break the bank, and preferably something with a decent UI. (Maybe I was asking to much.) &lt;a href=&quot;https://www.webfaction.com/?affiliate=pietvanz&quot;&gt;Webfaction&lt;/a&gt; was a great option for a while but $9.50 a month for a few small sites was more than I wanted to spend. That said, the UI and features make Webfactions my favourite shared hosting option.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -1084,7 +1084,7 @@ wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&a
 &lt;p&gt;Github Pages provides free hosting for static pages. So all you can use is html, css, and javascript. No server-side scripts and no databases. You can do custom domains, and your site is deployed straight from a repo every time you push to it.&lt;/p&gt;
 &lt;p&gt;But obviously this wouldn&#39;t work for a most blog platforms which rely on databases and server-side scripting to store and serve pages. This is where Jekyll comes in. You setup your includes, layouts, variables, pages, and blog posts, and Jekyll will generate a static site from them. The added bonus is that you can write your posts and pages in &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;markdown&lt;/a&gt; and Jekyll renders them as html.&lt;/p&gt;
 &lt;p&gt;What&#39;s also fun, is that Github pages will build your Jekyll site for you each time you push a change. So that&#39;s what I&#39;m doing. My site is Jekyll generated and hosted on Github, and I love it. No database, great uptime, really fast, and free.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/images/30-rock-yes.gif&quot; alt=&quot;thumbs up&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/30-rock-yes.gif&quot; alt=&quot;thumbs up&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;But it&#39;s not for everything&lt;/h2&gt;
 &lt;p&gt;The catch with Github pages is that A) for it to be free you have to use a public repo, and B) it&#39;s intended purpose is for &amp;quot;you and your projects&amp;quot;. As far as I can tell there aren&#39;t any actual restrictions on content, but I wouldn&#39;t feel comfortable using Github pages for Cafe van Zoen, which is more of a personal blog.&lt;/p&gt;
 &lt;p&gt;For Cafe van Zoen I ended up using &lt;a href=&quot;http://aws.amazon.com/s3/&quot;&gt;Amazon S3&lt;/a&gt;. It took longer to setup than Github pages, but I figured out a pretty good workflow for setting up sites on S3. I&#39;ll write more about that in another post soon.&lt;/p&gt;
@@ -1105,7 +1105,7 @@ wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&a
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2013-07-12T00:00:00+00:00</published><updated>2013-07-12T00:00:00+00:00</updated><id>https://piet.me/blog/giving-something-back/</id>
+    <published>2013-07-12T00:00:00Z</published><updated>2013-07-12T00:00:00Z</updated><id>https://piet.me/blog/giving-something-back/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>A year ago my wife and I bought our first house. Like any other unprepared first-time homeowners we asked neighbors for advice, tools and a helping hand with projects. A year later we&#39;re a little more confident, own a few more tools and now we get be the neighbor who can lend a hand. I think I&#39;ve reached a similar point with web development.</summary><content type="html">&lt;p&gt;A year ago my wife and I bought our first house. Like any other unprepared first-time homeowners we asked neighbors for advice, tools and a helping hand with projects. A year later we&#39;re a little more confident, own a few more tools and now &lt;em&gt;we&lt;/em&gt; get be the neighbor who can lend a hand. I think I&#39;ve reached a similar point with web development.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -1130,7 +1130,7 @@ wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&a
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2013-06-13T00:00:00+00:00</published><updated>2013-06-13T00:00:00+00:00</updated><id>https://piet.me/blog/font-end-legos/</id>
+    <published>2013-06-13T00:00:00Z</published><updated>2013-06-13T00:00:00Z</updated><id>https://piet.me/blog/font-end-legos/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
       <summary>It doesn&#39;t take long for a project to get unwieldy if you don&#39;t have a good system for creating your styles. I recently attended Webvisions where Shay Howe ran a workshop titled &amp;quot;Front-end Legos&amp;quot; that gave some pretty good advice on keeping CSS clean and maintainable. Here&#39;s the run down of the best tips I took away from the workshop:</summary><content type="html">&lt;p&gt;It doesn&#39;t take long for a project to get unwieldy if you don&#39;t have a good system for creating your styles. I recently attended &lt;a href=&quot;http://webvisionsevent.com/&quot;&gt;Webvisions&lt;/a&gt; where &lt;a href=&quot;https://shayhowe.com/&quot;&gt;Shay Howe&lt;/a&gt; ran a workshop titled &amp;quot;Front-end Legos&amp;quot; that gave some pretty good advice on keeping CSS clean and maintainable. Here&#39;s the run down of the best tips I took away from the workshop:&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -1157,7 +1157,7 @@ wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&a
   &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#333&lt;/span&gt;;
   &lt;span class=&quot;hljs-attribute&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#eee&lt;/span&gt;;
 }
-&amp;lt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;class&lt;/span&gt;=&amp;quot;&lt;span class=&quot;hljs-selector-tag&quot;&gt;news&lt;/span&gt;&amp;quot;&amp;gt;&amp;lt;/&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt; class=&amp;quot;news&amp;quot;&amp;gt;&amp;lt;/&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Try:&lt;/p&gt;
 &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.col_6&lt;/span&gt; {
@@ -1168,7 +1168,7 @@ wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&a
   &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#333&lt;/span&gt;;
   &lt;span class=&quot;hljs-attribute&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#eee&lt;/span&gt;;
 }
-&amp;lt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;class&lt;/span&gt;=&amp;quot;&lt;span class=&quot;hljs-selector-tag&quot;&gt;col_6&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;feat_box&lt;/span&gt;&amp;quot;&amp;gt;&amp;lt;/&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt; class=&amp;quot;col_6 feat_box&amp;quot;&amp;gt;&amp;lt;/&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In the first example &lt;code&gt;.news&lt;/code&gt; has a specific use and probably a specific placement in a layout. In the second example we&#39;ve created a layout class that can be used for multiple components and a &lt;code&gt;.feat_box&lt;/code&gt; which can be used on more than just a news article.&lt;/p&gt;
 &lt;p&gt;Use a CSS grid system (such as &lt;a href=&quot;http://foundation.zurb.com/grid.php&quot;&gt;foundation&#39;s grid system&lt;/a&gt;) or create your own grid system, then keep your components reusable throughout your layout by focusing on presentation/theme only.&lt;/p&gt;

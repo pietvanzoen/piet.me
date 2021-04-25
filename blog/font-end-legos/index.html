@@ -1,7 +1,7 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <title>Front-end Legos: Keeping your CSS maintainable! - Piet van Zoen</title>
-<link rel="stylesheet" href="/stylesheets/main.css?1619356938899">
+<link rel="stylesheet" href="/stylesheets/main.css?1619358041171">
 
 <link rel="alternate" type="application/atom+xml" href="/feed.xml">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=NmEn8A8Wqa">
@@ -30,7 +30,7 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Front-end Legos: Keeping your CSS maintainable! - Piet van Zoen</title>
-    <link rel="stylesheet" href="/stylesheets/main.css?1619356938899">
+    <link rel="stylesheet" href="/stylesheets/main.css?1619358041171">
 
   </head>
   <body class="">
@@ -84,7 +84,7 @@
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
   <span class="hljs-attribute">background</span>: <span class="hljs-number">#eee</span>;
 }
-&lt;<span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">news</span>"&gt;&lt;/<span class="hljs-selector-tag">div</span>&gt;
+&lt;<span class="hljs-selector-tag">div</span> class="news"&gt;&lt;/<span class="hljs-selector-tag">div</span>&gt;
 </code></pre>
 <p>Try:</p>
 <pre class="hljs"><code><span class="hljs-selector-class">.col_6</span> {
@@ -95,7 +95,7 @@
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
   <span class="hljs-attribute">background</span>: <span class="hljs-number">#eee</span>;
 }
-&lt;<span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">col_6</span> <span class="hljs-selector-tag">feat_box</span>"&gt;&lt;/<span class="hljs-selector-tag">div</span>&gt;
+&lt;<span class="hljs-selector-tag">div</span> class="col_6 feat_box"&gt;&lt;/<span class="hljs-selector-tag">div</span>&gt;
 </code></pre>
 <p>In the first example <code>.news</code> has a specific use and probably a specific placement in a layout. In the second example we've created a layout class that can be used for multiple components and a <code>.feat_box</code> which can be used on more than just a news article.</p>
 <p>Use a CSS grid system (such as <a href="http://foundation.zurb.com/grid.php">foundation's grid system</a>) or create your own grid system, then keep your components reusable throughout your layout by focusing on presentation/theme only.</p>
