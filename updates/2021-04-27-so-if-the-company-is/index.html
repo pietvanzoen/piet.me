@@ -1,7 +1,7 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<title>Using local environment (ENV) variables. - Piet van Zoen</title>
-<link rel="stylesheet" href="/stylesheets/main.css?1619504138242">
+<title>27th Apr 2021 06:14 - Piet van Zoen</title>
+<link rel="stylesheet" href="/stylesheets/main.css?1619504138235">
 
 <link rel="alternate" type="application/atom+xml" href="/feed.xml">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=NmEn8A8Wqa">
@@ -13,13 +13,13 @@
 <meta name="msapplication-config" content="/images/browserconfig.xml?v=NmEn8A8Wqa">
 <meta name="theme-color" content="#ffffff">
 
-<meta property="og:title" content="Using local environment (ENV) variables. - Piet van Zoen">
-<meta property="og:description" content="Often enough you'll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it's not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter 'Environment Variables'.">
-<meta name="description" content="Often enough you'll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it's not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter 'Environment Variables'.">
-<meta property="og:type" content="article">
+<meta property="og:title" content="27th Apr 2021 06:14 - Piet van Zoen">
+<meta property="og:description" content="So if the company is a product and their employees are their customers are they going to maintain support for the old policies for existing customers like they do for Basecamp Classic and Basecamp 2?">
+<meta name="description" content="So if the company is a product and their employees are their customers are they going to maintain support for the old policies for existing customers like they do for Basecamp Classic and Basecamp 2?">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="Piet van Zoen">
-<meta property="og:url" content="https://piet.me/blog/using-env-variables/">
-<link rel="canonical" href="https://piet.me/blog/using-env-variables/">
+<meta property="og:url" content="https://piet.me/updates/2021-04-27-so-if-the-company-is/">
+<link rel="canonical" href="https://piet.me/updates/2021-04-27-so-if-the-company-is/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@pietvanzoen">
 
@@ -29,8 +29,8 @@
 <link rel="pingback" href="https://webmention.io/piet.me/xmlrpc">
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Using local environment (ENV) variables. - Piet van Zoen</title>
-    <link rel="stylesheet" href="/stylesheets/main.css?1619504138242">
+    <title>27th Apr 2021 06:14 - Piet van Zoen</title>
+    <link rel="stylesheet" href="/stylesheets/main.css?1619504138236">
 
   </head>
   <body class="">
@@ -56,79 +56,14 @@
 <main role="main" id="maincontent">
   
 <article>
-  <h1 class="headline">Using local environment (ENV) variables.</h1>
-  
-  
-  <p>Often enough you'll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it's not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter 'Environment Variables'.</p>
-<!-- excerpt -->
-<h2>Setting Environment variables</h2>
-<p>In terminal you can easily set environment (or ENV) variables by running this command: <code>export VAR_NAME=foo</code>. For multi word variables be sure to wrap the variable in quotes: <code>export VAR_NAME="foo bar"</code>. But when you reboot your shell you'll lose these variables. So lets look at how to set variables that persist.</p>
-<p>Open up <code>.bash_profile</code> or <code>.bashrc</code> in your home folder using your text editor, if you don't have a bash file create it like so:</p>
-<ol>
-<li>Start up Terminal</li>
-<li>Type <code>cd ~</code> or just <code>cd</code> to go to your home folder.</li>
-<li>Type <code>touch .bash_profile</code> to create your new file.</li>
-<li>Edit <code>.bash_profile</code> with your favorite editor (or you can just type <code>open -e .bash_profile</code> to open it in the default editor.</li>
-</ol>
-<p>Once you have your <code>.bash_profile</code> open you can add <code>export VAR_NAME=VALUE</code> to set an environment variable. Once you're done save, exit and type <code>. .bash_profile</code> in your terminal to reload .bash_profile. That's it.</p>
-<p><strong>Update:</strong> A note about case-sensitivity. Depending on what system/software you're using variables are or are not case-sensitive. Always be sure not to accidentally overwrite other variables in your environment. In some systems <code>Var_Name</code> will be the same as <code>VAR_NAME</code>.</p>
-<h2>Using ENV variables in code</h2>
-<p>ENV Variables are accessible by basically any server-side programming language. Here are a few examples:</p>
-<p>Say I set this in my <code>.bash_profile</code>:</p>
-<pre class="hljs"><code><span class="hljs-built_in">export</span> WIBBLE=woo
-</code></pre>
-<p><strong>Ruby</strong></p>
-<pre class="hljs"><code>wibble = ENV[<span class="hljs-string">'WIBBLE'</span>]
-print wibble
-<span class="hljs-comment"># =&gt; 'woo'</span>
-</code></pre>
-<p><strong>Node</strong></p>
-<pre class="hljs"><code><span class="hljs-keyword">var</span> wibble = process.env.WIBBLE;
-<span class="hljs-built_in">console</span>.log(wibble);
-<span class="hljs-comment">// =&gt; 'woo'</span>
-</code></pre>
-<p><strong>Python</strong></p>
-<pre class="hljs"><code><span class="hljs-keyword">import</span> os
-wibble = os.environ[<span class="hljs-string">'WIBBLE'</span>]
-<span class="hljs-built_in">print</span> wibble
-<span class="hljs-comment"># =&gt; 'woo'</span>
-</code></pre>
-<h2>Looking up ENV variables</h2>
-<p>Finally here are a couple quick commands for looking up what ENV variables have already been set.</p>
-<ul>
-<li>To print out a list of all your ENV variables just use the command <code>env</code>.</li>
-<li>To sort the output of ENV alphabetically use <code>env | sort</code>.</li>
-<li>To search for a ENV variable use <code>env | grep WIBBLE</code>. <s>Remember this is case-sensitive</s>. Be aware that this can be case-sensitive depending on what system/software you're using.</li>
-</ul>
-<p>If you have any questions or corrections just comment or email me.</p>
+  <header>
+    <h2 class="headline">Tue, 27th Apr 2021, 06:14</h2>
+  </header>
 
-</article>
-<hr>
+  <div class="text-large"><p>So if the company is a product and their employees are their customers are they going to maintain support for the old policies for existing customers like they do for Basecamp Classic and Basecamp 2?</p>
+</div></article>
 
-<h3>Meta</h3>
-<ul>
-  <li>
-    Last Updated: <time datetime="Thu May 15 2014 00:00:00 GMT+0000 (Coordinated Universal Time)">15th May 2014 </time>
-  </li>
-  
-  <li>
-    Source: <a href="https://github.com/pietvanzoen/piet.me/tree/main/./notes/legacy/using-env-variables.md">./notes/legacy/using-env-variables.md</a>
-  </li>
-  
-  <li>
-    Tags: <a href="/tags/dev">dev</a>, <a href="/tags/command-line">command line</a></li>
-  
-</ul>
-
-
-<h3>Backlinks</h3>
-
-<p class="backlinks-default">No backlinks found.</p>
-
-
-
-
-
+<hr class="buffer-lg">
 
 <section>
 
