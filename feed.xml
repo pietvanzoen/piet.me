@@ -24,7 +24,7 @@
     <published>2021-05-05T00:00:00Z</published>
       <updated>2021-05-05T00:00:00Z</updated><id>https://piet.me/my-email-workflow-in-fastmail/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
-      <summary>I finally decided to switch from Hey email to a regular email provider. Elements of Hey&#39;s approach to email worked well for me, so I wanted to try to replicate some of it in another email provider.</summary><content type="html">&lt;p&gt;I finally decided to switch from Hey email to a regular email provider. Elements of Hey&#39;s approach to email worked well for me, so I wanted to try to replicate some of it in another email provider.&lt;/p&gt;
+      <summary>I finally decided to switch from Hey email. Elements of Hey&#39;s approach to email worked well for me, so I wanted to try to replicate some of it in another email provider.</summary><content type="html">&lt;p&gt;I finally decided to switch from Hey email. Elements of Hey&#39;s approach to email worked well for me, so I wanted to try to replicate some of it in another email provider.&lt;/p&gt;
 &lt;p&gt;After deciding to use Fastmail, I found several articles about setting up a Hey workflow with it. But the suggested setup relied on creating custom rules for each contact and I found this to be too cumbersome. I figured out a slightly different approach and wanted to share what I ended up with.&lt;/p&gt;
 &lt;h2&gt;Why Fastmail?&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://ref.fm/u26272200&quot;&gt;Fastmail&lt;/a&gt; came recommended by several friends and has a long history of providing a solid privacy concious service. Here’s what drew me to Fastmail:&lt;/p&gt;
