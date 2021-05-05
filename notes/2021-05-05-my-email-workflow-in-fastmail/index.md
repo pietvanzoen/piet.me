@@ -56,7 +56,7 @@ First let's setup the Feed and Paper Trail groups and labels. Of course, you don
 6. In the create rule drop down check the `Archive (remove Inbox label)` and `Add Label`. Create a new label called `Feed`.
 7. Repeat steps 2-6 for `Paper Trail`.
 
-![Your new Paper Trail/Feed rules should look like this](390B1DE4-1E76-4598-87BE-36B4E37B52DA.jpeg)
+![Your new Paper Trail/Feed rules should look like this](/notes/2021-05-05-my-email-workflow-in-fastmail/390B1DE4-1E76-4598-87BE-36B4E37B52DA.jpeg)
 
 Once this is setup we can move on to setup the screener.
 
@@ -70,7 +70,7 @@ Next we'll setup the Screener which will redirect any unknown senders to the `Sc
 4. Tap `Create Rule` next to the search box.
 5. In the create rule drop down check the `Archive (remove Inbox label)` and `Add Label`. Create a new label called `Screener`.
 
-![Your new Screener rule should look like this](10B10E8D-B3F5-4FBC-BEF0-C419A3569372.jpeg)
+![Your new Screener rule should look like this](/notes/2021-05-05-my-email-workflow-in-fastmail/10B10E8D-B3F5-4FBC-BEF0-C419A3569372.jpeg)
 
 At this point you'll be able to use the workflow I described above. But there are a few extra tweaks I made to improve the overall experience. 
 
