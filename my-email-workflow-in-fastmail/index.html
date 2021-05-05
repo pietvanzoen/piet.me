@@ -1,7 +1,7 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<title>13th Apr 2021 09:32 - Piet van Zoen</title>
-<link rel="stylesheet" href="/stylesheets/main.css?1620213769743">
+<title>My email workflow in Fastmail - Piet van Zoen</title>
+<link rel="stylesheet" href="/stylesheets/main.css?1620213772850">
 
 <link rel="alternate" type="application/atom+xml" href="/feed.xml">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=NmEn8A8Wqa">
@@ -13,15 +13,15 @@
 <meta name="msapplication-config" content="/images/browserconfig.xml?v=NmEn8A8Wqa">
 <meta name="theme-color" content="#ffffff">
 
-<meta property="og:title" content="13th Apr 2021 09:32 - Piet van Zoen">
-<meta property="og:description" content="I need a new word for &amp;quot;complexity&amp;quot; that isn't about saying &amp;quot;this is hard&amp;quot; but means &amp;quot;this adds more things to think about, manage, and debug&amp;quot;. Any tips?">
-<meta name="description" content="I need a new word for &amp;quot;complexity&amp;quot; that isn't about saying &amp;quot;this is hard&amp;quot; but means &amp;quot;this adds more things to think about, manage, and debug&amp;quot;. Any tips?">
-<meta property="og:type" content="website">
+<meta property="og:title" content="My email workflow in Fastmail - Piet van Zoen">
+<meta property="og:description" content="For various reasons I won’t get into here, I decided to switch from Hey email. I have really enjoyed their approach to email so I’d like to replicate some of it in Fastmail.">
+<meta name="description" content="For various reasons I won’t get into here, I decided to switch from Hey email. I have really enjoyed their approach to email so I’d like to replicate some of it in Fastmail.">
+<meta property="og:type" content="article">
 <meta property="og:site_name" content="Piet van Zoen">
-<meta property="og:url" content="https://piet.me/updates/2021-04-13-i-need-a-new-word/">
-<link rel="canonical" href="https://piet.me/updates/2021-04-13-i-need-a-new-word/">
+<meta property="og:url" content="https://piet.me/my-email-workflow-in-fastmail/">
+<link rel="canonical" href="https://piet.me/my-email-workflow-in-fastmail/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@pietvanzoen">
+<meta name="twitter:site" content="@pietvanzoen"><meta property="og:image" content="https://source.unsplash.com/XAQLv3y_2LA/400x400"><meta property="og:image:width" content="400"><meta property="og:image:height" content="400">
 
 
 
@@ -29,8 +29,8 @@
 <link rel="pingback" href="https://webmention.io/piet.me/xmlrpc">
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>13th Apr 2021 09:32 - Piet van Zoen</title>
-    <link rel="stylesheet" href="/stylesheets/main.css?1620213769743">
+    <title>My email workflow in Fastmail - Piet van Zoen</title>
+    <link rel="stylesheet" href="/stylesheets/main.css?1620213772851">
 
   </head>
   <body class="">
@@ -56,14 +56,84 @@
 <main role="main" id="maincontent">
   
 <article>
-  <header>
-    <h2 class="headline">Tue, 13th Apr 2021, 09:32</h2>
-  </header>
+  <h1 class="headline">My email workflow in Fastmail</h1>
+  <figure class="hero-image" style="background-color: #93714f">
+      <img loading="lazy" src="/images/yOQi5-1400x900.jpg" alt="My email workflow in Fastmail">
+    </figure>
+  
+  <div class="card bg-offset">
+    <strong>👷 Work in progress</strong>
+    <p>This page is particularly fresh and actively being worked on. Please be kind.</p>
+  </div>
+  
+  <p>For various reasons I won’t get into here, I decided to switch from Hey email. I have really enjoyed their approach to email so I’d like to replicate some of it in Fastmail.</p>
+<p>I’d seen several helpful articles about setting up a Hey workflow with Fastmail, but they felt a bit combersome for me. I figured out a different approach to this, and wanted to share what I ended up with.</p>
+<h2>Why Fastmail?</h2>
+<p>Fastmail came recommended by several friends and has a long history of providing a solid service. Here’s what drew me to Fastmail:</p>
+<ul>
+<li>Privacy focused. It’s a paid service, which means they don’t need to sell your information to advertisers to make money and they provide tracking pixel blocking and image proxying.</li>
+<li>It’s about half the price of Hey.</li>
+<li>Supports multiple custom domains.</li>
+<li>Decent iOS apps.</li>
+</ul>
+<p>Check out this <a href="https://www.fastmail.com/hey-fastmail/">more detailed comparison with Hey</a>.</p>
+<h2>The Setup</h2>
+<p>The key to my workflow is using contacts and contact groups to filter incoming mail into various labels.</p>
+<p>Fastmail can organise emails using folders or labels. For my purposes I’m using labels. This is configured in <code>Settings -&gt; Preferences</code> under the <code>Labels</code> section.</p>
+<h3>Screening Emails</h3>
+<p>The first step is to setup a rule that applies to any unknown senders and apply a new label called <code>Screener</code>.</p>
+<ol>
+<li>Go to <code>Settings -&gt; Filters &amp; Rules</code> and tap <code>+ Create Rule</code>.</li>
+<li>Select <code>Sender is not a contact</code> for the condition.</li>
+<li>Tap <code>Continue</code>.</li>
+<li>Tap <code>Create Rule</code> next to the search box.</li>
+<li>In the create rule drop down check the <code>Archive (remove Inbox label)</code> and <code>Add Label</code>. Create a new label called <code>Screener</code>.</li>
+</ol>
+<h3>Feed &amp; Paper Trail</h3>
+<p>I want to sort transactional emails and newsletters into their own labels, leaving any other emails to go to my inbox.</p>
+<p>To do this I setup contact groups called <code>Feed</code> and <code>Paper Trail</code> and setup rules to apply labels based on contacts in these groups.</p>
+<ol>
+<li>Go to <code>Contacts</code> and tap <code>+</code> in the sidebar to create a new group. Create two groups called <code>Feed</code> and <code>Paper Trail</code>.</li>
+<li>Go to <code>Settings -&gt; Filters &amp; Rules</code> and tap <code>+ Create Rule</code>.</li>
+<li>Select <code>Sender is a member of group...</code> and select <code>Feed</code> for the condition.</li>
+<li>Tap <code>Continue</code>.</li>
+<li>Tap <code>Create Rule</code> next to the search box.</li>
+<li>In the create rule drop down check the <code>Archive (remove Inbox label)</code> and <code>Add Label</code>. Create a new label called <code>Feed</code>.</li>
+<li>Repeat steps 2-6 for <code>Paper Trail</code>.</li>
+</ol>
+<h3>Notifications</h3>
+<p>I want to only receive emails from specific senders so I’m not constantly receiving notifications for unimportant messages.</p>
+<p>To do this we can configure Fastmail apps to only send notifications for “VIP” contacts. Then for the senders we want notifications for set them as VIP contacts.</p>
+<h2>Conclusion</h2>
+<p>Once this is setup I can screen emails in my <code>Screener</code> label and either block them or add them as a contact. Newsletters and marketing emails get added to the <code>Feed</code> contact group. Transnational emails such as receipts and service notifications get added to the <code>Paper Trail</code> contact group. This leaves any important emails from senders I care about going to the Inbox.</p>
 
-  <div class="text-large"><p>I need a new word for "complexity" that isn't about saying "this is hard" but means "this adds more things to think about, manage, and debug". Any tips?</p>
-</div></article>
+</article>
+<hr>
 
-<hr class="buffer-lg">
+<h3>Meta</h3>
+<ul>
+  <li>
+    Last Updated: <time datetime="Wed May 05 2021 00:00:00 GMT+0000 (Coordinated Universal Time)">5th May 2021 </time>
+  </li>
+  
+  <li>
+    Source: <a href="https://github.com/pietvanzoen/piet.me/tree/main/./notes/legacy/2021-05-05-my-email-workflow-in-fastmail.md">./notes/legacy/2021-05-05-my-email-workflow-in-fastmail.md</a>
+  </li>
+  
+  <li>
+    Tags: <a href="/tags/productivity">productivity</a></li>
+  
+</ul>
+
+
+<h3>Backlinks</h3>
+
+<p class="backlinks-default">No backlinks found.</p>
+
+
+
+
+
 
 <section>
 

@@ -5,13 +5,67 @@
   
   <link href="https://piet.me/feed.xml" rel="self"/>
   <link href="https://piet.me"/>
-  <updated>2021-04-05T00:00:00Z</updated>
+  <updated>2021-05-05T00:00:00Z</updated>
   <id>https://piet.me/</id>
   <author>
     <name>Piet van Zoen</name>
     <uri>https://piet.me</uri>
     <email>hi@piet.me</email>
   </author>
+  
+  <entry>
+    <title>My email workflow in Fastmail</title>
+    <link href="https://piet.me/my-email-workflow-in-fastmail/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2021-05-05T00:00:00Z</published>
+      <updated>2021-05-05T00:00:00Z</updated><id>https://piet.me/my-email-workflow-in-fastmail/</id>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
+      <summary>For various reasons I won’t get into here, I decided to switch from Hey email. I have really enjoyed their approach to email so I’d like to replicate some of it in Fastmail.</summary><content type="html">&lt;p&gt;For various reasons I won’t get into here, I decided to switch from Hey email. I have really enjoyed their approach to email so I’d like to replicate some of it in Fastmail.&lt;/p&gt;
+&lt;p&gt;I’d seen several helpful articles about setting up a Hey workflow with Fastmail, but they felt a bit combersome for me. I figured out a different approach to this, and wanted to share what I ended up with.&lt;/p&gt;
+&lt;h2&gt;Why Fastmail?&lt;/h2&gt;
+&lt;p&gt;Fastmail came recommended by several friends and has a long history of providing a solid service. Here’s what drew me to Fastmail:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Privacy focused. It’s a paid service, which means they don’t need to sell your information to advertisers to make money and they provide tracking pixel blocking and image proxying.&lt;/li&gt;
+&lt;li&gt;It’s about half the price of Hey.&lt;/li&gt;
+&lt;li&gt;Supports multiple custom domains.&lt;/li&gt;
+&lt;li&gt;Decent iOS apps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check out this &lt;a href=&quot;https://www.fastmail.com/hey-fastmail/&quot;&gt;more detailed comparison with Hey&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;The Setup&lt;/h2&gt;
+&lt;p&gt;The key to my workflow is using contacts and contact groups to filter incoming mail into various labels.&lt;/p&gt;
+&lt;p&gt;Fastmail can organise emails using folders or labels. For my purposes I’m using labels. This is configured in &lt;code&gt;Settings -&amp;gt; Preferences&lt;/code&gt; under the &lt;code&gt;Labels&lt;/code&gt; section.&lt;/p&gt;
+&lt;h3&gt;Screening Emails&lt;/h3&gt;
+&lt;p&gt;The first step is to setup a rule that applies to any unknown senders and apply a new label called &lt;code&gt;Screener&lt;/code&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;code&gt;Settings -&amp;gt; Filters &amp;amp; Rules&lt;/code&gt; and tap &lt;code&gt;+ Create Rule&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Select &lt;code&gt;Sender is not a contact&lt;/code&gt; for the condition.&lt;/li&gt;
+&lt;li&gt;Tap &lt;code&gt;Continue&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Tap &lt;code&gt;Create Rule&lt;/code&gt; next to the search box.&lt;/li&gt;
+&lt;li&gt;In the create rule drop down check the &lt;code&gt;Archive (remove Inbox label)&lt;/code&gt; and &lt;code&gt;Add Label&lt;/code&gt;. Create a new label called &lt;code&gt;Screener&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Feed &amp;amp; Paper Trail&lt;/h3&gt;
+&lt;p&gt;I want to sort transactional emails and newsletters into their own labels, leaving any other emails to go to my inbox.&lt;/p&gt;
+&lt;p&gt;To do this I setup contact groups called &lt;code&gt;Feed&lt;/code&gt; and &lt;code&gt;Paper Trail&lt;/code&gt; and setup rules to apply labels based on contacts in these groups.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;code&gt;Contacts&lt;/code&gt; and tap &lt;code&gt;+&lt;/code&gt; in the sidebar to create a new group. Create two groups called &lt;code&gt;Feed&lt;/code&gt; and &lt;code&gt;Paper Trail&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;Settings -&amp;gt; Filters &amp;amp; Rules&lt;/code&gt; and tap &lt;code&gt;+ Create Rule&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Select &lt;code&gt;Sender is a member of group...&lt;/code&gt; and select &lt;code&gt;Feed&lt;/code&gt; for the condition.&lt;/li&gt;
+&lt;li&gt;Tap &lt;code&gt;Continue&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Tap &lt;code&gt;Create Rule&lt;/code&gt; next to the search box.&lt;/li&gt;
+&lt;li&gt;In the create rule drop down check the &lt;code&gt;Archive (remove Inbox label)&lt;/code&gt; and &lt;code&gt;Add Label&lt;/code&gt;. Create a new label called &lt;code&gt;Feed&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Repeat steps 2-6 for &lt;code&gt;Paper Trail&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Notifications&lt;/h3&gt;
+&lt;p&gt;I want to only receive emails from specific senders so I’m not constantly receiving notifications for unimportant messages.&lt;/p&gt;
+&lt;p&gt;To do this we can configure Fastmail apps to only send notifications for “VIP” contacts. Then for the senders we want notifications for set them as VIP contacts.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Once this is setup I can screen emails in my &lt;code&gt;Screener&lt;/code&gt; label and either block them or add them as a contact. Newsletters and marketing emails get added to the &lt;code&gt;Feed&lt;/code&gt; contact group. Transnational emails such as receipts and service notifications get added to the &lt;code&gt;Paper Trail&lt;/code&gt; contact group. This leaves any important emails from senders I care about going to the Inbox.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>End-to-end testing (WIP)</title>
