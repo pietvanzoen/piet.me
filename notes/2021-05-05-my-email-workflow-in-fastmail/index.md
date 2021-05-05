@@ -98,12 +98,35 @@ In my sidebar I now have:
 
 You can still navigagte to other labels/folders by tapping `Find` at the bottom of the sidebar.
 
-### Notifications
+#### Notifications
 
 I want to only receive emails from specific senders so I’m not constantly receiving notifications for unimportant messages.
 
 To do this we can configure Fastmail apps to only send notifications for “VIP” contacts. Then for the senders we want notifications for set them as VIP contacts.
 
+#### Reply Later & Aside
+
+I'm still figuring out the best approach for Hey's Reply Later and Aside feature. For now I use [pinned messages](https://www.fastmail.help/hc/en-us/articles/1500000280341-Marking-important-messages) as an alternative to Aside, and I use a label for Reply Later.
+
+
+## Missing features in Fastmail
+
+While I managed to replicate the core functionality of Hey in Fastmail, there are a couple UX things I miss from Hey that I'd love to see in Fastmail one day. 
+
+### Feed view
+
+In Hey, emails in the Feed are rendered in place making it feel more like, well, a feed. This allowed you to casually scroll through newsletters without having to open individual messages.
+
+### Thread notifications
+
+While you can mark individual contacts as VIP and get notifications from them in Fastmail, you can't get notifications just for specific threads. This would allow you to follow a specific email chain without having to receive notifications for all messages from a sender.
+
+### Contact avatars in email list
+
+Several email apps, including Hey, will show a contact's avatar next to messages in email lists. As someone who works better with visual prompts (rather than pure text) this worked well to help me distingish between differnt types of emails, particulaly in the Paper Trail.
+
 ## Conclusion
 
-Once this is setup I can screen emails in my `Screener` label and either block them or add them as a contact. Newsletters and marketing emails get added to the `Feed` contact group. Transnational emails such as receipts and service notifications get added to the `Paper Trail` contact group. This leaves any important emails from senders I care about going to the Inbox.
+Hey did a lot of things right and gave me a nice starting point for an email workflow that's a lot better than the inbox firehose of emails, or "smart" email sortin as seen in Gmail. Setting this up in Fastmail required a bit of work, and screening emails is not quite as fluid as Hey, but it works well.
+
+I'd love to hear how other folks like to optimize their email workflow. Comment below or shoot me a message via [email](mailto:hi@piet.me) or [twitter](https://twitter.com/pietvanzoen).
