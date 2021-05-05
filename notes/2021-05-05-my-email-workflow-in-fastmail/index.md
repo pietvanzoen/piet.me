@@ -67,6 +67,8 @@ To do this I setup contact groups called `Feed` and `Paper Trail` and setup rule
 6. In the create rule drop down check the `Archive (remove Inbox label)` and `Add Label`. Create a new label called `Feed`.
 7. Repeat steps 2-6 for `Paper Trail`.
 
+![Rule for Paper Trail](./390B1DE4-1E76-4598-87BE-36B4E37B52DA.jpeg)
+
 ### Notifications
 
 I want to only receive emails from specific senders so I’m not constantly receiving notifications for unimportant messages.
