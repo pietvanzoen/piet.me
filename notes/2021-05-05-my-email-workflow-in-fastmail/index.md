@@ -9,7 +9,7 @@ tags:
   - productivity
 ---
 
-I finally decided to switch from Hey email to a regular email provider. Elements of Hey's approach to email worked well for me, so I wanted to try to replicate some of it in another email provider.
+I finally decided to switch from Hey email. Elements of Hey's approach to email worked well for me, so I wanted to try to replicate some of it in another email provider.
 
 After deciding to use Fastmail, I found several articles about setting up a Hey workflow with it. But the suggested setup relied on creating custom rules for each contact and I found this to be too cumbersome. I figured out a slightly different approach and wanted to share what I ended up with. 
 
