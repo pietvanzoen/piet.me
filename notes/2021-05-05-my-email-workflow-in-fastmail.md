@@ -25,11 +25,23 @@ Fastmail came recommended by several friends and has a long history of providing
 
 Check out this [more detailed comparison with Hey](https://www.fastmail.com/hey-fastmail/).
 
+## The Workflow
+
+After a little experimentation and playing with the settings this is the workflow I’m now using with Fastmail.
+
+1. Get a new email from an unknown sender. The email lands in the `Screener` label. 
+
+2. I review the email and then either: 
+    * Block the sender so any future emails go straight to the trash.
+    * Add the sender to my contacts and then select which contact group it should belong to. “Feed” or “Paper Trail”. If I want to receive notifications I can make the contact a “VIP” contact.
+
+3. Future emails land in the appropriate label.
+
 ## The Setup
 
 The key to my workflow is using contacts and contact groups to filter incoming mail into various labels.
 
-Fastmail can organise emails using folders or labels. For my purposes I’m using labels. This is configured in `Settings -> Preferences` under the `Labels` section.
+Fastmail can organise emails using folders (one email, one folder) or labels (one email, many labels). For my purposes I’m using labels. This is configured in `Settings -> Preferences` under the `Labels` section.
 
 ### Screening Emails
 
