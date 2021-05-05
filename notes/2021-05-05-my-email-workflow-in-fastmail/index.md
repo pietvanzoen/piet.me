@@ -121,7 +121,7 @@ While you can mark individual contacts as VIP and get notifications from them in
 
 ### Contact avatars in email list
 
-Several email apps, including Hey, will show a contact's avatar next to messages in email lists. As someone who works better with visual prompts (rather than pure text) this worked well to help me distingish between differnt types of emails, particulaly in the Paper Trail.
+Several email apps, including Hey, will show a contact's avatar next to messages in email lists. As someone who works better with visual prompts (rather than pure text) this worked well to help me distinguish between different types of emails, particularly in the Paper Trail.
 
 ## Conclusion
 
@@ -129,4 +129,4 @@ Hey did a lot of things right and gave me a starting point for an email workflow
 
 I'd love to hear how other folks like to optimize their email workflow. Comment below or shoot me a message via [email](mailto:hi@piet.me) or [twitter](https://twitter.com/pietvanzoen).
 
-If you like the look of Fastmail and want to try it out, please use this [referal link](https://ref.fm/u26272200) to receive a 10% discount. 
+If you like the look of Fastmail and want to try it out, please use this [referral link](https://ref.fm/u26272200) to receive a 10% discount. 
