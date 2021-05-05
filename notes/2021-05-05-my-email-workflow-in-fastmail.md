@@ -10,7 +10,7 @@ tags:
   - productivity
 ---
 
-For various reasons I won’t get into here, I decided to switch from Hey email. I have really enjoyed their approach to email so I’d like to replicate some of it in Fastmail. 
+For various reasons I won’t get into here, I decided to switch from Hey email. I have really enjoyed their approach to email so I’d like to replicate some of it in [Fastmail](https://ref.fm/u26272200). 
 
 I’d seen several helpful articles about setting up a Hey workflow with Fastmail, but they felt a bit combersome for me. I figured out a different approach to this, and wanted to share what I ended up with. 
 
