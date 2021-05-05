@@ -27,7 +27,7 @@
       <summary>I finally decided to switch from Hey email to a regular email provider. Elements of Hey&#39;s approach to email worked well for me, so I wanted to try to replicate some of it in another email provider.</summary><content type="html">&lt;p&gt;I finally decided to switch from Hey email to a regular email provider. Elements of Hey&#39;s approach to email worked well for me, so I wanted to try to replicate some of it in another email provider.&lt;/p&gt;
 &lt;p&gt;After deciding to use Fastmail, I found several articles about setting up a Hey workflow with it. But the suggested setup relied on creating custom rules for each contact and I found this to be too cumbersome. I figured out slightly a different approach and wanted to share what I ended up with.&lt;/p&gt;
 &lt;h2&gt;Why Fastmail?&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://piet.me/my-email-workflow-in-fastmail/%5BFastmail%5D(https://ref.fm/u26272200)&quot;&gt;Fastmail&lt;/a&gt; came recommended by several friends and has a long history of providing a solid privacy concious service. Here’s what drew me to Fastmail:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ref.fm/u26272200&quot;&gt;Fastmail&lt;/a&gt; came recommended by several friends and has a long history of providing a solid privacy concious service. Here’s what drew me to Fastmail:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Privacy focused. It’s a paid service, which means they don’t need to sell your information to advertisers to make money. They also provide tracking pixel blocking and image proxying.&lt;/li&gt;
 &lt;li&gt;It’s about half the price of Hey.&lt;/li&gt;
@@ -114,6 +114,7 @@
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Hey did a lot of things right and gave me a starting point for an email workflow that&#39;s a lot better than the inbox firehose of emails, or &amp;quot;smart&amp;quot; email sorting as seen in Gmail. Setting this up in Fastmail required a bit of work, and screening emails is not quite as fluid as in Hey, but it works well for me. Fastmail also offers much more flexibility to evolve your email workflow to suit you.&lt;/p&gt;
 &lt;p&gt;I&#39;d love to hear how other folks like to optimize their email workflow. Comment below or shoot me a message via &lt;a href=&quot;mailto:hi@piet.me&quot;&gt;email&lt;/a&gt; or &lt;a href=&quot;https://twitter.com/pietvanzoen&quot;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you like the look of Fastmail and want to try it out, please use this &lt;a href=&quot;https://ref.fm/u26272200&quot;&gt;referal link&lt;/a&gt; to receive a 10% discount.&lt;/p&gt;
 </content>
   </entry>
   
