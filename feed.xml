@@ -64,6 +64,7 @@
 &lt;li&gt;Tap &lt;code&gt;Create Rule&lt;/code&gt; next to the search box.&lt;/li&gt;
 &lt;li&gt;In the create rule drop down check the &lt;code&gt;Archive (remove Inbox label)&lt;/code&gt; and &lt;code&gt;Add Label&lt;/code&gt;. Create a new label called &lt;code&gt;Screener&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/my-email-workflow-in-fastmail/10B10E8D-B3F5-4FBC-BEF0-C419A3569372.jpeg&quot; alt=&quot;Rule for Screener&quot; /&gt;&lt;/p&gt;
 &lt;h3&gt;Feed &amp;amp; Paper Trail&lt;/h3&gt;
 &lt;p&gt;I want to sort transactional emails and newsletters into their own labels, leaving any other emails to go to my inbox.&lt;/p&gt;
 &lt;p&gt;To do this I setup contact groups called &lt;code&gt;Feed&lt;/code&gt; and &lt;code&gt;Paper Trail&lt;/code&gt; and setup rules to apply labels based on contacts in these groups.&lt;/p&gt;
