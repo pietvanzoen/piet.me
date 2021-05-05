@@ -36,6 +36,8 @@ After a little experimentation and playing with the settings, this is the workfl
 
 3. Contacts in the Feed group land in the `Feed` label. Contacts in the 'Paper Trail' group land in the `Paper Trail` label. If a contact isn't in either group the email goes to the inbox.
 
+![The Screener view](/notes/2021-05-05-my-email-workflow-in-fastmail/83173BD6-39F7-47AC-A936-C2338D19EDBF.jpeg)
+
 This is working well so far and reflects what I liked about Hey's workflow.
 
 ## The Setup
