@@ -1,7 +1,7 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <title>My email workflow in Fastmail - Piet van Zoen</title>
-<link rel="stylesheet" href="/stylesheets/main.css?1620223633643">
+<link rel="stylesheet" href="/stylesheets/main.css?1620225580334">
 
 <link rel="alternate" type="application/atom+xml" href="/feed.xml">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=NmEn8A8Wqa">
@@ -14,8 +14,8 @@
 <meta name="theme-color" content="#ffffff">
 
 <meta property="og:title" content="My email workflow in Fastmail - Piet van Zoen">
-<meta property="og:description" content="For various reasons I won’t get into here, I decided to switch from Hey email. I have really enjoyed their approach to email so I’d like to replicate some of it in Fastmail.">
-<meta name="description" content="For various reasons I won’t get into here, I decided to switch from Hey email. I have really enjoyed their approach to email so I’d like to replicate some of it in Fastmail.">
+<meta property="og:description" content="I finally decided to switch from Hey email to a regular email provider. Elements of Hey's approach to email worked well for me so I’d like to replicate some of it in Fastmail.">
+<meta name="description" content="I finally decided to switch from Hey email to a regular email provider. Elements of Hey's approach to email worked well for me so I’d like to replicate some of it in Fastmail.">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Piet van Zoen">
 <meta property="og:url" content="https://piet.me/my-email-workflow-in-fastmail/">
@@ -30,7 +30,7 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>My email workflow in Fastmail - Piet van Zoen</title>
-    <link rel="stylesheet" href="/stylesheets/main.css?1620223633644">
+    <link rel="stylesheet" href="/stylesheets/main.css?1620225580334">
 
   </head>
   <body class="">
@@ -66,10 +66,10 @@
     <p>This page is particularly fresh and actively being worked on. Please be kind.</p>
   </div>
   
-  <p>For various reasons I won’t get into here, I decided to switch from Hey email. I have really enjoyed their approach to email so I’d like to replicate some of it in <a href="https://ref.fm/u26272200">Fastmail</a>.</p>
-<p>I’d seen several helpful articles about setting up a Hey workflow with Fastmail, but they felt a bit combersome for me. I figured out a different approach to this, and wanted to share what I ended up with.</p>
+  <p>I finally decided to switch from Hey email to a regular email provider. Elements of Hey's approach to email worked well for me so I’d like to replicate some of it in <a href="https://ref.fm/u26272200">Fastmail</a>.</p>
+<p>I've seen several helpful articles about setting up a Hey workflow with Fastmail, but they felt a bit combersome for me. I figured out a different approach, and wanted to share what I ended up with.</p>
 <h2>Why Fastmail?</h2>
-<p>Fastmail came recommended by several friends and has a long history of providing a solid service. Here’s what drew me to Fastmail:</p>
+<p>Fastmail came recommended by several friends and has a long history of providing a solid privacy concious service. Here’s what drew me to Fastmail:</p>
 <ul>
 <li>Privacy focused. It’s a paid service, which means they don’t need to sell your information to advertisers to make money and they provide tracking pixel blocking and image proxying.</li>
 <li>It’s about half the price of Hey.</li>
@@ -91,25 +91,15 @@
 </ul>
 </li>
 <li>
-<p>Future emails land in the appropriate label.</p>
+<p>Contacts in the Feed contact group land in the <code>Feed</code> label. Contacts in the 'Paper Trail' group land in the <code>Paper Trail</code> label. If a contact isn't in either group the email goes to the regular inbox.</p>
 </li>
 </ol>
+<p>This is working well so far and reflects the things about Hey's workflow I found useful.</p>
 <h2>The Setup</h2>
 <p>The key to my workflow is using contacts and contact groups to filter incoming mail into various labels.</p>
-<p>Fastmail can organise emails using folders (one email, one folder) or labels (one email, many labels). For my purposes I’m using labels. This is configured in <code>Settings -&gt; Preferences</code> under the <code>Labels</code> section.</p>
-<h3>Screening Emails</h3>
-<p>The first step is to setup a rule that applies to any unknown senders and apply a new label called <code>Screener</code>.</p>
-<ol>
-<li>Go to <code>Settings -&gt; Filters &amp; Rules</code> and tap <code>+ Create Rule</code>.</li>
-<li>Select <code>Sender is not a contact</code> for the condition.</li>
-<li>Tap <code>Continue</code>.</li>
-<li>Tap <code>Create Rule</code> next to the search box.</li>
-<li>In the create rule drop down check the <code>Archive (remove Inbox label)</code> and <code>Add Label</code>. Create a new label called <code>Screener</code>.</li>
-</ol>
-<p><img loading="lazy" src="10B10E8D-B3F5-4FBC-BEF0-C419A3569372.jpeg" alt="Rule for Screener"></p>
-<h3>Feed &amp; Paper Trail</h3>
-<p>I want to sort transactional emails and newsletters into their own labels, leaving any other emails to go to my inbox.</p>
-<p>To do this I setup contact groups called <code>Feed</code> and <code>Paper Trail</code> and setup rules to apply labels based on contacts in these groups.</p>
+<p>(Fastmail can organise emails using folders (one email, one folder) or labels (one email, many labels). For my purposes I’m using labels. This is configured in <code>Settings -&gt; Preferences</code> under the <code>Labels</code> section.)</p>
+<h3>1. Feed &amp; Paper Trail</h3>
+<p>First let's setup the Feed and Paper Trail groups and labels. Of course, you don't have to use these specific groups. If you find it useful to have different or more groups then you have the flexibility to add them.</p>
 <ol>
 <li>Go to <code>Contacts</code> and tap <code>+</code> in the sidebar to create a new group. Create two groups called <code>Feed</code> and <code>Paper Trail</code>.</li>
 <li>Go to <code>Settings -&gt; Filters &amp; Rules</code> and tap <code>+ Create Rule</code>.</li>
@@ -119,7 +109,37 @@
 <li>In the create rule drop down check the <code>Archive (remove Inbox label)</code> and <code>Add Label</code>. Create a new label called <code>Feed</code>.</li>
 <li>Repeat steps 2-6 for <code>Paper Trail</code>.</li>
 </ol>
-<p><img loading="lazy" src="./390B1DE4-1E76-4598-87BE-36B4E37B52DA.jpeg" alt="Rule for Paper Trail"></p>
+<p><img loading="lazy" src="./390B1DE4-1E76-4598-87BE-36B4E37B52DA.jpeg" alt="Your new Paper Trail/Feed rules should look like this"></p>
+<p>Once this is setup we can move on to setup the screener.</p>
+<h3>2. The Screener</h3>
+<p>Next we'll setup the Screener which will redirect any unknown senders to the <code>Screener</code> label where we can review the emails and decide how we want to handle them in the future.</p>
+<ol>
+<li>Go to <code>Settings -&gt; Filters &amp; Rules</code> and tap <code>+ Create Rule</code>.</li>
+<li>Select <code>Sender is not a contact</code> for the condition.</li>
+<li>Tap <code>Continue</code>.</li>
+<li>Tap <code>Create Rule</code> next to the search box.</li>
+<li>In the create rule drop down check the <code>Archive (remove Inbox label)</code> and <code>Add Label</code>. Create a new label called <code>Screener</code>.</li>
+</ol>
+<p><img loading="lazy" src="10B10E8D-B3F5-4FBC-BEF0-C419A3569372.jpeg" alt="Your new Screener rule should look like this"></p>
+<h3>3. Extras</h3>
+<p>At this point you'll be able to use the workflow I described above. But there are a few extra tweaks I made to improve the overall experience.</p>
+<h4>Recycling old emails</h4>
+<p>For the <code>Feed</code> label I setup "auto-purging". This means that emails older than 31 days will be deleted. In Hey this is configured in the "Recycling Center".</p>
+<ol>
+<li>Go to <code>Settings -&gt; Labels</code> and tap <code>Edit</code> on the label you want to setup auto-purging for.</li>
+<li>Tap <code>Show advanced preferences</code>.</li>
+<li>Check the option for <code>Auto-purge</code> and set the purge time to what ever you prefer.</li>
+</ol>
+<h4>Cleaner sidebar</h4>
+<p>By default the sidebar will include the usual list of folders (Inbox, All Mail, Sent, Spam, etc). I wanted a simplified sidebar with only what was important. Fortunately this is configurable in Fastmail via <code>Settings -&gt; Labels</code>. You can configure labels to always be hidden, always show, or hide when empty.</p>
+<p>In my sidebar I now have:</p>
+<ul>
+<li><strong>Inbox</strong> - always show.</li>
+<li><strong>Screener</strong> - hide when empty.</li>
+<li><strong>Paper Trail</strong> - always show.</li>
+<li><strong>Feed</strong> - always show.</li>
+</ul>
+<p>You can still navigagte to other labels/folders by tapping <code>Find</code> at the bottom of the sidebar.</p>
 <h3>Notifications</h3>
 <p>I want to only receive emails from specific senders so I’m not constantly receiving notifications for unimportant messages.</p>
 <p>To do this we can configure Fastmail apps to only send notifications for “VIP” contacts. Then for the senders we want notifications for set them as VIP contacts.</p>
