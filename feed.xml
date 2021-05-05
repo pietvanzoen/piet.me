@@ -68,7 +68,7 @@
 &lt;li&gt;In the create rule drop down check the &lt;code&gt;Archive (remove Inbox label)&lt;/code&gt; and &lt;code&gt;Add Label&lt;/code&gt;. Create a new label called &lt;code&gt;Feed&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Repeat steps 2-6 for &lt;code&gt;Paper Trail&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/notes/2021-05-05-my-email-workflow-in-fastmail/390B1DE4-1E76-4598-87BE-36B4E37B52DA.jpeg&quot; alt=&quot;Your new Paper Trail/Feed rules should look like this&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/notes/2021-05-05-my-email-workflow-in-fastmail/9802F5A8-7E3E-4EDD-AF33-0F76B3E29C10.jpeg&quot; alt=&quot;Your new Paper Trail/Feed rules should look like this&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Once this is setup we can move on to setup the screener.&lt;/p&gt;
 &lt;h3&gt;2. The Screener&lt;/h3&gt;
 &lt;p&gt;Next we&#39;ll setup the Screener which will redirect any unknown senders to the &lt;code&gt;Screener&lt;/code&gt; label. This is where we can review the emails and decide how we want to handle them in the future.&lt;/p&gt;
@@ -79,7 +79,7 @@
 &lt;li&gt;Tap &lt;code&gt;Create Rule&lt;/code&gt; next to the search box.&lt;/li&gt;
 &lt;li&gt;In the create rule drop down check the &lt;code&gt;Archive (remove Inbox label)&lt;/code&gt; and &lt;code&gt;Add Label&lt;/code&gt;. Create a new label called &lt;code&gt;Screener&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://piet.me/notes/2021-05-05-my-email-workflow-in-fastmail/10B10E8D-B3F5-4FBC-BEF0-C419A3569372.jpeg&quot; alt=&quot;Your new Screener rule should look like this&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/notes/2021-05-05-my-email-workflow-in-fastmail/AB7C681A-5C26-441A-8768-B36CB27471F8.jpeg&quot; alt=&quot;Your new Screener rule should look like this&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;At this point you&#39;ll be able to use the workflow I described above. But there are a few extra tweaks I made to improve the overall experience.&lt;/p&gt;
 &lt;h3&gt;3. Extras&lt;/h3&gt;
 &lt;h4&gt;Recycling old emails&lt;/h4&gt;
