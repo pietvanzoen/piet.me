@@ -16,7 +16,7 @@ After deciding to use Fastmail, I found several articles about setting up a Hey 
 
 ## Why Fastmail?
 
-[Fastmail]([Fastmail](https://ref.fm/u26272200)) came recommended by several friends and has a long history of providing a solid privacy concious service. Here’s what drew me to Fastmail:
+[Fastmail](https://ref.fm/u26272200) came recommended by several friends and has a long history of providing a solid privacy concious service. Here’s what drew me to Fastmail:
 
 * Privacy focused. It’s a paid service, which means they don’t need to sell your information to advertisers to make money. They also provide tracking pixel blocking and image proxying.
 * It’s about half the price of Hey.
@@ -129,3 +129,5 @@ Several email apps, including Hey, will show a contact's avatar next to messages
 Hey did a lot of things right and gave me a starting point for an email workflow that's a lot better than the inbox firehose of emails, or "smart" email sorting as seen in Gmail. Setting this up in Fastmail required a bit of work, and screening emails is not quite as fluid as in Hey, but it works well for me. Fastmail also offers much more flexibility to evolve your email workflow to suit you.
 
 I'd love to hear how other folks like to optimize their email workflow. Comment below or shoot me a message via [email](mailto:hi@piet.me) or [twitter](https://twitter.com/pietvanzoen).
+
+If you like the look of Fastmail and want to try it out, please use this [referal link](https://ref.fm/u26272200) to receive a 10% discount. 
