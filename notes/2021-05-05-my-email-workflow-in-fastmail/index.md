@@ -15,7 +15,7 @@ After deciding to use Fastmail, I found several articles about setting up a Hey 
 
 ## Why Fastmail?
 
-[Fastmail](https://ref.fm/u26272200) came recommended by several friends and has a long history of providing a solid privacy concious service. Here’s what drew me to Fastmail:
+[Fastmail](https://ref.fm/u26272200) came recommended by several friends and has a long history of providing a solid privacy conscious service. Here’s what drew me to Fastmail:
 
 * Privacy focused. It’s a paid service, which means they don’t need to sell your information to advertisers to make money. They also provide tracking pixel blocking and image proxying.
 * It’s about half the price of Hey.
