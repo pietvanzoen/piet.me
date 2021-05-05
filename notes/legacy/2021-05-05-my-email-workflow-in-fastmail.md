@@ -5,6 +5,7 @@ updated: 2021-05-05
 date: 2021-05-05
 slug: my-email-workflow-in-fastmail
 featured: true
+wip: true
 tags:
   - productivity
 ---
