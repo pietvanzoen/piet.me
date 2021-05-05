@@ -98,11 +98,22 @@
 &lt;li&gt;&lt;strong&gt;Feed&lt;/strong&gt; - always show.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can still navigagte to other labels/folders by tapping &lt;code&gt;Find&lt;/code&gt; at the bottom of the sidebar.&lt;/p&gt;
-&lt;h3&gt;Notifications&lt;/h3&gt;
+&lt;h4&gt;Notifications&lt;/h4&gt;
 &lt;p&gt;I want to only receive emails from specific senders so I’m not constantly receiving notifications for unimportant messages.&lt;/p&gt;
 &lt;p&gt;To do this we can configure Fastmail apps to only send notifications for “VIP” contacts. Then for the senders we want notifications for set them as VIP contacts.&lt;/p&gt;
+&lt;h4&gt;Reply Later &amp;amp; Aside&lt;/h4&gt;
+&lt;p&gt;I&#39;m still figuring out the best approach for Hey&#39;s Reply Later and Aside feature. For now I use &lt;a href=&quot;https://www.fastmail.help/hc/en-us/articles/1500000280341-Marking-important-messages&quot;&gt;pinned messages&lt;/a&gt; as an alternative to Aside, and I use a label for Reply Later.&lt;/p&gt;
+&lt;h2&gt;Missing features in Fastmail&lt;/h2&gt;
+&lt;p&gt;While I managed to replicate the core functionality of Hey in Fastmail, there are a couple UX things I miss from Hey that I&#39;d love to see in Fastmail one day.&lt;/p&gt;
+&lt;h3&gt;Feed view&lt;/h3&gt;
+&lt;p&gt;In Hey, emails in the Feed are rendered in place making it feel more like, well, a feed. This allowed you to casually scroll through newsletters without having to open individual messages.&lt;/p&gt;
+&lt;h3&gt;Thread notifications&lt;/h3&gt;
+&lt;p&gt;While you can mark individual contacts as VIP and get notifications from them in Fastmail, you can&#39;t get notifications just for specific threads. This would allow you to follow a specific email chain without having to receive notifications for all messages from a sender.&lt;/p&gt;
+&lt;h3&gt;Contact avatars in email list&lt;/h3&gt;
+&lt;p&gt;Several email apps, including Hey, will show a contact&#39;s avatar next to messages in email lists. As someone who works better with visual prompts (rather than pure text) this worked well to help me distingish between differnt types of emails, particulaly in the Paper Trail.&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Once this is setup I can screen emails in my &lt;code&gt;Screener&lt;/code&gt; label and either block them or add them as a contact. Newsletters and marketing emails get added to the &lt;code&gt;Feed&lt;/code&gt; contact group. Transnational emails such as receipts and service notifications get added to the &lt;code&gt;Paper Trail&lt;/code&gt; contact group. This leaves any important emails from senders I care about going to the Inbox.&lt;/p&gt;
+&lt;p&gt;Hey did a lot of things right and gave me a nice starting point for an email workflow that&#39;s a lot better than the inbox firehose of emails, or &amp;quot;smart&amp;quot; email sortin as seen in Gmail. Setting this up in Fastmail required a bit of work, and screening emails is not quite as fluid as Hey, but it works well.&lt;/p&gt;
+&lt;p&gt;I&#39;d love to hear how other folks like to optimize their email workflow. Comment below or shoot me a message via &lt;a href=&quot;mailto:hi@piet.me&quot;&gt;email&lt;/a&gt; or &lt;a href=&quot;https://twitter.com/pietvanzoen&quot;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   
