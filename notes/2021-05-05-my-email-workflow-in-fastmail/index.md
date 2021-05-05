@@ -53,6 +53,8 @@ The first step is to setup a rule that applies to any unknown senders and apply 
 4. Tap `Create Rule` next to the search box.
 5. In the create rule drop down check the `Archive (remove Inbox label)` and `Add Label`. Create a new label called `Screener`.
 
+![Rule for Screener](10B10E8D-B3F5-4FBC-BEF0-C419A3569372.jpeg)
+
 ### Feed & Paper Trail
 
 I want to sort transactional emails and newsletters into their own labels, leaving any other emails to go to my inbox.
