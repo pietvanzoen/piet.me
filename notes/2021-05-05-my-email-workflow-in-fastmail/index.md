@@ -58,7 +58,7 @@ First let's setup the Feed and Paper Trail groups and labels. Of course, you don
 6. In the create rule drop down check the `Archive (remove Inbox label)` and `Add Label`. Create a new label called `Feed`.
 7. Repeat steps 2-6 for `Paper Trail`.
 
-![Your new Paper Trail/Feed rules should look like this](/notes/2021-05-05-my-email-workflow-in-fastmail/390B1DE4-1E76-4598-87BE-36B4E37B52DA.jpeg)
+![Your new Paper Trail/Feed rules should look like this](/notes/2021-05-05-my-email-workflow-in-fastmail/9802F5A8-7E3E-4EDD-AF33-0F76B3E29C10.jpeg)
 
 Once this is setup we can move on to setup the screener.
 
