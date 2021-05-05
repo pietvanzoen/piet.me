@@ -72,7 +72,7 @@ Next we'll setup the Screener which will redirect any unknown senders to the `Sc
 4. Tap `Create Rule` next to the search box.
 5. In the create rule drop down check the `Archive (remove Inbox label)` and `Add Label`. Create a new label called `Screener`.
 
-![Your new Screener rule should look like this](/notes/2021-05-05-my-email-workflow-in-fastmail/10B10E8D-B3F5-4FBC-BEF0-C419A3569372.jpeg)
+![Your new Screener rule should look like this](/notes/2021-05-05-my-email-workflow-in-fastmail/AB7C681A-5C26-441A-8768-B36CB27471F8.jpeg)
 
 At this point you'll be able to use the workflow I described above. But there are a few extra tweaks I made to improve the overall experience. 
 
