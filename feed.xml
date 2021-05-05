@@ -24,37 +24,37 @@
     <published>2021-05-05T00:00:00Z</published>
       <updated>2021-05-05T00:00:00Z</updated><id>https://piet.me/my-email-workflow-in-fastmail/</id>
     <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
-      <summary>I finally decided to switch from Hey email to a regular email provider. Elements of Hey&#39;s approach to email worked well for me so I’d like to replicate some of it in Fastmail.</summary><content type="html">&lt;p&gt;I finally decided to switch from Hey email to a regular email provider. Elements of Hey&#39;s approach to email worked well for me so I’d like to replicate some of it in &lt;a href=&quot;https://ref.fm/u26272200&quot;&gt;Fastmail&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I&#39;ve seen several helpful articles about setting up a Hey workflow with Fastmail, but they felt a bit combersome for me. I figured out a different approach, and wanted to share what I ended up with.&lt;/p&gt;
+      <summary>I finally decided to switch from Hey email to a regular email provider. Elements of Hey&#39;s approach to email worked well for me, so I wanted to try to replicate some of it in another email provider.</summary><content type="html">&lt;p&gt;I finally decided to switch from Hey email to a regular email provider. Elements of Hey&#39;s approach to email worked well for me, so I wanted to try to replicate some of it in another email provider.&lt;/p&gt;
+&lt;p&gt;After deciding to use Fastmail, I found several articles about setting up a Hey workflow with it. But the suggested setup relied on creating custom rules for each contact and I found this to be too cumbersome. I figured out slightly a different approach and wanted to share what I ended up with.&lt;/p&gt;
 &lt;h2&gt;Why Fastmail?&lt;/h2&gt;
-&lt;p&gt;Fastmail came recommended by several friends and has a long history of providing a solid privacy concious service. Here’s what drew me to Fastmail:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://piet.me/my-email-workflow-in-fastmail/%5BFastmail%5D(https://ref.fm/u26272200)&quot;&gt;Fastmail&lt;/a&gt; came recommended by several friends and has a long history of providing a solid privacy concious service. Here’s what drew me to Fastmail:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Privacy focused. It’s a paid service, which means they don’t need to sell your information to advertisers to make money and they provide tracking pixel blocking and image proxying.&lt;/li&gt;
+&lt;li&gt;Privacy focused. It’s a paid service, which means they don’t need to sell your information to advertisers to make money. They also provide tracking pixel blocking and image proxying.&lt;/li&gt;
 &lt;li&gt;It’s about half the price of Hey.&lt;/li&gt;
 &lt;li&gt;Supports multiple custom domains.&lt;/li&gt;
 &lt;li&gt;Decent iOS apps.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Check out this &lt;a href=&quot;https://www.fastmail.com/hey-fastmail/&quot;&gt;more detailed comparison with Hey&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;The Workflow&lt;/h2&gt;
-&lt;p&gt;After a little experimentation and playing with the settings this is the workflow I’m now using with Fastmail.&lt;/p&gt;
+&lt;p&gt;After a little experimentation and playing with the settings, this is the workflow I’m now using with Fastmail:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Get a new email from an unknown sender. The email lands in the &lt;code&gt;Screener&lt;/code&gt; label.&lt;/p&gt;
+&lt;p&gt;Receive a new email from an unknown sender. The email lands in the &lt;code&gt;Screener&lt;/code&gt; label.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;I review the email and then either:&lt;/p&gt;
+&lt;p&gt;Review the email and then either:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Block the sender so any future emails go straight to the trash.&lt;/li&gt;
 &lt;li&gt;Add the sender to my contacts and then select which contact group it should belong to. “Feed” or “Paper Trail”. If I want to receive notifications I can make the contact a “VIP” contact.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Contacts in the Feed contact group land in the &lt;code&gt;Feed&lt;/code&gt; label. Contacts in the &#39;Paper Trail&#39; group land in the &lt;code&gt;Paper Trail&lt;/code&gt; label. If a contact isn&#39;t in either group the email goes to the regular inbox.&lt;/p&gt;
+&lt;p&gt;Contacts in the Feed group land in the &lt;code&gt;Feed&lt;/code&gt; label. Contacts in the &#39;Paper Trail&#39; group land in the &lt;code&gt;Paper Trail&lt;/code&gt; label. If a contact isn&#39;t in either group the email goes to the inbox.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;This is working well so far and reflects the things about Hey&#39;s workflow I found useful.&lt;/p&gt;
+&lt;p&gt;This is working well so far and reflects what I liked about Hey&#39;s workflow.&lt;/p&gt;
 &lt;h2&gt;The Setup&lt;/h2&gt;
-&lt;p&gt;The key to my workflow is using contacts and contact groups to filter incoming mail into various labels.&lt;/p&gt;
+&lt;p&gt;The key to this workflow is using contacts and contact groups to filter incoming mail into various labels.&lt;/p&gt;
 &lt;p&gt;(Fastmail can organise emails using folders (one email, one folder) or labels (one email, many labels). For my purposes I’m using labels. This is configured in &lt;code&gt;Settings -&amp;gt; Preferences&lt;/code&gt; under the &lt;code&gt;Labels&lt;/code&gt; section.)&lt;/p&gt;
 &lt;h3&gt;1. Feed &amp;amp; Paper Trail&lt;/h3&gt;
 &lt;p&gt;First let&#39;s setup the Feed and Paper Trail groups and labels. Of course, you don&#39;t have to use these specific groups. If you find it useful to have different or more groups then you have the flexibility to add them.&lt;/p&gt;
@@ -70,7 +70,7 @@
 &lt;p&gt;&lt;img src=&quot;https://piet.me/my-email-workflow-in-fastmail/390B1DE4-1E76-4598-87BE-36B4E37B52DA.jpeg&quot; alt=&quot;Your new Paper Trail/Feed rules should look like this&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Once this is setup we can move on to setup the screener.&lt;/p&gt;
 &lt;h3&gt;2. The Screener&lt;/h3&gt;
-&lt;p&gt;Next we&#39;ll setup the Screener which will redirect any unknown senders to the &lt;code&gt;Screener&lt;/code&gt; label where we can review the emails and decide how we want to handle them in the future.&lt;/p&gt;
+&lt;p&gt;Next we&#39;ll setup the Screener which will redirect any unknown senders to the &lt;code&gt;Screener&lt;/code&gt; label. This is where we can review the emails and decide how we want to handle them in the future.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Go to &lt;code&gt;Settings -&amp;gt; Filters &amp;amp; Rules&lt;/code&gt; and tap &lt;code&gt;+ Create Rule&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Select &lt;code&gt;Sender is not a contact&lt;/code&gt; for the condition.&lt;/li&gt;
@@ -79,10 +79,10 @@
 &lt;li&gt;In the create rule drop down check the &lt;code&gt;Archive (remove Inbox label)&lt;/code&gt; and &lt;code&gt;Add Label&lt;/code&gt;. Create a new label called &lt;code&gt;Screener&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://piet.me/my-email-workflow-in-fastmail/10B10E8D-B3F5-4FBC-BEF0-C419A3569372.jpeg&quot; alt=&quot;Your new Screener rule should look like this&quot; /&gt;&lt;/p&gt;
-&lt;h3&gt;3. Extras&lt;/h3&gt;
 &lt;p&gt;At this point you&#39;ll be able to use the workflow I described above. But there are a few extra tweaks I made to improve the overall experience.&lt;/p&gt;
+&lt;h3&gt;3. Extras&lt;/h3&gt;
 &lt;h4&gt;Recycling old emails&lt;/h4&gt;
-&lt;p&gt;For the &lt;code&gt;Feed&lt;/code&gt; label I setup &amp;quot;auto-purging&amp;quot;. This means that emails older than 31 days will be deleted. In Hey this is configured in the &amp;quot;Recycling Center&amp;quot;.&lt;/p&gt;
+&lt;p&gt;For the &lt;code&gt;Feed&lt;/code&gt; label I setup &#39;Auto Purging&#39;. This means that emails with this label that are older than 31 days will be deleted. In Hey this is configured in the &#39;Recycling Center&#39;.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Go to &lt;code&gt;Settings -&amp;gt; Labels&lt;/code&gt; and tap &lt;code&gt;Edit&lt;/code&gt; on the label you want to setup auto-purging for.&lt;/li&gt;
 &lt;li&gt;Tap &lt;code&gt;Show advanced preferences&lt;/code&gt;.&lt;/li&gt;
@@ -97,22 +97,22 @@
 &lt;li&gt;&lt;strong&gt;Paper Trail&lt;/strong&gt; - always show.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Feed&lt;/strong&gt; - always show.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;You can still navigagte to other labels/folders by tapping &lt;code&gt;Find&lt;/code&gt; at the bottom of the sidebar.&lt;/p&gt;
+&lt;p&gt;You can still navigate to other labels/folders by tapping &lt;code&gt;Find&lt;/code&gt; at the bottom of the sidebar.&lt;/p&gt;
 &lt;h4&gt;Notifications&lt;/h4&gt;
-&lt;p&gt;I want to only receive emails from specific senders so I’m not constantly receiving notifications for unimportant messages.&lt;/p&gt;
-&lt;p&gt;To do this we can configure Fastmail apps to only send notifications for “VIP” contacts. Then for the senders we want notifications for set them as VIP contacts.&lt;/p&gt;
+&lt;p&gt;I wanted to only receive emails from specific senders so that I’m not constantly receiving notifications for unimportant messages.&lt;/p&gt;
+&lt;p&gt;To do this I configure the Fastmail apps to only send notifications for VIP contacts. Then for the senders I want notifications from, I set them as VIP contacts.&lt;/p&gt;
 &lt;h4&gt;Reply Later &amp;amp; Aside&lt;/h4&gt;
 &lt;p&gt;I&#39;m still figuring out the best approach for Hey&#39;s Reply Later and Aside feature. For now I use &lt;a href=&quot;https://www.fastmail.help/hc/en-us/articles/1500000280341-Marking-important-messages&quot;&gt;pinned messages&lt;/a&gt; as an alternative to Aside, and I use a label for Reply Later.&lt;/p&gt;
 &lt;h2&gt;Missing features in Fastmail&lt;/h2&gt;
 &lt;p&gt;While I managed to replicate the core functionality of Hey in Fastmail, there are a couple UX things I miss from Hey that I&#39;d love to see in Fastmail one day.&lt;/p&gt;
 &lt;h3&gt;Feed view&lt;/h3&gt;
-&lt;p&gt;In Hey, emails in the Feed are rendered in place making it feel more like, well, a feed. This allowed you to casually scroll through newsletters without having to open individual messages.&lt;/p&gt;
+&lt;p&gt;In Hey, emails in the Feed are rendered in place making it feel more like, well, a feed. This allowed you to casually scroll through newsletters without having to open individual emails.&lt;/p&gt;
 &lt;h3&gt;Thread notifications&lt;/h3&gt;
-&lt;p&gt;While you can mark individual contacts as VIP and get notifications from them in Fastmail, you can&#39;t get notifications just for specific threads. This would allow you to follow a specific email chain without having to receive notifications for all messages from a sender.&lt;/p&gt;
+&lt;p&gt;While you can mark individual contacts as VIP and get notifications from them in Fastmail, you can&#39;t get notifications for specific threads. This would allow you to follow a specific email chain without having to receive notifications for all messages from a sender.&lt;/p&gt;
 &lt;h3&gt;Contact avatars in email list&lt;/h3&gt;
 &lt;p&gt;Several email apps, including Hey, will show a contact&#39;s avatar next to messages in email lists. As someone who works better with visual prompts (rather than pure text) this worked well to help me distingish between differnt types of emails, particulaly in the Paper Trail.&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Hey did a lot of things right and gave me a nice starting point for an email workflow that&#39;s a lot better than the inbox firehose of emails, or &amp;quot;smart&amp;quot; email sortin as seen in Gmail. Setting this up in Fastmail required a bit of work, and screening emails is not quite as fluid as Hey, but it works well.&lt;/p&gt;
+&lt;p&gt;Hey did a lot of things right and gave me a starting point for an email workflow that&#39;s a lot better than the inbox firehose of emails, or &amp;quot;smart&amp;quot; email sorting as seen in Gmail. Setting this up in Fastmail required a bit of work, and screening emails is not quite as fluid as in Hey, but it works well for me. Fastmail also offers much more flexibility to evolve your email workflow to suit you.&lt;/p&gt;
 &lt;p&gt;I&#39;d love to hear how other folks like to optimize their email workflow. Comment below or shoot me a message via &lt;a href=&quot;mailto:hi@piet.me&quot;&gt;email&lt;/a&gt; or &lt;a href=&quot;https://twitter.com/pietvanzoen&quot;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
