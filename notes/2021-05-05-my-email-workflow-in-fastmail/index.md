@@ -9,16 +9,15 @@ tags:
   - productivity
 ---
 
-I finally decided to switch from Hey email. Elements of Hey's approach to email worked well for me, so I wanted to try to replicate some of it in another email provider.
-
-After deciding to use Fastmail, I found several articles about setting up a Hey workflow with it. But the suggested setup relied on creating custom rules for each contact and I found this to be too cumbersome. I figured out a slightly different approach and wanted to share what I ended up with. 
+When I switched to [Fastmail](https://ref.fm/u26272200) from [Hey](https://hey.com), there were elements of Hey's approach that worked well for me and I wanted to replicate. I found several articles about setting up a Hey workflow with Fastmail, but the suggested setup relied on creating custom rules for each contact and I found this to be cumbersome. I figured out a slightly different approach and wanted to document what I ended up with. 
 
 ## Why Fastmail?
 
-[Fastmail](https://ref.fm/u26272200) came recommended by several friends and has a long history of providing a solid privacy conscious service. Here’s what drew me to Fastmail:
+Fastmail came recommended by several friends and has a long history of providing a solid privacy conscious service. Here’s what drew me to Fastmail:
 
-* Privacy focused. It’s a paid service, which means they don’t need to sell your information to advertisers to make money. They also provide tracking pixel blocking and image proxying.
-* It’s about half the price of Hey.
+* It’s a paid service, which means they don’t need to sell your information to advertisers to make money. 
+* Tracking pixel blocking and image proxying.
+* Half the price of Hey.
 * Supports multiple custom domains.
 * Decent iOS apps.
 
