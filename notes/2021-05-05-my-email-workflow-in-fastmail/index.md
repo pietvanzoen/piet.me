@@ -1,7 +1,7 @@
 ---
 title: "My email workflow in Fastmail"
 unsplashImageId: k_EwsK_mCvk
-updated: 2021-05-05
+updated: 2021-05-06
 date: 2021-05-05
 slug: my-email-workflow-in-fastmail
 featured: true
