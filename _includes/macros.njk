@@ -7,7 +7,6 @@
   <div>{{ update.templateContent | safe }}</div>
   {%- for link in update.templateContent | parseLinks -%}
     {% set data = link | getOpenGraphData %}
-    {% if data %}
     <a class="card" href="{{ link | url }}">
       {% if data.ogImage and data.ogImage.url %}
       <img class="img-right img-rounded" style="max-width: 200px;" src="{{ data.ogImage.url | url }}" alt="{{ data.ogTitle }}" />
@@ -16,7 +15,6 @@
       <p>{{ data.ogDescription }}</p>
       <small class="text-muted">{{ link | getHost }}</small>
     </a>
-    {% endif %}
   {%- endfor -%}
   {%- for link in update.data.alsoOn -%}
     {% if loop.first %}<p class="text-muted"><small>Also on: {% endif -%}
