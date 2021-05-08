@@ -5,17 +5,6 @@
     <time class="text-muted text-small" datetime="{{ update.data.date | date }}">{{ update.data.date | date('ddd, D MMM YYYY, HH:mm') }}</time>
   </a>
   <div>{{ update.templateContent | safe }}</div>
-  {%- for link in update.templateContent | parseLinks -%}
-    {% set data = link | getOpenGraphData %}
-    <a class="card" href="{{ link | url }}">
-      {% if data.ogImage and data.ogImage.url %}
-      <img class="img-right img-rounded" style="max-width: 200px;" src="{{ data.ogImage.url | url }}" alt="{{ data.ogTitle }}" />
-      {% endif %}
-      <h3>{{ data.ogTitle }}</h3>
-      <p>{{ data.ogDescription }}</p>
-      <small class="text-muted">{{ link | getHost }}</small>
-    </a>
-  {%- endfor -%}
   {%- for link in update.data.alsoOn -%}
     {% if loop.first %}<p class="text-muted"><small>Also on: {% endif -%}
       {%- if loop.index != 1 -%}, {% endif -%}
