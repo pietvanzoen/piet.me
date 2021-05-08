@@ -7,7 +7,7 @@ module.exports = function getOpenGraphData(link = '', callback) {
   try {
     url = new URL(link).href;
   } catch (e) {
-    console.error(`Error: unable to parse url '${link}':`, e);
+    console.error(`Error: unable to parse url '${link}': ${e}`);
     return callback(null, null);
   }
   if (openGraphCache.has(url)) {
@@ -21,7 +21,7 @@ module.exports = function getOpenGraphData(link = '', callback) {
       callback(null, result);
     })
     .catch((err) => {
-      console.error(`Warning: failed to fetch data for ${url}:`, err);
+      console.error(`Warning: failed to fetch data for ${url}: ${err}`);
       openGraphCache.set(url, null);
       callback(null, null);
     });
