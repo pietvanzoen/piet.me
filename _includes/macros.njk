@@ -18,11 +18,11 @@
     </a>
     {% endif %}
   {%- endfor -%}
-  <p class="text-muted"><small>Also on:
-    {%- for link in update.data.alsoOn -%}
-    {%- if loop.index != 1 -%}, {% endif -%}
-    <a href="{{ link | url }}">{{ link | getHost }}</a>
-    {%- endfor -%}
-  </small></p>
+  {%- for link in update.data.alsoOn -%}
+    {% if loop.first %}<p class="text-muted"><small>Also on: {% endif -%}
+      {%- if loop.index != 1 -%}, {% endif -%}
+        <a href="{{ link | url }}">{{ link | getHost }}</a>
+    {%- if loop.last -%}</small></p>{%- endif -%}
+  {%- endfor -%}
 </article>
 {% endmacro %}
