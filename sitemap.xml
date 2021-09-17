@@ -3,25 +3,25 @@
     
         <url>
             <loc>https://piet.me/</loc>
-            <lastmod>2021-08-22T20:12:50.538Z</lastmod>
+            <lastmod>2021-09-17T11:14:54.937Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
             <loc>https://piet.me/notes/</loc>
-            <lastmod>2021-08-22T20:12:50.538Z</lastmod>
+            <lastmod>2021-09-17T11:14:54.937Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
             <loc>https://piet.me/tags/</loc>
-            <lastmod>2021-08-22T20:12:50.698Z</lastmod>
+            <lastmod>2021-09-17T11:14:55.093Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
             <loc>https://piet.me/about/</loc>
-            <lastmod>2021-08-22T20:12:50.506Z</lastmod>
+            <lastmod>2021-09-17T11:14:54.905Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -128,20 +128,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2019-02-22-but-imagine-if-the-only/</loc>
-            <lastmod>2019-02-22T09:43:25.829Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://piet.me/updates/2019-02-22-ah-ha-i-was-missing/</loc>
             <lastmod>2019-02-22T09:41:29.269Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2019-02-22-frontend-is-too-broad-a/</loc>
-            <lastmod>2019-02-22T08:14:04.606Z</lastmod>
+            <loc>https://piet.me/updates/2019-02-22-but-imagine-if-the-only/</loc>
+            <lastmod>2019-02-22T09:43:25.829Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -154,6 +148,12 @@
         <url>
             <loc>https://piet.me/updates/2019-02-23-almost-like-the-kind-of/</loc>
             <lastmod>2019-02-23T15:24:21.353Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://piet.me/updates/2019-02-22-frontend-is-too-broad-a/</loc>
+            <lastmod>2019-02-22T08:14:04.606Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -302,12 +302,6 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2019-06-02-why-yes-i-am-listening/</loc>
-            <lastmod>2019-06-02T14:07:40.786Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://piet.me/updates/2019-05-30-keyboard-enthusiasts-halp-im-looking/</loc>
             <lastmod>2019-05-30T21:16:18.823Z</lastmod>
             <changefreq>monthly</changefreq>
@@ -316,6 +310,12 @@
         <url>
             <loc>https://piet.me/updates/2019-06-01-im-counting-down-the-days/</loc>
             <lastmod>2019-06-01T08:05:51.323Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://piet.me/updates/2019-06-02-why-yes-i-am-listening/</loc>
+            <lastmod>2019-06-02T14:07:40.786Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -350,6 +350,18 @@
         </url>
     
         <url>
+            <loc>https://piet.me/updates/2019-06-12-shame-is-too-often-used/</loc>
+            <lastmod>2019-06-12T10:58:16.705Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://piet.me/updates/2019-06-12-so-proud-https-twitter-com/</loc>
+            <lastmod>2019-06-12T04:57:18.646Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://piet.me/updates/2019-06-17-i-was-never-sold-on/</loc>
             <lastmod>2019-06-17T04:48:58.899Z</lastmod>
             <changefreq>monthly</changefreq>
@@ -368,14 +380,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2019-06-25-i-feel-seen-https-twitter/</loc>
-            <lastmod>2019-06-25T07:30:26.519Z</lastmod>
+            <loc>https://piet.me/updates/2019-06-26-science-confirms-that-for-taking/</loc>
+            <lastmod>2019-06-26T07:08:11.945Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2019-06-26-science-confirms-that-for-taking/</loc>
-            <lastmod>2019-06-26T07:08:11.945Z</lastmod>
+            <loc>https://piet.me/updates/2019-06-25-i-feel-seen-https-twitter/</loc>
+            <lastmod>2019-06-25T07:30:26.519Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -452,14 +464,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2019-11-29-periodic-reminder-https-twitter-com/</loc>
-            <lastmod>2019-11-29T21:58:27.121Z</lastmod>
+            <loc>https://piet.me/updates/2019-11-30-i-felt-guilty-popping-my/</loc>
+            <lastmod>2019-11-30T18:13:57.417Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2019-11-30-i-felt-guilty-popping-my/</loc>
-            <lastmod>2019-11-30T18:13:57.417Z</lastmod>
+            <loc>https://piet.me/updates/2019-11-29-periodic-reminder-https-twitter-com/</loc>
+            <lastmod>2019-11-29T21:58:27.121Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -500,14 +512,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2019-12-28-choosing-whether-or-not-to/</loc>
-            <lastmod>2019-12-28T15:23:15.684Z</lastmod>
+            <loc>https://piet.me/updates/2020-01-02-preserving-the-web-or-more/</loc>
+            <lastmod>2020-01-02T16:18:22.275Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2020-01-02-preserving-the-web-or-more/</loc>
-            <lastmod>2020-01-02T16:18:22.275Z</lastmod>
+            <loc>https://piet.me/updates/2019-12-28-choosing-whether-or-not-to/</loc>
+            <lastmod>2019-12-28T15:23:15.684Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -578,26 +590,20 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2019-06-12-so-proud-https-twitter-com/</loc>
-            <lastmod>2019-06-12T04:57:18.646Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://piet.me/updates/2020-03-19-home-isolation-means-discovering-long/</loc>
             <lastmod>2020-03-19T06:07:15.730Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2020-03-23-2-for-1-wfh-standing/</loc>
-            <lastmod>2020-03-23T13:00:38.167Z</lastmod>
+            <loc>https://piet.me/updates/2020-03-22-current-toddler-at-home-for/</loc>
+            <lastmod>2020-03-22T06:57:57.254Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2020-03-22-current-toddler-at-home-for/</loc>
-            <lastmod>2020-03-22T06:57:57.254Z</lastmod>
+            <loc>https://piet.me/updates/2020-03-23-2-for-1-wfh-standing/</loc>
+            <lastmod>2020-03-23T13:00:38.167Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -680,14 +686,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2020-05-14-super-excited-about-the-v1/</loc>
-            <lastmod>2020-05-14T03:36:37.507Z</lastmod>
+            <loc>https://piet.me/updates/2020-04-18-every-time-i-listen-to/</loc>
+            <lastmod>2020-04-18T21:26:49.454Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2020-04-18-every-time-i-listen-to/</loc>
-            <lastmod>2020-04-18T21:26:49.454Z</lastmod>
+            <loc>https://piet.me/updates/2020-05-14-super-excited-about-the-v1/</loc>
+            <lastmod>2020-05-14T03:36:37.507Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -770,14 +776,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2020-07-20-are-there-any-artists-who/</loc>
-            <lastmod>2020-07-20T08:08:40.477Z</lastmod>
+            <loc>https://piet.me/updates/2020-07-13-the-cashier-at-the-grocery/</loc>
+            <lastmod>2020-07-13T08:29:08.786Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2020-07-13-the-cashier-at-the-grocery/</loc>
-            <lastmod>2020-07-13T08:29:08.786Z</lastmod>
+            <loc>https://piet.me/updates/2020-07-20-are-there-any-artists-who/</loc>
+            <lastmod>2020-07-20T08:08:40.477Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -884,14 +890,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2020-12-19-nice-trick-and-i-concur/</loc>
-            <lastmod>2020-12-19T07:07:23.534Z</lastmod>
+            <loc>https://piet.me/updates/2020-12-16-genuinely-curious-how-are-the/</loc>
+            <lastmod>2020-12-16T16:07:07.295Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2020-12-16-genuinely-curious-how-are-the/</loc>
-            <lastmod>2020-12-16T16:07:07.295Z</lastmod>
+            <loc>https://piet.me/updates/2020-12-19-nice-trick-and-i-concur/</loc>
+            <lastmod>2020-12-19T07:07:23.534Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -1034,14 +1040,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2021-04-02-folks-please-a-end-me/</loc>
-            <lastmod>2021-04-02T18:36:22.325Z</lastmod>
+            <loc>https://piet.me/updates/2021-04-03-media-tableflip-gif-https-twitter/</loc>
+            <lastmod>2021-04-03T22:19:48.498Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2021-04-03-media-tableflip-gif-https-twitter/</loc>
-            <lastmod>2021-04-03T22:19:48.498Z</lastmod>
+            <loc>https://piet.me/updates/2021-04-02-folks-please-a-end-me/</loc>
+            <lastmod>2021-04-02T18:36:22.325Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -1082,14 +1088,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2021-04-28-with-the-little-dutch-i/</loc>
-            <lastmod>2021-04-28T11:41:25.923Z</lastmod>
+            <loc>https://piet.me/updates/2021-04-28-a-pretty-spot-on-observation/</loc>
+            <lastmod>2021-04-28T20:38:45.591Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2021-04-28-a-pretty-spot-on-observation/</loc>
-            <lastmod>2021-04-28T20:38:45.591Z</lastmod>
+            <loc>https://piet.me/updates/2021-04-28-with-the-little-dutch-i/</loc>
+            <lastmod>2021-04-28T11:41:25.923Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -1178,14 +1184,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2021-05-20-cant-stop-watching-https-twitter/</loc>
-            <lastmod>2021-05-20T08:17:02.042Z</lastmod>
+            <loc>https://piet.me/updates/2021-05-21-ive-seen-too-many-forms/</loc>
+            <lastmod>2021-05-21T11:11:14.862Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2021-05-21-ive-seen-too-many-forms/</loc>
-            <lastmod>2021-05-21T11:11:14.862Z</lastmod>
+            <loc>https://piet.me/updates/2021-05-20-cant-stop-watching-https-twitter/</loc>
+            <lastmod>2021-05-20T08:17:02.042Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -1202,14 +1208,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2021-05-26-today-is-my-wifes-last/</loc>
-            <lastmod>2021-05-26T13:23:46.022Z</lastmod>
+            <loc>https://piet.me/updates/2021-05-22-what-the-hell-germany-eurovision/</loc>
+            <lastmod>2021-05-22T21:21:52.511Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2021-05-22-what-the-hell-germany-eurovision/</loc>
-            <lastmod>2021-05-22T21:21:52.511Z</lastmod>
+            <loc>https://piet.me/updates/2021-05-26-today-is-my-wifes-last/</loc>
+            <lastmod>2021-05-26T13:23:46.022Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -1274,14 +1280,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2021-06-20-there-is-sooo-much-value/</loc>
-            <lastmod>2021-06-20T09:00:55.154Z</lastmod>
+            <loc>https://piet.me/updates/2021-06-16-i-love-but-often-i/</loc>
+            <lastmod>2021-06-16T07:22:23.414Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2021-06-16-i-love-but-often-i/</loc>
-            <lastmod>2021-06-16T07:22:23.414Z</lastmod>
+            <loc>https://piet.me/updates/2021-06-20-there-is-sooo-much-value/</loc>
+            <lastmod>2021-06-20T09:00:55.154Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -1346,14 +1352,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/updates/2019-06-12-shame-is-too-often-used/</loc>
-            <lastmod>2019-06-12T10:58:16.705Z</lastmod>
+            <loc>https://piet.me/updates/2021-09-17-new-profile-pic-courtesy-of/</loc>
+            <lastmod>2021-09-17T11:14:20.060Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
             <loc>https://piet.me/updates/README/</loc>
-            <lastmod>2021-08-22T20:13:15.186Z</lastmod>
+            <lastmod>2021-09-17T11:15:22.546Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -1418,14 +1424,14 @@
         </url>
     
         <url>
-            <loc>https://piet.me/blog/organizing-git-projects/</loc>
-            <lastmod>2018-05-31T00:00:00.000Z</lastmod>
+            <loc>https://piet.me/notes/task-and-branch-management-in-rubymine/</loc>
+            <lastmod>2016-02-15T00:00:00.000Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
         <url>
-            <loc>https://piet.me/notes/task-and-branch-management-in-rubymine/</loc>
-            <lastmod>2016-02-15T00:00:00.000Z</lastmod>
+            <loc>https://piet.me/blog/organizing-git-projects/</loc>
+            <lastmod>2018-05-31T00:00:00.000Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
@@ -1527,7 +1533,7 @@
     
         <url>
             <loc>https://piet.me/updates/</loc>
-            <lastmod>2021-08-22T20:12:50.698Z</lastmod>
+            <lastmod>2021-09-17T11:14:55.093Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
     
