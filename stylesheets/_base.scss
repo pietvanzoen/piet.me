@@ -27,13 +27,14 @@
 }
 
 html, html.light-theme {
-  --accent-color: #51b9b5;
+  --accent-color: #126180;
   --text-color: #373737;
   --subtle-color: #ccc;
   --muted-color: #888;
-  --link-color: #ba5255;
+  --link-color: #1984AF;
+  --link-underline-color: #D2EEF9;
   --offset-color: #f8f8f8;
-  --background-color: #fff;
+  --background-color: #fbf7f8;
 
   --syntax-comment: #8e908c;
   --syntax-red: #c82829;
@@ -131,6 +132,10 @@ samp {
   font-family: "DM Mono", monospace;
 }
 
+h1, h2 {
+  color: var(--accent-color);
+}
+
 h1,
 h2,
 h3,
@@ -171,11 +176,13 @@ img {
 
 a {
   color: var(--link-color);
-  text-decoration: none;
+  text-underline-position: under;
+  text-decoration: underline;
+  text-decoration-color: var(--link-underline-color);
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
 }
 
 ul.unstyled li {
