@@ -5,13 +5,76 @@
   
   <link href="https://piet.me/feed.xml" rel="self"/>
   <link href="https://piet.me"/>
-  <updated>2021-05-05T00:00:00Z</updated>
+  <updated>2021-12-23T00:00:00Z</updated>
   <id>https://piet.me/</id>
   <author>
     <name>Piet van Zoen</name>
     <uri>https://piet.me</uri>
     <email>hi@piet.me</email>
   </author>
+  
+  <entry>
+    <title>Branch based sessions in Vim</title>
+    <link href="https://piet.me/branch-based-sessions-in-vim/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2021-12-23T00:00:00Z</published><updated>2021-12-23T00:00:00Z</updated><id>https://piet.me/branch-based-sessions-in-vim/</id>
+    <rights type="html">&amp;copy; 2021  Piet van Zoen</rights>
+      <summary>Vim sessions are a great way to save the state of vim so you don’t have to reopen all your files after closing it. I use tpope’s Obsession plugin which ensures a session file is always up to date. But by default this will only setup one session file per project.</summary><content type="html">&lt;p&gt;Vim sessions are a great way to save the state of vim so you don’t have to reopen all your files after closing it. I use &lt;a href=&quot;https://github.com/tpope/vim-obsession&quot;&gt;tpope’s Obsession plugin&lt;/a&gt; which ensures a session file is always up to date. But by default this will only setup one session file per project.&lt;/p&gt;
+&lt;p&gt;I tend to be working on multiple branches at the same time, which means that I’m switching between a few groups of files depending on the branch I’m working on. So I came up with a couple scripts for automatically maintaining a session for each branch.&lt;/p&gt;
+&lt;h2&gt;Creating and opening branch based sessions&lt;/h2&gt;
+&lt;p&gt;My approach relies on tpope’s Obsession plugin. If you don’t have it already, follow the instructions to get it installed: &lt;a href=&quot;https://github.com/tpope/vim-obsession&quot;&gt;https://github.com/tpope/vim-obsession&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Next add this function to your shell configuration file (E.g. Your &lt;code&gt;~/.bashrc&lt;/code&gt; or &lt;code&gt;~/.zshrc&lt;/code&gt;):&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;vm&lt;/span&gt;&lt;/span&gt;() {
+
+  &lt;span class=&quot;hljs-comment&quot;&gt;# Create .sessions directory if it doesn&amp;#x27;t exist&lt;/span&gt;
+  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; [[ ! -d &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;./.sessions&amp;#x27;&lt;/span&gt; ]]; &lt;span class=&quot;hljs-keyword&quot;&gt;then&lt;/span&gt;
+    mkdir &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;./.sessions&amp;#x27;&lt;/span&gt;
+  &lt;span class=&quot;hljs-keyword&quot;&gt;fi&lt;/span&gt;
+
+  &lt;span class=&quot;hljs-comment&quot;&gt;# Create a session file name based on the current branch&lt;/span&gt;
+  &lt;span class=&quot;hljs-built_in&quot;&gt;local&lt;/span&gt; session_name=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;.sessions/&lt;span class=&quot;hljs-subst&quot;&gt;$(git rev-parse --abbrev-ref HEAD)&lt;/span&gt;-session.vim&amp;quot;&lt;/span&gt;
+
+  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; [ -e &lt;span class=&quot;hljs-variable&quot;&gt;$session_name&lt;/span&gt; ]; &lt;span class=&quot;hljs-keyword&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;hljs-comment&quot;&gt;# If the session file exists open it&lt;/span&gt;
+    vim -S &lt;span class=&quot;hljs-variable&quot;&gt;$session_name&lt;/span&gt;
+  &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;hljs-comment&quot;&gt;# Otherwise create it&lt;/span&gt;
+    vim -c &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Obsession &lt;span class=&quot;hljs-variable&quot;&gt;$session_name&lt;/span&gt;&amp;quot;&lt;/span&gt; .
+  &lt;span class=&quot;hljs-keyword&quot;&gt;fi&lt;/span&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After adding this script reload your shell and the function will be available by running &lt;code&gt;vm&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;After changing branches I run &lt;code&gt;vm&lt;/code&gt; to either open an existing session for the branch or create a new one.&lt;/p&gt;
+&lt;h2&gt;Cleaning up session files&lt;/h2&gt;
+&lt;p&gt;Ideally we want to clean up our session files when branches are deleted. This script will keep your session files up to date with your current list of locally checked out branches.&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-meta&quot;&gt;#!/usr/bin/env bash&lt;/span&gt;
+&lt;span class=&quot;hljs-built_in&quot;&gt;set&lt;/span&gt; -e
+
+&lt;span class=&quot;hljs-comment&quot;&gt;# Get the root directory of the repository&lt;/span&gt;
+git_root_dir=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-subst&quot;&gt;$(git rev-parse --show-toplevel 2&amp;gt; /dev/null || echo &amp;#x27;.&amp;#x27;)&lt;/span&gt;&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;hljs-comment&quot;&gt;# Get a list of local branches&lt;/span&gt;
+branches=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-subst&quot;&gt;$(git branch | sed -r &amp;#x27;s/\*?\s*(.*?)&lt;/span&gt;\s*$/\1/&amp;#x27;)&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;hljs-comment&quot;&gt;# Get a list existing sessions, trimmed down to the branch name portion of the filename. (This line handles sessions in directories up to 4 levels deep).&lt;/span&gt;
+sessions=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-subst&quot;&gt;$(find $git_root_dir -maxdepth 4 -wholename &amp;#x27;*/.sessions/*-session.vim&amp;#x27; | sed &amp;#x27;s/.*\.sessions\/\(.*\)-session\.vim/\1/&amp;#x27; | sort | uniq)&lt;/span&gt;&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;hljs-comment&quot;&gt;# Loop through session names&lt;/span&gt;
+&lt;span class=&quot;hljs-keyword&quot;&gt;for&lt;/span&gt; session &lt;span class=&quot;hljs-keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;$sessions&lt;/span&gt; ; &lt;span class=&quot;hljs-keyword&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; [[ &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-variable&quot;&gt;$branches&lt;/span&gt;&amp;quot;&lt;/span&gt; != *&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-variable&quot;&gt;$session&lt;/span&gt;&amp;quot;&lt;/span&gt;* ]]; &lt;span class=&quot;hljs-keyword&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;hljs-comment&quot;&gt;# If session name isn&amp;#x27;t in the branches list, delete it.&lt;/span&gt;
+    rm -v `find &lt;span class=&quot;hljs-variable&quot;&gt;$git_root_dir&lt;/span&gt; -maxdepth 4 -wholename &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;*/.sessions/&lt;span class=&quot;hljs-variable&quot;&gt;$session&lt;/span&gt;-session.vim&amp;quot;&lt;/span&gt;`
+  &lt;span class=&quot;hljs-keyword&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;hljs-keyword&quot;&gt;done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Add this script to a file named &lt;code&gt;git-prune-sessions&lt;/code&gt; in a directory in your &lt;code&gt;$PATH&lt;/code&gt;. Make it executable by running &lt;code&gt;chmod +x ./git-prune-sessions&lt;/code&gt;. Then you can run &lt;code&gt;git prune-sessions&lt;/code&gt; to clean out any unused sessions.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Questions? Comments? Post a message below or ping me on &lt;a href=&quot;https://twitter.com/pietvanzoen&quot;&gt;twitter&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>My email workflow in Fastmail</title>
