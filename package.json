@@ -6,9 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "update-updates": "git submodule update --init --recursive --remote && git submodule foreach git pull origin main && npm run sync-images",
-    "start": "eleventy --config=eleventy.config.js --serve",
+    "watch:eleventy": "eleventy --config=eleventy.config.js --serve",
+    "watch:sass": "npm run sass -- --watch",
+    "start": "npm-run-all sass --parallel watch:*",
     "clean": "rm -rf _site",
-    "prebuild": "npm run clean && npm run sync-images && ./_scripts/set-mtime",
+    "sass": "sass --style=compressed stylesheets/main.scss stylesheets/main.css",
+    "prebuild": "npm run clean && npm run sync-images && ./_scripts/set-mtime && npm run sass",
     "prestart": "npm run clean && npm run sync-images",
     "sync-images": "rsync -r updates/media images",
     "optimize-images": "node ./_scripts/optimize.js",
@@ -36,19 +39,20 @@
     "dotenv": "^8.2.0",
     "eleventy-plugin-embed-twitter": "^1.3.0",
     "eleventy-plugin-local-images": "^0.4.0",
-    "eleventy-plugin-sass": "^1.2.0",
     "highlight.js": "^10.7.2",
     "lodash": "^4.17.21",
     "markdown-it": "^12.0.6",
     "open-graph-scraper": "^4.8.2",
     "query-string": "^6.14.1",
     "sanitize-html": "^2.3.3",
+    "sass": "^1.45.1",
     "sharp": "^0.26.3"
   },
   "devDependencies": {
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1"
   }
 }
