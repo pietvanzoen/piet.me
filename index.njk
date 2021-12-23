@@ -13,11 +13,23 @@ meta:
   <h1 class="text-center">Hi, I&#39;m Piet.</h1>
   <p class="home-intro"><span>I build things for the web.<br>This is my website.</span></p>
 
-  <p>Last year I wrote about <a href="/blog/rethinking-my-piece-of-the-internet/">reclaiming this little piece of the internet</a> for myself again. So when I learned about <a href="https://joelhooks.com/digital-garden">digital gardens</a> I was immediately intrigued. I&#8217;ve often struggled hitting the publish button, so the idea of a space that&#8217;s meant to be personal and a work in progress resonated with me. </p>
+  <div class="site-menu-home site-menu site-menu-lg">
+    <nav class="site-menu-list">
+      <ol>
+        {%- for item in site.menu -%}
+        {%- if page.url != item.href -%}
+          <li>
+            <a href="{{ item.href }}">{{ item.name }}</a>
+          </li>
+        {%- endif -%}
+        {%- endfor -%}
+      </ol>
+    </nav>
+  </div>
 
-  <p>So here it is. The next evolution of my little plot of the internet. </p>
+  <hr>
 
-  <p>This is where I capture notes and thoughts on the things I&#8217;m interested in. This includes web development, all things command line, vim, cats, family, expat life, field recording, 3d printing, and general tinkering. </p>
+  <p>Welcome! Hello! This is my little plot of the internet where I capture notes and thoughts on the things I&#8217;m interested in. (When ever I get around to writing anything.) This includes web development, all things command line, vim, cats, family, expat life, field recording, 3d printing, and general tinkering. </p>
 
   <p>Below are some of my favourite posts. Thanks for visiting. 🙏</p>
 

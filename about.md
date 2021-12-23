@@ -18,7 +18,7 @@ I live in the Netherlands with my wife [Keven](https://studiozoen.com/), our dau
 
 I first dabbled in web development when I was a teenager. My first website was a R.E.M fanpage called “R.E.M ‘R’ US”, which is long lost (un)fortunately. The first time I got paid for web development was in 2009 in Portland, Oregon when I started freelancing building brochure websites and Wordpress themes.
 
-I quickly moved on to [Daylight Studio](https://thedaylightstudio.com), where I developed the foundation of my love for automation and all things web. Later at [Cozy](https://cozy.co) I was given the fantastic opportunity of developing their first static javascript web app from the ground up. It was at Cozy that I was first introduced to Test Driven Development, and the way I build software has never been the same since.
+After freelancing I moved on to [Daylight Studio](https://thedaylightstudio.com), where I developed the foundation of my love for automation and all things web. Later at [Cozy](https://cozy.co) I was given the opportunity to develop their first static javascript web app from the ground up. It was at Cozy that I was first introduced to Test Driven Development, and the way I build software has never been the same since.
 
 In 2016 we migrated to the Netherlands, where I helped build and lead product focused engineering teams at [Usabilla](https://usabilla.com), [YoungCapital](https://www.youngcapital.nl), and now at [Cutr](https://www.cutr.ai).
 

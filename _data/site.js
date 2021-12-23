@@ -7,7 +7,7 @@ module.exports = {
   isProduction: process.env.ELEVENTY_PRODUCTION === 'true',
   menu: [
     { href: '/', name: 'Home' },
-    { href: '/notes/', name: 'Archive' },
+    { href: '/notes/', name: 'Notes' },
     { href: '/updates/', name: 'Updates' },
     { href: '/about/', name: 'About' },
   ],
