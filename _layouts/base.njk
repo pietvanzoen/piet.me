@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ stylesheet | url }}">
     {%- endfor %}
 
+    <script defer data-domain="piet.me" src="https://plausible.piet.me/js/plausible.js"></script>
   </head>
   <body class="{{ bodyClass }}">
     {{ content | safe }}
@@ -33,6 +34,5 @@
         fathom("trackPageview");
       }
     </script>
-    <script defer data-domain="piet.me" src="https://plausible.piet.me/js/plausible.js"></script>
   </body>
 </html>
