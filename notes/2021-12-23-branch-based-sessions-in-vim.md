@@ -3,7 +3,6 @@ title: "Branch based sessions in Vim"
 unsplashImageId: 5t1lUr0NmHI
 date: 2021-12-23
 slug: branch-based-sessions-in-vim
-featured: true
 tags:
   - vim
   - command line
