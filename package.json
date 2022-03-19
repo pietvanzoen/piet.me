@@ -10,7 +10,7 @@
     "watch:sass": "npm run sass -- --watch",
     "start": "npm-run-all sass --parallel watch:*",
     "clean": "rm -rf _site",
-    "sass": "sass --style=compressed _includes/stylesheets/main.scss _includes/stylesheets/main.css",
+    "sass": "sass --style=compressed --no-source-map _includes/stylesheets/main.scss _includes/stylesheets/main.css",
     "prebuild": "npm run clean && npm run sync-images && ./_scripts/set-mtime && npm run sass",
     "prestart": "npm run clean && npm run sync-images",
     "sync-images": "rsync -r updates/media images",
