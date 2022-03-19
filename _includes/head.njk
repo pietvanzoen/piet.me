@@ -1,10 +1,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width" />
 <title>{{ seo.title }}</title>
-<link rel="stylesheet" href="{{ '/stylesheets/main.css' | cacheBust | url }}">
+<style>{% include 'stylesheets/main.css' %}</style>
 
 {%- for stylesheet in stylesheets %}
-<link rel="stylesheet" href="{{ stylesheet | cacheBust | url }}">
+<style>{% include stylesheet %}</style>
 {%- endfor %}
 
 <link rel="alternate" type="application/atom+xml" href="/feed.xml" />
@@ -39,3 +39,4 @@
 
 <link rel="webmention" href="https://webmention.io/{{ site.hostname }}/webmention" />
 <link rel="pingback" href="https://webmention.io/{{ site.hostname }}/xmlrpc" />
+<script defer data-domain="piet.me" src="https://plausible.piet.me/js/plausible.js"></script>

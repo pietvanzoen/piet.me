@@ -6,12 +6,6 @@
 .home {
   margin: 3em auto;
 }
-// .home ul {
-//   padding: 0;
-// }
-// .home li {
-//   list-style: none;
-// }
 .home-intro {
   font-size: 6vw;
 }
@@ -57,13 +51,6 @@
 .headline {
   color: var(--accent-color);
 }
-// .home-intro span:first-child {
-//   border-radius: 0.2em 0.2em 0.1em 0.1em;
-// }
-// .home-intro span:last-child {
-//   border-radius: 0 0 0.2em 0.2em;
-// }
-
 
 .home h1,
 .home menu {
@@ -152,9 +139,11 @@
   overflow: auto;
   display: block;
   border: 1px solid var(--subtle-color);
-  border-radius: 0.2em;
   padding: 1em;
   background-color: var(--offset-color);
+  &, img {
+    border-radius: 0.2em;
+  }
 }
 .twitter-tweet:not(.twitter-tweet-rendered):before {
   display: none;
