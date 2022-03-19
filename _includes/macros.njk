@@ -1,9 +1,13 @@
 
 {% macro update(update) %}
 <article class="update card buffer-md">
-  <a href="{{ update.url | url }}">
-    <time class="text-muted text-small" datetime="{{ update.data.date | date }}">{{ update.data.date | date('ddd, D MMM YYYY, HH:mm') }}</time>
-  </a>
+  <header class="card-header">
+    {% set inReplyTo = update.data.in_reply_to %}
+    {% if inReplyTo -%}
+      {% set twitterHandle = inReplyTo | url | getTwitterUserFromURL %}
+      <div class="text-small"><a href="{{ inReplyTo | url }}">Replying to {{ twitterHandle if twitterHandle !== '@pietvanzoen' else 'myself'}}</a></div>
+    {%- endif %}
+  </header>
   <div>{{ update.templateContent | safe }}</div>
   {%- for link in update.templateContent | parseLinks -%}
     {% set data = link | getOpenGraphData %}
@@ -18,11 +22,18 @@
     </a>
     {% endif %}
   {%- endfor -%}
+      <footer class="card-footer">
   {%- for link in update.data.alsoOn -%}
-    {% if loop.first %}<p class="text-muted"><small>Also on: {% endif -%}
+    {% if loop.first %}<div class="text-muted"><small>{% endif -%}
       {%- if loop.index != 1 -%}, {% endif -%}
-        <a href="{{ link | url }}">{{ link | getHost }}</a>
-    {%- if loop.last -%}</small></p>{%- endif -%}
+        <a href="{{ link | url }}" title="Also on {{ link | getHost }}">{{ link | getHost }}</a>
+    {%- if loop.last -%}</small></div>{%- endif -%}
   {%- endfor -%}
+    <div class="text-right">
+      <a href="{{ update.url | url }}">
+        <time class="text-muted text-small" datetime="{{ update.data.date | date }}">{{ update.data.date | date('ddd, D MMM YYYY, HH:mm') }}</time>
+      </a>
+    </div>
+      </footer>
 </article>
 {% endmacro %}

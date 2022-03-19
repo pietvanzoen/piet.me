@@ -173,6 +173,9 @@ img {
 .text-accent {
   color: var(--accent-color);
 }
+.text-right {
+  text-align: right;
+}
 
 a {
   color: var(--link-color);
@@ -244,6 +247,16 @@ blockquote {
 
 figure {
   margin: 0;
+}
+
+.buffer-xs {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.buffer-sm {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .buffer-md {

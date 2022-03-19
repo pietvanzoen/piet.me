@@ -88,6 +88,10 @@ module.exports = function (cfg) {
   cfg.addFilter('dateRelative', (date) => dayjs(date).fromNow());
   cfg.addFilter('debug', (obj) => `<pre style="overflow-x: auto;"><code>${JSON.stringify(obj, null, 2)}</code></pre>`);
   cfg.addFilter('encodeURIComponent', (str) => encodeURIComponent(str));
+  cfg.addFilter('getTwitterUserFromURL', (tweetURL) => {
+    const url = new URL(tweetURL);
+    return `@${url.pathname.split('/')[1]}`;
+  });
   cfg.addFilter('getHost', (url) => new URL(url).host);
   cfg.addFilter('cacheBust', (url) => (IS_PRODUCTION ? `${url}?${Date.now()}` : url));
   cfg.addFilter('webmentionsForUrl', webmentionsForUrl);

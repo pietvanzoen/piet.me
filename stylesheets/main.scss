@@ -27,7 +27,8 @@
   display: block;
   margin: auto;
 }
-.img-right {
+.img-right,
+.float-right {
   float: right;
   margin-left: 1em;
 }
@@ -157,6 +158,13 @@
 }
 .twitter-tweet:not(.twitter-tweet-rendered):before {
   display: none;
+}
+.card-header,
+.card-footer {
+  display: flex;
+  > * {
+    flex-grow: 1;
+  }
 }
 
 a.card {
