@@ -1,13 +1,11 @@
 
 {% macro update(update) %}
 <article class="update card buffer-md">
-  <header class="card-header">
-    {% set inReplyTo = update.data.in_reply_to %}
-    {% if inReplyTo -%}
-      {% set twitterHandle = inReplyTo | url | getTwitterUserFromURL %}
-      <div class="text-small"><a href="{{ inReplyTo | url }}">Replying to {{ twitterHandle if twitterHandle !== '@pietvanzoen' else 'myself'}}</a></div>
-    {%- endif %}
-  </header>
+  {% set inReplyTo = update.data.in_reply_to %}
+  {% if inReplyTo -%}
+    {% set twitterHandle = inReplyTo | url | getTwitterUserFromURL %}
+    <small><a href="{{ inReplyTo | url }}">Replying to {{ twitterHandle if twitterHandle !== '@pietvanzoen' else 'myself'}}</a></small>
+  {%- endif %}
   <div>{{ update.templateContent | safe }}</div>
   {%- for link in update.templateContent | parseLinks -%}
     {% set data = link | getOpenGraphData %}

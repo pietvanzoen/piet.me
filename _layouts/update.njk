@@ -6,6 +6,10 @@ layout: layout.njk
   <header>
     <h2 class="headline">{{ date | date('ddd, Do MMM YYYY, HH:mm') }}</h2>
   </header>
+  {% if in_reply_to -%}
+  {% set twitterHandle = in_reply_to | url | getTwitterUserFromURL %}
+  <a href="{{ in_reply_to | url }}">Replying to {{ twitterHandle if twitterHandle !== '@pietvanzoen' else 'myself'}}</a>
+  {%- endif %}
 
   <div class="text-large">{{ content | safe }}</a>
 
