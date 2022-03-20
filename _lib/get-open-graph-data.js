@@ -17,12 +17,20 @@ module.exports = function getOpenGraphData(link = '', callback) {
   ogs({ url, followRedirect: true, ogImageFallback: true })
     .then(({ result }) => {
       console.log('Successfully fetched data for ' + url);
-      openGraphCache.set(url, result);
+      try {
+        openGraphCache.set(url, result);
+      } catch (e) {
+        console.warn(e);
+      }
       callback(null, result);
     })
     .catch((err) => {
       console.error(`Warning: failed to fetch data for ${url}: ${err}`);
-      openGraphCache.set(url, null);
+      try {
+        openGraphCache.set(url, null);
+      } catch (e) {
+        console.warn(e);
+      }
       callback(null, null);
     });
 };

@@ -155,6 +155,15 @@
     flex-grow: 1;
   }
 }
+.card-footer {
+  margin-top: 0.5em;
+}
+.card-header {
+  margin-bottom: 0.5em;
+}
+.card-body + .card {
+  margin-top: 1em;
+}
 
 a.card {
   transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
@@ -171,4 +180,10 @@ a.card:hover {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+.update p:last-child {
+  margin-bottom: 0;
+}
+.update p:first-child {
+  margin-top: 0;
 }

@@ -3,10 +3,12 @@
 <article class="update card buffer-md">
   {% set inReplyTo = update.data.in_reply_to %}
   {% if inReplyTo -%}
+    <header class="card-header">
     {% set twitterHandle = inReplyTo | url | getTwitterUserFromURL %}
     <small><a href="{{ inReplyTo | url }}">Replying to {{ twitterHandle if twitterHandle !== '@pietvanzoen' else 'myself'}}</a></small>
+    </header>
   {%- endif %}
-  <div>{{ update.templateContent | safe }}</div>
+  <div class="card-body">{{ update.templateContent | safe }}</div>
   {%- for link in update.templateContent | parseLinks -%}
     {% set data = link | getOpenGraphData %}
     {% if data %}
