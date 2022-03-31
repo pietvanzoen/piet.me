@@ -9,7 +9,11 @@ meta:
 ---
 
 <main role="main">
-  <img class="img-circle home-image" src="/images/2021-09-17-lino-portrait-1000px.jpg" alt="Piet van Zoen"/>
+  <picture  class="img-circle home-image">
+   <source type="image/webp" srcset="/images/avatar-400.webp">
+   <source type="image/jpeg" srcset="/images/avatar-400.jpg">
+   <img src="/images/avatar-400.jpg" alt="Piet van Zoen">
+  </picture>
   <h1 class="text-center">Hi, I&#39;m Piet.</h1>
   <p class="home-intro"><span>I build things for the web.<br>This is my website.</span></p>
 

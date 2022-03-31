@@ -11,6 +11,9 @@ const updatesCollection = require('./_lib/updates-collection');
 const fs = require('fs');
 const getUnsplashImageColor = require('./_lib/get-unsplash-image-color');
 const webmentionsForUrl = require('./_lib/webmentions-for-url');
+const htmlmin = require('html-minifier');
+const posthtml = require('posthtml');
+const uglify = require('posthtml-minify-classnames');
 
 const now = new Date();
 
@@ -108,6 +111,26 @@ module.exports = function (cfg) {
   cfg.addTransform('lazyImages', (content, outputPath) => {
     if (!outputPath.endsWith('.html')) return content;
     return content.replace(/<img /g, '<img loading="lazy" ');
+  });
+
+  cfg.addTransform('htmlmin', async function (content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    if (outputPath && outputPath.endsWith('.html')) {
+      let html = content;
+
+      if (IS_PRODUCTION) {
+        html = (await posthtml().use(uglify()).process(content))?.html;
+      }
+
+      let minified = htmlmin.minify(html, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      });
+      return minified;
+    }
+
+    return content;
   });
 
   function firstFourLines(file) {

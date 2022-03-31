@@ -5,7 +5,11 @@ layout: base.njk
 <header class="site-header">
   <div class="site-title">
     <a href="/">
-      <img class="img-circle" src="/images/2021-09-17-lino-portrait-1000px.jpg" alt="Piet van Zoen" />
+      <picture  class="img-circle">
+       <source type="image/webp" srcset="/images/avatar-400.webp">
+       <source type="image/jpeg" srcset="/images/avatar-400.jpg">
+       <img src="/images/avatar-400.jpg" alt="Piet van Zoen">
+      </picture>
       <span>Back to homepage</span>
     </a>
   </div>
