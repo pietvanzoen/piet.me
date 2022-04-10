@@ -2,7 +2,7 @@
 title: Rethinking my piece of the internet
 date: 2020-07-02
 unsplashImageId: XwWXvA5CP78
-imageAlt: Neon sign. "Personal space"
+imageAlt: "Neon sign. 'Personal space'"
 tags: meta
 permalink: blog/rethinking-my-piece-of-the-internet/index.html
 
