@@ -5,13 +5,32 @@
   
   <link href="https://piet.me/feed.xml" rel="self"/>
   <link href="https://piet.me"/>
-  <updated>2021-12-23T00:00:00Z</updated>
+  <updated>2022-07-30T00:00:00Z</updated>
   <id>https://piet.me/</id>
   <author>
     <name>Piet van Zoen</name>
     <uri>https://piet.me</uri>
     <email>hi@piet.me</email>
   </author>
+  
+  <entry>
+    <title>Early Mornings</title>
+    <link href="https://piet.me/notes/early-mornings/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2022-07-30T00:00:00Z</published><updated>2022-07-30T00:00:00Z</updated><id>https://piet.me/notes/early-mornings/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>I love early mornings.</summary><content type="html">&lt;p&gt;I love early mornings.&lt;/p&gt;
+&lt;p&gt;I love getting up before everyone else. I’m refreshed, awake, it’s quiet, and I’m alone. (Yes I guess I am an introvert.) There’s a peacefulness of spaces before everyone starts their day.&lt;/p&gt;
+&lt;p&gt;Fortunately I don’t have a set an alarm because my daughter normally wakes up at 7am. As a result my body has kindly adopted an internal alarm of 6am so I have lots of opportunities to enjoy early mornings.&lt;/p&gt;
+&lt;p&gt;Summer and spring are obviously lovely times for early mornings. It’s light early, the air is fresh and birds are singing.&lt;/p&gt;
+&lt;p&gt;In particular I love getting up early while I’m traveling. Hotels have their own peacefulness early in the morning. Staff arrive to get things ready for the breakfast rush. Looking out the window at an unfamiliar city as people begin (or end) their day. Maybe it’s something about catching a normally hectic space at a moment of peacefulness.&lt;/p&gt;
+&lt;p&gt;In April I went with the Cutr team for an offsite at a hotel in the country side outside Arnhem. Even though I wasn’t being woken up by my daughter my body normally wakes up at 6am regardless, and having a hotel room to myself doesn’t really change that. So I made myself a coffee and sat on a bench outside and enjoyed the morning.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Branch based sessions in Vim</title>
