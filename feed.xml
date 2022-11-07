@@ -5,13 +5,33 @@
   
   <link href="https://piet.me/feed.xml" rel="self"/>
   <link href="https://piet.me"/>
-  <updated>2022-07-30T00:00:00Z</updated>
+  <updated>2022-11-07T00:00:00Z</updated>
   <id>https://piet.me/</id>
   <author>
     <name>Piet van Zoen</name>
     <uri>https://piet.me</uri>
     <email>hi@piet.me</email>
   </author>
+  
+  <entry>
+    <title>Yoto: Our favourite device for our kid</title>
+    <link href="https://piet.me/yoto-mini-player/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2022-11-07T00:00:00Z</published><updated>2022-11-07T00:00:00Z</updated><id>https://piet.me/yoto-mini-player/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>We’d been looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted an alternative. Teddie loves listening to stories but it was always off our phones through her Bluetooth headphones. We thought about getting a CD player, maybe even a mini-disc or cassette player!</summary><content type="html">&lt;p&gt;We’d been looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted an alternative. Teddie loves listening to stories but it was always off our phones through her Bluetooth headphones. We thought about getting a CD player, maybe even a mini-disc or cassette player!&lt;/p&gt;
+&lt;p&gt;Then we stumbled on &lt;a href=&quot;https://yotoplay.com/&quot;&gt;Yoto&lt;/a&gt;. It’s freaking awesome. Besides the cards you can buy, you can make your own playlists of whatever you want.&lt;/p&gt;
+&lt;div style=&quot;padding:56.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/646857162?h=c37b74908f&amp;byline=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;There’s a daily kids podcast which Teddie has loved and Yoto radio is so good we just listen to it at home. Also turns out there’s tons of kids podcasts out there and Yoto supports podcast feeds.&lt;/p&gt;
+&lt;p&gt;I’ve been super impressed with it and would recommend it to any parent looking for a modern alternative to their cassette tape player they had growing up.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&quot;https://piet.me/notes/2022-11-07-yoto-player/my-first-sony.jpg&quot; alt=&quot;My first sony walkman&quot; /&gt;&lt;figcaption&gt;Remember these??&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Bonus tip. When you’re making your own playlists you can assign pixel icons to each track. Someone made a website where you can find and upload custom icons: &lt;a href=&quot;https://www.yotoicons.com/&quot;&gt;https://www.yotoicons.com&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Early Mornings</title>
