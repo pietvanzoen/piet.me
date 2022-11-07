@@ -22,3 +22,5 @@ I’ve been super impressed with it and would recommend it to any parent looking
 
 
 Bonus tip. When you’re making your own playlists you can assign pixel icons to each track. Someone made a website where you can find and upload custom icons: https://www.yotoicons.com
+
+Also, you can get a 10% discount on your first order using this link! ✨<https://prz.io/EDbezxZTK>✨
