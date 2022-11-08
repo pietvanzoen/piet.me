@@ -1,16 +1,16 @@
 ---
-title: "Yoto: Our favourite device for our kid"
+title: "Yoto: Our favourite device for kids"
 unsplashImageId: XOjs141bq6U
 date: 2022-11-07
 slug: yoto-mini-player
 featured: true
 tags:
-  - parenting
+  - family
 ---
 
-We’d been looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted an alternative. Teddie loves listening to stories but it was always off our phones through her Bluetooth headphones. We thought about getting a CD player, maybe even a mini-disc or cassette player!
+We hadd been looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted an alternative. Teddie (our daughter) loves listening to stories but so far we've been playing things from our own phones through her headphones, which isn't super convenient. We thought about getting a CD player, maybe even a mini-disc or cassette player! But alas, CD audio books are pretty expensive, and who has a CD writer these days?
 
-Then we stumbled on [Yoto](https://yotoplay.com). It’s freaking awesome. Besides the cards you can buy, you can make your own playlists of whatever you want.
+Then we stumbled on **[Yoto](https://yotoplay.com)**. It’s freaking awesome. Besides the cards you can buy, you can make your own playlists of whatever you want. Yoto devices have a small pixel screen which shows different pixel art for each track on a playlist. That way kids can quickly see what track they're on in a playlist.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/646857162?h=c37b74908f&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
