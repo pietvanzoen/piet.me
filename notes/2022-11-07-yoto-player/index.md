@@ -3,13 +3,15 @@ title: "Yoto: Our favourite device for kids"
 unsplashImageId: XOjs141bq6U
 updates: 2022-11-08
 date: 2022-11-07
-slug: yoto-mini-player
+slug: yoto
 featured: true
 tags:
   - family
 ---
 
-For the last year we've been looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted something that could be dedicated to playing audio without the distraction of a screen. Teddie (our daughter) loves listening to stories but so far we've been playing things from our own phones through her headphones, which isn't super convenient. We thought about getting a CD player, maybe even a mini-disc or cassette player! But alas, CD audio books are pretty expensive, and who has a CD writer these days?
+For the last year we've been looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted something that could be dedicated to playing audio without the distraction of a screen. 
+
+Teddie (our daughter) loves listening to stories but so far we've been playing things from our own phones through her headphones, which isn't super convenient. We thought about getting a CD player, maybe even a mini-disc or cassette player. But alas, CD audio books are pretty expensive, and who has a CD writer these days?
 
 ![Yoto Player mini](/notes/2022-11-07-yoto-player/Yoto-Mini-Player.jpg)
 
