@@ -1,7 +1,7 @@
 ---
 title: "Yoto: Our favourite device for kids"
 unsplashImageId: XOjs141bq6U
-updates: 2022-11-08
+updated: 2022-11-08
 date: 2022-11-07
 slug: yoto
 featured: true
