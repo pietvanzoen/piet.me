@@ -24,7 +24,7 @@
     <published>2022-11-07T00:00:00Z</published>
       <updated>2022-11-08T00:00:00Z</updated><id>https://piet.me/yoto/</id>
     <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
-      <summary>For the last year we&#39;ve been looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted something that could be dedicated to playing audio without the distraction of a screen.</summary><content type="html">&lt;p&gt;For the last year we&#39;ve been looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted something that could be dedicated to playing audio without the distraction of a screen.&lt;/p&gt;
+      <summary>For a long time we were looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted something that could be dedicated to playing audio without the distraction of a screen.</summary><content type="html">&lt;p&gt;For a long time we were looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted something that could be dedicated to playing audio without the distraction of a screen.&lt;/p&gt;
 &lt;p&gt;Teddie (our daughter) loves listening to stories but so far we&#39;ve been playing things from our own phones through her headphones, which isn&#39;t super convenient. We thought about getting a CD player, maybe even a mini-disc or cassette player. But alas, CD audio books are pretty expensive, and who has a CD writer these days?&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://piet.me/notes/2022-11-07-yoto-player/Yoto-Mini-Player.jpg&quot; alt=&quot;Yoto Player mini&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Then we stumbled on ✨ &lt;strong&gt;&lt;a href=&quot;https://yotoplay.com/&quot;&gt;Yoto&lt;/a&gt;&lt;/strong&gt; ✨. We got Teddie the Yoto Mini which is a handheld device designed for kids that plays basically any audio content. Besides the huge &lt;a href=&quot;https://yotoplay.com/collections/library&quot;&gt;library of cards you can buy&lt;/a&gt;, you can make your own playlists of whatever you want. Yoto devices have a small pixel screen which shows different pixel art for each track on a playlist.&lt;/p&gt;
@@ -33,8 +33,14 @@
 &lt;p&gt;There’s a daily kids podcast which Teddie has loved and Yoto radio is so good we just listen to it at home. Also, it turns out there’s tons of kids podcasts out there and Yoto supports podcast feeds.&lt;/p&gt;
 &lt;p&gt;I’ve been super impressed with it and would recommend it to any parent looking for a modern alternative to their cassette tape player they had growing up.&lt;/p&gt;
 &lt;figure&gt;&lt;img src=&quot;https://piet.me/notes/2022-11-07-yoto-player/my-first-sony.jpg&quot; alt=&quot;My first sony walkman&quot; /&gt;&lt;figcaption&gt;Remember these??&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;Bonus tip. When you’re making your own playlists you can assign pixel icons to each track. Someone made a website where you can find and upload custom icons: &lt;a href=&quot;https://www.yotoicons.com/&quot;&gt;https://www.yotoicons.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Also, you can get a 10% discount on your first order using this link! ✨&lt;a href=&quot;https://prz.io/EDbezxZTK&quot;&gt;https://prz.io/EDbezxZTK&lt;/a&gt;✨&lt;/p&gt;
+&lt;h2&gt;Tips&lt;/h2&gt;
+&lt;p&gt;Here&#39;s a running list of useful things I&#39;ve discovered:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When you’re making your own playlists you can assign pixel icons to each track. Someone made a website where you can find and upload custom icons: &lt;a href=&quot;https://www.yotoicons.com/&quot;&gt;https://www.yotoicons.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;For the more technical folks, &lt;a href=&quot;https://github.com/ytdl-org/youtube-dl/&quot;&gt;youtube-dl&lt;/a&gt; is a command line tool for downloading whole YouTube playlists. Super useful for fetching content for your Yoto.&lt;/li&gt;
+&lt;li&gt;Create perfectly sized custom labels for your Make Your Own Yoto cards using self-adhesive labels for your printer. I found these labels that fix perfectly: &lt;a href=&quot;https://www.amazon.nl/-/en/gp/product/B004UTZ0V6/ref=ppx_yo_dt_b_asin_title_o03_s00&quot;&gt;HERMA 5028 universal labels A4 83.8 x 50.8 mm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   
