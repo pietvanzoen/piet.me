@@ -35,9 +35,9 @@ jobs:
           commit_message: "Site update"
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.4.1
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: _site
-          CLEAN: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: _site
+          clean: true
