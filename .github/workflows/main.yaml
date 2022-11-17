@@ -27,6 +27,13 @@ jobs:
           npm run build
           npm run build
 
+      - name: Commit site
+        uses: devops-infra/action-commit-push@master
+        with:
+          github_token: "${{ secrets.GITHUB_TOKEN }}"
+          commit_prefix: "[AUTO]"
+          commit_message: "Site update"
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
