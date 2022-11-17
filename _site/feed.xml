@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Piet van Zoen</title>
+  <subtitle>Hi, I&#39;m Piet. I build things for the web. I love all things command line, and fries with mayo. This is a feed.</subtitle>
+  
+  <link href="https://piet.me/feed.xml" rel="self"/>
+  <link href="https://piet.me"/>
+  <updated>2022-11-07T00:00:00Z</updated>
+  <id>https://piet.me/</id>
+  <author>
+    <name>Piet van Zoen</name>
+    <uri>https://piet.me</uri>
+    <email>hi@piet.me</email>
+  </author>
+  
+  <entry>
+    <title>Yoto: Our favourite device for kids</title>
+    <link href="https://piet.me/yoto/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2022-11-07T00:00:00Z</published>
+      <updated>2022-11-08T00:00:00Z</updated><id>https://piet.me/yoto/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>For a long time we were looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted something that could be dedicated to playing audio without the distraction of a screen.</summary><content type="html">&lt;p&gt;For a long time we were looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted something that could be dedicated to playing audio without the distraction of a screen.&lt;/p&gt;
+&lt;p&gt;Teddie (our daughter) loves listening to stories but so far we&#39;ve been playing things from our own phones through her headphones, which isn&#39;t super convenient. We thought about getting a CD player, maybe even a mini-disc or cassette player. But alas, CD audio books are pretty expensive, and who has a CD writer these days?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/notes/2022-11-07-yoto-player/Yoto-Mini-Player.jpg&quot; alt=&quot;Yoto Player mini&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Then we stumbled on ✨ &lt;strong&gt;&lt;a href=&quot;https://yotoplay.com/&quot;&gt;Yoto&lt;/a&gt;&lt;/strong&gt; ✨. We got Teddie the Yoto Mini which is a handheld device designed for kids that plays basically any audio content. Besides the huge &lt;a href=&quot;https://yotoplay.com/collections/library&quot;&gt;library of cards you can buy&lt;/a&gt;, you can make your own playlists of whatever you want. Yoto devices have a small pixel screen which shows different pixel art for each track on a playlist.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We love it!&lt;/strong&gt;&lt;/p&gt;
+&lt;div style=&quot;padding:56.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/646857162?h=c37b74908f&amp;byline=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;There’s a daily kids podcast which Teddie has loved and Yoto radio is so good we just listen to it at home. Also, it turns out there’s tons of kids podcasts out there and Yoto supports podcast feeds.&lt;/p&gt;
+&lt;p&gt;I’ve been super impressed with it and would recommend it to any parent looking for a modern alternative to their cassette tape player they had growing up.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&quot;https://piet.me/notes/2022-11-07-yoto-player/my-first-sony.jpg&quot; alt=&quot;My first sony walkman&quot; /&gt;&lt;figcaption&gt;Remember these??&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Also, you can get a 10% discount on your first order using this link! ✨&lt;a href=&quot;https://prz.io/EDbezxZTK&quot;&gt;https://prz.io/EDbezxZTK&lt;/a&gt;✨&lt;/p&gt;
+&lt;h2&gt;Tips&lt;/h2&gt;
+&lt;p&gt;Here&#39;s a running list of useful things I&#39;ve discovered:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When you’re making your own playlists you can assign pixel icons to each track. Someone made a website where you can find and upload custom icons: &lt;a href=&quot;https://www.yotoicons.com/&quot;&gt;https://www.yotoicons.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;For the more technical folks, &lt;a href=&quot;https://github.com/ytdl-org/youtube-dl/&quot;&gt;youtube-dl&lt;/a&gt; is a command line tool for downloading whole YouTube playlists. Super useful for fetching content for your Yoto.&lt;/li&gt;
+&lt;li&gt;Create perfectly sized custom labels for your Make Your Own Yoto cards using self-adhesive labels for your printer. I found these labels that fix perfectly: &lt;a href=&quot;https://www.amazon.nl/-/en/gp/product/B004UTZ0V6/ref=ppx_yo_dt_b_asin_title_o03_s00&quot;&gt;HERMA 5028 universal labels A4 83.8 x 50.8 mm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Early Mornings</title>
+    <link href="https://piet.me/notes/early-mornings/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2022-07-30T00:00:00Z</published><updated>2022-07-30T00:00:00Z</updated><id>https://piet.me/notes/early-mornings/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>I love early mornings.</summary><content type="html">&lt;p&gt;I love early mornings.&lt;/p&gt;
+&lt;p&gt;I love getting up before everyone else. I’m refreshed, awake, it’s quiet, and I’m alone. (Yes I guess I am an introvert.) There’s a peacefulness of spaces before everyone starts their day.&lt;/p&gt;
+&lt;p&gt;Fortunately I don’t have a set an alarm because my daughter normally wakes up at 7am. As a result my body has kindly adopted an internal alarm of 6am so I have lots of opportunities to enjoy early mornings.&lt;/p&gt;
+&lt;p&gt;Summer and spring are obviously lovely times for early mornings. It’s light early, the air is fresh and birds are singing.&lt;/p&gt;
+&lt;p&gt;In particular I love getting up early while I’m traveling. Hotels have their own peacefulness early in the morning. Staff arrive to get things ready for the breakfast rush. Looking out the window at an unfamiliar city as people begin (or end) their day. Maybe it’s something about catching a normally hectic space at a moment of peacefulness.&lt;/p&gt;
+&lt;p&gt;In April I went with the Cutr team for an offsite at a hotel in the country side outside Arnhem. Even though I wasn’t being woken up by my daughter my body normally wakes up at 6am regardless, and having a hotel room to myself doesn’t really change that. So I made myself a coffee and sat on a bench outside and enjoyed the morning.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Branch based sessions in Vim</title>
+    <link href="https://piet.me/branch-based-sessions-in-vim/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2021-12-23T00:00:00Z</published><updated>2021-12-23T00:00:00Z</updated><id>https://piet.me/branch-based-sessions-in-vim/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>Vim sessions are a great way to save the state of vim so you don’t have to reopen all your files after closing it. I use tpope’s Obsession plugin which ensures a session file is always up to date. But by default this will only setup one session file per project.</summary><content type="html">&lt;p&gt;Vim sessions are a great way to save the state of vim so you don’t have to reopen all your files after closing it. I use &lt;a href=&quot;https://github.com/tpope/vim-obsession&quot;&gt;tpope’s Obsession plugin&lt;/a&gt; which ensures a session file is always up to date. But by default this will only setup one session file per project.&lt;/p&gt;
+&lt;p&gt;I tend to be working on multiple branches at the same time, which means that I’m switching between a few groups of files depending on the branch I’m working on. So I came up with a couple scripts for automatically maintaining a session for each branch.&lt;/p&gt;
+&lt;h2&gt;Creating and opening branch based sessions&lt;/h2&gt;
+&lt;p&gt;My approach relies on tpope’s Obsession plugin. If you don’t have it already, follow the instructions to get it installed: &lt;a href=&quot;https://github.com/tpope/vim-obsession&quot;&gt;https://github.com/tpope/vim-obsession&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Next add this function to your shell configuration file (E.g. Your &lt;code&gt;~/.bashrc&lt;/code&gt; or &lt;code&gt;~/.zshrc&lt;/code&gt;):&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;vm&lt;/span&gt;&lt;/span&gt;() {
+
+  &lt;span class=&quot;hljs-comment&quot;&gt;# Create .sessions directory if it doesn&amp;#x27;t exist&lt;/span&gt;
+  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; [[ ! -d &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;./.sessions&amp;#x27;&lt;/span&gt; ]]; &lt;span class=&quot;hljs-keyword&quot;&gt;then&lt;/span&gt;
+    mkdir &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;./.sessions&amp;#x27;&lt;/span&gt;
+  &lt;span class=&quot;hljs-keyword&quot;&gt;fi&lt;/span&gt;
+
+  &lt;span class=&quot;hljs-comment&quot;&gt;# Create a session file name based on the current branch&lt;/span&gt;
+  &lt;span class=&quot;hljs-built_in&quot;&gt;local&lt;/span&gt; session_name=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;.sessions/&lt;span class=&quot;hljs-subst&quot;&gt;$(git rev-parse --abbrev-ref HEAD)&lt;/span&gt;-session.vim&amp;quot;&lt;/span&gt;
+
+  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; [ -e &lt;span class=&quot;hljs-variable&quot;&gt;$session_name&lt;/span&gt; ]; &lt;span class=&quot;hljs-keyword&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;hljs-comment&quot;&gt;# If the session file exists open it&lt;/span&gt;
+    vim -S &lt;span class=&quot;hljs-variable&quot;&gt;$session_name&lt;/span&gt;
+  &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;hljs-comment&quot;&gt;# Otherwise create it&lt;/span&gt;
+    vim -c &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Obsession &lt;span class=&quot;hljs-variable&quot;&gt;$session_name&lt;/span&gt;&amp;quot;&lt;/span&gt; .
+  &lt;span class=&quot;hljs-keyword&quot;&gt;fi&lt;/span&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After adding this script reload your shell and the function will be available by running &lt;code&gt;vm&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;After changing branches I run &lt;code&gt;vm&lt;/code&gt; to either open an existing session for the branch or create a new one.&lt;/p&gt;
+&lt;h2&gt;Cleaning up session files&lt;/h2&gt;
+&lt;p&gt;Ideally we want to clean up our session files when branches are deleted. This script will keep your session files up to date with your current list of locally checked out branches.&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-meta&quot;&gt;#!/usr/bin/env bash&lt;/span&gt;
+&lt;span class=&quot;hljs-built_in&quot;&gt;set&lt;/span&gt; -e
+
+&lt;span class=&quot;hljs-comment&quot;&gt;# Get the root directory of the repository&lt;/span&gt;
+git_root_dir=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-subst&quot;&gt;$(git rev-parse --show-toplevel 2&amp;gt; /dev/null || echo &amp;#x27;.&amp;#x27;)&lt;/span&gt;&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;hljs-comment&quot;&gt;# Get a list of local branches&lt;/span&gt;
+branches=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-subst&quot;&gt;$(git branch | sed -r &amp;#x27;s/\*?\s*(.*?)&lt;/span&gt;\s*$/\1/&amp;#x27;)&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;hljs-comment&quot;&gt;# Get a list existing sessions, trimmed down to the branch name portion of the filename. (This line handles sessions in directories up to 4 levels deep).&lt;/span&gt;
+sessions=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-subst&quot;&gt;$(find $git_root_dir -maxdepth 4 -wholename &amp;#x27;*/.sessions/*-session.vim&amp;#x27; | sed &amp;#x27;s/.*\.sessions\/\(.*\)-session\.vim/\1/&amp;#x27; | sort | uniq)&lt;/span&gt;&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;hljs-comment&quot;&gt;# Loop through session names&lt;/span&gt;
+&lt;span class=&quot;hljs-keyword&quot;&gt;for&lt;/span&gt; session &lt;span class=&quot;hljs-keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;$sessions&lt;/span&gt; ; &lt;span class=&quot;hljs-keyword&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; [[ &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-variable&quot;&gt;$branches&lt;/span&gt;&amp;quot;&lt;/span&gt; != *&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-variable&quot;&gt;$session&lt;/span&gt;&amp;quot;&lt;/span&gt;* ]]; &lt;span class=&quot;hljs-keyword&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;hljs-comment&quot;&gt;# If session name isn&amp;#x27;t in the branches list, delete it.&lt;/span&gt;
+    rm -v `find &lt;span class=&quot;hljs-variable&quot;&gt;$git_root_dir&lt;/span&gt; -maxdepth 4 -wholename &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;*/.sessions/&lt;span class=&quot;hljs-variable&quot;&gt;$session&lt;/span&gt;-session.vim&amp;quot;&lt;/span&gt;`
+  &lt;span class=&quot;hljs-keyword&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;hljs-keyword&quot;&gt;done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Add this script to a file named &lt;code&gt;git-prune-sessions&lt;/code&gt; in a directory in your &lt;code&gt;$PATH&lt;/code&gt;. Make it executable by running &lt;code&gt;chmod +x ./git-prune-sessions&lt;/code&gt;. Then you can run &lt;code&gt;git prune-sessions&lt;/code&gt; to clean out any unused sessions.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Questions? Comments? Post a message below or ping me on &lt;a href=&quot;https://twitter.com/pietvanzoen&quot;&gt;twitter&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>My email workflow in Fastmail</title>
+    <link href="https://piet.me/my-email-workflow-in-fastmail/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2021-05-05T00:00:00Z</published>
+      <updated>2021-05-06T00:00:00Z</updated><id>https://piet.me/my-email-workflow-in-fastmail/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>When I switched to Fastmail from Hey, there were elements of Hey&#39;s approach that worked well for me and I wanted to replicate. I found several articles about setting up a Hey workflow with Fastmail, but the suggested setup relied on creating custom rules for each contact and I found this to be cumbersome. I figured out a slightly different approach and wanted to document what I ended up with.</summary><content type="html">&lt;p&gt;When I switched to &lt;a href=&quot;https://ref.fm/u26272200&quot;&gt;Fastmail&lt;/a&gt; from &lt;a href=&quot;https://hey.com/&quot;&gt;Hey&lt;/a&gt;, there were elements of Hey&#39;s approach that worked well for me and I wanted to replicate. I found several articles about setting up a Hey workflow with Fastmail, but the suggested setup relied on creating custom rules for each contact and I found this to be cumbersome. I figured out a slightly different approach and wanted to document what I ended up with.&lt;/p&gt;
+&lt;h2&gt;Why Fastmail?&lt;/h2&gt;
+&lt;p&gt;Fastmail came recommended by several friends and has a long history of providing a solid privacy conscious service. Here’s what drew me to Fastmail:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s a paid service, which means they don’t need to sell your information to advertisers to make money.&lt;/li&gt;
+&lt;li&gt;Tracking pixel blocking and image proxying.&lt;/li&gt;
+&lt;li&gt;Half the price of Hey.&lt;/li&gt;
+&lt;li&gt;Supports multiple custom domains.&lt;/li&gt;
+&lt;li&gt;Decent iOS apps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check out this &lt;a href=&quot;https://www.fastmail.com/hey-fastmail/&quot;&gt;more detailed comparison with Hey&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;The Workflow&lt;/h2&gt;
+&lt;p&gt;After a little experimentation and playing with the settings, this is the workflow I’m now using with Fastmail:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Receive a new email from an unknown sender. The email lands in the &lt;code&gt;Screener&lt;/code&gt; label.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Review the email and then either:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Block the sender so any future emails go straight to the trash.&lt;/li&gt;
+&lt;li&gt;Add the sender to my contacts and then select which contact group it should belong to. “Feed” or “Paper Trail”. If I want to receive notifications I can make the contact a “VIP” contact.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Contacts in the Feed group land in the &lt;code&gt;Feed&lt;/code&gt; label. Contacts in the &#39;Paper Trail&#39; group land in the &lt;code&gt;Paper Trail&lt;/code&gt; label. If a contact isn&#39;t in either group the email goes to the inbox.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/notes/2021-05-05-my-email-workflow-in-fastmail/83173BD6-39F7-47AC-A936-C2338D19EDBF.jpeg&quot; alt=&quot;The Screener view&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This is working well so far and reflects what I liked about Hey&#39;s workflow.&lt;/p&gt;
+&lt;h2&gt;The Setup&lt;/h2&gt;
+&lt;p&gt;The key to this workflow is using contacts and contact groups to filter incoming mail into various labels.&lt;/p&gt;
+&lt;p&gt;(Fastmail can organise emails using folders (one email, one folder) or labels (one email, many labels). For my purposes I’m using labels. This is configured in &lt;code&gt;Settings -&amp;gt; Preferences&lt;/code&gt; under the &lt;code&gt;Labels&lt;/code&gt; section.)&lt;/p&gt;
+&lt;h3&gt;1. Feed &amp;amp; Paper Trail&lt;/h3&gt;
+&lt;p&gt;First let&#39;s setup the Feed and Paper Trail groups and labels. Of course, you don&#39;t have to use these specific groups. If you find it useful to have different or more groups then you have the flexibility to add them.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;code&gt;Contacts&lt;/code&gt; and tap &lt;code&gt;+&lt;/code&gt; in the sidebar to create a new group. Create two groups called &lt;code&gt;Feed&lt;/code&gt; and &lt;code&gt;Paper Trail&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;Settings -&amp;gt; Filters &amp;amp; Rules&lt;/code&gt; and tap &lt;code&gt;+ Create Rule&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Select &lt;code&gt;Sender is a member of group...&lt;/code&gt; and select &lt;code&gt;Feed&lt;/code&gt; for the condition.&lt;/li&gt;
+&lt;li&gt;Tap &lt;code&gt;Continue&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Tap &lt;code&gt;Create Rule&lt;/code&gt; next to the search box.&lt;/li&gt;
+&lt;li&gt;In the create rule drop down check the &lt;code&gt;Archive (remove Inbox label)&lt;/code&gt; and &lt;code&gt;Add Label&lt;/code&gt;. Create a new label called &lt;code&gt;Feed&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Repeat steps 2-6 for &lt;code&gt;Paper Trail&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/notes/2021-05-05-my-email-workflow-in-fastmail/9802F5A8-7E3E-4EDD-AF33-0F76B3E29C10.jpeg&quot; alt=&quot;Your new Paper Trail/Feed rules should look like this&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Once this is setup we can move on to setup the screener.&lt;/p&gt;
+&lt;h3&gt;2. The Screener&lt;/h3&gt;
+&lt;p&gt;Next we&#39;ll setup the Screener which will redirect any unknown senders to the &lt;code&gt;Screener&lt;/code&gt; label. This is where we can review the emails and decide how we want to handle them in the future.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;code&gt;Settings -&amp;gt; Filters &amp;amp; Rules&lt;/code&gt; and tap &lt;code&gt;+ Create Rule&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Select &lt;code&gt;Sender is not a contact&lt;/code&gt; for the condition.&lt;/li&gt;
+&lt;li&gt;Tap &lt;code&gt;Continue&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Tap &lt;code&gt;Create Rule&lt;/code&gt; next to the search box.&lt;/li&gt;
+&lt;li&gt;In the create rule drop down check the &lt;code&gt;Archive (remove Inbox label)&lt;/code&gt; and &lt;code&gt;Add Label&lt;/code&gt;. Create a new label called &lt;code&gt;Screener&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/notes/2021-05-05-my-email-workflow-in-fastmail/AB7C681A-5C26-441A-8768-B36CB27471F8.jpeg&quot; alt=&quot;Your new Screener rule should look like this&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;At this point you&#39;ll be able to use the workflow I described above. But there are a few extra tweaks I made to improve the overall experience.&lt;/p&gt;
+&lt;h3&gt;3. Extras&lt;/h3&gt;
+&lt;h4&gt;Recycling old emails&lt;/h4&gt;
+&lt;p&gt;For the &lt;code&gt;Feed&lt;/code&gt; label I setup &#39;Auto Purging&#39;. This means that emails with this label that are older than 31 days will be deleted. In Hey this is configured in the &#39;Recycling Center&#39;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;code&gt;Settings -&amp;gt; Labels&lt;/code&gt; and tap &lt;code&gt;Edit&lt;/code&gt; on the label you want to setup auto-purging for.&lt;/li&gt;
+&lt;li&gt;Tap &lt;code&gt;Show advanced preferences&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Check the option for &lt;code&gt;Auto-purge&lt;/code&gt; and set the purge time to what ever you prefer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Cleaner sidebar&lt;/h4&gt;
+&lt;p&gt;By default the sidebar will include the usual list of folders (Inbox, All Mail, Sent, Spam, etc). I wanted a simplified sidebar with only what was important. Fortunately this is configurable in Fastmail via &lt;code&gt;Settings -&amp;gt; Labels&lt;/code&gt;. You can configure labels to always be hidden, always show, or hide when empty.&lt;/p&gt;
+&lt;p&gt;In my sidebar I now have:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Inbox&lt;/strong&gt; - always show.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Screener&lt;/strong&gt; - hide when empty.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Paper Trail&lt;/strong&gt; - always show.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Feed&lt;/strong&gt; - always show.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can still navigate to other labels/folders by tapping &lt;code&gt;Find&lt;/code&gt; at the bottom of the sidebar.&lt;/p&gt;
+&lt;h4&gt;Notifications&lt;/h4&gt;
+&lt;p&gt;I wanted to only receive emails from specific senders so that I’m not constantly receiving notifications for unimportant messages.&lt;/p&gt;
+&lt;p&gt;To do this I configure the Fastmail apps to only send notifications for VIP contacts. Then for the senders I want notifications from, I set them as VIP contacts.&lt;/p&gt;
+&lt;h4&gt;Reply Later &amp;amp; Aside&lt;/h4&gt;
+&lt;p&gt;I&#39;m still figuring out the best approach for Hey&#39;s Reply Later and Aside feature. For now I use &lt;a href=&quot;https://www.fastmail.help/hc/en-us/articles/1500000280341-Marking-important-messages&quot;&gt;pinned messages&lt;/a&gt; as an alternative to Aside, and I use a label for Reply Later.&lt;/p&gt;
+&lt;h2&gt;Missing features in Fastmail&lt;/h2&gt;
+&lt;p&gt;While I managed to replicate the core functionality of Hey in Fastmail, there are a couple UX things I miss from Hey that I&#39;d love to see in Fastmail one day.&lt;/p&gt;
+&lt;h3&gt;Feed view&lt;/h3&gt;
+&lt;p&gt;In Hey, emails in the Feed are rendered in place making it feel more like, well, a feed. This allowed you to casually scroll through newsletters without having to open individual emails.&lt;/p&gt;
+&lt;h3&gt;Thread notifications&lt;/h3&gt;
+&lt;p&gt;While you can mark individual contacts as VIP and get notifications from them in Fastmail, you can&#39;t get notifications for specific threads. This would allow you to follow a specific email chain without having to receive notifications for all messages from a sender.&lt;/p&gt;
+&lt;h3&gt;Contact avatars in email list&lt;/h3&gt;
+&lt;p&gt;Several email apps, including Hey, will show a contact&#39;s avatar next to messages in email lists. As someone who works better with visual prompts (rather than pure text) this worked well to help me distinguish between different types of emails, particularly in the Paper Trail.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Hey did a lot of things right and gave me a starting point for an email workflow that&#39;s a lot better than the inbox firehose of emails, or &amp;quot;smart&amp;quot; email sorting as seen in Gmail. Setting this up in Fastmail required a bit of work, and screening emails is not quite as fluid as in Hey, but it works well for me. Fastmail also offers much more flexibility to evolve your email workflow to suit you.&lt;/p&gt;
+&lt;p&gt;I&#39;d love to hear how other folks like to optimize their email workflow. Comment below or shoot me a message via &lt;a href=&quot;mailto:hi@piet.me&quot;&gt;email&lt;/a&gt; or &lt;a href=&quot;https://twitter.com/pietvanzoen&quot;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you like the look of Fastmail and want to try it out, please use this &lt;a href=&quot;https://ref.fm/u26272200&quot;&gt;referral link&lt;/a&gt; to receive a 10% discount.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>End-to-end testing (WIP)</title>
+    <link href="https://piet.me/end-to-end-testing/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2021-04-05T00:00:00Z</published>
+      <updated>2021-04-07T00:00:00Z</updated><id>https://piet.me/end-to-end-testing/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>Delivering a working software product to end users is not a trivial task and there are a lot of things that can go wrong along the way. The end user experience of your product is not just made up of the code that your team writes. It’s also 3rd party software, deployment processes, configuration, servers, operating systems, databases, networks, caching systems, and much more. Each of these components can and have gone wrong.</summary><content type="html">&lt;p&gt;Delivering a working software product to end users is not a trivial task and there are a lot of things that can go wrong along the way. The end user experience of your product is not just made up of the code that your team writes. It’s also 3rd party software, deployment processes, configuration, servers, operating systems, databases,  networks, caching systems, and much more. Each of these components can and have gone wrong.&lt;/p&gt;
+&lt;p&gt;End to end (e2e) testing is a powerful tool to help reduce the uncertainty of delivering and maintaining a functional product. But e2e testing has a lot of pitfalls and isn’t a silver bullet.&lt;/p&gt;
+&lt;h2&gt;What is end-to-end testing?&lt;/h2&gt;
+&lt;p&gt;An end-to-end test is one that tests your whole technology stack. From the client (such as a browser), to server, to database, and back. The goal is to test all the components of your product in the same way that your end users use it, as one unified system.&lt;/p&gt;
+&lt;p&gt;The client can also be a simple http request in the case of a REST API e2e test. But for the purposes of this post I’m mostly going to talk about browser based e2e testing.&lt;/p&gt;
+&lt;h2&gt;Test regularly&lt;/h2&gt;
+&lt;p&gt;Just because it was working 2 hours ago, doesn’t mean it’s working now.&lt;/p&gt;
+&lt;h2&gt;Focus your tests&lt;/h2&gt;
+&lt;p&gt;E2e tests are flakey and expensive. Focus on what really matters.&lt;/p&gt;
+&lt;h2&gt;Balance with monitoring and other testing&lt;/h2&gt;
+&lt;p&gt;Unit testing. Integration testing. Production monitoring.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Agile</title>
+    <link href="https://piet.me/agile/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2021-03-30T00:00:00Z</published><updated>2021-03-30T00:00:00Z</updated><id>https://piet.me/agile/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>The goals of agility</summary><content type="html">&lt;h2&gt;The goals of agility&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Deliver real value to your customers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Deliver work in short iterations&lt;/li&gt;
+&lt;li&gt;Measure the impact of that work&lt;/li&gt;
+&lt;li&gt;Experiment with improvements&lt;/li&gt;
+&lt;li&gt;Repeat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://pragdave.me/blog/2014/03/04/time-to-kill-agile.html&quot;&gt;Dave Thomas - Agile is Dead (Long Live Agility)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://managingup.show/episodes/ae6a210b&quot;&gt;Managing Up Podcast - Estimation: Where Everything is Made Up and the Points Don&#39;t Matter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Field recording</title>
+    <link href="https://piet.me/field-recording/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2021-02-01T00:00:00Z</published><updated>2021-02-01T00:00:00Z</updated><id>https://piet.me/field-recording/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>Sound has a way of transporting me to a moment or a space in a way that an image can&#39;t.</summary><content type="html">&lt;p&gt;Sound has a way of transporting me to a moment or a space in a way that an image can&#39;t.&lt;/p&gt;
+&lt;p&gt;Over the last few years I&#39;ve recorded little moments in various spaces. There was something about the sound landscape in those spaces that captured my experience more vividly than a picture or video.&lt;/p&gt;
+&lt;p&gt;Here are a few of my favourites:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://piet.me/notes/martins-triathlon/&quot;&gt;Martín&#39;s Triathlon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://piet.me/notes/summer-storm/&quot;&gt;Summer Storm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://piet.me/notes/heartbeats/&quot;&gt;Heartbeats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://piet.me/notes/paris-market&quot;&gt;Paris Market&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://piet.me/tags/recordings&quot;&gt;More field recordings&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>My box of mistakes</title>
+    <link href="https://piet.me/notes/my-box-of-mistakes/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2021-01-28T00:00:00Z</published><updated>2021-01-28T00:00:00Z</updated><id>https://piet.me/notes/my-box-of-mistakes/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>I got myself a 3d printer and I am hooked. I&#39;m hoping to post about some of my projects and learnings soon.</summary><content type="html">&lt;p&gt;I got myself a 3d printer and I am hooked. I&#39;m hoping to post about some of my projects and learnings soon.&lt;/p&gt;
+&lt;p&gt;But first I wanted to share this picture of my little box of 3d printing mistakes.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/notes/my-box-of-mistakes/IMG_8298.jpeg&quot; alt=&quot;Wooden box with various incomplete 3d printed objects&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Some are mistakes, some are prototypes, but all of them represent little moments of learning. For each thing in this box I learned something new, which is why I started keeping them rather than throwing them away.&lt;/p&gt;
+&lt;p&gt;This got me thinking a bit about mistakes I make every day, at work, at home, with people. Some big mistakes I&#39;ve made in the past that I still cringe at. What if I thought about these like I think about this box of 3d printed pieces? Rather than a mistake representing how I messed up, I could think of them as moments where I learned something.&lt;/p&gt;
+&lt;p&gt;There&#39;s a Thomas Edison quote that seems appropriate for this train of thought:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I have not failed. I&#39;ve just found 10,000 ways that won&#39;t work.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Some of my projects</title>
+    <link href="https://piet.me/projects/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2021-01-21T00:00:00Z</published><updated>2021-01-21T00:00:00Z</updated><id>https://piet.me/projects/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>Here are a few of the projects I&#39;ve built. Some are alright. 😛</summary><content type="html">&lt;p&gt;Here are a few of the projects I&#39;ve built. Some are alright. 😛&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;h2&gt;Command line&lt;/h2&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/pietvanzoen/git-get&quot;&gt;Git get&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Keep your cloned repos nice and neat in a &lt;code&gt;go get&lt;/code&gt; esk directory tree. Read more here: &lt;a href=&quot;https://piet.me/blog/organizing-git-projects/&quot;&gt;How I organize my cloned git projects&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/pietvanzoen/hint&quot;&gt;Hint&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A command line tool to help you remember those little nuggets of knowledge.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/pietvanzoen/secrets&quot;&gt;Secrets&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;CLI for setting and getting secrets using MacOS&#39;s keychain.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/pietvanzoen/dotfiles&quot;&gt;Dotfiles&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;These are my dotfiles. There are many like them. But these are mine.&lt;/p&gt;
+&lt;p&gt;I live in the command line with zsh and vim. There&#39;s some good stuff here, some bad stuff, don&#39;t judge.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Websites&lt;/h2&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/pietvanzoen/piet.me&quot;&gt;piet.me&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I have a long history of spending too much time building a nice website and too little time writing content for it. This one is no exception! 🙈&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;This site is built with &lt;a href=&quot;https://middlemanapp.com/&quot;&gt;middleman&lt;/a&gt;, an easy-to-use static site generator. One of the things that drew me to middleman over &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyl&lt;/a&gt; was the choice of templating language. I really enjoy ruby&#39;s native ERB templating.&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;This site is built with &lt;a href=&quot;https://11ty.dev/&quot;&gt;eleventy&lt;/a&gt;, and easy-to-use static site generator.&lt;/p&gt;
+&lt;p&gt;I&#39;m currently using &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; for hosting. I also run &lt;a href=&quot;https://usefathom.com/&quot;&gt;Fathom&lt;/a&gt; for privacy friendly analytics.&lt;/p&gt;
+&lt;p&gt;All in all, I&#39;m pretty proud. Now I just need to write something more than twice a year. 😛&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://piet.space/&quot;&gt;piet.space&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A little creative outlet of mine. This is a collection of field recordings I&#39;ve made over the years.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://emergencyfrida.com/&quot;&gt;Emergency Frida&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Cute kitten photos, stat! Because, let&#39;s face it, 2020 was a rough year and everyone deserves more cute cat photos.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Customised PiBow case for Raspberry Pi + PiJuice + PiTFT</title>
+    <link href="https://piet.me/blog/customized-pibow-case-for-raspberry-pi-pijuice-pitft/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2020-12-27T00:00:00Z</published><updated>2020-12-27T00:00:00Z</updated><id>https://piet.me/blog/customized-pibow-case-for-raspberry-pi-pijuice-pitft/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>I recently setup a PiHole for my home network. I’m using a Raspberry Pi 3B+ with a PiJuice and a 3.5 inch PiTFT screen. Finding a case to fit all these was a little tricky. I don’t have a 3D printer (yet) and the tall cases I could find were a bit ugly.</summary><content type="html">&lt;p&gt;I recently setup a &lt;a href=&quot;https://pi-hole.net/&quot;&gt;PiHole&lt;/a&gt; for my home network. I’m using a Raspberry Pi 3B+ with a PiJuice and a 3.5 inch PiTFT screen. Finding a case to fit all these was a little tricky. I don’t have a 3D printer (yet) and the tall cases I could find were a bit ugly.&lt;/p&gt;
+&lt;p&gt;I ended up using a PiBow case designed for PiTFT and made a couple modifications to get it to work with the PiJuice. I’m pretty happy with the result and wanted to share it.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;h2&gt;What I used&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Links are to where I purchased.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi 3b&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.tinytronics.nl/shop/en/raspberry-pi/power-supplies/pijuice-hat-raspberry-pi-battery-module&quot;&gt;PiJuice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.elektor.nl/adafruit-pitft-plus-480x320-3-5-tft-touchscreen-for-rpi&quot;&gt;PiTFT 3.5”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://shop.pimoroni.com/products/pibow-pitft&quot;&gt;PiBow PiTFT+ case&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://shop.pimoroni.com/products/pibow-modification-layers?variant=1048948309&quot;&gt;PiBow Lego base&lt;/a&gt; (optional)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://shop.pimoroni.com/products/pibow-modification-layers?variant=1039417249&quot;&gt;3x PiBow expansion layers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://shop.pimoroni.com/products/pibow-extender-bolt-pack&quot;&gt;Longer PiBow screws&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.amazon.nl/gp/product/B07PDVXVZ5/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&amp;amp;psc=1&quot;&gt;Some M2.5 washers, standoffs, and screws&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;The build&lt;/h2&gt;
+&lt;p&gt;Before starting, be sure to remove the protective film from each of the layers of the PiBow. I put this all together with the film attached and had to redo the whole thing. 🤦 Fortunately this gave me the opportunity to take photos of the process.&lt;/p&gt;
+&lt;p&gt;Here’s the mess of stuff I started with.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-01.jpeg&quot; alt=&quot;My desk scattered with raspberry pi parts for this project&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Mount the PiJuice on the raspberry pi with Layer 3 of the PiBow in-between. Use the nylon standoffs and screws that come with the PiJuice.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-02.jpeg&quot; alt=&quot;Raspberry Pi with PiJuice attached&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Turn the Pi over and use 5mm stand offs to secure the PiJuice to the Raspberry Pi.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-03.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with standoff bolts attached.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;On the PiBow layers you’ll see numbers etched on the tops. Add layers 2, 1, and the base. I have the &lt;a href=&quot;https://shop.pimoroni.com/products/pibow-modification-layers?variant=1048948309&quot;&gt;Lego PiBow base&lt;/a&gt; but the regular base will work too. Be careful to put the Lego base the right way up or it won’t work.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-04.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with PiBow layers attached&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://piet.me/images/blog/pihole-case-05.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with PiBow base attached&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Secure the base using the extended PiBow bolts in the corners &lt;em&gt;and&lt;/em&gt; use M2.5 screws going into the standoffs to secure the Raspberry Pi and PiJuice.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-06.jpeg&quot; alt=&quot;The underside of the Raspberry Pi with PiBow base attached with all screws and bolts added&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Rather than using layers 4, 5, 6, and 7 that come with the PiBow kit, we’ll use 4 nylon washers on each corner bolt. Because of the buttons and power socket on the PiJuice I couldn’t use the standard PiBow layers that normally surround the Raspberry Pi HDMI and power ports.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-07.jpeg&quot; alt=&quot;Raspberry Pi with PiBow case bottom assembled and washers on vertical corner bolts.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Now add layer 7 and three clear expansion layers. These layers will surround the PiTFT.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-08.jpeg&quot; alt=&quot;Raspberry Pi with PiJuice and PiBow extension layers&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;For the PiTFT to fit on top of the PiJuice I had to carefully clip the 26 pins on the back of the screen.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-09.jpeg&quot; alt=&quot;Back of PiTFT screen with pins clipped.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Finally I used layer 9 and secured it all using the nylon bolts.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-10.jpeg&quot; alt=&quot;Raspberry Pi with PiJuice and PiTFT attached in PiBow case.&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Done!&lt;/h2&gt;
+&lt;p&gt;That’s it! Pretty good looking if I say so myself. :) Especially running with no cables and &lt;a href=&quot;https://github.com/pi-hole/PADD&quot;&gt;PADD&lt;/a&gt; on the display.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-11.jpeg&quot; alt=&quot;Raspberry Pi corner view&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://piet.me/images/blog/pihole-case-12.jpeg&quot; alt=&quot;Raspberry Pi side view&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://piet.me/images/blog/pihole-case-13.jpeg&quot; alt=&quot;Raspberry Pi top view&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Here’s the PiHole running. To mount the Pi I attached a flat piece of Lego to the wall in my utility closet using some removable adhesive strips.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/blog/pihole-case-14.jpeg&quot; alt=&quot;Raspberry Pi attached to wall in utility closet.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I may find some slightly longer bolts in the future because I’d like to add the last clear layer included in the PiBow kit. The extended bolts weren’t quite long enough.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Questions? Comments? Post a message below or ping me on &lt;a href=&quot;https://twitter.com/pietvanzoen&quot;&gt;twitter&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Rethinking my piece of the internet</title>
+    <link href="https://piet.me/blog/rethinking-my-piece-of-the-internet/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2020-07-02T00:00:00Z</published><updated>2020-07-02T00:00:00Z</updated><id>https://piet.me/blog/rethinking-my-piece-of-the-internet/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>I am a strong proponent of people owning their own personal space on the internet. A space where they can express their interests and who they are as they see fit. (And preferably not owned by a social media giant.) But as a person who builds things on the internet for their profession, it’s easy to feel that my website should be a professional brand website for Piet the developer.</summary><content type="html">&lt;p&gt;I am a strong proponent of people owning their own personal space on the internet. A space where they can express their interests and who they are as they see fit. (And preferably not owned by a social media giant.) But as a person who builds things on the internet for their profession, it’s easy to feel that my website should be a professional brand website for Piet the developer.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;p&gt;I’ve started various more personal projects but I kept them separate from this site, to keep it as my professional website. For a long time, I’ve struggled with this balance. On the one hand, I would love to represent myself better and be a little more personal and human. On the other hand, I feel pressure to maintain a professional brand.&lt;/p&gt;
+&lt;p&gt;I read an article recently that inspired me to rethink what content I produce for this space. The article was about how the ‘attention economy’ of social media platforms (Instagram in particular in this case), have forced artists to build a brand for their art that is tailored to be easily and quickly digestible. The author challenged artists not to lose their human side while building their professional brand. This paragraph caught my attention in particular:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When the system tries to hack you, why not try to hack it back? Rather than obtaining the perfect surface of your professional selfie, here it might be interesting to turn yourself into a more human creature again. Art has been full of those stories showing &lt;em&gt;alternative ways&lt;/em&gt;, and while we adore these stories from the past we do tend more and more to annihilate those stories when they’re happening around us. […] Our ideas of professionalism have become distorted, as it only presents a surface of boxes that are checked to give an easy read.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;~ Monika Senz. “(Your) Attention Please!” &lt;a href=&quot;https://www.montezpress.com/catalogue/pfeil/economy/&quot;&gt;Pfeil Magazine #12&lt;/a&gt;, 33-34&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This particularly resonated with me and my struggle to balance the professional and personal. Inspired by this, I am challenging myself to reclaim &lt;em&gt;my&lt;/em&gt; space. Let it be me with all my interests and not just the developer’s brochure! I have interests in aircraft, running, keyboards, and making the odd field recording, to name a few.&lt;/p&gt;
+&lt;p&gt;My plan is to post a broader range of content along these lines that I feel better represents me. Hopefully, this means I actually produce some content more than a couple of times a year. Wish me luck!&lt;/p&gt;
+&lt;p&gt;More soon.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Focus on the problem</title>
+    <link href="https://piet.me/focus-on-the-problem/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2019-12-01T00:00:00Z</published><updated>2019-12-01T00:00:00Z</updated><id>https://piet.me/focus-on-the-problem/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>Way too often I find myself thinking, &#39;Oh I should setup this super complicated solution to a problem that maybe one day, in an apocalypse, I might encounter.&#39;</summary><content type="html">&lt;p&gt;Way too often I find myself thinking, &#39;Oh I should setup this super complicated solution to a problem that maybe one day, in an apocalypse, I might encounter.&#39;&lt;/p&gt;
+&lt;p&gt;Example: My local Dropbox backup. For some reason I&#39;ve had it in my head that I need a backup of my Dropbox files on a locally accessible hard drive. The solution I&#39;ve tried to implement several times is a raspberry pi setup in a cupboard that runs &lt;a href=&quot;https://rclone.org/&quot;&gt;rclone&lt;/a&gt; and syncs my dropbox to an external hard drive. It was kind of fun to setup once. But the maintenance was a little frustrating and the solution was fairly unreliable.&lt;/p&gt;
+&lt;p&gt;I keep thinking, &#39;I need to setup that up again&#39;. Because why?? Dropbox might collapse and loose all my stuff?? Fairly unlikely.&lt;/p&gt;
+&lt;p&gt;Anyway, this is a post to persuade myself that I really don&#39;t need to solve this problem and should focus on the dozen other hobby projects I&#39;ve wanted to work on. Such as my shitty game written in Lua that I&#39;m way too proud of already, &lt;a href=&quot;https://github.com/pietvanzoen/spacecaret&quot;&gt;Spacecaret&lt;/a&gt;. 🚀&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Things I wish I knew before my daughter was born</title>
+    <link href="https://piet.me/things-i-wish-i-knew-before-my-daughter-was-born/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2019-11-29T00:00:00Z</published><updated>2019-11-29T00:00:00Z</updated><id>https://piet.me/things-i-wish-i-knew-before-my-daughter-was-born/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>https://twitter.com/brianmwang/status/1199748365103161344?s=21</summary><content type="html">&lt;p&gt;&lt;a href=&quot;https://twitter.com/brianmwang/status/1199748365103161344?s=21&quot;&gt;https://twitter.com/brianmwang/status/1199748365103161344?s=21&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;There&#39;s no right way to feel when your baby is born&lt;/h2&gt;
+&lt;p&gt;When my daughter was born I was so emotionally overwhelmed after a difficult birth. You hear so many stories about people “falling in love as soon as they held their new child”. I expected that, and when I didn’t feel that immediately it made me feel like I was a bad parent, in the first moment of holding my child!&lt;/p&gt;
+&lt;h2&gt;You are the professional&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You are the professionals of your own child.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is something our homecare nurse told us when our daughter was born and it always stuck with me.&lt;/p&gt;
+&lt;p&gt;People have all sorts of opinions about bringing up kids. People can give advice, but you know your child the best out of everyone in the world. Trust that first.&lt;/p&gt;
+&lt;h2&gt;The baby phase is only about 6 months&lt;/h2&gt;
+&lt;p&gt;Most of what you&#39;re learning before your kid is born is how to look after an infant. That phase goes by &lt;strong&gt;so&lt;/strong&gt; quickly. After 6 months you have a crawling tiny human &lt;strong&gt;with many opinions&lt;/strong&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Martín&#39;s Triathlon</title>
+    <link href="https://piet.me/notes/martins-triathlon/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2019-09-22T00:00:00Z</published><updated>2019-09-22T00:00:00Z</updated><id>https://piet.me/notes/martins-triathlon/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>On a surprisingly warm September Sunday morning I went to support my friend Martín doing a triathlon. I’m only just getting to the point where I can run a 5k, let alone a 750m swim, a 20km cycle plus a 5k. Martín and I went running together once. At the end of the 30 minute run he hadn&#39;t broken a sweat. Whereas I came home drenched. Suffice it to say, Martín is an athlete and I (currently) am not.</summary><content type="html">&lt;p&gt;On a surprisingly warm September Sunday morning I went to support my friend Martín doing a triathlon. I’m only just getting to the point where I can run a 5k, let alone a 750m swim, a 20km cycle &lt;strong&gt;plus&lt;/strong&gt; a 5k. Martín and I went running together once. At the end of the 30 minute run he hadn&#39;t broken a sweat. Whereas I came home drenched. Suffice it to say, Martín is an athlete and I (currently) am not.&lt;/p&gt;
+&lt;p&gt;I captured some sounds from a spot about 10 meters before the finish line. The beep you can hear is the moment a runner crosses the finish line.&lt;/p&gt;
+&lt;p&gt;The first part is the best audio I caught of runners passing by. The second part is the moment Martín completed his triathlon. You can hear his wife and me cheering him on.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Summer Storm</title>
+    <link href="https://piet.me/notes/summer-storm/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2019-08-31T00:00:00Z</published><updated>2019-08-31T00:00:00Z</updated><id>https://piet.me/notes/summer-storm/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>The summer we moved to the Netherlands the was lovely. As we were settling into our new lives we got to enjoy some beautiful sunny days. The evenings, however, were different. With all the heat and humidity came these amazing lightening storms.</summary><content type="html">&lt;p&gt;The summer we moved to the Netherlands the was lovely. As we were settling into our new lives we got to enjoy some beautiful sunny days. The evenings, however, were different. With all the heat and humidity came these amazing lightening storms.&lt;/p&gt;
+&lt;p&gt;It was still 25+ degrees centigrade but outside it was pouring. We loved it. We would lay on our bed with the window open, listening to the rain, watching the flashes, and waiting for the noise.&lt;/p&gt;
+&lt;p&gt;Last month we were away for the weekend at a vacation house. After a full day escaping the heat at the swimming pool, we settled into our quiet evening. It began to pour outside, and with it came the thunder and lightening.&lt;/p&gt;
+&lt;p&gt;Headphones on and volume up for the full effect.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Polderbaan</title>
+    <link href="https://piet.me/notes/polderbaan/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2019-08-02T00:00:00Z</published><updated>2019-08-02T00:00:00Z</updated><id>https://piet.me/notes/polderbaan/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>I recently took a flight from Amsterdam to London. The flight time is only 40 minutes, but before that there&#39;s a 20 minute taxi from the terminal to the runway. You cross a motorway and a canal to get this runway. It&#39;s in the middle of a field far from any buildings besides a small control tower. This runway is the Polderbaan.</summary><content type="html">&lt;p&gt;I recently took a flight from Amsterdam to London. The flight time is only 40 minutes, but before that there&#39;s a 20 minute taxi from the terminal to the runway. You cross a motorway and a canal to get this runway. It&#39;s in the middle of a field far from any buildings besides a small control tower. This runway is the Polderbaan.&lt;/p&gt;
+&lt;p&gt;Right next to the &lt;a href=&quot;https://www.schiphol.nl/en/you-and-schiphol/page/planespotting/&quot;&gt;Polderbaan&lt;/a&gt; there&#39;s a carpark that&#39;s a really nice spot to watch (and hear) the planes landing or taking off. I finally took Teddie there to watch the planes. We got there and Teddie was more interested in playing in the car or running around the carpark, which was fine.&lt;/p&gt;
+&lt;p&gt;I got this recording of a Boeing 747 landing. As it&#39;s passing the recorder it kicks in the reverse thrust. Teddie held on to my legs as the noise went by.&lt;/p&gt;
+&lt;p&gt;P.S. This is also the first post using my new &lt;a href=&quot;https://www.zoom-na.com/products/field-video-recording/field-recording/zoom-h1n-handy-recorder&quot;&gt;Zoom H1n&lt;/a&gt; recorder. Enjoy!&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Ten years</title>
+    <link href="https://piet.me/notes/ten-years/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2019-07-23T00:00:00Z</published><updated>2019-07-23T00:00:00Z</updated><id>https://piet.me/notes/ten-years/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>On this day in 2009 Keven and I met a small group of friends and family at the McMenameins Edgefield Hotel in Oregon. We gathered together in a shady part of the gardens and said a few words.</summary><content type="html">&lt;p&gt;On this day in 2009 Keven and I met a small group of friends and family at the McMenameins Edgefield Hotel in Oregon. We gathered together in a shady part of the gardens and said a few words.&lt;/p&gt;
+&lt;p&gt;My brother brought his camcorder. He recorded everything for my mum who couldn&#39;t make it half way across the world with only two weeks notice.&lt;/p&gt;
+&lt;p&gt;We could hear children playing and people enjoying their drinks at the outdoor bar nearby. It wasn&#39;t the most private cerimony, but it was a space for us.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Less Ordinary</title>
+    <link href="https://piet.me/notes/less-ordinary/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2019-06-21T00:00:00Z</published><updated>2019-06-21T00:00:00Z</updated><id>https://piet.me/notes/less-ordinary/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>I recently rediscovered this old recording I made in February 2006.</summary><content type="html">&lt;p&gt;I recently rediscovered this old recording I made in February 2006.&lt;/p&gt;
+&lt;p&gt;I was visiting my mum and step-dad in Minehead in the UK. I brought my guitar and my 2006 white MacBook with me. I&#39;d been playing around with a song for a while and decided to put a recording together.&lt;/p&gt;
+&lt;p&gt;I layered about 5 guitar pieces together, all recorded using the MacBook microphone. At one point you can hear the fan from the laptop kick in.&lt;/p&gt;
+&lt;p&gt;The song is called &lt;em&gt;Less Ordinary&lt;/em&gt;, I have no idea why. Maybe I got it from the film &lt;em&gt;Life Less Ordinary&lt;/em&gt;. I might have liked that film at the time.&lt;/p&gt;
+&lt;p&gt;I remember pretty distinctly listening to &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Woods_(album)&quot;&gt;Sleater-Kinney&#39;s &lt;em&gt;The Woods&lt;/em&gt;&lt;/a&gt; for the first time on this trip. My song is nothing like Sleater-Kinney, but somehow these two things are related in my memory.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Mama!</title>
+    <link href="https://piet.me/notes/mama/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2019-06-07T00:00:00Z</published><updated>2019-06-07T00:00:00Z</updated><id>https://piet.me/notes/mama/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>Dinner time Teddie noises.</summary><content type="html">&lt;p&gt;Dinner time Teddie noises.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>7 reasons not to skip the tests</title>
+    <link href="https://piet.me/blog/x-reasons-not-to-skip-the-tests/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2018-12-05T00:00:00Z</published><updated>2018-12-05T00:00:00Z</updated><id>https://piet.me/blog/x-reasons-not-to-skip-the-tests/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>We&#39;ve all been tempted to skip writing the tests. Whether it&#39;s time pressure, business pressure, the complexity of testing, or we just want to get on with something else. We might be tempted to say &amp;quot;YOLO!&amp;quot; and move on. So here&#39;s a list of reasons why you might want to think twice before doing that.</summary><content type="html">&lt;p&gt;We&#39;ve all been tempted to skip writing the tests. Whether it&#39;s time pressure, business pressure, the complexity of testing, or we just want to get on with something else. We might be tempted to say &amp;quot;YOLO!&amp;quot; and move on. So here&#39;s a list of reasons why you might want to think twice before doing that.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;h2&gt;The Reasons&lt;/h2&gt;
+&lt;p&gt;There are 7 of them, I counted. Why 7? That&#39;s how many I thought of. I may add more.&lt;/p&gt;
+&lt;h3&gt;Feature security&lt;/h3&gt;
+&lt;p&gt;Making changes to existing programs is risky. You and your team have spent a lot of time and hard work getting it to where it is. Are you confident that if you implement a new feature you won&#39;t break an existing one? Tests give you this confidence.&lt;/p&gt;
+&lt;p&gt;If you think you have confidence in your code without tests, then I would ask you to prove it. If you start poking around the program, triggering various behaviour, I&#39;m pretty sure we could be sat around most of the day validating edge cases. This is not easily repeatable proof.&lt;/p&gt;
+&lt;p&gt;With good test coverage, you can run one command to quickly validate that your changes have not broken any tested behaviour.&lt;/p&gt;
+&lt;h3&gt;They&#39;re not just tests, they&#39;re documentation&lt;/h3&gt;
+&lt;p&gt;Well structured tests with good descriptions provide a clear picture of expected behaviour. Including how the program should and shouldn&#39;t be used. If you come across a piece of code and don&#39;t understand it&#39;s purpose, try this: Make some changes, run the tests and see what failed. The failing test should tell you about the expected behaviour of that code.&lt;/p&gt;
+&lt;p&gt;Viewing tests as documentation is also a great way to get to know how a program works. This is particularly useful if you&#39;re new to a code base. Also if you&#39;re on-boarding new people, walking through the tests is a great way to help them get familiar with a project.&lt;/p&gt;
+&lt;p&gt;Obviously, if you skip writing the tests you loose this valuable resource.&lt;/p&gt;
+&lt;h3&gt;Testing makes you faster&lt;/h3&gt;
+&lt;p&gt;Despite common misconceptions, sticking to the tests makes you ship value faster. This works in two ways:&lt;/p&gt;
+&lt;p&gt;First, with a well tested code base you can massively reduce the amount of time code spelunking. This is where you go from line to line, debugging, reading, and figuring out what some piece of code does. The tests give you picture of what the program is doing in a fraction of the time. You still need to do code reading, but the tests provide an invaluable companion to understanding what code is doing.&lt;/p&gt;
+&lt;p&gt;The second way tests make you ship value faster, is by vastly reducing the number of bugs you&#39;re shipping. Bugs are a debt against your time and the features you want to build. Bugs take your time away from shipping value, and they are a drain on the value of what you&#39;re shipping. If users want &lt;em&gt;x&lt;/em&gt; feature, but they end up &lt;em&gt;y&lt;/em&gt;, and &lt;em&gt;z&lt;/em&gt; bug too, the value of &lt;em&gt;x&lt;/em&gt; is going to be reduced.&lt;/p&gt;
+&lt;h3&gt;Tests are automatable, you are not&lt;/h3&gt;
+&lt;p&gt;The time a person spends running one off commands, or clicking around a screen to validate behaviour, is lost time. Wouldn&#39;t you rather spend this time actually writing features? These things are not automatable. Tests, on the other hand, can be configured to run as a part of your continuous integration processes. You create a pull request and tests run automatically, and your whole team can see the results. Manually validating code for all your team is laborious, and not easily repeatable, so the time is wasted.&lt;/p&gt;
+&lt;p&gt;That&#39;s not to say that all manual testing is wasted time. Some is necessary. But manual testing that could be easily automated, is time wasted. And when you&#39;d rather be shipping value, time is your one of your most important resource.&lt;/p&gt;
+&lt;h3&gt;Green just looks good&lt;/h3&gt;
+&lt;p&gt;Ok, this is a rather subjective point but... Green looks and feels good. Seeing that beautiful green band streak across the screen is just lovely. The confidence, the speed, the ease. Ugh. I love it.&lt;/p&gt;
+&lt;h3&gt;You probably won&#39;t go back and do them later&lt;/h3&gt;
+&lt;p&gt;&amp;quot;How about we ship it now and write the tests later.&amp;quot; If you&#39;ve ever said or heard this before, I challenge you to find out if those tests were ever written. If you&#39;re lucky there&#39;s a tech-debt ticket floating around that no-one really wants to work on. Once code hits the master branch, the expectation, the motivation, and the incentive to write those tests all but disappear.&lt;/p&gt;
+&lt;p&gt;Even for someone who has experience writing tests, writing tests after merging is much harder than when you&#39;re actually working on the feature. When you&#39;re working on a feature, your mind is centered around the problem you&#39;re trying to solve. In that state it&#39;s much easier to think about what tests you need to write. Once you&#39;ve moved onto another problem, remembering everything about that old one will be a struggle.&lt;/p&gt;
+&lt;h3&gt;Your later self (or a colleague) will appreciate it&lt;/h3&gt;
+&lt;p&gt;Imagine this.&lt;/p&gt;
+&lt;p&gt;You settle down to add a new feature. Your good self (or a colleague) has left a nicely structured test suite documenting the behaviour of this program you need to modify. You add new tests, make your changes, fix some things you broke, and submit your PR. You feel confident about your newly added functionality. You feel good that you didn&#39;t break any existing behaviour. The process went quite smoothly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It can be this blissful.&lt;/strong&gt; Not all the time. Shit can hit the fan in a myriad of ways with software. But it can be blissful. Either way, consider the alternative.&lt;/p&gt;
+&lt;p&gt;You settle down to add a new feature. There are some tests. But it turns out there are tests missing for some of the behaviour. What do you do? If you implement your feature you may unknowingly break some untested feature. So, you have to first put your new feature on hold, find out what logic is not tested, then reverse engineer tests for it. But you&#39;re not working on your feature! You&#39;re doing someone else&#39;s work for them. That&#39;s no fun.&lt;/p&gt;
+&lt;p&gt;Do your future self (or colleague) a favour and keep a program tested. And with that, be sure to thank your past self (or colleague) for leaving a nicely tested program.&lt;/p&gt;
+&lt;h2&gt;Caveats and tips&lt;/h2&gt;
+&lt;p&gt;These reasons are all well and good. But we don&#39;t live in a perfect code base. Here are some notes and tips on keeping the tests while living in an imperfect world.&lt;/p&gt;
+&lt;h3&gt;Caveat: Good coverage&lt;/h3&gt;
+&lt;p&gt;Good coverage is a life saver. Obviously if you&#39;re starting from an existing code base with little or no tests you&#39;re going to have a harder time writing tests. But I strongly encourage you and your team to set the standard that any new code is tested. As the test coverage grows, so will your confidence, and ability to ship value quickly.&lt;/p&gt;
+&lt;h3&gt;Caveat: Testing is a skill&lt;/h3&gt;
+&lt;p&gt;Unfortunately writing good tests is a skill learned with experience. If you&#39;re not comfortable writing tests or are having a hard time figuring out how to test a program, then this is the perfect time for pairing. Find that person that enjoys testing (they do exist), and ask them to help you. You may find that their enjoyment of testing rubs off on you. You never know.&lt;/p&gt;
+&lt;h3&gt;Tip: What (not) to test&lt;/h3&gt;
+&lt;p&gt;Not everything is worth testing. But a lot is. I don&#39;t believe in 100% coverage. Most apps have a lot of startup logic and configuration that isn&#39;t worth testing, because without it the app just won&#39;t start.&lt;/p&gt;
+&lt;p&gt;My golden rule for what to test is, &#39;if it makes a decision, test it&#39;. I guess you could add to that, &#39;unless it kill&#39;s the app on start&#39;.&lt;/p&gt;
+&lt;h3&gt;Caveat/Tip: Perseverance&lt;/h3&gt;
+&lt;p&gt;Stick at it, especially if you&#39;re adding tests to an existing code base. Coverage reports in CI builds (such as &lt;a href=&quot;https://coveralls.io/&quot;&gt;Coveralls&lt;/a&gt;) can be a great motivator. Make the coverage public, put it on a dashboard, and watch it go up!&lt;/p&gt;
+&lt;h2&gt;Conclusions&lt;/h2&gt;
+&lt;p&gt;Forfeiting tests in the name of shipping faster is deceivingly harmful to your productivity. Be vary wary if you&#39;re being asked by colleges to skip test writing to save time. Ultimately it is slower and it will hurt your team. Find other ways to save time if deadlines are an issue, such as reducing the scope of the feature. But making testing a integral part of your workflow will benefit you, your future self, and anyone else who touches that code.&lt;/p&gt;
+&lt;p&gt;Happy testing!&lt;/p&gt;
+&lt;h3&gt;Further reading/watching&lt;/h3&gt;
+&lt;p&gt;If you&#39;re new to testing check out these resources for learning more about TDD:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.geepawhill.org/2018/04/14/tdd-the-lump-of-coding-fallacy/&quot;&gt;TDD &amp;amp; The Lump Of Coding Fallacy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://alistapart.com/article/writing-testable-javascript&quot;&gt;Writing Testable JavaScript - Rebecca Murphey&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+_Also posted on [medium.com](https://medium.com/@pietvanzoen/x-reasons-not-to-skip-the-tests-4ac8dfb2c6d2)._
+</content>
+  </entry>
+  
+  <entry>
+    <title>Minsk Tunnel</title>
+    <link href="https://piet.me/notes/minsk-tunnel/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2018-10-29T00:00:00Z</published><updated>2018-10-29T00:00:00Z</updated><id>https://piet.me/notes/minsk-tunnel/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>I was in Minsk for work. On my walk back to the hotel I could hear singing coming from one of the pedestrian tunnels going under the main road. I took a diversion and recorded as I walked through the tunnel.</summary><content type="html">&lt;p&gt;I was in Minsk for work. On my walk back to the hotel I could hear singing coming from one of the pedestrian tunnels going under the main road. I took a diversion and recorded as I walked through the tunnel.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>How I organize my cloned git projects</title>
+    <link href="https://piet.me/blog/organizing-git-projects/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2018-05-31T00:00:00Z</published>
+      <updated>2019-02-01T00:00:00Z</updated><id>https://piet.me/blog/organizing-git-projects/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>For a while I&#39;ve been looking for a better way to organize the git repos I work with. I&#39;ve tried just dumping them into a single directory, and I&#39;ve tried adding sub folders such as personal, work, and tools. But both of these solutions had the same problems:</summary><content type="html">&lt;p&gt;For a while I&#39;ve been looking for a better way to organize the git repos I work with. I&#39;ve tried just dumping them into a single directory, and I&#39;ve tried adding sub folders such as &lt;code&gt;personal&lt;/code&gt;, &lt;code&gt;work&lt;/code&gt;, and &lt;code&gt;tools&lt;/code&gt;. But both of these solutions had the same problems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Repos that I clone to play around with cause clutter alongside projects I&#39;m actively working on.&lt;/li&gt;
+&lt;li&gt;Cloning forked repos along with the original repos cause folder name conflicts. Meaning I would have to use a different a folder name to the project name, which might cause confusion when working on a project.&lt;/li&gt;
+&lt;li&gt;It&#39;s unclear who owns what without going to the cloned repo and running &lt;code&gt;git remote -v&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- excerpt --&gt;
+&lt;p&gt;I figured there&#39;s probably a better way.&lt;/p&gt;
+&lt;h2&gt;Enter Go&lt;/h2&gt;
+&lt;p&gt;I really like the way that &lt;a href=&quot;https://golang.org/&quot;&gt;Go&lt;/a&gt; organizes source code. The command &lt;code&gt;go get &amp;lt;git-url&amp;gt;&lt;/code&gt; installs packages to &lt;code&gt;$GOPATH/src&lt;/code&gt;. (&lt;code&gt;$GOPATH&lt;/code&gt; defaults to &lt;code&gt;$HOME/go&lt;/code&gt; in Unix systems.) From there, repos are organized in directories by git host, user name, and repo name. For example, &lt;code&gt;go get github.com/pietvanzoen/pietvanzoen.com&lt;/code&gt; would clone the project into &lt;code&gt;$GO_PATH/src/github.com/pietvanzoen/pietvanzoen.com&lt;/code&gt;. This gives you several benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You avoid folder naming conflicts.&lt;/li&gt;
+&lt;li&gt;It&#39;s clear where a repo came from.&lt;/li&gt;
+&lt;li&gt;Your work/personal projects are automatically grouped.&lt;/li&gt;
+&lt;li&gt;Source code is organized in a consistent and easy-to-understand way.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;But I don&#39;t work with Go&lt;/h2&gt;
+&lt;p&gt;I occasionally work with Go, but I mostly work with JavaScript. Initially I thought I could just co-opt the &lt;code&gt;go get&lt;/code&gt; command and organize my non-Go projects alongside the handful of Go projects I work with. But Go recognizes that a project isn&#39;t Go and prints a warning message. Apart from the warning message, I didn&#39;t feel comfortable co-opting Go functionality to organize folders unrelated to Go. It&#39;s not what the tool is intended for and there&#39;s no guarantee it won&#39;t break later on.&lt;/p&gt;
+&lt;h2&gt;The Solution... &lt;code&gt;git get&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;So... I came up with &lt;a href=&quot;https://github.com/pietvanzoen/git-get&quot;&gt;git get&lt;/a&gt;. It&#39;s just a single Python script that parses the given git url, creates the directory structure, and clones the repo into the created directory. I define a &lt;code&gt;$GIT_PATH&lt;/code&gt; to store all my repos in (I chose &lt;code&gt;~/repos&lt;/code&gt;). Then I can run &lt;code&gt;git get git@github.com:pietvanzoen/dotfiles.git&lt;/code&gt;, which clones my dotfiles into &lt;code&gt;~/repos/github.com/pietvanzoen/dotfiles&lt;/code&gt;. Also, &lt;code&gt;git get&lt;/code&gt; can be run from any directory.&lt;/p&gt;
+&lt;p&gt;So now my projects look a bit like this:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;~/repos
+├── bitbucket.org
+│   └── pietvanzoen
+│       └── wibble
+├── github.com
+│   ├── LeidenDevs
+│   │   └── leidendevs
+│   ├── chriso
+│   │   └── validator.js
+│   ├── pietvanzoen
+│   │   ├── discussie
+│   │   ├── dotfiles
+│   │   ├── pietvanzoen.com
+│   │   └── validator.js
+│   └── wting
+│       └── autojump
+└── gitlab.com
+    └── pietvanzoen
+        └── wibble
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can see I&#39;ve cloned &lt;code&gt;validator.js&lt;/code&gt; twice. One is the original project by github user &lt;em&gt;chriso&lt;/em&gt;, and the other is my fork. With the single level folder structure I used before I would have to name the clone folder for one of those projects to something else.&lt;/p&gt;
+&lt;h2&gt;But that&#39;s a lot of directories to navigate&lt;/h2&gt;
+&lt;p&gt;One drawback to this approach is that we now have a lot of directories to navigate. Depending on your patience, this may or may not be an issue to you. If it is an issue, I really like using &lt;a href=&quot;https://github.com/wting/autojump&quot;&gt;autojump&lt;/a&gt;. The &lt;code&gt;autojump&lt;/code&gt; command (bound to &lt;code&gt;j&lt;/code&gt; for brevity) builds an index of commonly visited directories. After visiting a directory for the first time, you can then run &lt;code&gt;j &amp;lt;partial-dir-name&amp;gt;&lt;/code&gt; and you&#39;ll be taken to the first match in the autojump index. E.g &lt;code&gt;j dot&lt;/code&gt; will take me to &lt;code&gt;~/repos/github.com/pietvanzoen/dotfiles&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I&#39;ve been using this new directory structure for about a month and I love it. It feels clean and organized and I don&#39;t worry about where I&#39;m cloning repos into. Check out &lt;a href=&quot;https://github.com/pietvanzoen/git-get&quot;&gt;the &lt;code&gt;git-get&lt;/code&gt; source code&lt;/a&gt; and try it out. If you have ideas for improvement please submit an issue.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Heartbeats</title>
+    <link href="https://piet.me/notes/heartbeats/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2017-07-05T00:00:00Z</published><updated>2017-07-05T00:00:00Z</updated><id>https://piet.me/notes/heartbeats/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>A happy heartbeat.</summary><content type="html">&lt;p&gt;A happy heartbeat.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>My top 3 lessons from JSConfEU 2017</title>
+    <link href="https://piet.me/blog/jsconf-eu-2017/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2017-05-18T00:00:00Z</published><updated>2017-05-18T00:00:00Z</updated><id>https://piet.me/blog/jsconf-eu-2017/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.</summary><content type="html">&lt;p&gt;Our front end team at Usabilla had the amazing opportunity to attend JSConf EU in Berlin this year. It was a fantastic experience for us all and we came home having learned a ton. This is just a summary of my key take-aways from the conference.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;h2&gt;Your site can (and should) be accessible&lt;/h2&gt;
+&lt;p&gt;Whenever we think about accessibility on the web we tend to just think of providing access to people with disabilities. &lt;a href=&quot;https://twitter.com/lc512k&quot;&gt;Laura Carvajal&lt;/a&gt; from &lt;a href=&quot;http://ft.com/&quot;&gt;FT.com&lt;/a&gt; suggests we reframe this idea:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Beyond &lt;strong&gt;not deneying&lt;/strong&gt; access, it&#39;s ensuring that access is &lt;strong&gt;fair&lt;/strong&gt; for everyone.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There are a plethora of ways that people end up having trouble using the web, be it temporary or permanent. Our job is to build the web in a way enables access for all our users, and not just those that engage with the web the same way we do.&lt;/p&gt;
+&lt;p&gt;15% of the global population have some form of disability. After research &lt;a href=&quot;http://ft.com/&quot;&gt;FT.com&lt;/a&gt; found that 26% of their users had some form of disability. Depending on your demographics, you might find that a large segment of your user base are using tools (such as screen readers) that you do not test for or support.&lt;/p&gt;
+&lt;p&gt;So how do we work towards ensuring fair access for all our users? Here are some suggestions Laura offered:&lt;/p&gt;
+&lt;h3&gt;Install pa11y&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/pa11y&quot;&gt;pa11ly&lt;/a&gt; is a great way to ensure your site is &lt;a href=&quot;https://www.w3.org/TR/WCAG20/&quot;&gt;WCAG&lt;/a&gt; compliment. Make pa11y a part of your build process and have your build fail when there are issues.&lt;/p&gt;
+&lt;h3&gt;Get an Accessibility Audit&lt;/h3&gt;
+&lt;p&gt;Ensuring WCAG compliance only covers about 35% of accessibility issues. Accessibility audits provided by organisations like &lt;a href=&quot;http://digitalaccessibilitycentre.org/&quot;&gt;Digital Accessibility Centre&lt;/a&gt; put your app/site in front of people who face various accessibility issues. Laura showed an enlightening video from people testing &lt;a href=&quot;http://ft.com/&quot;&gt;FT.com&lt;/a&gt;, which highlighted the diverse range of issues people face with modern websites. There&#39;s no way you can anticipate all these issues, so putting your site in front of real people is a great way to gain insight.&lt;/p&gt;
+&lt;h3&gt;Ditch the Mouse&lt;/h3&gt;
+&lt;p&gt;Many internet users only use a keyboard to interact with the web. To really understand what these users experience Laura and her team got rid of their mice and went keyboard only. Check out &lt;a href=&quot;https://speakerdeck.com/lc512k/jsconfeu-2017-yes-your-site-can-and-should-be-accessible&quot;&gt;Laura&#39;s talk slides&lt;/a&gt; for tons of tips for going keyboard only.&lt;/p&gt;
+&lt;h3&gt;Relevant Links:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/lc512k&quot;&gt;Laura Carvajal - Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/pa11y&quot;&gt;pa11ly - automated accessibility testing tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/WCAG20/&quot;&gt;WCAG 2.0 Specification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://digitalaccessibilitycentre.org/&quot;&gt;Digital Accessibility Centre&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtube.com/watch?v=4JCbyOuWVII&quot;&gt;DAC FT.com testing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://speakerdeck.com/lc512k/jsconfeu-2017-yes-your-site-can-and-should-be-accessible&quot;&gt;YES! Your site can (and should) be accessible - Speaker Deck&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Getting out of our performance bubble&lt;/h2&gt;
+&lt;p&gt;I&#39;m gonna go ahead and say that &lt;a href=&quot;https://twitter.com/benschwarz&quot;&gt;Ben Schwarzx&lt;/a&gt; from &lt;a href=&quot;https://calibreapp.com/&quot;&gt;Calibre&lt;/a&gt; has coined the phrase &amp;quot;Wealthy Western Web&amp;quot; to describe the web that most of us develop in.&lt;br /&gt;
+We work on €2000+ computers on 100+ Mbit/s fiber. Even on mobile we&#39;re often working with high-end devices on 20 Mbit/s LTE connections. The World Wide Web is a very different place. The average device is about 5x slower than our laptops and 60% of the world are on 2g mobile data connections.&lt;/p&gt;
+&lt;p&gt;There are a number of ways to start testing the performance of our apps against devices that most people use. Calibre&#39;s platform and Google Lighthouse provide people-centric metrics for web app performance. Specifically &lt;strong&gt;Time to First Interaction&lt;/strong&gt; is a much better metric for app performance than something like page load time because it considers the time it takes for the device to parse the application and render it to a point that it&#39;s usable. A 410kb gzipped bundle is nice and small to download but once uncompressed the device has to handle 3-4 megabytes of code.&lt;/p&gt;
+&lt;p&gt;There were lots of talks about performance optimisation at JSConf. But without metrics to judge against you have no idea how effective your optimisations are and if you&#39;re optimising the right thing. I&#39;m really looking forward to giving Calibre a shot after chatting with Ben.&lt;/p&gt;
+&lt;h3&gt;Relevant Links:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/benschwarz&quot;&gt;Ben Schwarzx - Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=rwyZc1keSew&quot;&gt;Beyond the Bubble - Talk Video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://calibreapp.com/&quot;&gt;Calibre App - performance analytics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://speakerdeck.com/benschwarz/beyond-the-bubble-1&quot;&gt;Beyond the Bubble - Speaker Deck&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;A new bar for conferences&lt;/h2&gt;
+&lt;p&gt;JSConfEU was the best conference I have ever attended. First off, it achieved everything you would want from any conference. Amazing speakers, amazing topics, amazing community, amazing execution. The venue was beautiful, the day to day flow of things was almost flawless, the food was fantastic and they managed to serve 900+ people within 20 minutes for breakfast, lunch, and dinner.&lt;/p&gt;
+&lt;p&gt;But wait there&#39;s more.&lt;/p&gt;
+&lt;p&gt;The speakers were 50/50 men/women. Not all white. All food was vegetarian friendly, vegan friendly, and high quality. (I&#39;m neither vegetarian or vegan but loved the food.) They provided childcare, an inclusive photo policy, live transcription, gender neutral restrooms, gender identity badges, scholarships, and drinks in glass bottles over plastic.&lt;/p&gt;
+&lt;p&gt;JSConfEU as an excellent example of what a conference should look like. Diverse, inclusive, and shamelessly advocating for those things.&lt;/p&gt;
+&lt;h3&gt;Relevant Links:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://2017.jsconf.eu/speakers/&quot;&gt;JSConfEU 2017 Speaker line-up&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Organisers:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/hblank&quot;&gt;Holger Blank - Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/fox&quot;&gt;Karolina Szczur - Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/cramforce&quot;&gt;Malte Ubl - Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/janl&quot;&gt;Jan Lehnardt - Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Final Words (not really)&lt;/h2&gt;
+&lt;p&gt;Building tools and events that are accessible to all people is achievable &lt;strong&gt;if you prioritise it&lt;/strong&gt;. And you should because it&#39;s just the right thing to do, and if you need another reason, you should because it benefits everyone.&lt;/p&gt;
+&lt;p&gt;Making code performant for the average device improves performance on all devices. Making apps work for all platforms (browsers, screen readers, keyboards) results in a better user experience for all. Continuously striving to provide spaces (physical or digital) accessible to all people make your communities more cohesive and wiser.&lt;/p&gt;
+&lt;p&gt;The talks and the conference itself were an eye opening example of what events and the web could and should be, and it&#39;s an awesome picture. There are lots of hard problems to solve, but that&#39;s what we as developers signed up for, to solve hard problems. So let&#39;s do it.&lt;/p&gt;
+&lt;img alt=&quot;The Usabilla frontend team cramed into a photo booth&quot; style=&quot;max-width: 150px; width: 30%&quot; class=&quot;img-right&quot; src=&quot;https://piet.me/images/usabilla-frontend-team-sized.jpg&quot; /&gt;
+&lt;h2&gt;Final Final Words… Thank you&lt;/h2&gt;
+&lt;p&gt;First, thanks to all the organisers and speakers at JSConf for putting on a terrific and inspiring event.&lt;/p&gt;
+&lt;p&gt;I also want to thank &lt;a href=&quot;https://usabilla.com/&quot;&gt;Usabilla&lt;/a&gt; for giving us the opportunity to attend. The company paid for our flights, accommodation, and the conference fees. I&#39;m well aware that without a company that prioritises all the points above I probably would not have been able to attend.&lt;/p&gt;
+&lt;p&gt;Last, thanks to all my team mates for making the weekend in Berlin a blast. 😬&lt;/p&gt;
+&lt;h2&gt;Further Reading/Viewing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/powtoon-engineering/a-complete-guide-to-testing-javascript-in-2017-a217b4cd5a2a&quot;&gt;An Open Love Letter to JSConf EU, and How It Ended My 2016&lt;/a&gt; - A beautiful example of how creating inclusive environments can impact people.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PL37ZVnwpeshFmAPr65sU2O5WMs7_CGjs_&quot;&gt;JSConf EU 2017 videos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jobs.usabilla.com/o/frontend-developer&quot;&gt;Come work with us at Usabilla! 😁&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Paris Metro</title>
+    <link href="https://piet.me/notes/paris-metro/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2017-05-17T00:00:00Z</published><updated>2017-05-17T00:00:00Z</updated><id>https://piet.me/notes/paris-metro/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>French accordion player on the Paris metro.</summary><content type="html">&lt;p&gt;French accordion player on the Paris metro.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Paris Market</title>
+    <link href="https://piet.me/notes/paris-market/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2017-05-16T00:00:00Z</published><updated>2017-05-16T00:00:00Z</updated><id>https://piet.me/notes/paris-market/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>Strolling through a Parisian market with my wife and mother-in-law. French, and ambulances, and squid, oh my!</summary><content type="html">&lt;p&gt;Strolling through a Parisian market with my wife and mother-in-law. French, and ambulances, and squid, oh my!&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Windmolens Harp</title>
+    <link href="https://piet.me/notes/windmill-harp/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2017-05-13T00:00:00Z</published><updated>2017-05-13T00:00:00Z</updated><id>https://piet.me/notes/windmill-harp/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>On national windmill day we came across an art performance in a field by a windmill. It was a mix of ambient audio coming from speakers attached to the sails of the windmill accompanied by a harp and poetry recitals.</summary><content type="html">&lt;p&gt;On national windmill day we came across an art performance in a field by a windmill. It was a mix of ambient audio coming from speakers attached to the sails of the windmill accompanied by a harp and poetry recitals.&lt;/p&gt;
+&lt;p&gt;This is a short recording from that performance.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Automated middleman deploy to Github pages</title>
+    <link href="https://piet.me/blog/automated-middleman-deploy-to-github-pages/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2017-02-27T00:00:00Z</published><updated>2017-02-27T00:00:00Z</updated><id>https://piet.me/blog/automated-middleman-deploy-to-github-pages/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>I recently switched from Jekyll to Middleman for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.</summary><content type="html">&lt;p&gt;I recently switched from Jekyll to &lt;a href=&quot;https://middlemanapp.com/&quot;&gt;Middleman&lt;/a&gt; for my personal website. After using Middleman for a couple projects I felt that Middleman was much easier to setup and manage than Jekyll, also I really don’t like liquid templating. The one thing I missed from Jekyll was automated deploys to Github pages. It wasn’t very difficult but you have to jump through a few hoops. Since I’m running my own build I decided to add some tests for my static site too. So here’s the how-to.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;h2&gt;Testing setup&lt;/h2&gt;
+&lt;p&gt;I wanted to add some basic testing for my site, simple things like HTML validation and link checking. For that I found &lt;a href=&quot;https://github.com/gjtorikian/html-proofer&quot;&gt;HTMLProofer&lt;/a&gt; which can run a variety of tests against a folder of html files.&lt;/p&gt;
+&lt;p&gt;Add HTMLProofer to your &lt;code&gt;Gemfile&lt;/code&gt; and &lt;code&gt;bundle install&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;gem &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;html-proofer&amp;#x27;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;HTMLProofer can run via command line, but for ease of running locally and remotely with all of my configuration I chucked it in a &lt;code&gt;test.rb&lt;/code&gt; and included a simple check for the build folder.&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-comment&quot;&gt;# test.rb&lt;/span&gt;
+
+&lt;span class=&quot;hljs-keyword&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;html-proofer&amp;#x27;&lt;/span&gt;
+
+raise IOError, &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;Directory ./build does not exist. Run `middleman build` before running tests&amp;#x27;&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;unless&lt;/span&gt; Dir.exists?(&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;./build&amp;#x27;&lt;/span&gt;)
+
+HTMLProofer.check_directory(&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;./build&amp;#x27;&lt;/span&gt;, {
+  &lt;span class=&quot;hljs-symbol&quot;&gt;:check_img_http&lt;/span&gt; =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;,
+  &lt;span class=&quot;hljs-symbol&quot;&gt;:check_html&lt;/span&gt; =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;hljs-symbol&quot;&gt;:validation&lt;/span&gt; =&amp;gt; { &lt;span class=&quot;hljs-symbol&quot;&gt;:report_missing_names&lt;/span&gt; =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt; },
+  &lt;span class=&quot;hljs-symbol&quot;&gt;:check_favicon&lt;/span&gt; =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;,
+  &lt;span class=&quot;hljs-symbol&quot;&gt;:check_opengraph&lt;/span&gt; =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;,
+  &lt;span class=&quot;hljs-symbol&quot;&gt;:http_status_ignore&lt;/span&gt; =&amp;gt; [&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;hljs-number&quot;&gt;999&lt;/span&gt;,&lt;span class=&quot;hljs-number&quot;&gt;403&lt;/span&gt;,&lt;span class=&quot;hljs-number&quot;&gt;401&lt;/span&gt;]
+}).run
+&lt;span class=&quot;hljs-comment&quot;&gt;# Check out the config docs for more: https://github.com/gjtorikian/html-proofer#configuration&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you’re already using a &lt;code&gt;Rakefile&lt;/code&gt; you could add the HTMLProofer code to a &lt;code&gt;:test&lt;/code&gt; task. This test was going to be the only task in my &lt;code&gt;Rakefile&lt;/code&gt; so I decided to stick with a plain old &lt;code&gt;.rb&lt;/code&gt; file I could run.&lt;/p&gt;
+&lt;p&gt;Run &lt;code&gt;ruby test.rb&lt;/code&gt; and you should see something like this:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;Running [&amp;quot;ImageCheck&amp;quot;, &amp;quot;FaviconCheck&amp;quot;, &amp;quot;ScriptCheck&amp;quot;, &amp;quot;OpenGraphCheck&amp;quot;, &amp;quot;HtmlCheck&amp;quot;, &amp;quot;LinkCheck&amp;quot;] on [&amp;quot;./build&amp;quot;] on *.html...
+
+Checking 62 external links...
+Ran on 13 files!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first time I ran this I discovered a handful of links that were either just wrong or had gone stale over time. Nice to know these will be caught in advance moving forward!&lt;/p&gt;
+&lt;h2&gt;Deploy configuration&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/middleman-contrib/middleman-deploy&quot;&gt;middleman-deploy&lt;/a&gt; gem has what you need to “deploy” your site to git. Basically what that means is that middleman will build your site, copy the files to an orphan branch, commit the changes and push. By default middleman deploys to the &lt;code&gt;gh-pages&lt;/code&gt; branch for sites using Github pages.&lt;/p&gt;
+&lt;p&gt;Add the gem to your &lt;code&gt;Gemfile&lt;/code&gt; and &lt;code&gt;bundle install&lt;/code&gt;. To work with middleman v4 I had to install the pre-alpha gem. This hasn’t been a problem for what I need so far.&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;gem &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;middleman-deploy&amp;#x27;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;~&amp;gt; 2.0.0.pre.alpha&amp;#x27;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then in your &lt;code&gt;config.rb&lt;/code&gt; add your deploy setup:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;activate &lt;span class=&quot;hljs-symbol&quot;&gt;:deploy&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;hljs-params&quot;&gt;|deploy|&lt;/span&gt;
+  deploy.deploy_method = &lt;span class=&quot;hljs-symbol&quot;&gt;:git&lt;/span&gt;
+  deploy.branch = &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;gh-pages&amp;#x27;&lt;/span&gt;
+&lt;span class=&quot;hljs-keyword&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Make sure the whole process works by running &lt;code&gt;middleman build &amp;amp;&amp;amp; ruby test.rb &amp;amp;&amp;amp; middleman deploy&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;CircleCI configuration&lt;/h2&gt;
+&lt;p&gt;I’m using &lt;a href=&quot;https://circleci.com/&quot;&gt;CircleCI&lt;/a&gt; for my build platform, but the configuration should be fairly similar for other platforms.&lt;/p&gt;
+&lt;p&gt;Add the following to your &lt;code&gt;circle.yml&lt;/code&gt; in the root of your repo:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-comment&quot;&gt;# circle.yml&lt;/span&gt;
+
+&lt;span class=&quot;hljs-attr&quot;&gt;compile:&lt;/span&gt;
+  &lt;span class=&quot;hljs-attr&quot;&gt;override:&lt;/span&gt;
+    &lt;span class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;middleman&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;build&lt;/span&gt;
+
+&lt;span class=&quot;hljs-attr&quot;&gt;test:&lt;/span&gt;
+  &lt;span class=&quot;hljs-attr&quot;&gt;override:&lt;/span&gt;
+    &lt;span class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;test.rb&lt;/span&gt;
+
+&lt;span class=&quot;hljs-attr&quot;&gt;deployment:&lt;/span&gt;
+  &lt;span class=&quot;hljs-attr&quot;&gt;build:&lt;/span&gt;
+    &lt;span class=&quot;hljs-attr&quot;&gt;branch:&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;master&lt;/span&gt;
+    &lt;span class=&quot;hljs-attr&quot;&gt;commands:&lt;/span&gt;
+      &lt;span class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;user.email&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;$GIT_USER_EMAIL&lt;/span&gt;
+      &lt;span class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;user.name&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;$GIT_USER_NAME&lt;/span&gt;
+      &lt;span class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;middleman&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;deploy&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For each build, this will compile the site, run the tests, and for builds on your &lt;code&gt;master&lt;/code&gt; branch it will run the deploy. You’ll need to configure your git details too. For ease of configuration I’m using env vars for my git user config. Head to &lt;code&gt;https://circleci.com/gh/you/test-repo/edit#env-vars&lt;/code&gt; to add your github info.&lt;/p&gt;
+&lt;h2&gt;Git write access for the build&lt;/h2&gt;
+&lt;p&gt;Next you need to configure CircleCI to have write access to the repo. By default Circle only has read access to the repo. Instructions for &lt;a href=&quot;https://circleci.com/docs/1.0/adding-read-write-deployment-key/&quot;&gt;setting up a read/write deploy key&lt;/a&gt; are in the circle docs, but here’s the break down.&lt;/p&gt;
+&lt;h3&gt;Generate a new SSH key&lt;/h3&gt;
+&lt;p&gt;First we’ll need to create a new SSH key for Circle:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-meta&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; ssh-keygen -t rsa -b 4096 -C &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;your_email@example.com&amp;quot;&lt;/span&gt;&lt;/span&gt;
+Generating public/private rsa key pair.
+Enter file in which to save the key: /Users/&amp;lt;you&amp;gt;/.ssh/circleci_deploy_key
+Enter passphrase (empty for no passphrase):
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Give a location for your new ssh key and do &lt;em&gt;not&lt;/em&gt; enter a passphrase, just hit return.&lt;/p&gt;
+&lt;h3&gt;Add the public key to CircleCI&lt;/h3&gt;
+&lt;p&gt;Copy the public version of your new new SSH key:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;cat ~/.ssh/circle_deploy_key.pub | pbcopy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Go to &lt;code&gt;https://circleci.com/gh/you/test-repo/edit#ssh&lt;/code&gt; and add the public key that you just created. Use &lt;a href=&quot;http://github.com/&quot;&gt;github.com&lt;/a&gt; in the &lt;em&gt;Hostname&lt;/em&gt; field.&lt;/p&gt;
+&lt;h3&gt;Add the private key to Github&lt;/h3&gt;
+&lt;p&gt;Next head to your repo in GitHub and add the private key to our repo.&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;cat ~/.ssh/circle_deploy_key | pbcopy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Go to &lt;code&gt;https://github.com/you/test-repo/settings/keys&lt;/code&gt; on GitHub and add the public key that you just created and copied. Make sure to “Allow write access” and save the key.&lt;/p&gt;
+&lt;h2&gt;Deploy!&lt;/h2&gt;
+&lt;p&gt;That should be everything you need to run the build. Here’s an &lt;a href=&quot;https://circleci.com/gh/pietvanzoen/pietvanzoen.com/31&quot;&gt;example build from my site&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You should now be able to simply push changes to your master branch and have the site automatically update, plus if there are any broken links your build will fail and the deploy won’t happen. 🎉 Enjoy!&lt;/p&gt;
+&lt;h3&gt;Further reading:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/a/22374542&quot;&gt;Setting up a custom domain for your &lt;code&gt;gh-pages&lt;/code&gt; site.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gjtorikian/html-proofer#configuration&quot;&gt;HTTPProofer config&lt;/a&gt; with extra options for testing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;If anything in this post turns out to be incorrect or incomplete please comment and let me know.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Moving On: What I learned at Cozy</title>
+    <link href="https://piet.me/blog/moving-on-what-i-learned-at-cozy/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2016-07-08T00:00:00Z</published><updated>2016-07-08T00:00:00Z</updated><id>https://piet.me/blog/moving-on-what-i-learned-at-cozy/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>Today is my last day at Cozy. 😢 My wife and I are flying to the Netherlands to start a new adventure close to my Dutch family. I started at Cozy in January 2014 as a front-end engineer. I have an agency background, and after spending several years working on client websites, I was excited to have a chance to do something different — to work on one product with a cool team.</summary><content type="html">&lt;p&gt;Today is my last day at Cozy. 😢  My wife and I are flying to the Netherlands to start a new adventure close to my Dutch family. I started at Cozy in January 2014 as a front-end engineer. I have an agency background, and after spending several years working on client websites, I was excited to have a chance to do something different — to work on one product with a cool team.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;p&gt;I can’t possibly write about all the things I learned while I was at Cozy; I’m trying to keep this short. But here are the things that stand out when I think about what I know now versus what I knew then:&lt;/p&gt;
+&lt;h2&gt;Process is fluid&lt;/h2&gt;
+&lt;p&gt;One of my favorite things about working at Cozy is that we allowed our processes to evolve as our team and company evolved. No methodology is one-size-fits-all. In fact, most methods for organizing and prioritizing work don’t match any team perfectly. So, rather than sticking to a process that didn’t fit us, we developed our process to fit our needs as we grew. Try, tweak, repeat.&lt;/p&gt;
+&lt;h2&gt;Teams are like family&lt;/h2&gt;
+&lt;p&gt;Sometimes you disagree. Sometimes you have arguments. And sometimes you’re wrong. But that’s all OK. Tensions happen, but the end of the day you’re still a team and you still have the same goal. Then you can drink beer together.&lt;/p&gt;
+&lt;h2&gt;Choice of work fosters ownership&lt;/h2&gt;
+&lt;p&gt;At Cozy, engineers often have the opportunity to choose what to work on next. For me, this fostered a sense of ownership of my work. And with ownership comes pride, not just after the fact, but during the process of pushing yourself to produce excellent work.&lt;/p&gt;
+&lt;h2&gt;Always be learning&lt;/h2&gt;
+&lt;p&gt;During my first year at Cozy, I was constantly learning and being exposed to new ideas and concepts I hadn’t encountered before. I learned by just doing my job. But eventually that passive learning started to taper off.&lt;br /&gt;
+At that point, I started reading technical books and articles during my bus ride to work. Those 20 minutes of reading each morning helped broaden my ideas about the work I was doing at Cozy, while making me a more well-rounded engineer.&lt;/p&gt;
+&lt;h2&gt;Fight with the tech you have…&lt;/h2&gt;
+&lt;p&gt;…not the tech you want. New ways to build a product can be shiny and exciting. But often enough, you have existing code that’s doing a good job. There’s no need to replace it wholesale when what you have fits your needs. If the way you’re building your product seems like it isn’t working in some way, try to evolve and improve it before throwing everything out. There’s a lot of value in something your team knows how to use, something that’s worked in the past.&lt;/p&gt;
+&lt;p&gt;I’m super excited for the new adventure ahead of me, but I’m sad to be leaving Cozy. My time at Cozy has been formative, and it’s been my absolute pleasure to work with such an amazing group of people. I’m gonna miss them. 👋 😢&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Originally posted on &lt;a href=&quot;https://cozy.co/moving-on-what-i-learned-at-cozy/&quot;&gt;Cozy.co&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Why I love test-first TDD</title>
+    <link href="https://piet.me/blog/why-i-love-test-first-tdd/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2016-06-10T00:00:00Z</published><updated>2016-06-10T00:00:00Z</updated><id>https://piet.me/blog/why-i-love-test-first-tdd/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>Twelve months ago I had hardly written a single test. After some encouragement and guidance on how to write tests my world changed. Yes, there&#39;s lots of evidence that says writing tests reduces bug density (which is awesome), but that alone isn&#39;t necessarily going to persuade you to take the time to do them. What made me adopt a workflow where I write tests first? The fact that I enjoyed it!</summary><content type="html">&lt;p&gt;Twelve months ago I had hardly written a single test. After some encouragement and guidance on how to write tests my world changed. Yes, there&#39;s lots of evidence that says writing tests reduces bug density (which is awesome), but that alone isn&#39;t necessarily going to persuade you to take the time to do them. What made me adopt a workflow where I write tests first? The fact that I enjoyed it!&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;p&gt;&lt;em&gt;Preface: I&#39;m not going to cover how to test in this post. Just why I love it. But how you test and tooling for testing makes a big difference on the fun factor. My quick recommendation is checking out &lt;a href=&quot;https://wallabyjs.com/&quot;&gt;Wallaby.js&lt;/a&gt;. I&#39;ll try to do a post on TDD tooling and workflow in the future, or just find some more useful links.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;What makes test-first TDD fun?&lt;/h2&gt;
+&lt;h3&gt;Immediate feedback&lt;/h3&gt;
+&lt;p&gt;My old process involved a lot of leg work, and a lot of fumbling around in the dark. I would write some code, add some console logging, switch contexts to my browser, refresh, read and mentally parse what it returns, rinse, repeat.&lt;/p&gt;
+&lt;p&gt;Using a test runner that immediately runs your tests after each change is a glorious alternative. Write some code, test fails, adjust code, test passes, success! I don&#39;t even have to read what the code returns, all I need to worry about is green verses red. Pass vs fail. Not only am I getting faster feedback, but I&#39;m also reducing the cognitive load. I&#39;m not changing contexts, I&#39;m not interpreting what the code returns, I just want it to pass.&lt;/p&gt;
+&lt;h3&gt;Confidence in code&lt;/h3&gt;
+&lt;p&gt;Before I used TDD extensively I would end up with some code that I was somewhat confident in. I would have thought about possible edge cases and tried to account for them. It felt &lt;em&gt;okay&lt;/em&gt; shipping the code but there was always an element of trepidation.&lt;/p&gt;
+&lt;p&gt;It would be unwise to think that TDD gives you 100% bug free code. As Rich Hickey said in a talk once, &amp;quot;What do all production bugs have in common? They passed the tests.&amp;quot; But, for me, I feel way better about my code when it&#39;s tested. In particular, it&#39;s way easier to account for edge cases. Once you have your happy path tests in place, you can add edge case tests and implement the code. Provided all the tests pass, you can be confident that adjusting the code for edge cases isn&#39;t going to break the primary function of you code.&lt;/p&gt;
+&lt;h3&gt;Easy refactoring&lt;/h3&gt;
+&lt;p&gt;Another wonderful benefit to TDD is how much easier it is to refactor code when you have a solid set of tests to work with. Feel like some code could be optimized? Refactor without fear! Testing makes it super easy to go back after the fact and make your tests more readable, more DRY, and more maintainable.&lt;/p&gt;
+&lt;p&gt;But wait there&#39;s more! For me the real benefit of easy refactoring comes when you know this before you begin. &lt;strong&gt;Your first version of a piece of code does not have to be perfect, it just needs to make the tests pass.&lt;/strong&gt; Once your tests pass and you can go back and make it pretty and optimize it to your heart&#39;s delight. The point being, you don&#39;t have to waste cognitive power figuring out how all this behaviour is going to fit together for your first version of a piece of code. Do your worst! Then make it awesome when tests are green.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;What I hope you get from this is that test-first TDD doesn&#39;t have to be a slog. It doesn&#39;t have to be additional work you have to do when you could have been done 20 minutes ago. I believe it can be enjoyable to everyone and that it can be a huge benefit to your work flow.&lt;/p&gt;
+&lt;p&gt;If you still think writing tests is a slog but you haven&#39;t ever tried test-first development then I strongly recommend at least giving it a go. I really enjoy TDD, but I find writing the tests after the fact pretty unbearable. Challenge yourself to do testing first for a couple weeks and let me know how it goes!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I&#39;d love to hear about your experience with TDD. What do you like/dislike about it? What tools do you find most useful? I&#39;m &lt;a href=&quot;https://twitter.com/pietvanzoen&quot;&gt;@pietvanzoen&lt;/a&gt; on twitter or just leave a comment below.&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Further reading/watching&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://alistapart.com/article/writing-testable-javascript&quot;&gt;Writing Testable JavaScript - Rebecca Murphey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=8bZh5LMaSmE&quot;&gt;All the Little Things - Sandi Metz (refactoring talk)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Lodash, Knockout, and functional programming</title>
+    <link href="https://piet.me/blog/lodash-knockout-and-functional-programming-with-kompose/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2016-03-20T00:00:00Z</published><updated>2016-03-20T00:00:00Z</updated><id>https://piet.me/blog/lodash-knockout-and-functional-programming-with-kompose/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don&#39;t always play nice if you happen to use Knockout observables. I&#39;m going to introduce a way to make handling observables in functional style easier.</summary><content type="html">&lt;p&gt;Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don&#39;t always play nice if you happen to use Knockout observables. I&#39;m going to introduce a way to make handling observables in functional style easier.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;p&gt;Let&#39;s start with a plain object example. Say you want to create an array of people&#39;s &lt;code&gt;age&lt;/code&gt; in &lt;code&gt;years&lt;/code&gt; from this array:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; people = [
+  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Ron Swanson&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: { &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;55&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;6&lt;/span&gt; } },
+  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Leslie Knope&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: { &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;41&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; } },
+  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Andy Dwyer&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: { &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;34&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;8&lt;/span&gt; } },
+];
+
+&lt;span class=&quot;hljs-comment&quot;&gt;// the plain js way&lt;/span&gt;
+people.map(&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
+  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; person.age.years;
+});
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 34]&lt;/span&gt;
+
+&lt;span class=&quot;hljs-comment&quot;&gt;// a better way with _.property&lt;/span&gt;
+people.map(_.property(&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;));
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 34]&lt;/span&gt;
+
+&lt;span class=&quot;hljs-comment&quot;&gt;// even better still with _.map&lt;/span&gt;
+_.map(people, &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;);
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 34]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Clean succinct code. Excellent!&lt;/p&gt;
+&lt;h2&gt;Adding Observables&lt;/h2&gt;
+&lt;p&gt;If you&#39;re using &lt;a href=&quot;http://knockoutjs.com/&quot;&gt;Knockout&lt;/a&gt;, this becomes a little more tricky because your object path might include observables that need to be unwrapped:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; people = ko.observableArray([
+  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Ron Swanson&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;55&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;6&lt;/span&gt; }) },
+  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Leslie Knope&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;41&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; }) },
+  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Andy Dwyer&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;34&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;8&lt;/span&gt; }) },
+]);
+_.map(people, &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;);
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; []&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Why an empty array? &lt;code&gt;people&lt;/code&gt; is an observable array so we need to invoke it to get the value.&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;_.map(people(), &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;);
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [undefined, undefined, undefined]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here Lodash is traversing the property path without invoking the observables, so rather than retrieving the value of &lt;code&gt;years&lt;/code&gt; from inside the observable it&#39;s trying to find the property &lt;code&gt;years&lt;/code&gt; on the actual observable instance. Since &lt;code&gt;years&lt;/code&gt; does not exist, it just returns &lt;code&gt;undefined&lt;/code&gt; for each person.&lt;/p&gt;
+&lt;p&gt;Here&#39;s how we might get around this:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;_.map(people(), &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
+  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; persion.age().years;
+});
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 30]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We&#39;re back to writing callbacks. That succinct, readable code we had earlier is gone. And what if someone&#39;s &lt;code&gt;age&lt;/code&gt; ends up being &lt;code&gt;null&lt;/code&gt;?&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;people.push({ &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Ann Perkins&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: &lt;span class=&quot;hljs-literal&quot;&gt;null&lt;/span&gt; });
+_.map(people(), &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
+  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; person.age().years;
+});
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; Uncaught TypeError: person.age is not a function&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Dammit. If this were a written without observables and using &lt;code&gt;_.map(people, &#39;age.years&#39;);&lt;/code&gt; we&#39;d simply get &lt;code&gt;[55, 41, 30, undefined]&lt;/code&gt;. Lodash is robust enough that it will simply return &lt;code&gt;undefined&lt;/code&gt; for that person.&lt;/p&gt;
+&lt;p&gt;Here&#39;s how we&#39;d get around that problem:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;_.map(people(), &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
+  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; person.age ? person.age().years : &lt;span class=&quot;hljs-literal&quot;&gt;undefined&lt;/span&gt;;
+});
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 30, undefined]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We have to use a conditional to get around our &lt;code&gt;null&lt;/code&gt; problem, which adds complexity, which makes the code less readable.&lt;/p&gt;
+&lt;p&gt;Since we&#39;re using knockout, we probably want this to be a computed observable, so that the value we get is always up to date with our &lt;code&gt;people&lt;/code&gt; array.&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; peopleAgeYears = ko.pureComputed(&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;{
+  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; _.map(people(), &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
+    &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; person.age ? person.age().years : &lt;span class=&quot;hljs-literal&quot;&gt;undefined&lt;/span&gt;;
+  });
+});
+peopleAgeYears();
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 30, undefined]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Yikes. Let&#39;s take stock. We have two nested functions, a variable used twice, a path named twice, and an &lt;code&gt;undefined&lt;/code&gt; return. This is manageable but damn, it&#39;s nowhere near as nice as &lt;code&gt;_.map(people, &#39;age.years&#39;);&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Introducing Kompose&lt;/h2&gt;
+&lt;p&gt;Kompose offers several helper functions that behave like Lodash&#39;s path traversing helpers (such as &lt;code&gt;_.property&lt;/code&gt; and &lt;code&gt;_.get&lt;/code&gt;), but with the added benefit of unwrapping observables along the way.&lt;/p&gt;
+&lt;p&gt;Let&#39;s start with our people again:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; people = ko.observableArray([
+  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Ron Swanson&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;55&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;6&lt;/span&gt; }) },
+  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Leslie Knope&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;41&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; }) },
+  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Andy Dwyer&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;34&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;8&lt;/span&gt; }) },
+  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Ann Perkins&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;39&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;5&lt;/span&gt; }) },
+]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&#39;s write that &lt;code&gt;peopleAgeYears&lt;/code&gt; computed using &lt;code&gt;kp.computedMap&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; peopleAgeYears = kp.computedMap(people, &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;);
+peopleAgeYears();
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 30, 39]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nice! Just like the verbose &lt;code&gt;peopleAgeYears&lt;/code&gt; example above, this computed will traverse the people objects in the observable array &lt;code&gt;people&lt;/code&gt; and map their &lt;code&gt;age&lt;/code&gt; in &lt;code&gt;years&lt;/code&gt;. We&#39;re back to our clear, easy to read, code from earlier.&lt;/p&gt;
+&lt;h2&gt;Going the extra functional mile&lt;/h2&gt;
+&lt;p&gt;Like &lt;code&gt;_.map&lt;/code&gt;, passing a path to &lt;code&gt;kp.computedMap&lt;/code&gt; is a convenience feature that creates an iteratee function using &lt;code&gt;kp.property&lt;/code&gt;. You can also pass your own iteratee function to &lt;code&gt;kp.computedMap&lt;/code&gt;. Instead of everyone&#39;s age, say we wanted a computed that calculated everyone&#39;s &amp;quot;&lt;a href=&quot;https://www.youtube.com/watch?v=7dsVYswSfow&quot;&gt;half your age plus seven&lt;/a&gt;&amp;quot; age.&lt;/p&gt;
+&lt;p&gt;Let&#39;s start with the long(ish)form:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; youngestDatableAges = kp.computedMap(people, &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
+  &lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; personAgeYears = kp.get(person, &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;);
+  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; personAgeYears / &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; + &lt;span class=&quot;hljs-number&quot;&gt;7&lt;/span&gt;;
+});
+youngestDatableAges();
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [34.5, 27.5, 22, 26.5];&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(&lt;code&gt;kp.get&lt;/code&gt; is like &lt;code&gt;_.get&lt;/code&gt; except that it unwraps observables along the way.)&lt;/p&gt;
+&lt;p&gt;We can do much better than this though. If we break the above example down into it&#39;s element parts we can make this much easier to reason with. Let&#39;s start by breaking out our equation:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;datableAge&lt;/span&gt;(&lt;span class=&quot;hljs-params&quot;&gt;age&lt;/span&gt;) &lt;/span&gt;{
+  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; age / &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; + &lt;span class=&quot;hljs-number&quot;&gt;7&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can also do away with setting the &lt;code&gt;personAgeYears&lt;/code&gt; variable and just pass the return value from &lt;code&gt;kp.get&lt;/code&gt; straight into the &lt;code&gt;datableAge&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; youngestDatableAges = kp.computedMap(people, &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
+  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; datableAge(kp.get(person, &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;));
+});
+youngestDatableAges();
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [34.5, 27.5, 22, 26.5];&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Not bad! But wouldn&#39;t it be great if we didn&#39;t have to define the callback function and the &lt;code&gt;person&lt;/code&gt; variable? Well, there&#39;s a way with &lt;code&gt;_.flow&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you&#39;ve never used &lt;code&gt;_.flow&lt;/code&gt; before (sometimes called &lt;code&gt;pipe&lt;/code&gt; in other functional libraries), I really recommend reading up and trying it out. &lt;code&gt;_.flow&lt;/code&gt; returns a function that allows you to pipe a value through several functions, with each function passing it&#39;s return value into the next. Here&#39;s how it fits in our example:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; youngestDatableAges = kp.computedMap(
+  people,
+  _.flow(kp.property(&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;), datableAge)
+);
+youngestDatableAges();
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [34.5, 27.5, 22, 26.5];&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That&#39;s it! No function declarations. No unnecessary variables. This is Point Free (or Tacit) Functional Programming:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tacit programming, also called point-free style, is a programming paradigm in which function definitions do not identify the arguments (or &amp;quot;points&amp;quot;) on which they operate. Instead the definitions merely compose other functions, among which are combinators that manipulate the arguments. ~ &lt;a href=&quot;https://en.wikipedia.org/wiki/Tacit_programming&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In the these examples I&#39;ve tried to illustrate how Kompose might work alongside Lodash to produce succinct, point-free, functional code that&#39;s easy to read. But it&#39;s not limited to the examples above. When I wrote Kompose I did not want to replace Lodash, I wanted to give Knockout users a tool to make it easier to write functional code that handles observables.&lt;/p&gt;
+&lt;p&gt;Right now the kompose API offers alternative methods for &lt;code&gt;_.get&lt;/code&gt;, &lt;code&gt;_.property&lt;/code&gt;, &lt;code&gt;_.method&lt;/code&gt; and &lt;code&gt;_.matchesProperty&lt;/code&gt;. Plus computed generators &lt;code&gt;kp.computedApply&lt;/code&gt; and &lt;code&gt;kp.computedMap&lt;/code&gt;. &lt;a href=&quot;https://github.com/pietvanzoen/knockout-kompose/tree/master/doc&quot;&gt;Check out the docs&lt;/a&gt; and please make any suggestions for improvements.&lt;/p&gt;
+&lt;h2&gt;Further Reading&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pietvanzoen/knockout-kompose&quot;&gt;Kompose on Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://glebbahmutov.com/blog/point-free-programming-is-not-pointless/&quot;&gt;Point-free programming is not pointless (post)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://leanpub.com/javascript-allonge&quot;&gt;JavaScript Allongé (ES5) - A long pull of functions, combinators, &amp;amp; decorators (book)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Professional Resolutions</title>
+    <link href="https://piet.me/blog/professional-resolutions/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2015-01-11T00:00:00Z</published><updated>2015-01-11T00:00:00Z</updated><id>https://piet.me/blog/professional-resolutions/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>I&#39;ve never been big on New Years resolutions. I&#39;ve always leaned towards a ’let my yes be yes, and let my no be no’ mindset, and I&#39;ve never been confident in my ability to keep a resolution so making them just seemed disingenuous for me. But this year I feel different about it. Perhaps it&#39;s due to hitting the big 3-0. So here&#39;s what I&#39;d like to focus on this year:</summary><content type="html">&lt;p&gt;I&#39;ve never been big on New Years resolutions. I&#39;ve always leaned towards a ’let my yes be yes, and let my no be no’ mindset, and I&#39;ve never been confident in my ability to keep a resolution so making them just seemed disingenuous for me. But this year I feel different about it. Perhaps it&#39;s due to hitting the big 3-0. So here&#39;s what I&#39;d like to focus on this year:&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Reading:&lt;/strong&gt; As a friend put it, reading is a wonderful source of new ideas, and I need some new ideas. I find it too easy to get in a rut with learning just happening in the workplace. Not that workplace learning is bad by any means, but I feel like I need diversify my learning a little.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Writing:&lt;/strong&gt; Writing is another great tool for learning. It forces you to solidify and document ideas. I&#39;ve never been confident in writing, probably because I&#39;ve never made myself do it regularly. So this is the year.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speaking:&lt;/strong&gt; Lastly, I would like to challenge myself to speaking at least once this year. Similarly to writing, speaking is a good way to solidify ideas and to share them. Also, I&#39;ve never spoken publicly so I think it will be a good personal challenge. They say the first is the worst, so let&#39;s get that out of the way.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So there you go. If you feel so inclined, please help me by keeping me accountable. Also if you have any suggestions for good reading sources, please do share.&lt;/p&gt;
+&lt;p&gt;Happy new year!&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Using local environment (ENV) variables.</title>
+    <link href="https://piet.me/blog/using-env-variables/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2014-05-15T00:00:00Z</published><updated>2014-05-15T00:00:00Z</updated><id>https://piet.me/blog/using-env-variables/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>Often enough you&#39;ll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it&#39;s not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter &#39;Environment Variables&#39;.</summary><content type="html">&lt;p&gt;Often enough you&#39;ll need to reference sensitive credentials in your project, or give an easy way for people using your project to change environment relative information in your project. Normally it&#39;s not ideal to commit sensitive information to a public repository. Neither is it ideal to commit code which only works for your setup. Enter &#39;Environment Variables&#39;.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;h2&gt;Setting Environment variables&lt;/h2&gt;
+&lt;p&gt;In terminal you can easily set environment (or ENV) variables by running this command: &lt;code&gt;export VAR_NAME=foo&lt;/code&gt;. For multi word variables be sure to wrap the variable in quotes: &lt;code&gt;export VAR_NAME=&amp;quot;foo bar&amp;quot;&lt;/code&gt;. But when you reboot your shell you&#39;ll lose these variables. So lets look at how to set variables that persist.&lt;/p&gt;
+&lt;p&gt;Open up &lt;code&gt;.bash_profile&lt;/code&gt; or &lt;code&gt;.bashrc&lt;/code&gt; in your home folder using your text editor, if you don&#39;t have a bash file create it like so:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Start up Terminal&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;cd ~&lt;/code&gt; or just &lt;code&gt;cd&lt;/code&gt; to go to your home folder.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;touch .bash_profile&lt;/code&gt; to create your new file.&lt;/li&gt;
+&lt;li&gt;Edit &lt;code&gt;.bash_profile&lt;/code&gt; with your favorite editor (or you can just type &lt;code&gt;open -e .bash_profile&lt;/code&gt; to open it in the default editor.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Once you have your &lt;code&gt;.bash_profile&lt;/code&gt; open you can add &lt;code&gt;export VAR_NAME=VALUE&lt;/code&gt; to set an environment variable. Once you&#39;re done save, exit and type &lt;code&gt;. .bash_profile&lt;/code&gt; in your terminal to reload .bash_profile. That&#39;s it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; A note about case-sensitivity. Depending on what system/software you&#39;re using variables are or are not case-sensitive. Always be sure not to accidentally overwrite other variables in your environment. In some systems &lt;code&gt;Var_Name&lt;/code&gt; will be the same as &lt;code&gt;VAR_NAME&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Using ENV variables in code&lt;/h2&gt;
+&lt;p&gt;ENV Variables are accessible by basically any server-side programming language. Here are a few examples:&lt;/p&gt;
+&lt;p&gt;Say I set this in my &lt;code&gt;.bash_profile&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;export&lt;/span&gt; WIBBLE=woo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Ruby&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;wibble = ENV[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&amp;#x27;&lt;/span&gt;]
+print wibble
+&lt;span class=&quot;hljs-comment&quot;&gt;# =&amp;gt; &amp;#x27;woo&amp;#x27;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Node&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; wibble = process.env.WIBBLE;
+&lt;span class=&quot;hljs-built_in&quot;&gt;console&lt;/span&gt;.log(wibble);
+&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; &amp;#x27;woo&amp;#x27;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; os
+wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&amp;#x27;&lt;/span&gt;]
+&lt;span class=&quot;hljs-built_in&quot;&gt;print&lt;/span&gt; wibble
+&lt;span class=&quot;hljs-comment&quot;&gt;# =&amp;gt; &amp;#x27;woo&amp;#x27;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Looking up ENV variables&lt;/h2&gt;
+&lt;p&gt;Finally here are a couple quick commands for looking up what ENV variables have already been set.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To print out a list of all your ENV variables just use the command &lt;code&gt;env&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;To sort the output of ENV alphabetically use &lt;code&gt;env | sort&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;To search for a ENV variable use &lt;code&gt;env | grep WIBBLE&lt;/code&gt;. &lt;s&gt;Remember this is case-sensitive&lt;/s&gt;. Be aware that this can be case-sensitive depending on what system/software you&#39;re using.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have any questions or corrections just comment or email me.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Code for Everyone</title>
+    <link href="https://piet.me/blog/the-internet-for-everyone/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2013-11-10T00:00:00Z</published><updated>2013-11-10T00:00:00Z</updated><id>https://piet.me/blog/the-internet-for-everyone/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>I&#39;ve been excited to hear more about initiatives like Code Club and Code.org, which aim to make code a normal part of a child&#39;s education.</summary><content type="html">&lt;p&gt;I&#39;ve been excited to hear more about initiatives like &lt;a href=&quot;https://www.codeclub.org.uk/&quot;&gt;Code Club&lt;/a&gt; and &lt;a href=&quot;http://code.org/&quot;&gt;Code.org&lt;/a&gt;, which aim to make code a normal part of a child&#39;s education.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Learning to code is an important skill now we’re living in a digital age. It’s not just enough for children to know how to use technology. They should know how it works too.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Learning to code doesn’t just mean you can become a developer it strengthens problem solving skills and logical thinking and supports key academic subjects such as science, maths and technology.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;~ Code Club&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;One of my favourite things about the internet is it&#39;s ability to empower people to learn and create, but I&#39;ve never thought about how the code itself could also do that.&lt;/p&gt;
+&lt;p&gt;I&#39;m excited to see how &lt;a href=&quot;http://code.org/&quot;&gt;Code.org&lt;/a&gt; and Code Club progress. In particular I&#39;d be interested to see if initiatives pop up here in Portland too.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Moving from shared hosting to Github pages</title>
+    <link href="https://piet.me/blog/jekyll-and-github-pages/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2013-10-12T00:00:00Z</published><updated>2013-10-12T00:00:00Z</updated><id>https://piet.me/blog/jekyll-and-github-pages/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>When my shared hosting plan was coming up for renewal I struggled to find a hosting service that I liked. I was hoping for good uptime, something that didn&#39;t break the bank, and preferably something with a decent UI. (Maybe I was asking to much.) Webfaction was a great option for a while but $9.50 a month for a few small sites was more than I wanted to spend. That said, the UI and features make Webfactions my favourite shared hosting option.</summary><content type="html">&lt;p&gt;When my shared hosting plan was coming up for renewal I struggled to find a hosting service that I liked. I was hoping for good uptime, something that didn&#39;t break the bank, and preferably something with a decent UI. (Maybe I was asking to much.) &lt;a href=&quot;https://www.webfaction.com/?affiliate=pietvanz&quot;&gt;Webfaction&lt;/a&gt; was a great option for a while but $9.50 a month for a few small sites was more than I wanted to spend. That said, the UI and features make Webfactions my favourite shared hosting option.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;p&gt;In the end I went for something a little different. Between &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;http://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; I now host this site for free.&lt;/p&gt;
+&lt;h2&gt;Launching a not-so-static &#39;static site&#39;&lt;/h2&gt;
+&lt;p&gt;Github Pages provides free hosting for static pages. So all you can use is html, css, and javascript. No server-side scripts and no databases. You can do custom domains, and your site is deployed straight from a repo every time you push to it.&lt;/p&gt;
+&lt;p&gt;But obviously this wouldn&#39;t work for a most blog platforms which rely on databases and server-side scripting to store and serve pages. This is where Jekyll comes in. You setup your includes, layouts, variables, pages, and blog posts, and Jekyll will generate a static site from them. The added bonus is that you can write your posts and pages in &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;markdown&lt;/a&gt; and Jekyll renders them as html.&lt;/p&gt;
+&lt;p&gt;What&#39;s also fun, is that Github pages will build your Jekyll site for you each time you push a change. So that&#39;s what I&#39;m doing. My site is Jekyll generated and hosted on Github, and I love it. No database, great uptime, really fast, and free.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://piet.me/images/30-rock-yes.gif&quot; alt=&quot;thumbs up&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;But it&#39;s not for everything&lt;/h2&gt;
+&lt;p&gt;The catch with Github pages is that A) for it to be free you have to use a public repo, and B) it&#39;s intended purpose is for &amp;quot;you and your projects&amp;quot;. As far as I can tell there aren&#39;t any actual restrictions on content, but I wouldn&#39;t feel comfortable using Github pages for Cafe van Zoen, which is more of a personal blog.&lt;/p&gt;
+&lt;p&gt;For Cafe van Zoen I ended up using &lt;a href=&quot;http://aws.amazon.com/s3/&quot;&gt;Amazon S3&lt;/a&gt;. It took longer to setup than Github pages, but I figured out a pretty good workflow for setting up sites on S3. I&#39;ll write more about that in another post soon.&lt;/p&gt;
+&lt;p&gt;In the meantime, here are some links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/user-organization-and-project-pages&quot;&gt;Setting up your Github Pages repo&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/using-jekyll-with-pages&quot;&gt;Using Jekyll with Github Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://5by5.tv/webahead/54&quot;&gt;The Web Ahead: Jekyll and CMS-less websites with Young Hahn and Dave Cole&lt;/a&gt;. A great interview with a couple folks from &lt;a href=&quot;https://developmentseed.org/&quot;&gt;Development Seed&lt;/a&gt; about Jekyll.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Getting Involved: Giving something back to the web dev neighborhood</title>
+    <link href="https://piet.me/blog/giving-something-back/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2013-07-12T00:00:00Z</published><updated>2013-07-12T00:00:00Z</updated><id>https://piet.me/blog/giving-something-back/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>A year ago my wife and I bought our first house. Like any other unprepared first-time homeowners we asked neighbors for advice, tools and a helping hand with projects. A year later we&#39;re a little more confident, own a few more tools and now we get be the neighbor who can lend a hand. I think I&#39;ve reached a similar point with web development.</summary><content type="html">&lt;p&gt;A year ago my wife and I bought our first house. Like any other unprepared first-time homeowners we asked neighbors for advice, tools and a helping hand with projects. A year later we&#39;re a little more confident, own a few more tools and now &lt;em&gt;we&lt;/em&gt; get be the neighbor who can lend a hand. I think I&#39;ve reached a similar point with web development.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;p&gt;When I started out I was a bit green and I looked to the community for advice, tips, tools and help with projects. I&#39;m never going to stop going to people for advice/tools when I need them. But now I&#39;ve gained some knowledge and I&#39;ve got some useful tricks and ideas, I can offer something back to the web dev community.&lt;/p&gt;
+&lt;h2&gt;Where to start?&lt;/h2&gt;
+&lt;p&gt;Someone – I can&#39;t remember who, sorry :( – gave me a great piece of advice on getting involved. &lt;a href=&quot;http://github.com/&quot;&gt;&lt;strong&gt;Github&lt;/strong&gt;&lt;/a&gt;. The social coding community is a great place to dive in and get involved with a project. You can check the issues page for a project and see if there&#39;s a bug you can tackle. Get to know the project and suggest enhancements, or check the issue page again for someone else&#39;s suggestion you think you can get involved in.&lt;/p&gt;
+&lt;h2&gt;Choosing a challenge&lt;/h2&gt;
+&lt;p&gt;For me, a great way to pick a project is to look at what I&#39;m already using. If I&#39;m already using it, I&#39;m already invested and care about it. Something I&#39;m already using is &lt;a href=&quot;http://getfuelcms.com/&quot;&gt;Fuel CMS&lt;/a&gt;. Fuel is an open source CMS built by and used at &lt;a href=&quot;http://thedaylightstudio.com/&quot;&gt;Daylight&lt;/a&gt;. I may be bias, but it&#39;s rather fantastic. I use Fuel everyday and I care about it being better. For me this is a great starting point. I have got to know fuel well and I can begin to think about how I can be involved with improving it.&lt;/p&gt;
+&lt;p&gt;There&#39;s also the option of starting something new. I&#39;m working on something with a friend right now that I&#39;m pretty excited about, but I&#39;ll save that for another post.&lt;/p&gt;
+&lt;h2&gt;Getting my feet wet&lt;/h2&gt;
+&lt;p&gt;There are so many positives to getting involved with the wider web dev community, same as there is with getting involved with your neighborhood: You get to know some awesome people; you can learn from them; and it&#39;s a great way to challenge and grow your abilities.&lt;/p&gt;
+&lt;p&gt;So, I&#39;m diving in. Well, maybe less &amp;quot;diving in&amp;quot;, more &amp;quot;paddling around&amp;quot;. But it&#39;s a start.&lt;/p&gt;
+&lt;p&gt;Wish me luck.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Front-end Legos: Keeping your CSS maintainable!</title>
+    <link href="https://piet.me/blog/font-end-legos/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2013-06-13T00:00:00Z</published><updated>2013-06-13T00:00:00Z</updated><id>https://piet.me/blog/font-end-legos/</id>
+    <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
+      <summary>It doesn&#39;t take long for a project to get unwieldy if you don&#39;t have a good system for creating your styles. I recently attended Webvisions where Shay Howe ran a workshop titled &amp;quot;Front-end Legos&amp;quot; that gave some pretty good advice on keeping CSS clean and maintainable. Here&#39;s the run down of the best tips I took away from the workshop:</summary><content type="html">&lt;p&gt;It doesn&#39;t take long for a project to get unwieldy if you don&#39;t have a good system for creating your styles. I recently attended &lt;a href=&quot;http://webvisionsevent.com/&quot;&gt;Webvisions&lt;/a&gt; where &lt;a href=&quot;https://shayhowe.com/&quot;&gt;Shay Howe&lt;/a&gt; ran a workshop titled &amp;quot;Front-end Legos&amp;quot; that gave some pretty good advice on keeping CSS clean and maintainable. Here&#39;s the run down of the best tips I took away from the workshop:&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;h2&gt;Organize&lt;/h2&gt;
+&lt;p&gt;It&#39;s wise to start with a good foundation by organizing your CSS with sections, headers and comments.&lt;/p&gt;
+&lt;p&gt;Sections and headers will make navigating your CSS much easier for you and especially for other developers in your team. Comments help someone new to your CSS figure out what something is used for. It&#39;s particularly useful to comment on styles that seem unusual or styles that are a hack or browser fix.&lt;/p&gt;
+&lt;p&gt;Here&#39;s a good starting point for organizing your CSS:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Core&lt;/strong&gt; - Your typography, layout and normalize/resets&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Components&lt;/strong&gt; - Buttons, forms, sliders, callouts etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modules&lt;/strong&gt; - Header, footer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check out this &lt;a href=&quot;https://gist.github.com/pietvanzoen/d2c1ca48248d5a3a38b0&quot;&gt;CSS organization example&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Stop thinking about pages and start thinking about components.&lt;/h2&gt;
+&lt;p&gt;A big piece of keeping your CSS tidy involves changing the way you think about a website. Rather than viewing a website as a collection of pages (or even page templates), begin to look at a page as a collection of components. Even components that seem to only occur on one page should be built to be reusable on other pages, there may be a time when you want to export that component to another page.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cl.ly/PlxB&quot;&gt;Checkout this annotated example&lt;/a&gt; where I&#39;ve highlighted some of the main components on this page. The purple and orange differentiate presentational and layout components which I&#39;ll talk about later. Together all of these components build the whole page. But every component can be used on any page to build a new unique page.&lt;/p&gt;
+&lt;p&gt;This leads to a more &#39;modular&#39; way of thinking about your CSS. Break your pages into little chunks and identify chunks on other pages that match, even if they vary slightly. Then build your CSS in components. If a component is slightly different somewhere else, give it a modifier class and adjust what needs to be adjusted rather than duplicating CSS.&lt;/p&gt;
+&lt;h2&gt;Separate layout from presentation&lt;/h2&gt;
+&lt;p&gt;Try to keep layout styling such as widths and floats separate from presentational styling. The aim here is to create separate CSS classes that deal with layout that can be shared by multiple components on your site. This helps to reduce code repetition within your components.&lt;/p&gt;
+&lt;p&gt;Eg. Rather than:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.news&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;480px&lt;/span&gt;;
+  &lt;span class=&quot;hljs-attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;10px&lt;/span&gt;;
+  &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#333&lt;/span&gt;;
+  &lt;span class=&quot;hljs-attribute&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#eee&lt;/span&gt;;
+}
+&amp;lt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt; class=&amp;quot;news&amp;quot;&amp;gt;&amp;lt;/&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Try:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.col_6&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;10px&lt;/span&gt;;
+  &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;480px&lt;/span&gt;
+}
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.feat_box&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#333&lt;/span&gt;;
+  &lt;span class=&quot;hljs-attribute&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#eee&lt;/span&gt;;
+}
+&amp;lt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt; class=&amp;quot;col_6 feat_box&amp;quot;&amp;gt;&amp;lt;/&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the first example &lt;code&gt;.news&lt;/code&gt; has a specific use and probably a specific placement in a layout. In the second example we&#39;ve created a layout class that can be used for multiple components and a &lt;code&gt;.feat_box&lt;/code&gt; which can be used on more than just a news article.&lt;/p&gt;
+&lt;p&gt;Use a CSS grid system (such as &lt;a href=&quot;http://foundation.zurb.com/grid.php&quot;&gt;foundation&#39;s grid system&lt;/a&gt;) or create your own grid system, then keep your components reusable throughout your layout by focusing on presentation/theme only.&lt;/p&gt;
+&lt;h2&gt;Keep specificity low&lt;/h2&gt;
+&lt;p&gt;High specificity makes it much harder to modify elements without writing long strings of selectors, which in turn makes your CSS bloated, more complicated and harder to maintain.&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-selector-id&quot;&gt;#primary&lt;/span&gt; &lt;span class=&quot;hljs-selector-id&quot;&gt;#main&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.media&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;span&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#ccc&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here we have two IDs, a few element selectors and a class. To modify this style we&#39;ll need all of these selectors plus one or use &lt;code&gt;!important&lt;/code&gt; to trump everything. Typing out all these selectors again just to overwrite the first style easily leads to code bloat and is frustrating to maintain. Use of &lt;code&gt;!important&lt;/code&gt; should never be used reactively, but rather proactively such as for a class which you know will always need a particular style. E.g. &lt;code&gt;.error { color: red !important; }&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Avoid IDs. IDs are 255 times more specific than a class and a class can do everything that an ID can do. Finally, avoid using element selectors in your CSS. Doing this frees your CSS from a specific HTML elements and maintains reusability. Here&#39;s a better approach to the previous example:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.media-date&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#ccc&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is much nicer. It&#39;s descriptive, clean and reusable.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;All of these techniques are going to help you end up with cleaner code, fewer lines of CSS to manage, and some wonderfully modular code that is easier to maintain. &amp;quot;The Pipe Dream&amp;quot;, as Shay Howe put it, is to build everything in HTML with your arsenal of classes at hand. The dream is that you&#39;ll never need to touch your CSS because you&#39;ll have created all the classes you need to build anything. It&#39;s quite a grand Pipe Dream but definitely worth striving for. Focusing on the organization, reusability and modularization of your CSS is the key.&lt;/p&gt;
+&lt;p&gt;Check out these great resources for more info on this theme.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://learn.shayhowe.com/&quot;&gt;Shay Howe&#39;s Learning site&lt;/a&gt; - A great resource for learning more about HTML &amp;amp; CSS.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://oocss.org/&quot;&gt;OOCSS (Object-Oriented CSS)&lt;/a&gt; and &lt;a href=&quot;http://smacss.com/&quot;&gt;SMACSS (Scalable and Modular Architecture for CSS)&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://csswizardry.com/2012/11/code-smells-in-css/&quot;&gt;Code smells in CSS&lt;/a&gt; - Great article from Harry Roberts on this subject.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+</feed>
