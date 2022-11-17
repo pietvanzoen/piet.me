@@ -11,7 +11,7 @@
     "start": "npm-run-all sass --parallel watch:*",
     "clean": "rm -rf _site",
     "sass": "sass --style=compressed --no-source-map _includes/stylesheets/main.scss _includes/stylesheets/main.css",
-    "prebuild": "npm run clean && npm run sync-images && ./_scripts/set-mtime && npm run sass",
+    "prebuild": "npm run clean && npm run sync-images && npm run sass",
     "prestart": "npm run clean && npm run sync-images",
     "sync-images": "rsync -r updates/media images",
     "optimize-images": "node ./_scripts/optimize.js",
