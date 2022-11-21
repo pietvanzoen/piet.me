@@ -70,13 +70,15 @@ module.exports = function (cfg) {
     );
   });
 
-  cfg.addNunjucksAsyncShortcode('HeroImage', async (url, alt = '') => {
+  cfg.addNunjucksAsyncShortcode('HeroImage', async (unsplashImageId, alt = '', heroStyle) => {
     let style = '';
+    const imageDimentions = [1400, heroStyle === 'ribbon' ? 390 : 900];
+    const url = `https://source.unsplash.com/${unsplashImageId}/${imageDimentions.join('x')}?fm=jpg`;
     const imageColor = await getUnsplashImageColor(url, 'muted');
     if (imageColor) {
       style = ` style="background-color: ${imageColor}"`;
     }
-    return `<figure class="hero-image"${style}>
+    return `<figure class="hero-image ${heroStyle === 'ribbon' ? 'hero-ribbon' : ''}"${style}>
       <img src="${url}" alt="${alt.trim()}" />
     </figure>`;
   });

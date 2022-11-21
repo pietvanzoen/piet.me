@@ -10,7 +10,7 @@ layout: layout.njk
     <time datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
   </div>
 
-  {%- HeroImage "https://source.unsplash.com/" + unsplashImageId + "/1400x900?fm=jpg", imageAlt or title -%}
+  {%- HeroImage unsplashImageId, imageAlt or title -%}
   {% endif %}
   {{ content | safe }}
 </article>

@@ -6,7 +6,7 @@ layout: layout.njk
 <article>
   <h1 class="headline">{{ title }}</h1>
   {% if unsplashImageId %}
-  {%- HeroImage "https://source.unsplash.com/" + unsplashImageId + "/1400x900?fm=jpg", imageAlt or title -%}
+  {%- HeroImage unsplashImageId, imageAlt or title, heroStyle -%}
   {% endif %}
   {% if wip %}
   <div class="card bg-offset">

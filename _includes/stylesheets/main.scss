@@ -96,6 +96,7 @@
   background-color: var(--subtle-color);
   display: block;
   margin: 1em -1em;
+  overflow: hidden;
   img {
     position: absolute;
     left: 0;
@@ -105,6 +106,9 @@
   &, img {
   border-radius: 0.2em;
   }
+}
+.hero-ribbon {
+  max-height: 200px;
 }
 
 .pagination {
