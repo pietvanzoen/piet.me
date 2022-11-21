@@ -14,17 +14,18 @@
   </author>
   
   <entry>
-    <title>My IndieWeb stack</title>
-    <link href="https://piet.me/my-stack/"/>
+    <title>My IndieWeb tech stack</title>
+    <link href="https://piet.me/stack/"/>
     <author>
       <name>Piet van Zoen</name>
       <uri>https://piet.me</uri>
       <email>hi@piet.me</email>
     </author>
-    <published>2022-11-21T00:00:00Z</published><updated>2022-11-21T00:00:00Z</updated><id>https://piet.me/my-stack/</id>
+    <published>2022-11-21T00:00:00Z</published><updated>2022-11-21T00:00:00Z</updated><id>https://piet.me/stack/</id>
     <rights type="html">&amp;copy; 2022  Piet van Zoen</rights>
-      <summary>Server</summary><content type="html">&lt;h2&gt;Server&lt;/h2&gt;
-&lt;p&gt;I run a single server for most of my projects. Here&#39;s the rundown:&lt;/p&gt;
+      <summary>I run a single server for most of my projects. Here&#39;s the rundown of the stack and apps.</summary><content type="html">&lt;p&gt;I run a single server for most of my projects. Here&#39;s the rundown of the stack and apps.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;h2&gt;Server&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Linode VPS based in Frankfurt, DE (shameless &lt;a href=&quot;https://www.linode.com/lp/refer/?r=95348fe3c161d21c9b2508cd6bedda68b9580d9a&quot;&gt;referral link&lt;/a&gt; for free credit).&lt;/li&gt;
 &lt;li&gt;Debian 9.&lt;/li&gt;
