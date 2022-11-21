@@ -1,6 +1,7 @@
 ---
-title: "My IndieWeb tech stack"
-unsplashImageId: louTBOGho8c
+title: My IndieWeb tech stack
+unsplashImageId: ecUVGNZA1TM
+heroStyle: ribbon
 date: 2022-11-21
 slug: stack
 
@@ -16,7 +17,7 @@ I run a single server for most of my projects. Here's the rundown of the stack a
 * Debian 9.
 * Docker compose.
 * [Caddy](https://caddyserver.com) via [caddy-docker-proxy](https://github.com/lucaslorentz/caddy-docker-proxy) for web server and auto-cert renewals.
-* Healthcheck.io for cronjob monitoring.
+* Healthchecks.io for cronjob monitoring.
 * [rclone](https://rclone.org) backups to Dropbox.
 
 ## Apps
