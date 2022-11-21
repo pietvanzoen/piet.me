@@ -31,7 +31,7 @@
 &lt;li&gt;Debian 9.&lt;/li&gt;
 &lt;li&gt;Docker compose.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://caddyserver.com/&quot;&gt;Caddy&lt;/a&gt; via &lt;a href=&quot;https://github.com/lucaslorentz/caddy-docker-proxy&quot;&gt;caddy-docker-proxy&lt;/a&gt; for web server and auto-cert renewals.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://healthcheck.io/&quot;&gt;Healthcheck.io&lt;/a&gt; for cronjob monitoring.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://healthchecks.io/&quot;&gt;Healthchecks.io&lt;/a&gt; for cronjob monitoring.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://rclone.org/&quot;&gt;rclone&lt;/a&gt; backups to Dropbox.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Apps&lt;/h2&gt;
