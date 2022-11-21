@@ -108,7 +108,13 @@
   }
 }
 .hero-ribbon {
-  max-height: 200px;
+  max-height: 230px;
+  height: 32vw;
+}
+@media (max-width: 716px) {
+  .hero-image, .hero-image img {
+    border-radius: 0;
+  }
 }
 
 .pagination {

@@ -1,6 +1,6 @@
 ---
 title: My IndieWeb tech stack
-unsplashImageId: ecUVGNZA1TM
+unsplashImageId: yxZSAjyToP4
 heroStyle: ribbon
 date: 2022-11-21
 slug: stack
