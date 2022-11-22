@@ -13,7 +13,7 @@ I run a single server for most of my projects. Here's the rundown of the stack a
 
 <!-- excerpt -->
 
-## "BMO"
+## Server - "BMO"
 
 * Linode VPS based in Frankfurt, DE (shameless [referral link](https://www.linode.com/lp/refer/?r=95348fe3c161d21c9b2508cd6bedda68b9580d9a) for free credit).
 * Debian 9.
