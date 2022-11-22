@@ -28,7 +28,7 @@
 &lt;h2&gt;Server - &amp;quot;BMO&amp;quot;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Linode VPS based in Frankfurt, DE (shameless &lt;a href=&quot;https://www.linode.com/lp/refer/?r=95348fe3c161d21c9b2508cd6bedda68b9580d9a&quot;&gt;referral link&lt;/a&gt; for free credit).&lt;/li&gt;
-&lt;li&gt;Debian 9.&lt;/li&gt;
+&lt;li&gt;Debian.&lt;/li&gt;
 &lt;li&gt;Docker compose.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://caddyserver.com/&quot;&gt;Caddy&lt;/a&gt; via &lt;a href=&quot;https://github.com/lucaslorentz/caddy-docker-proxy&quot;&gt;caddy-docker-proxy&lt;/a&gt; for web server and auto-cert renewals.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://healthchecks.io/&quot;&gt;Healthchecks.io&lt;/a&gt; for cronjob monitoring.&lt;/li&gt;
