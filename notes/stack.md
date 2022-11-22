@@ -16,7 +16,7 @@ I run a single server for most of my projects. Here's the rundown of the stack a
 ## Server - "BMO"
 
 * Linode VPS based in Frankfurt, DE (shameless [referral link](https://www.linode.com/lp/refer/?r=95348fe3c161d21c9b2508cd6bedda68b9580d9a) for free credit).
-* Debian 9.
+* Debian.
 * Docker compose.
 * [Caddy](https://caddyserver.com) via [caddy-docker-proxy](https://github.com/lucaslorentz/caddy-docker-proxy) for web server and auto-cert renewals.
 * Healthchecks.io for cronjob monitoring.
