@@ -4,6 +4,8 @@ unsplashImageId: yxZSAjyToP4
 heroStyle: ribbon
 date: 2022-11-21
 slug: stack
+featured: true
+tags: dev
 
 ---
 

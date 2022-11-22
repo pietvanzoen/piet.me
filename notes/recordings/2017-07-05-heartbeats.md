@@ -1,7 +1,6 @@
 ---
 title: Heartbeats
 layout: recording.njk
-featured: true
 tags:
   - recordings
   - family

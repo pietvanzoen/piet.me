@@ -1,7 +1,6 @@
 ---
 title: Summer Storm
 layout: recording.njk
-featured: true
 tags:
   - recordings
 audio: /notes/recordings/2019-summer-storm.m4a

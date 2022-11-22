@@ -1,7 +1,6 @@
 ---
 title: Paris Market
 layout: recording.njk
-featured: true
 tags:
   - travel
   - recordings
