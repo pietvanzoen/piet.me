@@ -1,20 +1,29 @@
-/* quicksand-regular - latin */
+/* atkinson-hyperlegible-regular - latin */
 @font-face {
-  font-family: 'Quicksand';
+  font-family: 'Atkinson Hyperlegible';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('/fonts/quicksand-400-600-latin.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/quicksand-400-latin.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/fonts/atkinson-hyperlegible-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/atkinson-hyperlegible-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* quicksand-700 - latin */
+/* atkinson-hyperlegible-italic - latin */
 @font-face {
-  font-family: 'Quicksand';
-  font-style: bold;
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('/fonts/atkinson-hyperlegible-v10-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/atkinson-hyperlegible-v10-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* atkinson-hyperlegible-700 - latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
   font-weight: 700;
   src: local(''),
-       url('/fonts/quicksand-400-600-latin.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/quicksand-600-latin.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/fonts/atkinson-hyperlegible-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/atkinson-hyperlegible-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
@@ -96,7 +105,7 @@ select,
 textarea,
 html,
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.5;
