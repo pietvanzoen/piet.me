@@ -12,7 +12,7 @@ Anglo/Dutch software developer at [Cutr](https://www.cutr.ai). Previously at [Yo
 
 <!-- excerpt -->
 
-I live in the Netherlands with my wife [Keven](https://studiozoen.com/), our daughter Teddie, and our cats Eskimo and [Frida](https://emergencyfrida.piet.me).
+I live in the Netherlands with my wife [Keven](https://studiozoen.com/), our two kids, and our cat [Frida](https://emergencyfrida.piet.me).
 
 ## The long version
 
