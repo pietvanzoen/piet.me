@@ -24,7 +24,7 @@ In 2016 we migrated to the Netherlands, where I helped build and lead product fo
 
 Some time while at Cozy I developed a love for the command-line. After some false starts, I adopted Vim as my primary text-editor and I love it to this day. I keep a set of [dotfiles](https://github.com/pietvanzoen/dotfiles) that I’m constantly (perhaps too constantly) improving and I’ve written a few command-line tools that no-one uses. (See [Projects](/projects).) I use iTerm2, zsh, tmux, and my colourscheme of choice is [solarized](https://ethanschoonover.com/solarized/).
 
-When I’m not working I’m being a husband to the amazingly talented [Keven](https://studiozoen.com/) and papa to Teddie. I [collect vinyl](https://www.discogs.com/user/pvz/collection), [read a lot of sci-fi](https://goodreads.com/pietvanzoen), [knit](/updates/2021-11-15-just-finished-my-autumn-knitting/), and [3d print](/notes/my-box-of-mistakes/).
+When I’m not working I’m being a husband to the amazingly talented [Keven](https://studiozoen.com/) and papa to Teddie and Hazel. I [collect vinyl](https://www.discogs.com/user/pvz/collection), [read a lot of sci-fi](https://goodreads.com/pietvanzoen), [knit](/updates/2021-11-15-just-finished-my-autumn-knitting/), and [3d print](/notes/my-box-of-mistakes/).
 
 I’m also passionate about the open web, team building, and a good cup of coffee.
 
