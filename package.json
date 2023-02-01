@@ -49,7 +49,7 @@
     "query-string": "^6.14.1",
     "sanitize-html": "^2.3.3",
     "sass": "^1.45.1",
-    "sharp": "^0.26.3"
+    "sharp": "^0.30.5"
   },
   "devDependencies": {
     "eslint": "^7.25.0",
