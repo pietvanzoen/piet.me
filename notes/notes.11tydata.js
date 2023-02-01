@@ -33,7 +33,6 @@ module.exports = {
         }
         return backlinks;
       }, []);
-      console.log(currentFileURL, links);
       return links;
     },
   },

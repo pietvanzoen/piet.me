@@ -1,5 +1,5 @@
-<h3>Backlinks</h3>
 {% if backlinks.length > 0 %}
+<h3>Backlinks</h3>
 <ul class="backlinks-container">
     {% for link in backlinks %}
         <li class="backlink">
@@ -7,6 +7,4 @@
         </li>
     {% endfor %}
 </ul>
-{% else %}
-<p class="backlinks-default">No backlinks found.</p>
 {% endif %}

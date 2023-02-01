@@ -2,6 +2,7 @@ const fs = require('fs');
 const fetch = require('node-fetch');
 const unionBy = require('lodash/unionBy');
 const sitedata = require('./site');
+const debug = require('debug')('webmentions');
 
 // Load .env variables with dotenv
 require('dotenv').config();
@@ -16,7 +17,7 @@ async function fetchWebmentions(since) {
 
   if (!TOKEN) {
     // If we dont have a domain access token, abort
-    console.warn('unable to fetch webmentions: no access token specified in environment.');
+    debug('unable to fetch webmentions: no access token specified in environment.');
     return false;
   }
 
@@ -30,7 +31,7 @@ async function fetchWebmentions(since) {
   const response = await fetch(url);
   if (response.ok) {
     const feed = await response.json();
-    console.log(`${feed.children.length} webmentions fetched from ${API_ORIGIN}`);
+    debug(`${feed.children.length} webmentions fetched from ${API_ORIGIN}`);
     return feed;
   }
 
@@ -54,7 +55,7 @@ function writeToCache(data) {
   // write data to cache json file
   fs.writeFile(filePath, fileContent, (err) => {
     if (err) throw err;
-    console.log(`webmentions cached to ${filePath}`);
+    debug(`webmentions cached to ${filePath}`);
   });
 }
 
@@ -91,6 +92,6 @@ module.exports = async function () {
     }
   }
 
-  console.log(`${cache.children.length} webmentions loaded from cache`);
+  debug(`${cache.children.length} webmentions loaded from cache`);
   return cache;
 };

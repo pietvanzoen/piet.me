@@ -1,4 +1,5 @@
 const axios = require('axios');
+const debug = require('debug')('unsplash');
 const Cache = require('./fs-cache');
 
 const cache = new Cache('./unsplash-color-cache.json');
@@ -7,7 +8,7 @@ module.exports = async function getUnsplashImageColor(url, type = 'muted_dark') 
   if (!url.includes('unsplash')) return null;
   const key = url + type;
   if (cache.has(key)) {
-    console.log(`Using cached color for ${key}`);
+    debug(`Using cached color for ${key}`);
     return cache.get(key);
   }
   try {
@@ -16,13 +17,13 @@ module.exports = async function getUnsplashImageColor(url, type = 'muted_dark') 
     colorsAPIUrl.search = new URLSearchParams({
       palette: 'json',
     });
-    console.log(`Fetching color ${type} for ${url}`);
+    debug(`Fetching color ${type} for ${url}`);
     const response = await axios(colorsAPIUrl.href);
     const color = response?.data?.dominant_colors[type].hex || '';
     cache.set(key, color);
     return color;
   } catch (e) {
-    console.error(`Error: could not fetch colors for ${url}. ${e}`);
+    debug(`Error: could not fetch colors for ${url}. ${e}`);
     cache.set(key, undefined);
     return null;
   }

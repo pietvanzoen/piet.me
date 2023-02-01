@@ -1,25 +1,13 @@
 {%- set absoluteUrl -%}{{ page.url | url | absoluteUrl(site.url) }}{%- endset -%}
 {%- set mentions = webmentions.children | webmentionsForUrl(absoluteUrl) -%}
 {% if mentions | length %}
-<div class="webmentions" id="webmentions">
+<div id="webmentions">
   <h3>Webmentions</h3>
-
-    <div class="webmentions__facepile">
-      {% for webmention in mentions | reverse | head(5) %}
-        <img src="{% if webmention.author.photo %}{{ webmention.author.photo }}{% else %}{{ '/img/webmention-avatar-default.svg' | url }}{% endif %}" title="{{ webmention.author.name }}" alt="" class="webmentions__face" />
-      {% endfor %}
-      {% if mentions.length > 5 %}
-        <span>+{{ mentions.length - 5 }}</span>
-      {% endif %}
-    </div>
-
-    <ol class="webmentions__list">
-      {% for webmention in mentions | reverse %}
-        <li class="webmentions__item">
-          {% include 'webmention.njk' %}
-        </li>
-      {% endfor %}
-    </ol>
-
+  <ul>
+    {%- for mention in mentions -%}
+    {% set ogData = mention.url | url | getOpenGraphData %}
+    <li><a href="{{ mention.url | url }}" target="_blank" rel="noopener noreferrer">{{ ogData.ogTitle | default(mention.url) }}</a></li>
+    {%- endfor -%}
+  </ul>
 </div>
 {% endif %}
