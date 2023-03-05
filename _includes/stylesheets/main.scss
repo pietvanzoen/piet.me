@@ -25,6 +25,7 @@
 .float-right {
   float: right;
   margin-left: 1em;
+  margin-bottom: 1em
 }
 .img-rounded {
   border-radius: 0.2em;
@@ -114,6 +115,15 @@
 @media (max-width: 716px) {
   .hero-image, .hero-image img {
     border-radius: 0;
+  }
+
+  .img-right,
+  .float-right,
+  .float-left,
+  .img-left {
+    float: none;
+    margin: 1em auto;
+    display: block;
   }
 }
 

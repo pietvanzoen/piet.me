@@ -188,9 +188,9 @@ img {
 
 a {
   color: var(--link-color);
-  text-underline-position: under;
   text-decoration: underline;
   text-decoration-color: var(--link-underline-color);
+  text-decoration-thickness: 3px;
 }
 
 a:hover {
@@ -210,6 +210,7 @@ hr {
   height: 1px;
   margin: 3em auto;
   width: 20%;
+  clear: both;
 
   &,
   &:before,
@@ -280,4 +281,14 @@ figure {
 
 .bg-offset {
   background-color: var(--offset-color);
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
 }
