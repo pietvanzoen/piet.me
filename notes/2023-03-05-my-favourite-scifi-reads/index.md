@@ -52,9 +52,9 @@ Also now I just want to be a tea monk.
 
 ----
 
-<a href="https://app.thestorygraph.com/books/ac3ea915-993d-4f30-8632-0f91e4ad0704"><img alt="Book cover of Project Hail Mary by Andy Wier" src="/notes/2023-03-05-my-favourite-scifi-reads/projecthailmary.jpg" class="float-right img-rounded" style="max-width: 200px;"/></a>
+<a href="https://app.thestorygraph.com/books/ac3ea915-993d-4f30-8632-0f91e4ad0704"><img alt="Book cover of Project Hail Mary by Andy Weir" src="/notes/2023-03-05-my-favourite-scifi-reads/projecthailmary.jpg" class="float-right img-rounded" style="max-width: 200px;"/></a>
 
-## [Project Hail Mary - Andy Wier](https://app.thestorygraph.com/books/ac3ea915-993d-4f30-8632-0f91e4ad0704)
+## [Project Hail Mary - Andy Weir](https://app.thestorygraph.com/books/ac3ea915-993d-4f30-8632-0f91e4ad0704)
 
 I enjoyed The Martian, I was less excited about Artemis. But Project Hail Mary is such a fun and exciting read. Lots of fun science and a delightful side-kick.
 
@@ -64,7 +64,7 @@ I enjoyed The Martian, I was less excited about Artemis. But Project Hail Mary i
 
 <a href="https://app.thestorygraph.com/books/c34ac03b-3b0e-4a24-b694-e46674918a3a"><img alt="Book cover of Stories of Your Life and Others by Ted Chiang" src="/notes/2023-03-05-my-favourite-scifi-reads/storiesofyourlife.jpg" class="float-right img-rounded" style="max-width: 200px;"/></a>
 
-# [Stories of your life - Ted Chiang](https://app.thestorygraph.com/books/c34ac03b-3b0e-4a24-b694-e46674918a3a)
+# [Stories of Your Life - Ted Chiang](https://app.thestorygraph.com/books/c34ac03b-3b0e-4a24-b694-e46674918a3a)
 
 The movie Arrival is based on the titular short story in this book. I enjoyed Arrival but it took a far more actiony blockbuster approach to the story. I remember coming away from reading this story feeling like my brain had been rewired. It was amazing.
 
