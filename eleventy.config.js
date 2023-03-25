@@ -78,7 +78,7 @@ module.exports = function (cfg) {
     if (imageColor) {
       style = ` style="background-color: ${imageColor}"`;
     }
-    return `<figure class="hero-image ${heroStyle === 'ribbon' ? 'hero-ribbon' : ''}"${style}>
+    return `<figure class="hero-image u-photo ${heroStyle === 'ribbon' ? 'hero-ribbon' : ''}"${style}>
       <img src="${url}" alt="${alt.trim()}" />
     </figure>`;
   });

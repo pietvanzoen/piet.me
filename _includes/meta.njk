@@ -1,5 +1,8 @@
 <h3>Meta</h3>
 <ul>
+  <li hidden>
+    Author: <a rel="author" href="{{ site.url }}">Piet van Zoen</a>
+  </li>
   <li>
     Published: <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
   </li>
@@ -16,7 +19,7 @@
   </li>
   {% if tags %}
   <li>
-    Tags: {% for tag in tags %} {%- if loop.index0 -%}, {% endif %}<a href="/tags/{{ tag | slug}}">{{ tag }}</a>{% endfor -%}
+    Tags: {% for tag in tags %} {%- if loop.index0 -%}, {% endif %}<a class="p-category" href="/tags/{{ tag | slug}}">{{ tag }}</a>{% endfor -%}
   </li>
   {% endif %}
 </ul>
