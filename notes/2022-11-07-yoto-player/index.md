@@ -7,6 +7,9 @@ slug: yoto
 featured: true
 tags:
   - family
+syndication:
+  - https://twitter.com/pietvanzoen/status/1590070854498586624
+  - https://mas.to/@pietvanzoen/109309959409371385
 ---
 
 For a long time we were looking for some kind of audio player for our 4 y/o that wasn’t a screen device. Not that we’re totally anti-screen but we wanted something that could be dedicated to playing audio without the distraction of a screen.

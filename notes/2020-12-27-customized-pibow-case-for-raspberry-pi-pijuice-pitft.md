@@ -5,6 +5,8 @@ date: 2020-12-27
 permalink: blog/customized-pibow-case-for-raspberry-pi-pijuice-pitft/index.html
 featured: true
 tags: tinkering
+syndication:
+  - https://twitter.com/pietvanzoen/status/1343960378280173571
 
 ---
 
