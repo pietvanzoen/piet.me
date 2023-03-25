@@ -14,6 +14,7 @@ const webmentionsForUrl = require('./_lib/webmentions-for-url');
 const htmlmin = require('html-minifier');
 const posthtml = require('posthtml');
 const uglify = require('posthtml-minify-classnames');
+const normalizeUrl = require('normalize-url');
 
 const now = new Date();
 
@@ -89,6 +90,10 @@ module.exports = function (cfg) {
 
   // Filters
   cfg.addFilter('markdown', (contents) => md.render(contents));
+  cfg.addFilter('prettyUrl', (url) => {
+    if (!/^http/.test(url)) return url;
+    return normalizeUrl(url, { stripHash: true, stripProtocol: true, stripWWW: true });
+  });
   cfg.addFilter('date', (date, format) => dayjs(date).format(format));
   cfg.addFilter('dateRelative', (date) => dayjs(date).fromNow());
   cfg.addFilter('debug', (obj) => `<pre style="overflow-x: auto;"><code>${JSON.stringify(obj, null, 2)}</code></pre>`);

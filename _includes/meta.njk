@@ -12,7 +12,7 @@
   </li>
   {% endif %}
   <li>
-    Permalink: <a class="u-url" href="{{ pageAbsoluteUrl }}">{{ pageAbsoluteUrl }}</a>
+    Permalink: <a class="u-url" href="{{ pageAbsoluteUrl }}">{{ pageAbsoluteUrl | prettyUrl }}</a>
   </li>
   <li>
     Source: <a href="https://github.com/pietvanzoen/piet.me/tree/main/{{ page.inputPath }}">{{ page.inputPath }}</a>
@@ -22,26 +22,23 @@
     Tags: {% for tag in tags %} {%- if loop.index0 -%}, {% endif %}<a class="p-category" href="/tags/{{ tag | slug}}">{{ tag }}</a>{% endfor -%}
   </li>
   {% endif %}
-</ul>
-
-{% if syndication %}
-<h3>Syndication</h3>
-  <ul class="unstyled">
-    {% for link in syndication %}
-    {% set data = link | url | getOpenGraphData %}
-    {% if data %}
-    <li class="buffer-sm">
-    <a rel="syndication" class="u-syndication card" href="{{ link | url }}">
-      {% if data.ogImage and data.ogImage.url %}
-      <img class="img-right img-rounded" style="max-width: 200px;" src="{{ data.ogImage.url | url }}" alt="{{ data.ogTitle }}" />
+    {% if syndication %}
+  <li>
+    Syndication:
+    <ul>
+      {% for link in syndication %}
+      {% set data = link | url | getOpenGraphData %}
+      <li>
+      {% if data.ogTitle %}
+      <a rel="syndication" class="u-syndication" href="{{ link | url }}">{{ data.ogTitle }}<small class="text-muted"> - {{ link | getHost }}</small></a>
+      {% else %}
+      <a rel="syndication" class="u-syndication" href="{{ link | url }}">{{ link | prettyUrl }}</a>
       {% endif %}
-      <h3>{{ data.ogTitle if data.ogTitle else link }}</h3>
-      {% if data.ogDescription %}<p>{{ data.ogDescription }}</p>{% endif %}
-      <small class="text-muted">{{ link | getHost }}</small>
-    </a>
-    </li>
-    {% endif %}
-    {% endfor -%}
-  </ul>
-</li>
-{% endif %}
+      </li>
+
+      {% endfor -%}
+    </ul>
+  </li>
+  {% endif %}
+
+</ul>
