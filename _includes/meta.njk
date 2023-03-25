@@ -22,4 +22,15 @@
     Tags: {% for tag in tags %} {%- if loop.index0 -%}, {% endif %}<a class="p-category" href="/tags/{{ tag | slug}}">{{ tag }}</a>{% endfor -%}
   </li>
   {% endif %}
+  {% if syndication %}
+  <li>
+    Syndication:
+    <ul>
+      {% for link in syndication %}
+      {% set data = link | url | getOpenGraphData %}
+      <li><a rel="syndication" class="u-syndication" href="{{ link | url }}">{{ data.ogTitle }}</a></li>
+      {% endfor -%}
+    </ul>
+  </li>
+  {% endif %}
 </ul>

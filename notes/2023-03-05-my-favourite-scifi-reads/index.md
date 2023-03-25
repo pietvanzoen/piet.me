@@ -8,6 +8,8 @@ slug: my-favourite-scifi-reads
 featured: true
 tags:
   - reading
+syndication:
+  - https://indieweb.social/@pietvanzoen/109988345277451772
 ---
 
 A friend and I were sharing book recommendations and I found myself getting pretty excited about this list of books, so I thought I’d share them here. To be fair, all I read right now is sci-fi. So I could just say “My favourite reads”. Ah well. 🤷

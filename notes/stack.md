@@ -6,6 +6,8 @@ date: 2022-11-21
 slug: stack
 featured: true
 tags: dev
+syndication:
+ - https://indieweb.social/@pietvanzoen/109388597820862422
 
 ---
 
