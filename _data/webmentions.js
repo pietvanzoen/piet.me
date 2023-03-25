@@ -78,7 +78,7 @@ module.exports = async function () {
   const { lastFetched } = cache;
 
   // Only fetch new mentions in production
-  if (process.env.ELEVENTY_ENV === 'production' || !lastFetched) {
+  if (!lastFetched) {
     const feed = await fetchWebmentions(lastFetched);
 
     if (feed) {
