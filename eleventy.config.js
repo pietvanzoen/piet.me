@@ -132,6 +132,8 @@ module.exports = function (cfg) {
           'e-content',
           'dt-published',
           'dt-updated',
+          'u-syndication',
+          'p-category',
         ];
         html = (
           await posthtml()
