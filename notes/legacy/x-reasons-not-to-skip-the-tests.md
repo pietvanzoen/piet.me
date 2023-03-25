@@ -9,6 +9,10 @@ tags:
   - testing
   - dev
 
+syndication:
+ - https://medium.com/@pietvanzoen/x-reasons-not-to-skip-the-tests-4ac8dfb2c6d2
+ - https://blog.testproject.io/2019/02/12/7-reasons-not-to-skip-tests/
+
 ---
 
 We've all been tempted to skip writing the tests. Whether it's time pressure, business pressure, the complexity of testing, or we just want to get on with something else. We might be tempted to say "YOLO!" and move on. So here's a list of reasons why you might want to think twice before doing that.
@@ -105,6 +109,3 @@ If you're new to testing check out these resources for learning more about TDD:
 
 - [TDD & The Lump Of Coding Fallacy](https://www.geepawhill.org/2018/04/14/tdd-the-lump-of-coding-fallacy/)
 - [Writing Testable JavaScript - Rebecca Murphey](https://alistapart.com/article/writing-testable-javascript)
-
-<br>
-_Also posted on [medium.com](https://medium.com/@pietvanzoen/x-reasons-not-to-skip-the-tests-4ac8dfb2c6d2)._
