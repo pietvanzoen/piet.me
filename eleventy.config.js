@@ -14,8 +14,6 @@ const webmentionsForUrl = require('./_lib/webmentions-for-url');
 const htmlmin = require('html-minifier');
 const posthtml = require('posthtml');
 const uglify = require('posthtml-minify-classnames');
-const debug = require('debug')('config');
-const { CARD } = require('microformats');
 
 const now = new Date();
 
@@ -123,8 +121,7 @@ module.exports = function (cfg) {
       let html = content;
 
       if (IS_PRODUCTION) {
-        const filteredClasses = [].concat(Object.values(CARD));
-        debug('Filtered classes', filteredClasses);
+        const filteredClasses = ['u-photo', 'p-note', 'h-card', 'p-name', 'u-url'];
         html = (
           await posthtml()
             .use(
