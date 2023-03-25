@@ -5,7 +5,7 @@
   </li>
   {% if updated %}
   <li>
-  Last updated: <time datetime="{{ updated }}">{{ updated | date('Do MMMM YYYY')}} </time>
+  Last updated: <time class="dt-updated" datetime="{{ updated }}">{{ updated | date('Do MMMM YYYY')}} </time>
   </li>
   {% endif %}
   <li>

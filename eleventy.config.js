@@ -131,6 +131,7 @@ module.exports = function (cfg) {
           'p-name',
           'e-content',
           'dt-published',
+          'dt-updated',
         ];
         html = (
           await posthtml()
