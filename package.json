@@ -15,7 +15,7 @@
     "prestart": "npm run clean && npm run sync-images",
     "sync-images": "rsync -r updates/media images",
     "optimize-images": "node ./_scripts/optimize.js",
-    "build": "ELEVENTY_PRODUCTION=true eleventy --config=eleventy.config.js",
+    "build": "DEBUG=webmentions ELEVENTY_PRODUCTION=true eleventy --config=eleventy.config.js",
     "postbuild": "npm run optimize-images",
     "lint": "eslint .",
     "fmt": "eslint . --fix"
