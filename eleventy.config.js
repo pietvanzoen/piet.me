@@ -125,9 +125,15 @@ module.exports = function (cfg) {
       if (IS_PRODUCTION) {
         const filteredClasses = [].concat(Object.values(CARD));
         debug('Filtered classes', filteredClasses);
-        html = (await posthtml().use(uglify({
-          filter: new RegExp(filteredClasses.join('|')),
-        })).process(content))?.html;
+        html = (
+          await posthtml()
+            .use(
+              uglify({
+                filter: new RegExp(filteredClasses.join('|')),
+              })
+            )
+            .process(content)
+        )?.html;
       }
 
       let minified = htmlmin.minify(html, {
