@@ -1,7 +1,7 @@
 ---
 title: My box of mistakes
-created: 2021-01-27
-date: 2021-01-28
+date: 2021-01-27
+updated: 2021-01-28
 tags:
   - 3d printing
   - tinkering
