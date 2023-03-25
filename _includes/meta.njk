@@ -4,11 +4,11 @@
     Author: <a rel="author" href="{{ site.url }}">Piet van Zoen</a>
   </li>
   <li>
-    Published: <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
+    Published: <time class="dt-published" datetime="{{ page.date | date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
   </li>
   {% if updated %}
   <li>
-  Last updated: <time class="dt-updated" datetime="{{ updated }}">{{ updated | date('Do MMMM YYYY')}} </time>
+  Last updated: <time class="dt-updated" datetime="{{ updated | date }}">{{ updated | date('Do MMMM YYYY')}} </time>
   </li>
   {% endif %}
   <li>
