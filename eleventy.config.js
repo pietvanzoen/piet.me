@@ -121,7 +121,17 @@ module.exports = function (cfg) {
       let html = content;
 
       if (IS_PRODUCTION) {
-        const filteredClasses = ['u-photo', 'p-note', 'h-card', 'p-name', 'u-url'];
+        const filteredClasses = [
+          'u-photo',
+          'p-note',
+          'h-card',
+          'p-name',
+          'u-url',
+          'h-entry',
+          'p-name',
+          'e-content',
+          'dt-published',
+        ];
         html = (
           await posthtml()
             .use(

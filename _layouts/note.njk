@@ -3,8 +3,8 @@ layout: layout.njk
 
 ---
 
-<article>
-  <h1 class="headline">{{ title }}</h1>
+<article class="h-entry">
+  <h1 class="headline p-name">{{ title }}</h1>
   {% if unsplashImageId %}
   {%- HeroImage unsplashImageId, imageAlt or title, heroStyle -%}
   {% endif %}
@@ -14,11 +14,11 @@ layout: layout.njk
     <p>This page is particularly fresh and actively being worked on. Please be kind.</p>
   </div>
   {% endif %}
-  {{ content | safe }}
-</article>
-<hr>
+  <div class="e-content">{{ content | safe }}</div>
+  <hr>
 
-{% include "meta.njk" %}
+  {% include "meta.njk" %}
+</article>
 
 {% include "backlinks.njk" %}
 

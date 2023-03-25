@@ -1,13 +1,16 @@
 <h3>Meta</h3>
 <ul>
   <li>
-    Last Updated: <time datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
+    Published: <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date('Do MMMM YYYY')}} </time>
   </li>
-  {% if created %}
+  {% if updated %}
   <li>
-  Created: <time datetime="{{ created }}">{{ created | date('Do MMMM YYYY')}} </time>
+  Last updated: <time datetime="{{ updated }}">{{ updated | date('Do MMMM YYYY')}} </time>
   </li>
   {% endif %}
+  <li>
+    Permalink: <a class="u-url" href="{{ pageAbsoluteUrl }}">{{ pageAbsoluteUrl }}</a>
+  </li>
   <li>
     Source: <a href="https://github.com/pietvanzoen/piet.me/tree/main/{{ page.inputPath }}">{{ page.inputPath }}</a>
   </li>
