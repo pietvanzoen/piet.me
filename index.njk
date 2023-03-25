@@ -9,10 +9,11 @@ meta:
 ---
 
 <main role="main">
-  <picture  class="img-circle home-image">
+  <picture  class="img-circle home-image h-card">
    <source type="image/webp" srcset="/images/avatar-4-2022-400.webp">
    <source type="image/jpeg" srcset="/images/avatar-4-2022-400.jpg">
-   <img src="/images/avatar-400.jpg" alt="Piet van Zoen">
+   <img src="/images/avatar-400.jpg" class="u-photo" alt="Piet van Zoen">
+   <a href="{{ site.url }}" class="p-name u-url" rel="me" hidden>Piet van Zoen</a>
   </picture>
   <h1 class="text-center">Hi, I&#39;m Piet.</h1>
   <p class="home-intro"><span>I build things for the web.<br>This is my website.</span></p>
