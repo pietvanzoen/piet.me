@@ -29,13 +29,14 @@
       {% for link in syndication %}
       {% set data = link | url | getOpenGraphData %}
       <li>
-      {% if data.ogTitle %}
-      <a rel="syndication" class="u-syndication" href="{{ link | url }}">{{ data.ogTitle }}<small class="text-muted"> - {{ link | getHost }}</small></a>
-      {% else %}
-      <a rel="syndication" class="u-syndication" href="{{ link | url }}">{{ link | prettyUrl }}</a>
-      {% endif %}
+      <a rel="syndication" class="u-syndication" href="{{ link | url }}">
+      {%- if data.ogTitle -%}
+      {{ data.ogTitle }}<small class="text-muted"> - {{ link | getHost }}</small>
+      {%- else -%}
+      {{ link | prettyUrl }}
+      {%- endif -%}
+      </a>
       </li>
-
       {% endfor -%}
     </ul>
   </li>

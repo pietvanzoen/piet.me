@@ -14,7 +14,6 @@ const webmentionsForUrl = require('./_lib/webmentions-for-url');
 const htmlmin = require('html-minifier');
 const posthtml = require('posthtml');
 const uglify = require('posthtml-minify-classnames');
-const normalizeUrl = require('normalize-url');
 
 const now = new Date();
 
@@ -90,10 +89,7 @@ module.exports = function (cfg) {
 
   // Filters
   cfg.addFilter('markdown', (contents) => md.render(contents));
-  cfg.addFilter('prettyUrl', (url) => {
-    if (!/^http/.test(url)) return url;
-    return normalizeUrl(url, { stripHash: true, stripProtocol: true, stripWWW: true });
-  });
+  cfg.addFilter('prettyUrl', prettyUrl);
   cfg.addFilter('date', (date, format) => dayjs(date).format(format));
   cfg.addFilter('dateRelative', (date) => dayjs(date).fromNow());
   cfg.addFilter('debug', (obj) => `<pre style="overflow-x: auto;"><code>${JSON.stringify(obj, null, 2)}</code></pre>`);
@@ -102,7 +98,7 @@ module.exports = function (cfg) {
     const url = new URL(tweetURL);
     return `@${url.pathname.split('/')[1]}`;
   });
-  cfg.addFilter('getHost', (url) => new URL(url).host);
+  cfg.addFilter('getHost', (url) => prettyUrl(new URL(url).host));
   cfg.addFilter('cacheBust', (url) => (IS_PRODUCTION ? `${url}?${Date.now()}` : url));
   cfg.addFilter('webmentionsForUrl', webmentionsForUrl);
   cfg.addFilter('parseLinks', (content) =>
@@ -199,3 +195,13 @@ module.exports = function (cfg) {
     },
   };
 };
+
+function prettyUrl(input) {
+  const url = input.trim();
+  if (!/^http|^www\./.test(url)) return input;
+  return url
+    .trim()
+    .replace(/^https?:\/\//, '')
+    .replace(/^www\./, '')
+    .replace(/\/$/, '');
+}
