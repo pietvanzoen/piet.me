@@ -28,7 +28,6 @@ jobs:
           npm run lint
           npm run build
           npm run build
-          npm run webmentions --send
 
       - name: 'Upload Artifacts'
         uses: actions/upload-artifact@v3
@@ -44,3 +43,6 @@ jobs:
           branch: dist
           folder: _site
           clean: true
+
+      - name: Webmentions
+        run: npm run webmentions --send
