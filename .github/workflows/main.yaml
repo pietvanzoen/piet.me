@@ -45,4 +45,6 @@ jobs:
           clean: true
 
       - name: Webmentions
-        run: npm run webmentions --send
+        run: |
+          sleep 60 # wait for site to get pulled
+          npm run webmentions --send
