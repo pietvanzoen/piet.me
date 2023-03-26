@@ -16,6 +16,7 @@
     "sync-images": "rsync -r updates/media images",
     "optimize-images": "node ./_scripts/optimize.js",
     "build": "DEBUG='webmentions,config' ELEVENTY_PRODUCTION=true eleventy --config=eleventy.config.js",
+    "webmentions": "webmention ./_site/feed.xml --debug",
     "postbuild": "npm run optimize-images",
     "lint": "eslint .",
     "fmt": "eslint . --fix"
@@ -33,6 +34,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@remy/webmention": "^1.4.5",
     "axios": "^0.21.1",
     "dayjs": "^1.10.4",
     "debug": "^4.3.4",
