@@ -14,6 +14,7 @@ const webmentionsForUrl = require('./_lib/webmentions-for-url');
 const htmlmin = require('html-minifier');
 const posthtml = require('posthtml');
 const uglify = require('posthtml-minify-classnames');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 const now = new Date();
 
@@ -25,6 +26,7 @@ module.exports = function (cfg) {
   cfg.addPlugin(embedTwitter, {
     cacheText: IS_PRODUCTION,
   });
+  cfg.addPlugin(syntaxHighlight);
   if (IS_PRODUCTION) {
     cfg.addPlugin(localImages, {
       distPath: '_site',
