@@ -136,6 +136,7 @@ module.exports = function (cfg) {
           'u-syndication',
           'p-category',
           'p-author',
+          'asciicast-tvFG35UnF0pISTpgn247JyqaP',
         ];
         html = (
           await posthtml()
