@@ -5,13 +5,75 @@
   
   <link href="https://piet.me/feed.xml" rel="self"/>
   <link href="https://piet.me"/>
-  <updated>2023-03-05T00:00:00Z</updated>
+  <updated>2023-07-08T00:00:00Z</updated>
   <id>https://piet.me/</id>
   <author>
     <name>Piet van Zoen</name>
     <uri>https://piet.me</uri>
     <email>hi@piet.me</email>
   </author>
+  
+  <entry>
+    <title>How to setup Copilot to autocomplete commit messages</title>
+    <link href="https://piet.me/copilot-autocomplete-commit-messages-setup/"/>
+    <author>
+      <name>Piet van Zoen</name>
+      <uri>https://piet.me</uri>
+      <email>hi@piet.me</email>
+    </author>
+    <published>2023-07-08T00:00:00Z</published><updated>2023-07-08T00:00:00Z</updated><id>https://piet.me/copilot-autocomplete-commit-messages-setup/</id>
+    <rights type="html">&amp;copy; 2023  Piet van Zoen</rights>
+      <summary>Copilot, GitHub&#39;s AI programming assistant, has been a great addition to my development environment by giving (mostly) intelligent suggestions and autocompletion. Somewhat accidentally I found that Copilot was also good at writing commit messages. In this post, I will show how you can use Copilot to autocomplete your Git commit messages.</summary><content type="html">&lt;p&gt;Copilot, GitHub&#39;s AI programming assistant, has been a great addition to my development environment by giving (mostly) intelligent suggestions and autocompletion. Somewhat accidentally I found that Copilot was also good at writing commit messages. In this post, I will show how you can use Copilot to autocomplete your Git commit messages.&lt;/p&gt;
+&lt;!-- excerpt --&gt;
+&lt;hr /&gt;
+&lt;h2&gt;On writing good commits&lt;/h2&gt;
+&lt;p&gt;Writing clear and accurate commit messages is super helpful for future developers (including yourself) to understand what changes were made. It&#39;s great for debugging and getting a grasp on the code you&#39;re working with.&lt;/p&gt;
+&lt;p&gt;Luckily, Copilot can assist with this and works best when the content of a commit is specific and related. And that&#39;s exactly what we want! There are plenty of resources available on writing commit messages, so I won&#39;t dive into that more here. Feel free to check out these links for some excellent content on the topic:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message&quot;&gt;5 Useful Tips For A Better Commit Message - Thoughtbot (2013)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html&quot;&gt;A Note About Git Commit Messages - Tim Pope (2008)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/joelparkerhenderson/git-commit-message&quot;&gt;Git commit message guide - Joel Parker Henderson&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Setting up your commit environment&lt;/h2&gt;
+&lt;aside class=&quot;card&quot;&gt;
+  &lt;em&gt;
+    This flow is based on using command line &lt;code&gt;git commit&lt;/code&gt;. I have &lt;a href=&quot;https://neovim.io/&quot;&gt;neovim&lt;/a&gt; configured as the editor and I use &lt;a href=&quot;https://github.com/github/copilot.vim&quot;&gt;Github’s official neovim Copilot package&lt;/a&gt;. This workflow should work with any editor running Copilot and that&#39;s configured as the git editor.
+  &lt;/em&gt;
+&lt;/aside&gt;
+&lt;h3&gt;Setting up a commit message template&lt;/h3&gt;
+&lt;p&gt;For a long time, I have used the a git commit message template to improve the quality of my commit messages. The template consists of a sentence starter which helps me write a commit message in an imperative voice.&lt;/p&gt;
+&lt;p&gt;To setup a commit message template add a file in your home directory called &lt;code&gt;.git-commit-message.txt&lt;/code&gt;. Inside setup your template comments. Mine looks like this:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;# When applied, this commit will (72 character limit)...
+
+# Why is this change needed?
+
+# How does it address the issue?
+
+# Provide links to any relevant tickets, articles or other resources
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Including the character limit ensures Copilot doesn’t get too verbose with the message.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;To configure git to use this as your commit message template run:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;git config --global commit.template ~/.git-commit-template.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once setup, Copilot can use this prompt and try to form a commit message. But without knowing what’s changed it probably won’t be very successful. This is where verbose mode comes in.&lt;/p&gt;
+&lt;h3&gt;Git commit verbose mode&lt;/h3&gt;
+&lt;p&gt;Verbose mode shows a unified diff of what would be committed at the bottom of the commit message template.&lt;/p&gt;
+&lt;p&gt;To use verbose mode we can use the &lt;code&gt;--verbose&lt;/code&gt; flag. E.g. &lt;code&gt;git commit --verbose&lt;/code&gt;. We can also enable verbose mode by default by running:&lt;/p&gt;
+&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;git config --global commit.verbose &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now that the commit diff is in the commit message template, Copilot can use this as context for generating the commit message.&lt;/p&gt;
+&lt;h3&gt;Commit message keyword&lt;/h3&gt;
+&lt;p&gt;Finally, Copilot needs at least one word to begin suggesting a commit message. You can check out the Git Commit Message guide for a list of &lt;a href=&quot;https://github.com/joelparkerhenderson/git-commit-message#summary-keywords&quot;&gt;suggested keywords&lt;/a&gt; to get you started.&lt;/p&gt;
+&lt;p&gt;A few example keywords are Add, Drop, Fix, Make, Refactor, Reformat, among others. Once you&#39;ve staged some changes using git add, run git commit and start writing the commit message using one of these keywords. Copilot will then begin suggesting the rest of the commit message. 🚀&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Copilot in action&lt;/h2&gt;
+&lt;p&gt;Here’s a quick recording of copilot in action.&lt;/p&gt;
+&lt;script async=&quot;&quot; id=&quot;asciicast-tvFG35UnF0pISTpgn247JyqaP&quot; src=&quot;https://asciinema.org/a/tvFG35UnF0pISTpgn247JyqaP.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;Obviously, Copilot isn&#39;t always spot-on. It can make mistakes and give wrong suggestions at times. So, it&#39;s important to take its input with a grain of salt and trust your own judgment. Good commit messages should be informative and accurate, so don&#39;t forget to review and confirm the commit messages before finalising them.&lt;/p&gt;
+&lt;p&gt;Apart from that, have fun!&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>My favourite sci-fi reads</title>
