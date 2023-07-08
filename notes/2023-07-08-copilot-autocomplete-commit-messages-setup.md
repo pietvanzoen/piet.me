@@ -1,6 +1,7 @@
 ---
 title: "How to setup Copilot to autocomplete commit messages"
 unsplashImageId: vkfrFrAIO4o
+imageAlt: "Close up of the center console of an airplane with two pilots sitting each side."
 date: 2023-07-08
 slug: copilot-autocomplete-commit-messages-setup
 featured: true
