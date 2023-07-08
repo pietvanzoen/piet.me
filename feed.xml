@@ -44,24 +44,21 @@
 &lt;h3&gt;Setting up a commit message template&lt;/h3&gt;
 &lt;p&gt;For a long time, I have used the a git commit message template to improve the quality of my commit messages. The template consists of a sentence starter which helps me write a commit message in an imperative voice.&lt;/p&gt;
 &lt;p&gt;To setup a commit message template add a file in your home directory called &lt;code&gt;.git-commit-message.txt&lt;/code&gt;. Inside setup your template comments. Mine looks like this:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;# When applied, this commit will (72 character limit)...
+&lt;pre class=&quot;language-gitcommit&quot;&gt;&lt;code class=&quot;language-gitcommit&quot;&gt;# When applied, this commit will (72 character limit)...
 
 # Why is this change needed?
 
 # How does it address the issue?
 
-# Provide links to any relevant tickets, articles or other resources
-&lt;/code&gt;&lt;/pre&gt;
+# Provide links to any relevant tickets, articles or other resources&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;Including the character limit ensures Copilot doesn’t get too verbose with the message.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;To configure git to use this as your commit message template run:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;git config --global commit.template ~/.git-commit-template.txt
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config &lt;span class=&quot;token parameter variable&quot;&gt;--global&lt;/span&gt; commit.template ~/.git-commit-template.txt&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Once setup, Copilot can use this prompt and try to form a commit message. But without knowing what’s changed it probably won’t be very successful. This is where verbose mode comes in.&lt;/p&gt;
 &lt;h3&gt;Git commit verbose mode&lt;/h3&gt;
 &lt;p&gt;Verbose mode shows a unified diff of what would be committed at the bottom of the commit message template.&lt;/p&gt;
 &lt;p&gt;To use verbose mode we can use the &lt;code&gt;--verbose&lt;/code&gt; flag. E.g. &lt;code&gt;git commit --verbose&lt;/code&gt;. We can also enable verbose mode by default by running:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;git config --global commit.verbose &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config &lt;span class=&quot;token parameter variable&quot;&gt;--global&lt;/span&gt; commit.verbose &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now that the commit diff is in the commit message template, Copilot can use this as context for generating the commit message.&lt;/p&gt;
 &lt;h3&gt;Commit message keyword&lt;/h3&gt;
 &lt;p&gt;Finally, Copilot needs at least one word to begin suggesting a commit message. You can check out the Git Commit Message guide for a list of &lt;a href=&quot;https://github.com/joelparkerhenderson/git-commit-message#summary-keywords&quot;&gt;suggested keywords&lt;/a&gt; to get you started.&lt;/p&gt;
@@ -234,49 +231,47 @@
 &lt;h2&gt;Creating and opening branch based sessions&lt;/h2&gt;
 &lt;p&gt;My approach relies on tpope’s Obsession plugin. If you don’t have it already, follow the instructions to get it installed: &lt;a href=&quot;https://github.com/tpope/vim-obsession&quot;&gt;https://github.com/tpope/vim-obsession&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Next add this function to your shell configuration file (E.g. Your &lt;code&gt;~/.bashrc&lt;/code&gt; or &lt;code&gt;~/.zshrc&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;vm&lt;/span&gt;&lt;/span&gt;() {
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function-name function&quot;&gt;vm&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 
-  &lt;span class=&quot;hljs-comment&quot;&gt;# Create .sessions directory if it doesn&amp;#x27;t exist&lt;/span&gt;
-  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; [[ ! -d &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;./.sessions&amp;#x27;&lt;/span&gt; ]]; &lt;span class=&quot;hljs-keyword&quot;&gt;then&lt;/span&gt;
-    mkdir &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;./.sessions&amp;#x27;&lt;/span&gt;
-  &lt;span class=&quot;hljs-keyword&quot;&gt;fi&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# Create .sessions directory if it doesn&#39;t exist&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;./.sessions&#39;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;./.sessions&#39;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
 
-  &lt;span class=&quot;hljs-comment&quot;&gt;# Create a session file name based on the current branch&lt;/span&gt;
-  &lt;span class=&quot;hljs-built_in&quot;&gt;local&lt;/span&gt; session_name=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;.sessions/&lt;span class=&quot;hljs-subst&quot;&gt;$(git rev-parse --abbrev-ref HEAD)&lt;/span&gt;-session.vim&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;# Create a session file name based on the current branch&lt;/span&gt;
+  &lt;span class=&quot;token builtin class-name&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;session_name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;.sessions/&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; rev-parse --abbrev-ref HEAD&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;-session.vim&quot;&lt;/span&gt;
 
-  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; [ -e &lt;span class=&quot;hljs-variable&quot;&gt;$session_name&lt;/span&gt; ]; &lt;span class=&quot;hljs-keyword&quot;&gt;then&lt;/span&gt;
-    &lt;span class=&quot;hljs-comment&quot;&gt;# If the session file exists open it&lt;/span&gt;
-    vim -S &lt;span class=&quot;hljs-variable&quot;&gt;$session_name&lt;/span&gt;
-  &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt;
-    &lt;span class=&quot;hljs-comment&quot;&gt;# Otherwise create it&lt;/span&gt;
-    vim -c &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Obsession &lt;span class=&quot;hljs-variable&quot;&gt;$session_name&lt;/span&gt;&amp;quot;&lt;/span&gt; .
-  &lt;span class=&quot;hljs-keyword&quot;&gt;fi&lt;/span&gt;
-}
-&lt;/code&gt;&lt;/pre&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$session_name&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# If the session file exists open it&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;vim&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-S&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$session_name&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# Otherwise create it&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;vim&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Obsession &lt;span class=&quot;token variable&quot;&gt;$session_name&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;After adding this script reload your shell and the function will be available by running &lt;code&gt;vm&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;After changing branches I run &lt;code&gt;vm&lt;/code&gt; to either open an existing session for the branch or create a new one.&lt;/p&gt;
 &lt;h2&gt;Cleaning up session files&lt;/h2&gt;
 &lt;p&gt;Ideally we want to clean up our session files when branches are deleted. This script will keep your session files up to date with your current list of locally checked out branches.&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-meta&quot;&gt;#!/usr/bin/env bash&lt;/span&gt;
-&lt;span class=&quot;hljs-built_in&quot;&gt;set&lt;/span&gt; -e
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token shebang important&quot;&gt;#!/usr/bin/env bash&lt;/span&gt;
+&lt;span class=&quot;token builtin class-name&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-e&lt;/span&gt;
 
-&lt;span class=&quot;hljs-comment&quot;&gt;# Get the root directory of the repository&lt;/span&gt;
-git_root_dir=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-subst&quot;&gt;$(git rev-parse --show-toplevel 2&amp;gt; /dev/null || echo &amp;#x27;.&amp;#x27;)&lt;/span&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Get the root directory of the repository&lt;/span&gt;
+&lt;span class=&quot;token assign-left variable&quot;&gt;git_root_dir&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; rev-parse --show-toplevel &lt;span class=&quot;token operator&quot;&gt;&lt;span class=&quot;token file-descriptor important&quot;&gt;2&lt;/span&gt;&gt;&lt;/span&gt; /dev/null &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;.&#39;&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&quot;&lt;/span&gt;
 
-&lt;span class=&quot;hljs-comment&quot;&gt;# Get a list of local branches&lt;/span&gt;
-branches=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-subst&quot;&gt;$(git branch | sed -r &amp;#x27;s/\*?\s*(.*?)&lt;/span&gt;\s*$/\1/&amp;#x27;)&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Get a list of local branches&lt;/span&gt;
+&lt;span class=&quot;token assign-left variable&quot;&gt;branches&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; branch &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-r&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;s/\*?\s*(.*?)\s*$/\1/&#39;&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&quot;&lt;/span&gt;
 
-&lt;span class=&quot;hljs-comment&quot;&gt;# Get a list existing sessions, trimmed down to the branch name portion of the filename. (This line handles sessions in directories up to 4 levels deep).&lt;/span&gt;
-sessions=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-subst&quot;&gt;$(find $git_root_dir -maxdepth 4 -wholename &amp;#x27;*/.sessions/*-session.vim&amp;#x27; | sed &amp;#x27;s/.*\.sessions\/\(.*\)-session\.vim/\1/&amp;#x27; | sort | uniq)&lt;/span&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Get a list existing sessions, trimmed down to the branch name portion of the filename. (This line handles sessions in directories up to 4 levels deep).&lt;/span&gt;
+&lt;span class=&quot;token assign-left variable&quot;&gt;sessions&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt; $git_root_dir &lt;span class=&quot;token parameter variable&quot;&gt;-maxdepth&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-wholename&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;*/.sessions/*-session.vim&#39;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;s/.*\.sessions\/\(.*\)-session\.vim/\1/&#39;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;uniq&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&quot;&lt;/span&gt;
 
-&lt;span class=&quot;hljs-comment&quot;&gt;# Loop through session names&lt;/span&gt;
-&lt;span class=&quot;hljs-keyword&quot;&gt;for&lt;/span&gt; session &lt;span class=&quot;hljs-keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;$sessions&lt;/span&gt; ; &lt;span class=&quot;hljs-keyword&quot;&gt;do&lt;/span&gt;
-  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; [[ &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-variable&quot;&gt;$branches&lt;/span&gt;&amp;quot;&lt;/span&gt; != *&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quot;hljs-variable&quot;&gt;$session&lt;/span&gt;&amp;quot;&lt;/span&gt;* ]]; &lt;span class=&quot;hljs-keyword&quot;&gt;then&lt;/span&gt;
-    &lt;span class=&quot;hljs-comment&quot;&gt;# If session name isn&amp;#x27;t in the branches list, delete it.&lt;/span&gt;
-    rm -v `find &lt;span class=&quot;hljs-variable&quot;&gt;$git_root_dir&lt;/span&gt; -maxdepth 4 -wholename &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;*/.sessions/&lt;span class=&quot;hljs-variable&quot;&gt;$session&lt;/span&gt;-session.vim&amp;quot;&lt;/span&gt;`
-  &lt;span class=&quot;hljs-keyword&quot;&gt;fi&lt;/span&gt;
-&lt;span class=&quot;hljs-keyword&quot;&gt;done&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Loop through session names&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token for-or-select variable&quot;&gt;session&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$sessions&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$branches&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; *&lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$session&lt;/span&gt;&quot;&lt;/span&gt;* &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# If session name isn&#39;t in the branches list, delete it.&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt; $git_root_dir &lt;span class=&quot;token parameter variable&quot;&gt;-maxdepth&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-wholename&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;*/.sessions/&lt;span class=&quot;token variable&quot;&gt;$session&lt;/span&gt;-session.vim&quot;&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Add this script to a file named &lt;code&gt;git-prune-sessions&lt;/code&gt; in a directory in your &lt;code&gt;$PATH&lt;/code&gt;. Make it executable by running &lt;code&gt;chmod +x ./git-prune-sessions&lt;/code&gt;. Then you can run &lt;code&gt;git prune-sessions&lt;/code&gt; to clean out any unused sessions.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Questions? Comments? Post a message below or ping me on &lt;a href=&quot;https://twitter.com/pietvanzoen&quot;&gt;twitter&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </content>
@@ -844,26 +839,25 @@ sessions=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;&lt;span class=&quo
 &lt;h2&gt;The Solution... &lt;code&gt;git get&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;So... I came up with &lt;a href=&quot;https://github.com/pietvanzoen/git-get&quot;&gt;git get&lt;/a&gt;. It&#39;s just a single Python script that parses the given git url, creates the directory structure, and clones the repo into the created directory. I define a &lt;code&gt;$GIT_PATH&lt;/code&gt; to store all my repos in (I chose &lt;code&gt;~/repos&lt;/code&gt;). Then I can run &lt;code&gt;git get git@github.com:pietvanzoen/dotfiles.git&lt;/code&gt;, which clones my dotfiles into &lt;code&gt;~/repos/github.com/pietvanzoen/dotfiles&lt;/code&gt;. Also, &lt;code&gt;git get&lt;/code&gt; can be run from any directory.&lt;/p&gt;
 &lt;p&gt;So now my projects look a bit like this:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;~/repos
+&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;~/repos
 ├── bitbucket.org
-│   └── pietvanzoen
-│       └── wibble
+│   └── pietvanzoen
+│       └── wibble
 ├── github.com
-│   ├── LeidenDevs
-│   │   └── leidendevs
-│   ├── chriso
-│   │   └── validator.js
-│   ├── pietvanzoen
-│   │   ├── discussie
-│   │   ├── dotfiles
-│   │   ├── pietvanzoen.com
-│   │   └── validator.js
-│   └── wting
-│       └── autojump
+│   ├── LeidenDevs
+│   │   └── leidendevs
+│   ├── chriso
+│   │   └── validator.js
+│   ├── pietvanzoen
+│   │   ├── discussie
+│   │   ├── dotfiles
+│   │   ├── pietvanzoen.com
+│   │   └── validator.js
+│   └── wting
+│       └── autojump
 └── gitlab.com
     └── pietvanzoen
-        └── wibble
-&lt;/code&gt;&lt;/pre&gt;
+        └── wibble&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You can see I&#39;ve cloned &lt;code&gt;validator.js&lt;/code&gt; twice. One is the original project by github user &lt;em&gt;chriso&lt;/em&gt;, and the other is my fork. With the single level folder structure I used before I would have to name the clone folder for one of those projects to something else.&lt;/p&gt;
 &lt;h2&gt;But that&#39;s a lot of directories to navigate&lt;/h2&gt;
 &lt;p&gt;One drawback to this approach is that we now have a lot of directories to navigate. Depending on your patience, this may or may not be an issue to you. If it is an issue, I really like using &lt;a href=&quot;https://github.com/wting/autojump&quot;&gt;autojump&lt;/a&gt;. The &lt;code&gt;autojump&lt;/code&gt; command (bound to &lt;code&gt;j&lt;/code&gt; for brevity) builds an index of commonly visited directories. After visiting a directory for the first time, you can then run &lt;code&gt;j &amp;lt;partial-dir-name&amp;gt;&lt;/code&gt; and you&#39;ll be taken to the first match in the autojump index. E.g &lt;code&gt;j dot&lt;/code&gt; will take me to &lt;code&gt;~/repos/github.com/pietvanzoen/dotfiles&lt;/code&gt;.&lt;/p&gt;
@@ -1026,85 +1020,76 @@ We work on €2000+ computers on 100+ Mbit/s fiber. Even on mobile we&#39;re oft
 &lt;h2&gt;Testing setup&lt;/h2&gt;
 &lt;p&gt;I wanted to add some basic testing for my site, simple things like HTML validation and link checking. For that I found &lt;a href=&quot;https://github.com/gjtorikian/html-proofer&quot;&gt;HTMLProofer&lt;/a&gt; which can run a variety of tests against a folder of html files.&lt;/p&gt;
 &lt;p&gt;Add HTMLProofer to your &lt;code&gt;Gemfile&lt;/code&gt; and &lt;code&gt;bundle install&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;gem &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;html-proofer&amp;#x27;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;gem &lt;span class=&quot;token string-literal&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&#39;html-proofer&#39;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;HTMLProofer can run via command line, but for ease of running locally and remotely with all of my configuration I chucked it in a &lt;code&gt;test.rb&lt;/code&gt; and included a simple check for the build folder.&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-comment&quot;&gt;# test.rb&lt;/span&gt;
+&lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# test.rb&lt;/span&gt;
 
-&lt;span class=&quot;hljs-keyword&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;html-proofer&amp;#x27;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;token string-literal&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&#39;html-proofer&#39;&lt;/span&gt;&lt;/span&gt;
 
-raise IOError, &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;Directory ./build does not exist. Run `middleman build` before running tests&amp;#x27;&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;unless&lt;/span&gt; Dir.exists?(&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;./build&amp;#x27;&lt;/span&gt;)
+&lt;span class=&quot;token keyword&quot;&gt;raise&lt;/span&gt; IOError&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string-literal&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Directory ./build does not exist. Run `middleman build` before running tests&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;Dir&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exists&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string-literal&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&#39;./build&#39;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-HTMLProofer.check_directory(&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;./build&amp;#x27;&lt;/span&gt;, {
-  &lt;span class=&quot;hljs-symbol&quot;&gt;:check_img_http&lt;/span&gt; =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;,
-  &lt;span class=&quot;hljs-symbol&quot;&gt;:check_html&lt;/span&gt; =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;hljs-symbol&quot;&gt;:validation&lt;/span&gt; =&amp;gt; { &lt;span class=&quot;hljs-symbol&quot;&gt;:report_missing_names&lt;/span&gt; =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt; },
-  &lt;span class=&quot;hljs-symbol&quot;&gt;:check_favicon&lt;/span&gt; =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;,
-  &lt;span class=&quot;hljs-symbol&quot;&gt;:check_opengraph&lt;/span&gt; =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;,
-  &lt;span class=&quot;hljs-symbol&quot;&gt;:http_status_ignore&lt;/span&gt; =&amp;gt; [&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;hljs-number&quot;&gt;999&lt;/span&gt;,&lt;span class=&quot;hljs-number&quot;&gt;403&lt;/span&gt;,&lt;span class=&quot;hljs-number&quot;&gt;401&lt;/span&gt;]
-}).run
-&lt;span class=&quot;hljs-comment&quot;&gt;# Check out the config docs for more: https://github.com/gjtorikian/html-proofer#configuration&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+HTMLProofer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;check_directory&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string-literal&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&#39;./build&#39;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token symbol&quot;&gt;:check_img_http&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token symbol&quot;&gt;:check_html&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:validation&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:report_missing_names&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token symbol&quot;&gt;:check_favicon&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token symbol&quot;&gt;:check_opengraph&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token symbol&quot;&gt;:http_status_ignore&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;999&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;403&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;401&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;run
+&lt;span class=&quot;token comment&quot;&gt;# Check out the config docs for more: https://github.com/gjtorikian/html-proofer#configuration&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;If you’re already using a &lt;code&gt;Rakefile&lt;/code&gt; you could add the HTMLProofer code to a &lt;code&gt;:test&lt;/code&gt; task. This test was going to be the only task in my &lt;code&gt;Rakefile&lt;/code&gt; so I decided to stick with a plain old &lt;code&gt;.rb&lt;/code&gt; file I could run.&lt;/p&gt;
 &lt;p&gt;Run &lt;code&gt;ruby test.rb&lt;/code&gt; and you should see something like this:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;Running [&amp;quot;ImageCheck&amp;quot;, &amp;quot;FaviconCheck&amp;quot;, &amp;quot;ScriptCheck&amp;quot;, &amp;quot;OpenGraphCheck&amp;quot;, &amp;quot;HtmlCheck&amp;quot;, &amp;quot;LinkCheck&amp;quot;] on [&amp;quot;./build&amp;quot;] on *.html...
+&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;Running &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;ImageCheck&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;FaviconCheck&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;ScriptCheck&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;OpenGraphCheck&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;HtmlCheck&quot;&lt;/span&gt;, &lt;span class=&quot;token string&quot;&gt;&quot;LinkCheck&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; on &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;./build&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; on *.html&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
 
-Checking 62 external links...
-Ran on 13 files!
-&lt;/code&gt;&lt;/pre&gt;
+Checking &lt;span class=&quot;token number&quot;&gt;62&lt;/span&gt; external links&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+Ran on &lt;span class=&quot;token number&quot;&gt;13&lt;/span&gt; files&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The first time I ran this I discovered a handful of links that were either just wrong or had gone stale over time. Nice to know these will be caught in advance moving forward!&lt;/p&gt;
 &lt;h2&gt;Deploy configuration&lt;/h2&gt;
 &lt;p&gt;The &lt;a href=&quot;https://github.com/middleman-contrib/middleman-deploy&quot;&gt;middleman-deploy&lt;/a&gt; gem has what you need to “deploy” your site to git. Basically what that means is that middleman will build your site, copy the files to an orphan branch, commit the changes and push. By default middleman deploys to the &lt;code&gt;gh-pages&lt;/code&gt; branch for sites using Github pages.&lt;/p&gt;
 &lt;p&gt;Add the gem to your &lt;code&gt;Gemfile&lt;/code&gt; and &lt;code&gt;bundle install&lt;/code&gt;. To work with middleman v4 I had to install the pre-alpha gem. This hasn’t been a problem for what I need so far.&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;gem &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;middleman-deploy&amp;#x27;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;~&amp;gt; 2.0.0.pre.alpha&amp;#x27;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;gem &lt;span class=&quot;token string-literal&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&#39;middleman-deploy&#39;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string-literal&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&#39;~&gt; 2.0.0.pre.alpha&#39;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Then in your &lt;code&gt;config.rb&lt;/code&gt; add your deploy setup:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;activate &lt;span class=&quot;hljs-symbol&quot;&gt;:deploy&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;hljs-params&quot;&gt;|deploy|&lt;/span&gt;
-  deploy.deploy_method = &lt;span class=&quot;hljs-symbol&quot;&gt;:git&lt;/span&gt;
-  deploy.branch = &lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;gh-pages&amp;#x27;&lt;/span&gt;
-&lt;span class=&quot;hljs-keyword&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;activate &lt;span class=&quot;token symbol&quot;&gt;:deploy&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;deploy&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+  deploy&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;deploy_method &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:git&lt;/span&gt;
+  deploy&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;branch &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string-literal&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&#39;gh-pages&#39;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Make sure the whole process works by running &lt;code&gt;middleman build &amp;amp;&amp;amp; ruby test.rb &amp;amp;&amp;amp; middleman deploy&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;CircleCI configuration&lt;/h2&gt;
 &lt;p&gt;I’m using &lt;a href=&quot;https://circleci.com/&quot;&gt;CircleCI&lt;/a&gt; for my build platform, but the configuration should be fairly similar for other platforms.&lt;/p&gt;
 &lt;p&gt;Add the following to your &lt;code&gt;circle.yml&lt;/code&gt; in the root of your repo:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-comment&quot;&gt;# circle.yml&lt;/span&gt;
+&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# circle.yml&lt;/span&gt;
 
-&lt;span class=&quot;hljs-attr&quot;&gt;compile:&lt;/span&gt;
-  &lt;span class=&quot;hljs-attr&quot;&gt;override:&lt;/span&gt;
-    &lt;span class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;middleman&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;build&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;override&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; bundle exec middleman build
 
-&lt;span class=&quot;hljs-attr&quot;&gt;test:&lt;/span&gt;
-  &lt;span class=&quot;hljs-attr&quot;&gt;override:&lt;/span&gt;
-    &lt;span class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;test.rb&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;override&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; bundle exec ruby test.rb
 
-&lt;span class=&quot;hljs-attr&quot;&gt;deployment:&lt;/span&gt;
-  &lt;span class=&quot;hljs-attr&quot;&gt;build:&lt;/span&gt;
-    &lt;span class=&quot;hljs-attr&quot;&gt;branch:&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;master&lt;/span&gt;
-    &lt;span class=&quot;hljs-attr&quot;&gt;commands:&lt;/span&gt;
-      &lt;span class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;user.email&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;$GIT_USER_EMAIL&lt;/span&gt;
-      &lt;span class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;user.name&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;$GIT_USER_NAME&lt;/span&gt;
-      &lt;span class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;middleman&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;deploy&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;deployment&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;branch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; master
+    &lt;span class=&quot;token key atrule&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; git config user.email $GIT_USER_EMAIL
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; git config user.name $GIT_USER_NAME
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; bundle exec middleman deploy&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;For each build, this will compile the site, run the tests, and for builds on your &lt;code&gt;master&lt;/code&gt; branch it will run the deploy. You’ll need to configure your git details too. For ease of configuration I’m using env vars for my git user config. Head to &lt;code&gt;https://circleci.com/gh/you/test-repo/edit#env-vars&lt;/code&gt; to add your github info.&lt;/p&gt;
 &lt;h2&gt;Git write access for the build&lt;/h2&gt;
 &lt;p&gt;Next you need to configure CircleCI to have write access to the repo. By default Circle only has read access to the repo. Instructions for &lt;a href=&quot;https://circleci.com/docs/1.0/adding-read-write-deployment-key/&quot;&gt;setting up a read/write deploy key&lt;/a&gt; are in the circle docs, but here’s the break down.&lt;/p&gt;
 &lt;h3&gt;Generate a new SSH key&lt;/h3&gt;
 &lt;p&gt;First we’ll need to create a new SSH key for Circle:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-meta&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; ssh-keygen -t rsa -b 4096 -C &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;your_email@example.com&amp;quot;&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ ssh-keygen &lt;span class=&quot;token parameter variable&quot;&gt;-t&lt;/span&gt; rsa &lt;span class=&quot;token parameter variable&quot;&gt;-b&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4096&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;your_email@example.com&quot;&lt;/span&gt;
 Generating public/private rsa key pair.
-Enter file in which to save the key: /Users/&amp;lt;you&amp;gt;/.ssh/circleci_deploy_key
-Enter passphrase (empty for no passphrase):
-&lt;/code&gt;&lt;/pre&gt;
+Enter &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;which&lt;/span&gt; to save the key: /Users/&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;you&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;/.ssh/circleci_deploy_key
+Enter passphrase &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;empty &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; no passphrase&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;:&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Give a location for your new ssh key and do &lt;em&gt;not&lt;/em&gt; enter a passphrase, just hit return.&lt;/p&gt;
 &lt;h3&gt;Add the public key to CircleCI&lt;/h3&gt;
 &lt;p&gt;Copy the public version of your new new SSH key:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;cat ~/.ssh/circle_deploy_key.pub | pbcopy
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; ~/.ssh/circle_deploy_key.pub &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; pbcopy&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Go to &lt;code&gt;https://circleci.com/gh/you/test-repo/edit#ssh&lt;/code&gt; and add the public key that you just created. Use &lt;a href=&quot;http://github.com/&quot;&gt;github.com&lt;/a&gt; in the &lt;em&gt;Hostname&lt;/em&gt; field.&lt;/p&gt;
 &lt;h3&gt;Add the private key to Github&lt;/h3&gt;
 &lt;p&gt;Next head to your repo in GitHub and add the private key to our repo.&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;cat ~/.ssh/circle_deploy_key | pbcopy
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; ~/.ssh/circle_deploy_key &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; pbcopy&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Go to &lt;code&gt;https://github.com/you/test-repo/settings/keys&lt;/code&gt; on GitHub and add the public key that you just created and copied. Make sure to “Allow write access” and save the key.&lt;/p&gt;
 &lt;h2&gt;Deploy!&lt;/h2&gt;
 &lt;p&gt;That should be everything you need to run the build. Here’s an &lt;a href=&quot;https://circleci.com/gh/pietvanzoen/pietvanzoen.com/31&quot;&gt;example build from my site&lt;/a&gt;.&lt;/p&gt;
@@ -1195,121 +1180,108 @@ At that point, I started reading technical books and articles during my bus ride
       <summary>Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don&#39;t always play nice if you happen to use Knockout observables. I&#39;m going to introduce a way to make handling observables in functional style easier.</summary><content type="html">&lt;p&gt;Lodash and functional programming offers some wonderful ways to make code cleaner and more readable. But they don&#39;t always play nice if you happen to use Knockout observables. I&#39;m going to introduce a way to make handling observables in functional style easier.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
 &lt;p&gt;Let&#39;s start with a plain object example. Say you want to create an array of people&#39;s &lt;code&gt;age&lt;/code&gt; in &lt;code&gt;years&lt;/code&gt; from this array:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; people = [
-  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Ron Swanson&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: { &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;55&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;6&lt;/span&gt; } },
-  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Leslie Knope&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: { &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;41&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; } },
-  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Andy Dwyer&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: { &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;34&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;8&lt;/span&gt; } },
-];
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; people &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Ron Swanson&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;55&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Leslie Knope&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Andy Dwyer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;34&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-&lt;span class=&quot;hljs-comment&quot;&gt;// the plain js way&lt;/span&gt;
-people.map(&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
-  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; person.age.years;
-});
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 34]&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// the plain js way&lt;/span&gt;
+people&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;years&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; [55, 41, 34]&lt;/span&gt;
 
-&lt;span class=&quot;hljs-comment&quot;&gt;// a better way with _.property&lt;/span&gt;
-people.map(_.property(&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;));
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 34]&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// a better way with _.property&lt;/span&gt;
+people&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;_&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;property&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;age.years&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; [55, 41, 34]&lt;/span&gt;
 
-&lt;span class=&quot;hljs-comment&quot;&gt;// even better still with _.map&lt;/span&gt;
-_.map(people, &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;);
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 34]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token comment&quot;&gt;// even better still with _.map&lt;/span&gt;
+_&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;people&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;age.years&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; [55, 41, 34]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Clean succinct code. Excellent!&lt;/p&gt;
 &lt;h2&gt;Adding Observables&lt;/h2&gt;
 &lt;p&gt;If you&#39;re using &lt;a href=&quot;http://knockoutjs.com/&quot;&gt;Knockout&lt;/a&gt;, this becomes a little more tricky because your object path might include observables that need to be unwrapped:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; people = ko.observableArray([
-  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Ron Swanson&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;55&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;6&lt;/span&gt; }) },
-  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Leslie Knope&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;41&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; }) },
-  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Andy Dwyer&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;34&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;8&lt;/span&gt; }) },
-]);
-_.map(people, &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;);
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; []&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; people &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ko&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;observableArray&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Ron Swanson&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; ko&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;observable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;55&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Leslie Knope&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; ko&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;observable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Andy Dwyer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; ko&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;observable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;34&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+_&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;people&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;age.years&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; []&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Why an empty array? &lt;code&gt;people&lt;/code&gt; is an observable array so we need to invoke it to get the value.&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;_.map(people(), &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;);
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [undefined, undefined, undefined]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;_&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;people&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;age.years&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; [undefined, undefined, undefined]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here Lodash is traversing the property path without invoking the observables, so rather than retrieving the value of &lt;code&gt;years&lt;/code&gt; from inside the observable it&#39;s trying to find the property &lt;code&gt;years&lt;/code&gt; on the actual observable instance. Since &lt;code&gt;years&lt;/code&gt; does not exist, it just returns &lt;code&gt;undefined&lt;/code&gt; for each person.&lt;/p&gt;
 &lt;p&gt;Here&#39;s how we might get around this:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;_.map(people(), &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
-  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; persion.age().years;
-});
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 30]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;_&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;people&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; persion&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;years&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; [55, 41, 30]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We&#39;re back to writing callbacks. That succinct, readable code we had earlier is gone. And what if someone&#39;s &lt;code&gt;age&lt;/code&gt; ends up being &lt;code&gt;null&lt;/code&gt;?&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;people.push({ &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Ann Perkins&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: &lt;span class=&quot;hljs-literal&quot;&gt;null&lt;/span&gt; });
-_.map(people(), &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
-  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; person.age().years;
-});
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; Uncaught TypeError: person.age is not a function&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;people&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Ann Perkins&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+_&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;people&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;years&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; Uncaught TypeError: person.age is not a function&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Dammit. If this were a written without observables and using &lt;code&gt;_.map(people, &#39;age.years&#39;);&lt;/code&gt; we&#39;d simply get &lt;code&gt;[55, 41, 30, undefined]&lt;/code&gt;. Lodash is robust enough that it will simply return &lt;code&gt;undefined&lt;/code&gt; for that person.&lt;/p&gt;
 &lt;p&gt;Here&#39;s how we&#39;d get around that problem:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;_.map(people(), &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
-  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; person.age ? person.age().years : &lt;span class=&quot;hljs-literal&quot;&gt;undefined&lt;/span&gt;;
-});
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 30, undefined]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;_&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;people&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;years &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; [55, 41, 30, undefined]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We have to use a conditional to get around our &lt;code&gt;null&lt;/code&gt; problem, which adds complexity, which makes the code less readable.&lt;/p&gt;
 &lt;p&gt;Since we&#39;re using knockout, we probably want this to be a computed observable, so that the value we get is always up to date with our &lt;code&gt;people&lt;/code&gt; array.&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; peopleAgeYears = ko.pureComputed(&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;{
-  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; _.map(people(), &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
-    &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; person.age ? person.age().years : &lt;span class=&quot;hljs-literal&quot;&gt;undefined&lt;/span&gt;;
-  });
-});
-peopleAgeYears();
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 30, undefined]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; peopleAgeYears &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ko&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pureComputed&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; _&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;people&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;years &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;peopleAgeYears&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; [55, 41, 30, undefined]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Yikes. Let&#39;s take stock. We have two nested functions, a variable used twice, a path named twice, and an &lt;code&gt;undefined&lt;/code&gt; return. This is manageable but damn, it&#39;s nowhere near as nice as &lt;code&gt;_.map(people, &#39;age.years&#39;);&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;Introducing Kompose&lt;/h2&gt;
 &lt;p&gt;Kompose offers several helper functions that behave like Lodash&#39;s path traversing helpers (such as &lt;code&gt;_.property&lt;/code&gt; and &lt;code&gt;_.get&lt;/code&gt;), but with the added benefit of unwrapping observables along the way.&lt;/p&gt;
 &lt;p&gt;Let&#39;s start with our people again:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; people = ko.observableArray([
-  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Ron Swanson&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;55&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;6&lt;/span&gt; }) },
-  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Leslie Knope&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;41&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; }) },
-  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Andy Dwyer&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;34&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;8&lt;/span&gt; }) },
-  { &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;Ann Perkins&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;age&lt;/span&gt;: ko.observable({ &lt;span class=&quot;hljs-attr&quot;&gt;years&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;39&lt;/span&gt;, &lt;span class=&quot;hljs-attr&quot;&gt;months&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;5&lt;/span&gt; }) },
-]);
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; people &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ko&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;observableArray&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Ron Swanson&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; ko&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;observable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;55&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Leslie Knope&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; ko&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;observable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Andy Dwyer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; ko&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;observable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;34&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Ann Perkins&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; ko&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;observable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;39&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Let&#39;s write that &lt;code&gt;peopleAgeYears&lt;/code&gt; computed using &lt;code&gt;kp.computedMap&lt;/code&gt;.&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; peopleAgeYears = kp.computedMap(people, &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;);
-peopleAgeYears();
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [55, 41, 30, 39]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; peopleAgeYears &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; kp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;computedMap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;people&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;age.years&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;peopleAgeYears&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; [55, 41, 30, 39]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Nice! Just like the verbose &lt;code&gt;peopleAgeYears&lt;/code&gt; example above, this computed will traverse the people objects in the observable array &lt;code&gt;people&lt;/code&gt; and map their &lt;code&gt;age&lt;/code&gt; in &lt;code&gt;years&lt;/code&gt;. We&#39;re back to our clear, easy to read, code from earlier.&lt;/p&gt;
 &lt;h2&gt;Going the extra functional mile&lt;/h2&gt;
 &lt;p&gt;Like &lt;code&gt;_.map&lt;/code&gt;, passing a path to &lt;code&gt;kp.computedMap&lt;/code&gt; is a convenience feature that creates an iteratee function using &lt;code&gt;kp.property&lt;/code&gt;. You can also pass your own iteratee function to &lt;code&gt;kp.computedMap&lt;/code&gt;. Instead of everyone&#39;s age, say we wanted a computed that calculated everyone&#39;s &amp;quot;&lt;a href=&quot;https://www.youtube.com/watch?v=7dsVYswSfow&quot;&gt;half your age plus seven&lt;/a&gt;&amp;quot; age.&lt;/p&gt;
 &lt;p&gt;Let&#39;s start with the long(ish)form:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; youngestDatableAges = kp.computedMap(people, &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
-  &lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; personAgeYears = kp.get(person, &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;);
-  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; personAgeYears / &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; + &lt;span class=&quot;hljs-number&quot;&gt;7&lt;/span&gt;;
-});
-youngestDatableAges();
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [34.5, 27.5, 22, 26.5];&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; youngestDatableAges &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; kp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;computedMap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;people&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; personAgeYears &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; kp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;person&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;age.years&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; personAgeYears &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;youngestDatableAges&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; [34.5, 27.5, 22, 26.5];&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;(&lt;code&gt;kp.get&lt;/code&gt; is like &lt;code&gt;_.get&lt;/code&gt; except that it unwraps observables along the way.)&lt;/p&gt;
 &lt;p&gt;We can do much better than this though. If we break the above example down into it&#39;s element parts we can make this much easier to reason with. Let&#39;s start by breaking out our equation:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;datableAge&lt;/span&gt;(&lt;span class=&quot;hljs-params&quot;&gt;age&lt;/span&gt;) &lt;/span&gt;{
-  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; age / &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; + &lt;span class=&quot;hljs-number&quot;&gt;7&lt;/span&gt;;
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;datableAge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; age &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We can also do away with setting the &lt;code&gt;personAgeYears&lt;/code&gt; variable and just pass the return value from &lt;code&gt;kp.get&lt;/code&gt; straight into the &lt;code&gt;datableAge&lt;/code&gt; function.&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; youngestDatableAges = kp.computedMap(people, &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;hljs-params&quot;&gt;person&lt;/span&gt;) &lt;/span&gt;{
-  &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; datableAge(kp.get(person, &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;));
-});
-youngestDatableAges();
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [34.5, 27.5, 22, 26.5];&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; youngestDatableAges &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; kp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;computedMap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;people&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;datableAge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;kp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;person&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;age.years&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;youngestDatableAges&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; [34.5, 27.5, 22, 26.5];&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Not bad! But wouldn&#39;t it be great if we didn&#39;t have to define the callback function and the &lt;code&gt;person&lt;/code&gt; variable? Well, there&#39;s a way with &lt;code&gt;_.flow&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;If you&#39;ve never used &lt;code&gt;_.flow&lt;/code&gt; before (sometimes called &lt;code&gt;pipe&lt;/code&gt; in other functional libraries), I really recommend reading up and trying it out. &lt;code&gt;_.flow&lt;/code&gt; returns a function that allows you to pipe a value through several functions, with each function passing it&#39;s return value into the next. Here&#39;s how it fits in our example:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; youngestDatableAges = kp.computedMap(
-  people,
-  _.flow(kp.property(&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;age.years&amp;quot;&lt;/span&gt;), datableAge)
-);
-youngestDatableAges();
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; [34.5, 27.5, 22, 26.5];&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; youngestDatableAges &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; kp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;computedMap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  people&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  _&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;flow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;kp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;property&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;age.years&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; datableAge&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;youngestDatableAges&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; [34.5, 27.5, 22, 26.5];&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;That&#39;s it! No function declarations. No unnecessary variables. This is Point Free (or Tacit) Functional Programming:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Tacit programming, also called point-free style, is a programming paradigm in which function definitions do not identify the arguments (or &amp;quot;points&amp;quot;) on which they operate. Instead the definitions merely compose other functions, among which are combinators that manipulate the arguments. ~ &lt;a href=&quot;https://en.wikipedia.org/wiki/Tacit_programming&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
@@ -1374,24 +1346,20 @@ youngestDatableAges();
 &lt;h2&gt;Using ENV variables in code&lt;/h2&gt;
 &lt;p&gt;ENV Variables are accessible by basically any server-side programming language. Here are a few examples:&lt;/p&gt;
 &lt;p&gt;Say I set this in my &lt;code&gt;.bash_profile&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;export&lt;/span&gt; WIBBLE=woo
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;WIBBLE&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;woo&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;Ruby&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;wibble = ENV[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&amp;#x27;&lt;/span&gt;]
+&lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;wibble &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;ENV&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string-literal&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&#39;WIBBLE&#39;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
 print wibble
-&lt;span class=&quot;hljs-comment&quot;&gt;# =&amp;gt; &amp;#x27;woo&amp;#x27;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token comment&quot;&gt;# =&gt; &#39;woo&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;Node&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;var&lt;/span&gt; wibble = process.env.WIBBLE;
-&lt;span class=&quot;hljs-built_in&quot;&gt;console&lt;/span&gt;.log(wibble);
-&lt;span class=&quot;hljs-comment&quot;&gt;// =&amp;gt; &amp;#x27;woo&amp;#x27;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; wibble &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;WIBBLE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;wibble&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; &#39;woo&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; os
-wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&amp;#x27;&lt;/span&gt;]
-&lt;span class=&quot;hljs-built_in&quot;&gt;print&lt;/span&gt; wibble
-&lt;span class=&quot;hljs-comment&quot;&gt;# =&amp;gt; &amp;#x27;woo&amp;#x27;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; os
+wibble &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;environ&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;WIBBLE&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt; wibble
+&lt;span class=&quot;token comment&quot;&gt;# =&gt; &#39;woo&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Looking up ENV variables&lt;/h2&gt;
 &lt;p&gt;Finally here are a couple quick commands for looking up what ENV variables have already been set.&lt;/p&gt;
 &lt;ul&gt;
@@ -1513,39 +1481,35 @@ wibble = os.environ[&lt;span class=&quot;hljs-string&quot;&gt;&amp;#x27;WIBBLE&a
 &lt;h2&gt;Separate layout from presentation&lt;/h2&gt;
 &lt;p&gt;Try to keep layout styling such as widths and floats separate from presentational styling. The aim here is to create separate CSS classes that deal with layout that can be shared by multiple components on your site. This helps to reduce code repetition within your components.&lt;/p&gt;
 &lt;p&gt;Eg. Rather than:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.news&lt;/span&gt; {
-  &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;480px&lt;/span&gt;;
-  &lt;span class=&quot;hljs-attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;10px&lt;/span&gt;;
-  &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#333&lt;/span&gt;;
-  &lt;span class=&quot;hljs-attribute&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#eee&lt;/span&gt;;
-}
-&amp;lt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt; class=&amp;quot;news&amp;quot;&amp;gt;&amp;lt;/&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.news&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 480px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0 10px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #333&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #eee&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&amp;lt;div class=&lt;span class=&quot;token string&quot;&gt;&quot;news&quot;&lt;/span&gt;&gt;&amp;lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Try:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.col_6&lt;/span&gt; {
-  &lt;span class=&quot;hljs-attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;10px&lt;/span&gt;;
-  &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;480px&lt;/span&gt;
-}
-&lt;span class=&quot;hljs-selector-class&quot;&gt;.feat_box&lt;/span&gt; {
-  &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#333&lt;/span&gt;;
-  &lt;span class=&quot;hljs-attribute&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#eee&lt;/span&gt;;
-}
-&amp;lt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt; class=&amp;quot;col_6 feat_box&amp;quot;&amp;gt;&amp;lt;/&lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.col_6&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0 10px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 480px
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token selector&quot;&gt;.feat_box&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #333&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #eee&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&amp;lt;div class=&lt;span class=&quot;token string&quot;&gt;&quot;col_6 feat_box&quot;&lt;/span&gt;&gt;&amp;lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In the first example &lt;code&gt;.news&lt;/code&gt; has a specific use and probably a specific placement in a layout. In the second example we&#39;ve created a layout class that can be used for multiple components and a &lt;code&gt;.feat_box&lt;/code&gt; which can be used on more than just a news article.&lt;/p&gt;
 &lt;p&gt;Use a CSS grid system (such as &lt;a href=&quot;http://foundation.zurb.com/grid.php&quot;&gt;foundation&#39;s grid system&lt;/a&gt;) or create your own grid system, then keep your components reusable throughout your layout by focusing on presentation/theme only.&lt;/p&gt;
 &lt;h2&gt;Keep specificity low&lt;/h2&gt;
 &lt;p&gt;High specificity makes it much harder to modify elements without writing long strings of selectors, which in turn makes your CSS bloated, more complicated and harder to maintain.&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-selector-id&quot;&gt;#primary&lt;/span&gt; &lt;span class=&quot;hljs-selector-id&quot;&gt;#main&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.media&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;span&lt;/span&gt; {
-  &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#ccc&lt;/span&gt;;
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;#primary #main div.media ul li span&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #ccc&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here we have two IDs, a few element selectors and a class. To modify this style we&#39;ll need all of these selectors plus one or use &lt;code&gt;!important&lt;/code&gt; to trump everything. Typing out all these selectors again just to overwrite the first style easily leads to code bloat and is frustrating to maintain. Use of &lt;code&gt;!important&lt;/code&gt; should never be used reactively, but rather proactively such as for a class which you know will always need a particular style. E.g. &lt;code&gt;.error { color: red !important; }&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Avoid IDs. IDs are 255 times more specific than a class and a class can do everything that an ID can do. Finally, avoid using element selectors in your CSS. Doing this frees your CSS from a specific HTML elements and maintains reusability. Here&#39;s a better approach to the previous example:&lt;/p&gt;
-&lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.media-date&lt;/span&gt; {
-  &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#ccc&lt;/span&gt;;
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.media-date&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #ccc&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This is much nicer. It&#39;s descriptive, clean and reusable.&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;All of these techniques are going to help you end up with cleaner code, fewer lines of CSS to manage, and some wonderfully modular code that is easier to maintain. &amp;quot;The Pipe Dream&amp;quot;, as Shay Howe put it, is to build everything in HTML with your arsenal of classes at hand. The dream is that you&#39;ll never need to touch your CSS because you&#39;ll have created all the classes you need to build anything. It&#39;s quite a grand Pipe Dream but definitely worth striving for. Focusing on the organization, reusability and modularization of your CSS is the key.&lt;/p&gt;
