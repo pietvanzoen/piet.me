@@ -3,6 +3,7 @@ title: "How to setup Copilot to autocomplete commit messages"
 unsplashImageId: vkfrFrAIO4o
 imageAlt: "Close up of the center console of an airplane with two pilots sitting each side."
 date: 2023-07-08
+updated: 2023-07-09
 slug: copilot-autocomplete-commit-messages-setup
 featured: true
 tags:
@@ -19,7 +20,7 @@ Copilot, GitHub's AI programming assistant, has been a great addition to my deve
 
 ## On writing good commits
 
-Writing clear and accurate commit messages is super helpful for future developers (including yourself) to understand what changes were made. It's great for debugging and getting a grasp on the code you're working with.
+Writing clear and accurate commit messages is super helpful for future developers (including yourself) to understand why changes were made. It's great for debugging and getting a grasp on the code you're working with.
 
 Luckily, Copilot can assist with this and works best when the content of a commit is specific and related. And that's exactly what we want! There are plenty of resources available on writing commit messages, so I won't dive into that more here. Feel free to check out these links for some excellent content on the topic:
 
