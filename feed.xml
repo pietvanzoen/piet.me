@@ -494,10 +494,12 @@
       <email>hi@piet.me</email>
     </author>
     <published>2021-01-21T00:00:00Z</published>
-      <updated>2022-11-21T00:00:00Z</updated><id>https://piet.me/projects/</id>
+      <updated>2023-07-10T00:00:00Z</updated><id>https://piet.me/projects/</id>
     <rights type="html">&amp;copy; 2023  Piet van Zoen</rights>
       <summary>Here are a few of the projects I&#39;ve built. Some are alright. 😛</summary><content type="html">&lt;p&gt;Here are a few of the projects I&#39;ve built. Some are alright. 😛&lt;/p&gt;
 &lt;!-- excerpt --&gt;
+&lt;h3&gt;&lt;a href=&quot;https://www.gifable.club/&quot;&gt;Gifable&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Gifable is a gif/meme library manager. I enjoy throwing the odd gif reaction around so I like having them easy to search and post. So I built Gifable. Check it out at &lt;a href=&quot;https://www.gifable.club/&quot;&gt;www.gifable.club&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;&lt;a href=&quot;https://github.com/pietvanzoen/git-get&quot;&gt;Git get&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Keep your cloned repos nice and neat in a &lt;code&gt;go get&lt;/code&gt; esk directory tree. Read more here: &lt;a href=&quot;https://piet.me/blog/organizing-git-projects/&quot;&gt;How I organize my cloned git projects&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;&lt;a href=&quot;https://github.com/pietvanzoen/hint&quot;&gt;Hint&lt;/a&gt;&lt;/h3&gt;
