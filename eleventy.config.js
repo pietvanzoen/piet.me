@@ -162,11 +162,10 @@ module.exports = function (cfg) {
     return content;
   });
 
-  function firstFourLines(file) {
-    file.excerpt = file.content.split('\n').slice(0, 3).join(' ');
-  }
   cfg.setFrontMatterParsingOptions({
-    excerpt: firstFourLines,
+    excerpt: (file) => {
+      file.excerpt = file.data.excerpt || file.content.split('\n').slice(0, 3).join(' ');
+    },
     excerpt_separator: '<!-- excerpt -->',
     excerpt_alias: 'excerpt',
   });
