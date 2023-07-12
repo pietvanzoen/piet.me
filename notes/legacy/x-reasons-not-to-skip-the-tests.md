@@ -8,7 +8,7 @@ featured: true
 tags:
   - testing
   - dev
-
+showBuyMeACoffee: true
 syndication:
  - https://medium.com/@pietvanzoen/x-reasons-not-to-skip-the-tests-4ac8dfb2c6d2
  - https://blog.testproject.io/2019/02/12/7-reasons-not-to-skip-tests/

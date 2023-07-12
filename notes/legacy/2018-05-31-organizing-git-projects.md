@@ -8,6 +8,7 @@ featured: true
 tags:
   - git
   - dev
+showBuyMeACoffee: true
 
 ---
 

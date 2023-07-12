@@ -17,9 +17,11 @@ layout: layout.njk
   <div class="e-content">{{ content | safe }}</div>
   <hr>
 
+  {% if showBuyMeACoffee %}
   <aside class="card">
     <em>Did you find this valuable? <a href="https://buymeacoffee.com/pietvanzoen">Please consider contributing to my book fund</a>. ❤️</em>
   </aside>
+  {% endif %}
 
   {% include "meta.njk" %}
 </article>
@@ -28,4 +30,6 @@ layout: layout.njk
 
 {% include "webmentionlist.njk" %}
 
+{% if comments !== false %}
 {% include "comments.njk" %}
+{% endif %}

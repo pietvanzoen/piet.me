@@ -10,6 +10,8 @@ tags:
 syndication:
   - https://mastodon.social/@pietvanzoen/107496492345729954
   - https://twitter.com/pietvanzoen/status/1474009819279409152
+showBuyMeACoffee: true
+
 ---
 
 Vim sessions are a great way to save the state of vim so you don’t have to reopen all your files after closing it. I use [tpope’s Obsession plugin](https://github.com/tpope/vim-obsession) which ensures a session file is always up to date. But by default this will only setup one session file per project.

@@ -9,6 +9,8 @@ featured: true
 tags:
   - git
   - dev
+showBuyMeACoffee: true
+
 ---
 
 Copilot, GitHub's AI programming assistant, has been a great addition to my development environment by giving (mostly) intelligent suggestions and autocompletion. Somewhat accidentally I found that Copilot was also good at writing commit messages. In this post, I will show how you can use Copilot to autocomplete your Git commit messages. 

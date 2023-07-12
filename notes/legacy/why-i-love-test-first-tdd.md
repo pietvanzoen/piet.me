@@ -7,6 +7,7 @@ featured: true
 tags:
  - tdd
  - dev
+showBuyMeACoffee: true
 
 ---
 

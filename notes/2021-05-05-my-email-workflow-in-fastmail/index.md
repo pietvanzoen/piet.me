@@ -9,6 +9,8 @@ tags:
   - productivity
 syndication:
   - https://twitter.com/pietvanzoen/status/1390345005978505216
+showBuyMeACoffee: true
+
 ---
 
 When I switched to [Fastmail](https://ref.fm/u26272200) from [Hey](https://hey.com), there were elements of Hey's approach that worked well for me and I wanted to replicate. I found several articles about setting up a Hey workflow with Fastmail, but the suggested setup relied on creating custom rules for each contact and I found this to be cumbersome. I figured out a slightly different approach and wanted to document what I ended up with.
