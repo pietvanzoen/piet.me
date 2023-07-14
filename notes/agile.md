@@ -3,6 +3,7 @@ title: Agile
 slug: agile
 date: 2021-03-30
 wip: true
+draft: true
 tags: 
   - leadership
 ---
