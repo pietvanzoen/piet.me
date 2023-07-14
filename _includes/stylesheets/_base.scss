@@ -185,6 +185,9 @@ img {
 .text-right {
   text-align: right;
 }
+.text-lowercase {
+  text-transform: lowercase;
+}
 
 a {
   color: var(--link-color);

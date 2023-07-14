@@ -73,15 +73,22 @@ module.exports = function (cfg) {
   });
 
   cfg.addNunjucksAsyncShortcode('HeroImage', async (unsplashImageId, alt = '', heroStyle) => {
+    if (!unsplashImageId) return '';
     let style = '';
-    const imageDimentions = [1400, heroStyle === 'ribbon' ? 450 : 900];
+    let imageDimentions = [1400, 900];
+    if (heroStyle === 'ribbon') {
+      imageDimentions = [1400, 450];
+    } else if (heroStyle === 'notes-thumbnail') {
+      imageDimentions = [700, 500];
+    }
+
     const url = `https://source.unsplash.com/${unsplashImageId}/${imageDimentions.join('x')}?fm=jpg`;
     const imageColor = await getUnsplashImageColor(url, 'muted');
     if (imageColor) {
       style = ` style="background-color: ${imageColor}"`;
     }
-    return `<figure class="hero-image u-photo ${heroStyle === 'ribbon' ? 'hero-ribbon' : ''}"${style}>
-      <img src="${url}" alt="${alt.trim()}" />
+    return `<figure class="hero-image u-photo ${heroStyle ? `hero-${heroStyle}` : ''}">
+      <img src="${url}" alt="${alt.trim()}" width="${imageDimentions[0]}" height="${imageDimentions[1]}"${style}/>
     </figure>`;
   });
 
