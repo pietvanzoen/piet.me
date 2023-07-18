@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2023-07-12
+updated: 2023-07-18
 description: My now page.
 layout: note.njk
 comments: false
@@ -25,9 +25,9 @@ Here's a quick run down on what's going on with me.
 
 **Recently**
 
-- Andor 🌟🌟🌟🌟🌟
+- Andor ⭐️⭐️⭐️⭐️⭐️
+- The Bear ⭐️⭐️⭐️⭐️⭐️
 - Secret invasion ⭐️⭐️
-- The Bear ⭐️⭐️⭐️⭐️
 - The Last of Us ⭐️⭐️⭐️⭐️⭐️
 - Silo ⭐️⭐️✨
 - Star Trek: Strange New Worlds ⭐️⭐️⭐️⭐️
@@ -42,7 +42,7 @@ Here's a quick run down on what's going on with me.
 
 **Currently**
 
-- ??? Suggestions?
+- [Tress of the Emerald Sea by Brandon Sanderson]https://bookwyrm.social/book/1097115/s/tress-of-the-emerald-sea)
 
 **Looking forward to**
 
@@ -53,6 +53,21 @@ Here's a quick run down on what's going on with me.
 - Anne Leckie's [Imperial Radch series](https://bookwyrm.social/book/103341/s/the-imperial-radch-trilogy)
 - Becky Chambers' [Monk & Robot series](https://bookwyrm.social/series/by/505?series_name=Monk%20%26%20Robot)
 
+## Listening
+
+**Podcasts**
+
+- [The Prestige TV Podcast](https://www.theringer.com/prestige-tv-podcast)
+- [The Ringerverse](https://www.theringer.com/the-ringer-verse-podcast)
+- [The Rewatchables](https://www.theringer.com/the-rewatchables)
+
+_Only The Ringer podcasts aparently._
+
+**Music**
+
+- [My Apple Music Favourites Playlist](https://music.apple.com/nl/playlist/favourites-mix/pl.pm-20e9f373919da080e7f2cffc56b30295?l=en)
+- Frequently [a Hans Zimmer Soundtrack](https://indieweb.social/@pietvanzoen/109778733446478350)
+- Kids movie soundtracks: Encanto, Soul, Lego Movie 2. 
 
 <aside>
 <p><em><a href="https://nownownow.com/about">Now page</a> inspired Derek Sivers.</em></p>
