@@ -42,7 +42,7 @@ Here's a quick run down on what's going on with me.
 
 **Currently**
 
-- [Tress of the Emerald Sea by Brandon Sanderson]https://bookwyrm.social/book/1097115/s/tress-of-the-emerald-sea)
+- [Tress of the Emerald Sea by Brandon Sanderson](https://bookwyrm.social/book/1097115/s/tress-of-the-emerald-sea)
 
 **Looking forward to**
 
