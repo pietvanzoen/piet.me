@@ -72,7 +72,7 @@ module.exports = function (cfg) {
     );
   });
 
-  cfg.addNunjucksAsyncShortcode('HeroImage', async (unsplashImageId, alt = '', heroStyle) => {
+  cfg.addNunjucksAsyncShortcode('HeroImage', async (unsplashImageId, alt = '', heroStyle, heroCaption) => {
     if (!unsplashImageId) return '';
     let style = '';
     let imageDimentions = [1400, 900];
@@ -89,6 +89,7 @@ module.exports = function (cfg) {
     }
     return `<figure class="hero-image u-photo ${heroStyle ? `hero-${heroStyle}` : ''}">
       <img src="${url}" alt="${alt.trim()}" width="${imageDimentions[0]}" height="${imageDimentions[1]}"${style}/>
+      ${heroCaption ? `<figcaption class="hero-image__caption">${md.render(heroCaption)}</figcaption>` : ''}
     </figure>`;
   });
 

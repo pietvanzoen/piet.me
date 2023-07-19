@@ -7,7 +7,9 @@ description: My now page.
 layout: note.njk
 comments: false
 excerpt: 'My now page'
-unsplashImageId: tyuDNg2ODM0
+unsplashImageId: CtWSwLZCEYE
+imageAlt: "Close up of Hooglandse Kerk in Leiden by Ruben Hanssen"
+heroCaption: "Hooglandse Kerk - Leiden by [Ruben Hanssen](https://unsplash.com/@rhfhanssen)"
 heroStyle: ribbon
 ---
 
