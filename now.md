@@ -7,6 +7,8 @@ description: My now page.
 layout: note.njk
 comments: false
 excerpt: 'My now page'
+unsplashImageId: tyuDNg2ODM0
+heroStyle: ribbon
 ---
 
 Here's a quick run down on what's going on with me. 
