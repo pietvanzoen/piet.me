@@ -110,14 +110,11 @@
   max-width: 40%;
   margin: 0 0 1em 1em;
 }
-.hero-image__caption {
-  font-size: 0.7em;
-  line-height: 1;
-  text-align: center;
-  color: var(--muted-color);
-}
 .hero-image__caption p {
   margin: 0;
+}
+.hero-image__caption {
+  text-align: center;
 }
 @media (max-width: 716px) {
   .hero-image,
@@ -225,6 +222,12 @@ a.card:hover {
 }
 
 figcaption {
-  font-size: 0.8em;
+  font-size: 0.7em;
+  line-height: 1;
   font-style: italic;
+  color: var(--muted-color);
+}
+
+article img {
+  border-radius: 0.2em;
 }
