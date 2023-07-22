@@ -48,7 +48,7 @@ To setup a commit message template add a file in your home directory called `.gi
 
 
 ```gitcommit
-# When applied, this commit will (72 character limit)...
+# When applied, this commit will (in less than 72 characters)...
 
 # Why is this change needed?
 
