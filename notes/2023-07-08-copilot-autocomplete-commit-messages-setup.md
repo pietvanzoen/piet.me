@@ -89,9 +89,10 @@ A few example keywords are Add, Drop, Fix, Make, Refactor, Reformat, among other
 
 ## Copilot in action
 
-Here’s a quick recording of copilot in action.
-
-<script async id="asciicast-tvFG35UnF0pISTpgn247JyqaP" src="https://asciinema.org/a/tvFG35UnF0pISTpgn247JyqaP.js"></script>
+<figure>
+    <img src="/images/SCR-20230722-hycu-annotated.png" alt="Screenshot of editing a commit message that includes a change to the theme color of my website. Copilot completes the commit message with 'Update theme color to match background'.">
+    <figcaption>Example of copilot completion in neovim. 😙👌</figcaption>
+</figure>
 
 Obviously, Copilot isn't always spot-on. It can make mistakes and give wrong suggestions at times. So, it's important to take its input with a grain of salt and trust your own judgment. Good commit messages should be informative and accurate, so don't forget to review and confirm the commit messages before finalising them.
 
