@@ -3,7 +3,7 @@ title: "How to setup Copilot to autocomplete commit messages"
 unsplashImageId: vkfrFrAIO4o
 imageAlt: "Close up of the center console of an airplane with two pilots sitting each side."
 date: 2023-07-08
-updated: 2023-07-09
+updated: 2023-07-22
 slug: copilot-autocomplete-commit-messages-setup
 featured: true
 tags:
@@ -56,8 +56,7 @@ To setup a commit message template add a file in your home directory called `.gi
 
 # Provide links to any relevant tickets, articles or other resources
 ```
-
-_Including the character limit ensures Copilot doesn’t get too verbose with the message._
+<figcaption>Including the character limit ensures Copilot doesn’t get too verbose with the message.</figcaption>
 
 To configure git to use this as your commit message template run:
 
