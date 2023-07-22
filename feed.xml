@@ -22,7 +22,7 @@
       <email>hi@piet.me</email>
     </author>
     <published>2023-07-08T00:00:00Z</published>
-      <updated>2023-07-09T00:00:00Z</updated><id>https://piet.me/copilot-autocomplete-commit-messages-setup/</id>
+      <updated>2023-07-22T00:00:00Z</updated><id>https://piet.me/copilot-autocomplete-commit-messages-setup/</id>
     <rights type="html">&amp;copy; 2023  Piet van Zoen</rights>
       <summary>Copilot, GitHub&#39;s AI programming assistant, has been a great addition to my development environment by giving (mostly) intelligent suggestions and autocompletion. Somewhat accidentally I found that Copilot was also good at writing commit messages. In this post, I will show how you can use Copilot to autocomplete your Git commit messages.</summary><content type="html">&lt;p&gt;Copilot, GitHub&#39;s AI programming assistant, has been a great addition to my development environment by giving (mostly) intelligent suggestions and autocompletion. Somewhat accidentally I found that Copilot was also good at writing commit messages. In this post, I will show how you can use Copilot to autocomplete your Git commit messages.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
@@ -52,7 +52,7 @@
 # How does it address the issue?
 
 # Provide links to any relevant tickets, articles or other resources&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;Including the character limit ensures Copilot doesn’t get too verbose with the message.&lt;/em&gt;&lt;/p&gt;
+&lt;figcaption&gt;Including the character limit ensures Copilot doesn’t get too verbose with the message.&lt;/figcaption&gt;
 &lt;p&gt;To configure git to use this as your commit message template run:&lt;/p&gt;
 &lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config &lt;span class=&quot;token parameter variable&quot;&gt;--global&lt;/span&gt; commit.template ~/.git-commit-template.txt&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Once setup, Copilot can use this prompt and try to form a commit message. But without knowing what’s changed it probably won’t be very successful. This is where verbose mode comes in.&lt;/p&gt;
@@ -66,8 +66,10 @@
 &lt;p&gt;A few example keywords are Add, Drop, Fix, Make, Refactor, Reformat, among others. Once you&#39;ve staged some changes using git add, run git commit and start writing the commit message using one of these keywords. Copilot will then begin suggesting the rest of the commit message. 🚀&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2&gt;Copilot in action&lt;/h2&gt;
-&lt;p&gt;Here’s a quick recording of copilot in action.&lt;/p&gt;
-&lt;script async=&quot;&quot; id=&quot;asciicast-tvFG35UnF0pISTpgn247JyqaP&quot; src=&quot;https://asciinema.org/a/tvFG35UnF0pISTpgn247JyqaP.js&quot;&gt;&lt;/script&gt;
+&lt;figure&gt;
+    &lt;img src=&quot;https://piet.me/images/SCR-20230722-hycu-annotated.png&quot; alt=&quot;Screenshot of editing a commit message that includes a change to the theme color of my website. Copilot completes the commit message with &#39;Update theme color to match background&#39;.&quot; /&gt;
+    &lt;figcaption&gt;Example of copilot completion in neovim. 😙👌&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;p&gt;Obviously, Copilot isn&#39;t always spot-on. It can make mistakes and give wrong suggestions at times. So, it&#39;s important to take its input with a grain of salt and trust your own judgment. Good commit messages should be informative and accurate, so don&#39;t forget to review and confirm the commit messages before finalising them.&lt;/p&gt;
 &lt;p&gt;Apart from that, have fun!&lt;/p&gt;
 </content>
