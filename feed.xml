@@ -45,7 +45,7 @@
 &lt;h3&gt;Setting up a commit message template&lt;/h3&gt;
 &lt;p&gt;For a long time, I have used the a git commit message template to improve the quality of my commit messages. The template consists of a sentence starter which helps me write a commit message in an imperative voice.&lt;/p&gt;
 &lt;p&gt;To setup a commit message template add a file in your home directory called &lt;code&gt;.git-commit-message.txt&lt;/code&gt;. Inside setup your template comments. Mine looks like this:&lt;/p&gt;
-&lt;pre class=&quot;language-gitcommit&quot;&gt;&lt;code class=&quot;language-gitcommit&quot;&gt;# When applied, this commit will (72 character limit)...
+&lt;pre class=&quot;language-gitcommit&quot;&gt;&lt;code class=&quot;language-gitcommit&quot;&gt;# When applied, this commit will (in less than 72 characters)...
 
 # Why is this change needed?
 
