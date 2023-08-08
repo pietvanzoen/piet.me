@@ -3,4 +3,5 @@ Sitemap: https://piet.me/sitemap.xml
 User-agent: *
 Disallow: /robots.txt
 Disallow: /test/
-Disallow: /404.html
+Disallow: /404.htmlUser-agent: GPTBot
+Disallow: /
