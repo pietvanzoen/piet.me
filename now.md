@@ -33,8 +33,8 @@ Working through all of the 2005+ Doctor Who. 🕺
 
 **Recently**
 
+- Indiana Jones and the Dial of Destiny ⭐️⭐️⭐️⭐️
 - Star Trek: Strange New Worlds ⭐️⭐️⭐️⭐️⭐️
-- Andor ⭐️⭐️⭐️⭐️⭐️
 - The Bear ⭐️⭐️⭐️⭐️⭐️
 - Secret invasion ⭐️⭐️
 - Silo ⭐️⭐️✨
@@ -42,8 +42,9 @@ Working through all of the 2005+ Doctor Who. 🕺
 
 **Looking forward to**
 
-- Dune Part 2 (Nov 2023)
-- Andor Season 2 (2024)
+- Barbie
+- Dune Part 2
+- Andor Season 2
 
 ## Reading
 
