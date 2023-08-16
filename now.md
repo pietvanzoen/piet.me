@@ -79,6 +79,9 @@ _Only The Ringer podcasts aparently._
 - Frequently [a Hans Zimmer Soundtrack](https://indieweb.social/@pietvanzoen/109778733446478350)
 - Kids movie soundtracks: Encanto, Soul, Lego Movie 2. 
 
+Recently saw Sylvan Esso live. So much fun! Looking forward to seeing Deerhoof again in November.
+
+
 <aside>
 <p><em><a href="https://nownownow.com/about">Now page</a> inspired Derek Sivers.</em></p>
 </aside>
