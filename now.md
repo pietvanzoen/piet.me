@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2023-07-18
+updated: 2023-08-16
 description: My now page.
 layout: note.njk
 comments: false
@@ -27,14 +27,17 @@ Here's a quick run down on what's going on with me.
 
 ## Watching
 
+**Currently**
+
+Working through all of the 2005+ Doctor Who. 🕺
+
 **Recently**
 
+- Star Trek: Strange New Worlds ⭐️⭐️⭐️⭐️⭐️
 - Andor ⭐️⭐️⭐️⭐️⭐️
 - The Bear ⭐️⭐️⭐️⭐️⭐️
 - Secret invasion ⭐️⭐️
-- The Last of Us ⭐️⭐️⭐️⭐️⭐️
 - Silo ⭐️⭐️✨
-- Star Trek: Strange New Worlds ⭐️⭐️⭐️⭐️
 - Bluey 💙💙💙💙💙
 
 **Looking forward to**
