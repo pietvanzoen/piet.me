@@ -25,6 +25,8 @@ Here's a quick run down on what's going on with me.
 
 **3D Printing:** Mostly printing [flexi animal toys](https://www.printables.com/@pietvz_198699/collections/729183) for the kiddos.
 
+**Knitting:** Working on a set of [cowls for the family](https://indieweb.social/@pietvanzoen/110886412703841493).
+
 ## Watching
 
 **Currently**
