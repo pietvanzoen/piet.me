@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2023-08-16
+updated: 2023-08-22
 description: My now page.
 layout: note.njk
 comments: false
