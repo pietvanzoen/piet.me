@@ -35,12 +35,14 @@ Working through all of the 2005+ Doctor Who. 🕺
 
 **Recently**
 
-- Indiana Jones and the Dial of Destiny ⭐️⭐️⭐️⭐️
-- Star Trek: Strange New Worlds ⭐️⭐️⭐️⭐️⭐️
-- The Bear ⭐️⭐️⭐️⭐️⭐️
-- Secret invasion ⭐️⭐️
-- Silo ⭐️⭐️✨
-- Bluey 💙💙💙💙💙
+- Barbie 💖
+- Star Wars: Rebels (prepping for Ahsoka) 🤖
+- Indiana Jones and the Dial of Destiny 😊
+- Star Trek: Strange New Worlds 😍
+- The Bear 😚👌
+- Secret invasion 😕
+- Silo 👍
+- Bluey 💙
 
 **Looking forward to**
 
