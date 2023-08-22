@@ -46,7 +46,7 @@ Working through all of the 2005+ Doctor Who. 🕺
 
 **Looking forward to**
 
-- Barbie
+- Ahsoka
 - Dune Part 2
 - Andor Season 2
 
