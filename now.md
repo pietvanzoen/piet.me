@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2023-08-22
+updated: 2023-08-26
 description: My now page.
 layout: note.njk
 comments: false
@@ -31,7 +31,8 @@ Here's a quick run down on what's going on with me.
 
 **Currently**
 
-Working through all of the 2005+ Doctor Who. 🕺
+- Working through all of the 2005+ Doctor Who. 🕺
+- Ahsoka 😺
 
 **Recently**
 
@@ -46,7 +47,6 @@ Working through all of the 2005+ Doctor Who. 🕺
 
 **Looking forward to**
 
-- Ahsoka
 - Dune Part 2
 - Andor Season 2
 
