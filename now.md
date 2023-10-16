@@ -31,9 +31,9 @@ Here's a quick run down on what's going on with me.
 
 **Currently**
 
-- Working through all of the 2005+ Doctor Who (currenty on Matt Smith). 🕺
-- Loki Season 2 😈
-- Ghosts (2019 UK version) 👻
+- Working through all of the 2005+ [Doctor Who](https://www.themoviedb.org/tv/57243-doctor-who) (currenty on Matt Smith). 🕺
+- [Loki](https://www.themoviedb.org/tv/84958-loki) Season 2 😈
+- [Ghosts](https://www.themoviedb.org/tv/17174-ghosts) (2019 UK version) 👻
 
 **Recently**
 
