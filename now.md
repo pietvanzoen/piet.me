@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2023-08-26
+updated: 2023-10-16
 description: My now page.
 layout: note.njk
 comments: false
@@ -31,18 +31,17 @@ Here's a quick run down on what's going on with me.
 
 **Currently**
 
-- Working through all of the 2005+ Doctor Who. 🕺
-- Ahsoka 😺
+- Working through all of the 2005+ Doctor Who (currenty on Matt Smith). 🕺
+- Loki Season 2 😈
+- Ghosts (2019 UK version) 👻
 
 **Recently**
 
+- Ahsoka 😺
 - Barbie 💖
-- Star Wars: Rebels (prepping for Ahsoka) 🤖
-- Indiana Jones and the Dial of Destiny 😊
+- Star Wars: Rebels (prep for Ahsoka) 🤖
 - Star Trek: Strange New Worlds 😍
 - The Bear 😚👌
-- Secret invasion 😕
-- Silo 👍
 - Bluey 💙
 
 **Looking forward to**
@@ -54,7 +53,7 @@ Here's a quick run down on what's going on with me.
 
 **Currently**
 
-- [Tress of the Emerald Sea by Brandon Sanderson](https://bookwyrm.social/book/1097115/s/tress-of-the-emerald-sea)
+- [Ancestral Night by Elizabeth Bear](https://bookwyrm.social/book/127115/s/ancestral-night)
 
 **Looking forward to**
 
@@ -62,8 +61,9 @@ Here's a quick run down on what's going on with me.
 
 **Recently**
 
-- Anne Leckie's [Imperial Radch series](https://bookwyrm.social/book/103341/s/the-imperial-radch-trilogy)
-- Becky Chambers' [Monk & Robot series](https://bookwyrm.social/series/by/505?series_name=Monk%20%26%20Robot)
+- [Tress of the Emerald Sea by Brandon Sanderson](https://bookwyrm.social/book/1097115/s/tress-of-the-emerald-sea)
+- [Imperial Radch series by Anne Leckie](https://bookwyrm.social/book/103341/s/the-imperial-radch-trilogy)
+- [Monk & Robot series by Becky Chambers](https://bookwyrm.social/series/by/505?series_name=Monk%20%26%20Robot)
 
 ## Listening
 
@@ -72,6 +72,7 @@ Here's a quick run down on what's going on with me.
 - [The Prestige TV Podcast](https://www.theringer.com/prestige-tv-podcast)
 - [The Ringerverse](https://www.theringer.com/the-ringer-verse-podcast)
 - [The Rewatchables](https://www.theringer.com/the-rewatchables)
+- [Dissect](https://www.theringer.com/dissect)
 
 _Only The Ringer podcasts aparently._
 
