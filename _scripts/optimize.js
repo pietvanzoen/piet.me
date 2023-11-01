@@ -31,7 +31,7 @@ glob(`_site/images/**/*.{jpg,jpeg,png}`, function (er, files) {
 
 function resize(file) {
   return sharp(file)
-    .resize({ width: 1400, height: 1400, withoutEnlargement: true })
+    .resize({ width: 1400, height: 1400, withoutEnlargement: true, fit: 'inside' })
     .rotate()
     .toFormat(path.extname(file).replace('.', ''), {
       progressive: true,
