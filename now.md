@@ -31,15 +31,14 @@ Here's a quick run down on what's going on with me.
 
 **Currently**
 
-- Working through all of the 2005+ [Doctor Who](https://www.themoviedb.org/tv/57243-doctor-who) (currenty on Matt Smith). 🕺
-- [Loki](https://www.themoviedb.org/tv/84958-loki) Season 2 😈
+- Working through all of the 2005+ [Doctor Who](https://www.themoviedb.org/tv/57243-doctor-who) (currenty on Peter Capaldi). 🕶️
 - [Ghosts](https://www.themoviedb.org/tv/17174-ghosts) (2019 UK version) 👻
 
 **Recently**
 
+- [Loki](https://www.themoviedb.org/tv/84958-loki) Season 2 😈
 - Ahsoka 😺
 - Barbie 💖
-- Star Wars: Rebels (prep for Ahsoka) 🤖
 - Star Trek: Strange New Worlds 😍
 - The Bear 😚👌
 - Bluey 💙
@@ -47,15 +46,12 @@ Here's a quick run down on what's going on with me.
 **Looking forward to**
 
 - Dune Part 2
+- Star Trek: Discovery
 - Andor Season 2
 
 ## Reading
 
 **Currently**
-
-- [Ancestral Night by Elizabeth Bear](https://bookwyrm.social/book/127115/s/ancestral-night)
-
-**Looking forward to**
 
 - Martha Well's [next Murderbot Diaries book](https://bookwyrm.social/book/796937/s/system-collapse).
 
@@ -82,8 +78,10 @@ _Only The Ringer podcasts aparently._
 - Frequently [a Hans Zimmer Soundtrack](https://indieweb.social/@pietvanzoen/109778733446478350)
 - Kids movie soundtracks: Encanto, Soul, Lego Movie 2. 
 
-Recently saw Sylvan Esso live. So much fun! Looking forward to seeing Deerhoof again in November.
+**Live music**
 
+- Deerhoof @ Trivoli, Utrecht
+- Sylvan Essp @ Paradiso, Amsterdam
 
 <aside>
 <p><em><a href="https://nownownow.com/about">Now page</a> inspired Derek Sivers.</em></p>
