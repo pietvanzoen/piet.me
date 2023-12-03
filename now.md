@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2023-10-16
+updated: 2023-12-03
 description: My now page.
 layout: note.njk
 comments: false
@@ -80,8 +80,8 @@ _Only The Ringer podcasts aparently._
 
 **Live music**
 
-- Deerhoof @ Trivoli, Utrecht
-- Sylvan Essp @ Paradiso, Amsterdam
+- Deerhoof @ Tivoli, Utrecht - November 2023
+- Sylvan Essp @ Paradiso, Amsterdam - July 2023
 
 <aside>
 <p><em><a href="https://nownownow.com/about">Now page</a> inspired Derek Sivers.</em></p>
