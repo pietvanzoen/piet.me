@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2024-01-21
+updated: 2024-02-19
 description: My now page.
 layout: note.njk
 comments: false
@@ -29,7 +29,7 @@ Here's a quick run down on what's going on with me.
 
 **Currently**
 
-- TBD
+- Good Omens season 2
 
 **Recently**
 
@@ -52,10 +52,11 @@ Here's a quick run down on what's going on with me.
 
 **Currently**
 
-- [Yumi and the Nightmare Painter](https://bookwyrm.social/book/1414163/s/yumi-and-the-nightmare-painter) by Brandon Sanderson
+- The Final Empire (Mistborn #1) by Brandon Sanderson
 
 **Recently**
 
+- [Yumi and the Nightmare Painter](https://bookwyrm.social/book/1414163/s/yumi-and-the-nightmare-painter) by Brandon Sanderson
 - Martha Well's [latest Murderbot Diaries book](https://bookwyrm.social/book/796937/s/system-collapse).
 - [Tress of the Emerald Sea](https://bookwyrm.social/book/1097115/s/tress-of-the-emerald-sea) by Brandon Sanderson
 - [Imperial Radch series](https://bookwyrm.social/book/103341/s/the-imperial-radch-trilogy) by Anne Leckie
