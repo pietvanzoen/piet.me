@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2024-02-19
+updated: 2024-03-24
 description: My now page.
 layout: note.njk
 comments: false
@@ -27,13 +27,9 @@ Here's a quick run down on what's going on with me.
 
 ## Watching
 
-**Currently**
-
-- Good Omens season 2
-
 **Recently**
 
-- [Echo](https://www.themoviedb.org/tv/122226-echo) 🍥
+- Dune: Part Two 🌶️
 - All of 2005 - 2023 [Doctor Who](https://www.themoviedb.org/tv/57243-doctor-who) 🟦
 - [Ghosts](https://www.themoviedb.org/tv/17174-ghosts) (2019 UK version) 👻
 - [Loki](https://www.themoviedb.org/tv/84958-loki) Season 2 😈
@@ -44,7 +40,6 @@ Here's a quick run down on what's going on with me.
 **Looking forward to**
 
 - [New Doctor Who](https://www.themoviedb.org/tv/239770-doctor-who) with Ncuti Gatwa
-- Dune Part 2
 - Star Trek: Discovery
 - Andor Season 2
 
@@ -52,12 +47,13 @@ Here's a quick run down on what's going on with me.
 
 **Currently**
 
-- The Final Empire (Mistborn #1) by Brandon Sanderson
+- [Dune: Messiah](https://www.goodreads.com/book/show/44492285-dune-messiah) by Frank Herbert
+- [Mistborn Saga](https://bookwyrm.social/series/by/863?series_name=Mistborn%20Saga) (currently on #2) by Brandon Sanderson
 
 **Recently**
 
 - [Yumi and the Nightmare Painter](https://bookwyrm.social/book/1414163/s/yumi-and-the-nightmare-painter) by Brandon Sanderson
-- Martha Well's [latest Murderbot Diaries book](https://bookwyrm.social/book/796937/s/system-collapse).
+- [System Collapse](https://bookwyrm.social/book/796937/s/system-collapse) by Martha Wells
 - [Tress of the Emerald Sea](https://bookwyrm.social/book/1097115/s/tress-of-the-emerald-sea) by Brandon Sanderson
 - [Imperial Radch series](https://bookwyrm.social/book/103341/s/the-imperial-radch-trilogy) by Anne Leckie
 - [Monk & Robot series](https://bookwyrm.social/series/by/505?series_name=Monk%20%26%20Robot) by Becky Chambers
@@ -66,12 +62,10 @@ Here's a quick run down on what's going on with me.
 
 **Podcasts**
 
+- [City Cast Portland](https://portland.citycast.fm)
 - [The Prestige TV Podcast](https://www.theringer.com/prestige-tv-podcast)
-- [The Ringerverse](https://www.theringer.com/the-ringer-verse-podcast)
+- [House of R](https://www.theringer.com/house-of-r)
 - [The Rewatchables](https://www.theringer.com/the-rewatchables)
-- [Dissect](https://www.theringer.com/dissect)
-
-_Only The Ringer podcasts aparently._
 
 **Music**
 
@@ -81,6 +75,7 @@ _Only The Ringer podcasts aparently._
 
 **Live music**
 
+- Decemberists @ Portland, OR - August 2024
 - Deerhoof @ Tivoli, Utrecht - November 2023
 - Sylvan Essp @ Paradiso, Amsterdam - July 2023
 
