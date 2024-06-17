@@ -9,7 +9,6 @@ const getOpenGraphData = require('./_lib/get-open-graph-data');
 const dayjs = require('./_lib/dayjs');
 const updatesCollection = require('./_lib/updates-collection');
 const fs = require('fs');
-const getUnsplashImageColor = require('./_lib/get-unsplash-image-color');
 const webmentionsForUrl = require('./_lib/webmentions-for-url');
 const htmlmin = require('html-minifier');
 const posthtml = require('posthtml');
