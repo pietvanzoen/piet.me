@@ -15,6 +15,7 @@ const htmlmin = require('html-minifier');
 const posthtml = require('posthtml');
 const uglify = require('posthtml-minify-classnames');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const getUnsplashImage = require('./_lib/get-unsplash-image');
 
 const now = new Date();
 
@@ -74,22 +75,31 @@ module.exports = function (cfg) {
 
   cfg.addNunjucksAsyncShortcode('HeroImage', async (unsplashImageId, alt = '', heroStyle, heroCaption) => {
     if (!unsplashImageId) return '';
-    let style = '';
-    let imageDimentions = [1400, 900];
+    let dimentions = [1400, 900];
     if (heroStyle === 'ribbon') {
-      imageDimentions = [1400, 450];
+      dimentions = [1400, 450];
     } else if (heroStyle === 'notes-thumbnail') {
-      imageDimentions = [700, 500];
+      dimentions = [700, 500];
     }
 
-    const url = `https://source.unsplash.com/${unsplashImageId}/${imageDimentions.join('x')}?fm=jpg`;
-    const imageColor = await getUnsplashImageColor(url, 'muted');
-    if (imageColor) {
-      style = ` style="background-color: ${imageColor}"`;
+    const image = await getUnsplashImage(unsplashImageId, {
+      dimentions,
+      format: 'jpg',
+    });
+    let style = `style="background-image: url(${
+      image.thumb
+    }); background-size: cover; background-position: center; aspect-ratio: ${dimentions[0] / dimentions[1]}"`;
+    let caption = '';
+    const authorLink = `<a href="${image.link}" target="_blank">${image.authorName}</a>`;
+    if (heroCaption) {
+      caption = `<figcaption class="hero-image__caption">${heroCaption} by ${authorLink}</figcaption>`;
+    } else if (!heroStyle.includes('thumbnail')) {
+      caption = `<figcaption class="hero-image__caption">Photo by ${authorLink}</figcaption>`;
     }
+
     return `<figure class="hero-image u-photo ${heroStyle ? `hero-${heroStyle}` : ''}">
-      <img src="${url}" alt="${alt.trim()}" width="${imageDimentions[0]}" height="${imageDimentions[1]}"${style}/>
-      ${heroCaption ? `<figcaption class="hero-image__caption">${md.render(heroCaption)}</figcaption>` : ''}
+      <img src="${image.url}" alt="${alt || image.alt}" width="${dimentions[0]}" height="${dimentions[1]}"${style}/>
+      ${caption}
     </figure>`;
   });
 

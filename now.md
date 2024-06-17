@@ -2,14 +2,13 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2024-03-24
+updated: 2024-06-17
 description: My now page.
 layout: note.njk
 comments: false
 excerpt: 'My now page'
-unsplashImageId: CtWSwLZCEYE
-imageAlt: "Close up of Hooglandse Kerk in Leiden by Ruben Hanssen"
-heroCaption: "Hooglandse Kerk - Leiden by [Ruben Hanssen](https://unsplash.com/@rhfhanssen)"
+unsplashImageId: ZXUnL-s5aWE
+heroCaption: "Hooglandse Kerk - Leiden"
 heroStyle: ribbon
 ---
 
@@ -27,36 +26,40 @@ Here's a quick run down on what's going on with me.
 
 ## Watching
 
+**Currently**
+
+- [New Doctor Who](https://www.themoviedb.org/tv/239770-doctor-who) with Ncuti Gatwa
+- Star Wars - Acolyte
+
 **Recently**
 
 - Dune: Part Two 🌶️
 - All of 2005 - 2023 [Doctor Who](https://www.themoviedb.org/tv/57243-doctor-who) 🟦
-- [Ghosts](https://www.themoviedb.org/tv/17174-ghosts) (2019 UK version) 👻
-- [Loki](https://www.themoviedb.org/tv/84958-loki) Season 2 😈
-- Ahsoka 😺
-- Barbie 💖
-- Star Trek: Strange New Worlds 😍
+- Star Trek: Discovery final season
 
 **Looking forward to**
 
-- [New Doctor Who](https://www.themoviedb.org/tv/239770-doctor-who) with Ncuti Gatwa
-- Star Trek: Discovery
 - Andor Season 2
 
 ## Reading
 
 **Currently**
 
-- [Dune: Messiah](https://www.goodreads.com/book/show/44492285-dune-messiah) by Frank Herbert
-- [Mistborn Saga](https://bookwyrm.social/series/by/863?series_name=Mistborn%20Saga) (currently on #2) by Brandon Sanderson
+- [The Frangipani Tree Mystery](https://www.goodreads.com/book/show/34838331-the-frangipani-tree-mystery) by Ovidia Yu
 
 **Recently**
 
+- [Tomorrow, and Tomorrow, and Tomorrow](https://www.goodreads.com/book/show/58784475-tomorrow-and-tomorrow-and-tomorrow) by Gabrielle Zevin
+- [To Be Taught, If Fortunate](https://www.goodreads.com/book/show/43190272-to-be-taught-if-fortunate) by Becky Chambers
+- [Dune: Messiah](https://www.goodreads.com/book/show/44492285-dune-messiah) by Frank Herbert
+- [Mistborn Saga](https://bookwyrm.social/series/by/863?series_name=Mistborn%20Saga) (currently on #2) by Brandon Sanderson
 - [Yumi and the Nightmare Painter](https://bookwyrm.social/book/1414163/s/yumi-and-the-nightmare-painter) by Brandon Sanderson
 - [System Collapse](https://bookwyrm.social/book/796937/s/system-collapse) by Martha Wells
 - [Tress of the Emerald Sea](https://bookwyrm.social/book/1097115/s/tress-of-the-emerald-sea) by Brandon Sanderson
 - [Imperial Radch series](https://bookwyrm.social/book/103341/s/the-imperial-radch-trilogy) by Anne Leckie
 - [Monk & Robot series](https://bookwyrm.social/series/by/505?series_name=Monk%20%26%20Robot) by Becky Chambers
+
+**[More on Goodreads](https://www.goodreads.com/user/show/45242426-piet)**
 
 ## Listening
 
@@ -77,7 +80,7 @@ Here's a quick run down on what's going on with me.
 
 - Decemberists @ Portland, OR - August 2024
 - Deerhoof @ Tivoli, Utrecht - November 2023
-- Sylvan Essp @ Paradiso, Amsterdam - July 2023
+- Sylvan Esso @ Paradiso, Amsterdam - July 2023
 
 <aside>
 <p><em><a href="https://nownownow.com/about">Now page</a> inspired Derek Sivers.</em></p>
