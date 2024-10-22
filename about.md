@@ -8,11 +8,11 @@ layout: layout.njk
 
 ## The short version
 
-Anglo/Dutch software developer at [Cutr](https://www.cutr.ai). Previously at [YoungCapital](https://www.youngcapital.nl), [Usabilla](https://usabilla.com), [Cozy](https://cozy.co), and [Daylight Studio](http://thedaylightstudio.com/). I love the open web, test driven development, vim, and fries with mayo.
+Anglo/Dutch software developer at [Cutr](https://www.cutr.com). Previously at [YoungCapital](https://www.youngcapital.nl), [Usabilla](https://usabilla.com), [Cozy](https://cozy.co), and [Daylight Studio](http://thedaylightstudio.com/). I love the open web, test driven development, vim, and fries with mayo.
 
 <!-- excerpt -->
 
-I live in the Netherlands with my wife [Keven](https://studiozoen.com/), our two kids, and our cat [Frida](https://emergencyfrida.piet.me).
+I live in Portland, Oregon with my partner [Keven](https://studiozoen.com/) and our two kids.
 
 ## The long version
 
