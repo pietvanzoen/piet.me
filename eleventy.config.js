@@ -92,7 +92,7 @@ module.exports = function (cfg) {
     const authorLink = `<a href="${image.link}" target="_blank">${image.authorName}</a>`;
     if (heroCaption) {
       caption = `<figcaption class="hero-image__caption">${heroCaption} by ${authorLink}</figcaption>`;
-    } else if (!heroStyle.includes('thumbnail')) {
+    } else if (!heroStyle?.includes('thumbnail')) {
       caption = `<figcaption class="hero-image__caption">Photo by ${authorLink}</figcaption>`;
     }
 
