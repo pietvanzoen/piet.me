@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2024-10-22
+updated: 2024-11-03
 description: My now page.
 layout: note.njk
 comments: false
@@ -32,6 +32,7 @@ Here's a quick run down on what's going on with me.
 
 **Recently**
 
+- Agatha All Along 🧙
 - Dune: Part Two 🌶️
 - All of 2005 - 2023 [Doctor Who](https://www.themoviedb.org/tv/57243-doctor-who) 🟦
 
@@ -44,6 +45,7 @@ Here's a quick run down on what's going on with me.
 **Currently**
 
 - [Children of Dune (Dune #3)](https://www.goodreads.com/book/show/44492286-children-of-dune) by Frank Herbert
+- [The Betel Nut Tree Mystery](https://www.goodreads.com/book/show/36737352-the-betel-nut-tree-mystery) by Ovidia Yu
 
 **Recently**
 
