@@ -3,7 +3,9 @@ Sitemap: https://piet.me/sitemap.xml
 User-agent: *
 Disallow: /robots.txt
 Disallow: /test/
-Disallow: /404.htmlUser-agent: CCBot
+Disallow: /404.html
+
+User-agent: CCBot
 Disallow: /
 
 User-agent: ChatGPT-User
