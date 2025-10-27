@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2024-11-03
+updated: 2025-10-27
 description: My now page.
 layout: note.njk
 comments: false
@@ -20,32 +20,30 @@ Here's a quick run down on what's going on with me.
 
 **Work:** Building a wood manufacturing marketplace at Cutr.com.
 
-**Gifable:** I'm not usually one for a side project. But right now I have one! Having fun building [Gifable](https://www.gifable.club), a self-hostable gif/meme library manager. Building it with [Remix](https://remix.run).
-
-**Knitting:** Working on a set of [cowls for the family](https://indieweb.social/@pietvanzoen/110886412703841493).
+**Knitting:** Working on a set of cowls for the family. Currently working on [this one from tincanknits](https://tincanknits.com/pattern/gather).
 
 ## Watching
 
 **Currently**
 
-- Brooklyn Nine-Nine (rewatch) 👮
+- Gilmore Girls (rewatch) ☕️
+- Abbott Elementary 👩‍🏫
 
 **Recently**
 
-- Agatha All Along 🧙
-- Dune: Part Two 🌶️
-- All of 2005 - 2023 [Doctor Who](https://www.themoviedb.org/tv/57243-doctor-who) 🟦
+- Star Wars: Andor - Season 2
+- Kpop Demon Hunters
 
 **Looking forward to**
 
-- Andor Season 2
+- Diplomat - Season 3
 
 ## Reading
 
 **Currently**
 
-- [Children of Dune (Dune #3)](https://www.goodreads.com/book/show/44492286-children-of-dune) by Frank Herbert
-- [The Betel Nut Tree Mystery](https://www.goodreads.com/book/show/36737352-the-betel-nut-tree-mystery) by Ovidia Yu
+- The Hobbit
+- [Star Trek: Seeds of Salvation](https://www.startrekcomics.info/idwsnwseeds.html)
 
 **Recently**
 
@@ -64,7 +62,6 @@ Here's a quick run down on what's going on with me.
 **Podcasts**
 
 - [City Cast Portland](https://portland.citycast.fm)
-- [Grimm, Grimmer, Grimmest](https://pinna.fm/library/kids-shows/pinna-podcasts/grimm-grimmer-grimmest)
 
 **Music**
 
