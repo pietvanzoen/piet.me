@@ -6,7 +6,6 @@ metadata:
   description: "Hi, I'm Piet. I build things for the web. I love all things command line, and fries with mayo. This is a feed."
   author:
     name: "Piet van Zoen"
-    email: hi@piet.me
 
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -21,7 +20,6 @@ metadata:
   <author>
     <name>{{ metadata.author.name }}</name>
     <uri>{{ site.url }}</uri>
-    <email>{{ metadata.author.email }}</email>
   </author>
   {%- for post in collections.notes | reverse %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
@@ -31,7 +29,6 @@ metadata:
     <author>
       <name>{{ metadata.author.name }}</name>
       <uri>{{ site.url }}</uri>
-      <email>{{ metadata.author.email }}</email>
     </author>
     <published>{{ post.date | rssDate }}</published>
     {%- if post.data.updated %}
