@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2025-10-27
+updated: 2026-08-24
 description: My now page.
 layout: note.njk
 comments: false
@@ -22,40 +22,36 @@ Here's a quick run down on what's going on with me.
 
 **Knitting:** Working on a set of cowls for the family. Currently working on [this one from tincanknits](https://tincanknits.com/pattern/gather).
 
+**Supporting:** [The Portland Thorns](https://www.thorns.com/). 🌹
+
 ## Watching
 
 **Currently**
 
-- Gilmore Girls (rewatch) ☕️
-- Abbott Elementary 👩‍🏫
+- Ted Lasso - Season 4
+- Taskmaster
 
 **Recently**
 
-- Star Wars: Andor - Season 2
-- Kpop Demon Hunters
-
-**Looking forward to**
-
-- Diplomat - Season 3
+- The Pitt
 
 ## Reading
 
 **Currently**
 
-- The Hobbit
-- [Star Trek: Seeds of Salvation](https://www.startrekcomics.info/idwsnwseeds.html)
+- [The Paper Bark Tree Mystery](https://app.thestorygraph.com/books/68e358c0-152d-42ef-8f26-d63b98f4d249) by Ovidia Yu
+- [Klara and the Sun](https://app.thestorygraph.com/books/a7750f21-afd0-4205-b2b6-18b178224076) by Kazuo Ishiguro
+- [Finance for the People: Getting a Grip on Your Finances](https://app.thestorygraph.com/books/39170034-c622-4fbd-871f-777025ab06c6) by Paco de Leon
+- [The Return of the King](https://app.thestorygraph.com/books/9bffa734-47cd-42db-b8a5-3b470726814f) by J.R.R. Tolkien
 
 **Recently**
 
-- [Moonbound](https://www.goodreads.com/book/show/195790867-moonbound) by Robin Sloan
-- [Hench](https://www.goodreads.com/book/show/49867430-hench) by Natalie Zina Walschots
-- [The Frangipani Tree Mystery](https://www.goodreads.com/book/show/34838331-the-frangipani-tree-mystery) by Ovidia Yu
-- [Tomorrow, and Tomorrow, and Tomorrow](https://www.goodreads.com/book/show/58784475-tomorrow-and-tomorrow-and-tomorrow) by Gabrielle Zevin
-- [To Be Taught, If Fortunate](https://www.goodreads.com/book/show/43190272-to-be-taught-if-fortunate) by Becky Chambers
-- [Dune: Messiah](https://www.goodreads.com/book/show/44492285-dune-messiah) by Frank Herbert
-- [Mistborn Saga](https://bookwyrm.social/series/by/863?series_name=Mistborn%20Saga) (currently on #2) by Brandon Sanderson
+- [The River Has Roots](https://app.thestorygraph.com/books/69c02948-5985-4ad4-ba04-5ac3a01bee9d) by Amal El-Mohtar
+- [Villain](https://app.thestorygraph.com/books/a053510b-0b4c-48f9-9a4b-afb5fdc81d06) by Natalie Zina Walschots
+- [Platform Decay](https://app.thestorygraph.com/books/6583d9e1-6345-478a-b75a-4f4c2d645e8b) by Martha Wells
+- [Of Monsters and Mainframes](https://app.thestorygraph.com/books/53b589dd-0790-47fd-b1de-afc8d4ae841f) by Barbara Truelove
 
-**[More on Goodreads](https://www.goodreads.com/user/show/45242426-piet)**
+**[More on StoryGraph](https://app.thestorygraph.com/profile/pietvanzoen)**
 
 ## Listening
 
