@@ -4,7 +4,6 @@ const md = require('./_lib/markdown-engine');
 const queryString = require('query-string');
 const embedTwitter = require('eleventy-plugin-embed-twitter');
 const _ = require('lodash');
-const localImages = require('eleventy-plugin-local-images');
 const getOpenGraphData = require('./_lib/get-open-graph-data');
 const dayjs = require('./_lib/dayjs');
 const updatesCollection = require('./_lib/updates-collection');
@@ -27,14 +26,6 @@ module.exports = function (cfg) {
     cacheText: IS_PRODUCTION,
   });
   cfg.addPlugin(syntaxHighlight);
-  if (IS_PRODUCTION) {
-    cfg.addPlugin(localImages, {
-      distPath: '_site',
-      assetPath: '/images',
-      selector: 'img',
-      verbose: true,
-    });
-  }
 
   // Copy
   cfg.addPassthroughCopy('fonts');
@@ -81,10 +72,7 @@ module.exports = function (cfg) {
       dimentions = [700, 500];
     }
 
-    const image = await getUnsplashImage(unsplashImageId, {
-      dimentions,
-      format: 'jpg',
-    });
+    const image = await getUnsplashImage(unsplashImageId);
     let style = `style="background-image: url(${
       image.thumb
     }); background-size: cover; background-position: center; aspect-ratio: ${dimentions[0] / dimentions[1]}"`;

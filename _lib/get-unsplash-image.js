@@ -4,7 +4,7 @@ const Cache = require('./fs-cache');
 
 const cache = new Cache('./unsplash-image-cache.json');
 
-async function getUnsplashImage(photoId, { dimentions, format = 'jpg' } = {}) {
+async function getUnsplashImage(photoId) {
   let response = cache.get(photoId);
   if (!response) {
     const unsplash = createApi({
@@ -23,22 +23,15 @@ async function getUnsplashImage(photoId, { dimentions, format = 'jpg' } = {}) {
     cache.set(photoId, response);
   }
 
-  const url = new URL(response.urls.raw);
-  if (dimentions) {
-    url.searchParams.set('w', dimentions[0]);
-    url.searchParams.set('h', dimentions[1]);
-  }
-  url.searchParams.set('fm', format);
-  url.searchParams.set('dpr', 2);
-  url.searchParams.set('fit', 'crop');
-
+  // Images themselves are downloaded once via _scripts/download-unsplash-images.js
+  // into images/cached/ — see that script if a new unsplashImageId shows up missing.
   const image = {
-    url: url.href,
+    url: `/images/cached/unsplash-${photoId}.jpg`,
     alt: response.alt_description,
     description: response.description,
     link: response.links.html,
     authorName: response.user.name,
-    thumb: response.urls.thumb,
+    thumb: `/images/cached/unsplash-${photoId}-thumb.jpg`,
   };
 
   return image;
