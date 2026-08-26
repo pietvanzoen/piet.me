@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2026-08-24
+updated: 2026-08-26
 description: My now page.
 layout: note.njk
 comments: false
@@ -39,8 +39,7 @@ Here's a quick run down on what's going on with me.
 
 **Currently**
 
-- [The Paper Bark Tree Mystery](https://app.thestorygraph.com/books/68e358c0-152d-42ef-8f26-d63b98f4d249) by Ovidia Yu
-- [Klara and the Sun](https://app.thestorygraph.com/books/a7750f21-afd0-4205-b2b6-18b178224076) by Kazuo Ishiguro
+- [Dungeon Crawler Carl](https://app.thestorygraph.com/books/25876d4a-055a-4baf-947f-b2c480293555) by Matt Dinniman
 - [Finance for the People: Getting a Grip on Your Finances](https://app.thestorygraph.com/books/39170034-c622-4fbd-871f-777025ab06c6) by Paco de Leon
 - [The Return of the King](https://app.thestorygraph.com/books/9bffa734-47cd-42db-b8a5-3b470726814f) by J.R.R. Tolkien
 
