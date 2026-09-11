@@ -2,7 +2,7 @@
 title: Now
 slug: now
 date: 2023-07-12
-updated: 2026-08-26
+updated: 2026-09-11
 description: My now page.
 layout: note.njk
 comments: false
@@ -61,6 +61,7 @@ Here's a quick run down on what's going on with me.
 **Music**
 
 - [My Apple Music Favourites Playlist](https://music.apple.com/nl/playlist/favourites-mix/pl.pm-20e9f373919da080e7f2cffc56b30295?l=en)
+- [Ow ∞](https://music.apple.com/us/album/ow/6769128428) by Sylvan Esso
 
 <!-- **Live music** -->
 <!---->
